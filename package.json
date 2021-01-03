@@ -1,0 +1,25 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js",
+    "startm": "node ./src/mormotte.js",
+    "devm": "nodemon ./src/mormotte.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.28.0",
+    "moment-timezone": "^0.5.31",
+    "p-queue": "^6.6.1",
+    "queue": "^6.0.1",
+    "queue-fifo": "^0.2.6",
+    "stack": "^0.1.0"
+  }
+}
