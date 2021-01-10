@@ -11,7 +11,7 @@ const bot = new Client();
 const PREFIX="ㅣ";
 const PREFIX_REACTION_MF="@#$4578$#@"; // 중지 이모지 반응용(중지 날린 곳에 지문 남긴 것)
 
-const OWNER_ID="554178159717777420";
+
 const MORMOTTE_ID="751773063766343721";
 
 var dobeTimeCheck=new Queue(); // 얍 명령어 도배 시간 체크 큐
@@ -78,10 +78,17 @@ bot.on('ready', async () => {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 setInterval( (time)=>{
     }
 );
+=======
+var http = require("http");
+setInterval(function() {
+    http.get("http://mindulbot.herokuapp.com");
+}, 10*60*1000); // every 5 minutes (300000)
+>>>>>>> 6ecc80ba (뭔가 문제가 있었나본데, 10분마다 갱신되는 거 다시 올림)
 
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 bot.on('messageReactionAdd', async (reaction, user) => {
