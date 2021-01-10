@@ -7,8 +7,6 @@ const { CommandNaga } = require('./Command/CommandNaga');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); // 서울 시간
 
-const Command=require('./Command/Command.js').COMMAND;
-
 const bot = new Client();
 
 const GV = require("./../GlobalVariable.js");
@@ -32,7 +30,6 @@ bot.on('ready', async () => {
 });
 
 setInterval( (time)=>{
-    
     }
 );
 
@@ -81,18 +78,12 @@ bot.on('message', async (msg) => {
             (await msg.channel.send("DM은 명령어 안통함 ㅅㄱ"));
         } return;
     }
-    if(msg.content=='아님'){
-        msg.channel.send('맞는데?');
-    }
-    msg.content.toLowerCase();
+    msg.content.toLowerCase();//대소문자 구분 없애게
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
-        const [CMD_NAME, ...args] = msg.content//문장 정리
-        .trim()
-        .substring(PREFIX.length)
-        .split(/\s+/); // 정규 표현식 공부하기~
-
-        const cmd = Object.keys(Command).find( (property) => 
-            Command[property].find( element=>element==CMD_NAME )!=undefined
+        const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split(/\s+/);//문장 정리
+        const Command=require('./Command/Command.json');
+        const cmd = Object.keys(Command).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            Command[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
         );
 
         //코드 시작
@@ -157,6 +148,30 @@ bot.on('message', async (msg) => {
             default:
                 //msg.channel.send("감사합니다 ㅠㅠ");
                 console.log(CMD_NAME);
+            break;
+        }
+    } else {//명령어 어두 비감지
+        const CMD_Array= msg.content.trim().split(/\s+/); // 정규 표현식 공부하기
+        const psudoCommand=require('./Command/PsudoCommand.json');
+        const cmd = Object.keys(psudoCommand).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            psudoCommand[property].find(element=>CMD_Array.includes(element))!=undefined// 그 프로퍼티 배열 안에서 CMD_Array에 있는 인자와 같은 문자열 찾기
+        );
+        //코드 시작
+        switch(cmd){
+            case '아님':
+                msg.channel.send('맞는데?');
+            break;
+
+            case '한로원':
+                msg.channel.send("로바~");
+            break;
+
+            case '로바':
+                msg.channel.send("로원 바보라는 뜻~");
+            break;
+            
+            case '레순튀':
+                msg.channel.send("레또팅!!");
             break;
         }
     }
