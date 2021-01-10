@@ -72,7 +72,6 @@ bot.on('messageReactionRemove',async (reaction, user) => {
 
 // ! 명령어 모음
 bot.on('message', async (msg) => {
-    console.log(msg.member.id);
     if(msg.author.bot){return;}
     if(msg.channel.type==="dm"){
         if(msg.author!=bot.user){
