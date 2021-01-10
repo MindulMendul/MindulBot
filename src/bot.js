@@ -77,6 +77,13 @@ bot.on('ready', async () => {
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
 });
 
+<<<<<<< HEAD
+=======
+setInterval( (time)=>{
+    }
+);
+
+>>>>>>> 52f94846 (command 파일을 json으로 변경함)
 bot.on('messageReactionAdd', async (reaction, user) => {
     const { name } = reaction.emoji;
     const member=reaction.message.guild.members.cache.get(user.id);
@@ -122,12 +129,22 @@ bot.on('message', async (msg) => {
             (await msg.channel.send("DM은 명령어 안통함 ㅅㄱ"));
         } return;
     }
+<<<<<<< HEAD
     msg.content.toLowerCase();
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
         const [CMD_NAME, ...args] = msg.content//문장 정리
         .trim()
         .substring(PREFIX.length)
         .split(/\s+/);
+=======
+    msg.content.toLowerCase();//대소문자 구분 없애게
+    if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
+        const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split(/\s+/);//문장 정리
+        const Command=require('./Command/Command.json');
+        const cmd = Object.keys(Command).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            Command[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
+        );
+>>>>>>> 52f94846 (command 파일을 json으로 변경함)
 
         //코드 시작
         switch(CMD_NAME){
@@ -326,6 +343,30 @@ bot.on('message', async (msg) => {
                 }
             break;
             */
+        }
+    } else {//명령어 어두 비감지
+        const CMD_Array= msg.content.trim().split(/\s+/); // 정규 표현식 공부하기
+        const psudoCommand=require('./Command/PsudoCommand.json');
+        const cmd = Object.keys(psudoCommand).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            psudoCommand[property].find(element=>CMD_Array.includes(element))!=undefined// 그 프로퍼티 배열 안에서 CMD_Array에 있는 인자와 같은 문자열 찾기
+        );
+        //코드 시작
+        switch(cmd){
+            case '아님':
+                msg.channel.send('맞는데?');
+            break;
+
+            case '한로원':
+                msg.channel.send("로바~");
+            break;
+
+            case '로바':
+                msg.channel.send("로원 바보라는 뜻~");
+            break;
+            
+            case '레순튀':
+                msg.channel.send("레또팅!!");
+            break;
         }
     }
 });
