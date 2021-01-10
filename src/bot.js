@@ -14,7 +14,6 @@ const { COMMAND } = require('./Command/Command');
 const PREFIX=GV.PREFIX;
 const PREFIX_REACTION_MF="@#$4578$#@"; // 중지 이모지 반응용(중지 날린 곳에 지문 남긴 것)
 
-
 const MORMOTTE_ID="751773063766343721";
 
 var dobeTimeCheck=new Queue(); // 얍 명령어 도배 시간 체크 큐
@@ -73,6 +72,7 @@ bot.on('messageReactionRemove',async (reaction, user) => {
 
 // ! 명령어 모음
 bot.on('message', async (msg) => {
+    console.log(msg.member.id);
     if(msg.author.bot){return;}
     if(msg.channel.type==="dm"){
         if(msg.author!=bot.user){

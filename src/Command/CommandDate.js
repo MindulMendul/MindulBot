@@ -1,4 +1,5 @@
 const moment = require('moment');
+const OWNER_ID="554178159717777420";
 
 async function Commanddate(msg) {
     if(msg.author.id===OWNER_ID){
