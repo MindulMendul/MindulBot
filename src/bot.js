@@ -436,6 +436,7 @@ bot.on('message', async (msg) => {
                 }
             break;
 
+<<<<<<< HEAD
             case 'who':
                 if((args.length === 0)) args[0]=MORMOTTE_ID;
 
@@ -448,6 +449,13 @@ bot.on('message', async (msg) => {
                     msg.reply('아이디를 제대로 입력해주세요 ㅎㅎ');
                 }
 =======
+=======
+            case "개발":
+                const devEmbed=require(CommandBasic+"CommandDev.js").devEmbed;
+                msg.channel.send({embed : devEmbed});
+            break;
+
+>>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
             case "한로원":
                 msg.channel.send("로바~");
             break;
