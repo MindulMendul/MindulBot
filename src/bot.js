@@ -112,7 +112,7 @@ setInterval( () => {
     const reminderMessage="펀치킹치러 가세요~";
     if(equalTime(23, 0) || equalTime(21, 0)){
         bot.guilds.cache.forEach( (guild)=>{
-            if(guild.name!="민둘이의 실험방") return;
+            //if(guild.name!="민둘이의 실험방") return; //개발용 코드
             const guildReminder=guild.channels.cache.find( (channel)=>{
                 if(channel.name.startsWith('소야봇'))
                     return channel; //소야봇-공지
