@@ -1,20 +1,26 @@
 require('dotenv').config();
 
-const {Client, Discord} = require('discord.js');
+const {Client, Discord, TextChannel} = require('discord.js');
 const Queue = require('queue-fifo');
 const moment = require('moment');
+<<<<<<< HEAD
+=======
+const { CommandNaga } = require('./Commands/basic/CommandNaga');
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); // 서울 시간
 
 const bot = new Client();
 
+<<<<<<< HEAD
 const PREFIX="ㅣ";
+=======
+const GV = require("./../GlobalVariable.js");
+const PREFIX=GV.PREFIX;
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
 const PREFIX_REACTION_MF="@#$4578$#@"; // 중지 이모지 반응용(중지 날린 곳에 지문 남긴 것)
 
 const MORMOTTE_ID="751773063766343721";
-
-var dobeTimeCheck=new Queue(); // 얍 명령어 도배 시간 체크 큐
-var dobeCheck=new Queue();
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
@@ -74,6 +80,7 @@ const helpEmbed = {
 bot.on('ready', async () => {
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
+<<<<<<< HEAD
 });
 
 <<<<<<< HEAD
@@ -88,6 +95,44 @@ setInterval(function() {
     http.get("http://mindulbot.herokuapp.com");
 }, 10*60*1000); // every 5 minutes (300000)
 >>>>>>> 6ecc80ba (뭔가 문제가 있었나본데, 10분마다 갱신되는 거 다시 올림)
+=======
+    bot.user.setActivity('성적표에 F만 피', { type: 'PLAYING' });
+});
+
+function equalTime(h, m) {
+    return (moment().hour()==h && moment().minute()==m);
+}
+var http = require("http");
+const { error, Console } = require('console');
+setInterval( () => {
+        http.get("http://mindulbot.herokuapp.com");
+    }, 20*60*1000); // every 20 minutes
+setTimeout( () => {
+    const reminderMessage="펀치킹치러 가세요~";
+    if(equalTime(23, 00) || equalTime(21, 00)){
+        bot.guilds.cache.forEach( (guild)=>{
+            if(guild.name!="민둘이의 실험방") return;
+            const guildReminder=guild.channels.cache.find( (channel)=>{
+                if(channel.name.startsWith('소야봇'))
+                    return channel; //소야봇-공지
+                else if(channel.name.startsWith('민둘봇'))
+                    return channel; //민둘봇-공지 
+            });
+            try{
+                guildReminder.send(reminderMessage)
+                .then( msg =>
+                    msg.delete({timeout: 50*1000})
+                );
+            } catch {
+                guild.systemChannel.send(reminderMessage)
+                .then( msg => 
+                    msg.delete({timeout: 50*1000})
+                );
+            }
+        })
+    }
+}, 60*1000); // every 20 minutes
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
 
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 bot.on('messageReactionAdd', async (reaction, user) => {
@@ -136,6 +181,7 @@ bot.on('message', async (msg) => {
         } return;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     msg.content.toLowerCase();
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
         const [CMD_NAME, ...args] = msg.content//문장 정리
@@ -144,15 +190,21 @@ bot.on('message', async (msg) => {
         .split(/\s+/);
 =======
     msg.content.toLowerCase();//대소문자 구분 없애게
+=======
+    //msg.content.toLowerCase(); 대소문자 구분 없애야 하나?
+    const CommandBasic="./Commands/basic/";
+    const CommandMusic="./Commands/music/";
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
         const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split(/\s+/);//문장 정리
-        const Command=require('./Command/Command.json');
-        const cmd = Object.keys(Command).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
-            Command[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
+        const Command_BASIC=require(CommandBasic+"Command.json");
+        const cmd = Object.keys(Command_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            Command_BASIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
         );
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 
         //코드 시작
+<<<<<<< HEAD
         switch(CMD_NAME){
             case '나가':
             case 'skrk':
@@ -179,9 +231,16 @@ bot.on('message', async (msg) => {
             case 'ㅇㅋ':
                 console.log("개발");
                 nagaStance=0;
+=======
+        switch(cmd){
+            case "나가":
+                require(CommandBasic+"CommandNaga.js")
+                .CommandNaga(msg);
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
             break;
-
+            
             case "시간":
+<<<<<<< HEAD
             case "tlrks":
             case "ㅅㄱ":
             case "tr":
@@ -293,6 +352,45 @@ bot.on('message', async (msg) => {
             case "ㄷㅇㅁ":
             case "help":
                 msg.channel.send({ embed: helpEmbed });
+=======
+                require(CommandBasic+"CommandTime.js")
+                .CommandTime(msg);
+            break;
+
+            case "날짜":
+                require(CommandBasic+"CommandDate.js")
+                .CommandDate(msg);
+            break;
+
+            case "얍":
+                msg.reply("얍");
+            break;
+
+            case "ping":
+                msg.reply('Pong!');
+            break;
+
+            case "gnip":
+                msg.reply('!gnoP');
+            break;
+
+            case "민둘":
+                msg.channel.send('민둘이는 바보');
+            break;
+
+            case "맨둘":
+                msg.channel.send('맨둘이는 집나갔음');
+            break;
+            
+            case "야":
+                require(CommandBasic+"CommandAngry.js")
+                .CommandAngry(msg);
+            break;
+
+            case "도움말":
+                const helpEmbed=require(CommandBasic+"CommandHelp.js").helpEmbed;
+                msg.channel.send({embed : helpEmbed});
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
             break;
             /*
             case '킥':
@@ -308,6 +406,7 @@ bot.on('message', async (msg) => {
                     ).user.id;
                 }
 
+<<<<<<< HEAD
                 memberKick=msg.guild.members.cache.get(args[0]);
                 if(memberKick){//킥하는 구간
                     memberKick
@@ -347,30 +446,47 @@ bot.on('message', async (msg) => {
                 } else {
                     msg.reply('아이디를 제대로 입력해주세요 ㅎㅎ');
                 }
+=======
+            case "한로원":
+                msg.channel.send("로바~");
+            break;
+
+            case "로바":
+                msg.channel.send("로원 바보라는 뜻~");
+            break;
+            
+            case "레순튀":
+                msg.channel.send("레또팅!!");
+            break;
+            
+            default:
+                msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
+                console.log(CMD_NAME);
+>>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
             break;
             */
         }
     } else {//명령어 어두 비감지
         const CMD_Array= msg.content.trim().split(/\s+/); // 정규 표현식 공부하기
-        const psudoCommand=require('./Command/PsudoCommand.json');
-        const cmd = Object.keys(psudoCommand).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
-            psudoCommand[property].find(element=>CMD_Array.includes(element))!=undefined// 그 프로퍼티 배열 안에서 CMD_Array에 있는 인자와 같은 문자열 찾기
+        const psudoCommand_BASIC=require(CommandBasic+"/PsudoCommand.json");
+        const cmd = Object.keys(psudoCommand_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            psudoCommand_BASIC[property].find(element=>CMD_Array.includes(element))!=undefined// 그 프로퍼티 배열 안에서 CMD_Array에 있는 인자와 같은 문자열 찾기
         );
         //코드 시작
         switch(cmd){
-            case '아님':
+            case "아님":
                 msg.channel.send('맞는데?');
             break;
 
-            case '한로원':
+            case "한로원":
                 msg.channel.send("로바~");
             break;
 
-            case '로바':
+            case "로바":
                 msg.channel.send("로원 바보라는 뜻~");
             break;
             
-            case '레순튀':
+            case "레순튀":
                 msg.channel.send("레또팅!!");
             break;
         }
