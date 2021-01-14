@@ -161,6 +161,11 @@ bot.on('message', async (msg) => {
                 msg.channel.send({embed : helpEmbed});
             break;
 
+            case "개발":
+                const devEmbed=require(CommandBasic+"CommandDev.js").devEmbed;
+                msg.channel.send({embed : devEmbed});
+            break;
+
             case "한로원":
                 msg.channel.send("로바~");
             break;
