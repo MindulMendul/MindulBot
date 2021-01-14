@@ -22,6 +22,7 @@ bot.on('ready', async () => {
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
     bot.user.setActivity('성적표에 F만 피', { type: 'PLAYING' });
+    //프로그램 고칠 땐 문구를 "결국 전공 수업에서 F를 피하지 못하"로 바꿔두기
 });
 
 function equalTime(h, m) {
@@ -32,9 +33,9 @@ const { error, Console } = require('console');
 setInterval( () => {
         http.get("http://mindulbot.herokuapp.com");
     }, 20*60*1000); // every 20 minutes
-setTimeout( () => {
+setInterval( () => {
     const reminderMessage="펀치킹치러 가세요~";
-    if(equalTime(23, 00) || equalTime(21, 00)){
+    if(equalTime(23, 0) || equalTime(21, 0)){
         bot.guilds.cache.forEach( (guild)=>{
             if(guild.name!="민둘이의 실험방") return;
             const guildReminder=guild.channels.cache.find( (channel)=>{
