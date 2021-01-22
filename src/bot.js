@@ -1,11 +1,12 @@
 require('dotenv').config();
 
 const {Client, Discord, TextChannel} = require('discord.js');
-const Queue = require('queue-fifo');
 const moment = require('moment');
-const { CommandNaga } = require('./Commands/basic/CommandNaga');
 require('moment-timezone');
-moment.tz.setDefault("Asia/Seoul"); // 서울 시간
+moment.tz.setDefault("Asia/Seoul"); //서울 시간
+
+const ytdl = require("ytdl-core"); //노래봇
+const queue = new Map();
 
 const bot = new Client();
 
@@ -21,8 +22,9 @@ var nagaStance=0; // 나가라고 전에 삼고초려 변수
 bot.on('ready', async () => {
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
-    bot.user.setActivity('성적표에 F만 피', { type: 'PLAYING' });
-    //프로그램 고칠 땐 문구를 "결국 전공 수업에서 F를 피하지 못하"로 바꿔두기
+    bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+    //프로그램 고칠 땐 문구를 "성적에서 F만 피"로 바꿔두기
+    //개발할 땐 문구를 "개발"로 바꿔두기
 });
 
 function equalTime(h, m) {
@@ -34,8 +36,9 @@ setInterval( () => {
         http.get("http://mindulbot.herokuapp.com");
     }, 20*60*1000); // every 20 minutes
 setInterval( () => {
-    const reminderMessage="펀치킹치러 가세요~";
-    if(equalTime(23, 0) || equalTime(21, 0)){
+    if(equalTime(23, 0), equalTime(21, 0)){
+        //펀치킹 알람
+        const reminderMessage="펀치킹치러 가세요~";
         bot.guilds.cache.forEach( (guild)=>{
             //if(guild.name!="민둘이의 실험방") return; //개발용 코드
             const guildReminder=guild.channels.cache.find( (channel)=>{
@@ -46,18 +49,14 @@ setInterval( () => {
             });
             try{
                 guildReminder.send(reminderMessage)
-                .then( msg =>
-                    msg.delete({timeout: 50*1000})
-                );
-            } catch {
+                //.then( msg => msg.delete({timeout: 50*1000}));
+            } catch {  
                 guild.systemChannel.send(reminderMessage)
-                .then( msg => 
-                    msg.delete({timeout: 50*1000})
-                );
+                //.then( msg => msg.delete({timeout: 50*1000}));
             }
         })
     }
-}, 60*1000); // every 20 minutes
+}, 60*1000); // every minutes
 
 bot.on('messageReactionAdd', async (reaction, user) => {
     const { name } = reaction.emoji;
@@ -114,7 +113,7 @@ bot.on('message', async (msg) => {
             Command_BASIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
         );
 
-        //코드 시작
+        //코드 시작 CommandBasic
         switch(cmd){
             case "나가":
                 require(CommandBasic+"CommandNaga.js")
@@ -177,7 +176,20 @@ bot.on('message', async (msg) => {
             case "레순튀":
                 msg.channel.send("레또팅!!");
             break;
-            
+
+            case "네고마워요ㅕ":
+                msg.channel.send("진짜 검토한다고요 ㅡㅡ");
+            break;
+        }
+        
+        //코드 시작 CommandMusic
+        switch(cmd){
+            case "노래":
+                msg.channel.send("ㅎㅇ");
+                const serverQueue = queue.get(message.guild.id);
+                
+            break;
+
             default:
                 msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
                 console.log(CMD_NAME);
@@ -193,6 +205,10 @@ bot.on('message', async (msg) => {
         switch(cmd){
             case "아님":
                 msg.channel.send('맞는데?');
+            break;
+
+            case "거짓말":
+                msg.channel.send("그걸 믿냐 ㅋㅋㅋㅋ");
             break;
 
             case "한로원":
