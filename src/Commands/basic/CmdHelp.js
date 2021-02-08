@@ -1,7 +1,11 @@
+<<<<<<< HEAD:src/Commands/basic/CommandHelp.js
 <<<<<<<< HEAD:help.js
 const helpEmbed = {
 ========
 const {PREFIX} = require("./../../../GlobalVariable.js");
+=======
+const {PREFIX} = require("../../../GlobalVariable.js");
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리)):src/Commands/basic/CmdHelp.js
 const moment = require('moment');
 
 const helpembed = {
@@ -48,6 +52,11 @@ const helpembed = {
             name: '나가',
             value: '민둘봇이 방을 나가요.',
             inline: false,
+        },
+        {
+            name: '타로',
+            value: '오늘의 운세를 봐줘요!',
+            inline: true,
         },
     ],
     timestamp: new Date(),

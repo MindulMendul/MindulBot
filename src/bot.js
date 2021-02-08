@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const {Client, Discord, TextChannel} = require('discord.js');
+const {Client} = require('discord.js');
 const moment = require('moment');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,9 +11,6 @@ const { CommandNaga } = require('./Commands/basic/CommandNaga');
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
-
-const ytdl = require("ytdl-core"); //노래봇
-const queue = new Map();
 
 const bot = new Client();
 
@@ -30,6 +27,7 @@ const MORMOTTE_ID="751773063766343721";
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
 
+<<<<<<< HEAD
 const helpEmbed = {
     color: 0xF7CAC9,
     author: {
@@ -81,10 +79,14 @@ const helpEmbed = {
         icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
     },
 };
+=======
+var msgResponse = new Map();//music searching 같은 명령어에 대한 변수 관리
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
 
 bot.on('ready', async () => {
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 });
@@ -106,6 +108,9 @@ setInterval(function() {
     //프로그램 고칠 땐 문구를 "결국 전공 수업에서 F를 피하지 못하"로 바꿔두기
 =======
     bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+=======
+    bot.user.setActivity('개발 당', { type: 'PLAYING' });
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
     //프로그램 고칠 땐 문구를 "성적에서 F만 피"로 바꿔두기
     //개발할 땐 문구를 "개발"로 바꿔두기
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
@@ -114,11 +119,41 @@ setInterval(function() {
 function equalTime(h, m) {
     return (moment().hour()==h && moment().minute()==m);
 }
-var http = require("http");
-const { error, Console } = require('console');
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+}
+
+var http = require("http");//heroku 지속 갱신
+const { compileFunction } = require('vm');
+
 setInterval( () => {
-        http.get("http://mindulbot.herokuapp.com");
-    }, 20*60*1000); // every 20 minutes
+    http.get("http://mindulbot.herokuapp.com");
+}, 20*60*1000); // every 20 minutes
+
+setInterval(()=>{
+    if(equalTime(0)){
+        const tarot=require("./Commands/basic/CmdTarot.js");
+        const arr=tarot.script;
+        shuffle(arr);
+    }
+},60*60*1000);//1시간
+/*
 setInterval( () => {
     if(equalTime(23, 0), equalTime(21, 0)){
         //펀치킹 알람
@@ -145,47 +180,47 @@ setInterval( () => {
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
 =======
 }, 60*1000); // every minutes
+<<<<<<< HEAD
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
+=======
+*/
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
 
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 bot.on('messageReactionAdd', async (reaction, user) => {
-    const { name } = reaction.emoji;
-    const member=reaction.message.guild.members.cache.get(user.id);
-    if(reaction.message.id > 1){
-        switch(name){
-            case '🖕':
-                var msgAuthorID=reaction.message.channel.messages.cache.get(reaction.message.id).member.user.id;
-                if(msgAuthorID===bot.user.id){
-                    msgMiddleFinger=(await reaction.message.channel.send(`${member} 너도 받아라🖕`)).id;
-                    reaction.message.content+=PREFIX_REACTION_MF+msgMiddleFinger;
-                } else {
-                    reaction.message.channel.send('우헤헿 꼴 좋다 ㅋㅋㅋㅋ');
-                }
-            break;
+    const asdf=msgResponse.get(user.id);
+    if(asdf==undefined) return;
+
+    let strDes="";
+    if(asdf.cmd=="tarotCard"){
+        const tarot=require("./Commands/basic/CmdTarot.js");
+        const arr=tarot.script;
+
+        switch(reaction.emoji.name){
+            case "❤️": strDes=`빨간색 하트를 고른 당신! ${arr[0]}`; break;
+            case "🧡": strDes=`주황색 하트를 고른 당신! ${arr[1]}`; break;
+            case "💛": strDes=`노란색 하트를 고른 당신! ${arr[2]}`; break;
+            case "💚": strDes=`초록색 하트를 고른 당신! ${arr[3]}`; break;
+            case "💙": strDes=`파란색 하트를 고른 당신! ${arr[4]}`; break;
+            case "💜": strDes=`보라색 하트를 고른 당신! ${arr[5]}`; break;
         }
+
+        const tarotEmbed = {
+            color: 0xF7CAC9,
+            author: {
+                name: '민둘봇의 타로 하트',
+                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+                url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
+            },
+            image:"./../../TarotCard.png",
+            description: `${strDes}\n\n\n\n모든 설명은 심리학 이론인 [바넘효과](https://terms.naver.com/entry.nhn?docId=3377379&cid=58345&categoryId=58345)를 바탕으로 작성되었습니다.`,
+        };
+        asdf.msg.edit({embed: tarotEmbed});
+        msgResponse.delete(user.id);
     }
 });
 
-bot.on('messageReactionRemove',async (reaction, user) => {
-    const { name } = reaction.emoji;
-    const member = reaction.message.guild.members.cache.get(user.id);
-    if(reaction.message.id > 1){
-        switch(name){
-            case '🖕':
-                var msgAuthorID=reaction.message.channel.messages.cache.get(reaction.message.id).member.user.id;
-                if(msgAuthorID === bot.user.id){
-                    const idIndex=reaction.message.content.indexOf(PREFIX_REACTION_MF);
-                    msgMiddleFinger=reaction.message.content.substring(idIndex+PREFIX_REACTION_MF.length);
-                    reaction.message.content=reaction.message.content.substring(0,idIndex);
-                    reaction.message.channel.messages.delete(msgMiddleFinger);
-                    reaction.message.channel.send(`${member} 그래, 알았으면 됐다.`);
-                }
-            break;
-        }
-    }
-});
-
-// ! 명령어 모음
+// 명령어 모음
 bot.on('message', async (msg) => {
     if(msg.author.bot){return;}
     if(msg.channel.type==="dm"){
@@ -207,13 +242,20 @@ bot.on('message', async (msg) => {
     //msg.content.toLowerCase(); 대소문자 구분 없애야 하나?
     const CommandBasic="./Commands/basic/";
     const CommandMusic="./Commands/music/";
+<<<<<<< HEAD
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
+=======
+
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
         const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split(/\s+/);//문장 정리
-        const Command_BASIC=require(CommandBasic+"Command.json");
-        const cmd = Object.keys(Command_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+        let cmdCheck=false;
+
+        const Command_BASIC=require("./Commands/CmdBasic.json");
+        let cmd = Object.keys(Command_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
             Command_BASIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
         );
+<<<<<<< HEAD
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 
 <<<<<<< HEAD
@@ -247,12 +289,16 @@ bot.on('message', async (msg) => {
                 nagaStance=0;
 =======
 =======
+=======
+        
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
         //코드 시작 CommandBasic
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
         switch(cmd){
             case "나가":
-                require(CommandBasic+"CommandNaga.js")
+                require(CommandBasic+"CmdNaga.js")
                 .CommandNaga(msg);
+<<<<<<< HEAD
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
             break;
             
@@ -371,11 +417,18 @@ bot.on('message', async (msg) => {
                 msg.channel.send({ embed: helpEmbed });
 =======
                 require(CommandBasic+"CommandTime.js")
+=======
+                cmdCheck=true;
+            break;
+            
+            case "시간":
+                require(CommandBasic+"CmdTime.js")
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
                 .CommandTime(msg);
             break;
 
             case "날짜":
-                require(CommandBasic+"CommandDate.js")
+                require(CommandBasic+"CmdDate.js")
                 .CommandDate(msg);
             break;
 
@@ -400,12 +453,12 @@ bot.on('message', async (msg) => {
             break;
             
             case "야":
-                require(CommandBasic+"CommandAngry.js")
+                require(CommandBasic+"CmdAngry.js")
                 .CommandAngry(msg);
             break;
 
             case "도움말":
-                const helpEmbed=require(CommandBasic+"CommandHelp.js").helpEmbed;
+                const helpEmbed=require(CommandBasic+"CmdHelp.js").helpEmbed;
                 msg.channel.send({embed : helpEmbed});
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
             break;
@@ -467,11 +520,24 @@ bot.on('message', async (msg) => {
 =======
 =======
             case "개발":
-                const devEmbed=require(CommandBasic+"CommandDev.js").devEmbed;
+                const devEmbed=require(CommandBasic+"CmdDev.js").devEmbed;
                 msg.channel.send({embed : devEmbed});
             break;
 
+<<<<<<< HEAD
 >>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
+=======
+            case "타로":
+                const tarot=require(CommandBasic+"CmdTarot.js");
+                msgResponse.set(msg.member.id,
+                    {
+                        cmd: "tarotCard",
+                        msg: (await tarot.firstStep(msg))
+                    }
+                );
+            break;
+
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
             case "한로원":
                 msg.channel.send("로바~");
             break;
@@ -487,35 +553,149 @@ bot.on('message', async (msg) => {
             case "네고마워요ㅕ":
                 msg.channel.send("진짜 검토한다고요 ㅡㅡ");
             break;
-        }
-        
-        //코드 시작 CommandMusic
-        switch(cmd){
-            case "노래":
-                msg.channel.send("ㅎㅇ");
-                const serverQueue = queue.get(message.guild.id);
-                
-            break;
 
             default:
+<<<<<<< HEAD
                 msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
                 console.log(CMD_NAME);
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
+=======
+                cmdCheck=true;
+>>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
             break;
             */
         }
+        /*
+        //코드 시작 CommandMusic
+        const Command_MUSIC=require("./Commands/CmdMusic.json");
+        cmd = Object.keys(Command_MUSIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+            Command_MUSIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
+        );
+
+        const musicBot=require(CommandMusic+"Music.js");
+        if(cmdCheck){
+            cmdCheck=false;
+            switch(cmd){
+                case "노래":
+                    musicBot.execute(msg, args.join(" "));
+                break;
+
+                case "멈춤":
+                    musicBot.stop(msg);
+                break;
+
+                case "끄기":
+                    musicBot.skip(msg);
+                break;
+
+                case "큐":
+                    musicBot.show(msg);
+                break;
+
+                case "검색":
+                    const embedTemp = await musicBot.searchYoutube(msg, args.join(" "));
+                    const msgTemp = await msg.channel.send({embed: embedTemp});
+                    msgResponse.set(msg.member.id,
+                        {
+                            guild: msg.guild.id, cmd: "musicSearch",
+                            embed: embedTemp,
+                            message: msgTemp
+                        } //musicSearch는 embed, msg 저장
+                    );
+                    console.log(msgResponse.get(msg.member.id).message);
+                break;
+
+                case "삭제":
+                    musicBot.remove(msg, args);
+                    let argsTemp=[];
+                    args.forEach(element=>{//args의 각각의 성분을
+                        element.split(",").forEach(ele=>{
+                            if(ele!="")argsTemp.push(ele); //,단위로 쪼개어 하나하나 집어넣기
+                        });
+                    });
+
+                    msgResponse.set(msg.member.id,//멤버를 기준으로
+                        {
+                            guild: msg.guild.id,    cmd: "musicRemove",
+                            args: argsTemp,//이게 실제 명령어
+                            timer: setTimeout(()=>{
+                                msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
+                                msgResponse.delete(msg.member.id);
+                            },7*1000)//setTimeout 켜고 끄게 하려고
+                        }   //musicRemove는 args 저장
+                    );
+                break;
+
+                default:
+                    msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
+                    console.log(CMD_NAME);
+                    cmdCheck=true;
+                break;
+            }
+        }
+    */
     } else {//명령어 어두 비감지
+        if(msgResponse.size>0){
+            //다른 명령어에 대한 response를 주었을 때
+            //그에 해당하는 입력값을 알맞게 변형해주는 부분
+            //ex)music search할 때 번호 불러주는 걸 재입력(피드백)받음
+            const cmdResponse=msgResponse.get(msg.member.id);
+            const musicBot=require(CommandMusic+"Music.js");
+
+            if(cmdResponse!=undefined){//있어야 작동함
+                switch(cmdResponse.cmd){
+                    case 'musicSearch':
+                        let arrTemp=[];
+                        msg.content.split(",").forEach(element => {
+                            if(element!="") arrTemp.push(element.trim()-1);
+                        });
+                        while(arrTemp.length>0){
+                            await musicBot.execute(msg, cmdResponse.embed.fields[arrTemp.shift()].url);
+                        }
+                        //cmdResponse.message.delete(1);
+                        //이게 작동을 안함;;
+                        
+                        msgResponse.delete(msg.member.id);
+                    break;
+
+                    case 'musicRemove':
+                        const correctArr=["네","어","ㅇㅋ","ㅇㅇ","y","Y"];
+                        if(correctArr.includes(msg.content)){//긍정
+                            cmdResponse.args.forEach(element => {
+                                if(element.charAt()-1==0){musicBot.skip(msg); console.log("얍");}
+                                else{musicBot.musicQueue.get(msg.guild.id).songs.splice(element.charAt()-1,1);}
+                            });
+                            clearTimeout(msgResponse.timer);
+                            await msg.channel.send("삭제 완료!");
+                            musicBot.show(msg);
+                        } else {//부정
+                            msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
+                        }
+                        msgResponse.delete(msg.member.id);
+                    break;
+
+                    default:
+                        console.log("작동 안돼는 중");
+                    break;
+                }
+                return;
+            }
+        }
+
+        let cmdCheck=false;
+
         const CMD_Array= msg.content.trim().split(/\s+/); // 정규 표현식 공부하기
         const psudoCommand_BASIC=require(CommandBasic+"/PsudoCommand.json");
         const cmd = Object.keys(psudoCommand_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
             psudoCommand_BASIC[property].find(element=>CMD_Array.includes(element))!=undefined// 그 프로퍼티 배열 안에서 CMD_Array에 있는 인자와 같은 문자열 찾기
         );
+
         //코드 시작
         switch(cmd){
             case "아님":
                 msg.channel.send('맞는데?');
             break;
-
+  
             case "거짓말":
                 msg.channel.send("그걸 믿냐 ㅋㅋㅋㅋ");
             break;
@@ -525,11 +705,15 @@ bot.on('message', async (msg) => {
             break;
 
             case "로바":
-                msg.channel.send("로원 바보라는 뜻~");
+                msg.channel.send("바보 맞다던데");
             break;
             
             case "레순튀":
                 msg.channel.send("레또팅!!");
+            break;
+
+            default:
+                cmdCheck=true;
             break;
         }
     }
