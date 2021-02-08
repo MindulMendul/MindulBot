@@ -21,7 +21,7 @@ var msgResponse = new Map();//music searching 같은 명령어에 대한 변수 
 bot.on('ready', async () => {
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
-    bot.user.setActivity('개발 당', { type: 'PLAYING' });
+    bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
     //프로그램 고칠 땐 문구를 "성적에서 F만 피"로 바꿔두기
     //개발할 땐 문구를 "개발"로 바꿔두기
 });
