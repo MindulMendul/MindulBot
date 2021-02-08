@@ -89,6 +89,7 @@ bot.on('ready', async () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 
 <<<<<<< HEAD
@@ -111,6 +112,9 @@ setInterval(function() {
 =======
     bot.user.setActivity('개발 당', { type: 'PLAYING' });
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
+=======
+    bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+>>>>>>> 0125156f (상태메시지 수정을 안했었네 ㅋㅋㅋㅋ)
     //프로그램 고칠 땐 문구를 "성적에서 F만 피"로 바꿔두기
     //개발할 땐 문구를 "개발"로 바꿔두기
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
