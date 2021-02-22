@@ -144,18 +144,15 @@ function shuffle(array) {
 }
 
 var http = require("http");//heroku 지속 갱신
-const { compileFunction } = require('vm');
+
 
 setInterval( () => {
     http.get("http://mindulbot.herokuapp.com");
 }, 20*60*1000); // every 20 minutes
 
 setInterval(()=>{
-    if(equalTime(0)){
-        const tarot=require("./Commands/basic/CmdTarot.js");
-        const arr=tarot.script;
-        shuffle(arr);
-    }
+    if(moment().hour()==0)
+        shuffle(require("./Commands/basic/CmdTarot.js").script);
 },60*60*1000);//1시간
 /*
 setInterval( () => {
@@ -195,18 +192,18 @@ bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
     if(asdf==undefined) return;
 
-    let strDes="";
+    let strDes="", strField="";
     if(asdf.cmd=="tarotCard"){
         const tarot=require("./Commands/basic/CmdTarot.js");
         const arr=tarot.script;
 
         switch(reaction.emoji.name){
-            case "❤️": strDes=`빨간색 하트를 고른 당신! ${arr[0]}`; break;
-            case "🧡": strDes=`주황색 하트를 고른 당신! ${arr[1]}`; break;
-            case "💛": strDes=`노란색 하트를 고른 당신! ${arr[2]}`; break;
-            case "💚": strDes=`초록색 하트를 고른 당신! ${arr[3]}`; break;
-            case "💙": strDes=`파란색 하트를 고른 당신! ${arr[4]}`; break;
-            case "💜": strDes=`보라색 하트를 고른 당신! ${arr[5]}`; break;
+            case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
+            case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
+            case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
+            case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
+            case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
+            case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
         }
 
         const tarotEmbed = {
@@ -214,10 +211,14 @@ bot.on('messageReactionAdd', async (reaction, user) => {
             author: {
                 name: '민둘봇의 타로 하트',
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-                url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
             },
-            image:"./../../TarotCard.png",
-            description: `${strDes}\n\n\n\n모든 설명은 심리학 이론인 [바넘효과](https://terms.naver.com/entry.nhn?docId=3377379&cid=58345&categoryId=58345)를 바탕으로 작성되었습니다.`,
+            description: `${strDes}`,
+            fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
+            image: {url: strField[1]},
+            footer: {
+                text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
+                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+            },
         };
         asdf.msg.edit({embed: tarotEmbed});
         msgResponse.delete(user.id);
@@ -532,13 +533,18 @@ bot.on('message', async (msg) => {
 >>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
 =======
             case "타로":
+                if(msgResponse.get(msg.member.id)!=undefined)
+                    return msg.channel.send("다른 곳에서 타로하트 기능을 이미 쓰고 있어요.");;
+               
                 const tarot=require(CommandBasic+"CmdTarot.js");
+                msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
                 msgResponse.set(msg.member.id,
                     {
-                        cmd: "tarotCard",
+                        guild: msg.guild.id,    cmd: "tarotCard", 
                         msg: (await tarot.firstStep(msg))
                     }
                 );
+                
             break;
 
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
@@ -678,8 +684,11 @@ bot.on('message', async (msg) => {
                         msgResponse.delete(msg.member.id);
                     break;
 
+                    case 'tarotCard':
+                    break;
+
                     default:
-                        console.log("작동 안돼는 중");
+                        console.log(`${msgResponse.cmd}가 작동 안돼는 중`);
                     break;
                 }
                 return;
@@ -705,11 +714,11 @@ bot.on('message', async (msg) => {
             break;
 
             case "한로원":
-                msg.channel.send("로바~");
+                msg.channel.send("로천~");
             break;
 
             case "로바":
-                msg.channel.send("바보 맞다던데");
+                msg.channel.send("알고보니 천재라던데");
             break;
             
             case "레순튀":
