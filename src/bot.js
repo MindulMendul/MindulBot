@@ -23,6 +23,7 @@ const PREFIX=GV.PREFIX;
 const PREFIX_REACTION_MF="@#$4578$#@"; // 중지 이모지 반응용(중지 날린 곳에 지문 남긴 것)
 
 const MORMOTTE_ID="751773063766343721";
+const OWNER_ID="554178159717777420";
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
@@ -144,11 +145,11 @@ function shuffle(array) {
 }
 
 var http = require("http");//heroku 지속 갱신
+const { count } = require('console');
 
-
-setInterval( () => {
-    http.get("http://mindulbot.herokuapp.com");
-}, 20*60*1000); // every 20 minutes
+//setInterval( () => {
+    //http.get("http://mindulbot.herokuapp.com");
+//}, 20*60*1000); // every 20 minutes
 
 setInterval(()=>{
     if(moment().hour()==0)
@@ -300,6 +301,11 @@ bot.on('message', async (msg) => {
         //코드 시작 CommandBasic
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
         switch(cmd){
+            case "테스트":
+                if(msg.author.id!=OWNER_ID) return;// 내꺼 한정임 ㅅㄱ
+
+            break;
+
             case "나가":
                 require(CommandBasic+"CmdNaga.js")
                 .CommandNaga(msg);
@@ -575,7 +581,7 @@ bot.on('message', async (msg) => {
             break;
             */
         }
-        /*
+        
         //코드 시작 CommandMusic
         const Command_MUSIC=require("./Commands/CmdMusic.json");
         cmd = Object.keys(Command_MUSIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
@@ -594,7 +600,7 @@ bot.on('message', async (msg) => {
                     musicBot.stop(msg);
                 break;
 
-                case "끄기":
+                case "스킵":
                     musicBot.skip(msg);
                 break;
 
@@ -612,15 +618,14 @@ bot.on('message', async (msg) => {
                             message: msgTemp
                         } //musicSearch는 embed, msg 저장
                     );
-                    console.log(msgResponse.get(msg.member.id).message);
                 break;
 
                 case "삭제":
                     musicBot.remove(msg, args);
                     let argsTemp=[];
                     args.forEach(element=>{//args의 각각의 성분을
-                        element.split(",").forEach(ele=>{
-                            if(ele!="")argsTemp.push(ele); //,단위로 쪼개어 하나하나 집어넣기
+                        element.split(",").forEach(elem=>{
+                            if(elem!="")argsTemp.push(elem); //,단위로 쪼개어 하나하나 집어넣기
                         });
                     });
 
@@ -636,6 +641,11 @@ bot.on('message', async (msg) => {
                     );
                 break;
 
+                case "노래도움말":
+                    const helpEmbed=require(CommandMusic+"CmdMusicHelp.js").helpEmbed;
+                    msg.channel.send({embed : helpEmbed});
+                break;
+
                 default:
                     msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
                     console.log(CMD_NAME);
@@ -643,7 +653,7 @@ bot.on('message', async (msg) => {
                 break;
             }
         }
-    */
+    
     } else {//명령어 어두 비감지
         if(msgResponse.size>0){
             //다른 명령어에 대한 response를 주었을 때
@@ -655,15 +665,33 @@ bot.on('message', async (msg) => {
             if(cmdResponse!=undefined){//있어야 작동함
                 switch(cmdResponse.cmd){
                     case 'musicSearch':
-                        let arrTemp=[];
+                        let arrTemp=[];//일단 명령어 담아두기
                         msg.content.split(",").forEach(element => {
-                            if(element!="") arrTemp.push(element.trim()-1);
+                            if(element!="") arrTemp.push(element.trim());
                         });
-                        while(arrTemp.length>0){
-                            await musicBot.execute(msg, cmdResponse.embed.fields[arrTemp.shift()].url);
+
+                        let arrCheck=[];//명령어가 유효한지 전수 조사
+
+                        while(arrTemp.length>0) {
+                            const tmpFunc = async ()=>{
+                                let tmp=arrTemp.shift(); tmp++; tmp--; if(isNaN(tmp)) return;//숫자로 형변환이 되는지 확인
+                                tmp=Math.floor(tmp); if(tmp<1 || tmp>10) return;//숫자라면, 정수로 만들어서 1~10 사이에 있는지 확인
+                                arrCheck.push(tmp-1);
+                            }
+                            await tmpFunc();
                         }
-                        //cmdResponse.message.delete(1);
-                        //이게 작동을 안함;;
+                        if(arrCheck.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+                            cmdResponse.message.delete();
+                            msgResponse.delete(msg.member.id);
+                            return msg.channel.send("노래 검색 취소할게요;;");
+                        }
+
+                        while(arrCheck.length>0){
+                            await musicBot.execute(msg, cmdResponse.embed.fields[arrCheck.shift()].url);
+                        }
+
+                        msg.delete();
+                        cmdResponse.message.delete();
                         
                         msgResponse.delete(msg.member.id);
                     break;
