@@ -5,14 +5,10 @@ const musicQueue = new Map();
 const Youtube = require('youtube-node');
 const youtube = new Youtube();
 
-youtube.setKey('AIzaSyCwe-_exbXDwtNy2gw1T1pWLD1wym4oY9M'); // API 키 입력
-
-//// 검색 옵션 시작
-//추가로 arg 선택사항으로 rating video creativeCommon 결정 가능하게 하기 ㅎ
-youtube.addParam('order', 'relevance'); // 연관성 순으로 정렬
-youtube.addParam('type', 'music'); // 타입 지정
-youtube.addParam('videoLicense', 'any'); // 라이센스는 몰라
-//// 검색 옵션 끝
+var https = require("https");
+const axios = require("axios");
+const cheerio = require("cheerio");
+const { search } = require("ffmpeg-static");
 
 let scheduling=undefined;
 
@@ -43,18 +39,9 @@ async function execute(msg, searchStr){
     }
     
     //노래 정보 추출
-    let items;
-    const asdf = async function (){//이 함수를 먼저 작동되어야 함!
-        return new Promise( resolve => {//이를 위해서 promise를 썼는데 왜 되는지는 모르겠음 ㅋ
-            youtube.search(searchStr, 1, (err, result) => {
-                if (err) { console.log(err); return; } // 에러일 경우 에러공지하고 빠져나감
-                items = result["items"].pop(); // 결과 중 items 항목만 가져옴
-                resolve(`https://www.youtube.com/watch?v=${items["id"]["videoId"]}`);  
-            });
-        })
-    }
+    const tmpMusicSite=await searchYoutubeList(searchStr, 1);
+    const musicSite = `https://www.youtube.com/watch?v=${tmpMusicSite.pop().url}`;
 
-    const musicSite = await asdf();
     const songInfo = await ytdl.getInfo(musicSite);
     const song = {
         title: songInfo.videoDetails.title,
@@ -188,37 +175,64 @@ function remove(msg, array){
     msg.channel.send(tempStr);
 }
 
+async function searchYoutubeList(question, limit){
+    const getHtml = async () => {
+        try {
+            return axios.get(`https://www.youtube.com/results?search_query=${encodeURI(question)}&sp=EgIQAQ%253D%253D`);
+            // axios.get 함수를 이용하여 비동기로 유튜브 html 파일을 가져온다.
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    let List = [];
+    const html=await getHtml();
+    const $ = cheerio.load(html.data);
+    
+    const $bodyList = $("body");
+    let txt="", tmpIndex=0, count=limit;
+    
+    $bodyList.children().each( function(i, elem) {
+        if(i==15){//여기에 제목이랑 주소 담겨있음. 이건 내가 하나하나 찾은 거라 변경 ㄴㄴ... 제발 ㅠㅠ
+            txt=$(this).html();
+            while(txt.indexOf('"watchEndpoint":{"videoId":"')>0 && count>0){
+                tmpIndex=txt.indexOf('"watchEndpoint":{"videoId":"');//url 앞 키워드
+                List.push({
+                    title: txt.slice(txt.indexOf('"title":{"runs":[{"text":"') + 26, txt.indexOf('"}],"accessibility":{"')),
+                    url: txt.slice(tmpIndex + 28, tmpIndex + 39)
+                })
+                txt=txt.slice(tmpIndex+39);
+                count--;
+            }
+        };
+    });
+
+    return List;
+}
+
 async function searchYoutube(msg, searchStr){
     const word = searchStr; // 검색어 지정
     const limit = 10;  // 출력 갯수
 
-    var n=1;
     const embedSearchYoutube = {
         title:"노래 검색 목록",
         color: 0xF7CAC9,
+        description:`**${searchStr}**에 대한 검색 결과에요~`,
         fields: []
     }
-
+    var items = await searchYoutubeList(searchStr, limit); // 결과 중 items 항목만 가져옴
     const embedTempFunc = async function (){//이 함수를 먼저 작동되어야 함!
         return new Promise( resolve => {//위에서 이해되지 않았던 코드를 그대로 가져와 봄
-            youtube.search(word, limit, (err, result) => {
-                if (err) { console.log(err); return; } // 에러일 경우 에러공지하고 빠져나감
-                var items = result["items"]; // 결과 중 items 항목만 가져옴
-                
-                for (var i in items) {
-                    const it = items[i];
-                    const title = it["snippet"]["title"];
-                    const url = `https://www.youtube.com/watch?v=${it["id"]["videoId"]}`;
-                    
-                    const explItem={
-                        name: '\u200b',
-                        value: `[${n++}. ${title}](${url})`,//markdown 사용
-                        url: url
-                    };
-                    embedSearchYoutube.fields.push(explItem);
-                }
-                resolve(embedSearchYoutube);
-            });
+            for (var i in items) {
+                let n=i; n++;
+                const explItem={
+                    name: '\u200b',
+                    value: `[${n}. ${items[i].title}](https://www.youtube.com/watch?v=${items[i].url})`,//markdown 사용
+                    url: items[i].url
+                };
+                embedSearchYoutube.fields.push(explItem);
+            }
+            resolve(embedSearchYoutube);
         }); 
     }
     return await embedTempFunc();
