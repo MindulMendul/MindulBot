@@ -51,16 +51,16 @@ function shuffle(array) {
 }
 
 var http = require("http");//heroku 지속 갱신
-const { count } = require('console');
 
-//setInterval( () => {
-    //http.get("http://mindulbot.herokuapp.com");
-//}, 20*60*1000); // every 20 minutes
+setInterval( () => {
+    http.get("http://mindulbot.herokuapp.com");
+}, 20*60*1000); // every 20 minutes
 
 setInterval(()=>{
     if(moment().hour()==0)
         shuffle(require("./Commands/basic/CmdTarot.js").script);
 },60*60*1000);//1시간
+
 /*
 setInterval( () => {
     if(equalTime(23, 0), equalTime(21, 0)){
