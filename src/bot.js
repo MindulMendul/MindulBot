@@ -622,7 +622,7 @@ bot.on('message', async (msg) => {
             break;
 
             case"건의":
-                msg.author.send(args);
+                bot.users.cache.get(OWNER_ID).send(`'${msg.guild.name}'길드의 '${msg.channel.name}'채널에서 '${msg.author.username}'님이 건의사항 보내주셨어요.\n> ${args.join(" ")}`);
             break;
 
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
