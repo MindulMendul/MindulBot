@@ -88,48 +88,114 @@ setInterval( () => {
 
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
-    if(asdf==undefined) return;
+    if(asdf!=undefined){//특수 명령어가 있는 경우 ex) 타로
+        let strDes="", strField="";
+        if(asdf.cmd=="tarotCard"){
+            const tarot=require("./Commands/basic/CmdTarot.js");
+            const arr=tarot.script;
+            
+            reaction.users.remove(user);
+            switch(reaction.emoji.name){
+                case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
+                case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
+                case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
+                case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
+                case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
+                case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
+            }
 
-    let strDes="", strField="";
-    if(asdf.cmd=="tarotCard"){
-        const tarot=require("./Commands/basic/CmdTarot.js");
-        const arr=tarot.script;
-
-        switch(reaction.emoji.name){
-            case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
-            case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
-            case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
-            case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
-            case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
-            case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
+            const tarotEmbed = {
+                color: 0xF7CAC9,
+                author: {
+                    name: '민둘봇의 타로 하트',
+                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+                },
+                description: `${strDes}`,
+                fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
+                image: {url: strField[1]},
+                footer: {
+                    text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
+                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+                },
+            };
+            asdf.msg.edit({embed: tarotEmbed});
+            msgResponse.delete(user.id);
         }
+    } else {//특수 명령어가 없는 경우 ex)노래 사운드 조절
+        const msg=reaction.message;
+        if(msg.author.id==MORMOTTE_ID){//봇이 단 메시지의 이모지인지 확인
+            if(user.id==MORMOTTE_ID) return;//자기가 이모지 단 거에 대한 이벤트는 의미 없지
+            if(msg.content.startsWith("이번 선곡은~\n")){//노래 이모지
+                const musicBot=require("./Commands/music/Music.js");
+                const serverQueue=musicBot.musicQueue.get(msg.guild.id);
+                const dispatcher=serverQueue.dispatcher;
 
-        const tarotEmbed = {
-            color: 0xF7CAC9,
-            author: {
-                name: '민둘봇의 타로 하트',
-                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-            },
-            description: `${strDes}`,
-            fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
-            image: {url: strField[1]},
-            footer: {
-                text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
-                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-            },
-        };
-        asdf.msg.edit({embed: tarotEmbed});
-        msgResponse.delete(user.id);
+                reaction.users.remove(user);//일단 이모지부터 지우고 시작하자~
+                switch(reaction.emoji.name){
+                    case "⏯":
+                        if(dispatcher.paused) dispatcher.resume();
+                        else dispatcher.pause();
+                    break;
+
+                    case "⏩":
+                        musicBot.skip(msg);
+                    break;
+
+                    case "⏹":
+                        musicBot.stop(msg);
+                    break;
+
+                    case "🔇": 
+                        if(!serverQueue.mute){//뮤트 걸어야 할 때
+                            dispatcher.setVolume(0);
+                            msg.channel.send(`음소거되었어요`)
+                        } else {//뮤트 걸린 거 풀 때
+                            dispatcher.setVolume(serverQueue.volume/100);
+                            msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`)
+                        }
+                        serverQueue.mute=!(serverQueue.mute);
+                    break;
+
+                    case "🔉":
+                        serverQueue.volume=Math.max(serverQueue.volume-10,0);
+                        dispatcher.setVolume(serverQueue.volume/100);
+                        msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    break;
+
+                    case "🔊":
+                        serverQueue.volume=Math.min(serverQueue.volume+10,100);
+                        dispatcher.setVolume(serverQueue.volume/100);
+                        msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    break;
+                }
+            }
+        }
     }
+
 });
 
 // 명령어 모음
 bot.on('message', async (msg) => {
     if(msg.author.bot){return;}
     if(msg.channel.type==="dm"){
-        if(msg.author!=bot.user){
+        if(msg.author!=OWNER_ID){
             (await msg.channel.send("DM은 명령어 안통함 ㅅㄱ"));
-        } return;
+        } else {
+            if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
+                const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split("/");//문장 정리
+                if(CMD_NAME!="공지") return;
+                bot.guilds.cache.find((guild)=>{
+                    if(guild.name==args[0]){
+                        guild.channels.cache.find((channel)=>{
+                            if(channel.name==args[1]){
+                                channel.send(args[2]);
+                            }
+                        })
+                    }
+                })
+            }
+        }
+        return
     }
     //msg.content.toLowerCase(); 대소문자 구분 없애야 하나?
     const CommandBasic="./Commands/basic/";
@@ -154,7 +220,6 @@ bot.on('message', async (msg) => {
             case "나가":
                 require(CommandBasic+"CmdNaga.js")
                 .CommandNaga(msg);
-                cmdCheck=true;
             break;
             
             case "시간":
@@ -214,7 +279,10 @@ bot.on('message', async (msg) => {
                         msg: (await tarot.firstStep(msg))
                     }
                 );
-                
+            break;
+
+            case"건의":
+                msg.author.send(args);
             break;
 
             case "한로원":
