@@ -8,7 +8,6 @@ const youtube = new Youtube();
 var https = require("https");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const { search } = require("ffmpeg-static");
 
 let scheduling=undefined;
 
@@ -21,12 +20,14 @@ async function execute(msg, searchStr){
             "보이스채널에서 해주세요"
         );
     }
-    const permissions = voiceChannel.permissionsFor(msg.client.user);
-    if(!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-        return msg.channel.send(
-            "권한이 없네요?"
+
+    const permissions = voiceChannel.permissionsFor(message.client.user);
+    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+        return message.channel.send(
+        `권한이 없어서 틀 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n보이스채널 입장권한: ${permissions.has("CONNECT")}\n보이스채널 발언권한: ${permissions.has("SPEAK")}`
         );
     }
+    
     if(searchStr==""){
         return msg.channel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
     }
@@ -56,8 +57,8 @@ async function execute(msg, searchStr){
             voiceChannel: voiceChannel,
             connection: null,
             songs: [], //여기에 노래가 담김
-            volume: 2,
-            playing: true
+            dispatcher: null, //노래 틀어주는 녀석
+            volume: 70, mute: false, isPlaying: false//노래 조절 기능
         };
 
         musicQueue.set(msg.guild.id, queueContruct);
@@ -85,8 +86,9 @@ function skip(msg){
         return msg.channel.send(
           "보이스채널에서 해주세요"
         );
-    if (!serverQueue)
+    if (!serverQueue||serverQueue.songs.length==0)
         return msg.channel.send("스킵할 노래가 없어요!");
+
     serverQueue.connection.dispatcher.end();
 }
 
@@ -106,7 +108,7 @@ function stop(msg){
 }
 
 //play 함수
-function play(guild, song){
+async function play(guild, song){
     const serverQueue = musicQueue.get(guild.id);
 
     if (!song) {
@@ -127,8 +129,17 @@ function play(guild, song){
             play(guild, serverQueue.songs[0]);
         })
         .on("error", error => console.error(error));//역시 이것도 위와 동
-    dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-    serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
+    
+    dispatcher.setVolume(serverQueue.volume/100);
+    serverQueue.dispatcher=dispatcher;//디스패쳐 저장
+    
+    const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
+    tmpmsg.react("⏯")
+          .then(()=>tmpmsg.react("⏩"))
+          .then(()=>tmpmsg.react("⏹"))
+          .then(()=>tmpmsg.react("🔇"))
+          .then(()=>tmpmsg.react("🔉"))
+          .then(()=>tmpmsg.react("🔊"));
 }
 
 function show(msg){
