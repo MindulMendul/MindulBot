@@ -48,7 +48,12 @@ const helpembed = {
         {
             name: '타로',
             value: '오늘의 운세를 봐줘요!',
-            inline: true,
+            inline: false,
+        },
+        {
+            name: '건의',
+            value: '민둘봇에 말하고 싶은 게 있으면 건의해주세요. 의견 참고해서 반영할 수 있도록 하겠습니다 ㅎㅎ',
+            inline: false,
         },
     ],
     timestamp: moment(),
