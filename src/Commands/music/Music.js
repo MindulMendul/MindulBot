@@ -58,7 +58,7 @@ async function execute(msg, searchStr){
             connection: null,
             songs: [], //여기에 노래가 담김
             dispatcher: null, //노래 틀어주는 녀석
-            volume: 70, mute: false, isPlaying: false//노래 조절 기능
+            volume: 30, mute: false, isPlaying: false//노래 조절 기능
         };
 
         musicQueue.set(msg.guild.id, queueContruct);
