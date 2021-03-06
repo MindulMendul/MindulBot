@@ -60,27 +60,27 @@ const script=[
     "심장병이 있거나 한 건 아니에요. 오늘은 어떤 행운이 따를지 기대해보자고요! 생각만 해도 벌써부터 가슴이 두근두근 거리지 않나요?"],
 
     ["조심해야 하는 날",            //7
-    "https://i.imgur.com/AXEsNhE.png",
+    "https://i.imgur.com/zNV3zaG.png",
     "뭐든 조심해서 나쁠 건 없죠~ 세상에 신중해야 하는 게 얼마나 많은데요. 당신은 분명 모든 일을 다 잘 해내리라 믿어요!"],
 
     ["기분 좋은 날",               //8
-    "https://i.imgur.com/Wxw0Ifa.png",
+    "https://i.imgur.com/ClHvecJ.png",
     "저는 ㄹㅇㅋㅋ만 칠게요~ 기분이 안좋으면 어때요? 금방 회복하고 좋아질 거라 저는 믿어 의심치 않아요!"],
 
     ["웃긴 일이 가득한 날",         //9
-    "https://i.imgur.com/AXEsNhE.png",
+    "https://i.imgur.com/GJJ4Z9S.png",
     "낙엽만 굴러가도 웃길 거에요~ 웃으면 복이 온다는데, 오늘은 얼마나 큰 복이 굴러들어올지 기대가 되네요~"],
 
     ["조용히 지나가야 하는 날",     //10
-    "https://i.imgur.com/Wxw0Ifa.png",
+    "https://i.imgur.com/bzVojAk.png",
     "하지만 소리내야 할 때는 내야 하는 날이기도 해요. 사실 소리의 크기는 상관없는 것 같다고 생각해요."],
 
     ["멋진 날",                     //11
-    "https://i.imgur.com/AXEsNhE.png",
+    "https://i.imgur.com/forNp1u.png",
     "언제 말해도 당신은 항상 멋진 사람인 걸요! 어떤 하루를 보내도 멋진 하루가 되어있을 거에요."],
 
     ["하루가 정말 기대되는 날",     //12
-    "https://i.imgur.com/AXEsNhE.png",
+    "https://i.imgur.com/B5GEAr5.png",
     "설사 오늘이 월요일이라도 문제 없어요 ㅎㅎ 아니면 말고요. 이런 글을 작성하는 저도 월요일은 무서워요."],
 ];
 
