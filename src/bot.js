@@ -30,7 +30,7 @@ const func=require("./func.js");
 var http = require("http");//heroku 지속 갱신
 setInterval( () => {
     http.get("http://mindulbot.herokuapp.com");
-}, 20*60*1000); // every 20 minutes
+}, 10*60*1000); // every 20 minutes
 
 //타로 카드 셔플
 setImmediate(()=>{
