@@ -110,6 +110,7 @@ setInterval(function() {
     //프로그램 고칠 땐 문구를 "결국 전공 수업에서 F를 피하지 못하"로 바꿔두기
 =======
     bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+<<<<<<< HEAD
 =======
     bot.user.setActivity('개발 당', { type: 'PLAYING' });
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
@@ -119,45 +120,28 @@ setInterval(function() {
     //프로그램 고칠 땐 문구를 "성적에서 F만 피"로 바꿔두기
     //개발할 땐 문구를 "개발"로 바꿔두기
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
+=======
+>>>>>>> 66a72334 (권한 확인 코드 재정비)
 });
 
-function equalTime(h, m) {
-    return (moment().hour()==h && moment().minute()==m);
-}
-
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-}
+const func=require("./func.js");
 
 var http = require("http");//heroku 지속 갱신
-
 setInterval( () => {
     http.get("http://mindulbot.herokuapp.com");
 }, 20*60*1000); // every 20 minutes
 
-setInterval(()=>{
-    if(moment().hour()==0)
-        shuffle(require("./Commands/basic/CmdTarot.js").script);
-},60*60*1000);//1시간
-
+//타로 카드 셔플
+setImmediate(()=>{
+    func.shuffle(require("./Commands/basic/CmdTarot.js").script);
+    setInterval(()=>{
+        if(moment().hour()==0)
+            func.shuffle(require("./Commands/basic/CmdTarot.js").script);
+    },60*60*1000)//1시간
+});
 /*
 setInterval( () => {
-    if(equalTime(23, 0), equalTime(21, 0)){
+    if(func.equalTime(23, 0), func.equalTime(21, 0)){
         //펀치킹 알람
         const reminderMessage="펀치킹치러 가세요~";
         bot.guilds.cache.forEach( (guild)=>{
@@ -287,12 +271,10 @@ bot.on('message', async (msg) => {
             if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
                 const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split("/");//문장 정리
                 if(CMD_NAME!="공지") return;
-                bot.guilds.cache.find((guild)=>{
+                bot.guilds.cache.find((guild)=>{//길드 이름 찾기
                     if(guild.name==args[0]){
-                        guild.channels.cache.find((channel)=>{
-                            if(channel.name==args[1]){
-                                channel.send(args[2]);
-                            }
+                        guild.channels.cache.find((channel)=>{//서버 이름 찾기
+                            if(channel.name==args[1]){channel.send(args[2]);}//공지 메시지 보내기
                         })
                     }
                 })
@@ -300,6 +282,7 @@ bot.on('message', async (msg) => {
         }
         return
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     msg.content.toLowerCase();
@@ -312,6 +295,9 @@ bot.on('message', async (msg) => {
     msg.content.toLowerCase();//대소문자 구분 없애게
 =======
     //msg.content.toLowerCase(); 대소문자 구분 없애야 하나?
+=======
+
+>>>>>>> 66a72334 (권한 확인 코드 재정비)
     const CommandBasic="./Commands/basic/";
     const CommandMusic="./Commands/music/";
 <<<<<<< HEAD
@@ -327,6 +313,7 @@ bot.on('message', async (msg) => {
         let cmd = Object.keys(Command_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
             Command_BASIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
         );
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 
@@ -362,6 +349,9 @@ bot.on('message', async (msg) => {
 =======
 =======
 =======
+=======
+        const permissions = msg.channel.permissionsFor(msg.client.user);
+>>>>>>> 66a72334 (권한 확인 코드 재정비)
         
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
         //코드 시작 CommandBasic
@@ -369,7 +359,11 @@ bot.on('message', async (msg) => {
         switch(cmd){
             case "테스트":
                 if(msg.author.id!=OWNER_ID) return;// 내꺼 한정임 ㅅㄱ
-
+                console.log(`MANAGE_EMOJIS: ${permissions.has("MANAGE_EMOJIS")}`);
+                console.log(`ADD_REACTIONS: ${permissions.has("ADD_REACTIONS")}`);
+                console.log(`ATTACH_FILES: ${permissions.has("ATTACH_FILES")}`);
+                console.log(`MANAGE_MESSAGES: ${permissions.has("MANAGE_MESSAGES")}`);
+                console.log("퍼미션 체크 완료");
             break;
 
             case "나가":
@@ -608,17 +602,21 @@ bot.on('message', async (msg) => {
 >>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
 =======
             case "타로":
-                if(msgResponse.get(msg.member.id)!=undefined)
-                    return msg.channel.send("다른 곳에서 타로하트 기능을 이미 쓰고 있어요.");;
-               
-                const tarot=require(CommandBasic+"CmdTarot.js");
-                msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
-                msgResponse.set(msg.member.id,
-                    {
-                        guild: msg.guild.id,    cmd: "tarotCard", 
-                        msg: (await tarot.firstStep(msg))
-                    }
-                );
+                if(!permissions.has("ADD_REACTIONS")){
+                    msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
+                } else {
+                    if(msgResponse.get(msg.member.id)!=undefined)
+                        return msg.channel.send("다른 곳에서 타로하트 기능을 이미 쓰고 있어요.");;
+                
+                    const tarot=require(CommandBasic+"CmdTarot.js");
+                    msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
+                    msgResponse.set(msg.member.id,
+                        {
+                            guild: msg.guild.id,    cmd: "tarotCard", 
+                            msg: (await tarot.firstStep(msg))
+                        }
+                    );
+                }
             break;
 
             case"건의":
@@ -784,9 +782,6 @@ bot.on('message', async (msg) => {
                         msgResponse.delete(msg.member.id);
                     break;
 
-                    case 'tarotCard':
-                    break;
-
                     default:
                         console.log(`${msgResponse.cmd}가 작동 안돼는 중`);
                     break;
@@ -814,11 +809,11 @@ bot.on('message', async (msg) => {
             break;
 
             case "한로원":
-                msg.channel.send("로천~");
+                msg.channel.send("로바~");
             break;
 
             case "로바":
-                msg.channel.send("알고보니 천재라던데");
+                msg.channel.send("ㅇㅈ");
             break;
             
             case "레순튀":

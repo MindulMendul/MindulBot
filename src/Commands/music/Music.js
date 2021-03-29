@@ -22,9 +22,9 @@ async function execute(msg, searchStr){
     }
 
     const permissions = voiceChannel.permissionsFor(msg.client.user);
-    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-        return message.channel.send(
-        `권한이 없어서 틀 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n보이스채널 입장권한: ${permissions.has("CONNECT")}\n보이스채널 발언권한: ${permissions.has("SPEAK")}`
+    if (!permissions.has("CONNECT") || !permissions.has("SPEAK") || !msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")) {
+        return msg.channel.send(
+        `권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 보이스채널 입장권한: ${permissions.has("CONNECT")}\n> 보이스채널 발언권한: ${permissions.has("SPEAK")}\n> 텍스트채널 이모지권한: ${msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")}`
         );
     }
     
@@ -83,9 +83,7 @@ function skip(msg){
     const serverQueue = musicQueue.get(msg.guild.id);
 
     if (!msg.member.voice.channel)
-        return msg.channel.send(
-          "보이스채널에서 해주세요"
-        );
+        return msg.channel.send("보이스채널에서 해주세요");
     if (!serverQueue||serverQueue.songs.length==0)
         return msg.channel.send("스킵할 노래가 없어요!");
 
@@ -97,10 +95,8 @@ function stop(msg){
     const serverQueue = musicQueue.get(msg.guild.id);
 
     if (!msg.member.voice.channel)
-        return msg.channel.send(
-          "보이스채널에서 해주세요"
-        );
-      
+        return msg.channel.send("보이스채널에서 해주세요");
+
     if (!serverQueue)
         return msg.channel.send("멈출 노래가 없는데요?");
     serverQueue.songs = [];
@@ -144,7 +140,10 @@ async function play(guild, song){
 
 function show(msg){
     const serverQueue = musicQueue.get(msg.guild.id);
-    
+
+    if (!msg.member.voice.channel)
+        return msg.channel.send("보이스채널에서 해주세요");
+
     if(!serverQueue)
         return msg.channel.send("재생목록에 노래가 없어요!");
     else{
@@ -172,6 +171,9 @@ function show(msg){
 function remove(msg, array){
     const serverQueue = musicQueue.get(msg.guild.id);
 
+    if (!msg.member.voice.channel)
+        return msg.channel.send("보이스채널에서 해주세요");
+
     if(!serverQueue)
         return msg.channel.send("재생목록에 노래가 없어요!");
     
@@ -187,6 +189,15 @@ function remove(msg, array){
 }
 
 async function searchYoutubeList(question, limit){
+    if (!msg.member.voice.channel)
+        return msg.channel.send("보이스채널에서 해주세요");
+    
+    if (!permissions.has("CONNECT") || !permissions.has("SPEAK") || !msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")) {
+        return msg.channel.send(
+        `권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 보이스채널 입장권한: ${permissions.has("CONNECT")}\n> 보이스채널 발언권한: ${permissions.has("SPEAK")}\n> 텍스트채널 이모지권한: ${msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")}`
+        );
+    }
+
     const getHtml = async () => {
         try {
             return axios.get(`https://www.youtube.com/results?search_query=${encodeURI(question)}&sp=EgIQAQ%253D%253D`);
