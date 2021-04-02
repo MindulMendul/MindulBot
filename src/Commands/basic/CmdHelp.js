@@ -8,7 +8,7 @@ const helpembed = {
         icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
         url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
     },
-    description: '명령어는 이런 것들이 있어요.\n 명령어 전에는 "' + PREFIX + '" 를 입력하세요!',
+    description: '명령어는 이런 것들이 있어요.\n 명령어 전에는 "' + PREFIX + '" 를 입력하세요! 노래명령어를 원하신다면 따로 "ㅣ노래명령어" 명령어로 제공하고 있으니 참고 바랍니다^^',
     fields: [
         {
             name: 'ping',
