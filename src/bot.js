@@ -245,8 +245,6 @@ bot.on('message', async (msg) => {
                             reply: undefined,
                         }
                     );
-
-                    
                 }
             break;
 
@@ -495,8 +493,6 @@ bot.on('message', async (msg) => {
                             const gleer=require(`./Commands/game/${cmdResponse.gameName}.js`);
                             const answerAPI=gleer.createAPI(msg);
                             await gleer.refreshQuest(msg, answerAPI.stage);
-                            
-                            
 
                             const gameData=require(`./Commands/game/gameData.js`);
                             gameData.setData(msg.member.id, {gameName: cmdResponse.gameName, stage: answerAPI.stage});
@@ -516,6 +512,7 @@ bot.on('message', async (msg) => {
                                 await gleer.refreshQuest(msg, ++answerAPI.stage);
 
                                 if(answerAPI.answer==undefined){
+                                    msgResponse.delete(msg.member.id);
                                     cmdResponse.reply = await msg.reply(script);
                                     return msg.channel.send("축하드립니다, 모든 정답을 맞추셨습니다.");
                                 }
