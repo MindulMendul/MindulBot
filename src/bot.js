@@ -358,12 +358,63 @@ bot.on('message', async (msg) => {
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
         switch(cmd){
             case "테스트":
-                if(msg.author.id!=OWNER_ID) return;// 내꺼 한정임 ㅅㄱ
-                console.log(`MANAGE_EMOJIS: ${permissions.has("MANAGE_EMOJIS")}`);
-                console.log(`ADD_REACTIONS: ${permissions.has("ADD_REACTIONS")}`);
-                console.log(`ATTACH_FILES: ${permissions.has("ATTACH_FILES")}`);
-                console.log(`MANAGE_MESSAGES: ${permissions.has("MANAGE_MESSAGES")}`);
-                console.log("퍼미션 체크 완료");
+                if(msg.author!=OWNER_ID)//테스트 기능은 나만 쓸 수 있어~
+                    return msg.channel.send("개발자 전용 명령어입니다. 죄송해요 ^^;;");
+
+                if(!permissions.has(["ADD_REACTIONS","MANAGE_MESSAGES"]))
+                    return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}\n> 택스트 편집 권한: ${permissions.has("MANAGE_MESSAGES")}`);
+                
+                const gameData=require(`./Commands/game/gameData.js`);
+                const getData=gameData.getData(msg);
+
+                if(msgResponse.get(msg.member.id)!=undefined){
+                    if(msgResponse.get(msg.member.id).cmd=="textGame"){
+                        if(args[0]=="끄기") { //끄기 명령어는 게임을 저장하고 끔
+                            msgResponse.delete(msg.member.id);
+
+                            if(getData==undefined){//선택창인 경우만 해당
+                                return msg.channel.send("게임이 선택되지 않고 종료되었습니다. 다음에는 꼭 게임을 실행해서 재밌게 즐겨주세요 ㅎㅎ");
+                            } //나머지의 경우 무조건 data가 있는 경우. 없으면 에러인데, 에러체크는 절대 안하쥬~? ㅋㅋㅋㅋ;;;.... ㅠㅠㅠ
+                            //data가 있는데 끄기 명령어면 data를 저장하고 끄겠다는 얘기지.
+                            const gleer=require(`./Commands/game/${getData.gameName}.js`);
+                            const answerAPI=await gleer.getAPI(msg);
+                            gameData.setData(msg.member.id, {
+                                gameName: getData.gameName,
+                                stage: answerAPI.stage
+                            });
+                            return msg.channel.send("해당 게임이 종료되었습니다. 아직은 저장되지 않습니다;;;");
+                        }
+                    }
+                    return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+                }
+                
+                if(getData==undefined){//정보가 없으면 새로 만들어야지
+                    const embed = await msg.channel.send({embed: require("./Commands/game/gameList.js").gameList})
+                    msgResponse.set(msg.member.id,//최초 게임 선택지
+                        {
+                            guild: msg.guild.id,    cmd: "textGame", 
+                            gameName: undefined,
+                            msg: embed,
+                            reply: undefined,
+                        }
+                    );
+                } else {//정보가 있으면 정보를 불러와야지 
+                    msg.channel.send("저장된 정보 확인");
+                    const gleer=require(`./Commands/game/${getData.gameName}.js`);
+                    const answerAPI= await gleer.createAPI(msg);   await gleer.refreshQuest(msg, getData.stage);
+                    const embed = await msg.channel.send({embed : answerAPI.quest});
+
+                    msgResponse.set(msg.member.id,//최초 게임 선택지
+                        {
+                            guild: msg.guild.id,    cmd: "textGame", 
+                            gameName: getData.gameName,
+                            msg: embed,
+                            reply: undefined,
+                        }
+                    );
+
+                    
+                }
             break;
 
             case "나가":
@@ -602,21 +653,20 @@ bot.on('message', async (msg) => {
 >>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
 =======
             case "타로":
-                if(!permissions.has("ADD_REACTIONS")){
-                    msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
-                } else {
-                    if(msgResponse.get(msg.member.id)!=undefined)
-                        return msg.channel.send("다른 곳에서 타로하트 기능을 이미 쓰고 있어요.");;
+                if(!permissions.has("ADD_REACTIONS"))
+                    return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
                 
-                    const tarot=require(CommandBasic+"CmdTarot.js");
-                    msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
-                    msgResponse.set(msg.member.id,
-                        {
-                            guild: msg.guild.id,    cmd: "tarotCard", 
-                            msg: (await tarot.firstStep(msg))
-                        }
-                    );
-                }
+                if(msgResponse.get(msg.member.id)!=undefined)
+                    return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+                
+                const tarot=require(CommandBasic+"CmdTarot.js");
+                msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
+                msgResponse.set(msg.member.id,
+                    {
+                        guild: msg.guild.id,    cmd: "tarotCard", 
+                        msg: (await tarot.firstStep(msg))
+                    }
+                );
             break;
 
             case"건의":
@@ -679,6 +729,9 @@ bot.on('message', async (msg) => {
                 break;
 
                 case "검색":
+                    if(msgResponse.get(msg.member.id)!=undefined)
+                        return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+
                     const embedTemp = await musicBot.searchYoutube(msg, args.join(" "));
                     const msgTemp = await msg.channel.send({embed: embedTemp});
                     msgResponse.set(msg.member.id,
@@ -691,6 +744,9 @@ bot.on('message', async (msg) => {
                 break;
 
                 case "삭제":
+                    if(msgResponse.get(msg.member.id)!=undefined)
+                        return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+                    
                     musicBot.remove(msg, args);
                     let argsTemp=[];
                     args.forEach(element=>{//args의 각각의 성분을
@@ -767,10 +823,10 @@ bot.on('message', async (msg) => {
                     break;
 
                     case 'musicRemove':
-                        const correctArr=["네","어","ㅇㅋ","ㅇㅇ","y","Y"];
+                        const correctArr=["네","어","ㅇㅋ","ㅇㅇ","y","Y","알았어","dz","dd", "얍"];
                         if(correctArr.includes(msg.content)){//긍정
                             cmdResponse.args.forEach(element => {
-                                if(element.charAt()-1==0){musicBot.skip(msg); console.log("얍");}
+                                if(element.charAt()-1==0){musicBot.skip(msg);}
                                 else{musicBot.musicQueue.get(msg.guild.id).songs.splice(element.charAt()-1,1);}
                             });
                             clearTimeout(msgResponse.timer);
@@ -780,6 +836,65 @@ bot.on('message', async (msg) => {
                             msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
                         }
                         msgResponse.delete(msg.member.id);
+                    break;
+
+                    case "textGame":
+                        if(cmdResponse.gameName==undefined){ //최초 게임 선택창
+                            var str=null;
+                            const gameTitleArr=require("./Commands/game/gameList.js").gameList.fields;
+
+                            for(i of gameTitleArr){//fields에 있는 게임 이름 전수 조사
+                                if(msg.content==i.name.slice(i.name.indexOf(".")+2) || msg.content==i.name.split(". ")[0]) str=i.name.slice(i.name.indexOf(".")+2);
+                            }
+
+                            if(str==null) // 게임 선택 안됐다
+                                return msg.channel.send("게임 이름을 다시 제대로 입력해주세요!(단순히 해당 게임에 대한 숫자 입력으로도 가능해요!)");
+                            
+                            cmdResponse.gameName=str;
+
+                            const gleer=require(`./Commands/game/${cmdResponse.gameName}.js`);
+                            const answerAPI=gleer.createAPI(msg);
+                            await gleer.refreshQuest(msg, answerAPI.stage);
+                            
+                            
+
+                            const gameData=require(`./Commands/game/gameData.js`);
+                            gameData.setData(msg.member.id, {gameName: cmdResponse.gameName, stage: answerAPI.stage});
+
+                            await cmdResponse.msg.delete();
+                            cmdResponse.msg = await msg.channel.send({embed : answerAPI.quest});
+                            msg.delete();
+                        } else {//해당 게임에 대한 feedback 구역
+                            const gleer=require(`./Commands/game/${cmdResponse.gameName}.js`);
+                            const answerAPI=gleer.getAPI(msg);
+                            let script=`현재 게임 : ${cmdResponse.gameName}, stage : ${answerAPI.quest.fields[0].name}\n 메시지 ${msg.content} 에 대한 응답입니다.\n> `;
+
+                            if(msg.content===answerAPI.answer){
+                                script+="정답입니다!";
+                                cmdResponse.msg.delete();
+
+                                await gleer.refreshQuest(msg, ++answerAPI.stage);
+
+                                if(answerAPI.answer==undefined){
+                                    cmdResponse.reply = await msg.reply(script);
+                                    return msg.channel.send("축하드립니다, 모든 정답을 맞추셨습니다.");
+                                }
+                                const gameData=require(`./Commands/game/gameData.js`);
+                                gameData.setData(msg.member.id, {gameName: cmdResponse.gameName, stage: answerAPI.stage-1});
+
+                                cmdResponse.reply = await msg.reply(script);
+                                cmdResponse.msg = await msg.channel.send({embed : answerAPI.quest});
+                            } else {
+                                script+="틀렸어요;;";cmdResponse.reply = await msg.reply(script);
+                                /*
+                                let reeee=cmdResponse.reply;
+                                cmdResponse.reply = await msg.reply(script);
+                                if(reeee!=undefined) await reeee.delete();
+                                await msg.delete();*/
+                            }
+                            
+                            
+                        }
                     break;
 
                     default:
@@ -831,4 +946,4 @@ bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.MORMOTTE_TOKEN);
