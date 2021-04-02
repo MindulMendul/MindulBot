@@ -586,4 +586,4 @@ bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
 
-bot.login(process.env.MORMOTTE_TOKEN);
+bot.login(process.env.BOT_TOKEN);
