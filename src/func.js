@@ -1,9 +1,7 @@
+const moment = require('moment');
+
 function equalTime(h, m) {
     return (moment().hour()==h && moment().minute()==m);
-}
-
-function evenTime(m){
-    return (moment().hour()%2==0 && moment().minute()==m);
 }
 
 function shuffle(array) {
