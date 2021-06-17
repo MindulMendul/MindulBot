@@ -40,18 +40,21 @@ setImmediate(()=>{
             func.shuffle(require("./Commands/basic/CmdTarot.js").script);
     },60*60*1000)//1시간
 });
-/*
+
+//기본길드 전용 알람(현재는 그럼)
 setInterval( () => {
-    if(func.equalTime(23, 0), func.equalTime(21, 0)){
+    if(
+        func.equalTime(00,25) || func.equalTime(02,25) || func.equalTime(04,25) || func.equalTime(06,25) || func.equalTime(08,25) ||
+        func.equalTime(10,25) || func.equalTime(12,25) || func.equalTime(14,25) || func.equalTime(16,25) || func.equalTime(18,25) ||
+        func.equalTime(20,25) || func.equalTime(22,25)
+    ){
         //펀치킹 알람
-        const reminderMessage="펀치킹치러 가세요~";
+        const reminderMessage=`${moment().hour()}시 플래그하러 가세요~`;
         bot.guilds.cache.forEach( (guild)=>{
-            //if(guild.name!="민둘이의 실험방") return; //개발용 코드
+            if(guild.name!="💛 기본 💛") return; //기본길드 전용 코드
             const guildReminder=guild.channels.cache.find( (channel)=>{
-                if(channel.name.startsWith('소야봇'))
+                if(channel.name.startsWith('잡담'))
                     return channel; //소야봇-공지
-                else if(channel.name.startsWith('민둘봇'))
-                    return channel; //민둘봇-공지 
             });
             try{
                 guildReminder.send(reminderMessage)
@@ -63,7 +66,7 @@ setInterval( () => {
         })
     }
 }, 60*1000); // every minutes
-*/
+
 
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
