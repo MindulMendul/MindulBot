@@ -157,10 +157,10 @@ setInterval( () => {
             });
             try{
                 guildReminder.send(reminderMessage)
-                //.then( msg => msg.delete({timeout: 50*1000}));
+                .then( msg => msg.delete({timeout: 10*60*1000}));
             } catch {  
                 guild.systemChannel.send(reminderMessage)
-                //.then( msg => msg.delete({timeout: 50*1000}));
+                .then( msg => msg.delete({timeout: 10*60*1000}));
             }
         })
     }
