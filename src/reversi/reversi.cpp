@@ -10,6 +10,7 @@ void print_pan();
 void can_pan(int turn);
 void ini_list();
 void reversi(int turn, int pick);
+void make_trap();
 
 int main(void){
 	int finish=0;
@@ -18,6 +19,13 @@ int main(void){
 	
 	pan[3][3]=1;	pan[4][4]=1;
 	pan[3][4]=-1;	pan[4][3]=-1;
+	int a, b;
+	for(int i=0; i<5; i++){
+		scanf("%d",&a);
+		fflush(stdin);
+		scanf("%d",&b);
+		pan[a][b]=-100;
+	}
 	
 	can_pan(turn);
 	print_pan();
@@ -102,5 +110,13 @@ void reversi(int turn, int pick){
 	while(xx+n<8 && yy-n>0) {if(pan[xx+n][yy-n]==-turn) n++; else break;} if(xx+n<=8 && yy-n>=0)	{if(n>1) {if(pan[xx+n][yy-n]==turn) for(int nn=1; nn<n; nn++){pan[xx+nn][yy-nn]=turn;}}} 	n=1;//9
 }
 
-
+void make_trap(){
+	int a, b;
+	for(int i=0; i<5; i++){
+		scanf("%d",&a);
+		fflush(stdin);
+		scanf("%d",&b);
+		pan[a][b]=-100;
+	}
+}
 

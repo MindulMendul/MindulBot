@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\pseudonl_purify.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\pseudonl_purify.dir/objects.a @CMakeFiles\pseudonl_purify.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\pseudonl_purify.dir/objects.a -Wl,--no-whole-archive -o purify.exe -Wl,--out-implib,libpurify.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pseudonl_purify.dir\linklibs.rsp

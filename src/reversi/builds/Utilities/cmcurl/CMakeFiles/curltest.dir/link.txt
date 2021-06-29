@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\curltest.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\curltest.dir/objects.a @CMakeFiles\curltest.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -Wl,--whole-archive CMakeFiles\curltest.dir/objects.a -Wl,--no-whole-archive -o curltest.exe -Wl,--out-implib,libcurltest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\curltest.dir\linklibs.rsp

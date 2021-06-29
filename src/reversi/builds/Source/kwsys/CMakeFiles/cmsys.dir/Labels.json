@@ -1,0 +1,127 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/ProcessWin32.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Base64.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingC.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/MD5.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Terminal.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/System.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/String.c"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Configure.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/SharedForward.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Process.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Base64.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Encoding.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/MD5.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Terminal.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/System.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/String.h"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Directory.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Directory.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/DynamicLoader.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/DynamicLoader.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingCXX.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Encoding.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Glob.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Glob.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/RegularExpression.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/RegularExpression.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemTools.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/SystemTools.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/CommandLineArguments.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/CommandLineArguments.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/FStream.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/FStream.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemInformation.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/SystemInformation.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/ConsoleBuf.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Status.cxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Status.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Configure.hxx"
+		},
+		{
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/String.hxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [],
+		"name" : "cmsys"
+	}
+}

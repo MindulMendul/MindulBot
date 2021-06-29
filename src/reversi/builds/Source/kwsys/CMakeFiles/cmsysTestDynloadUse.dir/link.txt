@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmsysTestDynloadUse.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmsysTestDynloadUse.dir/objects.a @CMakeFiles\cmsysTestDynloadUse.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -shared -o dynloaddir\libcmsysTestDynloadUse.dll -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\cmsysTestDynloadUse.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\cmsysTestDynloadUse.dir\linklibs.rsp
