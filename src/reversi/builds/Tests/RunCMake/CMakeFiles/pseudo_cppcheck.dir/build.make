@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/depend.make
@@ -70,18 +70,18 @@ include Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/flags.make
 
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/flags.make
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/includes_C.rsp
-Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_cppcheck.c
+Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_cppcheck.c
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj -MF CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.obj.d -o CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj -MF CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.obj.d -o CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c
 
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c > CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c > CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.i
 
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c -o CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_cppcheck.c -o CMakeFiles\pseudo_cppcheck.dir\pseudo_cppcheck.c.s
 
 # Object files for target pseudo_cppcheck
 pseudo_cppcheck_OBJECTS = \
@@ -95,18 +95,18 @@ Tests/RunCMake/pseudo_cppcheck.exe: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.di
 Tests/RunCMake/pseudo_cppcheck.exe: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/linklibs.rsp
 Tests/RunCMake/pseudo_cppcheck.exe: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/objects1.rsp
 Tests/RunCMake/pseudo_cppcheck.exe: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_cppcheck.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_cppcheck.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_cppcheck.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_cppcheck.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/build: Tests/RunCMake/pseudo_cppcheck.exe
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/build
 
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_cppcheck.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_cppcheck.dir\cmake_clean.cmake
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/clean
 
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/depend
 

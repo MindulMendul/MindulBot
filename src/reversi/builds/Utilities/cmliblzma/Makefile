@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmliblzma\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmliblzma\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/rule
 .PHONY : Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmliblzma: Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/rule
 
 # fast build rule for target.
 cmliblzma/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/build
 .PHONY : cmliblzma/fast
 
 common/tuklib_cpucores.obj: common/tuklib_cpucores.c.obj
@@ -209,7 +209,7 @@ common/tuklib_cpucores.obj: common/tuklib_cpucores.c.obj
 
 # target to build an object file
 common/tuklib_cpucores.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.obj
 .PHONY : common/tuklib_cpucores.c.obj
 
 common/tuklib_cpucores.i: common/tuklib_cpucores.c.i
@@ -217,7 +217,7 @@ common/tuklib_cpucores.i: common/tuklib_cpucores.c.i
 
 # target to preprocess a source file
 common/tuklib_cpucores.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.i
 .PHONY : common/tuklib_cpucores.c.i
 
 common/tuklib_cpucores.s: common/tuklib_cpucores.c.s
@@ -225,7 +225,7 @@ common/tuklib_cpucores.s: common/tuklib_cpucores.c.s
 
 # target to generate assembly for a file
 common/tuklib_cpucores.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/common/tuklib_cpucores.c.s
 .PHONY : common/tuklib_cpucores.c.s
 
 liblzma/check/check.obj: liblzma/check/check.c.obj
@@ -233,7 +233,7 @@ liblzma/check/check.obj: liblzma/check/check.c.obj
 
 # target to build an object file
 liblzma/check/check.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.obj
 .PHONY : liblzma/check/check.c.obj
 
 liblzma/check/check.i: liblzma/check/check.c.i
@@ -241,7 +241,7 @@ liblzma/check/check.i: liblzma/check/check.c.i
 
 # target to preprocess a source file
 liblzma/check/check.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.i
 .PHONY : liblzma/check/check.c.i
 
 liblzma/check/check.s: liblzma/check/check.c.s
@@ -249,7 +249,7 @@ liblzma/check/check.s: liblzma/check/check.c.s
 
 # target to generate assembly for a file
 liblzma/check/check.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/check.c.s
 .PHONY : liblzma/check/check.c.s
 
 liblzma/check/crc32_fast.obj: liblzma/check/crc32_fast.c.obj
@@ -257,7 +257,7 @@ liblzma/check/crc32_fast.obj: liblzma/check/crc32_fast.c.obj
 
 # target to build an object file
 liblzma/check/crc32_fast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.obj
 .PHONY : liblzma/check/crc32_fast.c.obj
 
 liblzma/check/crc32_fast.i: liblzma/check/crc32_fast.c.i
@@ -265,7 +265,7 @@ liblzma/check/crc32_fast.i: liblzma/check/crc32_fast.c.i
 
 # target to preprocess a source file
 liblzma/check/crc32_fast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.i
 .PHONY : liblzma/check/crc32_fast.c.i
 
 liblzma/check/crc32_fast.s: liblzma/check/crc32_fast.c.s
@@ -273,7 +273,7 @@ liblzma/check/crc32_fast.s: liblzma/check/crc32_fast.c.s
 
 # target to generate assembly for a file
 liblzma/check/crc32_fast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_fast.c.s
 .PHONY : liblzma/check/crc32_fast.c.s
 
 liblzma/check/crc32_table.obj: liblzma/check/crc32_table.c.obj
@@ -281,7 +281,7 @@ liblzma/check/crc32_table.obj: liblzma/check/crc32_table.c.obj
 
 # target to build an object file
 liblzma/check/crc32_table.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.obj
 .PHONY : liblzma/check/crc32_table.c.obj
 
 liblzma/check/crc32_table.i: liblzma/check/crc32_table.c.i
@@ -289,7 +289,7 @@ liblzma/check/crc32_table.i: liblzma/check/crc32_table.c.i
 
 # target to preprocess a source file
 liblzma/check/crc32_table.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.i
 .PHONY : liblzma/check/crc32_table.c.i
 
 liblzma/check/crc32_table.s: liblzma/check/crc32_table.c.s
@@ -297,7 +297,7 @@ liblzma/check/crc32_table.s: liblzma/check/crc32_table.c.s
 
 # target to generate assembly for a file
 liblzma/check/crc32_table.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc32_table.c.s
 .PHONY : liblzma/check/crc32_table.c.s
 
 liblzma/check/crc64_fast.obj: liblzma/check/crc64_fast.c.obj
@@ -305,7 +305,7 @@ liblzma/check/crc64_fast.obj: liblzma/check/crc64_fast.c.obj
 
 # target to build an object file
 liblzma/check/crc64_fast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.obj
 .PHONY : liblzma/check/crc64_fast.c.obj
 
 liblzma/check/crc64_fast.i: liblzma/check/crc64_fast.c.i
@@ -313,7 +313,7 @@ liblzma/check/crc64_fast.i: liblzma/check/crc64_fast.c.i
 
 # target to preprocess a source file
 liblzma/check/crc64_fast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.i
 .PHONY : liblzma/check/crc64_fast.c.i
 
 liblzma/check/crc64_fast.s: liblzma/check/crc64_fast.c.s
@@ -321,7 +321,7 @@ liblzma/check/crc64_fast.s: liblzma/check/crc64_fast.c.s
 
 # target to generate assembly for a file
 liblzma/check/crc64_fast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_fast.c.s
 .PHONY : liblzma/check/crc64_fast.c.s
 
 liblzma/check/crc64_table.obj: liblzma/check/crc64_table.c.obj
@@ -329,7 +329,7 @@ liblzma/check/crc64_table.obj: liblzma/check/crc64_table.c.obj
 
 # target to build an object file
 liblzma/check/crc64_table.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.obj
 .PHONY : liblzma/check/crc64_table.c.obj
 
 liblzma/check/crc64_table.i: liblzma/check/crc64_table.c.i
@@ -337,7 +337,7 @@ liblzma/check/crc64_table.i: liblzma/check/crc64_table.c.i
 
 # target to preprocess a source file
 liblzma/check/crc64_table.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.i
 .PHONY : liblzma/check/crc64_table.c.i
 
 liblzma/check/crc64_table.s: liblzma/check/crc64_table.c.s
@@ -345,7 +345,7 @@ liblzma/check/crc64_table.s: liblzma/check/crc64_table.c.s
 
 # target to generate assembly for a file
 liblzma/check/crc64_table.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/crc64_table.c.s
 .PHONY : liblzma/check/crc64_table.c.s
 
 liblzma/check/sha256.obj: liblzma/check/sha256.c.obj
@@ -353,7 +353,7 @@ liblzma/check/sha256.obj: liblzma/check/sha256.c.obj
 
 # target to build an object file
 liblzma/check/sha256.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.obj
 .PHONY : liblzma/check/sha256.c.obj
 
 liblzma/check/sha256.i: liblzma/check/sha256.c.i
@@ -361,7 +361,7 @@ liblzma/check/sha256.i: liblzma/check/sha256.c.i
 
 # target to preprocess a source file
 liblzma/check/sha256.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.i
 .PHONY : liblzma/check/sha256.c.i
 
 liblzma/check/sha256.s: liblzma/check/sha256.c.s
@@ -369,7 +369,7 @@ liblzma/check/sha256.s: liblzma/check/sha256.c.s
 
 # target to generate assembly for a file
 liblzma/check/sha256.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/check/sha256.c.s
 .PHONY : liblzma/check/sha256.c.s
 
 liblzma/common/alone_decoder.obj: liblzma/common/alone_decoder.c.obj
@@ -377,7 +377,7 @@ liblzma/common/alone_decoder.obj: liblzma/common/alone_decoder.c.obj
 
 # target to build an object file
 liblzma/common/alone_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.obj
 .PHONY : liblzma/common/alone_decoder.c.obj
 
 liblzma/common/alone_decoder.i: liblzma/common/alone_decoder.c.i
@@ -385,7 +385,7 @@ liblzma/common/alone_decoder.i: liblzma/common/alone_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/alone_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.i
 .PHONY : liblzma/common/alone_decoder.c.i
 
 liblzma/common/alone_decoder.s: liblzma/common/alone_decoder.c.s
@@ -393,7 +393,7 @@ liblzma/common/alone_decoder.s: liblzma/common/alone_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/alone_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_decoder.c.s
 .PHONY : liblzma/common/alone_decoder.c.s
 
 liblzma/common/alone_encoder.obj: liblzma/common/alone_encoder.c.obj
@@ -401,7 +401,7 @@ liblzma/common/alone_encoder.obj: liblzma/common/alone_encoder.c.obj
 
 # target to build an object file
 liblzma/common/alone_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.obj
 .PHONY : liblzma/common/alone_encoder.c.obj
 
 liblzma/common/alone_encoder.i: liblzma/common/alone_encoder.c.i
@@ -409,7 +409,7 @@ liblzma/common/alone_encoder.i: liblzma/common/alone_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/alone_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.i
 .PHONY : liblzma/common/alone_encoder.c.i
 
 liblzma/common/alone_encoder.s: liblzma/common/alone_encoder.c.s
@@ -417,7 +417,7 @@ liblzma/common/alone_encoder.s: liblzma/common/alone_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/alone_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/alone_encoder.c.s
 .PHONY : liblzma/common/alone_encoder.c.s
 
 liblzma/common/auto_decoder.obj: liblzma/common/auto_decoder.c.obj
@@ -425,7 +425,7 @@ liblzma/common/auto_decoder.obj: liblzma/common/auto_decoder.c.obj
 
 # target to build an object file
 liblzma/common/auto_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.obj
 .PHONY : liblzma/common/auto_decoder.c.obj
 
 liblzma/common/auto_decoder.i: liblzma/common/auto_decoder.c.i
@@ -433,7 +433,7 @@ liblzma/common/auto_decoder.i: liblzma/common/auto_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/auto_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.i
 .PHONY : liblzma/common/auto_decoder.c.i
 
 liblzma/common/auto_decoder.s: liblzma/common/auto_decoder.c.s
@@ -441,7 +441,7 @@ liblzma/common/auto_decoder.s: liblzma/common/auto_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/auto_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/auto_decoder.c.s
 .PHONY : liblzma/common/auto_decoder.c.s
 
 liblzma/common/block_buffer_decoder.obj: liblzma/common/block_buffer_decoder.c.obj
@@ -449,7 +449,7 @@ liblzma/common/block_buffer_decoder.obj: liblzma/common/block_buffer_decoder.c.o
 
 # target to build an object file
 liblzma/common/block_buffer_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.obj
 .PHONY : liblzma/common/block_buffer_decoder.c.obj
 
 liblzma/common/block_buffer_decoder.i: liblzma/common/block_buffer_decoder.c.i
@@ -457,7 +457,7 @@ liblzma/common/block_buffer_decoder.i: liblzma/common/block_buffer_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_buffer_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.i
 .PHONY : liblzma/common/block_buffer_decoder.c.i
 
 liblzma/common/block_buffer_decoder.s: liblzma/common/block_buffer_decoder.c.s
@@ -465,7 +465,7 @@ liblzma/common/block_buffer_decoder.s: liblzma/common/block_buffer_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_buffer_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_decoder.c.s
 .PHONY : liblzma/common/block_buffer_decoder.c.s
 
 liblzma/common/block_buffer_encoder.obj: liblzma/common/block_buffer_encoder.c.obj
@@ -473,7 +473,7 @@ liblzma/common/block_buffer_encoder.obj: liblzma/common/block_buffer_encoder.c.o
 
 # target to build an object file
 liblzma/common/block_buffer_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.obj
 .PHONY : liblzma/common/block_buffer_encoder.c.obj
 
 liblzma/common/block_buffer_encoder.i: liblzma/common/block_buffer_encoder.c.i
@@ -481,7 +481,7 @@ liblzma/common/block_buffer_encoder.i: liblzma/common/block_buffer_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_buffer_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.i
 .PHONY : liblzma/common/block_buffer_encoder.c.i
 
 liblzma/common/block_buffer_encoder.s: liblzma/common/block_buffer_encoder.c.s
@@ -489,7 +489,7 @@ liblzma/common/block_buffer_encoder.s: liblzma/common/block_buffer_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_buffer_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_buffer_encoder.c.s
 .PHONY : liblzma/common/block_buffer_encoder.c.s
 
 liblzma/common/block_decoder.obj: liblzma/common/block_decoder.c.obj
@@ -497,7 +497,7 @@ liblzma/common/block_decoder.obj: liblzma/common/block_decoder.c.obj
 
 # target to build an object file
 liblzma/common/block_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.obj
 .PHONY : liblzma/common/block_decoder.c.obj
 
 liblzma/common/block_decoder.i: liblzma/common/block_decoder.c.i
@@ -505,7 +505,7 @@ liblzma/common/block_decoder.i: liblzma/common/block_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.i
 .PHONY : liblzma/common/block_decoder.c.i
 
 liblzma/common/block_decoder.s: liblzma/common/block_decoder.c.s
@@ -513,7 +513,7 @@ liblzma/common/block_decoder.s: liblzma/common/block_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_decoder.c.s
 .PHONY : liblzma/common/block_decoder.c.s
 
 liblzma/common/block_encoder.obj: liblzma/common/block_encoder.c.obj
@@ -521,7 +521,7 @@ liblzma/common/block_encoder.obj: liblzma/common/block_encoder.c.obj
 
 # target to build an object file
 liblzma/common/block_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.obj
 .PHONY : liblzma/common/block_encoder.c.obj
 
 liblzma/common/block_encoder.i: liblzma/common/block_encoder.c.i
@@ -529,7 +529,7 @@ liblzma/common/block_encoder.i: liblzma/common/block_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.i
 .PHONY : liblzma/common/block_encoder.c.i
 
 liblzma/common/block_encoder.s: liblzma/common/block_encoder.c.s
@@ -537,7 +537,7 @@ liblzma/common/block_encoder.s: liblzma/common/block_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_encoder.c.s
 .PHONY : liblzma/common/block_encoder.c.s
 
 liblzma/common/block_header_decoder.obj: liblzma/common/block_header_decoder.c.obj
@@ -545,7 +545,7 @@ liblzma/common/block_header_decoder.obj: liblzma/common/block_header_decoder.c.o
 
 # target to build an object file
 liblzma/common/block_header_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.obj
 .PHONY : liblzma/common/block_header_decoder.c.obj
 
 liblzma/common/block_header_decoder.i: liblzma/common/block_header_decoder.c.i
@@ -553,7 +553,7 @@ liblzma/common/block_header_decoder.i: liblzma/common/block_header_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_header_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.i
 .PHONY : liblzma/common/block_header_decoder.c.i
 
 liblzma/common/block_header_decoder.s: liblzma/common/block_header_decoder.c.s
@@ -561,7 +561,7 @@ liblzma/common/block_header_decoder.s: liblzma/common/block_header_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_header_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_decoder.c.s
 .PHONY : liblzma/common/block_header_decoder.c.s
 
 liblzma/common/block_header_encoder.obj: liblzma/common/block_header_encoder.c.obj
@@ -569,7 +569,7 @@ liblzma/common/block_header_encoder.obj: liblzma/common/block_header_encoder.c.o
 
 # target to build an object file
 liblzma/common/block_header_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.obj
 .PHONY : liblzma/common/block_header_encoder.c.obj
 
 liblzma/common/block_header_encoder.i: liblzma/common/block_header_encoder.c.i
@@ -577,7 +577,7 @@ liblzma/common/block_header_encoder.i: liblzma/common/block_header_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/block_header_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.i
 .PHONY : liblzma/common/block_header_encoder.c.i
 
 liblzma/common/block_header_encoder.s: liblzma/common/block_header_encoder.c.s
@@ -585,7 +585,7 @@ liblzma/common/block_header_encoder.s: liblzma/common/block_header_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_header_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_header_encoder.c.s
 .PHONY : liblzma/common/block_header_encoder.c.s
 
 liblzma/common/block_util.obj: liblzma/common/block_util.c.obj
@@ -593,7 +593,7 @@ liblzma/common/block_util.obj: liblzma/common/block_util.c.obj
 
 # target to build an object file
 liblzma/common/block_util.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.obj
 .PHONY : liblzma/common/block_util.c.obj
 
 liblzma/common/block_util.i: liblzma/common/block_util.c.i
@@ -601,7 +601,7 @@ liblzma/common/block_util.i: liblzma/common/block_util.c.i
 
 # target to preprocess a source file
 liblzma/common/block_util.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.i
 .PHONY : liblzma/common/block_util.c.i
 
 liblzma/common/block_util.s: liblzma/common/block_util.c.s
@@ -609,7 +609,7 @@ liblzma/common/block_util.s: liblzma/common/block_util.c.s
 
 # target to generate assembly for a file
 liblzma/common/block_util.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/block_util.c.s
 .PHONY : liblzma/common/block_util.c.s
 
 liblzma/common/common.obj: liblzma/common/common.c.obj
@@ -617,7 +617,7 @@ liblzma/common/common.obj: liblzma/common/common.c.obj
 
 # target to build an object file
 liblzma/common/common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.obj
 .PHONY : liblzma/common/common.c.obj
 
 liblzma/common/common.i: liblzma/common/common.c.i
@@ -625,7 +625,7 @@ liblzma/common/common.i: liblzma/common/common.c.i
 
 # target to preprocess a source file
 liblzma/common/common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.i
 .PHONY : liblzma/common/common.c.i
 
 liblzma/common/common.s: liblzma/common/common.c.s
@@ -633,7 +633,7 @@ liblzma/common/common.s: liblzma/common/common.c.s
 
 # target to generate assembly for a file
 liblzma/common/common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/common.c.s
 .PHONY : liblzma/common/common.c.s
 
 liblzma/common/easy_buffer_encoder.obj: liblzma/common/easy_buffer_encoder.c.obj
@@ -641,7 +641,7 @@ liblzma/common/easy_buffer_encoder.obj: liblzma/common/easy_buffer_encoder.c.obj
 
 # target to build an object file
 liblzma/common/easy_buffer_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.obj
 .PHONY : liblzma/common/easy_buffer_encoder.c.obj
 
 liblzma/common/easy_buffer_encoder.i: liblzma/common/easy_buffer_encoder.c.i
@@ -649,7 +649,7 @@ liblzma/common/easy_buffer_encoder.i: liblzma/common/easy_buffer_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/easy_buffer_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.i
 .PHONY : liblzma/common/easy_buffer_encoder.c.i
 
 liblzma/common/easy_buffer_encoder.s: liblzma/common/easy_buffer_encoder.c.s
@@ -657,7 +657,7 @@ liblzma/common/easy_buffer_encoder.s: liblzma/common/easy_buffer_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/easy_buffer_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_buffer_encoder.c.s
 .PHONY : liblzma/common/easy_buffer_encoder.c.s
 
 liblzma/common/easy_decoder_memusage.obj: liblzma/common/easy_decoder_memusage.c.obj
@@ -665,7 +665,7 @@ liblzma/common/easy_decoder_memusage.obj: liblzma/common/easy_decoder_memusage.c
 
 # target to build an object file
 liblzma/common/easy_decoder_memusage.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.obj
 .PHONY : liblzma/common/easy_decoder_memusage.c.obj
 
 liblzma/common/easy_decoder_memusage.i: liblzma/common/easy_decoder_memusage.c.i
@@ -673,7 +673,7 @@ liblzma/common/easy_decoder_memusage.i: liblzma/common/easy_decoder_memusage.c.i
 
 # target to preprocess a source file
 liblzma/common/easy_decoder_memusage.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.i
 .PHONY : liblzma/common/easy_decoder_memusage.c.i
 
 liblzma/common/easy_decoder_memusage.s: liblzma/common/easy_decoder_memusage.c.s
@@ -681,7 +681,7 @@ liblzma/common/easy_decoder_memusage.s: liblzma/common/easy_decoder_memusage.c.s
 
 # target to generate assembly for a file
 liblzma/common/easy_decoder_memusage.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_decoder_memusage.c.s
 .PHONY : liblzma/common/easy_decoder_memusage.c.s
 
 liblzma/common/easy_encoder.obj: liblzma/common/easy_encoder.c.obj
@@ -689,7 +689,7 @@ liblzma/common/easy_encoder.obj: liblzma/common/easy_encoder.c.obj
 
 # target to build an object file
 liblzma/common/easy_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.obj
 .PHONY : liblzma/common/easy_encoder.c.obj
 
 liblzma/common/easy_encoder.i: liblzma/common/easy_encoder.c.i
@@ -697,7 +697,7 @@ liblzma/common/easy_encoder.i: liblzma/common/easy_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/easy_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.i
 .PHONY : liblzma/common/easy_encoder.c.i
 
 liblzma/common/easy_encoder.s: liblzma/common/easy_encoder.c.s
@@ -705,7 +705,7 @@ liblzma/common/easy_encoder.s: liblzma/common/easy_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/easy_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder.c.s
 .PHONY : liblzma/common/easy_encoder.c.s
 
 liblzma/common/easy_encoder_memusage.obj: liblzma/common/easy_encoder_memusage.c.obj
@@ -713,7 +713,7 @@ liblzma/common/easy_encoder_memusage.obj: liblzma/common/easy_encoder_memusage.c
 
 # target to build an object file
 liblzma/common/easy_encoder_memusage.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.obj
 .PHONY : liblzma/common/easy_encoder_memusage.c.obj
 
 liblzma/common/easy_encoder_memusage.i: liblzma/common/easy_encoder_memusage.c.i
@@ -721,7 +721,7 @@ liblzma/common/easy_encoder_memusage.i: liblzma/common/easy_encoder_memusage.c.i
 
 # target to preprocess a source file
 liblzma/common/easy_encoder_memusage.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.i
 .PHONY : liblzma/common/easy_encoder_memusage.c.i
 
 liblzma/common/easy_encoder_memusage.s: liblzma/common/easy_encoder_memusage.c.s
@@ -729,7 +729,7 @@ liblzma/common/easy_encoder_memusage.s: liblzma/common/easy_encoder_memusage.c.s
 
 # target to generate assembly for a file
 liblzma/common/easy_encoder_memusage.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_encoder_memusage.c.s
 .PHONY : liblzma/common/easy_encoder_memusage.c.s
 
 liblzma/common/easy_preset.obj: liblzma/common/easy_preset.c.obj
@@ -737,7 +737,7 @@ liblzma/common/easy_preset.obj: liblzma/common/easy_preset.c.obj
 
 # target to build an object file
 liblzma/common/easy_preset.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.obj
 .PHONY : liblzma/common/easy_preset.c.obj
 
 liblzma/common/easy_preset.i: liblzma/common/easy_preset.c.i
@@ -745,7 +745,7 @@ liblzma/common/easy_preset.i: liblzma/common/easy_preset.c.i
 
 # target to preprocess a source file
 liblzma/common/easy_preset.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.i
 .PHONY : liblzma/common/easy_preset.c.i
 
 liblzma/common/easy_preset.s: liblzma/common/easy_preset.c.s
@@ -753,7 +753,7 @@ liblzma/common/easy_preset.s: liblzma/common/easy_preset.c.s
 
 # target to generate assembly for a file
 liblzma/common/easy_preset.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/easy_preset.c.s
 .PHONY : liblzma/common/easy_preset.c.s
 
 liblzma/common/filter_buffer_decoder.obj: liblzma/common/filter_buffer_decoder.c.obj
@@ -761,7 +761,7 @@ liblzma/common/filter_buffer_decoder.obj: liblzma/common/filter_buffer_decoder.c
 
 # target to build an object file
 liblzma/common/filter_buffer_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.obj
 .PHONY : liblzma/common/filter_buffer_decoder.c.obj
 
 liblzma/common/filter_buffer_decoder.i: liblzma/common/filter_buffer_decoder.c.i
@@ -769,7 +769,7 @@ liblzma/common/filter_buffer_decoder.i: liblzma/common/filter_buffer_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_buffer_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.i
 .PHONY : liblzma/common/filter_buffer_decoder.c.i
 
 liblzma/common/filter_buffer_decoder.s: liblzma/common/filter_buffer_decoder.c.s
@@ -777,7 +777,7 @@ liblzma/common/filter_buffer_decoder.s: liblzma/common/filter_buffer_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_buffer_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_decoder.c.s
 .PHONY : liblzma/common/filter_buffer_decoder.c.s
 
 liblzma/common/filter_buffer_encoder.obj: liblzma/common/filter_buffer_encoder.c.obj
@@ -785,7 +785,7 @@ liblzma/common/filter_buffer_encoder.obj: liblzma/common/filter_buffer_encoder.c
 
 # target to build an object file
 liblzma/common/filter_buffer_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.obj
 .PHONY : liblzma/common/filter_buffer_encoder.c.obj
 
 liblzma/common/filter_buffer_encoder.i: liblzma/common/filter_buffer_encoder.c.i
@@ -793,7 +793,7 @@ liblzma/common/filter_buffer_encoder.i: liblzma/common/filter_buffer_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_buffer_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.i
 .PHONY : liblzma/common/filter_buffer_encoder.c.i
 
 liblzma/common/filter_buffer_encoder.s: liblzma/common/filter_buffer_encoder.c.s
@@ -801,7 +801,7 @@ liblzma/common/filter_buffer_encoder.s: liblzma/common/filter_buffer_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_buffer_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_buffer_encoder.c.s
 .PHONY : liblzma/common/filter_buffer_encoder.c.s
 
 liblzma/common/filter_common.obj: liblzma/common/filter_common.c.obj
@@ -809,7 +809,7 @@ liblzma/common/filter_common.obj: liblzma/common/filter_common.c.obj
 
 # target to build an object file
 liblzma/common/filter_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.obj
 .PHONY : liblzma/common/filter_common.c.obj
 
 liblzma/common/filter_common.i: liblzma/common/filter_common.c.i
@@ -817,7 +817,7 @@ liblzma/common/filter_common.i: liblzma/common/filter_common.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.i
 .PHONY : liblzma/common/filter_common.c.i
 
 liblzma/common/filter_common.s: liblzma/common/filter_common.c.s
@@ -825,7 +825,7 @@ liblzma/common/filter_common.s: liblzma/common/filter_common.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_common.c.s
 .PHONY : liblzma/common/filter_common.c.s
 
 liblzma/common/filter_decoder.obj: liblzma/common/filter_decoder.c.obj
@@ -833,7 +833,7 @@ liblzma/common/filter_decoder.obj: liblzma/common/filter_decoder.c.obj
 
 # target to build an object file
 liblzma/common/filter_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.obj
 .PHONY : liblzma/common/filter_decoder.c.obj
 
 liblzma/common/filter_decoder.i: liblzma/common/filter_decoder.c.i
@@ -841,7 +841,7 @@ liblzma/common/filter_decoder.i: liblzma/common/filter_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.i
 .PHONY : liblzma/common/filter_decoder.c.i
 
 liblzma/common/filter_decoder.s: liblzma/common/filter_decoder.c.s
@@ -849,7 +849,7 @@ liblzma/common/filter_decoder.s: liblzma/common/filter_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_decoder.c.s
 .PHONY : liblzma/common/filter_decoder.c.s
 
 liblzma/common/filter_encoder.obj: liblzma/common/filter_encoder.c.obj
@@ -857,7 +857,7 @@ liblzma/common/filter_encoder.obj: liblzma/common/filter_encoder.c.obj
 
 # target to build an object file
 liblzma/common/filter_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.obj
 .PHONY : liblzma/common/filter_encoder.c.obj
 
 liblzma/common/filter_encoder.i: liblzma/common/filter_encoder.c.i
@@ -865,7 +865,7 @@ liblzma/common/filter_encoder.i: liblzma/common/filter_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.i
 .PHONY : liblzma/common/filter_encoder.c.i
 
 liblzma/common/filter_encoder.s: liblzma/common/filter_encoder.c.s
@@ -873,7 +873,7 @@ liblzma/common/filter_encoder.s: liblzma/common/filter_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_encoder.c.s
 .PHONY : liblzma/common/filter_encoder.c.s
 
 liblzma/common/filter_flags_decoder.obj: liblzma/common/filter_flags_decoder.c.obj
@@ -881,7 +881,7 @@ liblzma/common/filter_flags_decoder.obj: liblzma/common/filter_flags_decoder.c.o
 
 # target to build an object file
 liblzma/common/filter_flags_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.obj
 .PHONY : liblzma/common/filter_flags_decoder.c.obj
 
 liblzma/common/filter_flags_decoder.i: liblzma/common/filter_flags_decoder.c.i
@@ -889,7 +889,7 @@ liblzma/common/filter_flags_decoder.i: liblzma/common/filter_flags_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_flags_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.i
 .PHONY : liblzma/common/filter_flags_decoder.c.i
 
 liblzma/common/filter_flags_decoder.s: liblzma/common/filter_flags_decoder.c.s
@@ -897,7 +897,7 @@ liblzma/common/filter_flags_decoder.s: liblzma/common/filter_flags_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_flags_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_decoder.c.s
 .PHONY : liblzma/common/filter_flags_decoder.c.s
 
 liblzma/common/filter_flags_encoder.obj: liblzma/common/filter_flags_encoder.c.obj
@@ -905,7 +905,7 @@ liblzma/common/filter_flags_encoder.obj: liblzma/common/filter_flags_encoder.c.o
 
 # target to build an object file
 liblzma/common/filter_flags_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.obj
 .PHONY : liblzma/common/filter_flags_encoder.c.obj
 
 liblzma/common/filter_flags_encoder.i: liblzma/common/filter_flags_encoder.c.i
@@ -913,7 +913,7 @@ liblzma/common/filter_flags_encoder.i: liblzma/common/filter_flags_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/filter_flags_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.i
 .PHONY : liblzma/common/filter_flags_encoder.c.i
 
 liblzma/common/filter_flags_encoder.s: liblzma/common/filter_flags_encoder.c.s
@@ -921,7 +921,7 @@ liblzma/common/filter_flags_encoder.s: liblzma/common/filter_flags_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/filter_flags_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/filter_flags_encoder.c.s
 .PHONY : liblzma/common/filter_flags_encoder.c.s
 
 liblzma/common/hardware_cputhreads.obj: liblzma/common/hardware_cputhreads.c.obj
@@ -929,7 +929,7 @@ liblzma/common/hardware_cputhreads.obj: liblzma/common/hardware_cputhreads.c.obj
 
 # target to build an object file
 liblzma/common/hardware_cputhreads.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.obj
 .PHONY : liblzma/common/hardware_cputhreads.c.obj
 
 liblzma/common/hardware_cputhreads.i: liblzma/common/hardware_cputhreads.c.i
@@ -937,7 +937,7 @@ liblzma/common/hardware_cputhreads.i: liblzma/common/hardware_cputhreads.c.i
 
 # target to preprocess a source file
 liblzma/common/hardware_cputhreads.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.i
 .PHONY : liblzma/common/hardware_cputhreads.c.i
 
 liblzma/common/hardware_cputhreads.s: liblzma/common/hardware_cputhreads.c.s
@@ -945,7 +945,7 @@ liblzma/common/hardware_cputhreads.s: liblzma/common/hardware_cputhreads.c.s
 
 # target to generate assembly for a file
 liblzma/common/hardware_cputhreads.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/hardware_cputhreads.c.s
 .PHONY : liblzma/common/hardware_cputhreads.c.s
 
 liblzma/common/index.obj: liblzma/common/index.c.obj
@@ -953,7 +953,7 @@ liblzma/common/index.obj: liblzma/common/index.c.obj
 
 # target to build an object file
 liblzma/common/index.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.obj
 .PHONY : liblzma/common/index.c.obj
 
 liblzma/common/index.i: liblzma/common/index.c.i
@@ -961,7 +961,7 @@ liblzma/common/index.i: liblzma/common/index.c.i
 
 # target to preprocess a source file
 liblzma/common/index.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.i
 .PHONY : liblzma/common/index.c.i
 
 liblzma/common/index.s: liblzma/common/index.c.s
@@ -969,7 +969,7 @@ liblzma/common/index.s: liblzma/common/index.c.s
 
 # target to generate assembly for a file
 liblzma/common/index.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index.c.s
 .PHONY : liblzma/common/index.c.s
 
 liblzma/common/index_decoder.obj: liblzma/common/index_decoder.c.obj
@@ -977,7 +977,7 @@ liblzma/common/index_decoder.obj: liblzma/common/index_decoder.c.obj
 
 # target to build an object file
 liblzma/common/index_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.obj
 .PHONY : liblzma/common/index_decoder.c.obj
 
 liblzma/common/index_decoder.i: liblzma/common/index_decoder.c.i
@@ -985,7 +985,7 @@ liblzma/common/index_decoder.i: liblzma/common/index_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/index_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.i
 .PHONY : liblzma/common/index_decoder.c.i
 
 liblzma/common/index_decoder.s: liblzma/common/index_decoder.c.s
@@ -993,7 +993,7 @@ liblzma/common/index_decoder.s: liblzma/common/index_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/index_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_decoder.c.s
 .PHONY : liblzma/common/index_decoder.c.s
 
 liblzma/common/index_encoder.obj: liblzma/common/index_encoder.c.obj
@@ -1001,7 +1001,7 @@ liblzma/common/index_encoder.obj: liblzma/common/index_encoder.c.obj
 
 # target to build an object file
 liblzma/common/index_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.obj
 .PHONY : liblzma/common/index_encoder.c.obj
 
 liblzma/common/index_encoder.i: liblzma/common/index_encoder.c.i
@@ -1009,7 +1009,7 @@ liblzma/common/index_encoder.i: liblzma/common/index_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/index_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.i
 .PHONY : liblzma/common/index_encoder.c.i
 
 liblzma/common/index_encoder.s: liblzma/common/index_encoder.c.s
@@ -1017,7 +1017,7 @@ liblzma/common/index_encoder.s: liblzma/common/index_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/index_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_encoder.c.s
 .PHONY : liblzma/common/index_encoder.c.s
 
 liblzma/common/index_hash.obj: liblzma/common/index_hash.c.obj
@@ -1025,7 +1025,7 @@ liblzma/common/index_hash.obj: liblzma/common/index_hash.c.obj
 
 # target to build an object file
 liblzma/common/index_hash.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.obj
 .PHONY : liblzma/common/index_hash.c.obj
 
 liblzma/common/index_hash.i: liblzma/common/index_hash.c.i
@@ -1033,7 +1033,7 @@ liblzma/common/index_hash.i: liblzma/common/index_hash.c.i
 
 # target to preprocess a source file
 liblzma/common/index_hash.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.i
 .PHONY : liblzma/common/index_hash.c.i
 
 liblzma/common/index_hash.s: liblzma/common/index_hash.c.s
@@ -1041,7 +1041,7 @@ liblzma/common/index_hash.s: liblzma/common/index_hash.c.s
 
 # target to generate assembly for a file
 liblzma/common/index_hash.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/index_hash.c.s
 .PHONY : liblzma/common/index_hash.c.s
 
 liblzma/common/outqueue.obj: liblzma/common/outqueue.c.obj
@@ -1049,7 +1049,7 @@ liblzma/common/outqueue.obj: liblzma/common/outqueue.c.obj
 
 # target to build an object file
 liblzma/common/outqueue.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.obj
 .PHONY : liblzma/common/outqueue.c.obj
 
 liblzma/common/outqueue.i: liblzma/common/outqueue.c.i
@@ -1057,7 +1057,7 @@ liblzma/common/outqueue.i: liblzma/common/outqueue.c.i
 
 # target to preprocess a source file
 liblzma/common/outqueue.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.i
 .PHONY : liblzma/common/outqueue.c.i
 
 liblzma/common/outqueue.s: liblzma/common/outqueue.c.s
@@ -1065,7 +1065,7 @@ liblzma/common/outqueue.s: liblzma/common/outqueue.c.s
 
 # target to generate assembly for a file
 liblzma/common/outqueue.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/outqueue.c.s
 .PHONY : liblzma/common/outqueue.c.s
 
 liblzma/common/stream_buffer_decoder.obj: liblzma/common/stream_buffer_decoder.c.obj
@@ -1073,7 +1073,7 @@ liblzma/common/stream_buffer_decoder.obj: liblzma/common/stream_buffer_decoder.c
 
 # target to build an object file
 liblzma/common/stream_buffer_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.obj
 .PHONY : liblzma/common/stream_buffer_decoder.c.obj
 
 liblzma/common/stream_buffer_decoder.i: liblzma/common/stream_buffer_decoder.c.i
@@ -1081,7 +1081,7 @@ liblzma/common/stream_buffer_decoder.i: liblzma/common/stream_buffer_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_buffer_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.i
 .PHONY : liblzma/common/stream_buffer_decoder.c.i
 
 liblzma/common/stream_buffer_decoder.s: liblzma/common/stream_buffer_decoder.c.s
@@ -1089,7 +1089,7 @@ liblzma/common/stream_buffer_decoder.s: liblzma/common/stream_buffer_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_buffer_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_decoder.c.s
 .PHONY : liblzma/common/stream_buffer_decoder.c.s
 
 liblzma/common/stream_buffer_encoder.obj: liblzma/common/stream_buffer_encoder.c.obj
@@ -1097,7 +1097,7 @@ liblzma/common/stream_buffer_encoder.obj: liblzma/common/stream_buffer_encoder.c
 
 # target to build an object file
 liblzma/common/stream_buffer_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.obj
 .PHONY : liblzma/common/stream_buffer_encoder.c.obj
 
 liblzma/common/stream_buffer_encoder.i: liblzma/common/stream_buffer_encoder.c.i
@@ -1105,7 +1105,7 @@ liblzma/common/stream_buffer_encoder.i: liblzma/common/stream_buffer_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_buffer_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.i
 .PHONY : liblzma/common/stream_buffer_encoder.c.i
 
 liblzma/common/stream_buffer_encoder.s: liblzma/common/stream_buffer_encoder.c.s
@@ -1113,7 +1113,7 @@ liblzma/common/stream_buffer_encoder.s: liblzma/common/stream_buffer_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_buffer_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_buffer_encoder.c.s
 .PHONY : liblzma/common/stream_buffer_encoder.c.s
 
 liblzma/common/stream_decoder.obj: liblzma/common/stream_decoder.c.obj
@@ -1121,7 +1121,7 @@ liblzma/common/stream_decoder.obj: liblzma/common/stream_decoder.c.obj
 
 # target to build an object file
 liblzma/common/stream_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.obj
 .PHONY : liblzma/common/stream_decoder.c.obj
 
 liblzma/common/stream_decoder.i: liblzma/common/stream_decoder.c.i
@@ -1129,7 +1129,7 @@ liblzma/common/stream_decoder.i: liblzma/common/stream_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.i
 .PHONY : liblzma/common/stream_decoder.c.i
 
 liblzma/common/stream_decoder.s: liblzma/common/stream_decoder.c.s
@@ -1137,7 +1137,7 @@ liblzma/common/stream_decoder.s: liblzma/common/stream_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_decoder.c.s
 .PHONY : liblzma/common/stream_decoder.c.s
 
 liblzma/common/stream_encoder.obj: liblzma/common/stream_encoder.c.obj
@@ -1145,7 +1145,7 @@ liblzma/common/stream_encoder.obj: liblzma/common/stream_encoder.c.obj
 
 # target to build an object file
 liblzma/common/stream_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.obj
 .PHONY : liblzma/common/stream_encoder.c.obj
 
 liblzma/common/stream_encoder.i: liblzma/common/stream_encoder.c.i
@@ -1153,7 +1153,7 @@ liblzma/common/stream_encoder.i: liblzma/common/stream_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.i
 .PHONY : liblzma/common/stream_encoder.c.i
 
 liblzma/common/stream_encoder.s: liblzma/common/stream_encoder.c.s
@@ -1161,7 +1161,7 @@ liblzma/common/stream_encoder.s: liblzma/common/stream_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder.c.s
 .PHONY : liblzma/common/stream_encoder.c.s
 
 liblzma/common/stream_encoder_mt.obj: liblzma/common/stream_encoder_mt.c.obj
@@ -1169,7 +1169,7 @@ liblzma/common/stream_encoder_mt.obj: liblzma/common/stream_encoder_mt.c.obj
 
 # target to build an object file
 liblzma/common/stream_encoder_mt.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.obj
 .PHONY : liblzma/common/stream_encoder_mt.c.obj
 
 liblzma/common/stream_encoder_mt.i: liblzma/common/stream_encoder_mt.c.i
@@ -1177,7 +1177,7 @@ liblzma/common/stream_encoder_mt.i: liblzma/common/stream_encoder_mt.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_encoder_mt.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.i
 .PHONY : liblzma/common/stream_encoder_mt.c.i
 
 liblzma/common/stream_encoder_mt.s: liblzma/common/stream_encoder_mt.c.s
@@ -1185,7 +1185,7 @@ liblzma/common/stream_encoder_mt.s: liblzma/common/stream_encoder_mt.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_encoder_mt.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_encoder_mt.c.s
 .PHONY : liblzma/common/stream_encoder_mt.c.s
 
 liblzma/common/stream_flags_common.obj: liblzma/common/stream_flags_common.c.obj
@@ -1193,7 +1193,7 @@ liblzma/common/stream_flags_common.obj: liblzma/common/stream_flags_common.c.obj
 
 # target to build an object file
 liblzma/common/stream_flags_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.obj
 .PHONY : liblzma/common/stream_flags_common.c.obj
 
 liblzma/common/stream_flags_common.i: liblzma/common/stream_flags_common.c.i
@@ -1201,7 +1201,7 @@ liblzma/common/stream_flags_common.i: liblzma/common/stream_flags_common.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_flags_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.i
 .PHONY : liblzma/common/stream_flags_common.c.i
 
 liblzma/common/stream_flags_common.s: liblzma/common/stream_flags_common.c.s
@@ -1209,7 +1209,7 @@ liblzma/common/stream_flags_common.s: liblzma/common/stream_flags_common.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_flags_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_common.c.s
 .PHONY : liblzma/common/stream_flags_common.c.s
 
 liblzma/common/stream_flags_decoder.obj: liblzma/common/stream_flags_decoder.c.obj
@@ -1217,7 +1217,7 @@ liblzma/common/stream_flags_decoder.obj: liblzma/common/stream_flags_decoder.c.o
 
 # target to build an object file
 liblzma/common/stream_flags_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.obj
 .PHONY : liblzma/common/stream_flags_decoder.c.obj
 
 liblzma/common/stream_flags_decoder.i: liblzma/common/stream_flags_decoder.c.i
@@ -1225,7 +1225,7 @@ liblzma/common/stream_flags_decoder.i: liblzma/common/stream_flags_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_flags_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.i
 .PHONY : liblzma/common/stream_flags_decoder.c.i
 
 liblzma/common/stream_flags_decoder.s: liblzma/common/stream_flags_decoder.c.s
@@ -1233,7 +1233,7 @@ liblzma/common/stream_flags_decoder.s: liblzma/common/stream_flags_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_flags_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_decoder.c.s
 .PHONY : liblzma/common/stream_flags_decoder.c.s
 
 liblzma/common/stream_flags_encoder.obj: liblzma/common/stream_flags_encoder.c.obj
@@ -1241,7 +1241,7 @@ liblzma/common/stream_flags_encoder.obj: liblzma/common/stream_flags_encoder.c.o
 
 # target to build an object file
 liblzma/common/stream_flags_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.obj
 .PHONY : liblzma/common/stream_flags_encoder.c.obj
 
 liblzma/common/stream_flags_encoder.i: liblzma/common/stream_flags_encoder.c.i
@@ -1249,7 +1249,7 @@ liblzma/common/stream_flags_encoder.i: liblzma/common/stream_flags_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/stream_flags_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.i
 .PHONY : liblzma/common/stream_flags_encoder.c.i
 
 liblzma/common/stream_flags_encoder.s: liblzma/common/stream_flags_encoder.c.s
@@ -1257,7 +1257,7 @@ liblzma/common/stream_flags_encoder.s: liblzma/common/stream_flags_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/stream_flags_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/stream_flags_encoder.c.s
 .PHONY : liblzma/common/stream_flags_encoder.c.s
 
 liblzma/common/vli_decoder.obj: liblzma/common/vli_decoder.c.obj
@@ -1265,7 +1265,7 @@ liblzma/common/vli_decoder.obj: liblzma/common/vli_decoder.c.obj
 
 # target to build an object file
 liblzma/common/vli_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.obj
 .PHONY : liblzma/common/vli_decoder.c.obj
 
 liblzma/common/vli_decoder.i: liblzma/common/vli_decoder.c.i
@@ -1273,7 +1273,7 @@ liblzma/common/vli_decoder.i: liblzma/common/vli_decoder.c.i
 
 # target to preprocess a source file
 liblzma/common/vli_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.i
 .PHONY : liblzma/common/vli_decoder.c.i
 
 liblzma/common/vli_decoder.s: liblzma/common/vli_decoder.c.s
@@ -1281,7 +1281,7 @@ liblzma/common/vli_decoder.s: liblzma/common/vli_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/vli_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_decoder.c.s
 .PHONY : liblzma/common/vli_decoder.c.s
 
 liblzma/common/vli_encoder.obj: liblzma/common/vli_encoder.c.obj
@@ -1289,7 +1289,7 @@ liblzma/common/vli_encoder.obj: liblzma/common/vli_encoder.c.obj
 
 # target to build an object file
 liblzma/common/vli_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.obj
 .PHONY : liblzma/common/vli_encoder.c.obj
 
 liblzma/common/vli_encoder.i: liblzma/common/vli_encoder.c.i
@@ -1297,7 +1297,7 @@ liblzma/common/vli_encoder.i: liblzma/common/vli_encoder.c.i
 
 # target to preprocess a source file
 liblzma/common/vli_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.i
 .PHONY : liblzma/common/vli_encoder.c.i
 
 liblzma/common/vli_encoder.s: liblzma/common/vli_encoder.c.s
@@ -1305,7 +1305,7 @@ liblzma/common/vli_encoder.s: liblzma/common/vli_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/common/vli_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_encoder.c.s
 .PHONY : liblzma/common/vli_encoder.c.s
 
 liblzma/common/vli_size.obj: liblzma/common/vli_size.c.obj
@@ -1313,7 +1313,7 @@ liblzma/common/vli_size.obj: liblzma/common/vli_size.c.obj
 
 # target to build an object file
 liblzma/common/vli_size.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.obj
 .PHONY : liblzma/common/vli_size.c.obj
 
 liblzma/common/vli_size.i: liblzma/common/vli_size.c.i
@@ -1321,7 +1321,7 @@ liblzma/common/vli_size.i: liblzma/common/vli_size.c.i
 
 # target to preprocess a source file
 liblzma/common/vli_size.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.i
 .PHONY : liblzma/common/vli_size.c.i
 
 liblzma/common/vli_size.s: liblzma/common/vli_size.c.s
@@ -1329,7 +1329,7 @@ liblzma/common/vli_size.s: liblzma/common/vli_size.c.s
 
 # target to generate assembly for a file
 liblzma/common/vli_size.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/common/vli_size.c.s
 .PHONY : liblzma/common/vli_size.c.s
 
 liblzma/delta/delta_common.obj: liblzma/delta/delta_common.c.obj
@@ -1337,7 +1337,7 @@ liblzma/delta/delta_common.obj: liblzma/delta/delta_common.c.obj
 
 # target to build an object file
 liblzma/delta/delta_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.obj
 .PHONY : liblzma/delta/delta_common.c.obj
 
 liblzma/delta/delta_common.i: liblzma/delta/delta_common.c.i
@@ -1345,7 +1345,7 @@ liblzma/delta/delta_common.i: liblzma/delta/delta_common.c.i
 
 # target to preprocess a source file
 liblzma/delta/delta_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.i
 .PHONY : liblzma/delta/delta_common.c.i
 
 liblzma/delta/delta_common.s: liblzma/delta/delta_common.c.s
@@ -1353,7 +1353,7 @@ liblzma/delta/delta_common.s: liblzma/delta/delta_common.c.s
 
 # target to generate assembly for a file
 liblzma/delta/delta_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_common.c.s
 .PHONY : liblzma/delta/delta_common.c.s
 
 liblzma/delta/delta_decoder.obj: liblzma/delta/delta_decoder.c.obj
@@ -1361,7 +1361,7 @@ liblzma/delta/delta_decoder.obj: liblzma/delta/delta_decoder.c.obj
 
 # target to build an object file
 liblzma/delta/delta_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.obj
 .PHONY : liblzma/delta/delta_decoder.c.obj
 
 liblzma/delta/delta_decoder.i: liblzma/delta/delta_decoder.c.i
@@ -1369,7 +1369,7 @@ liblzma/delta/delta_decoder.i: liblzma/delta/delta_decoder.c.i
 
 # target to preprocess a source file
 liblzma/delta/delta_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.i
 .PHONY : liblzma/delta/delta_decoder.c.i
 
 liblzma/delta/delta_decoder.s: liblzma/delta/delta_decoder.c.s
@@ -1377,7 +1377,7 @@ liblzma/delta/delta_decoder.s: liblzma/delta/delta_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/delta/delta_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_decoder.c.s
 .PHONY : liblzma/delta/delta_decoder.c.s
 
 liblzma/delta/delta_encoder.obj: liblzma/delta/delta_encoder.c.obj
@@ -1385,7 +1385,7 @@ liblzma/delta/delta_encoder.obj: liblzma/delta/delta_encoder.c.obj
 
 # target to build an object file
 liblzma/delta/delta_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.obj
 .PHONY : liblzma/delta/delta_encoder.c.obj
 
 liblzma/delta/delta_encoder.i: liblzma/delta/delta_encoder.c.i
@@ -1393,7 +1393,7 @@ liblzma/delta/delta_encoder.i: liblzma/delta/delta_encoder.c.i
 
 # target to preprocess a source file
 liblzma/delta/delta_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.i
 .PHONY : liblzma/delta/delta_encoder.c.i
 
 liblzma/delta/delta_encoder.s: liblzma/delta/delta_encoder.c.s
@@ -1401,7 +1401,7 @@ liblzma/delta/delta_encoder.s: liblzma/delta/delta_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/delta/delta_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/delta/delta_encoder.c.s
 .PHONY : liblzma/delta/delta_encoder.c.s
 
 liblzma/lz/lz_decoder.obj: liblzma/lz/lz_decoder.c.obj
@@ -1409,7 +1409,7 @@ liblzma/lz/lz_decoder.obj: liblzma/lz/lz_decoder.c.obj
 
 # target to build an object file
 liblzma/lz/lz_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.obj
 .PHONY : liblzma/lz/lz_decoder.c.obj
 
 liblzma/lz/lz_decoder.i: liblzma/lz/lz_decoder.c.i
@@ -1417,7 +1417,7 @@ liblzma/lz/lz_decoder.i: liblzma/lz/lz_decoder.c.i
 
 # target to preprocess a source file
 liblzma/lz/lz_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.i
 .PHONY : liblzma/lz/lz_decoder.c.i
 
 liblzma/lz/lz_decoder.s: liblzma/lz/lz_decoder.c.s
@@ -1425,7 +1425,7 @@ liblzma/lz/lz_decoder.s: liblzma/lz/lz_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/lz/lz_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_decoder.c.s
 .PHONY : liblzma/lz/lz_decoder.c.s
 
 liblzma/lz/lz_encoder.obj: liblzma/lz/lz_encoder.c.obj
@@ -1433,7 +1433,7 @@ liblzma/lz/lz_encoder.obj: liblzma/lz/lz_encoder.c.obj
 
 # target to build an object file
 liblzma/lz/lz_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.obj
 .PHONY : liblzma/lz/lz_encoder.c.obj
 
 liblzma/lz/lz_encoder.i: liblzma/lz/lz_encoder.c.i
@@ -1441,7 +1441,7 @@ liblzma/lz/lz_encoder.i: liblzma/lz/lz_encoder.c.i
 
 # target to preprocess a source file
 liblzma/lz/lz_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.i
 .PHONY : liblzma/lz/lz_encoder.c.i
 
 liblzma/lz/lz_encoder.s: liblzma/lz/lz_encoder.c.s
@@ -1449,7 +1449,7 @@ liblzma/lz/lz_encoder.s: liblzma/lz/lz_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/lz/lz_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder.c.s
 .PHONY : liblzma/lz/lz_encoder.c.s
 
 liblzma/lz/lz_encoder_mf.obj: liblzma/lz/lz_encoder_mf.c.obj
@@ -1457,7 +1457,7 @@ liblzma/lz/lz_encoder_mf.obj: liblzma/lz/lz_encoder_mf.c.obj
 
 # target to build an object file
 liblzma/lz/lz_encoder_mf.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.obj
 .PHONY : liblzma/lz/lz_encoder_mf.c.obj
 
 liblzma/lz/lz_encoder_mf.i: liblzma/lz/lz_encoder_mf.c.i
@@ -1465,7 +1465,7 @@ liblzma/lz/lz_encoder_mf.i: liblzma/lz/lz_encoder_mf.c.i
 
 # target to preprocess a source file
 liblzma/lz/lz_encoder_mf.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.i
 .PHONY : liblzma/lz/lz_encoder_mf.c.i
 
 liblzma/lz/lz_encoder_mf.s: liblzma/lz/lz_encoder_mf.c.s
@@ -1473,7 +1473,7 @@ liblzma/lz/lz_encoder_mf.s: liblzma/lz/lz_encoder_mf.c.s
 
 # target to generate assembly for a file
 liblzma/lz/lz_encoder_mf.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lz/lz_encoder_mf.c.s
 .PHONY : liblzma/lz/lz_encoder_mf.c.s
 
 liblzma/lzma/fastpos_table.obj: liblzma/lzma/fastpos_table.c.obj
@@ -1481,7 +1481,7 @@ liblzma/lzma/fastpos_table.obj: liblzma/lzma/fastpos_table.c.obj
 
 # target to build an object file
 liblzma/lzma/fastpos_table.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.obj
 .PHONY : liblzma/lzma/fastpos_table.c.obj
 
 liblzma/lzma/fastpos_table.i: liblzma/lzma/fastpos_table.c.i
@@ -1489,7 +1489,7 @@ liblzma/lzma/fastpos_table.i: liblzma/lzma/fastpos_table.c.i
 
 # target to preprocess a source file
 liblzma/lzma/fastpos_table.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.i
 .PHONY : liblzma/lzma/fastpos_table.c.i
 
 liblzma/lzma/fastpos_table.s: liblzma/lzma/fastpos_table.c.s
@@ -1497,7 +1497,7 @@ liblzma/lzma/fastpos_table.s: liblzma/lzma/fastpos_table.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/fastpos_table.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/fastpos_table.c.s
 .PHONY : liblzma/lzma/fastpos_table.c.s
 
 liblzma/lzma/lzma2_decoder.obj: liblzma/lzma/lzma2_decoder.c.obj
@@ -1505,7 +1505,7 @@ liblzma/lzma/lzma2_decoder.obj: liblzma/lzma/lzma2_decoder.c.obj
 
 # target to build an object file
 liblzma/lzma/lzma2_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.obj
 .PHONY : liblzma/lzma/lzma2_decoder.c.obj
 
 liblzma/lzma/lzma2_decoder.i: liblzma/lzma/lzma2_decoder.c.i
@@ -1513,7 +1513,7 @@ liblzma/lzma/lzma2_decoder.i: liblzma/lzma/lzma2_decoder.c.i
 
 # target to preprocess a source file
 liblzma/lzma/lzma2_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.i
 .PHONY : liblzma/lzma/lzma2_decoder.c.i
 
 liblzma/lzma/lzma2_decoder.s: liblzma/lzma/lzma2_decoder.c.s
@@ -1521,7 +1521,7 @@ liblzma/lzma/lzma2_decoder.s: liblzma/lzma/lzma2_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/lzma2_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_decoder.c.s
 .PHONY : liblzma/lzma/lzma2_decoder.c.s
 
 liblzma/lzma/lzma2_encoder.obj: liblzma/lzma/lzma2_encoder.c.obj
@@ -1529,7 +1529,7 @@ liblzma/lzma/lzma2_encoder.obj: liblzma/lzma/lzma2_encoder.c.obj
 
 # target to build an object file
 liblzma/lzma/lzma2_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.obj
 .PHONY : liblzma/lzma/lzma2_encoder.c.obj
 
 liblzma/lzma/lzma2_encoder.i: liblzma/lzma/lzma2_encoder.c.i
@@ -1537,7 +1537,7 @@ liblzma/lzma/lzma2_encoder.i: liblzma/lzma/lzma2_encoder.c.i
 
 # target to preprocess a source file
 liblzma/lzma/lzma2_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.i
 .PHONY : liblzma/lzma/lzma2_encoder.c.i
 
 liblzma/lzma/lzma2_encoder.s: liblzma/lzma/lzma2_encoder.c.s
@@ -1545,7 +1545,7 @@ liblzma/lzma/lzma2_encoder.s: liblzma/lzma/lzma2_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/lzma2_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma2_encoder.c.s
 .PHONY : liblzma/lzma/lzma2_encoder.c.s
 
 liblzma/lzma/lzma_decoder.obj: liblzma/lzma/lzma_decoder.c.obj
@@ -1553,7 +1553,7 @@ liblzma/lzma/lzma_decoder.obj: liblzma/lzma/lzma_decoder.c.obj
 
 # target to build an object file
 liblzma/lzma/lzma_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.obj
 .PHONY : liblzma/lzma/lzma_decoder.c.obj
 
 liblzma/lzma/lzma_decoder.i: liblzma/lzma/lzma_decoder.c.i
@@ -1561,7 +1561,7 @@ liblzma/lzma/lzma_decoder.i: liblzma/lzma/lzma_decoder.c.i
 
 # target to preprocess a source file
 liblzma/lzma/lzma_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.i
 .PHONY : liblzma/lzma/lzma_decoder.c.i
 
 liblzma/lzma/lzma_decoder.s: liblzma/lzma/lzma_decoder.c.s
@@ -1569,7 +1569,7 @@ liblzma/lzma/lzma_decoder.s: liblzma/lzma/lzma_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/lzma_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_decoder.c.s
 .PHONY : liblzma/lzma/lzma_decoder.c.s
 
 liblzma/lzma/lzma_encoder.obj: liblzma/lzma/lzma_encoder.c.obj
@@ -1577,7 +1577,7 @@ liblzma/lzma/lzma_encoder.obj: liblzma/lzma/lzma_encoder.c.obj
 
 # target to build an object file
 liblzma/lzma/lzma_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.obj
 .PHONY : liblzma/lzma/lzma_encoder.c.obj
 
 liblzma/lzma/lzma_encoder.i: liblzma/lzma/lzma_encoder.c.i
@@ -1585,7 +1585,7 @@ liblzma/lzma/lzma_encoder.i: liblzma/lzma/lzma_encoder.c.i
 
 # target to preprocess a source file
 liblzma/lzma/lzma_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.i
 .PHONY : liblzma/lzma/lzma_encoder.c.i
 
 liblzma/lzma/lzma_encoder.s: liblzma/lzma/lzma_encoder.c.s
@@ -1593,7 +1593,7 @@ liblzma/lzma/lzma_encoder.s: liblzma/lzma/lzma_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/lzma_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder.c.s
 .PHONY : liblzma/lzma/lzma_encoder.c.s
 
 liblzma/lzma/lzma_encoder_optimum_fast.obj: liblzma/lzma/lzma_encoder_optimum_fast.c.obj
@@ -1601,7 +1601,7 @@ liblzma/lzma/lzma_encoder_optimum_fast.obj: liblzma/lzma/lzma_encoder_optimum_fa
 
 # target to build an object file
 liblzma/lzma/lzma_encoder_optimum_fast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.obj
 .PHONY : liblzma/lzma/lzma_encoder_optimum_fast.c.obj
 
 liblzma/lzma/lzma_encoder_optimum_fast.i: liblzma/lzma/lzma_encoder_optimum_fast.c.i
@@ -1609,7 +1609,7 @@ liblzma/lzma/lzma_encoder_optimum_fast.i: liblzma/lzma/lzma_encoder_optimum_fast
 
 # target to preprocess a source file
 liblzma/lzma/lzma_encoder_optimum_fast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.i
 .PHONY : liblzma/lzma/lzma_encoder_optimum_fast.c.i
 
 liblzma/lzma/lzma_encoder_optimum_fast.s: liblzma/lzma/lzma_encoder_optimum_fast.c.s
@@ -1617,7 +1617,7 @@ liblzma/lzma/lzma_encoder_optimum_fast.s: liblzma/lzma/lzma_encoder_optimum_fast
 
 # target to generate assembly for a file
 liblzma/lzma/lzma_encoder_optimum_fast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_fast.c.s
 .PHONY : liblzma/lzma/lzma_encoder_optimum_fast.c.s
 
 liblzma/lzma/lzma_encoder_optimum_normal.obj: liblzma/lzma/lzma_encoder_optimum_normal.c.obj
@@ -1625,7 +1625,7 @@ liblzma/lzma/lzma_encoder_optimum_normal.obj: liblzma/lzma/lzma_encoder_optimum_
 
 # target to build an object file
 liblzma/lzma/lzma_encoder_optimum_normal.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.obj
 .PHONY : liblzma/lzma/lzma_encoder_optimum_normal.c.obj
 
 liblzma/lzma/lzma_encoder_optimum_normal.i: liblzma/lzma/lzma_encoder_optimum_normal.c.i
@@ -1633,7 +1633,7 @@ liblzma/lzma/lzma_encoder_optimum_normal.i: liblzma/lzma/lzma_encoder_optimum_no
 
 # target to preprocess a source file
 liblzma/lzma/lzma_encoder_optimum_normal.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.i
 .PHONY : liblzma/lzma/lzma_encoder_optimum_normal.c.i
 
 liblzma/lzma/lzma_encoder_optimum_normal.s: liblzma/lzma/lzma_encoder_optimum_normal.c.s
@@ -1641,7 +1641,7 @@ liblzma/lzma/lzma_encoder_optimum_normal.s: liblzma/lzma/lzma_encoder_optimum_no
 
 # target to generate assembly for a file
 liblzma/lzma/lzma_encoder_optimum_normal.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_optimum_normal.c.s
 .PHONY : liblzma/lzma/lzma_encoder_optimum_normal.c.s
 
 liblzma/lzma/lzma_encoder_presets.obj: liblzma/lzma/lzma_encoder_presets.c.obj
@@ -1649,7 +1649,7 @@ liblzma/lzma/lzma_encoder_presets.obj: liblzma/lzma/lzma_encoder_presets.c.obj
 
 # target to build an object file
 liblzma/lzma/lzma_encoder_presets.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.obj
 .PHONY : liblzma/lzma/lzma_encoder_presets.c.obj
 
 liblzma/lzma/lzma_encoder_presets.i: liblzma/lzma/lzma_encoder_presets.c.i
@@ -1657,7 +1657,7 @@ liblzma/lzma/lzma_encoder_presets.i: liblzma/lzma/lzma_encoder_presets.c.i
 
 # target to preprocess a source file
 liblzma/lzma/lzma_encoder_presets.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.i
 .PHONY : liblzma/lzma/lzma_encoder_presets.c.i
 
 liblzma/lzma/lzma_encoder_presets.s: liblzma/lzma/lzma_encoder_presets.c.s
@@ -1665,7 +1665,7 @@ liblzma/lzma/lzma_encoder_presets.s: liblzma/lzma/lzma_encoder_presets.c.s
 
 # target to generate assembly for a file
 liblzma/lzma/lzma_encoder_presets.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/lzma/lzma_encoder_presets.c.s
 .PHONY : liblzma/lzma/lzma_encoder_presets.c.s
 
 liblzma/rangecoder/price_table.obj: liblzma/rangecoder/price_table.c.obj
@@ -1673,7 +1673,7 @@ liblzma/rangecoder/price_table.obj: liblzma/rangecoder/price_table.c.obj
 
 # target to build an object file
 liblzma/rangecoder/price_table.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.obj
 .PHONY : liblzma/rangecoder/price_table.c.obj
 
 liblzma/rangecoder/price_table.i: liblzma/rangecoder/price_table.c.i
@@ -1681,7 +1681,7 @@ liblzma/rangecoder/price_table.i: liblzma/rangecoder/price_table.c.i
 
 # target to preprocess a source file
 liblzma/rangecoder/price_table.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.i
 .PHONY : liblzma/rangecoder/price_table.c.i
 
 liblzma/rangecoder/price_table.s: liblzma/rangecoder/price_table.c.s
@@ -1689,7 +1689,7 @@ liblzma/rangecoder/price_table.s: liblzma/rangecoder/price_table.c.s
 
 # target to generate assembly for a file
 liblzma/rangecoder/price_table.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/rangecoder/price_table.c.s
 .PHONY : liblzma/rangecoder/price_table.c.s
 
 liblzma/simple/arm.obj: liblzma/simple/arm.c.obj
@@ -1697,7 +1697,7 @@ liblzma/simple/arm.obj: liblzma/simple/arm.c.obj
 
 # target to build an object file
 liblzma/simple/arm.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.obj
 .PHONY : liblzma/simple/arm.c.obj
 
 liblzma/simple/arm.i: liblzma/simple/arm.c.i
@@ -1705,7 +1705,7 @@ liblzma/simple/arm.i: liblzma/simple/arm.c.i
 
 # target to preprocess a source file
 liblzma/simple/arm.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.i
 .PHONY : liblzma/simple/arm.c.i
 
 liblzma/simple/arm.s: liblzma/simple/arm.c.s
@@ -1713,7 +1713,7 @@ liblzma/simple/arm.s: liblzma/simple/arm.c.s
 
 # target to generate assembly for a file
 liblzma/simple/arm.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/arm.c.s
 .PHONY : liblzma/simple/arm.c.s
 
 liblzma/simple/armthumb.obj: liblzma/simple/armthumb.c.obj
@@ -1721,7 +1721,7 @@ liblzma/simple/armthumb.obj: liblzma/simple/armthumb.c.obj
 
 # target to build an object file
 liblzma/simple/armthumb.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.obj
 .PHONY : liblzma/simple/armthumb.c.obj
 
 liblzma/simple/armthumb.i: liblzma/simple/armthumb.c.i
@@ -1729,7 +1729,7 @@ liblzma/simple/armthumb.i: liblzma/simple/armthumb.c.i
 
 # target to preprocess a source file
 liblzma/simple/armthumb.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.i
 .PHONY : liblzma/simple/armthumb.c.i
 
 liblzma/simple/armthumb.s: liblzma/simple/armthumb.c.s
@@ -1737,7 +1737,7 @@ liblzma/simple/armthumb.s: liblzma/simple/armthumb.c.s
 
 # target to generate assembly for a file
 liblzma/simple/armthumb.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/armthumb.c.s
 .PHONY : liblzma/simple/armthumb.c.s
 
 liblzma/simple/ia64.obj: liblzma/simple/ia64.c.obj
@@ -1745,7 +1745,7 @@ liblzma/simple/ia64.obj: liblzma/simple/ia64.c.obj
 
 # target to build an object file
 liblzma/simple/ia64.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.obj
 .PHONY : liblzma/simple/ia64.c.obj
 
 liblzma/simple/ia64.i: liblzma/simple/ia64.c.i
@@ -1753,7 +1753,7 @@ liblzma/simple/ia64.i: liblzma/simple/ia64.c.i
 
 # target to preprocess a source file
 liblzma/simple/ia64.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.i
 .PHONY : liblzma/simple/ia64.c.i
 
 liblzma/simple/ia64.s: liblzma/simple/ia64.c.s
@@ -1761,7 +1761,7 @@ liblzma/simple/ia64.s: liblzma/simple/ia64.c.s
 
 # target to generate assembly for a file
 liblzma/simple/ia64.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/ia64.c.s
 .PHONY : liblzma/simple/ia64.c.s
 
 liblzma/simple/powerpc.obj: liblzma/simple/powerpc.c.obj
@@ -1769,7 +1769,7 @@ liblzma/simple/powerpc.obj: liblzma/simple/powerpc.c.obj
 
 # target to build an object file
 liblzma/simple/powerpc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.obj
 .PHONY : liblzma/simple/powerpc.c.obj
 
 liblzma/simple/powerpc.i: liblzma/simple/powerpc.c.i
@@ -1777,7 +1777,7 @@ liblzma/simple/powerpc.i: liblzma/simple/powerpc.c.i
 
 # target to preprocess a source file
 liblzma/simple/powerpc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.i
 .PHONY : liblzma/simple/powerpc.c.i
 
 liblzma/simple/powerpc.s: liblzma/simple/powerpc.c.s
@@ -1785,7 +1785,7 @@ liblzma/simple/powerpc.s: liblzma/simple/powerpc.c.s
 
 # target to generate assembly for a file
 liblzma/simple/powerpc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/powerpc.c.s
 .PHONY : liblzma/simple/powerpc.c.s
 
 liblzma/simple/simple_coder.obj: liblzma/simple/simple_coder.c.obj
@@ -1793,7 +1793,7 @@ liblzma/simple/simple_coder.obj: liblzma/simple/simple_coder.c.obj
 
 # target to build an object file
 liblzma/simple/simple_coder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.obj
 .PHONY : liblzma/simple/simple_coder.c.obj
 
 liblzma/simple/simple_coder.i: liblzma/simple/simple_coder.c.i
@@ -1801,7 +1801,7 @@ liblzma/simple/simple_coder.i: liblzma/simple/simple_coder.c.i
 
 # target to preprocess a source file
 liblzma/simple/simple_coder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.i
 .PHONY : liblzma/simple/simple_coder.c.i
 
 liblzma/simple/simple_coder.s: liblzma/simple/simple_coder.c.s
@@ -1809,7 +1809,7 @@ liblzma/simple/simple_coder.s: liblzma/simple/simple_coder.c.s
 
 # target to generate assembly for a file
 liblzma/simple/simple_coder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_coder.c.s
 .PHONY : liblzma/simple/simple_coder.c.s
 
 liblzma/simple/simple_decoder.obj: liblzma/simple/simple_decoder.c.obj
@@ -1817,7 +1817,7 @@ liblzma/simple/simple_decoder.obj: liblzma/simple/simple_decoder.c.obj
 
 # target to build an object file
 liblzma/simple/simple_decoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.obj
 .PHONY : liblzma/simple/simple_decoder.c.obj
 
 liblzma/simple/simple_decoder.i: liblzma/simple/simple_decoder.c.i
@@ -1825,7 +1825,7 @@ liblzma/simple/simple_decoder.i: liblzma/simple/simple_decoder.c.i
 
 # target to preprocess a source file
 liblzma/simple/simple_decoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.i
 .PHONY : liblzma/simple/simple_decoder.c.i
 
 liblzma/simple/simple_decoder.s: liblzma/simple/simple_decoder.c.s
@@ -1833,7 +1833,7 @@ liblzma/simple/simple_decoder.s: liblzma/simple/simple_decoder.c.s
 
 # target to generate assembly for a file
 liblzma/simple/simple_decoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_decoder.c.s
 .PHONY : liblzma/simple/simple_decoder.c.s
 
 liblzma/simple/simple_encoder.obj: liblzma/simple/simple_encoder.c.obj
@@ -1841,7 +1841,7 @@ liblzma/simple/simple_encoder.obj: liblzma/simple/simple_encoder.c.obj
 
 # target to build an object file
 liblzma/simple/simple_encoder.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.obj
 .PHONY : liblzma/simple/simple_encoder.c.obj
 
 liblzma/simple/simple_encoder.i: liblzma/simple/simple_encoder.c.i
@@ -1849,7 +1849,7 @@ liblzma/simple/simple_encoder.i: liblzma/simple/simple_encoder.c.i
 
 # target to preprocess a source file
 liblzma/simple/simple_encoder.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.i
 .PHONY : liblzma/simple/simple_encoder.c.i
 
 liblzma/simple/simple_encoder.s: liblzma/simple/simple_encoder.c.s
@@ -1857,7 +1857,7 @@ liblzma/simple/simple_encoder.s: liblzma/simple/simple_encoder.c.s
 
 # target to generate assembly for a file
 liblzma/simple/simple_encoder.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/simple_encoder.c.s
 .PHONY : liblzma/simple/simple_encoder.c.s
 
 liblzma/simple/sparc.obj: liblzma/simple/sparc.c.obj
@@ -1865,7 +1865,7 @@ liblzma/simple/sparc.obj: liblzma/simple/sparc.c.obj
 
 # target to build an object file
 liblzma/simple/sparc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.obj
 .PHONY : liblzma/simple/sparc.c.obj
 
 liblzma/simple/sparc.i: liblzma/simple/sparc.c.i
@@ -1873,7 +1873,7 @@ liblzma/simple/sparc.i: liblzma/simple/sparc.c.i
 
 # target to preprocess a source file
 liblzma/simple/sparc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.i
 .PHONY : liblzma/simple/sparc.c.i
 
 liblzma/simple/sparc.s: liblzma/simple/sparc.c.s
@@ -1881,7 +1881,7 @@ liblzma/simple/sparc.s: liblzma/simple/sparc.c.s
 
 # target to generate assembly for a file
 liblzma/simple/sparc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/sparc.c.s
 .PHONY : liblzma/simple/sparc.c.s
 
 liblzma/simple/x86.obj: liblzma/simple/x86.c.obj
@@ -1889,7 +1889,7 @@ liblzma/simple/x86.obj: liblzma/simple/x86.c.obj
 
 # target to build an object file
 liblzma/simple/x86.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.obj
 .PHONY : liblzma/simple/x86.c.obj
 
 liblzma/simple/x86.i: liblzma/simple/x86.c.i
@@ -1897,7 +1897,7 @@ liblzma/simple/x86.i: liblzma/simple/x86.c.i
 
 # target to preprocess a source file
 liblzma/simple/x86.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.i
 .PHONY : liblzma/simple/x86.c.i
 
 liblzma/simple/x86.s: liblzma/simple/x86.c.s
@@ -1905,7 +1905,7 @@ liblzma/simple/x86.s: liblzma/simple/x86.c.s
 
 # target to generate assembly for a file
 liblzma/simple/x86.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmliblzma\CMakeFiles\cmliblzma.dir\build.make Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/liblzma/simple/x86.c.s
 .PHONY : liblzma/simple/x86.c.s
 
 # Help Target
@@ -2148,6 +2148,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

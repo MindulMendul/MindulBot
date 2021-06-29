@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmlibarchive\libarchive\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmlibarchive\libarchive\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/rule
 .PHONY : Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmlibarchive: Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/rule
 
 # fast build rule for target.
 cmlibarchive/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/build
 .PHONY : cmlibarchive/fast
 
 archive_acl.obj: archive_acl.c.obj
@@ -209,7 +209,7 @@ archive_acl.obj: archive_acl.c.obj
 
 # target to build an object file
 archive_acl.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.obj
 .PHONY : archive_acl.c.obj
 
 archive_acl.i: archive_acl.c.i
@@ -217,7 +217,7 @@ archive_acl.i: archive_acl.c.i
 
 # target to preprocess a source file
 archive_acl.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.i
 .PHONY : archive_acl.c.i
 
 archive_acl.s: archive_acl.c.s
@@ -225,7 +225,7 @@ archive_acl.s: archive_acl.c.s
 
 # target to generate assembly for a file
 archive_acl.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_acl.c.s
 .PHONY : archive_acl.c.s
 
 archive_blake2s_ref.obj: archive_blake2s_ref.c.obj
@@ -233,7 +233,7 @@ archive_blake2s_ref.obj: archive_blake2s_ref.c.obj
 
 # target to build an object file
 archive_blake2s_ref.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.obj
 .PHONY : archive_blake2s_ref.c.obj
 
 archive_blake2s_ref.i: archive_blake2s_ref.c.i
@@ -241,7 +241,7 @@ archive_blake2s_ref.i: archive_blake2s_ref.c.i
 
 # target to preprocess a source file
 archive_blake2s_ref.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.i
 .PHONY : archive_blake2s_ref.c.i
 
 archive_blake2s_ref.s: archive_blake2s_ref.c.s
@@ -249,7 +249,7 @@ archive_blake2s_ref.s: archive_blake2s_ref.c.s
 
 # target to generate assembly for a file
 archive_blake2s_ref.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2s_ref.c.s
 .PHONY : archive_blake2s_ref.c.s
 
 archive_blake2sp_ref.obj: archive_blake2sp_ref.c.obj
@@ -257,7 +257,7 @@ archive_blake2sp_ref.obj: archive_blake2sp_ref.c.obj
 
 # target to build an object file
 archive_blake2sp_ref.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.obj
 .PHONY : archive_blake2sp_ref.c.obj
 
 archive_blake2sp_ref.i: archive_blake2sp_ref.c.i
@@ -265,7 +265,7 @@ archive_blake2sp_ref.i: archive_blake2sp_ref.c.i
 
 # target to preprocess a source file
 archive_blake2sp_ref.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.i
 .PHONY : archive_blake2sp_ref.c.i
 
 archive_blake2sp_ref.s: archive_blake2sp_ref.c.s
@@ -273,7 +273,7 @@ archive_blake2sp_ref.s: archive_blake2sp_ref.c.s
 
 # target to generate assembly for a file
 archive_blake2sp_ref.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_blake2sp_ref.c.s
 .PHONY : archive_blake2sp_ref.c.s
 
 archive_check_magic.obj: archive_check_magic.c.obj
@@ -281,7 +281,7 @@ archive_check_magic.obj: archive_check_magic.c.obj
 
 # target to build an object file
 archive_check_magic.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.obj
 .PHONY : archive_check_magic.c.obj
 
 archive_check_magic.i: archive_check_magic.c.i
@@ -289,7 +289,7 @@ archive_check_magic.i: archive_check_magic.c.i
 
 # target to preprocess a source file
 archive_check_magic.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.i
 .PHONY : archive_check_magic.c.i
 
 archive_check_magic.s: archive_check_magic.c.s
@@ -297,7 +297,7 @@ archive_check_magic.s: archive_check_magic.c.s
 
 # target to generate assembly for a file
 archive_check_magic.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_check_magic.c.s
 .PHONY : archive_check_magic.c.s
 
 archive_cmdline.obj: archive_cmdline.c.obj
@@ -305,7 +305,7 @@ archive_cmdline.obj: archive_cmdline.c.obj
 
 # target to build an object file
 archive_cmdline.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.obj
 .PHONY : archive_cmdline.c.obj
 
 archive_cmdline.i: archive_cmdline.c.i
@@ -313,7 +313,7 @@ archive_cmdline.i: archive_cmdline.c.i
 
 # target to preprocess a source file
 archive_cmdline.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.i
 .PHONY : archive_cmdline.c.i
 
 archive_cmdline.s: archive_cmdline.c.s
@@ -321,7 +321,7 @@ archive_cmdline.s: archive_cmdline.c.s
 
 # target to generate assembly for a file
 archive_cmdline.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cmdline.c.s
 .PHONY : archive_cmdline.c.s
 
 archive_cryptor.obj: archive_cryptor.c.obj
@@ -329,7 +329,7 @@ archive_cryptor.obj: archive_cryptor.c.obj
 
 # target to build an object file
 archive_cryptor.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.obj
 .PHONY : archive_cryptor.c.obj
 
 archive_cryptor.i: archive_cryptor.c.i
@@ -337,7 +337,7 @@ archive_cryptor.i: archive_cryptor.c.i
 
 # target to preprocess a source file
 archive_cryptor.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.i
 .PHONY : archive_cryptor.c.i
 
 archive_cryptor.s: archive_cryptor.c.s
@@ -345,7 +345,7 @@ archive_cryptor.s: archive_cryptor.c.s
 
 # target to generate assembly for a file
 archive_cryptor.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_cryptor.c.s
 .PHONY : archive_cryptor.c.s
 
 archive_digest.obj: archive_digest.c.obj
@@ -353,7 +353,7 @@ archive_digest.obj: archive_digest.c.obj
 
 # target to build an object file
 archive_digest.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.obj
 .PHONY : archive_digest.c.obj
 
 archive_digest.i: archive_digest.c.i
@@ -361,7 +361,7 @@ archive_digest.i: archive_digest.c.i
 
 # target to preprocess a source file
 archive_digest.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.i
 .PHONY : archive_digest.c.i
 
 archive_digest.s: archive_digest.c.s
@@ -369,7 +369,7 @@ archive_digest.s: archive_digest.c.s
 
 # target to generate assembly for a file
 archive_digest.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_digest.c.s
 .PHONY : archive_digest.c.s
 
 archive_entry.obj: archive_entry.c.obj
@@ -377,7 +377,7 @@ archive_entry.obj: archive_entry.c.obj
 
 # target to build an object file
 archive_entry.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.obj
 .PHONY : archive_entry.c.obj
 
 archive_entry.i: archive_entry.c.i
@@ -385,7 +385,7 @@ archive_entry.i: archive_entry.c.i
 
 # target to preprocess a source file
 archive_entry.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.i
 .PHONY : archive_entry.c.i
 
 archive_entry.s: archive_entry.c.s
@@ -393,7 +393,7 @@ archive_entry.s: archive_entry.c.s
 
 # target to generate assembly for a file
 archive_entry.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry.c.s
 .PHONY : archive_entry.c.s
 
 archive_entry_copy_bhfi.obj: archive_entry_copy_bhfi.c.obj
@@ -401,7 +401,7 @@ archive_entry_copy_bhfi.obj: archive_entry_copy_bhfi.c.obj
 
 # target to build an object file
 archive_entry_copy_bhfi.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.obj
 .PHONY : archive_entry_copy_bhfi.c.obj
 
 archive_entry_copy_bhfi.i: archive_entry_copy_bhfi.c.i
@@ -409,7 +409,7 @@ archive_entry_copy_bhfi.i: archive_entry_copy_bhfi.c.i
 
 # target to preprocess a source file
 archive_entry_copy_bhfi.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.i
 .PHONY : archive_entry_copy_bhfi.c.i
 
 archive_entry_copy_bhfi.s: archive_entry_copy_bhfi.c.s
@@ -417,7 +417,7 @@ archive_entry_copy_bhfi.s: archive_entry_copy_bhfi.c.s
 
 # target to generate assembly for a file
 archive_entry_copy_bhfi.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_bhfi.c.s
 .PHONY : archive_entry_copy_bhfi.c.s
 
 archive_entry_copy_stat.obj: archive_entry_copy_stat.c.obj
@@ -425,7 +425,7 @@ archive_entry_copy_stat.obj: archive_entry_copy_stat.c.obj
 
 # target to build an object file
 archive_entry_copy_stat.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.obj
 .PHONY : archive_entry_copy_stat.c.obj
 
 archive_entry_copy_stat.i: archive_entry_copy_stat.c.i
@@ -433,7 +433,7 @@ archive_entry_copy_stat.i: archive_entry_copy_stat.c.i
 
 # target to preprocess a source file
 archive_entry_copy_stat.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.i
 .PHONY : archive_entry_copy_stat.c.i
 
 archive_entry_copy_stat.s: archive_entry_copy_stat.c.s
@@ -441,7 +441,7 @@ archive_entry_copy_stat.s: archive_entry_copy_stat.c.s
 
 # target to generate assembly for a file
 archive_entry_copy_stat.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_copy_stat.c.s
 .PHONY : archive_entry_copy_stat.c.s
 
 archive_entry_link_resolver.obj: archive_entry_link_resolver.c.obj
@@ -449,7 +449,7 @@ archive_entry_link_resolver.obj: archive_entry_link_resolver.c.obj
 
 # target to build an object file
 archive_entry_link_resolver.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.obj
 .PHONY : archive_entry_link_resolver.c.obj
 
 archive_entry_link_resolver.i: archive_entry_link_resolver.c.i
@@ -457,7 +457,7 @@ archive_entry_link_resolver.i: archive_entry_link_resolver.c.i
 
 # target to preprocess a source file
 archive_entry_link_resolver.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.i
 .PHONY : archive_entry_link_resolver.c.i
 
 archive_entry_link_resolver.s: archive_entry_link_resolver.c.s
@@ -465,7 +465,7 @@ archive_entry_link_resolver.s: archive_entry_link_resolver.c.s
 
 # target to generate assembly for a file
 archive_entry_link_resolver.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_link_resolver.c.s
 .PHONY : archive_entry_link_resolver.c.s
 
 archive_entry_sparse.obj: archive_entry_sparse.c.obj
@@ -473,7 +473,7 @@ archive_entry_sparse.obj: archive_entry_sparse.c.obj
 
 # target to build an object file
 archive_entry_sparse.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.obj
 .PHONY : archive_entry_sparse.c.obj
 
 archive_entry_sparse.i: archive_entry_sparse.c.i
@@ -481,7 +481,7 @@ archive_entry_sparse.i: archive_entry_sparse.c.i
 
 # target to preprocess a source file
 archive_entry_sparse.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.i
 .PHONY : archive_entry_sparse.c.i
 
 archive_entry_sparse.s: archive_entry_sparse.c.s
@@ -489,7 +489,7 @@ archive_entry_sparse.s: archive_entry_sparse.c.s
 
 # target to generate assembly for a file
 archive_entry_sparse.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_sparse.c.s
 .PHONY : archive_entry_sparse.c.s
 
 archive_entry_stat.obj: archive_entry_stat.c.obj
@@ -497,7 +497,7 @@ archive_entry_stat.obj: archive_entry_stat.c.obj
 
 # target to build an object file
 archive_entry_stat.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.obj
 .PHONY : archive_entry_stat.c.obj
 
 archive_entry_stat.i: archive_entry_stat.c.i
@@ -505,7 +505,7 @@ archive_entry_stat.i: archive_entry_stat.c.i
 
 # target to preprocess a source file
 archive_entry_stat.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.i
 .PHONY : archive_entry_stat.c.i
 
 archive_entry_stat.s: archive_entry_stat.c.s
@@ -513,7 +513,7 @@ archive_entry_stat.s: archive_entry_stat.c.s
 
 # target to generate assembly for a file
 archive_entry_stat.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_stat.c.s
 .PHONY : archive_entry_stat.c.s
 
 archive_entry_strmode.obj: archive_entry_strmode.c.obj
@@ -521,7 +521,7 @@ archive_entry_strmode.obj: archive_entry_strmode.c.obj
 
 # target to build an object file
 archive_entry_strmode.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.obj
 .PHONY : archive_entry_strmode.c.obj
 
 archive_entry_strmode.i: archive_entry_strmode.c.i
@@ -529,7 +529,7 @@ archive_entry_strmode.i: archive_entry_strmode.c.i
 
 # target to preprocess a source file
 archive_entry_strmode.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.i
 .PHONY : archive_entry_strmode.c.i
 
 archive_entry_strmode.s: archive_entry_strmode.c.s
@@ -537,7 +537,7 @@ archive_entry_strmode.s: archive_entry_strmode.c.s
 
 # target to generate assembly for a file
 archive_entry_strmode.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_strmode.c.s
 .PHONY : archive_entry_strmode.c.s
 
 archive_entry_xattr.obj: archive_entry_xattr.c.obj
@@ -545,7 +545,7 @@ archive_entry_xattr.obj: archive_entry_xattr.c.obj
 
 # target to build an object file
 archive_entry_xattr.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.obj
 .PHONY : archive_entry_xattr.c.obj
 
 archive_entry_xattr.i: archive_entry_xattr.c.i
@@ -553,7 +553,7 @@ archive_entry_xattr.i: archive_entry_xattr.c.i
 
 # target to preprocess a source file
 archive_entry_xattr.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.i
 .PHONY : archive_entry_xattr.c.i
 
 archive_entry_xattr.s: archive_entry_xattr.c.s
@@ -561,7 +561,7 @@ archive_entry_xattr.s: archive_entry_xattr.c.s
 
 # target to generate assembly for a file
 archive_entry_xattr.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_entry_xattr.c.s
 .PHONY : archive_entry_xattr.c.s
 
 archive_getdate.obj: archive_getdate.c.obj
@@ -569,7 +569,7 @@ archive_getdate.obj: archive_getdate.c.obj
 
 # target to build an object file
 archive_getdate.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.obj
 .PHONY : archive_getdate.c.obj
 
 archive_getdate.i: archive_getdate.c.i
@@ -577,7 +577,7 @@ archive_getdate.i: archive_getdate.c.i
 
 # target to preprocess a source file
 archive_getdate.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.i
 .PHONY : archive_getdate.c.i
 
 archive_getdate.s: archive_getdate.c.s
@@ -585,7 +585,7 @@ archive_getdate.s: archive_getdate.c.s
 
 # target to generate assembly for a file
 archive_getdate.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_getdate.c.s
 .PHONY : archive_getdate.c.s
 
 archive_hmac.obj: archive_hmac.c.obj
@@ -593,7 +593,7 @@ archive_hmac.obj: archive_hmac.c.obj
 
 # target to build an object file
 archive_hmac.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.obj
 .PHONY : archive_hmac.c.obj
 
 archive_hmac.i: archive_hmac.c.i
@@ -601,7 +601,7 @@ archive_hmac.i: archive_hmac.c.i
 
 # target to preprocess a source file
 archive_hmac.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.i
 .PHONY : archive_hmac.c.i
 
 archive_hmac.s: archive_hmac.c.s
@@ -609,7 +609,7 @@ archive_hmac.s: archive_hmac.c.s
 
 # target to generate assembly for a file
 archive_hmac.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_hmac.c.s
 .PHONY : archive_hmac.c.s
 
 archive_match.obj: archive_match.c.obj
@@ -617,7 +617,7 @@ archive_match.obj: archive_match.c.obj
 
 # target to build an object file
 archive_match.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.obj
 .PHONY : archive_match.c.obj
 
 archive_match.i: archive_match.c.i
@@ -625,7 +625,7 @@ archive_match.i: archive_match.c.i
 
 # target to preprocess a source file
 archive_match.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.i
 .PHONY : archive_match.c.i
 
 archive_match.s: archive_match.c.s
@@ -633,7 +633,7 @@ archive_match.s: archive_match.c.s
 
 # target to generate assembly for a file
 archive_match.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_match.c.s
 .PHONY : archive_match.c.s
 
 archive_options.obj: archive_options.c.obj
@@ -641,7 +641,7 @@ archive_options.obj: archive_options.c.obj
 
 # target to build an object file
 archive_options.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.obj
 .PHONY : archive_options.c.obj
 
 archive_options.i: archive_options.c.i
@@ -649,7 +649,7 @@ archive_options.i: archive_options.c.i
 
 # target to preprocess a source file
 archive_options.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.i
 .PHONY : archive_options.c.i
 
 archive_options.s: archive_options.c.s
@@ -657,7 +657,7 @@ archive_options.s: archive_options.c.s
 
 # target to generate assembly for a file
 archive_options.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_options.c.s
 .PHONY : archive_options.c.s
 
 archive_pack_dev.obj: archive_pack_dev.c.obj
@@ -665,7 +665,7 @@ archive_pack_dev.obj: archive_pack_dev.c.obj
 
 # target to build an object file
 archive_pack_dev.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.obj
 .PHONY : archive_pack_dev.c.obj
 
 archive_pack_dev.i: archive_pack_dev.c.i
@@ -673,7 +673,7 @@ archive_pack_dev.i: archive_pack_dev.c.i
 
 # target to preprocess a source file
 archive_pack_dev.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.i
 .PHONY : archive_pack_dev.c.i
 
 archive_pack_dev.s: archive_pack_dev.c.s
@@ -681,7 +681,7 @@ archive_pack_dev.s: archive_pack_dev.c.s
 
 # target to generate assembly for a file
 archive_pack_dev.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pack_dev.c.s
 .PHONY : archive_pack_dev.c.s
 
 archive_pathmatch.obj: archive_pathmatch.c.obj
@@ -689,7 +689,7 @@ archive_pathmatch.obj: archive_pathmatch.c.obj
 
 # target to build an object file
 archive_pathmatch.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.obj
 .PHONY : archive_pathmatch.c.obj
 
 archive_pathmatch.i: archive_pathmatch.c.i
@@ -697,7 +697,7 @@ archive_pathmatch.i: archive_pathmatch.c.i
 
 # target to preprocess a source file
 archive_pathmatch.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.i
 .PHONY : archive_pathmatch.c.i
 
 archive_pathmatch.s: archive_pathmatch.c.s
@@ -705,7 +705,7 @@ archive_pathmatch.s: archive_pathmatch.c.s
 
 # target to generate assembly for a file
 archive_pathmatch.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_pathmatch.c.s
 .PHONY : archive_pathmatch.c.s
 
 archive_ppmd7.obj: archive_ppmd7.c.obj
@@ -713,7 +713,7 @@ archive_ppmd7.obj: archive_ppmd7.c.obj
 
 # target to build an object file
 archive_ppmd7.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.obj
 .PHONY : archive_ppmd7.c.obj
 
 archive_ppmd7.i: archive_ppmd7.c.i
@@ -721,7 +721,7 @@ archive_ppmd7.i: archive_ppmd7.c.i
 
 # target to preprocess a source file
 archive_ppmd7.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.i
 .PHONY : archive_ppmd7.c.i
 
 archive_ppmd7.s: archive_ppmd7.c.s
@@ -729,7 +729,7 @@ archive_ppmd7.s: archive_ppmd7.c.s
 
 # target to generate assembly for a file
 archive_ppmd7.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd7.c.s
 .PHONY : archive_ppmd7.c.s
 
 archive_ppmd8.obj: archive_ppmd8.c.obj
@@ -737,7 +737,7 @@ archive_ppmd8.obj: archive_ppmd8.c.obj
 
 # target to build an object file
 archive_ppmd8.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.obj
 .PHONY : archive_ppmd8.c.obj
 
 archive_ppmd8.i: archive_ppmd8.c.i
@@ -745,7 +745,7 @@ archive_ppmd8.i: archive_ppmd8.c.i
 
 # target to preprocess a source file
 archive_ppmd8.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.i
 .PHONY : archive_ppmd8.c.i
 
 archive_ppmd8.s: archive_ppmd8.c.s
@@ -753,7 +753,7 @@ archive_ppmd8.s: archive_ppmd8.c.s
 
 # target to generate assembly for a file
 archive_ppmd8.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_ppmd8.c.s
 .PHONY : archive_ppmd8.c.s
 
 archive_random.obj: archive_random.c.obj
@@ -761,7 +761,7 @@ archive_random.obj: archive_random.c.obj
 
 # target to build an object file
 archive_random.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.obj
 .PHONY : archive_random.c.obj
 
 archive_random.i: archive_random.c.i
@@ -769,7 +769,7 @@ archive_random.i: archive_random.c.i
 
 # target to preprocess a source file
 archive_random.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.i
 .PHONY : archive_random.c.i
 
 archive_random.s: archive_random.c.s
@@ -777,7 +777,7 @@ archive_random.s: archive_random.c.s
 
 # target to generate assembly for a file
 archive_random.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_random.c.s
 .PHONY : archive_random.c.s
 
 archive_rb.obj: archive_rb.c.obj
@@ -785,7 +785,7 @@ archive_rb.obj: archive_rb.c.obj
 
 # target to build an object file
 archive_rb.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.obj
 .PHONY : archive_rb.c.obj
 
 archive_rb.i: archive_rb.c.i
@@ -793,7 +793,7 @@ archive_rb.i: archive_rb.c.i
 
 # target to preprocess a source file
 archive_rb.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.i
 .PHONY : archive_rb.c.i
 
 archive_rb.s: archive_rb.c.s
@@ -801,7 +801,7 @@ archive_rb.s: archive_rb.c.s
 
 # target to generate assembly for a file
 archive_rb.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_rb.c.s
 .PHONY : archive_rb.c.s
 
 archive_read.obj: archive_read.c.obj
@@ -809,7 +809,7 @@ archive_read.obj: archive_read.c.obj
 
 # target to build an object file
 archive_read.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.obj
 .PHONY : archive_read.c.obj
 
 archive_read.i: archive_read.c.i
@@ -817,7 +817,7 @@ archive_read.i: archive_read.c.i
 
 # target to preprocess a source file
 archive_read.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.i
 .PHONY : archive_read.c.i
 
 archive_read.s: archive_read.c.s
@@ -825,7 +825,7 @@ archive_read.s: archive_read.c.s
 
 # target to generate assembly for a file
 archive_read.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read.c.s
 .PHONY : archive_read.c.s
 
 archive_read_add_passphrase.obj: archive_read_add_passphrase.c.obj
@@ -833,7 +833,7 @@ archive_read_add_passphrase.obj: archive_read_add_passphrase.c.obj
 
 # target to build an object file
 archive_read_add_passphrase.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.obj
 .PHONY : archive_read_add_passphrase.c.obj
 
 archive_read_add_passphrase.i: archive_read_add_passphrase.c.i
@@ -841,7 +841,7 @@ archive_read_add_passphrase.i: archive_read_add_passphrase.c.i
 
 # target to preprocess a source file
 archive_read_add_passphrase.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.i
 .PHONY : archive_read_add_passphrase.c.i
 
 archive_read_add_passphrase.s: archive_read_add_passphrase.c.s
@@ -849,7 +849,7 @@ archive_read_add_passphrase.s: archive_read_add_passphrase.c.s
 
 # target to generate assembly for a file
 archive_read_add_passphrase.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_add_passphrase.c.s
 .PHONY : archive_read_add_passphrase.c.s
 
 archive_read_append_filter.obj: archive_read_append_filter.c.obj
@@ -857,7 +857,7 @@ archive_read_append_filter.obj: archive_read_append_filter.c.obj
 
 # target to build an object file
 archive_read_append_filter.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.obj
 .PHONY : archive_read_append_filter.c.obj
 
 archive_read_append_filter.i: archive_read_append_filter.c.i
@@ -865,7 +865,7 @@ archive_read_append_filter.i: archive_read_append_filter.c.i
 
 # target to preprocess a source file
 archive_read_append_filter.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.i
 .PHONY : archive_read_append_filter.c.i
 
 archive_read_append_filter.s: archive_read_append_filter.c.s
@@ -873,7 +873,7 @@ archive_read_append_filter.s: archive_read_append_filter.c.s
 
 # target to generate assembly for a file
 archive_read_append_filter.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_append_filter.c.s
 .PHONY : archive_read_append_filter.c.s
 
 archive_read_data_into_fd.obj: archive_read_data_into_fd.c.obj
@@ -881,7 +881,7 @@ archive_read_data_into_fd.obj: archive_read_data_into_fd.c.obj
 
 # target to build an object file
 archive_read_data_into_fd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.obj
 .PHONY : archive_read_data_into_fd.c.obj
 
 archive_read_data_into_fd.i: archive_read_data_into_fd.c.i
@@ -889,7 +889,7 @@ archive_read_data_into_fd.i: archive_read_data_into_fd.c.i
 
 # target to preprocess a source file
 archive_read_data_into_fd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.i
 .PHONY : archive_read_data_into_fd.c.i
 
 archive_read_data_into_fd.s: archive_read_data_into_fd.c.s
@@ -897,7 +897,7 @@ archive_read_data_into_fd.s: archive_read_data_into_fd.c.s
 
 # target to generate assembly for a file
 archive_read_data_into_fd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_data_into_fd.c.s
 .PHONY : archive_read_data_into_fd.c.s
 
 archive_read_disk_entry_from_file.obj: archive_read_disk_entry_from_file.c.obj
@@ -905,7 +905,7 @@ archive_read_disk_entry_from_file.obj: archive_read_disk_entry_from_file.c.obj
 
 # target to build an object file
 archive_read_disk_entry_from_file.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.obj
 .PHONY : archive_read_disk_entry_from_file.c.obj
 
 archive_read_disk_entry_from_file.i: archive_read_disk_entry_from_file.c.i
@@ -913,7 +913,7 @@ archive_read_disk_entry_from_file.i: archive_read_disk_entry_from_file.c.i
 
 # target to preprocess a source file
 archive_read_disk_entry_from_file.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.i
 .PHONY : archive_read_disk_entry_from_file.c.i
 
 archive_read_disk_entry_from_file.s: archive_read_disk_entry_from_file.c.s
@@ -921,7 +921,7 @@ archive_read_disk_entry_from_file.s: archive_read_disk_entry_from_file.c.s
 
 # target to generate assembly for a file
 archive_read_disk_entry_from_file.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_entry_from_file.c.s
 .PHONY : archive_read_disk_entry_from_file.c.s
 
 archive_read_disk_posix.obj: archive_read_disk_posix.c.obj
@@ -929,7 +929,7 @@ archive_read_disk_posix.obj: archive_read_disk_posix.c.obj
 
 # target to build an object file
 archive_read_disk_posix.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.obj
 .PHONY : archive_read_disk_posix.c.obj
 
 archive_read_disk_posix.i: archive_read_disk_posix.c.i
@@ -937,7 +937,7 @@ archive_read_disk_posix.i: archive_read_disk_posix.c.i
 
 # target to preprocess a source file
 archive_read_disk_posix.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.i
 .PHONY : archive_read_disk_posix.c.i
 
 archive_read_disk_posix.s: archive_read_disk_posix.c.s
@@ -945,7 +945,7 @@ archive_read_disk_posix.s: archive_read_disk_posix.c.s
 
 # target to generate assembly for a file
 archive_read_disk_posix.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_posix.c.s
 .PHONY : archive_read_disk_posix.c.s
 
 archive_read_disk_set_standard_lookup.obj: archive_read_disk_set_standard_lookup.c.obj
@@ -953,7 +953,7 @@ archive_read_disk_set_standard_lookup.obj: archive_read_disk_set_standard_lookup
 
 # target to build an object file
 archive_read_disk_set_standard_lookup.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.obj
 .PHONY : archive_read_disk_set_standard_lookup.c.obj
 
 archive_read_disk_set_standard_lookup.i: archive_read_disk_set_standard_lookup.c.i
@@ -961,7 +961,7 @@ archive_read_disk_set_standard_lookup.i: archive_read_disk_set_standard_lookup.c
 
 # target to preprocess a source file
 archive_read_disk_set_standard_lookup.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.i
 .PHONY : archive_read_disk_set_standard_lookup.c.i
 
 archive_read_disk_set_standard_lookup.s: archive_read_disk_set_standard_lookup.c.s
@@ -969,7 +969,7 @@ archive_read_disk_set_standard_lookup.s: archive_read_disk_set_standard_lookup.c
 
 # target to generate assembly for a file
 archive_read_disk_set_standard_lookup.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_set_standard_lookup.c.s
 .PHONY : archive_read_disk_set_standard_lookup.c.s
 
 archive_read_disk_windows.obj: archive_read_disk_windows.c.obj
@@ -977,7 +977,7 @@ archive_read_disk_windows.obj: archive_read_disk_windows.c.obj
 
 # target to build an object file
 archive_read_disk_windows.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.obj
 .PHONY : archive_read_disk_windows.c.obj
 
 archive_read_disk_windows.i: archive_read_disk_windows.c.i
@@ -985,7 +985,7 @@ archive_read_disk_windows.i: archive_read_disk_windows.c.i
 
 # target to preprocess a source file
 archive_read_disk_windows.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.i
 .PHONY : archive_read_disk_windows.c.i
 
 archive_read_disk_windows.s: archive_read_disk_windows.c.s
@@ -993,7 +993,7 @@ archive_read_disk_windows.s: archive_read_disk_windows.c.s
 
 # target to generate assembly for a file
 archive_read_disk_windows.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_disk_windows.c.s
 .PHONY : archive_read_disk_windows.c.s
 
 archive_read_extract.obj: archive_read_extract.c.obj
@@ -1001,7 +1001,7 @@ archive_read_extract.obj: archive_read_extract.c.obj
 
 # target to build an object file
 archive_read_extract.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.obj
 .PHONY : archive_read_extract.c.obj
 
 archive_read_extract.i: archive_read_extract.c.i
@@ -1009,7 +1009,7 @@ archive_read_extract.i: archive_read_extract.c.i
 
 # target to preprocess a source file
 archive_read_extract.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.i
 .PHONY : archive_read_extract.c.i
 
 archive_read_extract.s: archive_read_extract.c.s
@@ -1017,7 +1017,7 @@ archive_read_extract.s: archive_read_extract.c.s
 
 # target to generate assembly for a file
 archive_read_extract.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract.c.s
 .PHONY : archive_read_extract.c.s
 
 archive_read_extract2.obj: archive_read_extract2.c.obj
@@ -1025,7 +1025,7 @@ archive_read_extract2.obj: archive_read_extract2.c.obj
 
 # target to build an object file
 archive_read_extract2.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.obj
 .PHONY : archive_read_extract2.c.obj
 
 archive_read_extract2.i: archive_read_extract2.c.i
@@ -1033,7 +1033,7 @@ archive_read_extract2.i: archive_read_extract2.c.i
 
 # target to preprocess a source file
 archive_read_extract2.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.i
 .PHONY : archive_read_extract2.c.i
 
 archive_read_extract2.s: archive_read_extract2.c.s
@@ -1041,7 +1041,7 @@ archive_read_extract2.s: archive_read_extract2.c.s
 
 # target to generate assembly for a file
 archive_read_extract2.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_extract2.c.s
 .PHONY : archive_read_extract2.c.s
 
 archive_read_open_fd.obj: archive_read_open_fd.c.obj
@@ -1049,7 +1049,7 @@ archive_read_open_fd.obj: archive_read_open_fd.c.obj
 
 # target to build an object file
 archive_read_open_fd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.obj
 .PHONY : archive_read_open_fd.c.obj
 
 archive_read_open_fd.i: archive_read_open_fd.c.i
@@ -1057,7 +1057,7 @@ archive_read_open_fd.i: archive_read_open_fd.c.i
 
 # target to preprocess a source file
 archive_read_open_fd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.i
 .PHONY : archive_read_open_fd.c.i
 
 archive_read_open_fd.s: archive_read_open_fd.c.s
@@ -1065,7 +1065,7 @@ archive_read_open_fd.s: archive_read_open_fd.c.s
 
 # target to generate assembly for a file
 archive_read_open_fd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_fd.c.s
 .PHONY : archive_read_open_fd.c.s
 
 archive_read_open_file.obj: archive_read_open_file.c.obj
@@ -1073,7 +1073,7 @@ archive_read_open_file.obj: archive_read_open_file.c.obj
 
 # target to build an object file
 archive_read_open_file.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.obj
 .PHONY : archive_read_open_file.c.obj
 
 archive_read_open_file.i: archive_read_open_file.c.i
@@ -1081,7 +1081,7 @@ archive_read_open_file.i: archive_read_open_file.c.i
 
 # target to preprocess a source file
 archive_read_open_file.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.i
 .PHONY : archive_read_open_file.c.i
 
 archive_read_open_file.s: archive_read_open_file.c.s
@@ -1089,7 +1089,7 @@ archive_read_open_file.s: archive_read_open_file.c.s
 
 # target to generate assembly for a file
 archive_read_open_file.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_file.c.s
 .PHONY : archive_read_open_file.c.s
 
 archive_read_open_filename.obj: archive_read_open_filename.c.obj
@@ -1097,7 +1097,7 @@ archive_read_open_filename.obj: archive_read_open_filename.c.obj
 
 # target to build an object file
 archive_read_open_filename.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.obj
 .PHONY : archive_read_open_filename.c.obj
 
 archive_read_open_filename.i: archive_read_open_filename.c.i
@@ -1105,7 +1105,7 @@ archive_read_open_filename.i: archive_read_open_filename.c.i
 
 # target to preprocess a source file
 archive_read_open_filename.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.i
 .PHONY : archive_read_open_filename.c.i
 
 archive_read_open_filename.s: archive_read_open_filename.c.s
@@ -1113,7 +1113,7 @@ archive_read_open_filename.s: archive_read_open_filename.c.s
 
 # target to generate assembly for a file
 archive_read_open_filename.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_filename.c.s
 .PHONY : archive_read_open_filename.c.s
 
 archive_read_open_memory.obj: archive_read_open_memory.c.obj
@@ -1121,7 +1121,7 @@ archive_read_open_memory.obj: archive_read_open_memory.c.obj
 
 # target to build an object file
 archive_read_open_memory.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.obj
 .PHONY : archive_read_open_memory.c.obj
 
 archive_read_open_memory.i: archive_read_open_memory.c.i
@@ -1129,7 +1129,7 @@ archive_read_open_memory.i: archive_read_open_memory.c.i
 
 # target to preprocess a source file
 archive_read_open_memory.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.i
 .PHONY : archive_read_open_memory.c.i
 
 archive_read_open_memory.s: archive_read_open_memory.c.s
@@ -1137,7 +1137,7 @@ archive_read_open_memory.s: archive_read_open_memory.c.s
 
 # target to generate assembly for a file
 archive_read_open_memory.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_open_memory.c.s
 .PHONY : archive_read_open_memory.c.s
 
 archive_read_set_format.obj: archive_read_set_format.c.obj
@@ -1145,7 +1145,7 @@ archive_read_set_format.obj: archive_read_set_format.c.obj
 
 # target to build an object file
 archive_read_set_format.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.obj
 .PHONY : archive_read_set_format.c.obj
 
 archive_read_set_format.i: archive_read_set_format.c.i
@@ -1153,7 +1153,7 @@ archive_read_set_format.i: archive_read_set_format.c.i
 
 # target to preprocess a source file
 archive_read_set_format.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.i
 .PHONY : archive_read_set_format.c.i
 
 archive_read_set_format.s: archive_read_set_format.c.s
@@ -1161,7 +1161,7 @@ archive_read_set_format.s: archive_read_set_format.c.s
 
 # target to generate assembly for a file
 archive_read_set_format.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_format.c.s
 .PHONY : archive_read_set_format.c.s
 
 archive_read_set_options.obj: archive_read_set_options.c.obj
@@ -1169,7 +1169,7 @@ archive_read_set_options.obj: archive_read_set_options.c.obj
 
 # target to build an object file
 archive_read_set_options.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.obj
 .PHONY : archive_read_set_options.c.obj
 
 archive_read_set_options.i: archive_read_set_options.c.i
@@ -1177,7 +1177,7 @@ archive_read_set_options.i: archive_read_set_options.c.i
 
 # target to preprocess a source file
 archive_read_set_options.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.i
 .PHONY : archive_read_set_options.c.i
 
 archive_read_set_options.s: archive_read_set_options.c.s
@@ -1185,7 +1185,7 @@ archive_read_set_options.s: archive_read_set_options.c.s
 
 # target to generate assembly for a file
 archive_read_set_options.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_set_options.c.s
 .PHONY : archive_read_set_options.c.s
 
 archive_read_support_filter_all.obj: archive_read_support_filter_all.c.obj
@@ -1193,7 +1193,7 @@ archive_read_support_filter_all.obj: archive_read_support_filter_all.c.obj
 
 # target to build an object file
 archive_read_support_filter_all.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.obj
 .PHONY : archive_read_support_filter_all.c.obj
 
 archive_read_support_filter_all.i: archive_read_support_filter_all.c.i
@@ -1201,7 +1201,7 @@ archive_read_support_filter_all.i: archive_read_support_filter_all.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_all.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.i
 .PHONY : archive_read_support_filter_all.c.i
 
 archive_read_support_filter_all.s: archive_read_support_filter_all.c.s
@@ -1209,7 +1209,7 @@ archive_read_support_filter_all.s: archive_read_support_filter_all.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_all.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_all.c.s
 .PHONY : archive_read_support_filter_all.c.s
 
 archive_read_support_filter_bzip2.obj: archive_read_support_filter_bzip2.c.obj
@@ -1217,7 +1217,7 @@ archive_read_support_filter_bzip2.obj: archive_read_support_filter_bzip2.c.obj
 
 # target to build an object file
 archive_read_support_filter_bzip2.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.obj
 .PHONY : archive_read_support_filter_bzip2.c.obj
 
 archive_read_support_filter_bzip2.i: archive_read_support_filter_bzip2.c.i
@@ -1225,7 +1225,7 @@ archive_read_support_filter_bzip2.i: archive_read_support_filter_bzip2.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_bzip2.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.i
 .PHONY : archive_read_support_filter_bzip2.c.i
 
 archive_read_support_filter_bzip2.s: archive_read_support_filter_bzip2.c.s
@@ -1233,7 +1233,7 @@ archive_read_support_filter_bzip2.s: archive_read_support_filter_bzip2.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_bzip2.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_bzip2.c.s
 .PHONY : archive_read_support_filter_bzip2.c.s
 
 archive_read_support_filter_compress.obj: archive_read_support_filter_compress.c.obj
@@ -1241,7 +1241,7 @@ archive_read_support_filter_compress.obj: archive_read_support_filter_compress.c
 
 # target to build an object file
 archive_read_support_filter_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.obj
 .PHONY : archive_read_support_filter_compress.c.obj
 
 archive_read_support_filter_compress.i: archive_read_support_filter_compress.c.i
@@ -1249,7 +1249,7 @@ archive_read_support_filter_compress.i: archive_read_support_filter_compress.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.i
 .PHONY : archive_read_support_filter_compress.c.i
 
 archive_read_support_filter_compress.s: archive_read_support_filter_compress.c.s
@@ -1257,7 +1257,7 @@ archive_read_support_filter_compress.s: archive_read_support_filter_compress.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_compress.c.s
 .PHONY : archive_read_support_filter_compress.c.s
 
 archive_read_support_filter_grzip.obj: archive_read_support_filter_grzip.c.obj
@@ -1265,7 +1265,7 @@ archive_read_support_filter_grzip.obj: archive_read_support_filter_grzip.c.obj
 
 # target to build an object file
 archive_read_support_filter_grzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.obj
 .PHONY : archive_read_support_filter_grzip.c.obj
 
 archive_read_support_filter_grzip.i: archive_read_support_filter_grzip.c.i
@@ -1273,7 +1273,7 @@ archive_read_support_filter_grzip.i: archive_read_support_filter_grzip.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_grzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.i
 .PHONY : archive_read_support_filter_grzip.c.i
 
 archive_read_support_filter_grzip.s: archive_read_support_filter_grzip.c.s
@@ -1281,7 +1281,7 @@ archive_read_support_filter_grzip.s: archive_read_support_filter_grzip.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_grzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_grzip.c.s
 .PHONY : archive_read_support_filter_grzip.c.s
 
 archive_read_support_filter_gzip.obj: archive_read_support_filter_gzip.c.obj
@@ -1289,7 +1289,7 @@ archive_read_support_filter_gzip.obj: archive_read_support_filter_gzip.c.obj
 
 # target to build an object file
 archive_read_support_filter_gzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.obj
 .PHONY : archive_read_support_filter_gzip.c.obj
 
 archive_read_support_filter_gzip.i: archive_read_support_filter_gzip.c.i
@@ -1297,7 +1297,7 @@ archive_read_support_filter_gzip.i: archive_read_support_filter_gzip.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_gzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.i
 .PHONY : archive_read_support_filter_gzip.c.i
 
 archive_read_support_filter_gzip.s: archive_read_support_filter_gzip.c.s
@@ -1305,7 +1305,7 @@ archive_read_support_filter_gzip.s: archive_read_support_filter_gzip.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_gzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_gzip.c.s
 .PHONY : archive_read_support_filter_gzip.c.s
 
 archive_read_support_filter_lrzip.obj: archive_read_support_filter_lrzip.c.obj
@@ -1313,7 +1313,7 @@ archive_read_support_filter_lrzip.obj: archive_read_support_filter_lrzip.c.obj
 
 # target to build an object file
 archive_read_support_filter_lrzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.obj
 .PHONY : archive_read_support_filter_lrzip.c.obj
 
 archive_read_support_filter_lrzip.i: archive_read_support_filter_lrzip.c.i
@@ -1321,7 +1321,7 @@ archive_read_support_filter_lrzip.i: archive_read_support_filter_lrzip.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_lrzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.i
 .PHONY : archive_read_support_filter_lrzip.c.i
 
 archive_read_support_filter_lrzip.s: archive_read_support_filter_lrzip.c.s
@@ -1329,7 +1329,7 @@ archive_read_support_filter_lrzip.s: archive_read_support_filter_lrzip.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_lrzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lrzip.c.s
 .PHONY : archive_read_support_filter_lrzip.c.s
 
 archive_read_support_filter_lz4.obj: archive_read_support_filter_lz4.c.obj
@@ -1337,7 +1337,7 @@ archive_read_support_filter_lz4.obj: archive_read_support_filter_lz4.c.obj
 
 # target to build an object file
 archive_read_support_filter_lz4.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.obj
 .PHONY : archive_read_support_filter_lz4.c.obj
 
 archive_read_support_filter_lz4.i: archive_read_support_filter_lz4.c.i
@@ -1345,7 +1345,7 @@ archive_read_support_filter_lz4.i: archive_read_support_filter_lz4.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_lz4.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.i
 .PHONY : archive_read_support_filter_lz4.c.i
 
 archive_read_support_filter_lz4.s: archive_read_support_filter_lz4.c.s
@@ -1353,7 +1353,7 @@ archive_read_support_filter_lz4.s: archive_read_support_filter_lz4.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_lz4.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lz4.c.s
 .PHONY : archive_read_support_filter_lz4.c.s
 
 archive_read_support_filter_lzop.obj: archive_read_support_filter_lzop.c.obj
@@ -1361,7 +1361,7 @@ archive_read_support_filter_lzop.obj: archive_read_support_filter_lzop.c.obj
 
 # target to build an object file
 archive_read_support_filter_lzop.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.obj
 .PHONY : archive_read_support_filter_lzop.c.obj
 
 archive_read_support_filter_lzop.i: archive_read_support_filter_lzop.c.i
@@ -1369,7 +1369,7 @@ archive_read_support_filter_lzop.i: archive_read_support_filter_lzop.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_lzop.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.i
 .PHONY : archive_read_support_filter_lzop.c.i
 
 archive_read_support_filter_lzop.s: archive_read_support_filter_lzop.c.s
@@ -1377,7 +1377,7 @@ archive_read_support_filter_lzop.s: archive_read_support_filter_lzop.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_lzop.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_lzop.c.s
 .PHONY : archive_read_support_filter_lzop.c.s
 
 archive_read_support_filter_none.obj: archive_read_support_filter_none.c.obj
@@ -1385,7 +1385,7 @@ archive_read_support_filter_none.obj: archive_read_support_filter_none.c.obj
 
 # target to build an object file
 archive_read_support_filter_none.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.obj
 .PHONY : archive_read_support_filter_none.c.obj
 
 archive_read_support_filter_none.i: archive_read_support_filter_none.c.i
@@ -1393,7 +1393,7 @@ archive_read_support_filter_none.i: archive_read_support_filter_none.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_none.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.i
 .PHONY : archive_read_support_filter_none.c.i
 
 archive_read_support_filter_none.s: archive_read_support_filter_none.c.s
@@ -1401,7 +1401,7 @@ archive_read_support_filter_none.s: archive_read_support_filter_none.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_none.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_none.c.s
 .PHONY : archive_read_support_filter_none.c.s
 
 archive_read_support_filter_program.obj: archive_read_support_filter_program.c.obj
@@ -1409,7 +1409,7 @@ archive_read_support_filter_program.obj: archive_read_support_filter_program.c.o
 
 # target to build an object file
 archive_read_support_filter_program.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.obj
 .PHONY : archive_read_support_filter_program.c.obj
 
 archive_read_support_filter_program.i: archive_read_support_filter_program.c.i
@@ -1417,7 +1417,7 @@ archive_read_support_filter_program.i: archive_read_support_filter_program.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_program.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.i
 .PHONY : archive_read_support_filter_program.c.i
 
 archive_read_support_filter_program.s: archive_read_support_filter_program.c.s
@@ -1425,7 +1425,7 @@ archive_read_support_filter_program.s: archive_read_support_filter_program.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_program.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_program.c.s
 .PHONY : archive_read_support_filter_program.c.s
 
 archive_read_support_filter_rpm.obj: archive_read_support_filter_rpm.c.obj
@@ -1433,7 +1433,7 @@ archive_read_support_filter_rpm.obj: archive_read_support_filter_rpm.c.obj
 
 # target to build an object file
 archive_read_support_filter_rpm.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.obj
 .PHONY : archive_read_support_filter_rpm.c.obj
 
 archive_read_support_filter_rpm.i: archive_read_support_filter_rpm.c.i
@@ -1441,7 +1441,7 @@ archive_read_support_filter_rpm.i: archive_read_support_filter_rpm.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_rpm.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.i
 .PHONY : archive_read_support_filter_rpm.c.i
 
 archive_read_support_filter_rpm.s: archive_read_support_filter_rpm.c.s
@@ -1449,7 +1449,7 @@ archive_read_support_filter_rpm.s: archive_read_support_filter_rpm.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_rpm.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_rpm.c.s
 .PHONY : archive_read_support_filter_rpm.c.s
 
 archive_read_support_filter_uu.obj: archive_read_support_filter_uu.c.obj
@@ -1457,7 +1457,7 @@ archive_read_support_filter_uu.obj: archive_read_support_filter_uu.c.obj
 
 # target to build an object file
 archive_read_support_filter_uu.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.obj
 .PHONY : archive_read_support_filter_uu.c.obj
 
 archive_read_support_filter_uu.i: archive_read_support_filter_uu.c.i
@@ -1465,7 +1465,7 @@ archive_read_support_filter_uu.i: archive_read_support_filter_uu.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_uu.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.i
 .PHONY : archive_read_support_filter_uu.c.i
 
 archive_read_support_filter_uu.s: archive_read_support_filter_uu.c.s
@@ -1473,7 +1473,7 @@ archive_read_support_filter_uu.s: archive_read_support_filter_uu.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_uu.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_uu.c.s
 .PHONY : archive_read_support_filter_uu.c.s
 
 archive_read_support_filter_xz.obj: archive_read_support_filter_xz.c.obj
@@ -1481,7 +1481,7 @@ archive_read_support_filter_xz.obj: archive_read_support_filter_xz.c.obj
 
 # target to build an object file
 archive_read_support_filter_xz.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.obj
 .PHONY : archive_read_support_filter_xz.c.obj
 
 archive_read_support_filter_xz.i: archive_read_support_filter_xz.c.i
@@ -1489,7 +1489,7 @@ archive_read_support_filter_xz.i: archive_read_support_filter_xz.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_xz.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.i
 .PHONY : archive_read_support_filter_xz.c.i
 
 archive_read_support_filter_xz.s: archive_read_support_filter_xz.c.s
@@ -1497,7 +1497,7 @@ archive_read_support_filter_xz.s: archive_read_support_filter_xz.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_xz.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_xz.c.s
 .PHONY : archive_read_support_filter_xz.c.s
 
 archive_read_support_filter_zstd.obj: archive_read_support_filter_zstd.c.obj
@@ -1505,7 +1505,7 @@ archive_read_support_filter_zstd.obj: archive_read_support_filter_zstd.c.obj
 
 # target to build an object file
 archive_read_support_filter_zstd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.obj
 .PHONY : archive_read_support_filter_zstd.c.obj
 
 archive_read_support_filter_zstd.i: archive_read_support_filter_zstd.c.i
@@ -1513,7 +1513,7 @@ archive_read_support_filter_zstd.i: archive_read_support_filter_zstd.c.i
 
 # target to preprocess a source file
 archive_read_support_filter_zstd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.i
 .PHONY : archive_read_support_filter_zstd.c.i
 
 archive_read_support_filter_zstd.s: archive_read_support_filter_zstd.c.s
@@ -1521,7 +1521,7 @@ archive_read_support_filter_zstd.s: archive_read_support_filter_zstd.c.s
 
 # target to generate assembly for a file
 archive_read_support_filter_zstd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_filter_zstd.c.s
 .PHONY : archive_read_support_filter_zstd.c.s
 
 archive_read_support_format_7zip.obj: archive_read_support_format_7zip.c.obj
@@ -1529,7 +1529,7 @@ archive_read_support_format_7zip.obj: archive_read_support_format_7zip.c.obj
 
 # target to build an object file
 archive_read_support_format_7zip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.obj
 .PHONY : archive_read_support_format_7zip.c.obj
 
 archive_read_support_format_7zip.i: archive_read_support_format_7zip.c.i
@@ -1537,7 +1537,7 @@ archive_read_support_format_7zip.i: archive_read_support_format_7zip.c.i
 
 # target to preprocess a source file
 archive_read_support_format_7zip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.i
 .PHONY : archive_read_support_format_7zip.c.i
 
 archive_read_support_format_7zip.s: archive_read_support_format_7zip.c.s
@@ -1545,7 +1545,7 @@ archive_read_support_format_7zip.s: archive_read_support_format_7zip.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_7zip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_7zip.c.s
 .PHONY : archive_read_support_format_7zip.c.s
 
 archive_read_support_format_all.obj: archive_read_support_format_all.c.obj
@@ -1553,7 +1553,7 @@ archive_read_support_format_all.obj: archive_read_support_format_all.c.obj
 
 # target to build an object file
 archive_read_support_format_all.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.obj
 .PHONY : archive_read_support_format_all.c.obj
 
 archive_read_support_format_all.i: archive_read_support_format_all.c.i
@@ -1561,7 +1561,7 @@ archive_read_support_format_all.i: archive_read_support_format_all.c.i
 
 # target to preprocess a source file
 archive_read_support_format_all.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.i
 .PHONY : archive_read_support_format_all.c.i
 
 archive_read_support_format_all.s: archive_read_support_format_all.c.s
@@ -1569,7 +1569,7 @@ archive_read_support_format_all.s: archive_read_support_format_all.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_all.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_all.c.s
 .PHONY : archive_read_support_format_all.c.s
 
 archive_read_support_format_ar.obj: archive_read_support_format_ar.c.obj
@@ -1577,7 +1577,7 @@ archive_read_support_format_ar.obj: archive_read_support_format_ar.c.obj
 
 # target to build an object file
 archive_read_support_format_ar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.obj
 .PHONY : archive_read_support_format_ar.c.obj
 
 archive_read_support_format_ar.i: archive_read_support_format_ar.c.i
@@ -1585,7 +1585,7 @@ archive_read_support_format_ar.i: archive_read_support_format_ar.c.i
 
 # target to preprocess a source file
 archive_read_support_format_ar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.i
 .PHONY : archive_read_support_format_ar.c.i
 
 archive_read_support_format_ar.s: archive_read_support_format_ar.c.s
@@ -1593,7 +1593,7 @@ archive_read_support_format_ar.s: archive_read_support_format_ar.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_ar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_ar.c.s
 .PHONY : archive_read_support_format_ar.c.s
 
 archive_read_support_format_by_code.obj: archive_read_support_format_by_code.c.obj
@@ -1601,7 +1601,7 @@ archive_read_support_format_by_code.obj: archive_read_support_format_by_code.c.o
 
 # target to build an object file
 archive_read_support_format_by_code.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.obj
 .PHONY : archive_read_support_format_by_code.c.obj
 
 archive_read_support_format_by_code.i: archive_read_support_format_by_code.c.i
@@ -1609,7 +1609,7 @@ archive_read_support_format_by_code.i: archive_read_support_format_by_code.c.i
 
 # target to preprocess a source file
 archive_read_support_format_by_code.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.i
 .PHONY : archive_read_support_format_by_code.c.i
 
 archive_read_support_format_by_code.s: archive_read_support_format_by_code.c.s
@@ -1617,7 +1617,7 @@ archive_read_support_format_by_code.s: archive_read_support_format_by_code.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_by_code.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_by_code.c.s
 .PHONY : archive_read_support_format_by_code.c.s
 
 archive_read_support_format_cab.obj: archive_read_support_format_cab.c.obj
@@ -1625,7 +1625,7 @@ archive_read_support_format_cab.obj: archive_read_support_format_cab.c.obj
 
 # target to build an object file
 archive_read_support_format_cab.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.obj
 .PHONY : archive_read_support_format_cab.c.obj
 
 archive_read_support_format_cab.i: archive_read_support_format_cab.c.i
@@ -1633,7 +1633,7 @@ archive_read_support_format_cab.i: archive_read_support_format_cab.c.i
 
 # target to preprocess a source file
 archive_read_support_format_cab.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.i
 .PHONY : archive_read_support_format_cab.c.i
 
 archive_read_support_format_cab.s: archive_read_support_format_cab.c.s
@@ -1641,7 +1641,7 @@ archive_read_support_format_cab.s: archive_read_support_format_cab.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_cab.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cab.c.s
 .PHONY : archive_read_support_format_cab.c.s
 
 archive_read_support_format_cpio.obj: archive_read_support_format_cpio.c.obj
@@ -1649,7 +1649,7 @@ archive_read_support_format_cpio.obj: archive_read_support_format_cpio.c.obj
 
 # target to build an object file
 archive_read_support_format_cpio.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.obj
 .PHONY : archive_read_support_format_cpio.c.obj
 
 archive_read_support_format_cpio.i: archive_read_support_format_cpio.c.i
@@ -1657,7 +1657,7 @@ archive_read_support_format_cpio.i: archive_read_support_format_cpio.c.i
 
 # target to preprocess a source file
 archive_read_support_format_cpio.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.i
 .PHONY : archive_read_support_format_cpio.c.i
 
 archive_read_support_format_cpio.s: archive_read_support_format_cpio.c.s
@@ -1665,7 +1665,7 @@ archive_read_support_format_cpio.s: archive_read_support_format_cpio.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_cpio.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_cpio.c.s
 .PHONY : archive_read_support_format_cpio.c.s
 
 archive_read_support_format_empty.obj: archive_read_support_format_empty.c.obj
@@ -1673,7 +1673,7 @@ archive_read_support_format_empty.obj: archive_read_support_format_empty.c.obj
 
 # target to build an object file
 archive_read_support_format_empty.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.obj
 .PHONY : archive_read_support_format_empty.c.obj
 
 archive_read_support_format_empty.i: archive_read_support_format_empty.c.i
@@ -1681,7 +1681,7 @@ archive_read_support_format_empty.i: archive_read_support_format_empty.c.i
 
 # target to preprocess a source file
 archive_read_support_format_empty.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.i
 .PHONY : archive_read_support_format_empty.c.i
 
 archive_read_support_format_empty.s: archive_read_support_format_empty.c.s
@@ -1689,7 +1689,7 @@ archive_read_support_format_empty.s: archive_read_support_format_empty.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_empty.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_empty.c.s
 .PHONY : archive_read_support_format_empty.c.s
 
 archive_read_support_format_iso9660.obj: archive_read_support_format_iso9660.c.obj
@@ -1697,7 +1697,7 @@ archive_read_support_format_iso9660.obj: archive_read_support_format_iso9660.c.o
 
 # target to build an object file
 archive_read_support_format_iso9660.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.obj
 .PHONY : archive_read_support_format_iso9660.c.obj
 
 archive_read_support_format_iso9660.i: archive_read_support_format_iso9660.c.i
@@ -1705,7 +1705,7 @@ archive_read_support_format_iso9660.i: archive_read_support_format_iso9660.c.i
 
 # target to preprocess a source file
 archive_read_support_format_iso9660.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.i
 .PHONY : archive_read_support_format_iso9660.c.i
 
 archive_read_support_format_iso9660.s: archive_read_support_format_iso9660.c.s
@@ -1713,7 +1713,7 @@ archive_read_support_format_iso9660.s: archive_read_support_format_iso9660.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_iso9660.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_iso9660.c.s
 .PHONY : archive_read_support_format_iso9660.c.s
 
 archive_read_support_format_lha.obj: archive_read_support_format_lha.c.obj
@@ -1721,7 +1721,7 @@ archive_read_support_format_lha.obj: archive_read_support_format_lha.c.obj
 
 # target to build an object file
 archive_read_support_format_lha.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.obj
 .PHONY : archive_read_support_format_lha.c.obj
 
 archive_read_support_format_lha.i: archive_read_support_format_lha.c.i
@@ -1729,7 +1729,7 @@ archive_read_support_format_lha.i: archive_read_support_format_lha.c.i
 
 # target to preprocess a source file
 archive_read_support_format_lha.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.i
 .PHONY : archive_read_support_format_lha.c.i
 
 archive_read_support_format_lha.s: archive_read_support_format_lha.c.s
@@ -1737,7 +1737,7 @@ archive_read_support_format_lha.s: archive_read_support_format_lha.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_lha.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_lha.c.s
 .PHONY : archive_read_support_format_lha.c.s
 
 archive_read_support_format_mtree.obj: archive_read_support_format_mtree.c.obj
@@ -1745,7 +1745,7 @@ archive_read_support_format_mtree.obj: archive_read_support_format_mtree.c.obj
 
 # target to build an object file
 archive_read_support_format_mtree.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.obj
 .PHONY : archive_read_support_format_mtree.c.obj
 
 archive_read_support_format_mtree.i: archive_read_support_format_mtree.c.i
@@ -1753,7 +1753,7 @@ archive_read_support_format_mtree.i: archive_read_support_format_mtree.c.i
 
 # target to preprocess a source file
 archive_read_support_format_mtree.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.i
 .PHONY : archive_read_support_format_mtree.c.i
 
 archive_read_support_format_mtree.s: archive_read_support_format_mtree.c.s
@@ -1761,7 +1761,7 @@ archive_read_support_format_mtree.s: archive_read_support_format_mtree.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_mtree.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_mtree.c.s
 .PHONY : archive_read_support_format_mtree.c.s
 
 archive_read_support_format_rar.obj: archive_read_support_format_rar.c.obj
@@ -1769,7 +1769,7 @@ archive_read_support_format_rar.obj: archive_read_support_format_rar.c.obj
 
 # target to build an object file
 archive_read_support_format_rar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.obj
 .PHONY : archive_read_support_format_rar.c.obj
 
 archive_read_support_format_rar.i: archive_read_support_format_rar.c.i
@@ -1777,7 +1777,7 @@ archive_read_support_format_rar.i: archive_read_support_format_rar.c.i
 
 # target to preprocess a source file
 archive_read_support_format_rar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.i
 .PHONY : archive_read_support_format_rar.c.i
 
 archive_read_support_format_rar.s: archive_read_support_format_rar.c.s
@@ -1785,7 +1785,7 @@ archive_read_support_format_rar.s: archive_read_support_format_rar.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_rar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar.c.s
 .PHONY : archive_read_support_format_rar.c.s
 
 archive_read_support_format_rar5.obj: archive_read_support_format_rar5.c.obj
@@ -1793,7 +1793,7 @@ archive_read_support_format_rar5.obj: archive_read_support_format_rar5.c.obj
 
 # target to build an object file
 archive_read_support_format_rar5.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.obj
 .PHONY : archive_read_support_format_rar5.c.obj
 
 archive_read_support_format_rar5.i: archive_read_support_format_rar5.c.i
@@ -1801,7 +1801,7 @@ archive_read_support_format_rar5.i: archive_read_support_format_rar5.c.i
 
 # target to preprocess a source file
 archive_read_support_format_rar5.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.i
 .PHONY : archive_read_support_format_rar5.c.i
 
 archive_read_support_format_rar5.s: archive_read_support_format_rar5.c.s
@@ -1809,7 +1809,7 @@ archive_read_support_format_rar5.s: archive_read_support_format_rar5.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_rar5.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_rar5.c.s
 .PHONY : archive_read_support_format_rar5.c.s
 
 archive_read_support_format_raw.obj: archive_read_support_format_raw.c.obj
@@ -1817,7 +1817,7 @@ archive_read_support_format_raw.obj: archive_read_support_format_raw.c.obj
 
 # target to build an object file
 archive_read_support_format_raw.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.obj
 .PHONY : archive_read_support_format_raw.c.obj
 
 archive_read_support_format_raw.i: archive_read_support_format_raw.c.i
@@ -1825,7 +1825,7 @@ archive_read_support_format_raw.i: archive_read_support_format_raw.c.i
 
 # target to preprocess a source file
 archive_read_support_format_raw.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.i
 .PHONY : archive_read_support_format_raw.c.i
 
 archive_read_support_format_raw.s: archive_read_support_format_raw.c.s
@@ -1833,7 +1833,7 @@ archive_read_support_format_raw.s: archive_read_support_format_raw.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_raw.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_raw.c.s
 .PHONY : archive_read_support_format_raw.c.s
 
 archive_read_support_format_tar.obj: archive_read_support_format_tar.c.obj
@@ -1841,7 +1841,7 @@ archive_read_support_format_tar.obj: archive_read_support_format_tar.c.obj
 
 # target to build an object file
 archive_read_support_format_tar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.obj
 .PHONY : archive_read_support_format_tar.c.obj
 
 archive_read_support_format_tar.i: archive_read_support_format_tar.c.i
@@ -1849,7 +1849,7 @@ archive_read_support_format_tar.i: archive_read_support_format_tar.c.i
 
 # target to preprocess a source file
 archive_read_support_format_tar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.i
 .PHONY : archive_read_support_format_tar.c.i
 
 archive_read_support_format_tar.s: archive_read_support_format_tar.c.s
@@ -1857,7 +1857,7 @@ archive_read_support_format_tar.s: archive_read_support_format_tar.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_tar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_tar.c.s
 .PHONY : archive_read_support_format_tar.c.s
 
 archive_read_support_format_warc.obj: archive_read_support_format_warc.c.obj
@@ -1865,7 +1865,7 @@ archive_read_support_format_warc.obj: archive_read_support_format_warc.c.obj
 
 # target to build an object file
 archive_read_support_format_warc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.obj
 .PHONY : archive_read_support_format_warc.c.obj
 
 archive_read_support_format_warc.i: archive_read_support_format_warc.c.i
@@ -1873,7 +1873,7 @@ archive_read_support_format_warc.i: archive_read_support_format_warc.c.i
 
 # target to preprocess a source file
 archive_read_support_format_warc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.i
 .PHONY : archive_read_support_format_warc.c.i
 
 archive_read_support_format_warc.s: archive_read_support_format_warc.c.s
@@ -1881,7 +1881,7 @@ archive_read_support_format_warc.s: archive_read_support_format_warc.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_warc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_warc.c.s
 .PHONY : archive_read_support_format_warc.c.s
 
 archive_read_support_format_xar.obj: archive_read_support_format_xar.c.obj
@@ -1889,7 +1889,7 @@ archive_read_support_format_xar.obj: archive_read_support_format_xar.c.obj
 
 # target to build an object file
 archive_read_support_format_xar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.obj
 .PHONY : archive_read_support_format_xar.c.obj
 
 archive_read_support_format_xar.i: archive_read_support_format_xar.c.i
@@ -1897,7 +1897,7 @@ archive_read_support_format_xar.i: archive_read_support_format_xar.c.i
 
 # target to preprocess a source file
 archive_read_support_format_xar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.i
 .PHONY : archive_read_support_format_xar.c.i
 
 archive_read_support_format_xar.s: archive_read_support_format_xar.c.s
@@ -1905,7 +1905,7 @@ archive_read_support_format_xar.s: archive_read_support_format_xar.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_xar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_xar.c.s
 .PHONY : archive_read_support_format_xar.c.s
 
 archive_read_support_format_zip.obj: archive_read_support_format_zip.c.obj
@@ -1913,7 +1913,7 @@ archive_read_support_format_zip.obj: archive_read_support_format_zip.c.obj
 
 # target to build an object file
 archive_read_support_format_zip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.obj
 .PHONY : archive_read_support_format_zip.c.obj
 
 archive_read_support_format_zip.i: archive_read_support_format_zip.c.i
@@ -1921,7 +1921,7 @@ archive_read_support_format_zip.i: archive_read_support_format_zip.c.i
 
 # target to preprocess a source file
 archive_read_support_format_zip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.i
 .PHONY : archive_read_support_format_zip.c.i
 
 archive_read_support_format_zip.s: archive_read_support_format_zip.c.s
@@ -1929,7 +1929,7 @@ archive_read_support_format_zip.s: archive_read_support_format_zip.c.s
 
 # target to generate assembly for a file
 archive_read_support_format_zip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_read_support_format_zip.c.s
 .PHONY : archive_read_support_format_zip.c.s
 
 archive_string.obj: archive_string.c.obj
@@ -1937,7 +1937,7 @@ archive_string.obj: archive_string.c.obj
 
 # target to build an object file
 archive_string.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.obj
 .PHONY : archive_string.c.obj
 
 archive_string.i: archive_string.c.i
@@ -1945,7 +1945,7 @@ archive_string.i: archive_string.c.i
 
 # target to preprocess a source file
 archive_string.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.i
 .PHONY : archive_string.c.i
 
 archive_string.s: archive_string.c.s
@@ -1953,7 +1953,7 @@ archive_string.s: archive_string.c.s
 
 # target to generate assembly for a file
 archive_string.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string.c.s
 .PHONY : archive_string.c.s
 
 archive_string_sprintf.obj: archive_string_sprintf.c.obj
@@ -1961,7 +1961,7 @@ archive_string_sprintf.obj: archive_string_sprintf.c.obj
 
 # target to build an object file
 archive_string_sprintf.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.obj
 .PHONY : archive_string_sprintf.c.obj
 
 archive_string_sprintf.i: archive_string_sprintf.c.i
@@ -1969,7 +1969,7 @@ archive_string_sprintf.i: archive_string_sprintf.c.i
 
 # target to preprocess a source file
 archive_string_sprintf.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.i
 .PHONY : archive_string_sprintf.c.i
 
 archive_string_sprintf.s: archive_string_sprintf.c.s
@@ -1977,7 +1977,7 @@ archive_string_sprintf.s: archive_string_sprintf.c.s
 
 # target to generate assembly for a file
 archive_string_sprintf.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_string_sprintf.c.s
 .PHONY : archive_string_sprintf.c.s
 
 archive_util.obj: archive_util.c.obj
@@ -1985,7 +1985,7 @@ archive_util.obj: archive_util.c.obj
 
 # target to build an object file
 archive_util.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.obj
 .PHONY : archive_util.c.obj
 
 archive_util.i: archive_util.c.i
@@ -1993,7 +1993,7 @@ archive_util.i: archive_util.c.i
 
 # target to preprocess a source file
 archive_util.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.i
 .PHONY : archive_util.c.i
 
 archive_util.s: archive_util.c.s
@@ -2001,7 +2001,7 @@ archive_util.s: archive_util.c.s
 
 # target to generate assembly for a file
 archive_util.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_util.c.s
 .PHONY : archive_util.c.s
 
 archive_version_details.obj: archive_version_details.c.obj
@@ -2009,7 +2009,7 @@ archive_version_details.obj: archive_version_details.c.obj
 
 # target to build an object file
 archive_version_details.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.obj
 .PHONY : archive_version_details.c.obj
 
 archive_version_details.i: archive_version_details.c.i
@@ -2017,7 +2017,7 @@ archive_version_details.i: archive_version_details.c.i
 
 # target to preprocess a source file
 archive_version_details.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.i
 .PHONY : archive_version_details.c.i
 
 archive_version_details.s: archive_version_details.c.s
@@ -2025,7 +2025,7 @@ archive_version_details.s: archive_version_details.c.s
 
 # target to generate assembly for a file
 archive_version_details.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_version_details.c.s
 .PHONY : archive_version_details.c.s
 
 archive_virtual.obj: archive_virtual.c.obj
@@ -2033,7 +2033,7 @@ archive_virtual.obj: archive_virtual.c.obj
 
 # target to build an object file
 archive_virtual.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.obj
 .PHONY : archive_virtual.c.obj
 
 archive_virtual.i: archive_virtual.c.i
@@ -2041,7 +2041,7 @@ archive_virtual.i: archive_virtual.c.i
 
 # target to preprocess a source file
 archive_virtual.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.i
 .PHONY : archive_virtual.c.i
 
 archive_virtual.s: archive_virtual.c.s
@@ -2049,7 +2049,7 @@ archive_virtual.s: archive_virtual.c.s
 
 # target to generate assembly for a file
 archive_virtual.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_virtual.c.s
 .PHONY : archive_virtual.c.s
 
 archive_windows.obj: archive_windows.c.obj
@@ -2057,7 +2057,7 @@ archive_windows.obj: archive_windows.c.obj
 
 # target to build an object file
 archive_windows.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.obj
 .PHONY : archive_windows.c.obj
 
 archive_windows.i: archive_windows.c.i
@@ -2065,7 +2065,7 @@ archive_windows.i: archive_windows.c.i
 
 # target to preprocess a source file
 archive_windows.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.i
 .PHONY : archive_windows.c.i
 
 archive_windows.s: archive_windows.c.s
@@ -2073,7 +2073,7 @@ archive_windows.s: archive_windows.c.s
 
 # target to generate assembly for a file
 archive_windows.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_windows.c.s
 .PHONY : archive_windows.c.s
 
 archive_write.obj: archive_write.c.obj
@@ -2081,7 +2081,7 @@ archive_write.obj: archive_write.c.obj
 
 # target to build an object file
 archive_write.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.obj
 .PHONY : archive_write.c.obj
 
 archive_write.i: archive_write.c.i
@@ -2089,7 +2089,7 @@ archive_write.i: archive_write.c.i
 
 # target to preprocess a source file
 archive_write.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.i
 .PHONY : archive_write.c.i
 
 archive_write.s: archive_write.c.s
@@ -2097,7 +2097,7 @@ archive_write.s: archive_write.c.s
 
 # target to generate assembly for a file
 archive_write.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write.c.s
 .PHONY : archive_write.c.s
 
 archive_write_add_filter.obj: archive_write_add_filter.c.obj
@@ -2105,7 +2105,7 @@ archive_write_add_filter.obj: archive_write_add_filter.c.obj
 
 # target to build an object file
 archive_write_add_filter.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.obj
 .PHONY : archive_write_add_filter.c.obj
 
 archive_write_add_filter.i: archive_write_add_filter.c.i
@@ -2113,7 +2113,7 @@ archive_write_add_filter.i: archive_write_add_filter.c.i
 
 # target to preprocess a source file
 archive_write_add_filter.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.i
 .PHONY : archive_write_add_filter.c.i
 
 archive_write_add_filter.s: archive_write_add_filter.c.s
@@ -2121,7 +2121,7 @@ archive_write_add_filter.s: archive_write_add_filter.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter.c.s
 .PHONY : archive_write_add_filter.c.s
 
 archive_write_add_filter_b64encode.obj: archive_write_add_filter_b64encode.c.obj
@@ -2129,7 +2129,7 @@ archive_write_add_filter_b64encode.obj: archive_write_add_filter_b64encode.c.obj
 
 # target to build an object file
 archive_write_add_filter_b64encode.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.obj
 .PHONY : archive_write_add_filter_b64encode.c.obj
 
 archive_write_add_filter_b64encode.i: archive_write_add_filter_b64encode.c.i
@@ -2137,7 +2137,7 @@ archive_write_add_filter_b64encode.i: archive_write_add_filter_b64encode.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_b64encode.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.i
 .PHONY : archive_write_add_filter_b64encode.c.i
 
 archive_write_add_filter_b64encode.s: archive_write_add_filter_b64encode.c.s
@@ -2145,7 +2145,7 @@ archive_write_add_filter_b64encode.s: archive_write_add_filter_b64encode.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_b64encode.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_b64encode.c.s
 .PHONY : archive_write_add_filter_b64encode.c.s
 
 archive_write_add_filter_by_name.obj: archive_write_add_filter_by_name.c.obj
@@ -2153,7 +2153,7 @@ archive_write_add_filter_by_name.obj: archive_write_add_filter_by_name.c.obj
 
 # target to build an object file
 archive_write_add_filter_by_name.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.obj
 .PHONY : archive_write_add_filter_by_name.c.obj
 
 archive_write_add_filter_by_name.i: archive_write_add_filter_by_name.c.i
@@ -2161,7 +2161,7 @@ archive_write_add_filter_by_name.i: archive_write_add_filter_by_name.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_by_name.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.i
 .PHONY : archive_write_add_filter_by_name.c.i
 
 archive_write_add_filter_by_name.s: archive_write_add_filter_by_name.c.s
@@ -2169,7 +2169,7 @@ archive_write_add_filter_by_name.s: archive_write_add_filter_by_name.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_by_name.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_by_name.c.s
 .PHONY : archive_write_add_filter_by_name.c.s
 
 archive_write_add_filter_bzip2.obj: archive_write_add_filter_bzip2.c.obj
@@ -2177,7 +2177,7 @@ archive_write_add_filter_bzip2.obj: archive_write_add_filter_bzip2.c.obj
 
 # target to build an object file
 archive_write_add_filter_bzip2.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.obj
 .PHONY : archive_write_add_filter_bzip2.c.obj
 
 archive_write_add_filter_bzip2.i: archive_write_add_filter_bzip2.c.i
@@ -2185,7 +2185,7 @@ archive_write_add_filter_bzip2.i: archive_write_add_filter_bzip2.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_bzip2.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.i
 .PHONY : archive_write_add_filter_bzip2.c.i
 
 archive_write_add_filter_bzip2.s: archive_write_add_filter_bzip2.c.s
@@ -2193,7 +2193,7 @@ archive_write_add_filter_bzip2.s: archive_write_add_filter_bzip2.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_bzip2.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_bzip2.c.s
 .PHONY : archive_write_add_filter_bzip2.c.s
 
 archive_write_add_filter_compress.obj: archive_write_add_filter_compress.c.obj
@@ -2201,7 +2201,7 @@ archive_write_add_filter_compress.obj: archive_write_add_filter_compress.c.obj
 
 # target to build an object file
 archive_write_add_filter_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.obj
 .PHONY : archive_write_add_filter_compress.c.obj
 
 archive_write_add_filter_compress.i: archive_write_add_filter_compress.c.i
@@ -2209,7 +2209,7 @@ archive_write_add_filter_compress.i: archive_write_add_filter_compress.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.i
 .PHONY : archive_write_add_filter_compress.c.i
 
 archive_write_add_filter_compress.s: archive_write_add_filter_compress.c.s
@@ -2217,7 +2217,7 @@ archive_write_add_filter_compress.s: archive_write_add_filter_compress.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_compress.c.s
 .PHONY : archive_write_add_filter_compress.c.s
 
 archive_write_add_filter_grzip.obj: archive_write_add_filter_grzip.c.obj
@@ -2225,7 +2225,7 @@ archive_write_add_filter_grzip.obj: archive_write_add_filter_grzip.c.obj
 
 # target to build an object file
 archive_write_add_filter_grzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.obj
 .PHONY : archive_write_add_filter_grzip.c.obj
 
 archive_write_add_filter_grzip.i: archive_write_add_filter_grzip.c.i
@@ -2233,7 +2233,7 @@ archive_write_add_filter_grzip.i: archive_write_add_filter_grzip.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_grzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.i
 .PHONY : archive_write_add_filter_grzip.c.i
 
 archive_write_add_filter_grzip.s: archive_write_add_filter_grzip.c.s
@@ -2241,7 +2241,7 @@ archive_write_add_filter_grzip.s: archive_write_add_filter_grzip.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_grzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_grzip.c.s
 .PHONY : archive_write_add_filter_grzip.c.s
 
 archive_write_add_filter_gzip.obj: archive_write_add_filter_gzip.c.obj
@@ -2249,7 +2249,7 @@ archive_write_add_filter_gzip.obj: archive_write_add_filter_gzip.c.obj
 
 # target to build an object file
 archive_write_add_filter_gzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.obj
 .PHONY : archive_write_add_filter_gzip.c.obj
 
 archive_write_add_filter_gzip.i: archive_write_add_filter_gzip.c.i
@@ -2257,7 +2257,7 @@ archive_write_add_filter_gzip.i: archive_write_add_filter_gzip.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_gzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.i
 .PHONY : archive_write_add_filter_gzip.c.i
 
 archive_write_add_filter_gzip.s: archive_write_add_filter_gzip.c.s
@@ -2265,7 +2265,7 @@ archive_write_add_filter_gzip.s: archive_write_add_filter_gzip.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_gzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_gzip.c.s
 .PHONY : archive_write_add_filter_gzip.c.s
 
 archive_write_add_filter_lrzip.obj: archive_write_add_filter_lrzip.c.obj
@@ -2273,7 +2273,7 @@ archive_write_add_filter_lrzip.obj: archive_write_add_filter_lrzip.c.obj
 
 # target to build an object file
 archive_write_add_filter_lrzip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.obj
 .PHONY : archive_write_add_filter_lrzip.c.obj
 
 archive_write_add_filter_lrzip.i: archive_write_add_filter_lrzip.c.i
@@ -2281,7 +2281,7 @@ archive_write_add_filter_lrzip.i: archive_write_add_filter_lrzip.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_lrzip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.i
 .PHONY : archive_write_add_filter_lrzip.c.i
 
 archive_write_add_filter_lrzip.s: archive_write_add_filter_lrzip.c.s
@@ -2289,7 +2289,7 @@ archive_write_add_filter_lrzip.s: archive_write_add_filter_lrzip.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_lrzip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lrzip.c.s
 .PHONY : archive_write_add_filter_lrzip.c.s
 
 archive_write_add_filter_lz4.obj: archive_write_add_filter_lz4.c.obj
@@ -2297,7 +2297,7 @@ archive_write_add_filter_lz4.obj: archive_write_add_filter_lz4.c.obj
 
 # target to build an object file
 archive_write_add_filter_lz4.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.obj
 .PHONY : archive_write_add_filter_lz4.c.obj
 
 archive_write_add_filter_lz4.i: archive_write_add_filter_lz4.c.i
@@ -2305,7 +2305,7 @@ archive_write_add_filter_lz4.i: archive_write_add_filter_lz4.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_lz4.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.i
 .PHONY : archive_write_add_filter_lz4.c.i
 
 archive_write_add_filter_lz4.s: archive_write_add_filter_lz4.c.s
@@ -2313,7 +2313,7 @@ archive_write_add_filter_lz4.s: archive_write_add_filter_lz4.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_lz4.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lz4.c.s
 .PHONY : archive_write_add_filter_lz4.c.s
 
 archive_write_add_filter_lzop.obj: archive_write_add_filter_lzop.c.obj
@@ -2321,7 +2321,7 @@ archive_write_add_filter_lzop.obj: archive_write_add_filter_lzop.c.obj
 
 # target to build an object file
 archive_write_add_filter_lzop.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.obj
 .PHONY : archive_write_add_filter_lzop.c.obj
 
 archive_write_add_filter_lzop.i: archive_write_add_filter_lzop.c.i
@@ -2329,7 +2329,7 @@ archive_write_add_filter_lzop.i: archive_write_add_filter_lzop.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_lzop.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.i
 .PHONY : archive_write_add_filter_lzop.c.i
 
 archive_write_add_filter_lzop.s: archive_write_add_filter_lzop.c.s
@@ -2337,7 +2337,7 @@ archive_write_add_filter_lzop.s: archive_write_add_filter_lzop.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_lzop.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_lzop.c.s
 .PHONY : archive_write_add_filter_lzop.c.s
 
 archive_write_add_filter_none.obj: archive_write_add_filter_none.c.obj
@@ -2345,7 +2345,7 @@ archive_write_add_filter_none.obj: archive_write_add_filter_none.c.obj
 
 # target to build an object file
 archive_write_add_filter_none.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.obj
 .PHONY : archive_write_add_filter_none.c.obj
 
 archive_write_add_filter_none.i: archive_write_add_filter_none.c.i
@@ -2353,7 +2353,7 @@ archive_write_add_filter_none.i: archive_write_add_filter_none.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_none.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.i
 .PHONY : archive_write_add_filter_none.c.i
 
 archive_write_add_filter_none.s: archive_write_add_filter_none.c.s
@@ -2361,7 +2361,7 @@ archive_write_add_filter_none.s: archive_write_add_filter_none.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_none.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_none.c.s
 .PHONY : archive_write_add_filter_none.c.s
 
 archive_write_add_filter_program.obj: archive_write_add_filter_program.c.obj
@@ -2369,7 +2369,7 @@ archive_write_add_filter_program.obj: archive_write_add_filter_program.c.obj
 
 # target to build an object file
 archive_write_add_filter_program.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.obj
 .PHONY : archive_write_add_filter_program.c.obj
 
 archive_write_add_filter_program.i: archive_write_add_filter_program.c.i
@@ -2377,7 +2377,7 @@ archive_write_add_filter_program.i: archive_write_add_filter_program.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_program.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.i
 .PHONY : archive_write_add_filter_program.c.i
 
 archive_write_add_filter_program.s: archive_write_add_filter_program.c.s
@@ -2385,7 +2385,7 @@ archive_write_add_filter_program.s: archive_write_add_filter_program.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_program.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_program.c.s
 .PHONY : archive_write_add_filter_program.c.s
 
 archive_write_add_filter_uuencode.obj: archive_write_add_filter_uuencode.c.obj
@@ -2393,7 +2393,7 @@ archive_write_add_filter_uuencode.obj: archive_write_add_filter_uuencode.c.obj
 
 # target to build an object file
 archive_write_add_filter_uuencode.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.obj
 .PHONY : archive_write_add_filter_uuencode.c.obj
 
 archive_write_add_filter_uuencode.i: archive_write_add_filter_uuencode.c.i
@@ -2401,7 +2401,7 @@ archive_write_add_filter_uuencode.i: archive_write_add_filter_uuencode.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_uuencode.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.i
 .PHONY : archive_write_add_filter_uuencode.c.i
 
 archive_write_add_filter_uuencode.s: archive_write_add_filter_uuencode.c.s
@@ -2409,7 +2409,7 @@ archive_write_add_filter_uuencode.s: archive_write_add_filter_uuencode.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_uuencode.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_uuencode.c.s
 .PHONY : archive_write_add_filter_uuencode.c.s
 
 archive_write_add_filter_xz.obj: archive_write_add_filter_xz.c.obj
@@ -2417,7 +2417,7 @@ archive_write_add_filter_xz.obj: archive_write_add_filter_xz.c.obj
 
 # target to build an object file
 archive_write_add_filter_xz.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.obj
 .PHONY : archive_write_add_filter_xz.c.obj
 
 archive_write_add_filter_xz.i: archive_write_add_filter_xz.c.i
@@ -2425,7 +2425,7 @@ archive_write_add_filter_xz.i: archive_write_add_filter_xz.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_xz.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.i
 .PHONY : archive_write_add_filter_xz.c.i
 
 archive_write_add_filter_xz.s: archive_write_add_filter_xz.c.s
@@ -2433,7 +2433,7 @@ archive_write_add_filter_xz.s: archive_write_add_filter_xz.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_xz.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_xz.c.s
 .PHONY : archive_write_add_filter_xz.c.s
 
 archive_write_add_filter_zstd.obj: archive_write_add_filter_zstd.c.obj
@@ -2441,7 +2441,7 @@ archive_write_add_filter_zstd.obj: archive_write_add_filter_zstd.c.obj
 
 # target to build an object file
 archive_write_add_filter_zstd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.obj
 .PHONY : archive_write_add_filter_zstd.c.obj
 
 archive_write_add_filter_zstd.i: archive_write_add_filter_zstd.c.i
@@ -2449,7 +2449,7 @@ archive_write_add_filter_zstd.i: archive_write_add_filter_zstd.c.i
 
 # target to preprocess a source file
 archive_write_add_filter_zstd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.i
 .PHONY : archive_write_add_filter_zstd.c.i
 
 archive_write_add_filter_zstd.s: archive_write_add_filter_zstd.c.s
@@ -2457,7 +2457,7 @@ archive_write_add_filter_zstd.s: archive_write_add_filter_zstd.c.s
 
 # target to generate assembly for a file
 archive_write_add_filter_zstd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_add_filter_zstd.c.s
 .PHONY : archive_write_add_filter_zstd.c.s
 
 archive_write_disk_posix.obj: archive_write_disk_posix.c.obj
@@ -2465,7 +2465,7 @@ archive_write_disk_posix.obj: archive_write_disk_posix.c.obj
 
 # target to build an object file
 archive_write_disk_posix.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.obj
 .PHONY : archive_write_disk_posix.c.obj
 
 archive_write_disk_posix.i: archive_write_disk_posix.c.i
@@ -2473,7 +2473,7 @@ archive_write_disk_posix.i: archive_write_disk_posix.c.i
 
 # target to preprocess a source file
 archive_write_disk_posix.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.i
 .PHONY : archive_write_disk_posix.c.i
 
 archive_write_disk_posix.s: archive_write_disk_posix.c.s
@@ -2481,7 +2481,7 @@ archive_write_disk_posix.s: archive_write_disk_posix.c.s
 
 # target to generate assembly for a file
 archive_write_disk_posix.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_posix.c.s
 .PHONY : archive_write_disk_posix.c.s
 
 archive_write_disk_set_standard_lookup.obj: archive_write_disk_set_standard_lookup.c.obj
@@ -2489,7 +2489,7 @@ archive_write_disk_set_standard_lookup.obj: archive_write_disk_set_standard_look
 
 # target to build an object file
 archive_write_disk_set_standard_lookup.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.obj
 .PHONY : archive_write_disk_set_standard_lookup.c.obj
 
 archive_write_disk_set_standard_lookup.i: archive_write_disk_set_standard_lookup.c.i
@@ -2497,7 +2497,7 @@ archive_write_disk_set_standard_lookup.i: archive_write_disk_set_standard_lookup
 
 # target to preprocess a source file
 archive_write_disk_set_standard_lookup.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.i
 .PHONY : archive_write_disk_set_standard_lookup.c.i
 
 archive_write_disk_set_standard_lookup.s: archive_write_disk_set_standard_lookup.c.s
@@ -2505,7 +2505,7 @@ archive_write_disk_set_standard_lookup.s: archive_write_disk_set_standard_lookup
 
 # target to generate assembly for a file
 archive_write_disk_set_standard_lookup.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_set_standard_lookup.c.s
 .PHONY : archive_write_disk_set_standard_lookup.c.s
 
 archive_write_disk_windows.obj: archive_write_disk_windows.c.obj
@@ -2513,7 +2513,7 @@ archive_write_disk_windows.obj: archive_write_disk_windows.c.obj
 
 # target to build an object file
 archive_write_disk_windows.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.obj
 .PHONY : archive_write_disk_windows.c.obj
 
 archive_write_disk_windows.i: archive_write_disk_windows.c.i
@@ -2521,7 +2521,7 @@ archive_write_disk_windows.i: archive_write_disk_windows.c.i
 
 # target to preprocess a source file
 archive_write_disk_windows.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.i
 .PHONY : archive_write_disk_windows.c.i
 
 archive_write_disk_windows.s: archive_write_disk_windows.c.s
@@ -2529,7 +2529,7 @@ archive_write_disk_windows.s: archive_write_disk_windows.c.s
 
 # target to generate assembly for a file
 archive_write_disk_windows.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_disk_windows.c.s
 .PHONY : archive_write_disk_windows.c.s
 
 archive_write_open_fd.obj: archive_write_open_fd.c.obj
@@ -2537,7 +2537,7 @@ archive_write_open_fd.obj: archive_write_open_fd.c.obj
 
 # target to build an object file
 archive_write_open_fd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.obj
 .PHONY : archive_write_open_fd.c.obj
 
 archive_write_open_fd.i: archive_write_open_fd.c.i
@@ -2545,7 +2545,7 @@ archive_write_open_fd.i: archive_write_open_fd.c.i
 
 # target to preprocess a source file
 archive_write_open_fd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.i
 .PHONY : archive_write_open_fd.c.i
 
 archive_write_open_fd.s: archive_write_open_fd.c.s
@@ -2553,7 +2553,7 @@ archive_write_open_fd.s: archive_write_open_fd.c.s
 
 # target to generate assembly for a file
 archive_write_open_fd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_fd.c.s
 .PHONY : archive_write_open_fd.c.s
 
 archive_write_open_file.obj: archive_write_open_file.c.obj
@@ -2561,7 +2561,7 @@ archive_write_open_file.obj: archive_write_open_file.c.obj
 
 # target to build an object file
 archive_write_open_file.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.obj
 .PHONY : archive_write_open_file.c.obj
 
 archive_write_open_file.i: archive_write_open_file.c.i
@@ -2569,7 +2569,7 @@ archive_write_open_file.i: archive_write_open_file.c.i
 
 # target to preprocess a source file
 archive_write_open_file.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.i
 .PHONY : archive_write_open_file.c.i
 
 archive_write_open_file.s: archive_write_open_file.c.s
@@ -2577,7 +2577,7 @@ archive_write_open_file.s: archive_write_open_file.c.s
 
 # target to generate assembly for a file
 archive_write_open_file.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_file.c.s
 .PHONY : archive_write_open_file.c.s
 
 archive_write_open_filename.obj: archive_write_open_filename.c.obj
@@ -2585,7 +2585,7 @@ archive_write_open_filename.obj: archive_write_open_filename.c.obj
 
 # target to build an object file
 archive_write_open_filename.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.obj
 .PHONY : archive_write_open_filename.c.obj
 
 archive_write_open_filename.i: archive_write_open_filename.c.i
@@ -2593,7 +2593,7 @@ archive_write_open_filename.i: archive_write_open_filename.c.i
 
 # target to preprocess a source file
 archive_write_open_filename.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.i
 .PHONY : archive_write_open_filename.c.i
 
 archive_write_open_filename.s: archive_write_open_filename.c.s
@@ -2601,7 +2601,7 @@ archive_write_open_filename.s: archive_write_open_filename.c.s
 
 # target to generate assembly for a file
 archive_write_open_filename.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_filename.c.s
 .PHONY : archive_write_open_filename.c.s
 
 archive_write_open_memory.obj: archive_write_open_memory.c.obj
@@ -2609,7 +2609,7 @@ archive_write_open_memory.obj: archive_write_open_memory.c.obj
 
 # target to build an object file
 archive_write_open_memory.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.obj
 .PHONY : archive_write_open_memory.c.obj
 
 archive_write_open_memory.i: archive_write_open_memory.c.i
@@ -2617,7 +2617,7 @@ archive_write_open_memory.i: archive_write_open_memory.c.i
 
 # target to preprocess a source file
 archive_write_open_memory.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.i
 .PHONY : archive_write_open_memory.c.i
 
 archive_write_open_memory.s: archive_write_open_memory.c.s
@@ -2625,7 +2625,7 @@ archive_write_open_memory.s: archive_write_open_memory.c.s
 
 # target to generate assembly for a file
 archive_write_open_memory.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_open_memory.c.s
 .PHONY : archive_write_open_memory.c.s
 
 archive_write_set_format.obj: archive_write_set_format.c.obj
@@ -2633,7 +2633,7 @@ archive_write_set_format.obj: archive_write_set_format.c.obj
 
 # target to build an object file
 archive_write_set_format.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.obj
 .PHONY : archive_write_set_format.c.obj
 
 archive_write_set_format.i: archive_write_set_format.c.i
@@ -2641,7 +2641,7 @@ archive_write_set_format.i: archive_write_set_format.c.i
 
 # target to preprocess a source file
 archive_write_set_format.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.i
 .PHONY : archive_write_set_format.c.i
 
 archive_write_set_format.s: archive_write_set_format.c.s
@@ -2649,7 +2649,7 @@ archive_write_set_format.s: archive_write_set_format.c.s
 
 # target to generate assembly for a file
 archive_write_set_format.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format.c.s
 .PHONY : archive_write_set_format.c.s
 
 archive_write_set_format_7zip.obj: archive_write_set_format_7zip.c.obj
@@ -2657,7 +2657,7 @@ archive_write_set_format_7zip.obj: archive_write_set_format_7zip.c.obj
 
 # target to build an object file
 archive_write_set_format_7zip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.obj
 .PHONY : archive_write_set_format_7zip.c.obj
 
 archive_write_set_format_7zip.i: archive_write_set_format_7zip.c.i
@@ -2665,7 +2665,7 @@ archive_write_set_format_7zip.i: archive_write_set_format_7zip.c.i
 
 # target to preprocess a source file
 archive_write_set_format_7zip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.i
 .PHONY : archive_write_set_format_7zip.c.i
 
 archive_write_set_format_7zip.s: archive_write_set_format_7zip.c.s
@@ -2673,7 +2673,7 @@ archive_write_set_format_7zip.s: archive_write_set_format_7zip.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_7zip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_7zip.c.s
 .PHONY : archive_write_set_format_7zip.c.s
 
 archive_write_set_format_ar.obj: archive_write_set_format_ar.c.obj
@@ -2681,7 +2681,7 @@ archive_write_set_format_ar.obj: archive_write_set_format_ar.c.obj
 
 # target to build an object file
 archive_write_set_format_ar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.obj
 .PHONY : archive_write_set_format_ar.c.obj
 
 archive_write_set_format_ar.i: archive_write_set_format_ar.c.i
@@ -2689,7 +2689,7 @@ archive_write_set_format_ar.i: archive_write_set_format_ar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_ar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.i
 .PHONY : archive_write_set_format_ar.c.i
 
 archive_write_set_format_ar.s: archive_write_set_format_ar.c.s
@@ -2697,7 +2697,7 @@ archive_write_set_format_ar.s: archive_write_set_format_ar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_ar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ar.c.s
 .PHONY : archive_write_set_format_ar.c.s
 
 archive_write_set_format_by_name.obj: archive_write_set_format_by_name.c.obj
@@ -2705,7 +2705,7 @@ archive_write_set_format_by_name.obj: archive_write_set_format_by_name.c.obj
 
 # target to build an object file
 archive_write_set_format_by_name.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.obj
 .PHONY : archive_write_set_format_by_name.c.obj
 
 archive_write_set_format_by_name.i: archive_write_set_format_by_name.c.i
@@ -2713,7 +2713,7 @@ archive_write_set_format_by_name.i: archive_write_set_format_by_name.c.i
 
 # target to preprocess a source file
 archive_write_set_format_by_name.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.i
 .PHONY : archive_write_set_format_by_name.c.i
 
 archive_write_set_format_by_name.s: archive_write_set_format_by_name.c.s
@@ -2721,7 +2721,7 @@ archive_write_set_format_by_name.s: archive_write_set_format_by_name.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_by_name.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_by_name.c.s
 .PHONY : archive_write_set_format_by_name.c.s
 
 archive_write_set_format_cpio.obj: archive_write_set_format_cpio.c.obj
@@ -2729,7 +2729,7 @@ archive_write_set_format_cpio.obj: archive_write_set_format_cpio.c.obj
 
 # target to build an object file
 archive_write_set_format_cpio.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.obj
 .PHONY : archive_write_set_format_cpio.c.obj
 
 archive_write_set_format_cpio.i: archive_write_set_format_cpio.c.i
@@ -2737,7 +2737,7 @@ archive_write_set_format_cpio.i: archive_write_set_format_cpio.c.i
 
 # target to preprocess a source file
 archive_write_set_format_cpio.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.i
 .PHONY : archive_write_set_format_cpio.c.i
 
 archive_write_set_format_cpio.s: archive_write_set_format_cpio.c.s
@@ -2745,7 +2745,7 @@ archive_write_set_format_cpio.s: archive_write_set_format_cpio.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_cpio.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio.c.s
 .PHONY : archive_write_set_format_cpio.c.s
 
 archive_write_set_format_cpio_newc.obj: archive_write_set_format_cpio_newc.c.obj
@@ -2753,7 +2753,7 @@ archive_write_set_format_cpio_newc.obj: archive_write_set_format_cpio_newc.c.obj
 
 # target to build an object file
 archive_write_set_format_cpio_newc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.obj
 .PHONY : archive_write_set_format_cpio_newc.c.obj
 
 archive_write_set_format_cpio_newc.i: archive_write_set_format_cpio_newc.c.i
@@ -2761,7 +2761,7 @@ archive_write_set_format_cpio_newc.i: archive_write_set_format_cpio_newc.c.i
 
 # target to preprocess a source file
 archive_write_set_format_cpio_newc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.i
 .PHONY : archive_write_set_format_cpio_newc.c.i
 
 archive_write_set_format_cpio_newc.s: archive_write_set_format_cpio_newc.c.s
@@ -2769,7 +2769,7 @@ archive_write_set_format_cpio_newc.s: archive_write_set_format_cpio_newc.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_cpio_newc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_cpio_newc.c.s
 .PHONY : archive_write_set_format_cpio_newc.c.s
 
 archive_write_set_format_filter_by_ext.obj: archive_write_set_format_filter_by_ext.c.obj
@@ -2777,7 +2777,7 @@ archive_write_set_format_filter_by_ext.obj: archive_write_set_format_filter_by_e
 
 # target to build an object file
 archive_write_set_format_filter_by_ext.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.obj
 .PHONY : archive_write_set_format_filter_by_ext.c.obj
 
 archive_write_set_format_filter_by_ext.i: archive_write_set_format_filter_by_ext.c.i
@@ -2785,7 +2785,7 @@ archive_write_set_format_filter_by_ext.i: archive_write_set_format_filter_by_ext
 
 # target to preprocess a source file
 archive_write_set_format_filter_by_ext.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.i
 .PHONY : archive_write_set_format_filter_by_ext.c.i
 
 archive_write_set_format_filter_by_ext.s: archive_write_set_format_filter_by_ext.c.s
@@ -2793,7 +2793,7 @@ archive_write_set_format_filter_by_ext.s: archive_write_set_format_filter_by_ext
 
 # target to generate assembly for a file
 archive_write_set_format_filter_by_ext.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_filter_by_ext.c.s
 .PHONY : archive_write_set_format_filter_by_ext.c.s
 
 archive_write_set_format_gnutar.obj: archive_write_set_format_gnutar.c.obj
@@ -2801,7 +2801,7 @@ archive_write_set_format_gnutar.obj: archive_write_set_format_gnutar.c.obj
 
 # target to build an object file
 archive_write_set_format_gnutar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.obj
 .PHONY : archive_write_set_format_gnutar.c.obj
 
 archive_write_set_format_gnutar.i: archive_write_set_format_gnutar.c.i
@@ -2809,7 +2809,7 @@ archive_write_set_format_gnutar.i: archive_write_set_format_gnutar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_gnutar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.i
 .PHONY : archive_write_set_format_gnutar.c.i
 
 archive_write_set_format_gnutar.s: archive_write_set_format_gnutar.c.s
@@ -2817,7 +2817,7 @@ archive_write_set_format_gnutar.s: archive_write_set_format_gnutar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_gnutar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_gnutar.c.s
 .PHONY : archive_write_set_format_gnutar.c.s
 
 archive_write_set_format_iso9660.obj: archive_write_set_format_iso9660.c.obj
@@ -2825,7 +2825,7 @@ archive_write_set_format_iso9660.obj: archive_write_set_format_iso9660.c.obj
 
 # target to build an object file
 archive_write_set_format_iso9660.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.obj
 .PHONY : archive_write_set_format_iso9660.c.obj
 
 archive_write_set_format_iso9660.i: archive_write_set_format_iso9660.c.i
@@ -2833,7 +2833,7 @@ archive_write_set_format_iso9660.i: archive_write_set_format_iso9660.c.i
 
 # target to preprocess a source file
 archive_write_set_format_iso9660.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.i
 .PHONY : archive_write_set_format_iso9660.c.i
 
 archive_write_set_format_iso9660.s: archive_write_set_format_iso9660.c.s
@@ -2841,7 +2841,7 @@ archive_write_set_format_iso9660.s: archive_write_set_format_iso9660.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_iso9660.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_iso9660.c.s
 .PHONY : archive_write_set_format_iso9660.c.s
 
 archive_write_set_format_mtree.obj: archive_write_set_format_mtree.c.obj
@@ -2849,7 +2849,7 @@ archive_write_set_format_mtree.obj: archive_write_set_format_mtree.c.obj
 
 # target to build an object file
 archive_write_set_format_mtree.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.obj
 .PHONY : archive_write_set_format_mtree.c.obj
 
 archive_write_set_format_mtree.i: archive_write_set_format_mtree.c.i
@@ -2857,7 +2857,7 @@ archive_write_set_format_mtree.i: archive_write_set_format_mtree.c.i
 
 # target to preprocess a source file
 archive_write_set_format_mtree.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.i
 .PHONY : archive_write_set_format_mtree.c.i
 
 archive_write_set_format_mtree.s: archive_write_set_format_mtree.c.s
@@ -2865,7 +2865,7 @@ archive_write_set_format_mtree.s: archive_write_set_format_mtree.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_mtree.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_mtree.c.s
 .PHONY : archive_write_set_format_mtree.c.s
 
 archive_write_set_format_pax.obj: archive_write_set_format_pax.c.obj
@@ -2873,7 +2873,7 @@ archive_write_set_format_pax.obj: archive_write_set_format_pax.c.obj
 
 # target to build an object file
 archive_write_set_format_pax.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.obj
 .PHONY : archive_write_set_format_pax.c.obj
 
 archive_write_set_format_pax.i: archive_write_set_format_pax.c.i
@@ -2881,7 +2881,7 @@ archive_write_set_format_pax.i: archive_write_set_format_pax.c.i
 
 # target to preprocess a source file
 archive_write_set_format_pax.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.i
 .PHONY : archive_write_set_format_pax.c.i
 
 archive_write_set_format_pax.s: archive_write_set_format_pax.c.s
@@ -2889,7 +2889,7 @@ archive_write_set_format_pax.s: archive_write_set_format_pax.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_pax.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_pax.c.s
 .PHONY : archive_write_set_format_pax.c.s
 
 archive_write_set_format_raw.obj: archive_write_set_format_raw.c.obj
@@ -2897,7 +2897,7 @@ archive_write_set_format_raw.obj: archive_write_set_format_raw.c.obj
 
 # target to build an object file
 archive_write_set_format_raw.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.obj
 .PHONY : archive_write_set_format_raw.c.obj
 
 archive_write_set_format_raw.i: archive_write_set_format_raw.c.i
@@ -2905,7 +2905,7 @@ archive_write_set_format_raw.i: archive_write_set_format_raw.c.i
 
 # target to preprocess a source file
 archive_write_set_format_raw.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.i
 .PHONY : archive_write_set_format_raw.c.i
 
 archive_write_set_format_raw.s: archive_write_set_format_raw.c.s
@@ -2913,7 +2913,7 @@ archive_write_set_format_raw.s: archive_write_set_format_raw.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_raw.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_raw.c.s
 .PHONY : archive_write_set_format_raw.c.s
 
 archive_write_set_format_shar.obj: archive_write_set_format_shar.c.obj
@@ -2921,7 +2921,7 @@ archive_write_set_format_shar.obj: archive_write_set_format_shar.c.obj
 
 # target to build an object file
 archive_write_set_format_shar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.obj
 .PHONY : archive_write_set_format_shar.c.obj
 
 archive_write_set_format_shar.i: archive_write_set_format_shar.c.i
@@ -2929,7 +2929,7 @@ archive_write_set_format_shar.i: archive_write_set_format_shar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_shar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.i
 .PHONY : archive_write_set_format_shar.c.i
 
 archive_write_set_format_shar.s: archive_write_set_format_shar.c.s
@@ -2937,7 +2937,7 @@ archive_write_set_format_shar.s: archive_write_set_format_shar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_shar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_shar.c.s
 .PHONY : archive_write_set_format_shar.c.s
 
 archive_write_set_format_ustar.obj: archive_write_set_format_ustar.c.obj
@@ -2945,7 +2945,7 @@ archive_write_set_format_ustar.obj: archive_write_set_format_ustar.c.obj
 
 # target to build an object file
 archive_write_set_format_ustar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.obj
 .PHONY : archive_write_set_format_ustar.c.obj
 
 archive_write_set_format_ustar.i: archive_write_set_format_ustar.c.i
@@ -2953,7 +2953,7 @@ archive_write_set_format_ustar.i: archive_write_set_format_ustar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_ustar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.i
 .PHONY : archive_write_set_format_ustar.c.i
 
 archive_write_set_format_ustar.s: archive_write_set_format_ustar.c.s
@@ -2961,7 +2961,7 @@ archive_write_set_format_ustar.s: archive_write_set_format_ustar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_ustar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_ustar.c.s
 .PHONY : archive_write_set_format_ustar.c.s
 
 archive_write_set_format_v7tar.obj: archive_write_set_format_v7tar.c.obj
@@ -2969,7 +2969,7 @@ archive_write_set_format_v7tar.obj: archive_write_set_format_v7tar.c.obj
 
 # target to build an object file
 archive_write_set_format_v7tar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.obj
 .PHONY : archive_write_set_format_v7tar.c.obj
 
 archive_write_set_format_v7tar.i: archive_write_set_format_v7tar.c.i
@@ -2977,7 +2977,7 @@ archive_write_set_format_v7tar.i: archive_write_set_format_v7tar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_v7tar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.i
 .PHONY : archive_write_set_format_v7tar.c.i
 
 archive_write_set_format_v7tar.s: archive_write_set_format_v7tar.c.s
@@ -2985,7 +2985,7 @@ archive_write_set_format_v7tar.s: archive_write_set_format_v7tar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_v7tar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_v7tar.c.s
 .PHONY : archive_write_set_format_v7tar.c.s
 
 archive_write_set_format_warc.obj: archive_write_set_format_warc.c.obj
@@ -2993,7 +2993,7 @@ archive_write_set_format_warc.obj: archive_write_set_format_warc.c.obj
 
 # target to build an object file
 archive_write_set_format_warc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.obj
 .PHONY : archive_write_set_format_warc.c.obj
 
 archive_write_set_format_warc.i: archive_write_set_format_warc.c.i
@@ -3001,7 +3001,7 @@ archive_write_set_format_warc.i: archive_write_set_format_warc.c.i
 
 # target to preprocess a source file
 archive_write_set_format_warc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.i
 .PHONY : archive_write_set_format_warc.c.i
 
 archive_write_set_format_warc.s: archive_write_set_format_warc.c.s
@@ -3009,7 +3009,7 @@ archive_write_set_format_warc.s: archive_write_set_format_warc.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_warc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_warc.c.s
 .PHONY : archive_write_set_format_warc.c.s
 
 archive_write_set_format_xar.obj: archive_write_set_format_xar.c.obj
@@ -3017,7 +3017,7 @@ archive_write_set_format_xar.obj: archive_write_set_format_xar.c.obj
 
 # target to build an object file
 archive_write_set_format_xar.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.obj
 .PHONY : archive_write_set_format_xar.c.obj
 
 archive_write_set_format_xar.i: archive_write_set_format_xar.c.i
@@ -3025,7 +3025,7 @@ archive_write_set_format_xar.i: archive_write_set_format_xar.c.i
 
 # target to preprocess a source file
 archive_write_set_format_xar.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.i
 .PHONY : archive_write_set_format_xar.c.i
 
 archive_write_set_format_xar.s: archive_write_set_format_xar.c.s
@@ -3033,7 +3033,7 @@ archive_write_set_format_xar.s: archive_write_set_format_xar.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_xar.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_xar.c.s
 .PHONY : archive_write_set_format_xar.c.s
 
 archive_write_set_format_zip.obj: archive_write_set_format_zip.c.obj
@@ -3041,7 +3041,7 @@ archive_write_set_format_zip.obj: archive_write_set_format_zip.c.obj
 
 # target to build an object file
 archive_write_set_format_zip.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.obj
 .PHONY : archive_write_set_format_zip.c.obj
 
 archive_write_set_format_zip.i: archive_write_set_format_zip.c.i
@@ -3049,7 +3049,7 @@ archive_write_set_format_zip.i: archive_write_set_format_zip.c.i
 
 # target to preprocess a source file
 archive_write_set_format_zip.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.i
 .PHONY : archive_write_set_format_zip.c.i
 
 archive_write_set_format_zip.s: archive_write_set_format_zip.c.s
@@ -3057,7 +3057,7 @@ archive_write_set_format_zip.s: archive_write_set_format_zip.c.s
 
 # target to generate assembly for a file
 archive_write_set_format_zip.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_format_zip.c.s
 .PHONY : archive_write_set_format_zip.c.s
 
 archive_write_set_options.obj: archive_write_set_options.c.obj
@@ -3065,7 +3065,7 @@ archive_write_set_options.obj: archive_write_set_options.c.obj
 
 # target to build an object file
 archive_write_set_options.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.obj
 .PHONY : archive_write_set_options.c.obj
 
 archive_write_set_options.i: archive_write_set_options.c.i
@@ -3073,7 +3073,7 @@ archive_write_set_options.i: archive_write_set_options.c.i
 
 # target to preprocess a source file
 archive_write_set_options.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.i
 .PHONY : archive_write_set_options.c.i
 
 archive_write_set_options.s: archive_write_set_options.c.s
@@ -3081,7 +3081,7 @@ archive_write_set_options.s: archive_write_set_options.c.s
 
 # target to generate assembly for a file
 archive_write_set_options.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_options.c.s
 .PHONY : archive_write_set_options.c.s
 
 archive_write_set_passphrase.obj: archive_write_set_passphrase.c.obj
@@ -3089,7 +3089,7 @@ archive_write_set_passphrase.obj: archive_write_set_passphrase.c.obj
 
 # target to build an object file
 archive_write_set_passphrase.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.obj
 .PHONY : archive_write_set_passphrase.c.obj
 
 archive_write_set_passphrase.i: archive_write_set_passphrase.c.i
@@ -3097,7 +3097,7 @@ archive_write_set_passphrase.i: archive_write_set_passphrase.c.i
 
 # target to preprocess a source file
 archive_write_set_passphrase.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.i
 .PHONY : archive_write_set_passphrase.c.i
 
 archive_write_set_passphrase.s: archive_write_set_passphrase.c.s
@@ -3105,7 +3105,7 @@ archive_write_set_passphrase.s: archive_write_set_passphrase.c.s
 
 # target to generate assembly for a file
 archive_write_set_passphrase.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/archive_write_set_passphrase.c.s
 .PHONY : archive_write_set_passphrase.c.s
 
 filter_fork_posix.obj: filter_fork_posix.c.obj
@@ -3113,7 +3113,7 @@ filter_fork_posix.obj: filter_fork_posix.c.obj
 
 # target to build an object file
 filter_fork_posix.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.obj
 .PHONY : filter_fork_posix.c.obj
 
 filter_fork_posix.i: filter_fork_posix.c.i
@@ -3121,7 +3121,7 @@ filter_fork_posix.i: filter_fork_posix.c.i
 
 # target to preprocess a source file
 filter_fork_posix.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.i
 .PHONY : filter_fork_posix.c.i
 
 filter_fork_posix.s: filter_fork_posix.c.s
@@ -3129,7 +3129,7 @@ filter_fork_posix.s: filter_fork_posix.c.s
 
 # target to generate assembly for a file
 filter_fork_posix.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_posix.c.s
 .PHONY : filter_fork_posix.c.s
 
 filter_fork_windows.obj: filter_fork_windows.c.obj
@@ -3137,7 +3137,7 @@ filter_fork_windows.obj: filter_fork_windows.c.obj
 
 # target to build an object file
 filter_fork_windows.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.obj
 .PHONY : filter_fork_windows.c.obj
 
 filter_fork_windows.i: filter_fork_windows.c.i
@@ -3145,7 +3145,7 @@ filter_fork_windows.i: filter_fork_windows.c.i
 
 # target to preprocess a source file
 filter_fork_windows.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.i
 .PHONY : filter_fork_windows.c.i
 
 filter_fork_windows.s: filter_fork_windows.c.s
@@ -3153,7 +3153,7 @@ filter_fork_windows.s: filter_fork_windows.c.s
 
 # target to generate assembly for a file
 filter_fork_windows.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/filter_fork_windows.c.s
 .PHONY : filter_fork_windows.c.s
 
 xxhash.obj: xxhash.c.obj
@@ -3161,7 +3161,7 @@ xxhash.obj: xxhash.c.obj
 
 # target to build an object file
 xxhash.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.obj
 .PHONY : xxhash.c.obj
 
 xxhash.i: xxhash.c.i
@@ -3169,7 +3169,7 @@ xxhash.i: xxhash.c.i
 
 # target to preprocess a source file
 xxhash.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.i
 .PHONY : xxhash.c.i
 
 xxhash.s: xxhash.c.s
@@ -3177,7 +3177,7 @@ xxhash.s: xxhash.c.s
 
 # target to generate assembly for a file
 xxhash.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibarchive\libarchive\CMakeFiles\cmlibarchive.dir\build.make Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/xxhash.c.s
 .PHONY : xxhash.c.s
 
 # Help Target
@@ -3579,6 +3579,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

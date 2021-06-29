@@ -4,5 +4,5 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JacocoCoverage
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JacocoCoverage
+SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JacocoCoverage
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JacocoCoverage

@@ -7,7 +7,7 @@
 #  define CONFIG_DIR_PRE ""
 #  define CONFIG_DIR_POST ""
 #endif
-#define cmsys_SHARED_FORWARD_DIR_BUILD "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys"
+#define cmsys_SHARED_FORWARD_DIR_BUILD "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys"
 #define cmsys_SHARED_FORWARD_PATH_BUILD "." CONFIG_DIR_POST
 #define cmsys_SHARED_FORWARD_PATH_INSTALL 0
 #define cmsys_SHARED_FORWARD_EXE_BUILD                            \

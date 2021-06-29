@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/rule
 .PHONY : Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ kwiml_test: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/rule
 
 # fast build rule for target.
 kwiml_test/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/build
 .PHONY : kwiml_test/fast
 
 test.obj: test.c.obj
@@ -209,7 +209,7 @@ test.obj: test.c.obj
 
 # target to build an object file
 test.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj
 .PHONY : test.c.obj
 
 test.i: test.c.i
@@ -217,7 +217,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -225,7 +225,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.s
 .PHONY : test.c.s
 
 test_abi_C.obj: test_abi_C.c.obj
@@ -233,7 +233,7 @@ test_abi_C.obj: test_abi_C.c.obj
 
 # target to build an object file
 test_abi_C.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj
 .PHONY : test_abi_C.c.obj
 
 test_abi_C.i: test_abi_C.c.i
@@ -241,7 +241,7 @@ test_abi_C.i: test_abi_C.c.i
 
 # target to preprocess a source file
 test_abi_C.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.i
 .PHONY : test_abi_C.c.i
 
 test_abi_C.s: test_abi_C.c.s
@@ -249,7 +249,7 @@ test_abi_C.s: test_abi_C.c.s
 
 # target to generate assembly for a file
 test_abi_C.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.s
 .PHONY : test_abi_C.c.s
 
 test_abi_CXX.obj: test_abi_CXX.cxx.obj
@@ -257,7 +257,7 @@ test_abi_CXX.obj: test_abi_CXX.cxx.obj
 
 # target to build an object file
 test_abi_CXX.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj
 .PHONY : test_abi_CXX.cxx.obj
 
 test_abi_CXX.i: test_abi_CXX.cxx.i
@@ -265,7 +265,7 @@ test_abi_CXX.i: test_abi_CXX.cxx.i
 
 # target to preprocess a source file
 test_abi_CXX.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.i
 .PHONY : test_abi_CXX.cxx.i
 
 test_abi_CXX.s: test_abi_CXX.cxx.s
@@ -273,7 +273,7 @@ test_abi_CXX.s: test_abi_CXX.cxx.s
 
 # target to generate assembly for a file
 test_abi_CXX.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.s
 .PHONY : test_abi_CXX.cxx.s
 
 test_include_C.obj: test_include_C.c.obj
@@ -281,7 +281,7 @@ test_include_C.obj: test_include_C.c.obj
 
 # target to build an object file
 test_include_C.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj
 .PHONY : test_include_C.c.obj
 
 test_include_C.i: test_include_C.c.i
@@ -289,7 +289,7 @@ test_include_C.i: test_include_C.c.i
 
 # target to preprocess a source file
 test_include_C.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.i
 .PHONY : test_include_C.c.i
 
 test_include_C.s: test_include_C.c.s
@@ -297,7 +297,7 @@ test_include_C.s: test_include_C.c.s
 
 # target to generate assembly for a file
 test_include_C.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.s
 .PHONY : test_include_C.c.s
 
 test_include_CXX.obj: test_include_CXX.cxx.obj
@@ -305,7 +305,7 @@ test_include_CXX.obj: test_include_CXX.cxx.obj
 
 # target to build an object file
 test_include_CXX.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj
 .PHONY : test_include_CXX.cxx.obj
 
 test_include_CXX.i: test_include_CXX.cxx.i
@@ -313,7 +313,7 @@ test_include_CXX.i: test_include_CXX.cxx.i
 
 # target to preprocess a source file
 test_include_CXX.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.i
 .PHONY : test_include_CXX.cxx.i
 
 test_include_CXX.s: test_include_CXX.cxx.s
@@ -321,7 +321,7 @@ test_include_CXX.s: test_include_CXX.cxx.s
 
 # target to generate assembly for a file
 test_include_CXX.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.s
 .PHONY : test_include_CXX.cxx.s
 
 test_int_C.obj: test_int_C.c.obj
@@ -329,7 +329,7 @@ test_int_C.obj: test_int_C.c.obj
 
 # target to build an object file
 test_int_C.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj
 .PHONY : test_int_C.c.obj
 
 test_int_C.i: test_int_C.c.i
@@ -337,7 +337,7 @@ test_int_C.i: test_int_C.c.i
 
 # target to preprocess a source file
 test_int_C.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.i
 .PHONY : test_int_C.c.i
 
 test_int_C.s: test_int_C.c.s
@@ -345,7 +345,7 @@ test_int_C.s: test_int_C.c.s
 
 # target to generate assembly for a file
 test_int_C.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.s
 .PHONY : test_int_C.c.s
 
 test_int_CXX.obj: test_int_CXX.cxx.obj
@@ -353,7 +353,7 @@ test_int_CXX.obj: test_int_CXX.cxx.obj
 
 # target to build an object file
 test_int_CXX.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj
 .PHONY : test_int_CXX.cxx.obj
 
 test_int_CXX.i: test_int_CXX.cxx.i
@@ -361,7 +361,7 @@ test_int_CXX.i: test_int_CXX.cxx.i
 
 # target to preprocess a source file
 test_int_CXX.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.i
 .PHONY : test_int_CXX.cxx.i
 
 test_int_CXX.s: test_int_CXX.cxx.s
@@ -369,7 +369,7 @@ test_int_CXX.s: test_int_CXX.cxx.s
 
 # target to generate assembly for a file
 test_int_CXX.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\build.make Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.s
 .PHONY : test_int_CXX.cxx.s
 
 # Help Target
@@ -420,6 +420,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

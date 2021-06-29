@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -77,7 +77,7 @@ package_source/fast: package_source
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/rule
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ pseudo_purify: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/rule
 
 # fast build rule for target.
 pseudo_purify/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/build
 .PHONY : pseudo_purify/fast
 
 # Convenience name for target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/rule
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/rule
 
 # Convenience name for target.
@@ -215,12 +215,12 @@ memcheck_fail: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/rule
 
 # fast build rule for target.
 memcheck_fail/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/build
 .PHONY : memcheck_fail/fast
 
 # Convenience name for target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/rule
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/rule
 
 # Convenience name for target.
@@ -229,12 +229,12 @@ pseudo_BC: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/rule
 
 # fast build rule for target.
 pseudo_BC/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/build
 .PHONY : pseudo_BC/fast
 
 # Convenience name for target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/rule
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ pseudo_valgrind: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ru
 
 # fast build rule for target.
 pseudo_valgrind/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/build
 .PHONY : pseudo_valgrind/fast
 
 # Convenience name for target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/rule
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/rule
 
 # Convenience name for target.
@@ -257,7 +257,7 @@ pseudo_cuda-memcheck: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memch
 
 # fast build rule for target.
 pseudo_cuda-memcheck/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/build
 .PHONY : pseudo_cuda-memcheck/fast
 
 ret0.obj: ret0.cxx.obj
@@ -265,10 +265,10 @@ ret0.obj: ret0.cxx.obj
 
 # target to build an object file
 ret0.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.obj
 .PHONY : ret0.cxx.obj
 
 ret0.i: ret0.cxx.i
@@ -276,10 +276,10 @@ ret0.i: ret0.cxx.i
 
 # target to preprocess a source file
 ret0.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.i
 .PHONY : ret0.cxx.i
 
 ret0.s: ret0.cxx.s
@@ -287,10 +287,10 @@ ret0.s: ret0.cxx.s
 
 # target to generate assembly for a file
 ret0.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_BC.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_BC.dir/ret0.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_valgrind.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_valgrind.dir/ret0.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_cuda-memcheck.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_cuda-memcheck.dir/ret0.cxx.s
 .PHONY : ret0.cxx.s
 
 ret1.obj: ret1.cxx.obj
@@ -298,7 +298,7 @@ ret1.obj: ret1.cxx.obj
 
 # target to build an object file
 ret1.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.obj
 .PHONY : ret1.cxx.obj
 
 ret1.i: ret1.cxx.i
@@ -306,7 +306,7 @@ ret1.i: ret1.cxx.i
 
 # target to preprocess a source file
 ret1.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.i
 .PHONY : ret1.cxx.i
 
 ret1.s: ret1.cxx.s
@@ -314,7 +314,7 @@ ret1.s: ret1.cxx.s
 
 # target to generate assembly for a file
 ret1.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\PseudoMemcheck\CMakeFiles\memcheck_fail.dir\build.make Tests/CMakeLib/PseudoMemcheck/CMakeFiles/memcheck_fail.dir/ret1.cxx.s
 .PHONY : ret1.cxx.s
 
 # Help Target
@@ -354,6 +354,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

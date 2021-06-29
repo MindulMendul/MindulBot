@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/depend.make
@@ -70,18 +70,18 @@ include Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/flags.make
 
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/flags.make
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/includes_C.rsp
-Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_llvm-rc.c
+Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_llvm-rc.c
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj -MF CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.obj.d -o CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj -MF CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.obj.d -o CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c
 
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c > CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c > CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.i
 
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c -o CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_llvm-rc.c -o CMakeFiles\pseudo_llvm-rc.dir\pseudo_llvm-rc.c.s
 
 # Object files for target pseudo_llvm-rc
 pseudo_llvm__rc_OBJECTS = \
@@ -95,18 +95,18 @@ Tests/RunCMake/pseudo_llvm-rc.exe: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/
 Tests/RunCMake/pseudo_llvm-rc.exe: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/linklibs.rsp
 Tests/RunCMake/pseudo_llvm-rc.exe: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/objects1.rsp
 Tests/RunCMake/pseudo_llvm-rc.exe: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_llvm-rc.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_llvm-rc.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_llvm-rc.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_llvm-rc.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/build: Tests/RunCMake/pseudo_llvm-rc.exe
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/build
 
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_llvm-rc.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_llvm-rc.dir\cmake_clean.cmake
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/clean
 
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/depend
 

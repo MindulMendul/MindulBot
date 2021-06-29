@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/kwsys/CMakeFiles/cmsysTestDynload.dir/depend.make
@@ -70,18 +70,18 @@ include Source/kwsys/CMakeFiles/cmsysTestDynload.dir/flags.make
 
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDynload.c
+Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDynload.c
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj -MF CMakeFiles\cmsysTestDynload.dir\testDynload.c.obj.d -o CMakeFiles\cmsysTestDynload.dir\testDynload.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj -MF CMakeFiles\cmsysTestDynload.dir\testDynload.c.obj.d -o CMakeFiles\cmsysTestDynload.dir\testDynload.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c
 
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsysTestDynload.dir/testDynload.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c > CMakeFiles\cmsysTestDynload.dir\testDynload.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c > CMakeFiles\cmsysTestDynload.dir\testDynload.c.i
 
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsysTestDynload.dir/testDynload.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c -o CMakeFiles\cmsysTestDynload.dir\testDynload.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynload.c -o CMakeFiles\cmsysTestDynload.dir\testDynload.c.s
 
 # Object files for target cmsysTestDynload
 cmsysTestDynload_OBJECTS = \
@@ -95,18 +95,18 @@ Source/kwsys/libcmsysTestDynload.dll: Source/kwsys/CMakeFiles/cmsysTestDynload.d
 Source/kwsys/libcmsysTestDynload.dll: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/linklibs.rsp
 Source/kwsys/libcmsysTestDynload.dll: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/objects1.rsp
 Source/kwsys/libcmsysTestDynload.dll: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module libcmsysTestDynload.dll"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsysTestDynload.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module libcmsysTestDynload.dll"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsysTestDynload.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/build: Source/kwsys/libcmsysTestDynload.dll
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynload.dir/build
 
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsysTestDynload.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsysTestDynload.dir\cmake_clean.cmake
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynload.dir/clean
 
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\CMakeFiles\cmsysTestDynload.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\CMakeFiles\cmsysTestDynload.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynload.dir/depend
 

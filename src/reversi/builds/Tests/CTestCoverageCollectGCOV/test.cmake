@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.12)
 set(CTEST_SOURCE_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CTestCoverageCollectGCOV/TestProject")
-set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestCoverageCollectGCOV/TestProject")
+set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestCoverageCollectGCOV/TestProject")
 set(CTEST_CMAKE_GENERATOR "MinGW Makefiles")
 
 ctest_start(Experimental)

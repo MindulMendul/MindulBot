@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/CMakeFiles/CPackLib.dir/depend.make
@@ -70,393 +70,393 @@ include Source/CMakeFiles/CPackLib.dir/flags.make
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackArchiveGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackArchiveGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackArchiveGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackArchiveGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackComponentGroup.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackComponentGroup.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackComponentGroup.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackComponentGroup.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackDebGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackDebGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackDebGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackDebGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackExternalGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackExternalGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackExternalGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackExternalGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackGeneratorFactory.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackGeneratorFactory.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGeneratorFactory.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackGeneratorFactory.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackLog.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackLog.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackLog.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackLog.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackNSISGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackNSISGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNSISGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackNSISGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackNuGetGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackNuGetGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackNuGetGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackNuGetGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackSTGZGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/cmCPackSTGZGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\cmCPackSTGZGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\cmCPackSTGZGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWCommon.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWCommon.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWCommon.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWCommon.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWInstaller.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWInstaller.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWInstaller.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWInstaller.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWPackage.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWPackage.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWPackage.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWPackage.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWRepository.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/IFW/cmCPackIFWRepository.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx > CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\IFW\cmCPackIFWRepository.cxx -o CMakeFiles\CPackLib.dir\CPack\IFW\cmCPackIFWRepository.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmCMakeToWixPath.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmCMakeToWixPath.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCMakeToWixPath.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCMakeToWixPath.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmCPackWIXGenerator.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmCPackWIXGenerator.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmCPackWIXGenerator.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmCPackWIXGenerator.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXAccessControlList.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXAccessControlList.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXAccessControlList.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXAccessControlList.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXDirectoriesSourceWriter.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXFeaturesSourceWriter.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXFeaturesSourceWriter.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFeaturesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFeaturesSourceWriter.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXFilesSourceWriter.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXFilesSourceWriter.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXFilesSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXFilesSourceWriter.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXPatch.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXPatch.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatch.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatch.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXPatchParser.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXPatchParser.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXPatchParser.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXPatchParser.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXRichTextFormatWriter.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXRichTextFormatWriter.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXRichTextFormatWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXRichTextFormatWriter.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXShortcut.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXShortcut.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXShortcut.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXShortcut.cxx.s
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/flags.make
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/includes_CXX.rsp
-Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXSourceWriter.cxx
+Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/CPack/WiX/cmWIXSourceWriter.cxx
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj: Source/CMakeFiles/CPackLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj -MF CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.obj.d -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx > CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.i
 
 Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\CPack\WiX\cmWIXSourceWriter.cxx -o CMakeFiles\CPackLib.dir\CPack\WiX\cmWIXSourceWriter.cxx.s
 
 # Object files for target CPackLib
 CPackLib_OBJECTS = \
@@ -518,19 +518,19 @@ Source/libCPackLib.a: Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx
 Source/libCPackLib.a: Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj
 Source/libCPackLib.a: Source/CMakeFiles/CPackLib.dir/build.make
 Source/libCPackLib.a: Source/CMakeFiles/CPackLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library libCPackLib.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && $(CMAKE_COMMAND) -P CMakeFiles\CPackLib.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPackLib.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library libCPackLib.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && $(CMAKE_COMMAND) -P CMakeFiles\CPackLib.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPackLib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/CMakeFiles/CPackLib.dir/build: Source/libCPackLib.a
 .PHONY : Source/CMakeFiles/CPackLib.dir/build
 
 Source/CMakeFiles/CPackLib.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && $(CMAKE_COMMAND) -P CMakeFiles\CPackLib.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && $(CMAKE_COMMAND) -P CMakeFiles\CPackLib.dir\cmake_clean.cmake
 .PHONY : Source/CMakeFiles/CPackLib.dir/clean
 
 Source/CMakeFiles/CPackLib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\CMakeFiles\CPackLib.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\CMakeFiles\CPackLib.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/CMakeFiles/CPackLib.dir/depend
 

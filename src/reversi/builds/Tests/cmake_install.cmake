@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CMake")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,31 +39,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeLib/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeLib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeOnly/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeOnly/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/RunCMake/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/RunCMake/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/FindPackageModeMakefileTest/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/FindPackageModeMakefileTest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/FindThreads/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/FindThreads/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeTests/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeTests/cmake_install.cmake")
 endif()
 

@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmjsoncpp\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmjsoncpp\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/rule
 .PHONY : Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmjsoncpp: Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/rule
 
 # fast build rule for target.
 cmjsoncpp/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/build
 .PHONY : cmjsoncpp/fast
 
 src/lib_json/json_reader.obj: src/lib_json/json_reader.cpp.obj
@@ -209,7 +209,7 @@ src/lib_json/json_reader.obj: src/lib_json/json_reader.cpp.obj
 
 # target to build an object file
 src/lib_json/json_reader.cpp.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.obj
 .PHONY : src/lib_json/json_reader.cpp.obj
 
 src/lib_json/json_reader.i: src/lib_json/json_reader.cpp.i
@@ -217,7 +217,7 @@ src/lib_json/json_reader.i: src/lib_json/json_reader.cpp.i
 
 # target to preprocess a source file
 src/lib_json/json_reader.cpp.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.i
 .PHONY : src/lib_json/json_reader.cpp.i
 
 src/lib_json/json_reader.s: src/lib_json/json_reader.cpp.s
@@ -225,7 +225,7 @@ src/lib_json/json_reader.s: src/lib_json/json_reader.cpp.s
 
 # target to generate assembly for a file
 src/lib_json/json_reader.cpp.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_reader.cpp.s
 .PHONY : src/lib_json/json_reader.cpp.s
 
 src/lib_json/json_value.obj: src/lib_json/json_value.cpp.obj
@@ -233,7 +233,7 @@ src/lib_json/json_value.obj: src/lib_json/json_value.cpp.obj
 
 # target to build an object file
 src/lib_json/json_value.cpp.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.obj
 .PHONY : src/lib_json/json_value.cpp.obj
 
 src/lib_json/json_value.i: src/lib_json/json_value.cpp.i
@@ -241,7 +241,7 @@ src/lib_json/json_value.i: src/lib_json/json_value.cpp.i
 
 # target to preprocess a source file
 src/lib_json/json_value.cpp.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.i
 .PHONY : src/lib_json/json_value.cpp.i
 
 src/lib_json/json_value.s: src/lib_json/json_value.cpp.s
@@ -249,7 +249,7 @@ src/lib_json/json_value.s: src/lib_json/json_value.cpp.s
 
 # target to generate assembly for a file
 src/lib_json/json_value.cpp.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_value.cpp.s
 .PHONY : src/lib_json/json_value.cpp.s
 
 src/lib_json/json_writer.obj: src/lib_json/json_writer.cpp.obj
@@ -257,7 +257,7 @@ src/lib_json/json_writer.obj: src/lib_json/json_writer.cpp.obj
 
 # target to build an object file
 src/lib_json/json_writer.cpp.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.obj
 .PHONY : src/lib_json/json_writer.cpp.obj
 
 src/lib_json/json_writer.i: src/lib_json/json_writer.cpp.i
@@ -265,7 +265,7 @@ src/lib_json/json_writer.i: src/lib_json/json_writer.cpp.i
 
 # target to preprocess a source file
 src/lib_json/json_writer.cpp.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.i
 .PHONY : src/lib_json/json_writer.cpp.i
 
 src/lib_json/json_writer.s: src/lib_json/json_writer.cpp.s
@@ -273,7 +273,7 @@ src/lib_json/json_writer.s: src/lib_json/json_writer.cpp.s
 
 # target to generate assembly for a file
 src/lib_json/json_writer.cpp.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmjsoncpp\CMakeFiles\cmjsoncpp.dir\build.make Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/src/lib_json/json_writer.cpp.s
 .PHONY : src/lib_json/json_writer.cpp.s
 
 # Help Target
@@ -312,6 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

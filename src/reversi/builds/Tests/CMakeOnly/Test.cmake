@@ -15,7 +15,7 @@ else()
 endif()
 
 set(source_dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeOnly/${TEST_SOURCE}")
-set(binary_dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeOnly/${TEST}-build")
+set(binary_dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeOnly/${TEST}-build")
 file(REMOVE_RECURSE "${binary_dir}")
 file(MAKE_DIRECTORY "${binary_dir}")
 execute_process(

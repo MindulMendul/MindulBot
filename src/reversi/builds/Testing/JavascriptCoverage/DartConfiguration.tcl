@@ -4,5 +4,5 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JavascriptCoverage
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JavascriptCoverage
+SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JavascriptCoverage
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JavascriptCoverage

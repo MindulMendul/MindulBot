@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -87,7 +87,7 @@ package_source/fast: package_source
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/rule
 .PHONY : Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ testUVProcessChainHelper: Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir
 
 # fast build rule for target.
 testUVProcessChainHelper/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/build
 .PHONY : testUVProcessChainHelper/fast
 
 # Convenience name for target.
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testEncoding.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testEncoding.dir/rule
 .PHONY : Tests/CMakeLib/CMakeFiles/testEncoding.dir/rule
 
 # Convenience name for target.
@@ -215,12 +215,12 @@ testEncoding: Tests/CMakeLib/CMakeFiles/testEncoding.dir/rule
 
 # fast build rule for target.
 testEncoding/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/build
 .PHONY : testEncoding/fast
 
 # Convenience name for target.
 Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/rule
 .PHONY : Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/rule
 
 # Convenience name for target.
@@ -229,12 +229,12 @@ CMakeLibTests: Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/rule
 
 # fast build rule for target.
 CMakeLibTests/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/build
 .PHONY : CMakeLibTests/fast
 
 # Convenience name for target.
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testAffinity.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeLib/CMakeFiles/testAffinity.dir/rule
 .PHONY : Tests/CMakeLib/CMakeFiles/testAffinity.dir/rule
 
 # Convenience name for target.
@@ -243,7 +243,7 @@ testAffinity: Tests/CMakeLib/CMakeFiles/testAffinity.dir/rule
 
 # fast build rule for target.
 testAffinity/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/build
 .PHONY : testAffinity/fast
 
 CMakeLibTests.obj: CMakeLibTests.cxx.obj
@@ -251,7 +251,7 @@ CMakeLibTests.obj: CMakeLibTests.cxx.obj
 
 # target to build an object file
 CMakeLibTests.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj
 .PHONY : CMakeLibTests.cxx.obj
 
 CMakeLibTests.i: CMakeLibTests.cxx.i
@@ -259,7 +259,7 @@ CMakeLibTests.i: CMakeLibTests.cxx.i
 
 # target to preprocess a source file
 CMakeLibTests.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.i
 .PHONY : CMakeLibTests.cxx.i
 
 CMakeLibTests.s: CMakeLibTests.cxx.s
@@ -267,7 +267,7 @@ CMakeLibTests.s: CMakeLibTests.cxx.s
 
 # target to generate assembly for a file
 CMakeLibTests.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.s
 .PHONY : CMakeLibTests.cxx.s
 
 testAffinity.obj: testAffinity.cxx.obj
@@ -275,7 +275,7 @@ testAffinity.obj: testAffinity.cxx.obj
 
 # target to build an object file
 testAffinity.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj
 .PHONY : testAffinity.cxx.obj
 
 testAffinity.i: testAffinity.cxx.i
@@ -283,7 +283,7 @@ testAffinity.i: testAffinity.cxx.i
 
 # target to preprocess a source file
 testAffinity.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.i
 .PHONY : testAffinity.cxx.i
 
 testAffinity.s: testAffinity.cxx.s
@@ -291,7 +291,7 @@ testAffinity.s: testAffinity.cxx.s
 
 # target to generate assembly for a file
 testAffinity.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testAffinity.dir\build.make Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.s
 .PHONY : testAffinity.cxx.s
 
 testArgumentParser.obj: testArgumentParser.cxx.obj
@@ -299,7 +299,7 @@ testArgumentParser.obj: testArgumentParser.cxx.obj
 
 # target to build an object file
 testArgumentParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.obj
 .PHONY : testArgumentParser.cxx.obj
 
 testArgumentParser.i: testArgumentParser.cxx.i
@@ -307,7 +307,7 @@ testArgumentParser.i: testArgumentParser.cxx.i
 
 # target to preprocess a source file
 testArgumentParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.i
 .PHONY : testArgumentParser.cxx.i
 
 testArgumentParser.s: testArgumentParser.cxx.s
@@ -315,7 +315,7 @@ testArgumentParser.s: testArgumentParser.cxx.s
 
 # target to generate assembly for a file
 testArgumentParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.s
 .PHONY : testArgumentParser.cxx.s
 
 testCMExtAlgorithm.obj: testCMExtAlgorithm.cxx.obj
@@ -323,7 +323,7 @@ testCMExtAlgorithm.obj: testCMExtAlgorithm.cxx.obj
 
 # target to build an object file
 testCMExtAlgorithm.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.obj
 .PHONY : testCMExtAlgorithm.cxx.obj
 
 testCMExtAlgorithm.i: testCMExtAlgorithm.cxx.i
@@ -331,7 +331,7 @@ testCMExtAlgorithm.i: testCMExtAlgorithm.cxx.i
 
 # target to preprocess a source file
 testCMExtAlgorithm.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.i
 .PHONY : testCMExtAlgorithm.cxx.i
 
 testCMExtAlgorithm.s: testCMExtAlgorithm.cxx.s
@@ -339,7 +339,7 @@ testCMExtAlgorithm.s: testCMExtAlgorithm.cxx.s
 
 # target to generate assembly for a file
 testCMExtAlgorithm.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.s
 .PHONY : testCMExtAlgorithm.cxx.s
 
 testCMExtMemory.obj: testCMExtMemory.cxx.obj
@@ -347,7 +347,7 @@ testCMExtMemory.obj: testCMExtMemory.cxx.obj
 
 # target to build an object file
 testCMExtMemory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.obj
 .PHONY : testCMExtMemory.cxx.obj
 
 testCMExtMemory.i: testCMExtMemory.cxx.i
@@ -355,7 +355,7 @@ testCMExtMemory.i: testCMExtMemory.cxx.i
 
 # target to preprocess a source file
 testCMExtMemory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.i
 .PHONY : testCMExtMemory.cxx.i
 
 testCMExtMemory.s: testCMExtMemory.cxx.s
@@ -363,7 +363,7 @@ testCMExtMemory.s: testCMExtMemory.cxx.s
 
 # target to generate assembly for a file
 testCMExtMemory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.s
 .PHONY : testCMExtMemory.cxx.s
 
 testCMFilesystemPath.obj: testCMFilesystemPath.cxx.obj
@@ -371,7 +371,7 @@ testCMFilesystemPath.obj: testCMFilesystemPath.cxx.obj
 
 # target to build an object file
 testCMFilesystemPath.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.obj
 .PHONY : testCMFilesystemPath.cxx.obj
 
 testCMFilesystemPath.i: testCMFilesystemPath.cxx.i
@@ -379,7 +379,7 @@ testCMFilesystemPath.i: testCMFilesystemPath.cxx.i
 
 # target to preprocess a source file
 testCMFilesystemPath.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.i
 .PHONY : testCMFilesystemPath.cxx.i
 
 testCMFilesystemPath.s: testCMFilesystemPath.cxx.s
@@ -387,7 +387,7 @@ testCMFilesystemPath.s: testCMFilesystemPath.cxx.s
 
 # target to generate assembly for a file
 testCMFilesystemPath.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMFilesystemPath.cxx.s
 .PHONY : testCMFilesystemPath.cxx.s
 
 testCTestBinPacker.obj: testCTestBinPacker.cxx.obj
@@ -395,7 +395,7 @@ testCTestBinPacker.obj: testCTestBinPacker.cxx.obj
 
 # target to build an object file
 testCTestBinPacker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.obj
 .PHONY : testCTestBinPacker.cxx.obj
 
 testCTestBinPacker.i: testCTestBinPacker.cxx.i
@@ -403,7 +403,7 @@ testCTestBinPacker.i: testCTestBinPacker.cxx.i
 
 # target to preprocess a source file
 testCTestBinPacker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.i
 .PHONY : testCTestBinPacker.cxx.i
 
 testCTestBinPacker.s: testCTestBinPacker.cxx.s
@@ -411,7 +411,7 @@ testCTestBinPacker.s: testCTestBinPacker.cxx.s
 
 # target to generate assembly for a file
 testCTestBinPacker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestBinPacker.cxx.s
 .PHONY : testCTestBinPacker.cxx.s
 
 testCTestResourceAllocator.obj: testCTestResourceAllocator.cxx.obj
@@ -419,7 +419,7 @@ testCTestResourceAllocator.obj: testCTestResourceAllocator.cxx.obj
 
 # target to build an object file
 testCTestResourceAllocator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.obj
 .PHONY : testCTestResourceAllocator.cxx.obj
 
 testCTestResourceAllocator.i: testCTestResourceAllocator.cxx.i
@@ -427,7 +427,7 @@ testCTestResourceAllocator.i: testCTestResourceAllocator.cxx.i
 
 # target to preprocess a source file
 testCTestResourceAllocator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.i
 .PHONY : testCTestResourceAllocator.cxx.i
 
 testCTestResourceAllocator.s: testCTestResourceAllocator.cxx.s
@@ -435,7 +435,7 @@ testCTestResourceAllocator.s: testCTestResourceAllocator.cxx.s
 
 # target to generate assembly for a file
 testCTestResourceAllocator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceAllocator.cxx.s
 .PHONY : testCTestResourceAllocator.cxx.s
 
 testCTestResourceGroups.obj: testCTestResourceGroups.cxx.obj
@@ -443,7 +443,7 @@ testCTestResourceGroups.obj: testCTestResourceGroups.cxx.obj
 
 # target to build an object file
 testCTestResourceGroups.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.obj
 .PHONY : testCTestResourceGroups.cxx.obj
 
 testCTestResourceGroups.i: testCTestResourceGroups.cxx.i
@@ -451,7 +451,7 @@ testCTestResourceGroups.i: testCTestResourceGroups.cxx.i
 
 # target to preprocess a source file
 testCTestResourceGroups.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.i
 .PHONY : testCTestResourceGroups.cxx.i
 
 testCTestResourceGroups.s: testCTestResourceGroups.cxx.s
@@ -459,7 +459,7 @@ testCTestResourceGroups.s: testCTestResourceGroups.cxx.s
 
 # target to generate assembly for a file
 testCTestResourceGroups.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceGroups.cxx.s
 .PHONY : testCTestResourceGroups.cxx.s
 
 testCTestResourceSpec.obj: testCTestResourceSpec.cxx.obj
@@ -467,7 +467,7 @@ testCTestResourceSpec.obj: testCTestResourceSpec.cxx.obj
 
 # target to build an object file
 testCTestResourceSpec.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.obj
 .PHONY : testCTestResourceSpec.cxx.obj
 
 testCTestResourceSpec.i: testCTestResourceSpec.cxx.i
@@ -475,7 +475,7 @@ testCTestResourceSpec.i: testCTestResourceSpec.cxx.i
 
 # target to preprocess a source file
 testCTestResourceSpec.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.i
 .PHONY : testCTestResourceSpec.cxx.i
 
 testCTestResourceSpec.s: testCTestResourceSpec.cxx.s
@@ -483,7 +483,7 @@ testCTestResourceSpec.s: testCTestResourceSpec.cxx.s
 
 # target to generate assembly for a file
 testCTestResourceSpec.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCTestResourceSpec.cxx.s
 .PHONY : testCTestResourceSpec.cxx.s
 
 testEncoding.obj: testEncoding.cxx.obj
@@ -491,7 +491,7 @@ testEncoding.obj: testEncoding.cxx.obj
 
 # target to build an object file
 testEncoding.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj
 .PHONY : testEncoding.cxx.obj
 
 testEncoding.i: testEncoding.cxx.i
@@ -499,7 +499,7 @@ testEncoding.i: testEncoding.cxx.i
 
 # target to preprocess a source file
 testEncoding.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.i
 .PHONY : testEncoding.cxx.i
 
 testEncoding.s: testEncoding.cxx.s
@@ -507,7 +507,7 @@ testEncoding.s: testEncoding.cxx.s
 
 # target to generate assembly for a file
 testEncoding.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testEncoding.dir\build.make Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.s
 .PHONY : testEncoding.cxx.s
 
 testFindPackageCommand.obj: testFindPackageCommand.cxx.obj
@@ -515,7 +515,7 @@ testFindPackageCommand.obj: testFindPackageCommand.cxx.obj
 
 # target to build an object file
 testFindPackageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.obj
 .PHONY : testFindPackageCommand.cxx.obj
 
 testFindPackageCommand.i: testFindPackageCommand.cxx.i
@@ -523,7 +523,7 @@ testFindPackageCommand.i: testFindPackageCommand.cxx.i
 
 # target to preprocess a source file
 testFindPackageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.i
 .PHONY : testFindPackageCommand.cxx.i
 
 testFindPackageCommand.s: testFindPackageCommand.cxx.s
@@ -531,7 +531,7 @@ testFindPackageCommand.s: testFindPackageCommand.cxx.s
 
 # target to generate assembly for a file
 testFindPackageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testFindPackageCommand.cxx.s
 .PHONY : testFindPackageCommand.cxx.s
 
 testGccDepfileReader.obj: testGccDepfileReader.cxx.obj
@@ -539,7 +539,7 @@ testGccDepfileReader.obj: testGccDepfileReader.cxx.obj
 
 # target to build an object file
 testGccDepfileReader.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.obj
 .PHONY : testGccDepfileReader.cxx.obj
 
 testGccDepfileReader.i: testGccDepfileReader.cxx.i
@@ -547,7 +547,7 @@ testGccDepfileReader.i: testGccDepfileReader.cxx.i
 
 # target to preprocess a source file
 testGccDepfileReader.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.i
 .PHONY : testGccDepfileReader.cxx.i
 
 testGccDepfileReader.s: testGccDepfileReader.cxx.s
@@ -555,7 +555,7 @@ testGccDepfileReader.s: testGccDepfileReader.cxx.s
 
 # target to generate assembly for a file
 testGccDepfileReader.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGccDepfileReader.cxx.s
 .PHONY : testGccDepfileReader.cxx.s
 
 testGeneratedFileStream.obj: testGeneratedFileStream.cxx.obj
@@ -563,7 +563,7 @@ testGeneratedFileStream.obj: testGeneratedFileStream.cxx.obj
 
 # target to build an object file
 testGeneratedFileStream.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.obj
 .PHONY : testGeneratedFileStream.cxx.obj
 
 testGeneratedFileStream.i: testGeneratedFileStream.cxx.i
@@ -571,7 +571,7 @@ testGeneratedFileStream.i: testGeneratedFileStream.cxx.i
 
 # target to preprocess a source file
 testGeneratedFileStream.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.i
 .PHONY : testGeneratedFileStream.cxx.i
 
 testGeneratedFileStream.s: testGeneratedFileStream.cxx.s
@@ -579,7 +579,7 @@ testGeneratedFileStream.s: testGeneratedFileStream.cxx.s
 
 # target to generate assembly for a file
 testGeneratedFileStream.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testGeneratedFileStream.cxx.s
 .PHONY : testGeneratedFileStream.cxx.s
 
 testJSONHelpers.obj: testJSONHelpers.cxx.obj
@@ -587,7 +587,7 @@ testJSONHelpers.obj: testJSONHelpers.cxx.obj
 
 # target to build an object file
 testJSONHelpers.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.obj
 .PHONY : testJSONHelpers.cxx.obj
 
 testJSONHelpers.i: testJSONHelpers.cxx.i
@@ -595,7 +595,7 @@ testJSONHelpers.i: testJSONHelpers.cxx.i
 
 # target to preprocess a source file
 testJSONHelpers.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.i
 .PHONY : testJSONHelpers.cxx.i
 
 testJSONHelpers.s: testJSONHelpers.cxx.s
@@ -603,7 +603,7 @@ testJSONHelpers.s: testJSONHelpers.cxx.s
 
 # target to generate assembly for a file
 testJSONHelpers.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testJSONHelpers.cxx.s
 .PHONY : testJSONHelpers.cxx.s
 
 testOptional.obj: testOptional.cxx.obj
@@ -611,7 +611,7 @@ testOptional.obj: testOptional.cxx.obj
 
 # target to build an object file
 testOptional.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.obj
 .PHONY : testOptional.cxx.obj
 
 testOptional.i: testOptional.cxx.i
@@ -619,7 +619,7 @@ testOptional.i: testOptional.cxx.i
 
 # target to preprocess a source file
 testOptional.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.i
 .PHONY : testOptional.cxx.i
 
 testOptional.s: testOptional.cxx.s
@@ -627,7 +627,7 @@ testOptional.s: testOptional.cxx.s
 
 # target to generate assembly for a file
 testOptional.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testOptional.cxx.s
 .PHONY : testOptional.cxx.s
 
 testRST.obj: testRST.cxx.obj
@@ -635,7 +635,7 @@ testRST.obj: testRST.cxx.obj
 
 # target to build an object file
 testRST.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.obj
 .PHONY : testRST.cxx.obj
 
 testRST.i: testRST.cxx.i
@@ -643,7 +643,7 @@ testRST.i: testRST.cxx.i
 
 # target to preprocess a source file
 testRST.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.i
 .PHONY : testRST.cxx.i
 
 testRST.s: testRST.cxx.s
@@ -651,7 +651,7 @@ testRST.s: testRST.cxx.s
 
 # target to generate assembly for a file
 testRST.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRST.cxx.s
 .PHONY : testRST.cxx.s
 
 testRange.obj: testRange.cxx.obj
@@ -659,7 +659,7 @@ testRange.obj: testRange.cxx.obj
 
 # target to build an object file
 testRange.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.obj
 .PHONY : testRange.cxx.obj
 
 testRange.i: testRange.cxx.i
@@ -667,7 +667,7 @@ testRange.i: testRange.cxx.i
 
 # target to preprocess a source file
 testRange.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.i
 .PHONY : testRange.cxx.i
 
 testRange.s: testRange.cxx.s
@@ -675,7 +675,7 @@ testRange.s: testRange.cxx.s
 
 # target to generate assembly for a file
 testRange.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testRange.cxx.s
 .PHONY : testRange.cxx.s
 
 testString.obj: testString.cxx.obj
@@ -683,7 +683,7 @@ testString.obj: testString.cxx.obj
 
 # target to build an object file
 testString.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.obj
 .PHONY : testString.cxx.obj
 
 testString.i: testString.cxx.i
@@ -691,7 +691,7 @@ testString.i: testString.cxx.i
 
 # target to preprocess a source file
 testString.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.i
 .PHONY : testString.cxx.i
 
 testString.s: testString.cxx.s
@@ -699,7 +699,7 @@ testString.s: testString.cxx.s
 
 # target to generate assembly for a file
 testString.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testString.cxx.s
 .PHONY : testString.cxx.s
 
 testStringAlgorithms.obj: testStringAlgorithms.cxx.obj
@@ -707,7 +707,7 @@ testStringAlgorithms.obj: testStringAlgorithms.cxx.obj
 
 # target to build an object file
 testStringAlgorithms.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.obj
 .PHONY : testStringAlgorithms.cxx.obj
 
 testStringAlgorithms.i: testStringAlgorithms.cxx.i
@@ -715,7 +715,7 @@ testStringAlgorithms.i: testStringAlgorithms.cxx.i
 
 # target to preprocess a source file
 testStringAlgorithms.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.i
 .PHONY : testStringAlgorithms.cxx.i
 
 testStringAlgorithms.s: testStringAlgorithms.cxx.s
@@ -723,7 +723,7 @@ testStringAlgorithms.s: testStringAlgorithms.cxx.s
 
 # target to generate assembly for a file
 testStringAlgorithms.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testStringAlgorithms.cxx.s
 .PHONY : testStringAlgorithms.cxx.s
 
 testSystemTools.obj: testSystemTools.cxx.obj
@@ -731,7 +731,7 @@ testSystemTools.obj: testSystemTools.cxx.obj
 
 # target to build an object file
 testSystemTools.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.obj
 .PHONY : testSystemTools.cxx.obj
 
 testSystemTools.i: testSystemTools.cxx.i
@@ -739,7 +739,7 @@ testSystemTools.i: testSystemTools.cxx.i
 
 # target to preprocess a source file
 testSystemTools.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.i
 .PHONY : testSystemTools.cxx.i
 
 testSystemTools.s: testSystemTools.cxx.s
@@ -747,7 +747,7 @@ testSystemTools.s: testSystemTools.cxx.s
 
 # target to generate assembly for a file
 testSystemTools.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testSystemTools.cxx.s
 .PHONY : testSystemTools.cxx.s
 
 testUTF8.obj: testUTF8.cxx.obj
@@ -755,7 +755,7 @@ testUTF8.obj: testUTF8.cxx.obj
 
 # target to build an object file
 testUTF8.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.obj
 .PHONY : testUTF8.cxx.obj
 
 testUTF8.i: testUTF8.cxx.i
@@ -763,7 +763,7 @@ testUTF8.i: testUTF8.cxx.i
 
 # target to preprocess a source file
 testUTF8.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.i
 .PHONY : testUTF8.cxx.i
 
 testUTF8.s: testUTF8.cxx.s
@@ -771,7 +771,7 @@ testUTF8.s: testUTF8.cxx.s
 
 # target to generate assembly for a file
 testUTF8.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUTF8.cxx.s
 .PHONY : testUTF8.cxx.s
 
 testUVProcessChain.obj: testUVProcessChain.cxx.obj
@@ -779,7 +779,7 @@ testUVProcessChain.obj: testUVProcessChain.cxx.obj
 
 # target to build an object file
 testUVProcessChain.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.obj
 .PHONY : testUVProcessChain.cxx.obj
 
 testUVProcessChain.i: testUVProcessChain.cxx.i
@@ -787,7 +787,7 @@ testUVProcessChain.i: testUVProcessChain.cxx.i
 
 # target to preprocess a source file
 testUVProcessChain.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.i
 .PHONY : testUVProcessChain.cxx.i
 
 testUVProcessChain.s: testUVProcessChain.cxx.s
@@ -795,7 +795,7 @@ testUVProcessChain.s: testUVProcessChain.cxx.s
 
 # target to generate assembly for a file
 testUVProcessChain.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVProcessChain.cxx.s
 .PHONY : testUVProcessChain.cxx.s
 
 testUVProcessChainHelper.obj: testUVProcessChainHelper.cxx.obj
@@ -803,7 +803,7 @@ testUVProcessChainHelper.obj: testUVProcessChainHelper.cxx.obj
 
 # target to build an object file
 testUVProcessChainHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.obj
 .PHONY : testUVProcessChainHelper.cxx.obj
 
 testUVProcessChainHelper.i: testUVProcessChainHelper.cxx.i
@@ -811,7 +811,7 @@ testUVProcessChainHelper.i: testUVProcessChainHelper.cxx.i
 
 # target to preprocess a source file
 testUVProcessChainHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.i
 .PHONY : testUVProcessChainHelper.cxx.i
 
 testUVProcessChainHelper.s: testUVProcessChainHelper.cxx.s
@@ -819,7 +819,7 @@ testUVProcessChainHelper.s: testUVProcessChainHelper.cxx.s
 
 # target to generate assembly for a file
 testUVProcessChainHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\testUVProcessChainHelper.dir\build.make Tests/CMakeLib/CMakeFiles/testUVProcessChainHelper.dir/testUVProcessChainHelper.cxx.s
 .PHONY : testUVProcessChainHelper.cxx.s
 
 testUVRAII.obj: testUVRAII.cxx.obj
@@ -827,7 +827,7 @@ testUVRAII.obj: testUVRAII.cxx.obj
 
 # target to build an object file
 testUVRAII.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.obj
 .PHONY : testUVRAII.cxx.obj
 
 testUVRAII.i: testUVRAII.cxx.i
@@ -835,7 +835,7 @@ testUVRAII.i: testUVRAII.cxx.i
 
 # target to preprocess a source file
 testUVRAII.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.i
 .PHONY : testUVRAII.cxx.i
 
 testUVRAII.s: testUVRAII.cxx.s
@@ -843,7 +843,7 @@ testUVRAII.s: testUVRAII.cxx.s
 
 # target to generate assembly for a file
 testUVRAII.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVRAII.cxx.s
 .PHONY : testUVRAII.cxx.s
 
 testUVStreambuf.obj: testUVStreambuf.cxx.obj
@@ -851,7 +851,7 @@ testUVStreambuf.obj: testUVStreambuf.cxx.obj
 
 # target to build an object file
 testUVStreambuf.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.obj
 .PHONY : testUVStreambuf.cxx.obj
 
 testUVStreambuf.i: testUVStreambuf.cxx.i
@@ -859,7 +859,7 @@ testUVStreambuf.i: testUVStreambuf.cxx.i
 
 # target to preprocess a source file
 testUVStreambuf.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.i
 .PHONY : testUVStreambuf.cxx.i
 
 testUVStreambuf.s: testUVStreambuf.cxx.s
@@ -867,7 +867,7 @@ testUVStreambuf.s: testUVStreambuf.cxx.s
 
 # target to generate assembly for a file
 testUVStreambuf.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testUVStreambuf.cxx.s
 .PHONY : testUVStreambuf.cxx.s
 
 testVisualStudioSlnParser.obj: testVisualStudioSlnParser.cxx.obj
@@ -875,7 +875,7 @@ testVisualStudioSlnParser.obj: testVisualStudioSlnParser.cxx.obj
 
 # target to build an object file
 testVisualStudioSlnParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.obj
 .PHONY : testVisualStudioSlnParser.cxx.obj
 
 testVisualStudioSlnParser.i: testVisualStudioSlnParser.cxx.i
@@ -883,7 +883,7 @@ testVisualStudioSlnParser.i: testVisualStudioSlnParser.cxx.i
 
 # target to preprocess a source file
 testVisualStudioSlnParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.i
 .PHONY : testVisualStudioSlnParser.cxx.i
 
 testVisualStudioSlnParser.s: testVisualStudioSlnParser.cxx.s
@@ -891,7 +891,7 @@ testVisualStudioSlnParser.s: testVisualStudioSlnParser.cxx.s
 
 # target to generate assembly for a file
 testVisualStudioSlnParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testVisualStudioSlnParser.cxx.s
 .PHONY : testVisualStudioSlnParser.cxx.s
 
 testXMLParser.obj: testXMLParser.cxx.obj
@@ -899,7 +899,7 @@ testXMLParser.obj: testXMLParser.cxx.obj
 
 # target to build an object file
 testXMLParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.obj
 .PHONY : testXMLParser.cxx.obj
 
 testXMLParser.i: testXMLParser.cxx.i
@@ -907,7 +907,7 @@ testXMLParser.i: testXMLParser.cxx.i
 
 # target to preprocess a source file
 testXMLParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.i
 .PHONY : testXMLParser.cxx.i
 
 testXMLParser.s: testXMLParser.cxx.s
@@ -915,7 +915,7 @@ testXMLParser.s: testXMLParser.cxx.s
 
 # target to generate assembly for a file
 testXMLParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLParser.cxx.s
 .PHONY : testXMLParser.cxx.s
 
 testXMLSafe.obj: testXMLSafe.cxx.obj
@@ -923,7 +923,7 @@ testXMLSafe.obj: testXMLSafe.cxx.obj
 
 # target to build an object file
 testXMLSafe.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.obj
 .PHONY : testXMLSafe.cxx.obj
 
 testXMLSafe.i: testXMLSafe.cxx.i
@@ -931,7 +931,7 @@ testXMLSafe.i: testXMLSafe.cxx.i
 
 # target to preprocess a source file
 testXMLSafe.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.i
 .PHONY : testXMLSafe.cxx.i
 
 testXMLSafe.s: testXMLSafe.cxx.s
@@ -939,7 +939,7 @@ testXMLSafe.s: testXMLSafe.cxx.s
 
 # target to generate assembly for a file
 testXMLSafe.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\CMakeLib\CMakeFiles\CMakeLibTests.dir\build.make Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testXMLSafe.cxx.s
 .PHONY : testXMLSafe.cxx.s
 
 # Help Target
@@ -1059,6 +1059,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

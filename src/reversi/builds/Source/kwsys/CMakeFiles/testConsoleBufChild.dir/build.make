@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/kwsys/CMakeFiles/testConsoleBufChild.dir/depend.make
@@ -70,18 +70,18 @@ include Source/kwsys/CMakeFiles/testConsoleBufChild.dir/flags.make
 
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/flags.make
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConsoleBufChild.cxx
+Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConsoleBufChild.cxx
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj -MF CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.obj.d -o CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj -MF CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.obj.d -o CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx
 
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx > CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx > CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.i
 
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx -o CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBufChild.cxx -o CMakeFiles\testConsoleBufChild.dir\testConsoleBufChild.cxx.s
 
 # Object files for target testConsoleBufChild
 testConsoleBufChild_OBJECTS = \
@@ -96,18 +96,18 @@ Source/kwsys/testConsoleBufChild.exe: Source/kwsys/libcmsys.a
 Source/kwsys/testConsoleBufChild.exe: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/linklibs.rsp
 Source/kwsys/testConsoleBufChild.exe: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/objects1.rsp
 Source/kwsys/testConsoleBufChild.exe: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testConsoleBufChild.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testConsoleBufChild.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testConsoleBufChild.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testConsoleBufChild.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/build: Source/kwsys/testConsoleBufChild.exe
 .PHONY : Source/kwsys/CMakeFiles/testConsoleBufChild.dir/build
 
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\testConsoleBufChild.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\testConsoleBufChild.dir\cmake_clean.cmake
 .PHONY : Source/kwsys/CMakeFiles/testConsoleBufChild.dir/clean
 
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\CMakeFiles\testConsoleBufChild.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\CMakeFiles\testConsoleBufChild.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/kwsys/CMakeFiles/testConsoleBufChild.dir/depend
 

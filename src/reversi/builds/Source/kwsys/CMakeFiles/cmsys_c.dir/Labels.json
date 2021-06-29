@@ -23,31 +23,31 @@
 			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/String.c"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Configure.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/Configure.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/SharedForward.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/SharedForward.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Process.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/Process.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Base64.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/Base64.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Encoding.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/Encoding.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/MD5.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/MD5.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/Terminal.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/Terminal.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/System.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/System.h"
 		},
 		{
-			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmsys/String.h"
+			"file" : "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmsys/String.h"
 		}
 	],
 	"target" : 

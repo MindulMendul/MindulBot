@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CMake")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/KWIML/test/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/KWIML/test/cmake_install.cmake")
 endif()
 

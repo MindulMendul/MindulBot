@@ -6,7 +6,7 @@
   "coverage": 96.55172413793103,
   "files": [
     {
-      "filename": "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JavascriptCoverage/test.js",
+      "filename": "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JavascriptCoverage/test.js",
       "coverage": 96.55172413793103,
       "hits": 28,
       "misses": 1,
@@ -229,7 +229,7 @@
           "coverage": ""
         }
       }
-      "filename": "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/JavascriptCoverage/test3.js",
+      "filename": "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/JavascriptCoverage/test3.js",
       "coverage": 55.00000000000001,
       "hits": 11,
       "misses": 9,

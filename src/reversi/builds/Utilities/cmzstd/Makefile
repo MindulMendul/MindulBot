@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmzstd\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmzstd\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmzstd/CMakeFiles/cmzstd.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/CMakeFiles/cmzstd.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzstd/CMakeFiles/cmzstd.dir/rule
 .PHONY : Utilities/cmzstd/CMakeFiles/cmzstd.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmzstd: Utilities/cmzstd/CMakeFiles/cmzstd.dir/rule
 
 # fast build rule for target.
 cmzstd/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/build
 .PHONY : cmzstd/fast
 
 lib/common/entropy_common.obj: lib/common/entropy_common.c.obj
@@ -209,7 +209,7 @@ lib/common/entropy_common.obj: lib/common/entropy_common.c.obj
 
 # target to build an object file
 lib/common/entropy_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.obj
 .PHONY : lib/common/entropy_common.c.obj
 
 lib/common/entropy_common.i: lib/common/entropy_common.c.i
@@ -217,7 +217,7 @@ lib/common/entropy_common.i: lib/common/entropy_common.c.i
 
 # target to preprocess a source file
 lib/common/entropy_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.i
 .PHONY : lib/common/entropy_common.c.i
 
 lib/common/entropy_common.s: lib/common/entropy_common.c.s
@@ -225,7 +225,7 @@ lib/common/entropy_common.s: lib/common/entropy_common.c.s
 
 # target to generate assembly for a file
 lib/common/entropy_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/entropy_common.c.s
 .PHONY : lib/common/entropy_common.c.s
 
 lib/common/error_private.obj: lib/common/error_private.c.obj
@@ -233,7 +233,7 @@ lib/common/error_private.obj: lib/common/error_private.c.obj
 
 # target to build an object file
 lib/common/error_private.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.obj
 .PHONY : lib/common/error_private.c.obj
 
 lib/common/error_private.i: lib/common/error_private.c.i
@@ -241,7 +241,7 @@ lib/common/error_private.i: lib/common/error_private.c.i
 
 # target to preprocess a source file
 lib/common/error_private.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.i
 .PHONY : lib/common/error_private.c.i
 
 lib/common/error_private.s: lib/common/error_private.c.s
@@ -249,7 +249,7 @@ lib/common/error_private.s: lib/common/error_private.c.s
 
 # target to generate assembly for a file
 lib/common/error_private.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/error_private.c.s
 .PHONY : lib/common/error_private.c.s
 
 lib/common/fse_decompress.obj: lib/common/fse_decompress.c.obj
@@ -257,7 +257,7 @@ lib/common/fse_decompress.obj: lib/common/fse_decompress.c.obj
 
 # target to build an object file
 lib/common/fse_decompress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.obj
 .PHONY : lib/common/fse_decompress.c.obj
 
 lib/common/fse_decompress.i: lib/common/fse_decompress.c.i
@@ -265,7 +265,7 @@ lib/common/fse_decompress.i: lib/common/fse_decompress.c.i
 
 # target to preprocess a source file
 lib/common/fse_decompress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.i
 .PHONY : lib/common/fse_decompress.c.i
 
 lib/common/fse_decompress.s: lib/common/fse_decompress.c.s
@@ -273,7 +273,7 @@ lib/common/fse_decompress.s: lib/common/fse_decompress.c.s
 
 # target to generate assembly for a file
 lib/common/fse_decompress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/fse_decompress.c.s
 .PHONY : lib/common/fse_decompress.c.s
 
 lib/common/pool.obj: lib/common/pool.c.obj
@@ -281,7 +281,7 @@ lib/common/pool.obj: lib/common/pool.c.obj
 
 # target to build an object file
 lib/common/pool.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.obj
 .PHONY : lib/common/pool.c.obj
 
 lib/common/pool.i: lib/common/pool.c.i
@@ -289,7 +289,7 @@ lib/common/pool.i: lib/common/pool.c.i
 
 # target to preprocess a source file
 lib/common/pool.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.i
 .PHONY : lib/common/pool.c.i
 
 lib/common/pool.s: lib/common/pool.c.s
@@ -297,7 +297,7 @@ lib/common/pool.s: lib/common/pool.c.s
 
 # target to generate assembly for a file
 lib/common/pool.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/pool.c.s
 .PHONY : lib/common/pool.c.s
 
 lib/common/threading.obj: lib/common/threading.c.obj
@@ -305,7 +305,7 @@ lib/common/threading.obj: lib/common/threading.c.obj
 
 # target to build an object file
 lib/common/threading.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.obj
 .PHONY : lib/common/threading.c.obj
 
 lib/common/threading.i: lib/common/threading.c.i
@@ -313,7 +313,7 @@ lib/common/threading.i: lib/common/threading.c.i
 
 # target to preprocess a source file
 lib/common/threading.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.i
 .PHONY : lib/common/threading.c.i
 
 lib/common/threading.s: lib/common/threading.c.s
@@ -321,7 +321,7 @@ lib/common/threading.s: lib/common/threading.c.s
 
 # target to generate assembly for a file
 lib/common/threading.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/threading.c.s
 .PHONY : lib/common/threading.c.s
 
 lib/common/xxhash.obj: lib/common/xxhash.c.obj
@@ -329,7 +329,7 @@ lib/common/xxhash.obj: lib/common/xxhash.c.obj
 
 # target to build an object file
 lib/common/xxhash.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.obj
 .PHONY : lib/common/xxhash.c.obj
 
 lib/common/xxhash.i: lib/common/xxhash.c.i
@@ -337,7 +337,7 @@ lib/common/xxhash.i: lib/common/xxhash.c.i
 
 # target to preprocess a source file
 lib/common/xxhash.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.i
 .PHONY : lib/common/xxhash.c.i
 
 lib/common/xxhash.s: lib/common/xxhash.c.s
@@ -345,7 +345,7 @@ lib/common/xxhash.s: lib/common/xxhash.c.s
 
 # target to generate assembly for a file
 lib/common/xxhash.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/xxhash.c.s
 .PHONY : lib/common/xxhash.c.s
 
 lib/common/zstd_common.obj: lib/common/zstd_common.c.obj
@@ -353,7 +353,7 @@ lib/common/zstd_common.obj: lib/common/zstd_common.c.obj
 
 # target to build an object file
 lib/common/zstd_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.obj
 .PHONY : lib/common/zstd_common.c.obj
 
 lib/common/zstd_common.i: lib/common/zstd_common.c.i
@@ -361,7 +361,7 @@ lib/common/zstd_common.i: lib/common/zstd_common.c.i
 
 # target to preprocess a source file
 lib/common/zstd_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.i
 .PHONY : lib/common/zstd_common.c.i
 
 lib/common/zstd_common.s: lib/common/zstd_common.c.s
@@ -369,7 +369,7 @@ lib/common/zstd_common.s: lib/common/zstd_common.c.s
 
 # target to generate assembly for a file
 lib/common/zstd_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/common/zstd_common.c.s
 .PHONY : lib/common/zstd_common.c.s
 
 lib/compress/fse_compress.obj: lib/compress/fse_compress.c.obj
@@ -377,7 +377,7 @@ lib/compress/fse_compress.obj: lib/compress/fse_compress.c.obj
 
 # target to build an object file
 lib/compress/fse_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.obj
 .PHONY : lib/compress/fse_compress.c.obj
 
 lib/compress/fse_compress.i: lib/compress/fse_compress.c.i
@@ -385,7 +385,7 @@ lib/compress/fse_compress.i: lib/compress/fse_compress.c.i
 
 # target to preprocess a source file
 lib/compress/fse_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.i
 .PHONY : lib/compress/fse_compress.c.i
 
 lib/compress/fse_compress.s: lib/compress/fse_compress.c.s
@@ -393,7 +393,7 @@ lib/compress/fse_compress.s: lib/compress/fse_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/fse_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/fse_compress.c.s
 .PHONY : lib/compress/fse_compress.c.s
 
 lib/compress/hist.obj: lib/compress/hist.c.obj
@@ -401,7 +401,7 @@ lib/compress/hist.obj: lib/compress/hist.c.obj
 
 # target to build an object file
 lib/compress/hist.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.obj
 .PHONY : lib/compress/hist.c.obj
 
 lib/compress/hist.i: lib/compress/hist.c.i
@@ -409,7 +409,7 @@ lib/compress/hist.i: lib/compress/hist.c.i
 
 # target to preprocess a source file
 lib/compress/hist.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.i
 .PHONY : lib/compress/hist.c.i
 
 lib/compress/hist.s: lib/compress/hist.c.s
@@ -417,7 +417,7 @@ lib/compress/hist.s: lib/compress/hist.c.s
 
 # target to generate assembly for a file
 lib/compress/hist.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/hist.c.s
 .PHONY : lib/compress/hist.c.s
 
 lib/compress/huf_compress.obj: lib/compress/huf_compress.c.obj
@@ -425,7 +425,7 @@ lib/compress/huf_compress.obj: lib/compress/huf_compress.c.obj
 
 # target to build an object file
 lib/compress/huf_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.obj
 .PHONY : lib/compress/huf_compress.c.obj
 
 lib/compress/huf_compress.i: lib/compress/huf_compress.c.i
@@ -433,7 +433,7 @@ lib/compress/huf_compress.i: lib/compress/huf_compress.c.i
 
 # target to preprocess a source file
 lib/compress/huf_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.i
 .PHONY : lib/compress/huf_compress.c.i
 
 lib/compress/huf_compress.s: lib/compress/huf_compress.c.s
@@ -441,7 +441,7 @@ lib/compress/huf_compress.s: lib/compress/huf_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/huf_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/huf_compress.c.s
 .PHONY : lib/compress/huf_compress.c.s
 
 lib/compress/zstd_compress.obj: lib/compress/zstd_compress.c.obj
@@ -449,7 +449,7 @@ lib/compress/zstd_compress.obj: lib/compress/zstd_compress.c.obj
 
 # target to build an object file
 lib/compress/zstd_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.obj
 .PHONY : lib/compress/zstd_compress.c.obj
 
 lib/compress/zstd_compress.i: lib/compress/zstd_compress.c.i
@@ -457,7 +457,7 @@ lib/compress/zstd_compress.i: lib/compress/zstd_compress.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.i
 .PHONY : lib/compress/zstd_compress.c.i
 
 lib/compress/zstd_compress.s: lib/compress/zstd_compress.c.s
@@ -465,7 +465,7 @@ lib/compress/zstd_compress.s: lib/compress/zstd_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress.c.s
 .PHONY : lib/compress/zstd_compress.c.s
 
 lib/compress/zstd_compress_literals.obj: lib/compress/zstd_compress_literals.c.obj
@@ -473,7 +473,7 @@ lib/compress/zstd_compress_literals.obj: lib/compress/zstd_compress_literals.c.o
 
 # target to build an object file
 lib/compress/zstd_compress_literals.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.obj
 .PHONY : lib/compress/zstd_compress_literals.c.obj
 
 lib/compress/zstd_compress_literals.i: lib/compress/zstd_compress_literals.c.i
@@ -481,7 +481,7 @@ lib/compress/zstd_compress_literals.i: lib/compress/zstd_compress_literals.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress_literals.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.i
 .PHONY : lib/compress/zstd_compress_literals.c.i
 
 lib/compress/zstd_compress_literals.s: lib/compress/zstd_compress_literals.c.s
@@ -489,7 +489,7 @@ lib/compress/zstd_compress_literals.s: lib/compress/zstd_compress_literals.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress_literals.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_literals.c.s
 .PHONY : lib/compress/zstd_compress_literals.c.s
 
 lib/compress/zstd_compress_sequences.obj: lib/compress/zstd_compress_sequences.c.obj
@@ -497,7 +497,7 @@ lib/compress/zstd_compress_sequences.obj: lib/compress/zstd_compress_sequences.c
 
 # target to build an object file
 lib/compress/zstd_compress_sequences.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.obj
 .PHONY : lib/compress/zstd_compress_sequences.c.obj
 
 lib/compress/zstd_compress_sequences.i: lib/compress/zstd_compress_sequences.c.i
@@ -505,7 +505,7 @@ lib/compress/zstd_compress_sequences.i: lib/compress/zstd_compress_sequences.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress_sequences.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.i
 .PHONY : lib/compress/zstd_compress_sequences.c.i
 
 lib/compress/zstd_compress_sequences.s: lib/compress/zstd_compress_sequences.c.s
@@ -513,7 +513,7 @@ lib/compress/zstd_compress_sequences.s: lib/compress/zstd_compress_sequences.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress_sequences.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_sequences.c.s
 .PHONY : lib/compress/zstd_compress_sequences.c.s
 
 lib/compress/zstd_compress_superblock.obj: lib/compress/zstd_compress_superblock.c.obj
@@ -521,7 +521,7 @@ lib/compress/zstd_compress_superblock.obj: lib/compress/zstd_compress_superblock
 
 # target to build an object file
 lib/compress/zstd_compress_superblock.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.obj
 .PHONY : lib/compress/zstd_compress_superblock.c.obj
 
 lib/compress/zstd_compress_superblock.i: lib/compress/zstd_compress_superblock.c.i
@@ -529,7 +529,7 @@ lib/compress/zstd_compress_superblock.i: lib/compress/zstd_compress_superblock.c
 
 # target to preprocess a source file
 lib/compress/zstd_compress_superblock.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.i
 .PHONY : lib/compress/zstd_compress_superblock.c.i
 
 lib/compress/zstd_compress_superblock.s: lib/compress/zstd_compress_superblock.c.s
@@ -537,7 +537,7 @@ lib/compress/zstd_compress_superblock.s: lib/compress/zstd_compress_superblock.c
 
 # target to generate assembly for a file
 lib/compress/zstd_compress_superblock.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_compress_superblock.c.s
 .PHONY : lib/compress/zstd_compress_superblock.c.s
 
 lib/compress/zstd_double_fast.obj: lib/compress/zstd_double_fast.c.obj
@@ -545,7 +545,7 @@ lib/compress/zstd_double_fast.obj: lib/compress/zstd_double_fast.c.obj
 
 # target to build an object file
 lib/compress/zstd_double_fast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.obj
 .PHONY : lib/compress/zstd_double_fast.c.obj
 
 lib/compress/zstd_double_fast.i: lib/compress/zstd_double_fast.c.i
@@ -553,7 +553,7 @@ lib/compress/zstd_double_fast.i: lib/compress/zstd_double_fast.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_double_fast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.i
 .PHONY : lib/compress/zstd_double_fast.c.i
 
 lib/compress/zstd_double_fast.s: lib/compress/zstd_double_fast.c.s
@@ -561,7 +561,7 @@ lib/compress/zstd_double_fast.s: lib/compress/zstd_double_fast.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_double_fast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_double_fast.c.s
 .PHONY : lib/compress/zstd_double_fast.c.s
 
 lib/compress/zstd_fast.obj: lib/compress/zstd_fast.c.obj
@@ -569,7 +569,7 @@ lib/compress/zstd_fast.obj: lib/compress/zstd_fast.c.obj
 
 # target to build an object file
 lib/compress/zstd_fast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.obj
 .PHONY : lib/compress/zstd_fast.c.obj
 
 lib/compress/zstd_fast.i: lib/compress/zstd_fast.c.i
@@ -577,7 +577,7 @@ lib/compress/zstd_fast.i: lib/compress/zstd_fast.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_fast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.i
 .PHONY : lib/compress/zstd_fast.c.i
 
 lib/compress/zstd_fast.s: lib/compress/zstd_fast.c.s
@@ -585,7 +585,7 @@ lib/compress/zstd_fast.s: lib/compress/zstd_fast.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_fast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_fast.c.s
 .PHONY : lib/compress/zstd_fast.c.s
 
 lib/compress/zstd_lazy.obj: lib/compress/zstd_lazy.c.obj
@@ -593,7 +593,7 @@ lib/compress/zstd_lazy.obj: lib/compress/zstd_lazy.c.obj
 
 # target to build an object file
 lib/compress/zstd_lazy.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.obj
 .PHONY : lib/compress/zstd_lazy.c.obj
 
 lib/compress/zstd_lazy.i: lib/compress/zstd_lazy.c.i
@@ -601,7 +601,7 @@ lib/compress/zstd_lazy.i: lib/compress/zstd_lazy.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_lazy.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.i
 .PHONY : lib/compress/zstd_lazy.c.i
 
 lib/compress/zstd_lazy.s: lib/compress/zstd_lazy.c.s
@@ -609,7 +609,7 @@ lib/compress/zstd_lazy.s: lib/compress/zstd_lazy.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_lazy.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_lazy.c.s
 .PHONY : lib/compress/zstd_lazy.c.s
 
 lib/compress/zstd_ldm.obj: lib/compress/zstd_ldm.c.obj
@@ -617,7 +617,7 @@ lib/compress/zstd_ldm.obj: lib/compress/zstd_ldm.c.obj
 
 # target to build an object file
 lib/compress/zstd_ldm.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.obj
 .PHONY : lib/compress/zstd_ldm.c.obj
 
 lib/compress/zstd_ldm.i: lib/compress/zstd_ldm.c.i
@@ -625,7 +625,7 @@ lib/compress/zstd_ldm.i: lib/compress/zstd_ldm.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_ldm.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.i
 .PHONY : lib/compress/zstd_ldm.c.i
 
 lib/compress/zstd_ldm.s: lib/compress/zstd_ldm.c.s
@@ -633,7 +633,7 @@ lib/compress/zstd_ldm.s: lib/compress/zstd_ldm.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_ldm.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_ldm.c.s
 .PHONY : lib/compress/zstd_ldm.c.s
 
 lib/compress/zstd_opt.obj: lib/compress/zstd_opt.c.obj
@@ -641,7 +641,7 @@ lib/compress/zstd_opt.obj: lib/compress/zstd_opt.c.obj
 
 # target to build an object file
 lib/compress/zstd_opt.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.obj
 .PHONY : lib/compress/zstd_opt.c.obj
 
 lib/compress/zstd_opt.i: lib/compress/zstd_opt.c.i
@@ -649,7 +649,7 @@ lib/compress/zstd_opt.i: lib/compress/zstd_opt.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_opt.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.i
 .PHONY : lib/compress/zstd_opt.c.i
 
 lib/compress/zstd_opt.s: lib/compress/zstd_opt.c.s
@@ -657,7 +657,7 @@ lib/compress/zstd_opt.s: lib/compress/zstd_opt.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_opt.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstd_opt.c.s
 .PHONY : lib/compress/zstd_opt.c.s
 
 lib/compress/zstdmt_compress.obj: lib/compress/zstdmt_compress.c.obj
@@ -665,7 +665,7 @@ lib/compress/zstdmt_compress.obj: lib/compress/zstdmt_compress.c.obj
 
 # target to build an object file
 lib/compress/zstdmt_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.obj
 .PHONY : lib/compress/zstdmt_compress.c.obj
 
 lib/compress/zstdmt_compress.i: lib/compress/zstdmt_compress.c.i
@@ -673,7 +673,7 @@ lib/compress/zstdmt_compress.i: lib/compress/zstdmt_compress.c.i
 
 # target to preprocess a source file
 lib/compress/zstdmt_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.i
 .PHONY : lib/compress/zstdmt_compress.c.i
 
 lib/compress/zstdmt_compress.s: lib/compress/zstdmt_compress.c.s
@@ -681,7 +681,7 @@ lib/compress/zstdmt_compress.s: lib/compress/zstdmt_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/zstdmt_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/compress/zstdmt_compress.c.s
 .PHONY : lib/compress/zstdmt_compress.c.s
 
 lib/decompress/huf_decompress.obj: lib/decompress/huf_decompress.c.obj
@@ -689,7 +689,7 @@ lib/decompress/huf_decompress.obj: lib/decompress/huf_decompress.c.obj
 
 # target to build an object file
 lib/decompress/huf_decompress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.obj
 .PHONY : lib/decompress/huf_decompress.c.obj
 
 lib/decompress/huf_decompress.i: lib/decompress/huf_decompress.c.i
@@ -697,7 +697,7 @@ lib/decompress/huf_decompress.i: lib/decompress/huf_decompress.c.i
 
 # target to preprocess a source file
 lib/decompress/huf_decompress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.i
 .PHONY : lib/decompress/huf_decompress.c.i
 
 lib/decompress/huf_decompress.s: lib/decompress/huf_decompress.c.s
@@ -705,7 +705,7 @@ lib/decompress/huf_decompress.s: lib/decompress/huf_decompress.c.s
 
 # target to generate assembly for a file
 lib/decompress/huf_decompress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/huf_decompress.c.s
 .PHONY : lib/decompress/huf_decompress.c.s
 
 lib/decompress/zstd_ddict.obj: lib/decompress/zstd_ddict.c.obj
@@ -713,7 +713,7 @@ lib/decompress/zstd_ddict.obj: lib/decompress/zstd_ddict.c.obj
 
 # target to build an object file
 lib/decompress/zstd_ddict.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.obj
 .PHONY : lib/decompress/zstd_ddict.c.obj
 
 lib/decompress/zstd_ddict.i: lib/decompress/zstd_ddict.c.i
@@ -721,7 +721,7 @@ lib/decompress/zstd_ddict.i: lib/decompress/zstd_ddict.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_ddict.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.i
 .PHONY : lib/decompress/zstd_ddict.c.i
 
 lib/decompress/zstd_ddict.s: lib/decompress/zstd_ddict.c.s
@@ -729,7 +729,7 @@ lib/decompress/zstd_ddict.s: lib/decompress/zstd_ddict.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_ddict.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_ddict.c.s
 .PHONY : lib/decompress/zstd_ddict.c.s
 
 lib/decompress/zstd_decompress.obj: lib/decompress/zstd_decompress.c.obj
@@ -737,7 +737,7 @@ lib/decompress/zstd_decompress.obj: lib/decompress/zstd_decompress.c.obj
 
 # target to build an object file
 lib/decompress/zstd_decompress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.obj
 .PHONY : lib/decompress/zstd_decompress.c.obj
 
 lib/decompress/zstd_decompress.i: lib/decompress/zstd_decompress.c.i
@@ -745,7 +745,7 @@ lib/decompress/zstd_decompress.i: lib/decompress/zstd_decompress.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_decompress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.i
 .PHONY : lib/decompress/zstd_decompress.c.i
 
 lib/decompress/zstd_decompress.s: lib/decompress/zstd_decompress.c.s
@@ -753,7 +753,7 @@ lib/decompress/zstd_decompress.s: lib/decompress/zstd_decompress.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_decompress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress.c.s
 .PHONY : lib/decompress/zstd_decompress.c.s
 
 lib/decompress/zstd_decompress_block.obj: lib/decompress/zstd_decompress_block.c.obj
@@ -761,7 +761,7 @@ lib/decompress/zstd_decompress_block.obj: lib/decompress/zstd_decompress_block.c
 
 # target to build an object file
 lib/decompress/zstd_decompress_block.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.obj
 .PHONY : lib/decompress/zstd_decompress_block.c.obj
 
 lib/decompress/zstd_decompress_block.i: lib/decompress/zstd_decompress_block.c.i
@@ -769,7 +769,7 @@ lib/decompress/zstd_decompress_block.i: lib/decompress/zstd_decompress_block.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_decompress_block.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.i
 .PHONY : lib/decompress/zstd_decompress_block.c.i
 
 lib/decompress/zstd_decompress_block.s: lib/decompress/zstd_decompress_block.c.s
@@ -777,7 +777,7 @@ lib/decompress/zstd_decompress_block.s: lib/decompress/zstd_decompress_block.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_decompress_block.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/decompress/zstd_decompress_block.c.s
 .PHONY : lib/decompress/zstd_decompress_block.c.s
 
 lib/deprecated/zbuff_common.obj: lib/deprecated/zbuff_common.c.obj
@@ -785,7 +785,7 @@ lib/deprecated/zbuff_common.obj: lib/deprecated/zbuff_common.c.obj
 
 # target to build an object file
 lib/deprecated/zbuff_common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.obj
 .PHONY : lib/deprecated/zbuff_common.c.obj
 
 lib/deprecated/zbuff_common.i: lib/deprecated/zbuff_common.c.i
@@ -793,7 +793,7 @@ lib/deprecated/zbuff_common.i: lib/deprecated/zbuff_common.c.i
 
 # target to preprocess a source file
 lib/deprecated/zbuff_common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.i
 .PHONY : lib/deprecated/zbuff_common.c.i
 
 lib/deprecated/zbuff_common.s: lib/deprecated/zbuff_common.c.s
@@ -801,7 +801,7 @@ lib/deprecated/zbuff_common.s: lib/deprecated/zbuff_common.c.s
 
 # target to generate assembly for a file
 lib/deprecated/zbuff_common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_common.c.s
 .PHONY : lib/deprecated/zbuff_common.c.s
 
 lib/deprecated/zbuff_compress.obj: lib/deprecated/zbuff_compress.c.obj
@@ -809,7 +809,7 @@ lib/deprecated/zbuff_compress.obj: lib/deprecated/zbuff_compress.c.obj
 
 # target to build an object file
 lib/deprecated/zbuff_compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.obj
 .PHONY : lib/deprecated/zbuff_compress.c.obj
 
 lib/deprecated/zbuff_compress.i: lib/deprecated/zbuff_compress.c.i
@@ -817,7 +817,7 @@ lib/deprecated/zbuff_compress.i: lib/deprecated/zbuff_compress.c.i
 
 # target to preprocess a source file
 lib/deprecated/zbuff_compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.i
 .PHONY : lib/deprecated/zbuff_compress.c.i
 
 lib/deprecated/zbuff_compress.s: lib/deprecated/zbuff_compress.c.s
@@ -825,7 +825,7 @@ lib/deprecated/zbuff_compress.s: lib/deprecated/zbuff_compress.c.s
 
 # target to generate assembly for a file
 lib/deprecated/zbuff_compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_compress.c.s
 .PHONY : lib/deprecated/zbuff_compress.c.s
 
 lib/deprecated/zbuff_decompress.obj: lib/deprecated/zbuff_decompress.c.obj
@@ -833,7 +833,7 @@ lib/deprecated/zbuff_decompress.obj: lib/deprecated/zbuff_decompress.c.obj
 
 # target to build an object file
 lib/deprecated/zbuff_decompress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.obj
 .PHONY : lib/deprecated/zbuff_decompress.c.obj
 
 lib/deprecated/zbuff_decompress.i: lib/deprecated/zbuff_decompress.c.i
@@ -841,7 +841,7 @@ lib/deprecated/zbuff_decompress.i: lib/deprecated/zbuff_decompress.c.i
 
 # target to preprocess a source file
 lib/deprecated/zbuff_decompress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.i
 .PHONY : lib/deprecated/zbuff_decompress.c.i
 
 lib/deprecated/zbuff_decompress.s: lib/deprecated/zbuff_decompress.c.s
@@ -849,7 +849,7 @@ lib/deprecated/zbuff_decompress.s: lib/deprecated/zbuff_decompress.c.s
 
 # target to generate assembly for a file
 lib/deprecated/zbuff_decompress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/deprecated/zbuff_decompress.c.s
 .PHONY : lib/deprecated/zbuff_decompress.c.s
 
 lib/dictBuilder/cover.obj: lib/dictBuilder/cover.c.obj
@@ -857,7 +857,7 @@ lib/dictBuilder/cover.obj: lib/dictBuilder/cover.c.obj
 
 # target to build an object file
 lib/dictBuilder/cover.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.obj
 .PHONY : lib/dictBuilder/cover.c.obj
 
 lib/dictBuilder/cover.i: lib/dictBuilder/cover.c.i
@@ -865,7 +865,7 @@ lib/dictBuilder/cover.i: lib/dictBuilder/cover.c.i
 
 # target to preprocess a source file
 lib/dictBuilder/cover.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.i
 .PHONY : lib/dictBuilder/cover.c.i
 
 lib/dictBuilder/cover.s: lib/dictBuilder/cover.c.s
@@ -873,7 +873,7 @@ lib/dictBuilder/cover.s: lib/dictBuilder/cover.c.s
 
 # target to generate assembly for a file
 lib/dictBuilder/cover.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/cover.c.s
 .PHONY : lib/dictBuilder/cover.c.s
 
 lib/dictBuilder/divsufsort.obj: lib/dictBuilder/divsufsort.c.obj
@@ -881,7 +881,7 @@ lib/dictBuilder/divsufsort.obj: lib/dictBuilder/divsufsort.c.obj
 
 # target to build an object file
 lib/dictBuilder/divsufsort.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.obj
 .PHONY : lib/dictBuilder/divsufsort.c.obj
 
 lib/dictBuilder/divsufsort.i: lib/dictBuilder/divsufsort.c.i
@@ -889,7 +889,7 @@ lib/dictBuilder/divsufsort.i: lib/dictBuilder/divsufsort.c.i
 
 # target to preprocess a source file
 lib/dictBuilder/divsufsort.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.i
 .PHONY : lib/dictBuilder/divsufsort.c.i
 
 lib/dictBuilder/divsufsort.s: lib/dictBuilder/divsufsort.c.s
@@ -897,7 +897,7 @@ lib/dictBuilder/divsufsort.s: lib/dictBuilder/divsufsort.c.s
 
 # target to generate assembly for a file
 lib/dictBuilder/divsufsort.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/divsufsort.c.s
 .PHONY : lib/dictBuilder/divsufsort.c.s
 
 lib/dictBuilder/fastcover.obj: lib/dictBuilder/fastcover.c.obj
@@ -905,7 +905,7 @@ lib/dictBuilder/fastcover.obj: lib/dictBuilder/fastcover.c.obj
 
 # target to build an object file
 lib/dictBuilder/fastcover.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.obj
 .PHONY : lib/dictBuilder/fastcover.c.obj
 
 lib/dictBuilder/fastcover.i: lib/dictBuilder/fastcover.c.i
@@ -913,7 +913,7 @@ lib/dictBuilder/fastcover.i: lib/dictBuilder/fastcover.c.i
 
 # target to preprocess a source file
 lib/dictBuilder/fastcover.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.i
 .PHONY : lib/dictBuilder/fastcover.c.i
 
 lib/dictBuilder/fastcover.s: lib/dictBuilder/fastcover.c.s
@@ -921,7 +921,7 @@ lib/dictBuilder/fastcover.s: lib/dictBuilder/fastcover.c.s
 
 # target to generate assembly for a file
 lib/dictBuilder/fastcover.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/fastcover.c.s
 .PHONY : lib/dictBuilder/fastcover.c.s
 
 lib/dictBuilder/zdict.obj: lib/dictBuilder/zdict.c.obj
@@ -929,7 +929,7 @@ lib/dictBuilder/zdict.obj: lib/dictBuilder/zdict.c.obj
 
 # target to build an object file
 lib/dictBuilder/zdict.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.obj
 .PHONY : lib/dictBuilder/zdict.c.obj
 
 lib/dictBuilder/zdict.i: lib/dictBuilder/zdict.c.i
@@ -937,7 +937,7 @@ lib/dictBuilder/zdict.i: lib/dictBuilder/zdict.c.i
 
 # target to preprocess a source file
 lib/dictBuilder/zdict.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.i
 .PHONY : lib/dictBuilder/zdict.c.i
 
 lib/dictBuilder/zdict.s: lib/dictBuilder/zdict.c.s
@@ -945,7 +945,7 @@ lib/dictBuilder/zdict.s: lib/dictBuilder/zdict.c.s
 
 # target to generate assembly for a file
 lib/dictBuilder/zdict.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzstd\CMakeFiles\cmzstd.dir\build.make Utilities/cmzstd/CMakeFiles/cmzstd.dir/lib/dictBuilder/zdict.c.s
 .PHONY : lib/dictBuilder/zdict.c.s
 
 # Help Target
@@ -1068,6 +1068,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/CMakeLib/CMakeFiles/testAffinity.dir/depend.make
@@ -70,18 +70,18 @@ include Tests/CMakeLib/CMakeFiles/testAffinity.dir/flags.make
 
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj: Tests/CMakeLib/CMakeFiles/testAffinity.dir/flags.make
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj: Tests/CMakeLib/CMakeFiles/testAffinity.dir/includes_CXX.rsp
-Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testAffinity.cxx
+Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testAffinity.cxx
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj: Tests/CMakeLib/CMakeFiles/testAffinity.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj -MF CMakeFiles\testAffinity.dir\testAffinity.cxx.obj.d -o CMakeFiles\testAffinity.dir\testAffinity.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.obj -MF CMakeFiles\testAffinity.dir\testAffinity.cxx.obj.d -o CMakeFiles\testAffinity.dir\testAffinity.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx
 
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testAffinity.dir/testAffinity.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx > CMakeFiles\testAffinity.dir\testAffinity.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx > CMakeFiles\testAffinity.dir\testAffinity.cxx.i
 
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/testAffinity.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testAffinity.dir/testAffinity.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx -o CMakeFiles\testAffinity.dir\testAffinity.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testAffinity.cxx -o CMakeFiles\testAffinity.dir\testAffinity.cxx.s
 
 # Object files for target testAffinity
 testAffinity_OBJECTS = \
@@ -109,18 +109,18 @@ Tests/CMakeLib/testAffinity.exe: Utilities/cmlibrhash/libcmlibrhash.a
 Tests/CMakeLib/testAffinity.exe: Tests/CMakeLib/CMakeFiles/testAffinity.dir/linklibs.rsp
 Tests/CMakeLib/testAffinity.exe: Tests/CMakeLib/CMakeFiles/testAffinity.dir/objects1.rsp
 Tests/CMakeLib/testAffinity.exe: Tests/CMakeLib/CMakeFiles/testAffinity.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testAffinity.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testAffinity.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testAffinity.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testAffinity.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/build: Tests/CMakeLib/testAffinity.exe
 .PHONY : Tests/CMakeLib/CMakeFiles/testAffinity.dir/build
 
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && $(CMAKE_COMMAND) -P CMakeFiles\testAffinity.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && $(CMAKE_COMMAND) -P CMakeFiles\testAffinity.dir\cmake_clean.cmake
 .PHONY : Tests/CMakeLib/CMakeFiles/testAffinity.dir/clean
 
 Tests/CMakeLib/CMakeFiles/testAffinity.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\CMakeFiles\testAffinity.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\CMakeFiles\testAffinity.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/CMakeLib/CMakeFiles/testAffinity.dir/depend
 

@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/depend.make
@@ -72,16 +72,16 @@ Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj: Tests/C
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/includes_CXX.rsp
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj: Tests/CMakeLib/PseudoMemcheck/ret0.cxx
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj -MF CMakeFiles\pseudo_purify.dir\ret0.cxx.obj.d -o CMakeFiles\pseudo_purify.dir\ret0.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck\ret0.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.obj -MF CMakeFiles\pseudo_purify.dir\ret0.cxx.obj.d -o CMakeFiles\pseudo_purify.dir\ret0.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck\ret0.cxx
 
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pseudo_purify.dir/ret0.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck\ret0.cxx > CMakeFiles\pseudo_purify.dir\ret0.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck\ret0.cxx > CMakeFiles\pseudo_purify.dir\ret0.cxx.i
 
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/ret0.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pseudo_purify.dir/ret0.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck\ret0.cxx -o CMakeFiles\pseudo_purify.dir\ret0.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck\ret0.cxx -o CMakeFiles\pseudo_purify.dir\ret0.cxx.s
 
 # Object files for target pseudo_purify
 pseudo_purify_OBJECTS = \
@@ -109,18 +109,18 @@ Tests/CMakeLib/PseudoMemcheck/purify.exe: Utilities/cmlibrhash/libcmlibrhash.a
 Tests/CMakeLib/PseudoMemcheck/purify.exe: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/linklibs.rsp
 Tests/CMakeLib/PseudoMemcheck/purify.exe: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/objects1.rsp
 Tests/CMakeLib/PseudoMemcheck/purify.exe: Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable purify.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_purify.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable purify.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_purify.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/build: Tests/CMakeLib/PseudoMemcheck/purify.exe
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/build
 
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_purify.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_purify.dir\cmake_clean.cmake
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/clean
 
 Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\PseudoMemcheck C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\PseudoMemcheck C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\PseudoMemcheck\CMakeFiles\pseudo_purify.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/CMakeLib/PseudoMemcheck/CMakeFiles/pseudo_purify.dir/depend
 

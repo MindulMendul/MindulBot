@@ -9,7 +9,7 @@ if(NOT "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.
   set(slash /)
 endif()
 set(url "file://${slash}C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeTests/FileDownloadInput.png")
-set(dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeTests/downloads")
+set(dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeTests/downloads")
 
 # Beware Windows asynchronous file/directory removal, rename and then
 # remove the renamed dir so we can be certain the dir isn't there when
@@ -150,7 +150,7 @@ message(STATUS "${status}")
 __reportIfWrongStatus("${status}" 6) # 6 corresponds to an unresolvable host name
 
 message(STATUS "FileDownload:12")
-set(absFile "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeTests/file12.png")
+set(absFile "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeTests/file12.png")
 if(EXISTS "${absFile}")
   file(RENAME ${absFile} "${absFile}_beingRemoved")
   file(REMOVE "${absFile}_beingRemoved")

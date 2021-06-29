@@ -1,6 +1,6 @@
 set(_isMultiConfig "0")
 set(CTEST_SOURCE_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CTestConfig")
-set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestConfig/MinSizeRel-dashboard")
+set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestConfig/MinSizeRel-dashboard")
 
 file(MAKE_DIRECTORY "${CTEST_BINARY_DIRECTORY}")
 

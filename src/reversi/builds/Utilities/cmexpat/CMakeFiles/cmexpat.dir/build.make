@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/cmexpat/CMakeFiles/cmexpat.dir/depend.make
@@ -70,78 +70,78 @@ include Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/includes_C.rsp
-Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmlparse.c
+Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmlparse.c
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmlparse.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmlparse.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmlparse.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmlparse.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmexpat.dir/lib/xmlparse.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c > CMakeFiles\cmexpat.dir\lib\xmlparse.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c > CMakeFiles\cmexpat.dir\lib\xmlparse.c.i
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlparse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmexpat.dir/lib/xmlparse.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c -o CMakeFiles\cmexpat.dir\lib\xmlparse.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlparse.c -o CMakeFiles\cmexpat.dir\lib\xmlparse.c.s
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/includes_C.rsp
-Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmlrole.c
+Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmlrole.c
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmlrole.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmlrole.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmlrole.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmlrole.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmexpat.dir/lib/xmlrole.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c > CMakeFiles\cmexpat.dir\lib\xmlrole.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c > CMakeFiles\cmexpat.dir\lib\xmlrole.c.i
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmlrole.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmexpat.dir/lib/xmlrole.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c -o CMakeFiles\cmexpat.dir\lib\xmlrole.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmlrole.c -o CMakeFiles\cmexpat.dir\lib\xmlrole.c.s
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/includes_C.rsp
-Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok.c
+Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok.c
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmexpat.dir/lib/xmltok.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c > CMakeFiles\cmexpat.dir\lib\xmltok.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c > CMakeFiles\cmexpat.dir\lib\xmltok.c.i
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmexpat.dir/lib/xmltok.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c -o CMakeFiles\cmexpat.dir\lib\xmltok.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok.c -o CMakeFiles\cmexpat.dir\lib\xmltok.c.s
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/includes_C.rsp
-Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok_impl.c
+Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok_impl.c
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c > CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c > CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.i
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c -o CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_impl.c -o CMakeFiles\cmexpat.dir\lib\xmltok_impl.c.s
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/flags.make
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/includes_C.rsp
-Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok_ns.c
+Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmexpat/lib/xmltok_ns.c
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj: Utilities/cmexpat/CMakeFiles/cmexpat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj -MF CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.obj.d -o CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c > CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c > CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.i
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c -o CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat\lib\xmltok_ns.c -o CMakeFiles\cmexpat.dir\lib\xmltok_ns.c.s
 
 # Object files for target cmexpat
 cmexpat_OBJECTS = \
@@ -161,19 +161,19 @@ Utilities/cmexpat/libcmexpat.a: Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xml
 Utilities/cmexpat/libcmexpat.a: Utilities/cmexpat/CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj
 Utilities/cmexpat/libcmexpat.a: Utilities/cmexpat/CMakeFiles/cmexpat.dir/build.make
 Utilities/cmexpat/libcmexpat.a: Utilities/cmexpat/CMakeFiles/cmexpat.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libcmexpat.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && $(CMAKE_COMMAND) -P CMakeFiles\cmexpat.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmexpat.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libcmexpat.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && $(CMAKE_COMMAND) -P CMakeFiles\cmexpat.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmexpat.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/build: Utilities/cmexpat/libcmexpat.a
 .PHONY : Utilities/cmexpat/CMakeFiles/cmexpat.dir/build
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat && $(CMAKE_COMMAND) -P CMakeFiles\cmexpat.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat && $(CMAKE_COMMAND) -P CMakeFiles\cmexpat.dir\cmake_clean.cmake
 .PHONY : Utilities/cmexpat/CMakeFiles/cmexpat.dir/clean
 
 Utilities/cmexpat/CMakeFiles/cmexpat.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmexpat\CMakeFiles\cmexpat.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmexpat C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmexpat\CMakeFiles\cmexpat.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/cmexpat/CMakeFiles/cmexpat.dir/depend
 

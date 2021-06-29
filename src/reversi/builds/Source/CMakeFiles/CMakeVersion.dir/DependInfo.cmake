@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_RC
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/CMakeVersion.rc" "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/CMakeVersion.rc" "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj"
   )
 
 # Preprocessor definitions for this target.

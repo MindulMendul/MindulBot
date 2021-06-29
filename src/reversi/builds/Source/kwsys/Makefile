@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsys.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsys.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsys.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsys.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ cmsys: Source/kwsys/CMakeFiles/cmsys.dir/rule
 
 # fast build rule for target.
 cmsys/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/build
 .PHONY : cmsys/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/rule
 
 # Convenience name for target.
@@ -215,12 +215,12 @@ cmsysTestSharedForward: Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/rule
 
 # fast build rule for target.
 cmsysTestSharedForward/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/build
 .PHONY : cmsysTestSharedForward/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsys_c.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsys_c.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsys_c.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsys_c.dir/rule
 
 # Convenience name for target.
@@ -229,12 +229,12 @@ cmsys_c: Source/kwsys/CMakeFiles/cmsys_c.dir/rule
 
 # fast build rule for target.
 cmsys_c/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/build
 .PHONY : cmsys_c/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ cmsysTestsCxx: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/rule
 
 # fast build rule for target.
 cmsysTestsCxx/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/build
 .PHONY : cmsysTestsCxx/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestsC.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestsC.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestsC.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestsC.dir/rule
 
 # Convenience name for target.
@@ -257,12 +257,12 @@ cmsysTestsC: Source/kwsys/CMakeFiles/cmsysTestsC.dir/rule
 
 # fast build rule for target.
 cmsysTestsC/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/build
 .PHONY : cmsysTestsC/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/rule
 
 # Convenience name for target.
@@ -271,12 +271,12 @@ cmsysTestDynloadUse: Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/rule
 
 # fast build rule for target.
 cmsysTestDynloadUse/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/build
 .PHONY : cmsysTestDynloadUse/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestProcess.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestProcess.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestProcess.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestProcess.dir/rule
 
 # Convenience name for target.
@@ -285,12 +285,12 @@ cmsysTestProcess: Source/kwsys/CMakeFiles/cmsysTestProcess.dir/rule
 
 # fast build rule for target.
 cmsysTestProcess/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/build
 .PHONY : cmsysTestProcess/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/testConsoleBufChild.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/testConsoleBufChild.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ testConsoleBufChild: Source/kwsys/CMakeFiles/testConsoleBufChild.dir/rule
 
 # fast build rule for target.
 testConsoleBufChild/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/build
 .PHONY : testConsoleBufChild/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynload.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynload.dir/rule
 
 # Convenience name for target.
@@ -313,12 +313,12 @@ cmsysTestDynload: Source/kwsys/CMakeFiles/cmsysTestDynload.dir/rule
 
 # fast build rule for target.
 cmsysTestDynload/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/build
 .PHONY : cmsysTestDynload/fast
 
 # Convenience name for target.
 Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/rule
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/rule
 
 # Convenience name for target.
@@ -327,7 +327,7 @@ cmsysTestDynloadImpl: Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/rule
 
 # fast build rule for target.
 cmsysTestDynloadImpl/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/build
 .PHONY : cmsysTestDynloadImpl/fast
 
 Base64.obj: Base64.c.obj
@@ -335,8 +335,8 @@ Base64.obj: Base64.c.obj
 
 # target to build an object file
 Base64.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.obj
 .PHONY : Base64.c.obj
 
 Base64.i: Base64.c.i
@@ -344,8 +344,8 @@ Base64.i: Base64.c.i
 
 # target to preprocess a source file
 Base64.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.i
 .PHONY : Base64.c.i
 
 Base64.s: Base64.c.s
@@ -353,8 +353,8 @@ Base64.s: Base64.c.s
 
 # target to generate assembly for a file
 Base64.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Base64.c.s
 .PHONY : Base64.c.s
 
 CommandLineArguments.obj: CommandLineArguments.cxx.obj
@@ -362,7 +362,7 @@ CommandLineArguments.obj: CommandLineArguments.cxx.obj
 
 # target to build an object file
 CommandLineArguments.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj
 .PHONY : CommandLineArguments.cxx.obj
 
 CommandLineArguments.i: CommandLineArguments.cxx.i
@@ -370,7 +370,7 @@ CommandLineArguments.i: CommandLineArguments.cxx.i
 
 # target to preprocess a source file
 CommandLineArguments.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.i
 .PHONY : CommandLineArguments.cxx.i
 
 CommandLineArguments.s: CommandLineArguments.cxx.s
@@ -378,7 +378,7 @@ CommandLineArguments.s: CommandLineArguments.cxx.s
 
 # target to generate assembly for a file
 CommandLineArguments.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.s
 .PHONY : CommandLineArguments.cxx.s
 
 Directory.obj: Directory.cxx.obj
@@ -386,7 +386,7 @@ Directory.obj: Directory.cxx.obj
 
 # target to build an object file
 Directory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj
 .PHONY : Directory.cxx.obj
 
 Directory.i: Directory.cxx.i
@@ -394,7 +394,7 @@ Directory.i: Directory.cxx.i
 
 # target to preprocess a source file
 Directory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.i
 .PHONY : Directory.cxx.i
 
 Directory.s: Directory.cxx.s
@@ -402,7 +402,7 @@ Directory.s: Directory.cxx.s
 
 # target to generate assembly for a file
 Directory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.s
 .PHONY : Directory.cxx.s
 
 DynamicLoader.obj: DynamicLoader.cxx.obj
@@ -410,7 +410,7 @@ DynamicLoader.obj: DynamicLoader.cxx.obj
 
 # target to build an object file
 DynamicLoader.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj
 .PHONY : DynamicLoader.cxx.obj
 
 DynamicLoader.i: DynamicLoader.cxx.i
@@ -418,7 +418,7 @@ DynamicLoader.i: DynamicLoader.cxx.i
 
 # target to preprocess a source file
 DynamicLoader.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.i
 .PHONY : DynamicLoader.cxx.i
 
 DynamicLoader.s: DynamicLoader.cxx.s
@@ -426,7 +426,7 @@ DynamicLoader.s: DynamicLoader.cxx.s
 
 # target to generate assembly for a file
 DynamicLoader.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.s
 .PHONY : DynamicLoader.cxx.s
 
 EncodingC.obj: EncodingC.c.obj
@@ -434,8 +434,8 @@ EncodingC.obj: EncodingC.c.obj
 
 # target to build an object file
 EncodingC.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.obj
 .PHONY : EncodingC.c.obj
 
 EncodingC.i: EncodingC.c.i
@@ -443,8 +443,8 @@ EncodingC.i: EncodingC.c.i
 
 # target to preprocess a source file
 EncodingC.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.i
 .PHONY : EncodingC.c.i
 
 EncodingC.s: EncodingC.c.s
@@ -452,8 +452,8 @@ EncodingC.s: EncodingC.c.s
 
 # target to generate assembly for a file
 EncodingC.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/EncodingC.c.s
 .PHONY : EncodingC.c.s
 
 EncodingCXX.obj: EncodingCXX.cxx.obj
@@ -461,7 +461,7 @@ EncodingCXX.obj: EncodingCXX.cxx.obj
 
 # target to build an object file
 EncodingCXX.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj
 .PHONY : EncodingCXX.cxx.obj
 
 EncodingCXX.i: EncodingCXX.cxx.i
@@ -469,7 +469,7 @@ EncodingCXX.i: EncodingCXX.cxx.i
 
 # target to preprocess a source file
 EncodingCXX.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.i
 .PHONY : EncodingCXX.cxx.i
 
 EncodingCXX.s: EncodingCXX.cxx.s
@@ -477,7 +477,7 @@ EncodingCXX.s: EncodingCXX.cxx.s
 
 # target to generate assembly for a file
 EncodingCXX.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.s
 .PHONY : EncodingCXX.cxx.s
 
 FStream.obj: FStream.cxx.obj
@@ -485,7 +485,7 @@ FStream.obj: FStream.cxx.obj
 
 # target to build an object file
 FStream.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj
 .PHONY : FStream.cxx.obj
 
 FStream.i: FStream.cxx.i
@@ -493,7 +493,7 @@ FStream.i: FStream.cxx.i
 
 # target to preprocess a source file
 FStream.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.i
 .PHONY : FStream.cxx.i
 
 FStream.s: FStream.cxx.s
@@ -501,7 +501,7 @@ FStream.s: FStream.cxx.s
 
 # target to generate assembly for a file
 FStream.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.s
 .PHONY : FStream.cxx.s
 
 Glob.obj: Glob.cxx.obj
@@ -509,7 +509,7 @@ Glob.obj: Glob.cxx.obj
 
 # target to build an object file
 Glob.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj
 .PHONY : Glob.cxx.obj
 
 Glob.i: Glob.cxx.i
@@ -517,7 +517,7 @@ Glob.i: Glob.cxx.i
 
 # target to preprocess a source file
 Glob.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.i
 .PHONY : Glob.cxx.i
 
 Glob.s: Glob.cxx.s
@@ -525,7 +525,7 @@ Glob.s: Glob.cxx.s
 
 # target to generate assembly for a file
 Glob.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.s
 .PHONY : Glob.cxx.s
 
 MD5.obj: MD5.c.obj
@@ -533,8 +533,8 @@ MD5.obj: MD5.c.obj
 
 # target to build an object file
 MD5.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.obj
 .PHONY : MD5.c.obj
 
 MD5.i: MD5.c.i
@@ -542,8 +542,8 @@ MD5.i: MD5.c.i
 
 # target to preprocess a source file
 MD5.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.i
 .PHONY : MD5.c.i
 
 MD5.s: MD5.c.s
@@ -551,8 +551,8 @@ MD5.s: MD5.c.s
 
 # target to generate assembly for a file
 MD5.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/MD5.c.s
 .PHONY : MD5.c.s
 
 ProcessWin32.obj: ProcessWin32.c.obj
@@ -560,8 +560,8 @@ ProcessWin32.obj: ProcessWin32.c.obj
 
 # target to build an object file
 ProcessWin32.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.obj
 .PHONY : ProcessWin32.c.obj
 
 ProcessWin32.i: ProcessWin32.c.i
@@ -569,8 +569,8 @@ ProcessWin32.i: ProcessWin32.c.i
 
 # target to preprocess a source file
 ProcessWin32.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.i
 .PHONY : ProcessWin32.c.i
 
 ProcessWin32.s: ProcessWin32.c.s
@@ -578,8 +578,8 @@ ProcessWin32.s: ProcessWin32.c.s
 
 # target to generate assembly for a file
 ProcessWin32.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/ProcessWin32.c.s
 .PHONY : ProcessWin32.c.s
 
 RegularExpression.obj: RegularExpression.cxx.obj
@@ -587,7 +587,7 @@ RegularExpression.obj: RegularExpression.cxx.obj
 
 # target to build an object file
 RegularExpression.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj
 .PHONY : RegularExpression.cxx.obj
 
 RegularExpression.i: RegularExpression.cxx.i
@@ -595,7 +595,7 @@ RegularExpression.i: RegularExpression.cxx.i
 
 # target to preprocess a source file
 RegularExpression.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.i
 .PHONY : RegularExpression.cxx.i
 
 RegularExpression.s: RegularExpression.cxx.s
@@ -603,7 +603,7 @@ RegularExpression.s: RegularExpression.cxx.s
 
 # target to generate assembly for a file
 RegularExpression.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.s
 .PHONY : RegularExpression.cxx.s
 
 Status.obj: Status.cxx.obj
@@ -611,7 +611,7 @@ Status.obj: Status.cxx.obj
 
 # target to build an object file
 Status.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj
 .PHONY : Status.cxx.obj
 
 Status.i: Status.cxx.i
@@ -619,7 +619,7 @@ Status.i: Status.cxx.i
 
 # target to preprocess a source file
 Status.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.i
 .PHONY : Status.cxx.i
 
 Status.s: Status.cxx.s
@@ -627,7 +627,7 @@ Status.s: Status.cxx.s
 
 # target to generate assembly for a file
 Status.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.s
 .PHONY : Status.cxx.s
 
 String.obj: String.c.obj
@@ -635,8 +635,8 @@ String.obj: String.c.obj
 
 # target to build an object file
 String.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.obj
 .PHONY : String.c.obj
 
 String.i: String.c.i
@@ -644,8 +644,8 @@ String.i: String.c.i
 
 # target to preprocess a source file
 String.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.i
 .PHONY : String.c.i
 
 String.s: String.c.s
@@ -653,8 +653,8 @@ String.s: String.c.s
 
 # target to generate assembly for a file
 String.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/String.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/String.c.s
 .PHONY : String.c.s
 
 System.obj: System.c.obj
@@ -662,8 +662,8 @@ System.obj: System.c.obj
 
 # target to build an object file
 System.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.obj
 .PHONY : System.c.obj
 
 System.i: System.c.i
@@ -671,8 +671,8 @@ System.i: System.c.i
 
 # target to preprocess a source file
 System.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.i
 .PHONY : System.c.i
 
 System.s: System.c.s
@@ -680,8 +680,8 @@ System.s: System.c.s
 
 # target to generate assembly for a file
 System.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/System.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/System.c.s
 .PHONY : System.c.s
 
 SystemInformation.obj: SystemInformation.cxx.obj
@@ -689,7 +689,7 @@ SystemInformation.obj: SystemInformation.cxx.obj
 
 # target to build an object file
 SystemInformation.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj
 .PHONY : SystemInformation.cxx.obj
 
 SystemInformation.i: SystemInformation.cxx.i
@@ -697,7 +697,7 @@ SystemInformation.i: SystemInformation.cxx.i
 
 # target to preprocess a source file
 SystemInformation.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.i
 .PHONY : SystemInformation.cxx.i
 
 SystemInformation.s: SystemInformation.cxx.s
@@ -705,7 +705,7 @@ SystemInformation.s: SystemInformation.cxx.s
 
 # target to generate assembly for a file
 SystemInformation.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.s
 .PHONY : SystemInformation.cxx.s
 
 SystemTools.obj: SystemTools.cxx.obj
@@ -713,7 +713,7 @@ SystemTools.obj: SystemTools.cxx.obj
 
 # target to build an object file
 SystemTools.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj
 .PHONY : SystemTools.cxx.obj
 
 SystemTools.i: SystemTools.cxx.i
@@ -721,7 +721,7 @@ SystemTools.i: SystemTools.cxx.i
 
 # target to preprocess a source file
 SystemTools.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.i
 .PHONY : SystemTools.cxx.i
 
 SystemTools.s: SystemTools.cxx.s
@@ -729,7 +729,7 @@ SystemTools.s: SystemTools.cxx.s
 
 # target to generate assembly for a file
 SystemTools.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.s
 .PHONY : SystemTools.cxx.s
 
 Terminal.obj: Terminal.c.obj
@@ -737,8 +737,8 @@ Terminal.obj: Terminal.c.obj
 
 # target to build an object file
 Terminal.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.obj
 .PHONY : Terminal.c.obj
 
 Terminal.i: Terminal.c.i
@@ -746,8 +746,8 @@ Terminal.i: Terminal.c.i
 
 # target to preprocess a source file
 Terminal.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.i
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.i
 .PHONY : Terminal.c.i
 
 Terminal.s: Terminal.c.s
@@ -755,8 +755,8 @@ Terminal.s: Terminal.c.s
 
 # target to generate assembly for a file
 Terminal.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.s
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys.dir\build.make Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsys_c.dir\build.make Source/kwsys/CMakeFiles/cmsys_c.dir/Terminal.c.s
 .PHONY : Terminal.c.s
 
 cmsysTestsC.obj: cmsysTestsC.c.obj
@@ -764,7 +764,7 @@ cmsysTestsC.obj: cmsysTestsC.c.obj
 
 # target to build an object file
 cmsysTestsC.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.obj
 .PHONY : cmsysTestsC.c.obj
 
 cmsysTestsC.i: cmsysTestsC.c.i
@@ -772,7 +772,7 @@ cmsysTestsC.i: cmsysTestsC.c.i
 
 # target to preprocess a source file
 cmsysTestsC.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.i
 .PHONY : cmsysTestsC.c.i
 
 cmsysTestsC.s: cmsysTestsC.c.s
@@ -780,7 +780,7 @@ cmsysTestsC.s: cmsysTestsC.c.s
 
 # target to generate assembly for a file
 cmsysTestsC.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/cmsysTestsC.c.s
 .PHONY : cmsysTestsC.c.s
 
 cmsysTestsCxx.obj: cmsysTestsCxx.cxx.obj
@@ -788,7 +788,7 @@ cmsysTestsCxx.obj: cmsysTestsCxx.cxx.obj
 
 # target to build an object file
 cmsysTestsCxx.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj
 .PHONY : cmsysTestsCxx.cxx.obj
 
 cmsysTestsCxx.i: cmsysTestsCxx.cxx.i
@@ -796,7 +796,7 @@ cmsysTestsCxx.i: cmsysTestsCxx.cxx.i
 
 # target to preprocess a source file
 cmsysTestsCxx.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.i
 .PHONY : cmsysTestsCxx.cxx.i
 
 cmsysTestsCxx.s: cmsysTestsCxx.cxx.s
@@ -804,7 +804,7 @@ cmsysTestsCxx.s: cmsysTestsCxx.cxx.s
 
 # target to generate assembly for a file
 cmsysTestsCxx.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.s
 .PHONY : cmsysTestsCxx.cxx.s
 
 testCommandLineArguments.obj: testCommandLineArguments.cxx.obj
@@ -812,7 +812,7 @@ testCommandLineArguments.obj: testCommandLineArguments.cxx.obj
 
 # target to build an object file
 testCommandLineArguments.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj
 .PHONY : testCommandLineArguments.cxx.obj
 
 testCommandLineArguments.i: testCommandLineArguments.cxx.i
@@ -820,7 +820,7 @@ testCommandLineArguments.i: testCommandLineArguments.cxx.i
 
 # target to preprocess a source file
 testCommandLineArguments.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.i
 .PHONY : testCommandLineArguments.cxx.i
 
 testCommandLineArguments.s: testCommandLineArguments.cxx.s
@@ -828,7 +828,7 @@ testCommandLineArguments.s: testCommandLineArguments.cxx.s
 
 # target to generate assembly for a file
 testCommandLineArguments.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.s
 .PHONY : testCommandLineArguments.cxx.s
 
 testCommandLineArguments1.obj: testCommandLineArguments1.cxx.obj
@@ -836,7 +836,7 @@ testCommandLineArguments1.obj: testCommandLineArguments1.cxx.obj
 
 # target to build an object file
 testCommandLineArguments1.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj
 .PHONY : testCommandLineArguments1.cxx.obj
 
 testCommandLineArguments1.i: testCommandLineArguments1.cxx.i
@@ -844,7 +844,7 @@ testCommandLineArguments1.i: testCommandLineArguments1.cxx.i
 
 # target to preprocess a source file
 testCommandLineArguments1.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.i
 .PHONY : testCommandLineArguments1.cxx.i
 
 testCommandLineArguments1.s: testCommandLineArguments1.cxx.s
@@ -852,7 +852,7 @@ testCommandLineArguments1.s: testCommandLineArguments1.cxx.s
 
 # target to generate assembly for a file
 testCommandLineArguments1.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.s
 .PHONY : testCommandLineArguments1.cxx.s
 
 testConfigure.obj: testConfigure.cxx.obj
@@ -860,7 +860,7 @@ testConfigure.obj: testConfigure.cxx.obj
 
 # target to build an object file
 testConfigure.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj
 .PHONY : testConfigure.cxx.obj
 
 testConfigure.i: testConfigure.cxx.i
@@ -868,7 +868,7 @@ testConfigure.i: testConfigure.cxx.i
 
 # target to preprocess a source file
 testConfigure.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.i
 .PHONY : testConfigure.cxx.i
 
 testConfigure.s: testConfigure.cxx.s
@@ -876,7 +876,7 @@ testConfigure.s: testConfigure.cxx.s
 
 # target to generate assembly for a file
 testConfigure.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.s
 .PHONY : testConfigure.cxx.s
 
 testConsoleBuf.obj: testConsoleBuf.cxx.obj
@@ -884,7 +884,7 @@ testConsoleBuf.obj: testConsoleBuf.cxx.obj
 
 # target to build an object file
 testConsoleBuf.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj
 .PHONY : testConsoleBuf.cxx.obj
 
 testConsoleBuf.i: testConsoleBuf.cxx.i
@@ -892,7 +892,7 @@ testConsoleBuf.i: testConsoleBuf.cxx.i
 
 # target to preprocess a source file
 testConsoleBuf.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.i
 .PHONY : testConsoleBuf.cxx.i
 
 testConsoleBuf.s: testConsoleBuf.cxx.s
@@ -900,7 +900,7 @@ testConsoleBuf.s: testConsoleBuf.cxx.s
 
 # target to generate assembly for a file
 testConsoleBuf.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.s
 .PHONY : testConsoleBuf.cxx.s
 
 testConsoleBufChild.obj: testConsoleBufChild.cxx.obj
@@ -908,7 +908,7 @@ testConsoleBufChild.obj: testConsoleBufChild.cxx.obj
 
 # target to build an object file
 testConsoleBufChild.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.obj
 .PHONY : testConsoleBufChild.cxx.obj
 
 testConsoleBufChild.i: testConsoleBufChild.cxx.i
@@ -916,7 +916,7 @@ testConsoleBufChild.i: testConsoleBufChild.cxx.i
 
 # target to preprocess a source file
 testConsoleBufChild.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.i
 .PHONY : testConsoleBufChild.cxx.i
 
 testConsoleBufChild.s: testConsoleBufChild.cxx.s
@@ -924,7 +924,7 @@ testConsoleBufChild.s: testConsoleBufChild.cxx.s
 
 # target to generate assembly for a file
 testConsoleBufChild.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\testConsoleBufChild.dir\build.make Source/kwsys/CMakeFiles/testConsoleBufChild.dir/testConsoleBufChild.cxx.s
 .PHONY : testConsoleBufChild.cxx.s
 
 testDirectory.obj: testDirectory.cxx.obj
@@ -932,7 +932,7 @@ testDirectory.obj: testDirectory.cxx.obj
 
 # target to build an object file
 testDirectory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj
 .PHONY : testDirectory.cxx.obj
 
 testDirectory.i: testDirectory.cxx.i
@@ -940,7 +940,7 @@ testDirectory.i: testDirectory.cxx.i
 
 # target to preprocess a source file
 testDirectory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.i
 .PHONY : testDirectory.cxx.i
 
 testDirectory.s: testDirectory.cxx.s
@@ -948,7 +948,7 @@ testDirectory.s: testDirectory.cxx.s
 
 # target to generate assembly for a file
 testDirectory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.s
 .PHONY : testDirectory.cxx.s
 
 testDynamicLoader.obj: testDynamicLoader.cxx.obj
@@ -956,7 +956,7 @@ testDynamicLoader.obj: testDynamicLoader.cxx.obj
 
 # target to build an object file
 testDynamicLoader.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj
 .PHONY : testDynamicLoader.cxx.obj
 
 testDynamicLoader.i: testDynamicLoader.cxx.i
@@ -964,7 +964,7 @@ testDynamicLoader.i: testDynamicLoader.cxx.i
 
 # target to preprocess a source file
 testDynamicLoader.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.i
 .PHONY : testDynamicLoader.cxx.i
 
 testDynamicLoader.s: testDynamicLoader.cxx.s
@@ -972,7 +972,7 @@ testDynamicLoader.s: testDynamicLoader.cxx.s
 
 # target to generate assembly for a file
 testDynamicLoader.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.s
 .PHONY : testDynamicLoader.cxx.s
 
 testDynload.obj: testDynload.c.obj
@@ -980,7 +980,7 @@ testDynload.obj: testDynload.c.obj
 
 # target to build an object file
 testDynload.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.obj
 .PHONY : testDynload.c.obj
 
 testDynload.i: testDynload.c.i
@@ -988,7 +988,7 @@ testDynload.i: testDynload.c.i
 
 # target to preprocess a source file
 testDynload.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.i
 .PHONY : testDynload.c.i
 
 testDynload.s: testDynload.c.s
@@ -996,7 +996,7 @@ testDynload.s: testDynload.c.s
 
 # target to generate assembly for a file
 testDynload.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynload.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynload.dir/testDynload.c.s
 .PHONY : testDynload.c.s
 
 testDynloadImpl.obj: testDynloadImpl.c.obj
@@ -1004,7 +1004,7 @@ testDynloadImpl.obj: testDynloadImpl.c.obj
 
 # target to build an object file
 testDynloadImpl.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.obj
 .PHONY : testDynloadImpl.c.obj
 
 testDynloadImpl.i: testDynloadImpl.c.i
@@ -1012,7 +1012,7 @@ testDynloadImpl.i: testDynloadImpl.c.i
 
 # target to preprocess a source file
 testDynloadImpl.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.i
 .PHONY : testDynloadImpl.c.i
 
 testDynloadImpl.s: testDynloadImpl.c.s
@@ -1020,7 +1020,7 @@ testDynloadImpl.s: testDynloadImpl.c.s
 
 # target to generate assembly for a file
 testDynloadImpl.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadImpl.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadImpl.dir/testDynloadImpl.c.s
 .PHONY : testDynloadImpl.c.s
 
 testDynloadUse.obj: testDynloadUse.c.obj
@@ -1028,7 +1028,7 @@ testDynloadUse.obj: testDynloadUse.c.obj
 
 # target to build an object file
 testDynloadUse.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.obj
 .PHONY : testDynloadUse.c.obj
 
 testDynloadUse.i: testDynloadUse.c.i
@@ -1036,7 +1036,7 @@ testDynloadUse.i: testDynloadUse.c.i
 
 # target to preprocess a source file
 testDynloadUse.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.i
 .PHONY : testDynloadUse.c.i
 
 testDynloadUse.s: testDynloadUse.c.s
@@ -1044,7 +1044,7 @@ testDynloadUse.s: testDynloadUse.c.s
 
 # target to generate assembly for a file
 testDynloadUse.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestDynloadUse.dir\build.make Source/kwsys/CMakeFiles/cmsysTestDynloadUse.dir/testDynloadUse.c.s
 .PHONY : testDynloadUse.c.s
 
 testEncode.obj: testEncode.c.obj
@@ -1052,7 +1052,7 @@ testEncode.obj: testEncode.c.obj
 
 # target to build an object file
 testEncode.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.obj
 .PHONY : testEncode.c.obj
 
 testEncode.i: testEncode.c.i
@@ -1060,7 +1060,7 @@ testEncode.i: testEncode.c.i
 
 # target to preprocess a source file
 testEncode.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.i
 .PHONY : testEncode.c.i
 
 testEncode.s: testEncode.c.s
@@ -1068,7 +1068,7 @@ testEncode.s: testEncode.c.s
 
 # target to generate assembly for a file
 testEncode.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testEncode.c.s
 .PHONY : testEncode.c.s
 
 testEncoding.obj: testEncoding.cxx.obj
@@ -1076,7 +1076,7 @@ testEncoding.obj: testEncoding.cxx.obj
 
 # target to build an object file
 testEncoding.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj
 .PHONY : testEncoding.cxx.obj
 
 testEncoding.i: testEncoding.cxx.i
@@ -1084,7 +1084,7 @@ testEncoding.i: testEncoding.cxx.i
 
 # target to preprocess a source file
 testEncoding.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.i
 .PHONY : testEncoding.cxx.i
 
 testEncoding.s: testEncoding.cxx.s
@@ -1092,7 +1092,7 @@ testEncoding.s: testEncoding.cxx.s
 
 # target to generate assembly for a file
 testEncoding.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.s
 .PHONY : testEncoding.cxx.s
 
 testFStream.obj: testFStream.cxx.obj
@@ -1100,7 +1100,7 @@ testFStream.obj: testFStream.cxx.obj
 
 # target to build an object file
 testFStream.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj
 .PHONY : testFStream.cxx.obj
 
 testFStream.i: testFStream.cxx.i
@@ -1108,7 +1108,7 @@ testFStream.i: testFStream.cxx.i
 
 # target to preprocess a source file
 testFStream.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.i
 .PHONY : testFStream.cxx.i
 
 testFStream.s: testFStream.cxx.s
@@ -1116,7 +1116,7 @@ testFStream.s: testFStream.cxx.s
 
 # target to generate assembly for a file
 testFStream.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.s
 .PHONY : testFStream.cxx.s
 
 testProcess.obj: testProcess.c.obj
@@ -1124,7 +1124,7 @@ testProcess.obj: testProcess.c.obj
 
 # target to build an object file
 testProcess.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.obj
 .PHONY : testProcess.c.obj
 
 testProcess.i: testProcess.c.i
@@ -1132,7 +1132,7 @@ testProcess.i: testProcess.c.i
 
 # target to preprocess a source file
 testProcess.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.i
 .PHONY : testProcess.c.i
 
 testProcess.s: testProcess.c.s
@@ -1140,7 +1140,7 @@ testProcess.s: testProcess.c.s
 
 # target to generate assembly for a file
 testProcess.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestProcess.dir\build.make Source/kwsys/CMakeFiles/cmsysTestProcess.dir/testProcess.c.s
 .PHONY : testProcess.c.s
 
 testSharedForward.obj: testSharedForward.c.obj
@@ -1148,7 +1148,7 @@ testSharedForward.obj: testSharedForward.c.obj
 
 # target to build an object file
 testSharedForward.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj
 .PHONY : testSharedForward.c.obj
 
 testSharedForward.i: testSharedForward.c.i
@@ -1156,7 +1156,7 @@ testSharedForward.i: testSharedForward.c.i
 
 # target to preprocess a source file
 testSharedForward.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.i
 .PHONY : testSharedForward.c.i
 
 testSharedForward.s: testSharedForward.c.s
@@ -1164,7 +1164,7 @@ testSharedForward.s: testSharedForward.c.s
 
 # target to generate assembly for a file
 testSharedForward.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestSharedForward.dir\build.make Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.s
 .PHONY : testSharedForward.c.s
 
 testStatus.obj: testStatus.cxx.obj
@@ -1172,7 +1172,7 @@ testStatus.obj: testStatus.cxx.obj
 
 # target to build an object file
 testStatus.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj
 .PHONY : testStatus.cxx.obj
 
 testStatus.i: testStatus.cxx.i
@@ -1180,7 +1180,7 @@ testStatus.i: testStatus.cxx.i
 
 # target to preprocess a source file
 testStatus.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.i
 .PHONY : testStatus.cxx.i
 
 testStatus.s: testStatus.cxx.s
@@ -1188,7 +1188,7 @@ testStatus.s: testStatus.cxx.s
 
 # target to generate assembly for a file
 testStatus.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.s
 .PHONY : testStatus.cxx.s
 
 testSystemInformation.obj: testSystemInformation.cxx.obj
@@ -1196,7 +1196,7 @@ testSystemInformation.obj: testSystemInformation.cxx.obj
 
 # target to build an object file
 testSystemInformation.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj
 .PHONY : testSystemInformation.cxx.obj
 
 testSystemInformation.i: testSystemInformation.cxx.i
@@ -1204,7 +1204,7 @@ testSystemInformation.i: testSystemInformation.cxx.i
 
 # target to preprocess a source file
 testSystemInformation.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.i
 .PHONY : testSystemInformation.cxx.i
 
 testSystemInformation.s: testSystemInformation.cxx.s
@@ -1212,7 +1212,7 @@ testSystemInformation.s: testSystemInformation.cxx.s
 
 # target to generate assembly for a file
 testSystemInformation.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.s
 .PHONY : testSystemInformation.cxx.s
 
 testSystemTools.obj: testSystemTools.cxx.obj
@@ -1220,7 +1220,7 @@ testSystemTools.obj: testSystemTools.cxx.obj
 
 # target to build an object file
 testSystemTools.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj
 .PHONY : testSystemTools.cxx.obj
 
 testSystemTools.i: testSystemTools.cxx.i
@@ -1228,7 +1228,7 @@ testSystemTools.i: testSystemTools.cxx.i
 
 # target to preprocess a source file
 testSystemTools.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.i
 .PHONY : testSystemTools.cxx.i
 
 testSystemTools.s: testSystemTools.cxx.s
@@ -1236,7 +1236,7 @@ testSystemTools.s: testSystemTools.cxx.s
 
 # target to generate assembly for a file
 testSystemTools.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.s
 .PHONY : testSystemTools.cxx.s
 
 testTerminal.obj: testTerminal.c.obj
@@ -1244,7 +1244,7 @@ testTerminal.obj: testTerminal.c.obj
 
 # target to build an object file
 testTerminal.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.obj
 .PHONY : testTerminal.c.obj
 
 testTerminal.i: testTerminal.c.i
@@ -1252,7 +1252,7 @@ testTerminal.i: testTerminal.c.i
 
 # target to preprocess a source file
 testTerminal.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.i
 .PHONY : testTerminal.c.i
 
 testTerminal.s: testTerminal.c.s
@@ -1260,7 +1260,7 @@ testTerminal.s: testTerminal.c.s
 
 # target to generate assembly for a file
 testTerminal.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\kwsys\CMakeFiles\cmsysTestsC.dir\build.make Source/kwsys/CMakeFiles/cmsysTestsC.dir/testTerminal.c.s
 .PHONY : testTerminal.c.s
 
 # Help Target
@@ -1413,6 +1413,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

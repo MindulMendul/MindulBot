@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/depend.make
@@ -70,18 +70,18 @@ include Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/flags.make
 
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/flags.make
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/includes_C.rsp
-Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_tidy.c
+Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/RunCMake/pseudo_tidy.c
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj -MF CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.obj.d -o CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj -MF CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.obj.d -o CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c
 
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c > CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c > CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.i
 
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c -o CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake\pseudo_tidy.c -o CMakeFiles\pseudo_tidy.dir\pseudo_tidy.c.s
 
 # Object files for target pseudo_tidy
 pseudo_tidy_OBJECTS = \
@@ -95,18 +95,18 @@ Tests/RunCMake/pseudo_tidy.exe: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/build.
 Tests/RunCMake/pseudo_tidy.exe: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/linklibs.rsp
 Tests/RunCMake/pseudo_tidy.exe: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/objects1.rsp
 Tests/RunCMake/pseudo_tidy.exe: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_tidy.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_tidy.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pseudo_tidy.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pseudo_tidy.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/build: Tests/RunCMake/pseudo_tidy.exe
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/build
 
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_tidy.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake && $(CMAKE_COMMAND) -P CMakeFiles\pseudo_tidy.dir\cmake_clean.cmake
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/clean
 
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/depend
 

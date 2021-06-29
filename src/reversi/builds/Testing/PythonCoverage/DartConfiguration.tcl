@@ -4,5 +4,5 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/PythonCoverage/coveragetest
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/PythonCoverage
+SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/PythonCoverage/coveragetest
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/PythonCoverage

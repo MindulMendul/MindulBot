@@ -5,4 +5,4 @@
 
 # Configuration directories and files
 SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Testing/MumpsCoverage
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/MumpsCoverage
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/MumpsCoverage

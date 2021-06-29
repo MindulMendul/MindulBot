@@ -7,7 +7,7 @@ endif()
 
 # Choose a configuration that was built if none is given.
 if(NOT CTEST_CONFIGURATION_TYPE)
-  set(CTEST_CMD "C:/Users/leesj/Desktop/DiscordBot/src/reversi/bin/ctest.exe")
+  set(CTEST_CMD "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/bin/ctest.exe")
   get_filename_component(CTEST_DIR "${CTEST_CMD}" PATH)
   get_filename_component(CTEST_EXE "${CTEST_CMD}" NAME)
   foreach(cfg Release Debug MinSizeRel RelWithDebInfo)

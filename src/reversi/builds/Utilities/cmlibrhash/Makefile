@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,7 +76,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -86,7 +86,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmlibrhash\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmlibrhash\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/rule
 .PHONY : Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmlibrhash: Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/rule
 
 # fast build rule for target.
 cmlibrhash/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/build
 .PHONY : cmlibrhash/fast
 
 librhash/algorithms.obj: librhash/algorithms.c.obj
@@ -209,7 +209,7 @@ librhash/algorithms.obj: librhash/algorithms.c.obj
 
 # target to build an object file
 librhash/algorithms.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.obj
 .PHONY : librhash/algorithms.c.obj
 
 librhash/algorithms.i: librhash/algorithms.c.i
@@ -217,7 +217,7 @@ librhash/algorithms.i: librhash/algorithms.c.i
 
 # target to preprocess a source file
 librhash/algorithms.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.i
 .PHONY : librhash/algorithms.c.i
 
 librhash/algorithms.s: librhash/algorithms.c.s
@@ -225,7 +225,7 @@ librhash/algorithms.s: librhash/algorithms.c.s
 
 # target to generate assembly for a file
 librhash/algorithms.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/algorithms.c.s
 .PHONY : librhash/algorithms.c.s
 
 librhash/byte_order.obj: librhash/byte_order.c.obj
@@ -233,7 +233,7 @@ librhash/byte_order.obj: librhash/byte_order.c.obj
 
 # target to build an object file
 librhash/byte_order.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.obj
 .PHONY : librhash/byte_order.c.obj
 
 librhash/byte_order.i: librhash/byte_order.c.i
@@ -241,7 +241,7 @@ librhash/byte_order.i: librhash/byte_order.c.i
 
 # target to preprocess a source file
 librhash/byte_order.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.i
 .PHONY : librhash/byte_order.c.i
 
 librhash/byte_order.s: librhash/byte_order.c.s
@@ -249,7 +249,7 @@ librhash/byte_order.s: librhash/byte_order.c.s
 
 # target to generate assembly for a file
 librhash/byte_order.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/byte_order.c.s
 .PHONY : librhash/byte_order.c.s
 
 librhash/hex.obj: librhash/hex.c.obj
@@ -257,7 +257,7 @@ librhash/hex.obj: librhash/hex.c.obj
 
 # target to build an object file
 librhash/hex.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.obj
 .PHONY : librhash/hex.c.obj
 
 librhash/hex.i: librhash/hex.c.i
@@ -265,7 +265,7 @@ librhash/hex.i: librhash/hex.c.i
 
 # target to preprocess a source file
 librhash/hex.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.i
 .PHONY : librhash/hex.c.i
 
 librhash/hex.s: librhash/hex.c.s
@@ -273,7 +273,7 @@ librhash/hex.s: librhash/hex.c.s
 
 # target to generate assembly for a file
 librhash/hex.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/hex.c.s
 .PHONY : librhash/hex.c.s
 
 librhash/md5.obj: librhash/md5.c.obj
@@ -281,7 +281,7 @@ librhash/md5.obj: librhash/md5.c.obj
 
 # target to build an object file
 librhash/md5.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.obj
 .PHONY : librhash/md5.c.obj
 
 librhash/md5.i: librhash/md5.c.i
@@ -289,7 +289,7 @@ librhash/md5.i: librhash/md5.c.i
 
 # target to preprocess a source file
 librhash/md5.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.i
 .PHONY : librhash/md5.c.i
 
 librhash/md5.s: librhash/md5.c.s
@@ -297,7 +297,7 @@ librhash/md5.s: librhash/md5.c.s
 
 # target to generate assembly for a file
 librhash/md5.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/md5.c.s
 .PHONY : librhash/md5.c.s
 
 librhash/rhash.obj: librhash/rhash.c.obj
@@ -305,7 +305,7 @@ librhash/rhash.obj: librhash/rhash.c.obj
 
 # target to build an object file
 librhash/rhash.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.obj
 .PHONY : librhash/rhash.c.obj
 
 librhash/rhash.i: librhash/rhash.c.i
@@ -313,7 +313,7 @@ librhash/rhash.i: librhash/rhash.c.i
 
 # target to preprocess a source file
 librhash/rhash.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.i
 .PHONY : librhash/rhash.c.i
 
 librhash/rhash.s: librhash/rhash.c.s
@@ -321,7 +321,7 @@ librhash/rhash.s: librhash/rhash.c.s
 
 # target to generate assembly for a file
 librhash/rhash.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/rhash.c.s
 .PHONY : librhash/rhash.c.s
 
 librhash/sha1.obj: librhash/sha1.c.obj
@@ -329,7 +329,7 @@ librhash/sha1.obj: librhash/sha1.c.obj
 
 # target to build an object file
 librhash/sha1.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.obj
 .PHONY : librhash/sha1.c.obj
 
 librhash/sha1.i: librhash/sha1.c.i
@@ -337,7 +337,7 @@ librhash/sha1.i: librhash/sha1.c.i
 
 # target to preprocess a source file
 librhash/sha1.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.i
 .PHONY : librhash/sha1.c.i
 
 librhash/sha1.s: librhash/sha1.c.s
@@ -345,7 +345,7 @@ librhash/sha1.s: librhash/sha1.c.s
 
 # target to generate assembly for a file
 librhash/sha1.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha1.c.s
 .PHONY : librhash/sha1.c.s
 
 librhash/sha256.obj: librhash/sha256.c.obj
@@ -353,7 +353,7 @@ librhash/sha256.obj: librhash/sha256.c.obj
 
 # target to build an object file
 librhash/sha256.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.obj
 .PHONY : librhash/sha256.c.obj
 
 librhash/sha256.i: librhash/sha256.c.i
@@ -361,7 +361,7 @@ librhash/sha256.i: librhash/sha256.c.i
 
 # target to preprocess a source file
 librhash/sha256.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.i
 .PHONY : librhash/sha256.c.i
 
 librhash/sha256.s: librhash/sha256.c.s
@@ -369,7 +369,7 @@ librhash/sha256.s: librhash/sha256.c.s
 
 # target to generate assembly for a file
 librhash/sha256.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha256.c.s
 .PHONY : librhash/sha256.c.s
 
 librhash/sha3.obj: librhash/sha3.c.obj
@@ -377,7 +377,7 @@ librhash/sha3.obj: librhash/sha3.c.obj
 
 # target to build an object file
 librhash/sha3.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.obj
 .PHONY : librhash/sha3.c.obj
 
 librhash/sha3.i: librhash/sha3.c.i
@@ -385,7 +385,7 @@ librhash/sha3.i: librhash/sha3.c.i
 
 # target to preprocess a source file
 librhash/sha3.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.i
 .PHONY : librhash/sha3.c.i
 
 librhash/sha3.s: librhash/sha3.c.s
@@ -393,7 +393,7 @@ librhash/sha3.s: librhash/sha3.c.s
 
 # target to generate assembly for a file
 librhash/sha3.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha3.c.s
 .PHONY : librhash/sha3.c.s
 
 librhash/sha512.obj: librhash/sha512.c.obj
@@ -401,7 +401,7 @@ librhash/sha512.obj: librhash/sha512.c.obj
 
 # target to build an object file
 librhash/sha512.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.obj
 .PHONY : librhash/sha512.c.obj
 
 librhash/sha512.i: librhash/sha512.c.i
@@ -409,7 +409,7 @@ librhash/sha512.i: librhash/sha512.c.i
 
 # target to preprocess a source file
 librhash/sha512.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.i
 .PHONY : librhash/sha512.c.i
 
 librhash/sha512.s: librhash/sha512.c.s
@@ -417,7 +417,7 @@ librhash/sha512.s: librhash/sha512.c.s
 
 # target to generate assembly for a file
 librhash/sha512.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibrhash\CMakeFiles\cmlibrhash.dir\build.make Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/librhash/sha512.c.s
 .PHONY : librhash/sha512.c.s
 
 # Help Target
@@ -474,6 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

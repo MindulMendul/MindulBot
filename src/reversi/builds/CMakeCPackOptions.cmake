@@ -29,7 +29,7 @@ endif()
 
 # include the cpack options for qt dialog if they exist
 # they might not if qt was not enabled for the build
-include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/QtDialog/QtDialogCPack.cmake" OPTIONAL)
+include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/QtDialog/QtDialogCPack.cmake" OPTIONAL)
 
 if(CPACK_GENERATOR MATCHES "IFW")
 
@@ -67,11 +67,11 @@ if(CPACK_GENERATOR MATCHES "IFW")
   set(CPACK_IFW_COMPONENT_GROUP_CMAKE_SCRIPT_TEMPLATE
     "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/QtIFW/installscript.qs.in")
   set(CPACK_IFW_COMPONENT_GROUP_CMAKE_SCRIPT_GENERATED
-    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMake.qs")
+    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMake.qs")
   set(CPACK_IFW_COMPONENT_GROUP_CMAKE_LICENSES
     "CMake Copyright;C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Copyright.txt")
   set(CPACK_IFW_COMPONENT_GROUP_CMAKE_SCRIPT
-    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMake.qs")
+    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMake.qs")
 
 
   # Tools
@@ -135,7 +135,7 @@ if(CPACK_GENERATOR MATCHES "IFW")
   set(CPACK_COMPONENT_CMAKE-GUI_GROUP Dialogs)
   set(CPACK_IFW_COMPONENT_CMAKE-GUI_NAME "QtGUI")
   set(CPACK_IFW_COMPONENT_CMAKE-GUI_SCRIPT
-    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMake.Dialogs.QtGUI.qs")
+    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMake.Dialogs.QtGUI.qs")
   set(CPACK_IFW_COMPONENT_CMAKE-GUI_VERSION
     "3.21.0")
   
@@ -166,7 +166,7 @@ if(CPACK_GENERATOR MATCHES "IFW")
   set(CPACK_COMPONENT_SPHINX-HTML_GROUP Documentation)
   set(CPACK_IFW_COMPONENT_SPHINX-HTML_NAME "SphinxHTML")
   set(CPACK_IFW_COMPONENT_SPHINX-HTML_SCRIPT
-    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMake.Documentation.SphinxHTML.qs")
+    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMake.Documentation.SphinxHTML.qs")
   set(CPACK_IFW_COMPONENT_SPHINX-HTML_VERSION
     "3.21.0")
 
@@ -198,7 +198,7 @@ if(CPACK_GENERATOR MATCHES "IFW")
   set(CPACK_COMPONENT_CMAKE-DEVELOPER-REFERENCE-HTML_DISABLED TRUE)
   set(CPACK_IFW_COMPONENT_CMAKE-DEVELOPER-REFERENCE-HTML_NAME "HTML")
   set(CPACK_IFW_COMPONENT_CMAKE-DEVELOPER-REFERENCE-HTML_SCRIPT
-    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMake.DeveloperReference.HTML.qs")
+    "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMake.DeveloperReference.HTML.qs")
   set(CPACK_IFW_COMPONENT_CMAKE-DEVELOPER-REFERENCE-HTML_VERSION
     "3.21.0")
 
@@ -298,10 +298,10 @@ if("${CPACK_GENERATOR}" STREQUAL "WIX")
       endif()
 
       list(APPEND CPACK_WIX_EXTRA_SOURCES
-        "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/Release/WiX/custom_action_dll-${_WIX_CUSTOM_ACTION_CONFIG}.wxs")
+        "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/Release/WiX/custom_action_dll-${_WIX_CUSTOM_ACTION_CONFIG}.wxs")
     else()
       list(APPEND CPACK_WIX_EXTRA_SOURCES
-        "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/Release/WiX/custom_action_dll.wxs")
+        "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/Release/WiX/custom_action_dll.wxs")
     endif()
   endif()
 
@@ -315,7 +315,7 @@ if("${CPACK_GENERATOR}" STREQUAL "WIX")
     "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/Release/WiX/WIX.template.in"
   )
 
-  set(BUILD_QtDialog "")
+  set(BUILD_QtDialog "OFF")
 
   if(BUILD_QtDialog)
     list(APPEND CPACK_WIX_PATCH_FILE

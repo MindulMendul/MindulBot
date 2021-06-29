@@ -1,5 +1,5 @@
 # create the binary directory
-make_directory("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly")
+make_directory("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly")
 
 # remove the CMakeCache.txt file from the source dir
 # if there is one, so that in-source cmake tests
@@ -14,7 +14,7 @@ execute_process(COMMAND "${CMAKE_COMMAND}"
   "-GMinGW Makefiles"
   -A ""
   -T ""
-  WORKING_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly"
+  WORKING_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly"
   RESULT_VARIABLE RESULT)
 if(RESULT)
   message(FATAL_ERROR "Error running cmake command")
@@ -23,7 +23,7 @@ endif()
 # Now use the --build option to build the project
 message("running: ${CMAKE_COMMAND} --build")
 execute_process(COMMAND "${CMAKE_COMMAND}"
-  --build "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly" --config Debug
+  --build "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly" --config Debug
   RESULT_VARIABLE RESULT)
 if(RESULT)
   message(FATAL_ERROR "Error running cmake --build")
@@ -33,9 +33,9 @@ endif()
 # multi-config generator
 set(_isMultiConfig 0)
 if(_isMultiConfig)
-  set(RUN_TEST "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly/Debug/COnly")
+  set(RUN_TEST "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly/Debug/COnly")
 else()
-  set(RUN_TEST "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly/COnly")
+  set(RUN_TEST "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly/COnly")
 endif()
 # run the test results
 message("running [${RUN_TEST}]")
@@ -46,7 +46,7 @@ endif()
 
 # build it again with clean and only COnly target
 execute_process(COMMAND "${CMAKE_COMMAND}"
-  --build "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeBuildCOnly" --config Debug
+  --build "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeBuildCOnly" --config Debug
   --clean-first --target COnly
   RESULT_VARIABLE RESULT)
 if(RESULT)

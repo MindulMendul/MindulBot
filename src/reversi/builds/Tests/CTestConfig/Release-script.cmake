@@ -2,7 +2,7 @@ set(CTEST_CMAKE_GENERATOR "MinGW Makefiles")
 set(CTEST_CMAKE_GENERATOR_PLATFORM "")
 set(CTEST_CMAKE_GENERATOR_TOOLSET "")
 set(CTEST_SOURCE_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CTestConfig")
-set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestConfig/Release-script")
+set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestConfig/Release-script")
 
 ctest_start(Experimental)
 

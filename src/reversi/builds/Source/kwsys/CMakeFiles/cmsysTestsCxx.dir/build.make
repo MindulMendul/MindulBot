@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/depend.make
@@ -72,181 +72,181 @@ Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj: Source/kwsys/CM
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj: Source/kwsys/cmsysTestsCxx.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\cmsysTestsCxx.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\cmsysTestsCxx.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\cmsysTestsCxx.cxx > CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\cmsysTestsCxx.cxx > CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\cmsysTestsCxx.cxx -o CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\cmsysTestsCxx.cxx -o CMakeFiles\cmsysTestsCxx.dir\cmsysTestsCxx.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConfigure.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConfigure.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx > CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx > CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx -o CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConfigure.cxx -o CMakeFiles\cmsysTestsCxx.dir\testConfigure.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testStatus.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testStatus.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx > CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx > CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testStatus.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx -o CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testStatus.cxx -o CMakeFiles\cmsysTestsCxx.dir\testStatus.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testSystemTools.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testSystemTools.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx > CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx > CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testSystemTools.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx -o CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemTools.cxx -o CMakeFiles\cmsysTestsCxx.dir\testSystemTools.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx > CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx > CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments.cxx -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments1.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments1.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx > CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx > CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testCommandLineArguments1.cxx -o CMakeFiles\cmsysTestsCxx.dir\testCommandLineArguments1.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDirectory.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDirectory.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx > CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx > CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testDirectory.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx -o CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDirectory.cxx -o CMakeFiles\cmsysTestsCxx.dir\testDirectory.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testEncoding.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testEncoding.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx > CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx > CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testEncoding.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx -o CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testEncoding.cxx -o CMakeFiles\cmsysTestsCxx.dir\testEncoding.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testFStream.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testFStream.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx > CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx > CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testFStream.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx -o CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testFStream.cxx -o CMakeFiles\cmsysTestsCxx.dir\testFStream.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConsoleBuf.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConsoleBuf.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx > CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx > CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testConsoleBuf.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx -o CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testConsoleBuf.cxx -o CMakeFiles\cmsysTestsCxx.dir\testConsoleBuf.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testSystemInformation.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testSystemInformation.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx > CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx > CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testSystemInformation.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx -o CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testSystemInformation.cxx -o CMakeFiles\cmsysTestsCxx.dir\testSystemInformation.cxx.s
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/flags.make
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDynamicLoader.cxx
+Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testDynamicLoader.cxx
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.obj -MF CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.obj.d -o CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx > CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx > CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.i
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsysTestsCxx.dir/testDynamicLoader.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx -o CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\testDynamicLoader.cxx -o CMakeFiles\cmsysTestsCxx.dir\testDynamicLoader.cxx.s
 
 # Object files for target cmsysTestsCxx
 cmsysTestsCxx_OBJECTS = \
@@ -283,18 +283,18 @@ Source/kwsys/cmsysTestsCxx.exe: Source/kwsys/libcmsys.a
 Source/kwsys/cmsysTestsCxx.exe: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/linklibs.rsp
 Source/kwsys/cmsysTestsCxx.exe: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/objects1.rsp
 Source/kwsys/cmsysTestsCxx.exe: Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cmsysTestsCxx.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsysTestsCxx.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cmsysTestsCxx.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsysTestsCxx.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/build: Source/kwsys/cmsysTestsCxx.exe
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/build
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsysTestsCxx.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsysTestsCxx.dir\cmake_clean.cmake
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/clean
 
 Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\CMakeFiles\cmsysTestsCxx.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/depend
 

@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/3.21.0-rc1/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/3.21.0-rc1/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/MinGW/bin/g++.exe 
@@ -23,23 +23,23 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/3.21.0-rc1/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/3.21.0-rc1/CompilerIdCXX/a.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4e5a6/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4e5a6.dir\build.make CMakeFiles/cmTC_4e5a6.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4e5a6.dir/CMakeCCompilerABI.c.obj
-C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_34ae1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_34ae1.dir\build.make CMakeFiles/cmTC_34ae1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34ae1.dir/CMakeCCompilerABI.c.obj
+C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
 COLLECT_GCC=C:\MinGW\bin\gcc.exe
 Target: mingw32
 Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
 Thread model: win32
 gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccxCQq90.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccEO5Fj1.s
 GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
 	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -60,17 +60,17 @@ GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
 	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj C:\Users\leesj\AppData\Local\Temp\ccxCQq90.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj C:\Users\leesj\AppData\Local\Temp\ccEO5Fj1.s
 GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
 COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
 LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-Linking C executable cmTC_4e5a6.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4e5a6.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4e5a6.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_4e5a6.dir/objects.a @CMakeFiles\cmTC_4e5a6.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_4e5a6.dir/objects.a -Wl,--no-whole-archive -o cmTC_4e5a6.exe -Wl,--out-implib,libcmTC_4e5a6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+Linking C executable cmTC_34ae1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_34ae1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_34ae1.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_34ae1.dir/objects.a @CMakeFiles\cmTC_34ae1.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_34ae1.dir/objects.a -Wl,--no-whole-archive -o cmTC_34ae1.exe -Wl,--out-implib,libcmTC_34ae1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:\MinGW\bin\gcc.exe
 COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
@@ -80,10 +80,10 @@ Thread model: win32
 gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
 COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
 LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4e5a6.exe' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccMJ7Zvg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_4e5a6.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_4e5a6.dir/objects.a --no-whole-archive --out-implib libcmTC_4e5a6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4e5a6.exe' '-mtune=generic' '-march=i586'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34ae1.exe' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccOz0GFg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_34ae1.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_34ae1.dir/objects.a --no-whole-archive --out-implib libcmTC_34ae1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34ae1.exe' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
@@ -104,20 +104,20 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4e5a6/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4e5a6.dir\build.make CMakeFiles/cmTC_4e5a6.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_4e5a6.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_34ae1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_34ae1.dir\build.make CMakeFiles/cmTC_34ae1.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_34ae1.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
   ignore line: [Thread model: win32]
   ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccxCQq90.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccEO5Fj1.s]
   ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
   ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -138,8 +138,8 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj C:\Users\leesj\AppData\Local\Temp\ccxCQq90.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj C:\Users\leesj\AppData\Local\Temp\ccEO5Fj1.s]
   ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
   ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
   ignore line: [c:/mingw/bin/../libexec/gcc/]
@@ -148,12 +148,12 @@ Parsed C implicit link information from above output:
   ignore line: [c:/mingw/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4e5a6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [Linking C executable cmTC_4e5a6.exe]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4e5a6.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4e5a6.dir/objects.a]
-  ignore line: [C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_4e5a6.dir/objects.a @CMakeFiles\cmTC_4e5a6.dir\objects1.rsp]
-  ignore line: [C:\MinGW\bin\gcc.exe  -v -Wl --whole-archive CMakeFiles\cmTC_4e5a6.dir/objects.a -Wl --no-whole-archive -o cmTC_4e5a6.exe -Wl --out-implib libcmTC_4e5a6.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_34ae1.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [Linking C executable cmTC_34ae1.exe]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_34ae1.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_34ae1.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_34ae1.dir/objects.a @CMakeFiles\cmTC_34ae1.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\gcc.exe  -v -Wl --whole-archive CMakeFiles\cmTC_34ae1.dir/objects.a -Wl --no-whole-archive -o cmTC_34ae1.exe -Wl --out-implib libcmTC_34ae1.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
@@ -168,13 +168,13 @@ Parsed C implicit link information from above output:
   ignore line: [c:/mingw/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4e5a6.exe' '-mtune=generic' '-march=i586']
-  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccMJ7Zvg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_4e5a6.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_4e5a6.dir/objects.a --no-whole-archive --out-implib libcmTC_4e5a6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34ae1.exe' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccOz0GFg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_34ae1.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_34ae1.dir/objects.a --no-whole-archive --out-implib libcmTC_34ae1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
     arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccMJ7Zvg.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccOz0GFg.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -193,7 +193,7 @@ Parsed C implicit link information from above output:
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_4e5a6.exe] ==> ignore
+    arg [cmTC_34ae1.exe] ==> ignore
     arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
     arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
@@ -201,10 +201,10 @@ Parsed C implicit link information from above output:
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_4e5a6.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_34ae1.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_4e5a6.dll.a] ==> ignore
+    arg [libcmTC_34ae1.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -244,20 +244,20 @@ Parsed C implicit link information from above output:
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_fc0f6/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc0f6.dir\build.make CMakeFiles/cmTC_fc0f6.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fc0f6.dir/CMakeCXXCompilerABI.cpp.obj
-C:\MinGW\bin\g++.exe   -v -o CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cf9da/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cf9da.dir\build.make CMakeFiles/cmTC_cf9da.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf9da.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\g++.exe   -v -o CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
 COLLECT_GCC=C:\MinGW\bin\g++.exe
 Target: mingw32
 Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
 Thread model: win32
 gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccxj5OBz.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccN8w8nW.s
 GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
 	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
 warning: MPC header version 1.0.2 differs from library version 1.0.3.
@@ -286,17 +286,17 @@ GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
 warning: MPC header version 1.0.2 differs from library version 1.0.3.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: af09a87986453bf79da3565f33c7648f
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\leesj\AppData\Local\Temp\ccxj5OBz.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\leesj\AppData\Local\Temp\ccN8w8nW.s
 GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
 COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
 LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-Linking CXX executable cmTC_fc0f6.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fc0f6.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_fc0f6.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_fc0f6.dir/objects.a @CMakeFiles\cmTC_fc0f6.dir\objects1.rsp
-C:\MinGW\bin\g++.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_fc0f6.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc0f6.exe -Wl,--out-implib,libcmTC_fc0f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+Linking CXX executable cmTC_cf9da.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cf9da.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_cf9da.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_cf9da.dir/objects.a @CMakeFiles\cmTC_cf9da.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_cf9da.dir/objects.a -Wl,--no-whole-archive -o cmTC_cf9da.exe -Wl,--out-implib,libcmTC_cf9da.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:\MinGW\bin\g++.exe
 COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
@@ -306,10 +306,10 @@ Thread model: win32
 gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
 COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
 LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc0f6.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccd1lZPO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_fc0f6.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_fc0f6.dir/objects.a --no-whole-archive --out-implib libcmTC_fc0f6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc0f6.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cf9da.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccjLKwjd.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_cf9da.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_cf9da.dir/objects.a --no-whole-archive --out-implib libcmTC_cf9da.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cf9da.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
@@ -336,20 +336,20 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_fc0f6/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc0f6.dir\build.make CMakeFiles/cmTC_fc0f6.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fc0f6.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\MinGW\bin\g++.exe   -v -o CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cf9da/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cf9da.dir\build.make CMakeFiles/cmTC_cf9da.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cf9da.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\MinGW\bin\g++.exe   -v -o CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
   ignore line: [Thread model: win32]
   ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccxj5OBz.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\leesj\AppData\Local\Temp\ccN8w8nW.s]
   ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
   ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
   ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
@@ -378,8 +378,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: af09a87986453bf79da3565f33c7648f]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\leesj\AppData\Local\Temp\ccxj5OBz.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\leesj\AppData\Local\Temp\ccN8w8nW.s]
   ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
   ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
   ignore line: [c:/mingw/bin/../libexec/gcc/]
@@ -388,12 +388,12 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/mingw/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_fc0f6.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-  ignore line: [Linking CXX executable cmTC_fc0f6.exe]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fc0f6.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_fc0f6.dir/objects.a]
-  ignore line: [C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_fc0f6.dir/objects.a @CMakeFiles\cmTC_fc0f6.dir\objects1.rsp]
-  ignore line: [C:\MinGW\bin\g++.exe  -v -Wl --whole-archive CMakeFiles\cmTC_fc0f6.dir/objects.a -Wl --no-whole-archive -o cmTC_fc0f6.exe -Wl --out-implib libcmTC_fc0f6.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cf9da.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [Linking CXX executable cmTC_cf9da.exe]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cf9da.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_cf9da.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_cf9da.dir/objects.a @CMakeFiles\cmTC_cf9da.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\g++.exe  -v -Wl --whole-archive CMakeFiles\cmTC_cf9da.dir/objects.a -Wl --no-whole-archive -o cmTC_cf9da.exe -Wl --out-implib libcmTC_cf9da.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
@@ -408,13 +408,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/mingw/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
   ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc0f6.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
-  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccd1lZPO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_fc0f6.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_fc0f6.dir/objects.a --no-whole-archive --out-implib libcmTC_fc0f6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cf9da.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccjLKwjd.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_cf9da.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_cf9da.dir/objects.a --no-whole-archive --out-implib libcmTC_cf9da.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
     arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccd1lZPO.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\leesj\AppData\Local\Temp\ccjLKwjd.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -437,7 +437,7 @@ Parsed CXX implicit link information from above output:
     arg [-u] ==> ignore
     arg [___deregister_frame_info] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fc0f6.exe] ==> ignore
+    arg [cmTC_cf9da.exe] ==> ignore
     arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
     arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
@@ -445,10 +445,10 @@ Parsed CXX implicit link information from above output:
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
     arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_fc0f6.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_cf9da.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_fc0f6.dll.a] ==> ignore
+    arg [libcmTC_cf9da.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -487,85 +487,85 @@ Parsed CXX implicit link information from above output:
 
 
 Determining if compiler supports C11 _Thread_local passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d9c19/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d9c19.dir\build.make CMakeFiles/cmTC_d9c19.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d9c19.dir/cm_c11_thread_local.c.obj
-C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_d9c19.dir\cm_c11_thread_local.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_c11_thread_local.c
-Linking C executable cmTC_d9c19.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d9c19.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d9c19.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_d9c19.dir/objects.a @CMakeFiles\cmTC_d9c19.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_d9c19.dir/objects.a -Wl,--no-whole-archive -o cmTC_d9c19.exe -Wl,--out-implib,libcmTC_d9c19.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d9c19.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f1c03/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f1c03.dir\build.make CMakeFiles/cmTC_f1c03.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1c03.dir/cm_c11_thread_local.c.obj
+C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_f1c03.dir\cm_c11_thread_local.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_c11_thread_local.c
+Linking C executable cmTC_f1c03.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f1c03.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_f1c03.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_f1c03.dir/objects.a @CMakeFiles\cmTC_f1c03.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_f1c03.dir/objects.a -Wl,--no-whole-archive -o cmTC_f1c03.exe -Wl,--out-implib,libcmTC_f1c03.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f1c03.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if compiler supports needed C++14 constructs passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6143e/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6143e.dir\build.make CMakeFiles/cmTC_6143e.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6143e.dir/cm_cxx14_check.cpp.obj
-C:\MinGW\bin\g++.exe   -std=gnu++14 -o CMakeFiles\cmTC_6143e.dir\cm_cxx14_check.cpp.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx14_check.cpp
-Linking CXX executable cmTC_6143e.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6143e.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_6143e.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_6143e.dir/objects.a @CMakeFiles\cmTC_6143e.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_6143e.dir/objects.a -Wl,--no-whole-archive -o cmTC_6143e.exe -Wl,--out-implib,libcmTC_6143e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6143e.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4159c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4159c.dir\build.make CMakeFiles/cmTC_4159c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4159c.dir/cm_cxx14_check.cpp.obj
+C:\MinGW\bin\g++.exe   -std=gnu++14 -o CMakeFiles\cmTC_4159c.dir\cm_cxx14_check.cpp.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx14_check.cpp
+Linking CXX executable cmTC_4159c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4159c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4159c.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_4159c.dir/objects.a @CMakeFiles\cmTC_4159c.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_4159c.dir/objects.a -Wl,--no-whole-archive -o cmTC_4159c.exe -Wl,--out-implib,libcmTC_4159c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4159c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if compiler supports C++ make_unique passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_69464/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_69464.dir\build.make CMakeFiles/cmTC_69464.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_69464.dir/cm_cxx_make_unique.cxx.obj
-C:\MinGW\bin\g++.exe   -std=gnu++14 -o CMakeFiles\cmTC_69464.dir\cm_cxx_make_unique.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx_make_unique.cxx
-Linking CXX executable cmTC_69464.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_69464.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_69464.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_69464.dir/objects.a @CMakeFiles\cmTC_69464.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_69464.dir/objects.a -Wl,--no-whole-archive -o cmTC_69464.exe -Wl,--out-implib,libcmTC_69464.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_69464.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_82b68/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_82b68.dir\build.make CMakeFiles/cmTC_82b68.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82b68.dir/cm_cxx_make_unique.cxx.obj
+C:\MinGW\bin\g++.exe   -std=gnu++14 -o CMakeFiles\cmTC_82b68.dir\cm_cxx_make_unique.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx_make_unique.cxx
+Linking CXX executable cmTC_82b68.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_82b68.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_82b68.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_82b68.dir/objects.a @CMakeFiles\cmTC_82b68.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_82b68.dir/objects.a -Wl,--no-whole-archive -o cmTC_82b68.exe -Wl,--out-implib,libcmTC_82b68.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_82b68.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Checking whether C compiler has ssize_t in unistd.h compiled with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a4edf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a4edf.dir\build.make CMakeFiles/cmTC_a4edf.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a4edf.dir/kwsysPlatformTestsC.c.obj
-C:\MinGW\bin\gcc.exe -DTEST_KWSYS_C_HAS_SSIZE_T  -std=gnu11 -o CMakeFiles\cmTC_a4edf.dir\kwsysPlatformTestsC.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\kwsysPlatformTestsC.c
-Linking C executable cmTC_a4edf.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a4edf.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a4edf.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a4edf.dir/objects.a @CMakeFiles\cmTC_a4edf.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_a4edf.dir/objects.a -Wl,--no-whole-archive -o cmTC_a4edf.exe -Wl,--out-implib,libcmTC_a4edf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a4edf.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b5681/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b5681.dir\build.make CMakeFiles/cmTC_b5681.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5681.dir/kwsysPlatformTestsC.c.obj
+C:\MinGW\bin\gcc.exe -DTEST_KWSYS_C_HAS_SSIZE_T  -std=gnu11 -o CMakeFiles\cmTC_b5681.dir\kwsysPlatformTestsC.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\kwsysPlatformTestsC.c
+Linking C executable cmTC_b5681.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b5681.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_b5681.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_b5681.dir/objects.a @CMakeFiles\cmTC_b5681.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_b5681.dir/objects.a -Wl,--no-whole-archive -o cmTC_b5681.exe -Wl,--out-implib,libcmTC_b5681.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b5681.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the GetProcessMemoryInfo exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_e51c4/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e51c4.dir\build.make CMakeFiles/cmTC_e51c4.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e51c4.dir/CheckSymbolExists.c.obj
-C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_e51c4.dir\CheckSymbolExists.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckSymbolExists.c
-Linking C executable cmTC_e51c4.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e51c4.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_e51c4.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_e51c4.dir/objects.a @CMakeFiles\cmTC_e51c4.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_e51c4.dir/objects.a -Wl,--no-whole-archive -o cmTC_e51c4.exe -Wl,--out-implib,libcmTC_e51c4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e51c4.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f580a/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f580a.dir\build.make CMakeFiles/cmTC_f580a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f580a.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_f580a.dir\CheckSymbolExists.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_f580a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f580a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_f580a.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_f580a.dir/objects.a @CMakeFiles\cmTC_f580a.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_f580a.dir/objects.a -Wl,--no-whole-archive -o cmTC_f580a.exe -Wl,--out-implib,libcmTC_f580a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f580a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
-File C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <windows.h>
 #include <psapi.h>
@@ -581,101 +581,101 @@ int main(int argc, char** argv)
 #endif
 }
 Checking whether <ext/stdio_filebuf.h> is available compiled with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_61aaf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_61aaf.dir\build.make CMakeFiles/cmTC_61aaf.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_61aaf.dir/kwsysPlatformTestsCXX.cxx.obj
-C:\MinGW\bin\g++.exe -DTEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H  -std=gnu++14 -o CMakeFiles\cmTC_61aaf.dir\kwsysPlatformTestsCXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\kwsysPlatformTestsCXX.cxx
-Linking CXX executable cmTC_61aaf.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_61aaf.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_61aaf.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_61aaf.dir/objects.a @CMakeFiles\cmTC_61aaf.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_61aaf.dir/objects.a -Wl,--no-whole-archive -o cmTC_61aaf.exe -Wl,--out-implib,libcmTC_61aaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_61aaf.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_bc131/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bc131.dir\build.make CMakeFiles/cmTC_bc131.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc131.dir/kwsysPlatformTestsCXX.cxx.obj
+C:\MinGW\bin\g++.exe -DTEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H  -std=gnu++14 -o CMakeFiles\cmTC_bc131.dir\kwsysPlatformTestsCXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_bc131.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bc131.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_bc131.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_bc131.dir/objects.a @CMakeFiles\cmTC_bc131.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_bc131.dir/objects.a -Wl,--no-whole-archive -o cmTC_bc131.exe -Wl,--out-implib,libcmTC_bc131.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bc131.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/CMakeTmp'
 
 
 
 Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8bbc8/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8bbc8.dir\build.make CMakeFiles/cmTC_8bbc8.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8bbc8.dir/HAVE_LIBGEN_H.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_8bbc8.dir\HAVE_LIBGEN_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c
-Linking C executable cmTC_8bbc8.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8bbc8.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8bbc8.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_8bbc8.dir/objects.a @CMakeFiles\cmTC_8bbc8.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_8bbc8.dir/objects.a -Wl,--no-whole-archive -o cmTC_8bbc8.exe -Wl,--out-implib,libcmTC_8bbc8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8bbc8.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_77e54/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_77e54.dir\build.make CMakeFiles/cmTC_77e54.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77e54.dir/HAVE_LIBGEN_H.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_77e54.dir\HAVE_LIBGEN_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c
+Linking C executable cmTC_77e54.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_77e54.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_77e54.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_77e54.dir/objects.a @CMakeFiles\cmTC_77e54.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_77e54.dir/objects.a -Wl,--no-whole-archive -o cmTC_77e54.exe -Wl,--out-implib,libcmTC_77e54.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_77e54.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of size_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2d3e9/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2d3e9.dir\build.make CMakeFiles/cmTC_2d3e9.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2d3e9.dir/SIZEOF_SIZE_T.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_2d3e9.dir\SIZEOF_SIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c
-Linking C executable cmTC_2d3e9.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2d3e9.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2d3e9.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_2d3e9.dir/objects.a @CMakeFiles\cmTC_2d3e9.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_2d3e9.dir/objects.a -Wl,--no-whole-archive -o cmTC_2d3e9.exe -Wl,--out-implib,libcmTC_2d3e9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2d3e9.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_69fb1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_69fb1.dir\build.make CMakeFiles/cmTC_69fb1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_69fb1.dir/SIZEOF_SIZE_T.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_69fb1.dir\SIZEOF_SIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c
+Linking C executable cmTC_69fb1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_69fb1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_69fb1.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_69fb1.dir/objects.a @CMakeFiles\cmTC_69fb1.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_69fb1.dir/objects.a -Wl,--no-whole-archive -o cmTC_69fb1.exe -Wl,--out-implib,libcmTC_69fb1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_69fb1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of ssize_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8625c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8625c.dir\build.make CMakeFiles/cmTC_8625c.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8625c.dir/SIZEOF_SSIZE_T.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_8625c.dir\SIZEOF_SSIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c
-Linking C executable cmTC_8625c.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8625c.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8625c.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_8625c.dir/objects.a @CMakeFiles\cmTC_8625c.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_8625c.dir/objects.a -Wl,--no-whole-archive -o cmTC_8625c.exe -Wl,--out-implib,libcmTC_8625c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8625c.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_27014/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_27014.dir\build.make CMakeFiles/cmTC_27014.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27014.dir/SIZEOF_SSIZE_T.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_27014.dir\SIZEOF_SSIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c
+Linking C executable cmTC_27014.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_27014.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_27014.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_27014.dir/objects.a @CMakeFiles\cmTC_27014.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_27014.dir/objects.a -Wl,--no-whole-archive -o cmTC_27014.exe -Wl,--out-implib,libcmTC_27014.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_27014.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of time_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a4eba/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a4eba.dir\build.make CMakeFiles/cmTC_a4eba.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a4eba.dir/SIZEOF_TIME_T.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_a4eba.dir\SIZEOF_TIME_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c
-Linking C executable cmTC_a4eba.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a4eba.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a4eba.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a4eba.dir/objects.a @CMakeFiles\cmTC_a4eba.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_a4eba.dir/objects.a -Wl,--no-whole-archive -o cmTC_a4eba.exe -Wl,--out-implib,libcmTC_a4eba.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a4eba.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_14b63/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_14b63.dir\build.make CMakeFiles/cmTC_14b63.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14b63.dir/SIZEOF_TIME_T.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_14b63.dir\SIZEOF_TIME_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c
+Linking C executable cmTC_14b63.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_14b63.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_14b63.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_14b63.dir/objects.a @CMakeFiles\cmTC_14b63.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_14b63.dir/objects.a -Wl,--no-whole-archive -o cmTC_14b63.exe -Wl,--out-implib,libcmTC_14b63.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_14b63.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the basename exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_43df1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_43df1.dir\build.make CMakeFiles/cmTC_43df1.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_43df1.dir/CheckSymbolExists.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_43df1.dir\CheckSymbolExists.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckSymbolExists.c
-Linking C executable cmTC_43df1.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_43df1.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_43df1.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_43df1.dir/objects.a @CMakeFiles\cmTC_43df1.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_43df1.dir/objects.a -Wl,--no-whole-archive -o cmTC_43df1.exe -Wl,--out-implib,libcmTC_43df1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_43df1.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0f1ec/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0f1ec.dir\build.make CMakeFiles/cmTC_0f1ec.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f1ec.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_0f1ec.dir\CheckSymbolExists.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_0f1ec.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0f1ec.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_0f1ec.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_0f1ec.dir/objects.a @CMakeFiles\cmTC_0f1ec.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_0f1ec.dir/objects.a -Wl,--no-whole-archive -o cmTC_0f1ec.exe -Wl,--out-implib,libcmTC_0f1ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0f1ec.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
-File C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <windows.h>
 #include <winsock.h>
@@ -715,159 +715,159 @@ int main(int argc, char** argv)
 #endif
 }
 Performing Curl Test HAVE_BOOL_T passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_eb59f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_eb59f.dir\build.make CMakeFiles/cmTC_eb59f.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eb59f.dir/CurlTests.c.obj
-C:\MinGW\bin\gcc.exe   -w -DHAVE_BOOL_T  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_eb59f.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
-Linking C executable cmTC_eb59f.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_eb59f.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_eb59f.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_eb59f.dir/objects.a @CMakeFiles\cmTC_eb59f.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DHAVE_BOOL_T  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_eb59f.dir/objects.a -Wl,--no-whole-archive -o cmTC_eb59f.exe -Wl,--out-implib,libcmTC_eb59f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_eb59f.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_61bf1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_61bf1.dir\build.make CMakeFiles/cmTC_61bf1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61bf1.dir/CurlTests.c.obj
+C:\MinGW\bin\gcc.exe   -w -DHAVE_BOOL_T  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_61bf1.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
+Linking C executable cmTC_61bf1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_61bf1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_61bf1.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_61bf1.dir/objects.a @CMakeFiles\cmTC_61bf1.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DHAVE_BOOL_T  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_61bf1.dir/objects.a -Wl,--no-whole-archive -o cmTC_61bf1.exe -Wl,--out-implib,libcmTC_61bf1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_61bf1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Performing Curl Test HAVE_VARIADIC_MACROS_C99 passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1bfae/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1bfae.dir\build.make CMakeFiles/cmTC_1bfae.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1bfae.dir/CurlTests.c.obj
-C:\MinGW\bin\gcc.exe   -w -DHAVE_VARIADIC_MACROS_C99  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_1bfae.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
-Linking C executable cmTC_1bfae.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1bfae.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_1bfae.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_1bfae.dir/objects.a @CMakeFiles\cmTC_1bfae.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DHAVE_VARIADIC_MACROS_C99  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_1bfae.dir/objects.a -Wl,--no-whole-archive -o cmTC_1bfae.exe -Wl,--out-implib,libcmTC_1bfae.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1bfae.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9082a/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9082a.dir\build.make CMakeFiles/cmTC_9082a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9082a.dir/CurlTests.c.obj
+C:\MinGW\bin\gcc.exe   -w -DHAVE_VARIADIC_MACROS_C99  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_9082a.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
+Linking C executable cmTC_9082a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9082a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_9082a.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_9082a.dir/objects.a @CMakeFiles\cmTC_9082a.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DHAVE_VARIADIC_MACROS_C99  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_9082a.dir/objects.a -Wl,--no-whole-archive -o cmTC_9082a.exe -Wl,--out-implib,libcmTC_9082a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9082a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Performing Curl Test HAVE_VARIADIC_MACROS_GCC passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7ac76/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7ac76.dir\build.make CMakeFiles/cmTC_7ac76.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7ac76.dir/CurlTests.c.obj
-C:\MinGW\bin\gcc.exe   -w -DHAVE_VARIADIC_MACROS_GCC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_7ac76.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
-Linking C executable cmTC_7ac76.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7ac76.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_7ac76.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_7ac76.dir/objects.a @CMakeFiles\cmTC_7ac76.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DHAVE_VARIADIC_MACROS_GCC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_7ac76.dir/objects.a -Wl,--no-whole-archive -o cmTC_7ac76.exe -Wl,--out-implib,libcmTC_7ac76.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7ac76.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_14b10/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_14b10.dir\build.make CMakeFiles/cmTC_14b10.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14b10.dir/CurlTests.c.obj
+C:\MinGW\bin\gcc.exe   -w -DHAVE_VARIADIC_MACROS_GCC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_14b10.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
+Linking C executable cmTC_14b10.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_14b10.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_14b10.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_14b10.dir/objects.a @CMakeFiles\cmTC_14b10.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DHAVE_VARIADIC_MACROS_GCC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_14b10.dir/objects.a -Wl,--no-whole-archive -o cmTC_14b10.exe -Wl,--out-implib,libcmTC_14b10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_14b10.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Determining size of off_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_12972/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_12972.dir\build.make CMakeFiles/cmTC_12972.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12972.dir/SIZEOF_OFF_T.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_12972.dir\SIZEOF_OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c
-Linking C executable cmTC_12972.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_12972.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_12972.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_12972.dir/objects.a @CMakeFiles\cmTC_12972.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_12972.dir/objects.a -Wl,--no-whole-archive -o cmTC_12972.exe -Wl,--out-implib,libcmTC_12972.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_12972.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1606f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1606f.dir\build.make CMakeFiles/cmTC_1606f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1606f.dir/SIZEOF_OFF_T.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_1606f.dir\SIZEOF_OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c
+Linking C executable cmTC_1606f.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1606f.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_1606f.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_1606f.dir/objects.a @CMakeFiles\cmTC_1606f.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_1606f.dir/objects.a -Wl,--no-whole-archive -o cmTC_1606f.exe -Wl,--out-implib,libcmTC_1606f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1606f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of curl_off_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_75e83/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_75e83.dir\build.make CMakeFiles/cmTC_75e83.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_75e83.dir/SIZEOF_CURL_OFF_T.c.obj
-C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_75e83.dir/includes_C.rsp -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_75e83.dir\SIZEOF_CURL_OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c
-Linking C executable cmTC_75e83.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_75e83.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_75e83.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_75e83.dir/objects.a @CMakeFiles\cmTC_75e83.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_75e83.dir/objects.a -Wl,--no-whole-archive -o cmTC_75e83.exe -Wl,--out-implib,libcmTC_75e83.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_75e83.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_74e1d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_74e1d.dir\build.make CMakeFiles/cmTC_74e1d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74e1d.dir/SIZEOF_CURL_OFF_T.c.obj
+C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_74e1d.dir/includes_C.rsp -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_74e1d.dir\SIZEOF_CURL_OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c
+Linking C executable cmTC_74e1d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_74e1d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_74e1d.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_74e1d.dir/objects.a @CMakeFiles\cmTC_74e1d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_74e1d.dir/objects.a -Wl,--no-whole-archive -o cmTC_74e1d.exe -Wl,--out-implib,libcmTC_74e1d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_74e1d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of sig_atomic_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8312a/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8312a.dir\build.make CMakeFiles/cmTC_8312a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8312a.dir/SIZEOF_SIG_ATOMIC_T.c.obj
-C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_8312a.dir/includes_C.rsp -w -DHAVE_SIGNAL_H    -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_8312a.dir\SIZEOF_SIG_ATOMIC_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c
-Linking C static library libcmTC_8312a.a
-"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_8312a.dir\cmake_clean_target.cmake
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8312a.dir\link.txt --verbose=1
-C:\MinGW\bin\ar.exe qc libcmTC_8312a.a CMakeFiles/cmTC_8312a.dir/SIZEOF_SIG_ATOMIC_T.c.obj
-C:\MinGW\bin\ranlib.exe libcmTC_8312a.a
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_56059/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_56059.dir\build.make CMakeFiles/cmTC_56059.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56059.dir/SIZEOF_SIG_ATOMIC_T.c.obj
+C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_56059.dir/includes_C.rsp -w -DHAVE_SIGNAL_H    -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_56059.dir\SIZEOF_SIG_ATOMIC_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c
+Linking C static library libcmTC_56059.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_56059.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56059.dir\link.txt --verbose=1
+C:\MinGW\bin\ar.exe qc libcmTC_56059.a CMakeFiles/cmTC_56059.dir/SIZEOF_SIG_ATOMIC_T.c.obj
+C:\MinGW\bin\ranlib.exe libcmTC_56059.a
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of struct sockaddr_storage passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9eb81/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9eb81.dir\build.make CMakeFiles/cmTC_9eb81.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9eb81.dir/SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj
-C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_9eb81.dir/includes_C.rsp -w -DHAVE_SIGNAL_H    -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_9eb81.dir\SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c
-Linking C static library libcmTC_9eb81.a
-"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_9eb81.dir\cmake_clean_target.cmake
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9eb81.dir\link.txt --verbose=1
-C:\MinGW\bin\ar.exe qc libcmTC_9eb81.a CMakeFiles/cmTC_9eb81.dir/SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj
-C:\MinGW\bin\ranlib.exe libcmTC_9eb81.a
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1b5ce/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1b5ce.dir\build.make CMakeFiles/cmTC_1b5ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b5ce.dir/SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj
+C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_1b5ce.dir/includes_C.rsp -w -DHAVE_SIGNAL_H    -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_1b5ce.dir\SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c
+Linking C static library libcmTC_1b5ce.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_1b5ce.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1b5ce.dir\link.txt --verbose=1
+C:\MinGW\bin\ar.exe qc libcmTC_1b5ce.a CMakeFiles/cmTC_1b5ce.dir/SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj
+C:\MinGW\bin\ranlib.exe libcmTC_1b5ce.a
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file strings.h exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8ef64/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8ef64.dir\build.make CMakeFiles/cmTC_8ef64.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ef64.dir/CheckIncludeFile.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_8ef64.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c
-Linking C executable cmTC_8ef64.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8ef64.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8ef64.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_8ef64.dir/objects.a @CMakeFiles\cmTC_8ef64.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_8ef64.dir/objects.a -Wl,--no-whole-archive -o cmTC_8ef64.exe -Wl,--out-implib,libcmTC_8ef64.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8ef64.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_48d00/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_48d00.dir\build.make CMakeFiles/cmTC_48d00.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48d00.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_48d00.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_48d00.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_48d00.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_48d00.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_48d00.dir/objects.a @CMakeFiles\cmTC_48d00.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_48d00.dir/objects.a -Wl,--no-whole-archive -o cmTC_48d00.exe -Wl,--out-implib,libcmTC_48d00.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_48d00.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file unistd.h exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c1c42/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c1c42.dir\build.make CMakeFiles/cmTC_c1c42.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c1c42.dir/CheckIncludeFile.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_c1c42.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c
-Linking C executable cmTC_c1c42.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c1c42.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_c1c42.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_c1c42.dir/objects.a @CMakeFiles\cmTC_c1c42.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_c1c42.dir/objects.a -Wl,--no-whole-archive -o cmTC_c1c42.exe -Wl,--out-implib,libcmTC_c1c42.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c1c42.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7a079/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7a079.dir\build.make CMakeFiles/cmTC_7a079.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a079.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_7a079.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_7a079.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7a079.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_7a079.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_7a079.dir/objects.a @CMakeFiles\cmTC_7a079.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_7a079.dir/objects.a -Wl,--no-whole-archive -o cmTC_7a079.exe -Wl,--out-implib,libcmTC_7a079.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7a079.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Performing C SOURCE FILE Test HAVE_DIRENT_H succeeded with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cf6c0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cf6c0.dir\build.make CMakeFiles/cmTC_cf6c0.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cf6c0.dir/src.c.obj
-C:\MinGW\bin\gcc.exe -DHAVE_DIRENT_H  -w  -std=gnu11 -o CMakeFiles\cmTC_cf6c0.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\src.c
-Linking C executable cmTC_cf6c0.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cf6c0.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_cf6c0.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_cf6c0.dir/objects.a @CMakeFiles\cmTC_cf6c0.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_cf6c0.dir/objects.a -Wl,--no-whole-archive -o cmTC_cf6c0.exe -Wl,--out-implib,libcmTC_cf6c0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_cf6c0.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_99284/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_99284.dir\build.make CMakeFiles/cmTC_99284.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99284.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_DIRENT_H  -w  -std=gnu11 -o CMakeFiles\cmTC_99284.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_99284.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_99284.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_99284.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_99284.dir/objects.a @CMakeFiles\cmTC_99284.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_99284.dir/objects.a -Wl,--no-whole-archive -o cmTC_99284.exe -Wl,--out-implib,libcmTC_99284.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_99284.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -883,66 +883,66 @@ int main()
 }
 
 Determining if files sys/types.h;ctype.h;direct.h;errno.h;fcntl.h;io.h;limits.h;locale.h;memory.h;process.h;signal.h;stdarg.h;stdlib.h;string.h;strings.h;sys/param.h exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_206e1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_206e1.dir\build.make CMakeFiles/cmTC_206e1.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_206e1.dir/HAVE_SYS_PARAM_H.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_206e1.dir\HAVE_SYS_PARAM_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
-Linking C executable cmTC_206e1.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_206e1.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_206e1.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_206e1.dir/objects.a @CMakeFiles\cmTC_206e1.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_206e1.dir/objects.a -Wl,--no-whole-archive -o cmTC_206e1.exe -Wl,--out-implib,libcmTC_206e1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_206e1.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b526b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b526b.dir\build.make CMakeFiles/cmTC_b526b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b526b.dir/HAVE_SYS_PARAM_H.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_b526b.dir\HAVE_SYS_PARAM_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
+Linking C executable cmTC_b526b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b526b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_b526b.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_b526b.dir/objects.a @CMakeFiles\cmTC_b526b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_b526b.dir/objects.a -Wl,--no-whole-archive -o cmTC_b526b.exe -Wl,--out-implib,libcmTC_b526b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b526b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if files sys/types.h;ctype.h;direct.h;errno.h;fcntl.h;io.h;limits.h;locale.h;memory.h;process.h;signal.h;stdarg.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a27f2/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a27f2.dir\build.make CMakeFiles/cmTC_a27f2.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a27f2.dir/HAVE_SYS_TIME_H.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_a27f2.dir\HAVE_SYS_TIME_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
-Linking C executable cmTC_a27f2.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a27f2.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a27f2.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a27f2.dir/objects.a @CMakeFiles\cmTC_a27f2.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_a27f2.dir/objects.a -Wl,--no-whole-archive -o cmTC_a27f2.exe -Wl,--out-implib,libcmTC_a27f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a27f2.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_3722c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3722c.dir\build.make CMakeFiles/cmTC_3722c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3722c.dir/HAVE_SYS_TIME_H.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_3722c.dir\HAVE_SYS_TIME_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
+Linking C executable cmTC_3722c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3722c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_3722c.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_3722c.dir/objects.a @CMakeFiles\cmTC_3722c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_3722c.dir/objects.a -Wl,--no-whole-archive -o cmTC_3722c.exe -Wl,--out-implib,libcmTC_3722c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3722c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if files sys/types.h;ctype.h;direct.h;errno.h;fcntl.h;io.h;limits.h;locale.h;memory.h;process.h;signal.h;stdarg.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/utime.h;time.h;unistd.h;utime.h exist passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_fc388/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc388.dir\build.make CMakeFiles/cmTC_fc388.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fc388.dir/HAVE_UTIME_H.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_fc388.dir\HAVE_UTIME_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_UTIME_H.c
-Linking C executable cmTC_fc388.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fc388.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_fc388.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_fc388.dir/objects.a @CMakeFiles\cmTC_fc388.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_fc388.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc388.exe -Wl,--out-implib,libcmTC_fc388.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fc388.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d2f5c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d2f5c.dir\build.make CMakeFiles/cmTC_d2f5c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2f5c.dir/HAVE_UTIME_H.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_d2f5c.dir\HAVE_UTIME_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_UTIME_H.c
+Linking C executable cmTC_d2f5c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d2f5c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d2f5c.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_d2f5c.dir/objects.a @CMakeFiles\cmTC_d2f5c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_d2f5c.dir/objects.a -Wl,--no-whole-archive -o cmTC_d2f5c.exe -Wl,--out-implib,libcmTC_d2f5c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d2f5c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Performing C SOURCE FILE Test SAFE_TO_DEFINE_EXTENSIONS succeeded with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_bfee1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bfee1.dir\build.make CMakeFiles/cmTC_bfee1.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bfee1.dir/src.c.obj
-C:\MinGW\bin\gcc.exe -DSAFE_TO_DEFINE_EXTENSIONS  -w  -std=gnu11 -o CMakeFiles\cmTC_bfee1.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\src.c
-Linking C executable cmTC_bfee1.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bfee1.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_bfee1.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_bfee1.dir/objects.a @CMakeFiles\cmTC_bfee1.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_bfee1.dir/objects.a -Wl,--no-whole-archive -o cmTC_bfee1.exe -Wl,--out-implib,libcmTC_bfee1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bfee1.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_31ac9/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_31ac9.dir\build.make CMakeFiles/cmTC_31ac9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31ac9.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DSAFE_TO_DEFINE_EXTENSIONS  -w  -std=gnu11 -o CMakeFiles\cmTC_31ac9.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_31ac9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_31ac9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_31ac9.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_31ac9.dir/objects.a @CMakeFiles\cmTC_31ac9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_31ac9.dir/objects.a -Wl,--no-whole-archive -o cmTC_31ac9.exe -Wl,--out-implib,libcmTC_31ac9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_31ac9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -950,98 +950,98 @@ Source file was:
    
    int main() { return 0;}
 Determining if the function mkstemp exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_bda10/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bda10.dir\build.make CMakeFiles/cmTC_bda10.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bda10.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=mkstemp  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_bda10.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_bda10.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bda10.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_bda10.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_bda10.dir/objects.a @CMakeFiles\cmTC_bda10.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=mkstemp  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_bda10.dir/objects.a -Wl,--no-whole-archive -o cmTC_bda10.exe -Wl,--out-implib,libcmTC_bda10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bda10.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_62974/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_62974.dir\build.make CMakeFiles/cmTC_62974.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62974.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=mkstemp  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_62974.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_62974.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_62974.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_62974.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_62974.dir/objects.a @CMakeFiles\cmTC_62974.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=mkstemp  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_62974.dir/objects.a -Wl,--no-whole-archive -o cmTC_62974.exe -Wl,--out-implib,libcmTC_62974.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_62974.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function vprintf exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9cdaf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9cdaf.dir\build.make CMakeFiles/cmTC_9cdaf.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9cdaf.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=vprintf  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_9cdaf.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_9cdaf.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9cdaf.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_9cdaf.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_9cdaf.dir/objects.a @CMakeFiles\cmTC_9cdaf.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=vprintf  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_9cdaf.dir/objects.a -Wl,--no-whole-archive -o cmTC_9cdaf.exe -Wl,--out-implib,libcmTC_9cdaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9cdaf.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_da7c1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_da7c1.dir\build.make CMakeFiles/cmTC_da7c1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da7c1.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=vprintf  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_da7c1.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_da7c1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_da7c1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_da7c1.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_da7c1.dir/objects.a @CMakeFiles\cmTC_da7c1.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=vprintf  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_da7c1.dir/objects.a -Wl,--no-whole-archive -o cmTC_da7c1.exe -Wl,--out-implib,libcmTC_da7c1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_da7c1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function wmemcmp exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ebcca/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ebcca.dir\build.make CMakeFiles/cmTC_ebcca.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ebcca.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemcmp  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_ebcca.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_ebcca.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ebcca.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_ebcca.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_ebcca.dir/objects.a @CMakeFiles\cmTC_ebcca.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemcmp  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_ebcca.dir/objects.a -Wl,--no-whole-archive -o cmTC_ebcca.exe -Wl,--out-implib,libcmTC_ebcca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ebcca.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_33ce6/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_33ce6.dir\build.make CMakeFiles/cmTC_33ce6.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33ce6.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemcmp  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_33ce6.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_33ce6.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_33ce6.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_33ce6.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_33ce6.dir/objects.a @CMakeFiles\cmTC_33ce6.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemcmp  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_33ce6.dir/objects.a -Wl,--no-whole-archive -o cmTC_33ce6.exe -Wl,--out-implib,libcmTC_33ce6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_33ce6.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function wmemcpy exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_15c2c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_15c2c.dir\build.make CMakeFiles/cmTC_15c2c.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_15c2c.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemcpy  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_15c2c.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_15c2c.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_15c2c.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_15c2c.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_15c2c.dir/objects.a @CMakeFiles\cmTC_15c2c.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemcpy  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_15c2c.dir/objects.a -Wl,--no-whole-archive -o cmTC_15c2c.exe -Wl,--out-implib,libcmTC_15c2c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_15c2c.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2e456/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2e456.dir\build.make CMakeFiles/cmTC_2e456.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e456.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemcpy  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_2e456.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_2e456.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2e456.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2e456.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_2e456.dir/objects.a @CMakeFiles\cmTC_2e456.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemcpy  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_2e456.dir/objects.a -Wl,--no-whole-archive -o cmTC_2e456.exe -Wl,--out-implib,libcmTC_2e456.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2e456.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function wmemmove exists passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a389b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a389b.dir\build.make CMakeFiles/cmTC_a389b.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a389b.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemmove  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_a389b.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_a389b.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a389b.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a389b.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a389b.dir/objects.a @CMakeFiles\cmTC_a389b.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemmove  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_a389b.dir/objects.a -Wl,--no-whole-archive -o cmTC_a389b.exe -Wl,--out-implib,libcmTC_a389b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a389b.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a6b32/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a6b32.dir\build.make CMakeFiles/cmTC_a6b32.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6b32.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=wmemmove  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_a6b32.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_a6b32.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a6b32.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a6b32.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a6b32.dir/objects.a @CMakeFiles\cmTC_a6b32.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=wmemmove  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_a6b32.dir/objects.a -Wl,--no-whole-archive -o cmTC_a6b32.exe -Wl,--out-implib,libcmTC_a6b32.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a6b32.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Performing C SOURCE FILE Test TIME_WITH_SYS_TIME succeeded with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_63dfa/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_63dfa.dir\build.make CMakeFiles/cmTC_63dfa.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63dfa.dir/src.c.obj
-C:\MinGW\bin\gcc.exe -DTIME_WITH_SYS_TIME  -w  -std=gnu11 -o CMakeFiles\cmTC_63dfa.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\src.c
-Linking C executable cmTC_63dfa.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_63dfa.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_63dfa.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_63dfa.dir/objects.a @CMakeFiles\cmTC_63dfa.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_63dfa.dir/objects.a -Wl,--no-whole-archive -o cmTC_63dfa.exe -Wl,--out-implib,libcmTC_63dfa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_63dfa.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a856c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a856c.dir\build.make CMakeFiles/cmTC_a856c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a856c.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DTIME_WITH_SYS_TIME  -w  -std=gnu11 -o CMakeFiles\cmTC_a856c.dir\src.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_a856c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a856c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a856c.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a856c.dir/objects.a @CMakeFiles\cmTC_a856c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_a856c.dir/objects.a -Wl,--no-whole-archive -o cmTC_a856c.exe -Wl,--out-implib,libcmTC_a856c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a856c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -1057,130 +1057,130 @@ int main()
 }
 
 Determining size of dev_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_821fb/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_821fb.dir\build.make CMakeFiles/cmTC_821fb.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_821fb.dir/DEV_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_821fb.dir\DEV_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\DEV_T.c
-Linking C executable cmTC_821fb.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_821fb.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_821fb.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_821fb.dir/objects.a @CMakeFiles\cmTC_821fb.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_821fb.dir/objects.a -Wl,--no-whole-archive -o cmTC_821fb.exe -Wl,--out-implib,libcmTC_821fb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_821fb.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_411b8/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_411b8.dir\build.make CMakeFiles/cmTC_411b8.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_411b8.dir/DEV_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_411b8.dir\DEV_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\DEV_T.c
+Linking C executable cmTC_411b8.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_411b8.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_411b8.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_411b8.dir/objects.a @CMakeFiles\cmTC_411b8.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_411b8.dir/objects.a -Wl,--no-whole-archive -o cmTC_411b8.exe -Wl,--out-implib,libcmTC_411b8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_411b8.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of mode_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d8dd0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d8dd0.dir\build.make CMakeFiles/cmTC_d8dd0.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d8dd0.dir/MODE_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_d8dd0.dir\MODE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\MODE_T.c
-Linking C executable cmTC_d8dd0.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d8dd0.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d8dd0.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_d8dd0.dir/objects.a @CMakeFiles\cmTC_d8dd0.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_d8dd0.dir/objects.a -Wl,--no-whole-archive -o cmTC_d8dd0.exe -Wl,--out-implib,libcmTC_d8dd0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d8dd0.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_56e4d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_56e4d.dir\build.make CMakeFiles/cmTC_56e4d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56e4d.dir/MODE_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_56e4d.dir\MODE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\MODE_T.c
+Linking C executable cmTC_56e4d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56e4d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_56e4d.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_56e4d.dir/objects.a @CMakeFiles\cmTC_56e4d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_56e4d.dir/objects.a -Wl,--no-whole-archive -o cmTC_56e4d.exe -Wl,--out-implib,libcmTC_56e4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_56e4d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of off_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0c427/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0c427.dir\build.make CMakeFiles/cmTC_0c427.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0c427.dir/OFF_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_0c427.dir\OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\OFF_T.c
-Linking C executable cmTC_0c427.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0c427.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_0c427.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_0c427.dir/objects.a @CMakeFiles\cmTC_0c427.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_0c427.dir/objects.a -Wl,--no-whole-archive -o cmTC_0c427.exe -Wl,--out-implib,libcmTC_0c427.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0c427.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_aa4d9/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_aa4d9.dir\build.make CMakeFiles/cmTC_aa4d9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa4d9.dir/OFF_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_aa4d9.dir\OFF_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\OFF_T.c
+Linking C executable cmTC_aa4d9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aa4d9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_aa4d9.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_aa4d9.dir/objects.a @CMakeFiles\cmTC_aa4d9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_aa4d9.dir/objects.a -Wl,--no-whole-archive -o cmTC_aa4d9.exe -Wl,--out-implib,libcmTC_aa4d9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_aa4d9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of size_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_62c10/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_62c10.dir\build.make CMakeFiles/cmTC_62c10.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_62c10.dir/SIZE_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_62c10.dir\SIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZE_T.c
-Linking C executable cmTC_62c10.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_62c10.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_62c10.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_62c10.dir/objects.a @CMakeFiles\cmTC_62c10.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_62c10.dir/objects.a -Wl,--no-whole-archive -o cmTC_62c10.exe -Wl,--out-implib,libcmTC_62c10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_62c10.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_33c24/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_33c24.dir\build.make CMakeFiles/cmTC_33c24.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33c24.dir/SIZE_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_33c24.dir\SIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZE_T.c
+Linking C executable cmTC_33c24.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_33c24.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_33c24.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_33c24.dir/objects.a @CMakeFiles\cmTC_33c24.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_33c24.dir/objects.a -Wl,--no-whole-archive -o cmTC_33c24.exe -Wl,--out-implib,libcmTC_33c24.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_33c24.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of ssize_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c06f2/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c06f2.dir\build.make CMakeFiles/cmTC_c06f2.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c06f2.dir/SSIZE_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_c06f2.dir\SSIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SSIZE_T.c
-Linking C executable cmTC_c06f2.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c06f2.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_c06f2.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_c06f2.dir/objects.a @CMakeFiles\cmTC_c06f2.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_c06f2.dir/objects.a -Wl,--no-whole-archive -o cmTC_c06f2.exe -Wl,--out-implib,libcmTC_c06f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c06f2.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_02e80/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_02e80.dir\build.make CMakeFiles/cmTC_02e80.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02e80.dir/SSIZE_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_02e80.dir\SSIZE_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SSIZE_T.c
+Linking C executable cmTC_02e80.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_02e80.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_02e80.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_02e80.dir/objects.a @CMakeFiles\cmTC_02e80.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_02e80.dir/objects.a -Wl,--no-whole-archive -o cmTC_02e80.exe -Wl,--out-implib,libcmTC_02e80.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_02e80.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of pid_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1d855/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1d855.dir\build.make CMakeFiles/cmTC_1d855.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1d855.dir/PID_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_1d855.dir\PID_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\PID_T.c
-Linking C executable cmTC_1d855.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1d855.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_1d855.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_1d855.dir/objects.a @CMakeFiles\cmTC_1d855.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_1d855.dir/objects.a -Wl,--no-whole-archive -o cmTC_1d855.exe -Wl,--out-implib,libcmTC_1d855.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1d855.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f693f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f693f.dir\build.make CMakeFiles/cmTC_f693f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f693f.dir/PID_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_f693f.dir\PID_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\PID_T.c
+Linking C executable cmTC_f693f.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f693f.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_f693f.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_f693f.dir/objects.a @CMakeFiles\cmTC_f693f.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_f693f.dir/objects.a -Wl,--no-whole-archive -o cmTC_f693f.exe -Wl,--out-implib,libcmTC_f693f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f693f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of wchar_t passed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a950d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a950d.dir\build.make CMakeFiles/cmTC_a950d.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a950d.dir/SIZEOF_WCHAR_T.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_a950d.dir\SIZEOF_WCHAR_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c
-Linking C executable cmTC_a950d.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a950d.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_a950d.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_a950d.dir/objects.a @CMakeFiles\cmTC_a950d.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_a950d.dir/objects.a -Wl,--no-whole-archive -o cmTC_a950d.exe -Wl,--out-implib,libcmTC_a950d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a950d.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_98a1c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_98a1c.dir\build.make CMakeFiles/cmTC_98a1c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98a1c.dir/SIZEOF_WCHAR_T.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_98a1c.dir\SIZEOF_WCHAR_T.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c
+Linking C executable cmTC_98a1c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_98a1c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_98a1c.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_98a1c.dir/objects.a @CMakeFiles\cmTC_98a1c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w  -Wl,--whole-archive CMakeFiles\cmTC_98a1c.dir/objects.a -Wl,--no-whole-archive -o cmTC_98a1c.exe -Wl,--out-implib,libcmTC_98a1c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_98a1c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 
 Performing C++ SOURCE FILE Test run_pic_test succeeded with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c1a72/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c1a72.dir\build.make CMakeFiles/cmTC_c1a72.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c1a72.dir/src.cxx.obj
-C:\MinGW\bin\g++.exe -Drun_pic_test  -fPIE -std=gnu++14 -o CMakeFiles\cmTC_c1a72.dir\src.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\src.cxx
-Linking CXX executable cmTC_c1a72.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c1a72.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_c1a72.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_c1a72.dir/objects.a @CMakeFiles\cmTC_c1a72.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_c1a72.dir/objects.a -Wl,--no-whole-archive -o cmTC_c1a72.exe -Wl,--out-implib,libcmTC_c1a72.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c1a72.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7ee51/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7ee51.dir\build.make CMakeFiles/cmTC_7ee51.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7ee51.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe -Drun_pic_test  -fPIE -std=gnu++14 -o CMakeFiles\cmTC_7ee51.dir\src.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_7ee51.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7ee51.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_7ee51.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_7ee51.dir/objects.a @CMakeFiles\cmTC_7ee51.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_7ee51.dir/objects.a -Wl,--no-whole-archive -o cmTC_7ee51.exe -Wl,--out-implib,libcmTC_7ee51.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7ee51.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
 
 
 Source file was:

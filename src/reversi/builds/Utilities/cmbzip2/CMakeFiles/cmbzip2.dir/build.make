@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/depend.make
@@ -70,108 +70,108 @@ include Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/blocksort.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/blocksort.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj -MF CMakeFiles\cmbzip2.dir\blocksort.c.obj.d -o CMakeFiles\cmbzip2.dir\blocksort.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.obj -MF CMakeFiles\cmbzip2.dir\blocksort.c.obj.d -o CMakeFiles\cmbzip2.dir\blocksort.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/blocksort.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c > CMakeFiles\cmbzip2.dir\blocksort.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c > CMakeFiles\cmbzip2.dir\blocksort.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/blocksort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/blocksort.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c -o CMakeFiles\cmbzip2.dir\blocksort.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\blocksort.c -o CMakeFiles\cmbzip2.dir\blocksort.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/huffman.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/huffman.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj -MF CMakeFiles\cmbzip2.dir\huffman.c.obj.d -o CMakeFiles\cmbzip2.dir\huffman.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.obj -MF CMakeFiles\cmbzip2.dir\huffman.c.obj.d -o CMakeFiles\cmbzip2.dir\huffman.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/huffman.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c > CMakeFiles\cmbzip2.dir\huffman.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c > CMakeFiles\cmbzip2.dir\huffman.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/huffman.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/huffman.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c -o CMakeFiles\cmbzip2.dir\huffman.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\huffman.c -o CMakeFiles\cmbzip2.dir\huffman.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/crctable.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/crctable.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj -MF CMakeFiles\cmbzip2.dir\crctable.c.obj.d -o CMakeFiles\cmbzip2.dir\crctable.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.obj -MF CMakeFiles\cmbzip2.dir\crctable.c.obj.d -o CMakeFiles\cmbzip2.dir\crctable.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/crctable.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c > CMakeFiles\cmbzip2.dir\crctable.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c > CMakeFiles\cmbzip2.dir\crctable.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/crctable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/crctable.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c -o CMakeFiles\cmbzip2.dir\crctable.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\crctable.c -o CMakeFiles\cmbzip2.dir\crctable.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/randtable.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/randtable.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj -MF CMakeFiles\cmbzip2.dir\randtable.c.obj.d -o CMakeFiles\cmbzip2.dir\randtable.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.obj -MF CMakeFiles\cmbzip2.dir\randtable.c.obj.d -o CMakeFiles\cmbzip2.dir\randtable.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/randtable.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c > CMakeFiles\cmbzip2.dir\randtable.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c > CMakeFiles\cmbzip2.dir\randtable.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/randtable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/randtable.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c -o CMakeFiles\cmbzip2.dir\randtable.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\randtable.c -o CMakeFiles\cmbzip2.dir\randtable.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/compress.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/compress.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj -MF CMakeFiles\cmbzip2.dir\compress.c.obj.d -o CMakeFiles\cmbzip2.dir\compress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.obj -MF CMakeFiles\cmbzip2.dir\compress.c.obj.d -o CMakeFiles\cmbzip2.dir\compress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/compress.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c > CMakeFiles\cmbzip2.dir\compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c > CMakeFiles\cmbzip2.dir\compress.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compress.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/compress.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c -o CMakeFiles\cmbzip2.dir\compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\compress.c -o CMakeFiles\cmbzip2.dir\compress.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/decompress.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/decompress.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj -MF CMakeFiles\cmbzip2.dir\decompress.c.obj.d -o CMakeFiles\cmbzip2.dir\decompress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.obj -MF CMakeFiles\cmbzip2.dir\decompress.c.obj.d -o CMakeFiles\cmbzip2.dir\decompress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/decompress.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c > CMakeFiles\cmbzip2.dir\decompress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c > CMakeFiles\cmbzip2.dir\decompress.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompress.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/decompress.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c -o CMakeFiles\cmbzip2.dir\decompress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\decompress.c -o CMakeFiles\cmbzip2.dir\decompress.c.s
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/flags.make
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/includes_C.rsp
-Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/bzlib.c
+Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmbzip2/bzlib.c
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj -MF CMakeFiles\cmbzip2.dir\bzlib.c.obj.d -o CMakeFiles\cmbzip2.dir\bzlib.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj -MF CMakeFiles\cmbzip2.dir\bzlib.c.obj.d -o CMakeFiles\cmbzip2.dir\bzlib.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmbzip2.dir/bzlib.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c > CMakeFiles\cmbzip2.dir\bzlib.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c > CMakeFiles\cmbzip2.dir\bzlib.c.i
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmbzip2.dir/bzlib.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c -o CMakeFiles\cmbzip2.dir\bzlib.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2\bzlib.c -o CMakeFiles\cmbzip2.dir\bzlib.c.s
 
 # Object files for target cmbzip2
 cmbzip2_OBJECTS = \
@@ -195,19 +195,19 @@ Utilities/cmbzip2/libcmbzip2.a: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/decompr
 Utilities/cmbzip2/libcmbzip2.a: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/bzlib.c.obj
 Utilities/cmbzip2/libcmbzip2.a: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/build.make
 Utilities/cmbzip2/libcmbzip2.a: Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libcmbzip2.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && $(CMAKE_COMMAND) -P CMakeFiles\cmbzip2.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmbzip2.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libcmbzip2.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && $(CMAKE_COMMAND) -P CMakeFiles\cmbzip2.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmbzip2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/build: Utilities/cmbzip2/libcmbzip2.a
 .PHONY : Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/build
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 && $(CMAKE_COMMAND) -P CMakeFiles\cmbzip2.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 && $(CMAKE_COMMAND) -P CMakeFiles\cmbzip2.dir\cmake_clean.cmake
 .PHONY : Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/clean
 
 Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2 C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2 C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmbzip2\CMakeFiles\cmbzip2.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmbzip2 C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2 C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmbzip2\CMakeFiles\cmbzip2.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/depend
 

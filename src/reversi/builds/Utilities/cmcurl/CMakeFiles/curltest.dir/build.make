@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/cmcurl/CMakeFiles/curltest.dir/depend.make
@@ -70,18 +70,18 @@ include Utilities/cmcurl/CMakeFiles/curltest.dir/flags.make
 
 Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj: Utilities/cmcurl/CMakeFiles/curltest.dir/flags.make
 Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj: Utilities/cmcurl/CMakeFiles/curltest.dir/includes_C.rsp
-Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/curltest.c
+Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/curltest.c
 Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj: Utilities/cmcurl/CMakeFiles/curltest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj -MF CMakeFiles\curltest.dir\curltest.c.obj.d -o CMakeFiles\curltest.dir\curltest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.obj -MF CMakeFiles\curltest.dir\curltest.c.obj.d -o CMakeFiles\curltest.dir\curltest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c
 
 Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curltest.dir/curltest.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c > CMakeFiles\curltest.dir\curltest.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c > CMakeFiles\curltest.dir\curltest.c.i
 
 Utilities/cmcurl/CMakeFiles/curltest.dir/curltest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curltest.dir/curltest.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c -o CMakeFiles\curltest.dir\curltest.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\curltest.c -o CMakeFiles\curltest.dir\curltest.c.s
 
 # Object files for target curltest
 curltest_OBJECTS = \
@@ -98,18 +98,18 @@ Utilities/cmcurl/curltest.exe: Utilities/cmzlib/libcmzlib.a
 Utilities/cmcurl/curltest.exe: Utilities/cmcurl/CMakeFiles/curltest.dir/linklibs.rsp
 Utilities/cmcurl/curltest.exe: Utilities/cmcurl/CMakeFiles/curltest.dir/objects1.rsp
 Utilities/cmcurl/curltest.exe: Utilities/cmcurl/CMakeFiles/curltest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable curltest.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\curltest.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable curltest.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\curltest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/cmcurl/CMakeFiles/curltest.dir/build: Utilities/cmcurl/curltest.exe
 .PHONY : Utilities/cmcurl/CMakeFiles/curltest.dir/build
 
 Utilities/cmcurl/CMakeFiles/curltest.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl && $(CMAKE_COMMAND) -P CMakeFiles\curltest.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl && $(CMAKE_COMMAND) -P CMakeFiles\curltest.dir\cmake_clean.cmake
 .PHONY : Utilities/cmcurl/CMakeFiles/curltest.dir/clean
 
 Utilities/cmcurl/CMakeFiles/curltest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\CMakeFiles\curltest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\CMakeFiles\curltest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/cmcurl/CMakeFiles/curltest.dir/depend
 

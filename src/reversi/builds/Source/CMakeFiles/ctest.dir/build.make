@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/CMakeFiles/ctest.dir/depend.make
@@ -70,18 +70,18 @@ include Source/CMakeFiles/ctest.dir/flags.make
 
 Source/CMakeFiles/ctest.dir/ctest.cxx.obj: Source/CMakeFiles/ctest.dir/flags.make
 Source/CMakeFiles/ctest.dir/ctest.cxx.obj: Source/CMakeFiles/ctest.dir/includes_CXX.rsp
-Source/CMakeFiles/ctest.dir/ctest.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/ctest.cxx
+Source/CMakeFiles/ctest.dir/ctest.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/ctest.cxx
 Source/CMakeFiles/ctest.dir/ctest.cxx.obj: Source/CMakeFiles/ctest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/CMakeFiles/ctest.dir/ctest.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/ctest.dir/ctest.cxx.obj -MF CMakeFiles\ctest.dir\ctest.cxx.obj.d -o CMakeFiles\ctest.dir\ctest.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/CMakeFiles/ctest.dir/ctest.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/CMakeFiles/ctest.dir/ctest.cxx.obj -MF CMakeFiles\ctest.dir\ctest.cxx.obj.d -o CMakeFiles\ctest.dir\ctest.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx
 
 Source/CMakeFiles/ctest.dir/ctest.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ctest.dir/ctest.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx > CMakeFiles\ctest.dir\ctest.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx > CMakeFiles\ctest.dir\ctest.cxx.i
 
 Source/CMakeFiles/ctest.dir/ctest.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ctest.dir/ctest.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx -o CMakeFiles\ctest.dir\ctest.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\ctest.cxx -o CMakeFiles\ctest.dir\ctest.cxx.s
 
 # Object files for target ctest
 ctest_OBJECTS = \
@@ -89,7 +89,7 @@ ctest_OBJECTS = \
 
 # External object files for target ctest
 ctest_EXTERNAL_OBJECTS = \
-"C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj"
+"C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj"
 
 bin/ctest.exe: Source/CMakeFiles/ctest.dir/ctest.cxx.obj
 bin/ctest.exe: Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj
@@ -109,22 +109,22 @@ bin/ctest.exe: Utilities/cmlibrhash/libcmlibrhash.a
 bin/ctest.exe: Utilities/cmcurl/lib/libcmcurl.a
 bin/ctest.exe: Utilities/cmzlib/libcmzlib.a
 bin/ctest.exe: Utilities/cmnghttp2/libcmnghttp2.a
-bin/ctest.exe: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/cmake.version.manifest
+bin/ctest.exe: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/cmake.version.manifest
 bin/ctest.exe: Source/CMakeFiles/ctest.dir/linklibs.rsp
 bin/ctest.exe: Source/CMakeFiles/ctest.dir/objects1.rsp
 bin/ctest.exe: Source/CMakeFiles/ctest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ..\bin\ctest.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ctest.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ..\bin\ctest.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ctest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/CMakeFiles/ctest.dir/build: bin/ctest.exe
 .PHONY : Source/CMakeFiles/ctest.dir/build
 
 Source/CMakeFiles/ctest.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source && $(CMAKE_COMMAND) -P CMakeFiles\ctest.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source && $(CMAKE_COMMAND) -P CMakeFiles\ctest.dir\cmake_clean.cmake
 .PHONY : Source/CMakeFiles/ctest.dir/clean
 
 Source/CMakeFiles/ctest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\CMakeFiles\ctest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\CMakeFiles\ctest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/CMakeFiles/ctest.dir/depend
 

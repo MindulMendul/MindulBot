@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/cmsysTestsCxx.cxx" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj.d"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/cmsysTestsCxx.cxx" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/cmsysTestsCxx.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments.cxx" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testCommandLineArguments1.cxx" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testCommandLineArguments1.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/testConfigure.cxx" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestsCxx.dir/testConfigure.cxx.obj.d"
@@ -24,7 +24,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/cmsys.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/cmsys.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

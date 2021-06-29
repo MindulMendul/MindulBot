@@ -4,5 +4,5 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/DelphiCoverage
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/Testing/DelphiCoverage
+SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/DelphiCoverage
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Testing/DelphiCoverage

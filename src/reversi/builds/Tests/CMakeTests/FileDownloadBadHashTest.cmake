@@ -2,7 +2,7 @@ if(NOT "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.
   set(slash /)
 endif()
 set(url "file://${slash}C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeTests/FileDownloadInput.png")
-set(dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeTests/downloads")
+set(dir "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeTests/downloads")
 
 file(DOWNLOAD
   ${url}

@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Utility rule file for test_clean.
 
@@ -66,8 +66,8 @@ include Tests/CMakeFiles/test_clean.dir/compiler_depend.make
 include Tests/CMakeFiles/test_clean.dir/progress.make
 
 Tests/CMakeFiles/test_clean:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Removing test build directories."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/test_clean.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Removing test build directories."
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/test_clean.cmake
 
 test_clean: Tests/CMakeFiles/test_clean
 test_clean: Tests/CMakeFiles/test_clean.dir/build.make
@@ -78,10 +78,10 @@ Tests/CMakeFiles/test_clean.dir/build: test_clean
 .PHONY : Tests/CMakeFiles/test_clean.dir/build
 
 Tests/CMakeFiles/test_clean.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests && $(CMAKE_COMMAND) -P CMakeFiles\test_clean.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests && $(CMAKE_COMMAND) -P CMakeFiles\test_clean.dir\cmake_clean.cmake
 .PHONY : Tests/CMakeFiles/test_clean.dir/clean
 
 Tests/CMakeFiles/test_clean.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeFiles\test_clean.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeFiles\test_clean.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/CMakeFiles/test_clean.dir/depend
 

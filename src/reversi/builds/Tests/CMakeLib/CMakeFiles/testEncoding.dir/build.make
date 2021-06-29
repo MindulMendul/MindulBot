@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Tests/CMakeLib/CMakeFiles/testEncoding.dir/depend.make
@@ -70,18 +70,18 @@ include Tests/CMakeLib/CMakeFiles/testEncoding.dir/flags.make
 
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj: Tests/CMakeLib/CMakeFiles/testEncoding.dir/flags.make
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj: Tests/CMakeLib/CMakeFiles/testEncoding.dir/includes_CXX.rsp
-Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testEncoding.cxx
+Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testEncoding.cxx
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj: Tests/CMakeLib/CMakeFiles/testEncoding.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj -MF CMakeFiles\testEncoding.dir\testEncoding.cxx.obj.d -o CMakeFiles\testEncoding.dir\testEncoding.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.obj -MF CMakeFiles\testEncoding.dir\testEncoding.cxx.obj.d -o CMakeFiles\testEncoding.dir\testEncoding.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx
 
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testEncoding.dir/testEncoding.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx > CMakeFiles\testEncoding.dir\testEncoding.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx > CMakeFiles\testEncoding.dir\testEncoding.cxx.i
 
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/testEncoding.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testEncoding.dir/testEncoding.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx -o CMakeFiles\testEncoding.dir\testEncoding.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib\testEncoding.cxx -o CMakeFiles\testEncoding.dir\testEncoding.cxx.s
 
 # Object files for target testEncoding
 testEncoding_OBJECTS = \
@@ -96,18 +96,18 @@ Tests/CMakeLib/testEncoding.exe: Source/kwsys/libcmsys.a
 Tests/CMakeLib/testEncoding.exe: Tests/CMakeLib/CMakeFiles/testEncoding.dir/linklibs.rsp
 Tests/CMakeLib/testEncoding.exe: Tests/CMakeLib/CMakeFiles/testEncoding.dir/objects1.rsp
 Tests/CMakeLib/testEncoding.exe: Tests/CMakeLib/CMakeFiles/testEncoding.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testEncoding.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testEncoding.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testEncoding.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testEncoding.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/build: Tests/CMakeLib/testEncoding.exe
 .PHONY : Tests/CMakeLib/CMakeFiles/testEncoding.dir/build
 
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib && $(CMAKE_COMMAND) -P CMakeFiles\testEncoding.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib && $(CMAKE_COMMAND) -P CMakeFiles\testEncoding.dir\cmake_clean.cmake
 .PHONY : Tests/CMakeLib/CMakeFiles/testEncoding.dir/clean
 
 Tests/CMakeLib/CMakeFiles/testEncoding.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\CMakeLib\CMakeFiles\testEncoding.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\CMakeLib\CMakeFiles\testEncoding.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Tests/CMakeLib/CMakeFiles/testEncoding.dir/depend
 

@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/depend.make
@@ -70,108 +70,108 @@ include Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_C.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test.c
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test.c
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj -MF CMakeFiles\kwiml_test.dir\test.c.obj.d -o CMakeFiles\kwiml_test.dir\test.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.obj -MF CMakeFiles\kwiml_test.dir\test.c.obj.d -o CMakeFiles\kwiml_test.dir\test.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kwiml_test.dir/test.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c > CMakeFiles\kwiml_test.dir\test.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c > CMakeFiles\kwiml_test.dir\test.c.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kwiml_test.dir/test.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c -o CMakeFiles\kwiml_test.dir\test.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test.c -o CMakeFiles\kwiml_test.dir\test.c.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_C.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_abi_C.c
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_abi_C.c
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_abi_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_abi_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_abi_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_abi_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kwiml_test.dir/test_abi_C.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c > CMakeFiles\kwiml_test.dir\test_abi_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c > CMakeFiles\kwiml_test.dir\test_abi_C.c.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_C.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kwiml_test.dir/test_abi_C.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c -o CMakeFiles\kwiml_test.dir\test_abi_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_C.c -o CMakeFiles\kwiml_test.dir\test_abi_C.c.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_C.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_int_C.c
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_int_C.c
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_int_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_int_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_int_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_int_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kwiml_test.dir/test_int_C.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c > CMakeFiles\kwiml_test.dir\test_int_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c > CMakeFiles\kwiml_test.dir\test_int_C.c.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_C.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kwiml_test.dir/test_int_C.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c -o CMakeFiles\kwiml_test.dir\test_int_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_C.c -o CMakeFiles\kwiml_test.dir\test_int_C.c.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_C.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_include_C.c
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_include_C.c
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_include_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_include_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.obj -MF CMakeFiles\kwiml_test.dir\test_include_C.c.obj.d -o CMakeFiles\kwiml_test.dir\test_include_C.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kwiml_test.dir/test_include_C.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c > CMakeFiles\kwiml_test.dir\test_include_C.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c > CMakeFiles\kwiml_test.dir\test_include_C.c.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_C.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kwiml_test.dir/test_include_C.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c -o CMakeFiles\kwiml_test.dir\test_include_C.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_C.c -o CMakeFiles\kwiml_test.dir\test_include_C.c.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_CXX.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_abi_CXX.cxx
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_abi_CXX.cxx
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx > CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx > CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kwiml_test.dir/test_abi_CXX.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_abi_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_abi_CXX.cxx.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_CXX.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_int_CXX.cxx
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_int_CXX.cxx
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx > CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx > CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kwiml_test.dir/test_int_CXX.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_int_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_int_CXX.cxx.s
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/flags.make
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/includes_CXX.rsp
-Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_include_CXX.cxx
+Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/KWIML/test/test_include_CXX.cxx
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.obj -MF CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.obj.d -o CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx > CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx > CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.i
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kwiml_test.dir/test_include_CXX.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test\test_include_CXX.cxx -o CMakeFiles\kwiml_test.dir\test_include_CXX.cxx.s
 
 # Object files for target kwiml_test
 kwiml_test_OBJECTS = \
@@ -197,18 +197,18 @@ Utilities/KWIML/test/kwiml_test.exe: Utilities/KWIML/test/CMakeFiles/kwiml_test.
 Utilities/KWIML/test/kwiml_test.exe: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/linklibs.rsp
 Utilities/KWIML/test/kwiml_test.exe: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/objects1.rsp
 Utilities/KWIML/test/kwiml_test.exe: Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable kwiml_test.exe"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\kwiml_test.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable kwiml_test.exe"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\kwiml_test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/build: Utilities/KWIML/test/kwiml_test.exe
 .PHONY : Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/build
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test && $(CMAKE_COMMAND) -P CMakeFiles\kwiml_test.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test && $(CMAKE_COMMAND) -P CMakeFiles\kwiml_test.dir\cmake_clean.cmake
 .PHONY : Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/clean
 
 Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\KWIML\test C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\KWIML\test\CMakeFiles\kwiml_test.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/KWIML/test/CMakeFiles/kwiml_test.dir/depend
 

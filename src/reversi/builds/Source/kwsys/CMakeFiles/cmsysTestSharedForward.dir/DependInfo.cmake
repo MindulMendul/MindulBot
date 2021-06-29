@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/testSharedForward.c" "Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj.d"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/testSharedForward.c" "Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj" "gcc" "Source/kwsys/CMakeFiles/cmsysTestSharedForward.dir/testSharedForward.c.obj.d"
   )
 
 # Targets to which this target links.

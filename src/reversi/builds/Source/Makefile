@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -87,7 +87,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Source/CMakeFiles/cmcldeps.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cmcldeps.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cmcldeps.dir/rule
 .PHONY : Source/CMakeFiles/cmcldeps.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ cmcldeps: Source/CMakeFiles/cmcldeps.dir/rule
 
 # fast build rule for target.
 cmcldeps/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/build
 .PHONY : cmcldeps/fast
 
 # Convenience name for target.
 Source/CMakeFiles/CMakeVersion.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CMakeVersion.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CMakeVersion.dir/rule
 .PHONY : Source/CMakeFiles/CMakeVersion.dir/rule
 
 # Convenience name for target.
@@ -215,12 +215,12 @@ CMakeVersion: Source/CMakeFiles/CMakeVersion.dir/rule
 
 # fast build rule for target.
 CMakeVersion/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeVersion.dir\build.make Source/CMakeFiles/CMakeVersion.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeVersion.dir\build.make Source/CMakeFiles/CMakeVersion.dir/build
 .PHONY : CMakeVersion/fast
 
 # Convenience name for target.
 Source/CMakeFiles/CMakeLib.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CMakeLib.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CMakeLib.dir/rule
 .PHONY : Source/CMakeFiles/CMakeLib.dir/rule
 
 # Convenience name for target.
@@ -229,12 +229,12 @@ CMakeLib: Source/CMakeFiles/CMakeLib.dir/rule
 
 # fast build rule for target.
 CMakeLib/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/build
 .PHONY : CMakeLib/fast
 
 # Convenience name for target.
 Source/CMakeFiles/CTestLib.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CTestLib.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CTestLib.dir/rule
 .PHONY : Source/CMakeFiles/CTestLib.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ CTestLib: Source/CMakeFiles/CTestLib.dir/rule
 
 # fast build rule for target.
 CTestLib/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/build
 .PHONY : CTestLib/fast
 
 # Convenience name for target.
 Source/CMakeFiles/ctest.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/ctest.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/ctest.dir/rule
 .PHONY : Source/CMakeFiles/ctest.dir/rule
 
 # Convenience name for target.
@@ -257,12 +257,12 @@ ctest: Source/CMakeFiles/ctest.dir/rule
 
 # fast build rule for target.
 ctest/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/build
 .PHONY : ctest/fast
 
 # Convenience name for target.
 Source/CMakeFiles/CPackLib.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CPackLib.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/CPackLib.dir/rule
 .PHONY : Source/CMakeFiles/CPackLib.dir/rule
 
 # Convenience name for target.
@@ -271,12 +271,12 @@ CPackLib: Source/CMakeFiles/CPackLib.dir/rule
 
 # fast build rule for target.
 CPackLib/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/build
 .PHONY : CPackLib/fast
 
 # Convenience name for target.
 Source/CMakeFiles/cmake.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cmake.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cmake.dir/rule
 .PHONY : Source/CMakeFiles/cmake.dir/rule
 
 # Convenience name for target.
@@ -285,12 +285,12 @@ cmake: Source/CMakeFiles/cmake.dir/rule
 
 # fast build rule for target.
 cmake/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/build
 .PHONY : cmake/fast
 
 # Convenience name for target.
 Source/CMakeFiles/cpack.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cpack.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Source/CMakeFiles/cpack.dir/rule
 .PHONY : Source/CMakeFiles/cpack.dir/rule
 
 # Convenience name for target.
@@ -299,7 +299,7 @@ cpack: Source/CMakeFiles/cpack.dir/rule
 
 # fast build rule for target.
 cpack/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/build
 .PHONY : cpack/fast
 
 CMakeVersion.obj: CMakeVersion.rc.obj
@@ -307,7 +307,7 @@ CMakeVersion.obj: CMakeVersion.rc.obj
 
 # target to build an object file
 CMakeVersion.rc.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeVersion.dir\build.make Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeVersion.dir\build.make Source/CMakeFiles/CMakeVersion.dir/CMakeVersion.rc.obj
 .PHONY : CMakeVersion.rc.obj
 
 CPack/IFW/cmCPackIFWCommon.obj: CPack/IFW/cmCPackIFWCommon.cxx.obj
@@ -315,7 +315,7 @@ CPack/IFW/cmCPackIFWCommon.obj: CPack/IFW/cmCPackIFWCommon.cxx.obj
 
 # target to build an object file
 CPack/IFW/cmCPackIFWCommon.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.obj
 .PHONY : CPack/IFW/cmCPackIFWCommon.cxx.obj
 
 CPack/IFW/cmCPackIFWCommon.i: CPack/IFW/cmCPackIFWCommon.cxx.i
@@ -323,7 +323,7 @@ CPack/IFW/cmCPackIFWCommon.i: CPack/IFW/cmCPackIFWCommon.cxx.i
 
 # target to preprocess a source file
 CPack/IFW/cmCPackIFWCommon.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.i
 .PHONY : CPack/IFW/cmCPackIFWCommon.cxx.i
 
 CPack/IFW/cmCPackIFWCommon.s: CPack/IFW/cmCPackIFWCommon.cxx.s
@@ -331,7 +331,7 @@ CPack/IFW/cmCPackIFWCommon.s: CPack/IFW/cmCPackIFWCommon.cxx.s
 
 # target to generate assembly for a file
 CPack/IFW/cmCPackIFWCommon.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWCommon.cxx.s
 .PHONY : CPack/IFW/cmCPackIFWCommon.cxx.s
 
 CPack/IFW/cmCPackIFWGenerator.obj: CPack/IFW/cmCPackIFWGenerator.cxx.obj
@@ -339,7 +339,7 @@ CPack/IFW/cmCPackIFWGenerator.obj: CPack/IFW/cmCPackIFWGenerator.cxx.obj
 
 # target to build an object file
 CPack/IFW/cmCPackIFWGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.obj
 .PHONY : CPack/IFW/cmCPackIFWGenerator.cxx.obj
 
 CPack/IFW/cmCPackIFWGenerator.i: CPack/IFW/cmCPackIFWGenerator.cxx.i
@@ -347,7 +347,7 @@ CPack/IFW/cmCPackIFWGenerator.i: CPack/IFW/cmCPackIFWGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/IFW/cmCPackIFWGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.i
 .PHONY : CPack/IFW/cmCPackIFWGenerator.cxx.i
 
 CPack/IFW/cmCPackIFWGenerator.s: CPack/IFW/cmCPackIFWGenerator.cxx.s
@@ -355,7 +355,7 @@ CPack/IFW/cmCPackIFWGenerator.s: CPack/IFW/cmCPackIFWGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/IFW/cmCPackIFWGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWGenerator.cxx.s
 .PHONY : CPack/IFW/cmCPackIFWGenerator.cxx.s
 
 CPack/IFW/cmCPackIFWInstaller.obj: CPack/IFW/cmCPackIFWInstaller.cxx.obj
@@ -363,7 +363,7 @@ CPack/IFW/cmCPackIFWInstaller.obj: CPack/IFW/cmCPackIFWInstaller.cxx.obj
 
 # target to build an object file
 CPack/IFW/cmCPackIFWInstaller.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.obj
 .PHONY : CPack/IFW/cmCPackIFWInstaller.cxx.obj
 
 CPack/IFW/cmCPackIFWInstaller.i: CPack/IFW/cmCPackIFWInstaller.cxx.i
@@ -371,7 +371,7 @@ CPack/IFW/cmCPackIFWInstaller.i: CPack/IFW/cmCPackIFWInstaller.cxx.i
 
 # target to preprocess a source file
 CPack/IFW/cmCPackIFWInstaller.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.i
 .PHONY : CPack/IFW/cmCPackIFWInstaller.cxx.i
 
 CPack/IFW/cmCPackIFWInstaller.s: CPack/IFW/cmCPackIFWInstaller.cxx.s
@@ -379,7 +379,7 @@ CPack/IFW/cmCPackIFWInstaller.s: CPack/IFW/cmCPackIFWInstaller.cxx.s
 
 # target to generate assembly for a file
 CPack/IFW/cmCPackIFWInstaller.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWInstaller.cxx.s
 .PHONY : CPack/IFW/cmCPackIFWInstaller.cxx.s
 
 CPack/IFW/cmCPackIFWPackage.obj: CPack/IFW/cmCPackIFWPackage.cxx.obj
@@ -387,7 +387,7 @@ CPack/IFW/cmCPackIFWPackage.obj: CPack/IFW/cmCPackIFWPackage.cxx.obj
 
 # target to build an object file
 CPack/IFW/cmCPackIFWPackage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.obj
 .PHONY : CPack/IFW/cmCPackIFWPackage.cxx.obj
 
 CPack/IFW/cmCPackIFWPackage.i: CPack/IFW/cmCPackIFWPackage.cxx.i
@@ -395,7 +395,7 @@ CPack/IFW/cmCPackIFWPackage.i: CPack/IFW/cmCPackIFWPackage.cxx.i
 
 # target to preprocess a source file
 CPack/IFW/cmCPackIFWPackage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.i
 .PHONY : CPack/IFW/cmCPackIFWPackage.cxx.i
 
 CPack/IFW/cmCPackIFWPackage.s: CPack/IFW/cmCPackIFWPackage.cxx.s
@@ -403,7 +403,7 @@ CPack/IFW/cmCPackIFWPackage.s: CPack/IFW/cmCPackIFWPackage.cxx.s
 
 # target to generate assembly for a file
 CPack/IFW/cmCPackIFWPackage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWPackage.cxx.s
 .PHONY : CPack/IFW/cmCPackIFWPackage.cxx.s
 
 CPack/IFW/cmCPackIFWRepository.obj: CPack/IFW/cmCPackIFWRepository.cxx.obj
@@ -411,7 +411,7 @@ CPack/IFW/cmCPackIFWRepository.obj: CPack/IFW/cmCPackIFWRepository.cxx.obj
 
 # target to build an object file
 CPack/IFW/cmCPackIFWRepository.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.obj
 .PHONY : CPack/IFW/cmCPackIFWRepository.cxx.obj
 
 CPack/IFW/cmCPackIFWRepository.i: CPack/IFW/cmCPackIFWRepository.cxx.i
@@ -419,7 +419,7 @@ CPack/IFW/cmCPackIFWRepository.i: CPack/IFW/cmCPackIFWRepository.cxx.i
 
 # target to preprocess a source file
 CPack/IFW/cmCPackIFWRepository.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.i
 .PHONY : CPack/IFW/cmCPackIFWRepository.cxx.i
 
 CPack/IFW/cmCPackIFWRepository.s: CPack/IFW/cmCPackIFWRepository.cxx.s
@@ -427,7 +427,7 @@ CPack/IFW/cmCPackIFWRepository.s: CPack/IFW/cmCPackIFWRepository.cxx.s
 
 # target to generate assembly for a file
 CPack/IFW/cmCPackIFWRepository.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/IFW/cmCPackIFWRepository.cxx.s
 .PHONY : CPack/IFW/cmCPackIFWRepository.cxx.s
 
 CPack/WiX/cmCMakeToWixPath.obj: CPack/WiX/cmCMakeToWixPath.cxx.obj
@@ -435,7 +435,7 @@ CPack/WiX/cmCMakeToWixPath.obj: CPack/WiX/cmCMakeToWixPath.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmCMakeToWixPath.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.obj
 .PHONY : CPack/WiX/cmCMakeToWixPath.cxx.obj
 
 CPack/WiX/cmCMakeToWixPath.i: CPack/WiX/cmCMakeToWixPath.cxx.i
@@ -443,7 +443,7 @@ CPack/WiX/cmCMakeToWixPath.i: CPack/WiX/cmCMakeToWixPath.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmCMakeToWixPath.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.i
 .PHONY : CPack/WiX/cmCMakeToWixPath.cxx.i
 
 CPack/WiX/cmCMakeToWixPath.s: CPack/WiX/cmCMakeToWixPath.cxx.s
@@ -451,7 +451,7 @@ CPack/WiX/cmCMakeToWixPath.s: CPack/WiX/cmCMakeToWixPath.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmCMakeToWixPath.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCMakeToWixPath.cxx.s
 .PHONY : CPack/WiX/cmCMakeToWixPath.cxx.s
 
 CPack/WiX/cmCPackWIXGenerator.obj: CPack/WiX/cmCPackWIXGenerator.cxx.obj
@@ -459,7 +459,7 @@ CPack/WiX/cmCPackWIXGenerator.obj: CPack/WiX/cmCPackWIXGenerator.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmCPackWIXGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.obj
 .PHONY : CPack/WiX/cmCPackWIXGenerator.cxx.obj
 
 CPack/WiX/cmCPackWIXGenerator.i: CPack/WiX/cmCPackWIXGenerator.cxx.i
@@ -467,7 +467,7 @@ CPack/WiX/cmCPackWIXGenerator.i: CPack/WiX/cmCPackWIXGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmCPackWIXGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.i
 .PHONY : CPack/WiX/cmCPackWIXGenerator.cxx.i
 
 CPack/WiX/cmCPackWIXGenerator.s: CPack/WiX/cmCPackWIXGenerator.cxx.s
@@ -475,7 +475,7 @@ CPack/WiX/cmCPackWIXGenerator.s: CPack/WiX/cmCPackWIXGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmCPackWIXGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmCPackWIXGenerator.cxx.s
 .PHONY : CPack/WiX/cmCPackWIXGenerator.cxx.s
 
 CPack/WiX/cmWIXAccessControlList.obj: CPack/WiX/cmWIXAccessControlList.cxx.obj
@@ -483,7 +483,7 @@ CPack/WiX/cmWIXAccessControlList.obj: CPack/WiX/cmWIXAccessControlList.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXAccessControlList.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.obj
 .PHONY : CPack/WiX/cmWIXAccessControlList.cxx.obj
 
 CPack/WiX/cmWIXAccessControlList.i: CPack/WiX/cmWIXAccessControlList.cxx.i
@@ -491,7 +491,7 @@ CPack/WiX/cmWIXAccessControlList.i: CPack/WiX/cmWIXAccessControlList.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXAccessControlList.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.i
 .PHONY : CPack/WiX/cmWIXAccessControlList.cxx.i
 
 CPack/WiX/cmWIXAccessControlList.s: CPack/WiX/cmWIXAccessControlList.cxx.s
@@ -499,7 +499,7 @@ CPack/WiX/cmWIXAccessControlList.s: CPack/WiX/cmWIXAccessControlList.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXAccessControlList.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXAccessControlList.cxx.s
 .PHONY : CPack/WiX/cmWIXAccessControlList.cxx.s
 
 CPack/WiX/cmWIXDirectoriesSourceWriter.obj: CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj
@@ -507,7 +507,7 @@ CPack/WiX/cmWIXDirectoriesSourceWriter.obj: CPack/WiX/cmWIXDirectoriesSourceWrit
 
 # target to build an object file
 CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj
 .PHONY : CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.obj
 
 CPack/WiX/cmWIXDirectoriesSourceWriter.i: CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i
@@ -515,7 +515,7 @@ CPack/WiX/cmWIXDirectoriesSourceWriter.i: CPack/WiX/cmWIXDirectoriesSourceWriter
 
 # target to preprocess a source file
 CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i
 .PHONY : CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.i
 
 CPack/WiX/cmWIXDirectoriesSourceWriter.s: CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s
@@ -523,7 +523,7 @@ CPack/WiX/cmWIXDirectoriesSourceWriter.s: CPack/WiX/cmWIXDirectoriesSourceWriter
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s
 .PHONY : CPack/WiX/cmWIXDirectoriesSourceWriter.cxx.s
 
 CPack/WiX/cmWIXFeaturesSourceWriter.obj: CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj
@@ -531,7 +531,7 @@ CPack/WiX/cmWIXFeaturesSourceWriter.obj: CPack/WiX/cmWIXFeaturesSourceWriter.cxx
 
 # target to build an object file
 CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj
 .PHONY : CPack/WiX/cmWIXFeaturesSourceWriter.cxx.obj
 
 CPack/WiX/cmWIXFeaturesSourceWriter.i: CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i
@@ -539,7 +539,7 @@ CPack/WiX/cmWIXFeaturesSourceWriter.i: CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i
 .PHONY : CPack/WiX/cmWIXFeaturesSourceWriter.cxx.i
 
 CPack/WiX/cmWIXFeaturesSourceWriter.s: CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s
@@ -547,7 +547,7 @@ CPack/WiX/cmWIXFeaturesSourceWriter.s: CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s
 .PHONY : CPack/WiX/cmWIXFeaturesSourceWriter.cxx.s
 
 CPack/WiX/cmWIXFilesSourceWriter.obj: CPack/WiX/cmWIXFilesSourceWriter.cxx.obj
@@ -555,7 +555,7 @@ CPack/WiX/cmWIXFilesSourceWriter.obj: CPack/WiX/cmWIXFilesSourceWriter.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXFilesSourceWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.obj
 .PHONY : CPack/WiX/cmWIXFilesSourceWriter.cxx.obj
 
 CPack/WiX/cmWIXFilesSourceWriter.i: CPack/WiX/cmWIXFilesSourceWriter.cxx.i
@@ -563,7 +563,7 @@ CPack/WiX/cmWIXFilesSourceWriter.i: CPack/WiX/cmWIXFilesSourceWriter.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXFilesSourceWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.i
 .PHONY : CPack/WiX/cmWIXFilesSourceWriter.cxx.i
 
 CPack/WiX/cmWIXFilesSourceWriter.s: CPack/WiX/cmWIXFilesSourceWriter.cxx.s
@@ -571,7 +571,7 @@ CPack/WiX/cmWIXFilesSourceWriter.s: CPack/WiX/cmWIXFilesSourceWriter.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXFilesSourceWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXFilesSourceWriter.cxx.s
 .PHONY : CPack/WiX/cmWIXFilesSourceWriter.cxx.s
 
 CPack/WiX/cmWIXPatch.obj: CPack/WiX/cmWIXPatch.cxx.obj
@@ -579,7 +579,7 @@ CPack/WiX/cmWIXPatch.obj: CPack/WiX/cmWIXPatch.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXPatch.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.obj
 .PHONY : CPack/WiX/cmWIXPatch.cxx.obj
 
 CPack/WiX/cmWIXPatch.i: CPack/WiX/cmWIXPatch.cxx.i
@@ -587,7 +587,7 @@ CPack/WiX/cmWIXPatch.i: CPack/WiX/cmWIXPatch.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXPatch.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.i
 .PHONY : CPack/WiX/cmWIXPatch.cxx.i
 
 CPack/WiX/cmWIXPatch.s: CPack/WiX/cmWIXPatch.cxx.s
@@ -595,7 +595,7 @@ CPack/WiX/cmWIXPatch.s: CPack/WiX/cmWIXPatch.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXPatch.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatch.cxx.s
 .PHONY : CPack/WiX/cmWIXPatch.cxx.s
 
 CPack/WiX/cmWIXPatchParser.obj: CPack/WiX/cmWIXPatchParser.cxx.obj
@@ -603,7 +603,7 @@ CPack/WiX/cmWIXPatchParser.obj: CPack/WiX/cmWIXPatchParser.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXPatchParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.obj
 .PHONY : CPack/WiX/cmWIXPatchParser.cxx.obj
 
 CPack/WiX/cmWIXPatchParser.i: CPack/WiX/cmWIXPatchParser.cxx.i
@@ -611,7 +611,7 @@ CPack/WiX/cmWIXPatchParser.i: CPack/WiX/cmWIXPatchParser.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXPatchParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.i
 .PHONY : CPack/WiX/cmWIXPatchParser.cxx.i
 
 CPack/WiX/cmWIXPatchParser.s: CPack/WiX/cmWIXPatchParser.cxx.s
@@ -619,7 +619,7 @@ CPack/WiX/cmWIXPatchParser.s: CPack/WiX/cmWIXPatchParser.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXPatchParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXPatchParser.cxx.s
 .PHONY : CPack/WiX/cmWIXPatchParser.cxx.s
 
 CPack/WiX/cmWIXRichTextFormatWriter.obj: CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj
@@ -627,7 +627,7 @@ CPack/WiX/cmWIXRichTextFormatWriter.obj: CPack/WiX/cmWIXRichTextFormatWriter.cxx
 
 # target to build an object file
 CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj
 .PHONY : CPack/WiX/cmWIXRichTextFormatWriter.cxx.obj
 
 CPack/WiX/cmWIXRichTextFormatWriter.i: CPack/WiX/cmWIXRichTextFormatWriter.cxx.i
@@ -635,7 +635,7 @@ CPack/WiX/cmWIXRichTextFormatWriter.i: CPack/WiX/cmWIXRichTextFormatWriter.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXRichTextFormatWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.i
 .PHONY : CPack/WiX/cmWIXRichTextFormatWriter.cxx.i
 
 CPack/WiX/cmWIXRichTextFormatWriter.s: CPack/WiX/cmWIXRichTextFormatWriter.cxx.s
@@ -643,7 +643,7 @@ CPack/WiX/cmWIXRichTextFormatWriter.s: CPack/WiX/cmWIXRichTextFormatWriter.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXRichTextFormatWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXRichTextFormatWriter.cxx.s
 .PHONY : CPack/WiX/cmWIXRichTextFormatWriter.cxx.s
 
 CPack/WiX/cmWIXShortcut.obj: CPack/WiX/cmWIXShortcut.cxx.obj
@@ -651,7 +651,7 @@ CPack/WiX/cmWIXShortcut.obj: CPack/WiX/cmWIXShortcut.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXShortcut.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.obj
 .PHONY : CPack/WiX/cmWIXShortcut.cxx.obj
 
 CPack/WiX/cmWIXShortcut.i: CPack/WiX/cmWIXShortcut.cxx.i
@@ -659,7 +659,7 @@ CPack/WiX/cmWIXShortcut.i: CPack/WiX/cmWIXShortcut.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXShortcut.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.i
 .PHONY : CPack/WiX/cmWIXShortcut.cxx.i
 
 CPack/WiX/cmWIXShortcut.s: CPack/WiX/cmWIXShortcut.cxx.s
@@ -667,7 +667,7 @@ CPack/WiX/cmWIXShortcut.s: CPack/WiX/cmWIXShortcut.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXShortcut.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXShortcut.cxx.s
 .PHONY : CPack/WiX/cmWIXShortcut.cxx.s
 
 CPack/WiX/cmWIXSourceWriter.obj: CPack/WiX/cmWIXSourceWriter.cxx.obj
@@ -675,7 +675,7 @@ CPack/WiX/cmWIXSourceWriter.obj: CPack/WiX/cmWIXSourceWriter.cxx.obj
 
 # target to build an object file
 CPack/WiX/cmWIXSourceWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.obj
 .PHONY : CPack/WiX/cmWIXSourceWriter.cxx.obj
 
 CPack/WiX/cmWIXSourceWriter.i: CPack/WiX/cmWIXSourceWriter.cxx.i
@@ -683,7 +683,7 @@ CPack/WiX/cmWIXSourceWriter.i: CPack/WiX/cmWIXSourceWriter.cxx.i
 
 # target to preprocess a source file
 CPack/WiX/cmWIXSourceWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.i
 .PHONY : CPack/WiX/cmWIXSourceWriter.cxx.i
 
 CPack/WiX/cmWIXSourceWriter.s: CPack/WiX/cmWIXSourceWriter.cxx.s
@@ -691,7 +691,7 @@ CPack/WiX/cmWIXSourceWriter.s: CPack/WiX/cmWIXSourceWriter.cxx.s
 
 # target to generate assembly for a file
 CPack/WiX/cmWIXSourceWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/WiX/cmWIXSourceWriter.cxx.s
 .PHONY : CPack/WiX/cmWIXSourceWriter.cxx.s
 
 CPack/cmCPackArchiveGenerator.obj: CPack/cmCPackArchiveGenerator.cxx.obj
@@ -699,7 +699,7 @@ CPack/cmCPackArchiveGenerator.obj: CPack/cmCPackArchiveGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackArchiveGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.obj
 .PHONY : CPack/cmCPackArchiveGenerator.cxx.obj
 
 CPack/cmCPackArchiveGenerator.i: CPack/cmCPackArchiveGenerator.cxx.i
@@ -707,7 +707,7 @@ CPack/cmCPackArchiveGenerator.i: CPack/cmCPackArchiveGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackArchiveGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.i
 .PHONY : CPack/cmCPackArchiveGenerator.cxx.i
 
 CPack/cmCPackArchiveGenerator.s: CPack/cmCPackArchiveGenerator.cxx.s
@@ -715,7 +715,7 @@ CPack/cmCPackArchiveGenerator.s: CPack/cmCPackArchiveGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackArchiveGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackArchiveGenerator.cxx.s
 .PHONY : CPack/cmCPackArchiveGenerator.cxx.s
 
 CPack/cmCPackComponentGroup.obj: CPack/cmCPackComponentGroup.cxx.obj
@@ -723,7 +723,7 @@ CPack/cmCPackComponentGroup.obj: CPack/cmCPackComponentGroup.cxx.obj
 
 # target to build an object file
 CPack/cmCPackComponentGroup.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.obj
 .PHONY : CPack/cmCPackComponentGroup.cxx.obj
 
 CPack/cmCPackComponentGroup.i: CPack/cmCPackComponentGroup.cxx.i
@@ -731,7 +731,7 @@ CPack/cmCPackComponentGroup.i: CPack/cmCPackComponentGroup.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackComponentGroup.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.i
 .PHONY : CPack/cmCPackComponentGroup.cxx.i
 
 CPack/cmCPackComponentGroup.s: CPack/cmCPackComponentGroup.cxx.s
@@ -739,7 +739,7 @@ CPack/cmCPackComponentGroup.s: CPack/cmCPackComponentGroup.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackComponentGroup.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackComponentGroup.cxx.s
 .PHONY : CPack/cmCPackComponentGroup.cxx.s
 
 CPack/cmCPackDebGenerator.obj: CPack/cmCPackDebGenerator.cxx.obj
@@ -747,7 +747,7 @@ CPack/cmCPackDebGenerator.obj: CPack/cmCPackDebGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackDebGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.obj
 .PHONY : CPack/cmCPackDebGenerator.cxx.obj
 
 CPack/cmCPackDebGenerator.i: CPack/cmCPackDebGenerator.cxx.i
@@ -755,7 +755,7 @@ CPack/cmCPackDebGenerator.i: CPack/cmCPackDebGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackDebGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.i
 .PHONY : CPack/cmCPackDebGenerator.cxx.i
 
 CPack/cmCPackDebGenerator.s: CPack/cmCPackDebGenerator.cxx.s
@@ -763,7 +763,7 @@ CPack/cmCPackDebGenerator.s: CPack/cmCPackDebGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackDebGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackDebGenerator.cxx.s
 .PHONY : CPack/cmCPackDebGenerator.cxx.s
 
 CPack/cmCPackExternalGenerator.obj: CPack/cmCPackExternalGenerator.cxx.obj
@@ -771,7 +771,7 @@ CPack/cmCPackExternalGenerator.obj: CPack/cmCPackExternalGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackExternalGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.obj
 .PHONY : CPack/cmCPackExternalGenerator.cxx.obj
 
 CPack/cmCPackExternalGenerator.i: CPack/cmCPackExternalGenerator.cxx.i
@@ -779,7 +779,7 @@ CPack/cmCPackExternalGenerator.i: CPack/cmCPackExternalGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackExternalGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.i
 .PHONY : CPack/cmCPackExternalGenerator.cxx.i
 
 CPack/cmCPackExternalGenerator.s: CPack/cmCPackExternalGenerator.cxx.s
@@ -787,7 +787,7 @@ CPack/cmCPackExternalGenerator.s: CPack/cmCPackExternalGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackExternalGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackExternalGenerator.cxx.s
 .PHONY : CPack/cmCPackExternalGenerator.cxx.s
 
 CPack/cmCPackGenerator.obj: CPack/cmCPackGenerator.cxx.obj
@@ -795,7 +795,7 @@ CPack/cmCPackGenerator.obj: CPack/cmCPackGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.obj
 .PHONY : CPack/cmCPackGenerator.cxx.obj
 
 CPack/cmCPackGenerator.i: CPack/cmCPackGenerator.cxx.i
@@ -803,7 +803,7 @@ CPack/cmCPackGenerator.i: CPack/cmCPackGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.i
 .PHONY : CPack/cmCPackGenerator.cxx.i
 
 CPack/cmCPackGenerator.s: CPack/cmCPackGenerator.cxx.s
@@ -811,7 +811,7 @@ CPack/cmCPackGenerator.s: CPack/cmCPackGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGenerator.cxx.s
 .PHONY : CPack/cmCPackGenerator.cxx.s
 
 CPack/cmCPackGeneratorFactory.obj: CPack/cmCPackGeneratorFactory.cxx.obj
@@ -819,7 +819,7 @@ CPack/cmCPackGeneratorFactory.obj: CPack/cmCPackGeneratorFactory.cxx.obj
 
 # target to build an object file
 CPack/cmCPackGeneratorFactory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.obj
 .PHONY : CPack/cmCPackGeneratorFactory.cxx.obj
 
 CPack/cmCPackGeneratorFactory.i: CPack/cmCPackGeneratorFactory.cxx.i
@@ -827,7 +827,7 @@ CPack/cmCPackGeneratorFactory.i: CPack/cmCPackGeneratorFactory.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackGeneratorFactory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.i
 .PHONY : CPack/cmCPackGeneratorFactory.cxx.i
 
 CPack/cmCPackGeneratorFactory.s: CPack/cmCPackGeneratorFactory.cxx.s
@@ -835,7 +835,7 @@ CPack/cmCPackGeneratorFactory.s: CPack/cmCPackGeneratorFactory.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackGeneratorFactory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackGeneratorFactory.cxx.s
 .PHONY : CPack/cmCPackGeneratorFactory.cxx.s
 
 CPack/cmCPackLog.obj: CPack/cmCPackLog.cxx.obj
@@ -843,7 +843,7 @@ CPack/cmCPackLog.obj: CPack/cmCPackLog.cxx.obj
 
 # target to build an object file
 CPack/cmCPackLog.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.obj
 .PHONY : CPack/cmCPackLog.cxx.obj
 
 CPack/cmCPackLog.i: CPack/cmCPackLog.cxx.i
@@ -851,7 +851,7 @@ CPack/cmCPackLog.i: CPack/cmCPackLog.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackLog.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.i
 .PHONY : CPack/cmCPackLog.cxx.i
 
 CPack/cmCPackLog.s: CPack/cmCPackLog.cxx.s
@@ -859,7 +859,7 @@ CPack/cmCPackLog.s: CPack/cmCPackLog.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackLog.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackLog.cxx.s
 .PHONY : CPack/cmCPackLog.cxx.s
 
 CPack/cmCPackNSISGenerator.obj: CPack/cmCPackNSISGenerator.cxx.obj
@@ -867,7 +867,7 @@ CPack/cmCPackNSISGenerator.obj: CPack/cmCPackNSISGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackNSISGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.obj
 .PHONY : CPack/cmCPackNSISGenerator.cxx.obj
 
 CPack/cmCPackNSISGenerator.i: CPack/cmCPackNSISGenerator.cxx.i
@@ -875,7 +875,7 @@ CPack/cmCPackNSISGenerator.i: CPack/cmCPackNSISGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackNSISGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.i
 .PHONY : CPack/cmCPackNSISGenerator.cxx.i
 
 CPack/cmCPackNSISGenerator.s: CPack/cmCPackNSISGenerator.cxx.s
@@ -883,7 +883,7 @@ CPack/cmCPackNSISGenerator.s: CPack/cmCPackNSISGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackNSISGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNSISGenerator.cxx.s
 .PHONY : CPack/cmCPackNSISGenerator.cxx.s
 
 CPack/cmCPackNuGetGenerator.obj: CPack/cmCPackNuGetGenerator.cxx.obj
@@ -891,7 +891,7 @@ CPack/cmCPackNuGetGenerator.obj: CPack/cmCPackNuGetGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackNuGetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.obj
 .PHONY : CPack/cmCPackNuGetGenerator.cxx.obj
 
 CPack/cmCPackNuGetGenerator.i: CPack/cmCPackNuGetGenerator.cxx.i
@@ -899,7 +899,7 @@ CPack/cmCPackNuGetGenerator.i: CPack/cmCPackNuGetGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackNuGetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.i
 .PHONY : CPack/cmCPackNuGetGenerator.cxx.i
 
 CPack/cmCPackNuGetGenerator.s: CPack/cmCPackNuGetGenerator.cxx.s
@@ -907,7 +907,7 @@ CPack/cmCPackNuGetGenerator.s: CPack/cmCPackNuGetGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackNuGetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackNuGetGenerator.cxx.s
 .PHONY : CPack/cmCPackNuGetGenerator.cxx.s
 
 CPack/cmCPackSTGZGenerator.obj: CPack/cmCPackSTGZGenerator.cxx.obj
@@ -915,7 +915,7 @@ CPack/cmCPackSTGZGenerator.obj: CPack/cmCPackSTGZGenerator.cxx.obj
 
 # target to build an object file
 CPack/cmCPackSTGZGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.obj
 .PHONY : CPack/cmCPackSTGZGenerator.cxx.obj
 
 CPack/cmCPackSTGZGenerator.i: CPack/cmCPackSTGZGenerator.cxx.i
@@ -923,7 +923,7 @@ CPack/cmCPackSTGZGenerator.i: CPack/cmCPackSTGZGenerator.cxx.i
 
 # target to preprocess a source file
 CPack/cmCPackSTGZGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.i
 .PHONY : CPack/cmCPackSTGZGenerator.cxx.i
 
 CPack/cmCPackSTGZGenerator.s: CPack/cmCPackSTGZGenerator.cxx.s
@@ -931,7 +931,7 @@ CPack/cmCPackSTGZGenerator.s: CPack/cmCPackSTGZGenerator.cxx.s
 
 # target to generate assembly for a file
 CPack/cmCPackSTGZGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CPackLib.dir\build.make Source/CMakeFiles/CPackLib.dir/CPack/cmCPackSTGZGenerator.cxx.s
 .PHONY : CPack/cmCPackSTGZGenerator.cxx.s
 
 CPack/cpack.obj: CPack/cpack.cxx.obj
@@ -939,7 +939,7 @@ CPack/cpack.obj: CPack/cpack.cxx.obj
 
 # target to build an object file
 CPack/cpack.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.obj
 .PHONY : CPack/cpack.cxx.obj
 
 CPack/cpack.i: CPack/cpack.cxx.i
@@ -947,7 +947,7 @@ CPack/cpack.i: CPack/cpack.cxx.i
 
 # target to preprocess a source file
 CPack/cpack.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.i
 .PHONY : CPack/cpack.cxx.i
 
 CPack/cpack.s: CPack/cpack.cxx.s
@@ -955,7 +955,7 @@ CPack/cpack.s: CPack/cpack.cxx.s
 
 # target to generate assembly for a file
 CPack/cpack.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cpack.dir\build.make Source/CMakeFiles/cpack.dir/CPack/cpack.cxx.s
 .PHONY : CPack/cpack.cxx.s
 
 CTest/cmCTestBZR.obj: CTest/cmCTestBZR.cxx.obj
@@ -963,7 +963,7 @@ CTest/cmCTestBZR.obj: CTest/cmCTestBZR.cxx.obj
 
 # target to build an object file
 CTest/cmCTestBZR.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.obj
 .PHONY : CTest/cmCTestBZR.cxx.obj
 
 CTest/cmCTestBZR.i: CTest/cmCTestBZR.cxx.i
@@ -971,7 +971,7 @@ CTest/cmCTestBZR.i: CTest/cmCTestBZR.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestBZR.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.i
 .PHONY : CTest/cmCTestBZR.cxx.i
 
 CTest/cmCTestBZR.s: CTest/cmCTestBZR.cxx.s
@@ -979,7 +979,7 @@ CTest/cmCTestBZR.s: CTest/cmCTestBZR.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestBZR.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBZR.cxx.s
 .PHONY : CTest/cmCTestBZR.cxx.s
 
 CTest/cmCTestBinPacker.obj: CTest/cmCTestBinPacker.cxx.obj
@@ -987,7 +987,7 @@ CTest/cmCTestBinPacker.obj: CTest/cmCTestBinPacker.cxx.obj
 
 # target to build an object file
 CTest/cmCTestBinPacker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.obj
 .PHONY : CTest/cmCTestBinPacker.cxx.obj
 
 CTest/cmCTestBinPacker.i: CTest/cmCTestBinPacker.cxx.i
@@ -995,7 +995,7 @@ CTest/cmCTestBinPacker.i: CTest/cmCTestBinPacker.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestBinPacker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.i
 .PHONY : CTest/cmCTestBinPacker.cxx.i
 
 CTest/cmCTestBinPacker.s: CTest/cmCTestBinPacker.cxx.s
@@ -1003,7 +1003,7 @@ CTest/cmCTestBinPacker.s: CTest/cmCTestBinPacker.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestBinPacker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBinPacker.cxx.s
 .PHONY : CTest/cmCTestBinPacker.cxx.s
 
 CTest/cmCTestBuildAndTestHandler.obj: CTest/cmCTestBuildAndTestHandler.cxx.obj
@@ -1011,7 +1011,7 @@ CTest/cmCTestBuildAndTestHandler.obj: CTest/cmCTestBuildAndTestHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestBuildAndTestHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.obj
 .PHONY : CTest/cmCTestBuildAndTestHandler.cxx.obj
 
 CTest/cmCTestBuildAndTestHandler.i: CTest/cmCTestBuildAndTestHandler.cxx.i
@@ -1019,7 +1019,7 @@ CTest/cmCTestBuildAndTestHandler.i: CTest/cmCTestBuildAndTestHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestBuildAndTestHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.i
 .PHONY : CTest/cmCTestBuildAndTestHandler.cxx.i
 
 CTest/cmCTestBuildAndTestHandler.s: CTest/cmCTestBuildAndTestHandler.cxx.s
@@ -1027,7 +1027,7 @@ CTest/cmCTestBuildAndTestHandler.s: CTest/cmCTestBuildAndTestHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestBuildAndTestHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildAndTestHandler.cxx.s
 .PHONY : CTest/cmCTestBuildAndTestHandler.cxx.s
 
 CTest/cmCTestBuildCommand.obj: CTest/cmCTestBuildCommand.cxx.obj
@@ -1035,7 +1035,7 @@ CTest/cmCTestBuildCommand.obj: CTest/cmCTestBuildCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestBuildCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.obj
 .PHONY : CTest/cmCTestBuildCommand.cxx.obj
 
 CTest/cmCTestBuildCommand.i: CTest/cmCTestBuildCommand.cxx.i
@@ -1043,7 +1043,7 @@ CTest/cmCTestBuildCommand.i: CTest/cmCTestBuildCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestBuildCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.i
 .PHONY : CTest/cmCTestBuildCommand.cxx.i
 
 CTest/cmCTestBuildCommand.s: CTest/cmCTestBuildCommand.cxx.s
@@ -1051,7 +1051,7 @@ CTest/cmCTestBuildCommand.s: CTest/cmCTestBuildCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestBuildCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildCommand.cxx.s
 .PHONY : CTest/cmCTestBuildCommand.cxx.s
 
 CTest/cmCTestBuildHandler.obj: CTest/cmCTestBuildHandler.cxx.obj
@@ -1059,7 +1059,7 @@ CTest/cmCTestBuildHandler.obj: CTest/cmCTestBuildHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestBuildHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.obj
 .PHONY : CTest/cmCTestBuildHandler.cxx.obj
 
 CTest/cmCTestBuildHandler.i: CTest/cmCTestBuildHandler.cxx.i
@@ -1067,7 +1067,7 @@ CTest/cmCTestBuildHandler.i: CTest/cmCTestBuildHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestBuildHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.i
 .PHONY : CTest/cmCTestBuildHandler.cxx.i
 
 CTest/cmCTestBuildHandler.s: CTest/cmCTestBuildHandler.cxx.s
@@ -1075,7 +1075,7 @@ CTest/cmCTestBuildHandler.s: CTest/cmCTestBuildHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestBuildHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestBuildHandler.cxx.s
 .PHONY : CTest/cmCTestBuildHandler.cxx.s
 
 CTest/cmCTestCVS.obj: CTest/cmCTestCVS.cxx.obj
@@ -1083,7 +1083,7 @@ CTest/cmCTestCVS.obj: CTest/cmCTestCVS.cxx.obj
 
 # target to build an object file
 CTest/cmCTestCVS.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.obj
 .PHONY : CTest/cmCTestCVS.cxx.obj
 
 CTest/cmCTestCVS.i: CTest/cmCTestCVS.cxx.i
@@ -1091,7 +1091,7 @@ CTest/cmCTestCVS.i: CTest/cmCTestCVS.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestCVS.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.i
 .PHONY : CTest/cmCTestCVS.cxx.i
 
 CTest/cmCTestCVS.s: CTest/cmCTestCVS.cxx.s
@@ -1099,7 +1099,7 @@ CTest/cmCTestCVS.s: CTest/cmCTestCVS.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestCVS.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCVS.cxx.s
 .PHONY : CTest/cmCTestCVS.cxx.s
 
 CTest/cmCTestConfigureCommand.obj: CTest/cmCTestConfigureCommand.cxx.obj
@@ -1107,7 +1107,7 @@ CTest/cmCTestConfigureCommand.obj: CTest/cmCTestConfigureCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestConfigureCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.obj
 .PHONY : CTest/cmCTestConfigureCommand.cxx.obj
 
 CTest/cmCTestConfigureCommand.i: CTest/cmCTestConfigureCommand.cxx.i
@@ -1115,7 +1115,7 @@ CTest/cmCTestConfigureCommand.i: CTest/cmCTestConfigureCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestConfigureCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.i
 .PHONY : CTest/cmCTestConfigureCommand.cxx.i
 
 CTest/cmCTestConfigureCommand.s: CTest/cmCTestConfigureCommand.cxx.s
@@ -1123,7 +1123,7 @@ CTest/cmCTestConfigureCommand.s: CTest/cmCTestConfigureCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestConfigureCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureCommand.cxx.s
 .PHONY : CTest/cmCTestConfigureCommand.cxx.s
 
 CTest/cmCTestConfigureHandler.obj: CTest/cmCTestConfigureHandler.cxx.obj
@@ -1131,7 +1131,7 @@ CTest/cmCTestConfigureHandler.obj: CTest/cmCTestConfigureHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestConfigureHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.obj
 .PHONY : CTest/cmCTestConfigureHandler.cxx.obj
 
 CTest/cmCTestConfigureHandler.i: CTest/cmCTestConfigureHandler.cxx.i
@@ -1139,7 +1139,7 @@ CTest/cmCTestConfigureHandler.i: CTest/cmCTestConfigureHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestConfigureHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.i
 .PHONY : CTest/cmCTestConfigureHandler.cxx.i
 
 CTest/cmCTestConfigureHandler.s: CTest/cmCTestConfigureHandler.cxx.s
@@ -1147,7 +1147,7 @@ CTest/cmCTestConfigureHandler.s: CTest/cmCTestConfigureHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestConfigureHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestConfigureHandler.cxx.s
 .PHONY : CTest/cmCTestConfigureHandler.cxx.s
 
 CTest/cmCTestCoverageCommand.obj: CTest/cmCTestCoverageCommand.cxx.obj
@@ -1155,7 +1155,7 @@ CTest/cmCTestCoverageCommand.obj: CTest/cmCTestCoverageCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestCoverageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.obj
 .PHONY : CTest/cmCTestCoverageCommand.cxx.obj
 
 CTest/cmCTestCoverageCommand.i: CTest/cmCTestCoverageCommand.cxx.i
@@ -1163,7 +1163,7 @@ CTest/cmCTestCoverageCommand.i: CTest/cmCTestCoverageCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestCoverageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.i
 .PHONY : CTest/cmCTestCoverageCommand.cxx.i
 
 CTest/cmCTestCoverageCommand.s: CTest/cmCTestCoverageCommand.cxx.s
@@ -1171,7 +1171,7 @@ CTest/cmCTestCoverageCommand.s: CTest/cmCTestCoverageCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestCoverageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageCommand.cxx.s
 .PHONY : CTest/cmCTestCoverageCommand.cxx.s
 
 CTest/cmCTestCoverageHandler.obj: CTest/cmCTestCoverageHandler.cxx.obj
@@ -1179,7 +1179,7 @@ CTest/cmCTestCoverageHandler.obj: CTest/cmCTestCoverageHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestCoverageHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.obj
 .PHONY : CTest/cmCTestCoverageHandler.cxx.obj
 
 CTest/cmCTestCoverageHandler.i: CTest/cmCTestCoverageHandler.cxx.i
@@ -1187,7 +1187,7 @@ CTest/cmCTestCoverageHandler.i: CTest/cmCTestCoverageHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestCoverageHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.i
 .PHONY : CTest/cmCTestCoverageHandler.cxx.i
 
 CTest/cmCTestCoverageHandler.s: CTest/cmCTestCoverageHandler.cxx.s
@@ -1195,7 +1195,7 @@ CTest/cmCTestCoverageHandler.s: CTest/cmCTestCoverageHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestCoverageHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCoverageHandler.cxx.s
 .PHONY : CTest/cmCTestCoverageHandler.cxx.s
 
 CTest/cmCTestCurl.obj: CTest/cmCTestCurl.cxx.obj
@@ -1203,7 +1203,7 @@ CTest/cmCTestCurl.obj: CTest/cmCTestCurl.cxx.obj
 
 # target to build an object file
 CTest/cmCTestCurl.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.obj
 .PHONY : CTest/cmCTestCurl.cxx.obj
 
 CTest/cmCTestCurl.i: CTest/cmCTestCurl.cxx.i
@@ -1211,7 +1211,7 @@ CTest/cmCTestCurl.i: CTest/cmCTestCurl.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestCurl.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.i
 .PHONY : CTest/cmCTestCurl.cxx.i
 
 CTest/cmCTestCurl.s: CTest/cmCTestCurl.cxx.s
@@ -1219,7 +1219,7 @@ CTest/cmCTestCurl.s: CTest/cmCTestCurl.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestCurl.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestCurl.cxx.s
 .PHONY : CTest/cmCTestCurl.cxx.s
 
 CTest/cmCTestEmptyBinaryDirectoryCommand.obj: CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.obj
@@ -1227,7 +1227,7 @@ CTest/cmCTestEmptyBinaryDirectoryCommand.obj: CTest/cmCTestEmptyBinaryDirectoryC
 
 # target to build an object file
 CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.obj
 .PHONY : CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.obj
 
 CTest/cmCTestEmptyBinaryDirectoryCommand.i: CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.i
@@ -1235,7 +1235,7 @@ CTest/cmCTestEmptyBinaryDirectoryCommand.i: CTest/cmCTestEmptyBinaryDirectoryCom
 
 # target to preprocess a source file
 CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.i
 .PHONY : CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.i
 
 CTest/cmCTestEmptyBinaryDirectoryCommand.s: CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.s
@@ -1243,7 +1243,7 @@ CTest/cmCTestEmptyBinaryDirectoryCommand.s: CTest/cmCTestEmptyBinaryDirectoryCom
 
 # target to generate assembly for a file
 CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.s
 .PHONY : CTest/cmCTestEmptyBinaryDirectoryCommand.cxx.s
 
 CTest/cmCTestGIT.obj: CTest/cmCTestGIT.cxx.obj
@@ -1251,7 +1251,7 @@ CTest/cmCTestGIT.obj: CTest/cmCTestGIT.cxx.obj
 
 # target to build an object file
 CTest/cmCTestGIT.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.obj
 .PHONY : CTest/cmCTestGIT.cxx.obj
 
 CTest/cmCTestGIT.i: CTest/cmCTestGIT.cxx.i
@@ -1259,7 +1259,7 @@ CTest/cmCTestGIT.i: CTest/cmCTestGIT.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestGIT.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.i
 .PHONY : CTest/cmCTestGIT.cxx.i
 
 CTest/cmCTestGIT.s: CTest/cmCTestGIT.cxx.s
@@ -1267,7 +1267,7 @@ CTest/cmCTestGIT.s: CTest/cmCTestGIT.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestGIT.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGIT.cxx.s
 .PHONY : CTest/cmCTestGIT.cxx.s
 
 CTest/cmCTestGenericHandler.obj: CTest/cmCTestGenericHandler.cxx.obj
@@ -1275,7 +1275,7 @@ CTest/cmCTestGenericHandler.obj: CTest/cmCTestGenericHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestGenericHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.obj
 .PHONY : CTest/cmCTestGenericHandler.cxx.obj
 
 CTest/cmCTestGenericHandler.i: CTest/cmCTestGenericHandler.cxx.i
@@ -1283,7 +1283,7 @@ CTest/cmCTestGenericHandler.i: CTest/cmCTestGenericHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestGenericHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.i
 .PHONY : CTest/cmCTestGenericHandler.cxx.i
 
 CTest/cmCTestGenericHandler.s: CTest/cmCTestGenericHandler.cxx.s
@@ -1291,7 +1291,7 @@ CTest/cmCTestGenericHandler.s: CTest/cmCTestGenericHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestGenericHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGenericHandler.cxx.s
 .PHONY : CTest/cmCTestGenericHandler.cxx.s
 
 CTest/cmCTestGlobalVC.obj: CTest/cmCTestGlobalVC.cxx.obj
@@ -1299,7 +1299,7 @@ CTest/cmCTestGlobalVC.obj: CTest/cmCTestGlobalVC.cxx.obj
 
 # target to build an object file
 CTest/cmCTestGlobalVC.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.obj
 .PHONY : CTest/cmCTestGlobalVC.cxx.obj
 
 CTest/cmCTestGlobalVC.i: CTest/cmCTestGlobalVC.cxx.i
@@ -1307,7 +1307,7 @@ CTest/cmCTestGlobalVC.i: CTest/cmCTestGlobalVC.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestGlobalVC.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.i
 .PHONY : CTest/cmCTestGlobalVC.cxx.i
 
 CTest/cmCTestGlobalVC.s: CTest/cmCTestGlobalVC.cxx.s
@@ -1315,7 +1315,7 @@ CTest/cmCTestGlobalVC.s: CTest/cmCTestGlobalVC.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestGlobalVC.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestGlobalVC.cxx.s
 .PHONY : CTest/cmCTestGlobalVC.cxx.s
 
 CTest/cmCTestHG.obj: CTest/cmCTestHG.cxx.obj
@@ -1323,7 +1323,7 @@ CTest/cmCTestHG.obj: CTest/cmCTestHG.cxx.obj
 
 # target to build an object file
 CTest/cmCTestHG.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.obj
 .PHONY : CTest/cmCTestHG.cxx.obj
 
 CTest/cmCTestHG.i: CTest/cmCTestHG.cxx.i
@@ -1331,7 +1331,7 @@ CTest/cmCTestHG.i: CTest/cmCTestHG.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestHG.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.i
 .PHONY : CTest/cmCTestHG.cxx.i
 
 CTest/cmCTestHG.s: CTest/cmCTestHG.cxx.s
@@ -1339,7 +1339,7 @@ CTest/cmCTestHG.s: CTest/cmCTestHG.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestHG.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHG.cxx.s
 .PHONY : CTest/cmCTestHG.cxx.s
 
 CTest/cmCTestHandlerCommand.obj: CTest/cmCTestHandlerCommand.cxx.obj
@@ -1347,7 +1347,7 @@ CTest/cmCTestHandlerCommand.obj: CTest/cmCTestHandlerCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestHandlerCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.obj
 .PHONY : CTest/cmCTestHandlerCommand.cxx.obj
 
 CTest/cmCTestHandlerCommand.i: CTest/cmCTestHandlerCommand.cxx.i
@@ -1355,7 +1355,7 @@ CTest/cmCTestHandlerCommand.i: CTest/cmCTestHandlerCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestHandlerCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.i
 .PHONY : CTest/cmCTestHandlerCommand.cxx.i
 
 CTest/cmCTestHandlerCommand.s: CTest/cmCTestHandlerCommand.cxx.s
@@ -1363,7 +1363,7 @@ CTest/cmCTestHandlerCommand.s: CTest/cmCTestHandlerCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestHandlerCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestHandlerCommand.cxx.s
 .PHONY : CTest/cmCTestHandlerCommand.cxx.s
 
 CTest/cmCTestLaunch.obj: CTest/cmCTestLaunch.cxx.obj
@@ -1371,7 +1371,7 @@ CTest/cmCTestLaunch.obj: CTest/cmCTestLaunch.cxx.obj
 
 # target to build an object file
 CTest/cmCTestLaunch.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.obj
 .PHONY : CTest/cmCTestLaunch.cxx.obj
 
 CTest/cmCTestLaunch.i: CTest/cmCTestLaunch.cxx.i
@@ -1379,7 +1379,7 @@ CTest/cmCTestLaunch.i: CTest/cmCTestLaunch.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestLaunch.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.i
 .PHONY : CTest/cmCTestLaunch.cxx.i
 
 CTest/cmCTestLaunch.s: CTest/cmCTestLaunch.cxx.s
@@ -1387,7 +1387,7 @@ CTest/cmCTestLaunch.s: CTest/cmCTestLaunch.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestLaunch.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunch.cxx.s
 .PHONY : CTest/cmCTestLaunch.cxx.s
 
 CTest/cmCTestLaunchReporter.obj: CTest/cmCTestLaunchReporter.cxx.obj
@@ -1395,7 +1395,7 @@ CTest/cmCTestLaunchReporter.obj: CTest/cmCTestLaunchReporter.cxx.obj
 
 # target to build an object file
 CTest/cmCTestLaunchReporter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.obj
 .PHONY : CTest/cmCTestLaunchReporter.cxx.obj
 
 CTest/cmCTestLaunchReporter.i: CTest/cmCTestLaunchReporter.cxx.i
@@ -1403,7 +1403,7 @@ CTest/cmCTestLaunchReporter.i: CTest/cmCTestLaunchReporter.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestLaunchReporter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.i
 .PHONY : CTest/cmCTestLaunchReporter.cxx.i
 
 CTest/cmCTestLaunchReporter.s: CTest/cmCTestLaunchReporter.cxx.s
@@ -1411,7 +1411,7 @@ CTest/cmCTestLaunchReporter.s: CTest/cmCTestLaunchReporter.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestLaunchReporter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestLaunchReporter.cxx.s
 .PHONY : CTest/cmCTestLaunchReporter.cxx.s
 
 CTest/cmCTestMemCheckCommand.obj: CTest/cmCTestMemCheckCommand.cxx.obj
@@ -1419,7 +1419,7 @@ CTest/cmCTestMemCheckCommand.obj: CTest/cmCTestMemCheckCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestMemCheckCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.obj
 .PHONY : CTest/cmCTestMemCheckCommand.cxx.obj
 
 CTest/cmCTestMemCheckCommand.i: CTest/cmCTestMemCheckCommand.cxx.i
@@ -1427,7 +1427,7 @@ CTest/cmCTestMemCheckCommand.i: CTest/cmCTestMemCheckCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestMemCheckCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.i
 .PHONY : CTest/cmCTestMemCheckCommand.cxx.i
 
 CTest/cmCTestMemCheckCommand.s: CTest/cmCTestMemCheckCommand.cxx.s
@@ -1435,7 +1435,7 @@ CTest/cmCTestMemCheckCommand.s: CTest/cmCTestMemCheckCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestMemCheckCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckCommand.cxx.s
 .PHONY : CTest/cmCTestMemCheckCommand.cxx.s
 
 CTest/cmCTestMemCheckHandler.obj: CTest/cmCTestMemCheckHandler.cxx.obj
@@ -1443,7 +1443,7 @@ CTest/cmCTestMemCheckHandler.obj: CTest/cmCTestMemCheckHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestMemCheckHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.obj
 .PHONY : CTest/cmCTestMemCheckHandler.cxx.obj
 
 CTest/cmCTestMemCheckHandler.i: CTest/cmCTestMemCheckHandler.cxx.i
@@ -1451,7 +1451,7 @@ CTest/cmCTestMemCheckHandler.i: CTest/cmCTestMemCheckHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestMemCheckHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.i
 .PHONY : CTest/cmCTestMemCheckHandler.cxx.i
 
 CTest/cmCTestMemCheckHandler.s: CTest/cmCTestMemCheckHandler.cxx.s
@@ -1459,7 +1459,7 @@ CTest/cmCTestMemCheckHandler.s: CTest/cmCTestMemCheckHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestMemCheckHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMemCheckHandler.cxx.s
 .PHONY : CTest/cmCTestMemCheckHandler.cxx.s
 
 CTest/cmCTestMultiProcessHandler.obj: CTest/cmCTestMultiProcessHandler.cxx.obj
@@ -1467,7 +1467,7 @@ CTest/cmCTestMultiProcessHandler.obj: CTest/cmCTestMultiProcessHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestMultiProcessHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.obj
 .PHONY : CTest/cmCTestMultiProcessHandler.cxx.obj
 
 CTest/cmCTestMultiProcessHandler.i: CTest/cmCTestMultiProcessHandler.cxx.i
@@ -1475,7 +1475,7 @@ CTest/cmCTestMultiProcessHandler.i: CTest/cmCTestMultiProcessHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestMultiProcessHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.i
 .PHONY : CTest/cmCTestMultiProcessHandler.cxx.i
 
 CTest/cmCTestMultiProcessHandler.s: CTest/cmCTestMultiProcessHandler.cxx.s
@@ -1483,7 +1483,7 @@ CTest/cmCTestMultiProcessHandler.s: CTest/cmCTestMultiProcessHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestMultiProcessHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestMultiProcessHandler.cxx.s
 .PHONY : CTest/cmCTestMultiProcessHandler.cxx.s
 
 CTest/cmCTestP4.obj: CTest/cmCTestP4.cxx.obj
@@ -1491,7 +1491,7 @@ CTest/cmCTestP4.obj: CTest/cmCTestP4.cxx.obj
 
 # target to build an object file
 CTest/cmCTestP4.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.obj
 .PHONY : CTest/cmCTestP4.cxx.obj
 
 CTest/cmCTestP4.i: CTest/cmCTestP4.cxx.i
@@ -1499,7 +1499,7 @@ CTest/cmCTestP4.i: CTest/cmCTestP4.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestP4.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.i
 .PHONY : CTest/cmCTestP4.cxx.i
 
 CTest/cmCTestP4.s: CTest/cmCTestP4.cxx.s
@@ -1507,7 +1507,7 @@ CTest/cmCTestP4.s: CTest/cmCTestP4.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestP4.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestP4.cxx.s
 .PHONY : CTest/cmCTestP4.cxx.s
 
 CTest/cmCTestReadCustomFilesCommand.obj: CTest/cmCTestReadCustomFilesCommand.cxx.obj
@@ -1515,7 +1515,7 @@ CTest/cmCTestReadCustomFilesCommand.obj: CTest/cmCTestReadCustomFilesCommand.cxx
 
 # target to build an object file
 CTest/cmCTestReadCustomFilesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.obj
 .PHONY : CTest/cmCTestReadCustomFilesCommand.cxx.obj
 
 CTest/cmCTestReadCustomFilesCommand.i: CTest/cmCTestReadCustomFilesCommand.cxx.i
@@ -1523,7 +1523,7 @@ CTest/cmCTestReadCustomFilesCommand.i: CTest/cmCTestReadCustomFilesCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestReadCustomFilesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.i
 .PHONY : CTest/cmCTestReadCustomFilesCommand.cxx.i
 
 CTest/cmCTestReadCustomFilesCommand.s: CTest/cmCTestReadCustomFilesCommand.cxx.s
@@ -1531,7 +1531,7 @@ CTest/cmCTestReadCustomFilesCommand.s: CTest/cmCTestReadCustomFilesCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestReadCustomFilesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestReadCustomFilesCommand.cxx.s
 .PHONY : CTest/cmCTestReadCustomFilesCommand.cxx.s
 
 CTest/cmCTestResourceAllocator.obj: CTest/cmCTestResourceAllocator.cxx.obj
@@ -1539,7 +1539,7 @@ CTest/cmCTestResourceAllocator.obj: CTest/cmCTestResourceAllocator.cxx.obj
 
 # target to build an object file
 CTest/cmCTestResourceAllocator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.obj
 .PHONY : CTest/cmCTestResourceAllocator.cxx.obj
 
 CTest/cmCTestResourceAllocator.i: CTest/cmCTestResourceAllocator.cxx.i
@@ -1547,7 +1547,7 @@ CTest/cmCTestResourceAllocator.i: CTest/cmCTestResourceAllocator.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestResourceAllocator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.i
 .PHONY : CTest/cmCTestResourceAllocator.cxx.i
 
 CTest/cmCTestResourceAllocator.s: CTest/cmCTestResourceAllocator.cxx.s
@@ -1555,7 +1555,7 @@ CTest/cmCTestResourceAllocator.s: CTest/cmCTestResourceAllocator.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestResourceAllocator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceAllocator.cxx.s
 .PHONY : CTest/cmCTestResourceAllocator.cxx.s
 
 CTest/cmCTestResourceGroupsLexerHelper.obj: CTest/cmCTestResourceGroupsLexerHelper.cxx.obj
@@ -1563,7 +1563,7 @@ CTest/cmCTestResourceGroupsLexerHelper.obj: CTest/cmCTestResourceGroupsLexerHelp
 
 # target to build an object file
 CTest/cmCTestResourceGroupsLexerHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.obj
 .PHONY : CTest/cmCTestResourceGroupsLexerHelper.cxx.obj
 
 CTest/cmCTestResourceGroupsLexerHelper.i: CTest/cmCTestResourceGroupsLexerHelper.cxx.i
@@ -1571,7 +1571,7 @@ CTest/cmCTestResourceGroupsLexerHelper.i: CTest/cmCTestResourceGroupsLexerHelper
 
 # target to preprocess a source file
 CTest/cmCTestResourceGroupsLexerHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.i
 .PHONY : CTest/cmCTestResourceGroupsLexerHelper.cxx.i
 
 CTest/cmCTestResourceGroupsLexerHelper.s: CTest/cmCTestResourceGroupsLexerHelper.cxx.s
@@ -1579,7 +1579,7 @@ CTest/cmCTestResourceGroupsLexerHelper.s: CTest/cmCTestResourceGroupsLexerHelper
 
 # target to generate assembly for a file
 CTest/cmCTestResourceGroupsLexerHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceGroupsLexerHelper.cxx.s
 .PHONY : CTest/cmCTestResourceGroupsLexerHelper.cxx.s
 
 CTest/cmCTestResourceSpec.obj: CTest/cmCTestResourceSpec.cxx.obj
@@ -1587,7 +1587,7 @@ CTest/cmCTestResourceSpec.obj: CTest/cmCTestResourceSpec.cxx.obj
 
 # target to build an object file
 CTest/cmCTestResourceSpec.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.obj
 .PHONY : CTest/cmCTestResourceSpec.cxx.obj
 
 CTest/cmCTestResourceSpec.i: CTest/cmCTestResourceSpec.cxx.i
@@ -1595,7 +1595,7 @@ CTest/cmCTestResourceSpec.i: CTest/cmCTestResourceSpec.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestResourceSpec.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.i
 .PHONY : CTest/cmCTestResourceSpec.cxx.i
 
 CTest/cmCTestResourceSpec.s: CTest/cmCTestResourceSpec.cxx.s
@@ -1603,7 +1603,7 @@ CTest/cmCTestResourceSpec.s: CTest/cmCTestResourceSpec.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestResourceSpec.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestResourceSpec.cxx.s
 .PHONY : CTest/cmCTestResourceSpec.cxx.s
 
 CTest/cmCTestRunScriptCommand.obj: CTest/cmCTestRunScriptCommand.cxx.obj
@@ -1611,7 +1611,7 @@ CTest/cmCTestRunScriptCommand.obj: CTest/cmCTestRunScriptCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestRunScriptCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.obj
 .PHONY : CTest/cmCTestRunScriptCommand.cxx.obj
 
 CTest/cmCTestRunScriptCommand.i: CTest/cmCTestRunScriptCommand.cxx.i
@@ -1619,7 +1619,7 @@ CTest/cmCTestRunScriptCommand.i: CTest/cmCTestRunScriptCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestRunScriptCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.i
 .PHONY : CTest/cmCTestRunScriptCommand.cxx.i
 
 CTest/cmCTestRunScriptCommand.s: CTest/cmCTestRunScriptCommand.cxx.s
@@ -1627,7 +1627,7 @@ CTest/cmCTestRunScriptCommand.s: CTest/cmCTestRunScriptCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestRunScriptCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunScriptCommand.cxx.s
 .PHONY : CTest/cmCTestRunScriptCommand.cxx.s
 
 CTest/cmCTestRunTest.obj: CTest/cmCTestRunTest.cxx.obj
@@ -1635,7 +1635,7 @@ CTest/cmCTestRunTest.obj: CTest/cmCTestRunTest.cxx.obj
 
 # target to build an object file
 CTest/cmCTestRunTest.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.obj
 .PHONY : CTest/cmCTestRunTest.cxx.obj
 
 CTest/cmCTestRunTest.i: CTest/cmCTestRunTest.cxx.i
@@ -1643,7 +1643,7 @@ CTest/cmCTestRunTest.i: CTest/cmCTestRunTest.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestRunTest.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.i
 .PHONY : CTest/cmCTestRunTest.cxx.i
 
 CTest/cmCTestRunTest.s: CTest/cmCTestRunTest.cxx.s
@@ -1651,7 +1651,7 @@ CTest/cmCTestRunTest.s: CTest/cmCTestRunTest.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestRunTest.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestRunTest.cxx.s
 .PHONY : CTest/cmCTestRunTest.cxx.s
 
 CTest/cmCTestSVN.obj: CTest/cmCTestSVN.cxx.obj
@@ -1659,7 +1659,7 @@ CTest/cmCTestSVN.obj: CTest/cmCTestSVN.cxx.obj
 
 # target to build an object file
 CTest/cmCTestSVN.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.obj
 .PHONY : CTest/cmCTestSVN.cxx.obj
 
 CTest/cmCTestSVN.i: CTest/cmCTestSVN.cxx.i
@@ -1667,7 +1667,7 @@ CTest/cmCTestSVN.i: CTest/cmCTestSVN.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestSVN.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.i
 .PHONY : CTest/cmCTestSVN.cxx.i
 
 CTest/cmCTestSVN.s: CTest/cmCTestSVN.cxx.s
@@ -1675,7 +1675,7 @@ CTest/cmCTestSVN.s: CTest/cmCTestSVN.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestSVN.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSVN.cxx.s
 .PHONY : CTest/cmCTestSVN.cxx.s
 
 CTest/cmCTestScriptHandler.obj: CTest/cmCTestScriptHandler.cxx.obj
@@ -1683,7 +1683,7 @@ CTest/cmCTestScriptHandler.obj: CTest/cmCTestScriptHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestScriptHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.obj
 .PHONY : CTest/cmCTestScriptHandler.cxx.obj
 
 CTest/cmCTestScriptHandler.i: CTest/cmCTestScriptHandler.cxx.i
@@ -1691,7 +1691,7 @@ CTest/cmCTestScriptHandler.i: CTest/cmCTestScriptHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestScriptHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.i
 .PHONY : CTest/cmCTestScriptHandler.cxx.i
 
 CTest/cmCTestScriptHandler.s: CTest/cmCTestScriptHandler.cxx.s
@@ -1699,7 +1699,7 @@ CTest/cmCTestScriptHandler.s: CTest/cmCTestScriptHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestScriptHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestScriptHandler.cxx.s
 .PHONY : CTest/cmCTestScriptHandler.cxx.s
 
 CTest/cmCTestSleepCommand.obj: CTest/cmCTestSleepCommand.cxx.obj
@@ -1707,7 +1707,7 @@ CTest/cmCTestSleepCommand.obj: CTest/cmCTestSleepCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestSleepCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.obj
 .PHONY : CTest/cmCTestSleepCommand.cxx.obj
 
 CTest/cmCTestSleepCommand.i: CTest/cmCTestSleepCommand.cxx.i
@@ -1715,7 +1715,7 @@ CTest/cmCTestSleepCommand.i: CTest/cmCTestSleepCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestSleepCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.i
 .PHONY : CTest/cmCTestSleepCommand.cxx.i
 
 CTest/cmCTestSleepCommand.s: CTest/cmCTestSleepCommand.cxx.s
@@ -1723,7 +1723,7 @@ CTest/cmCTestSleepCommand.s: CTest/cmCTestSleepCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestSleepCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSleepCommand.cxx.s
 .PHONY : CTest/cmCTestSleepCommand.cxx.s
 
 CTest/cmCTestStartCommand.obj: CTest/cmCTestStartCommand.cxx.obj
@@ -1731,7 +1731,7 @@ CTest/cmCTestStartCommand.obj: CTest/cmCTestStartCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestStartCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.obj
 .PHONY : CTest/cmCTestStartCommand.cxx.obj
 
 CTest/cmCTestStartCommand.i: CTest/cmCTestStartCommand.cxx.i
@@ -1739,7 +1739,7 @@ CTest/cmCTestStartCommand.i: CTest/cmCTestStartCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestStartCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.i
 .PHONY : CTest/cmCTestStartCommand.cxx.i
 
 CTest/cmCTestStartCommand.s: CTest/cmCTestStartCommand.cxx.s
@@ -1747,7 +1747,7 @@ CTest/cmCTestStartCommand.s: CTest/cmCTestStartCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestStartCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestStartCommand.cxx.s
 .PHONY : CTest/cmCTestStartCommand.cxx.s
 
 CTest/cmCTestSubmitCommand.obj: CTest/cmCTestSubmitCommand.cxx.obj
@@ -1755,7 +1755,7 @@ CTest/cmCTestSubmitCommand.obj: CTest/cmCTestSubmitCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestSubmitCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.obj
 .PHONY : CTest/cmCTestSubmitCommand.cxx.obj
 
 CTest/cmCTestSubmitCommand.i: CTest/cmCTestSubmitCommand.cxx.i
@@ -1763,7 +1763,7 @@ CTest/cmCTestSubmitCommand.i: CTest/cmCTestSubmitCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestSubmitCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.i
 .PHONY : CTest/cmCTestSubmitCommand.cxx.i
 
 CTest/cmCTestSubmitCommand.s: CTest/cmCTestSubmitCommand.cxx.s
@@ -1771,7 +1771,7 @@ CTest/cmCTestSubmitCommand.s: CTest/cmCTestSubmitCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestSubmitCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitCommand.cxx.s
 .PHONY : CTest/cmCTestSubmitCommand.cxx.s
 
 CTest/cmCTestSubmitHandler.obj: CTest/cmCTestSubmitHandler.cxx.obj
@@ -1779,7 +1779,7 @@ CTest/cmCTestSubmitHandler.obj: CTest/cmCTestSubmitHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestSubmitHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.obj
 .PHONY : CTest/cmCTestSubmitHandler.cxx.obj
 
 CTest/cmCTestSubmitHandler.i: CTest/cmCTestSubmitHandler.cxx.i
@@ -1787,7 +1787,7 @@ CTest/cmCTestSubmitHandler.i: CTest/cmCTestSubmitHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestSubmitHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.i
 .PHONY : CTest/cmCTestSubmitHandler.cxx.i
 
 CTest/cmCTestSubmitHandler.s: CTest/cmCTestSubmitHandler.cxx.s
@@ -1795,7 +1795,7 @@ CTest/cmCTestSubmitHandler.s: CTest/cmCTestSubmitHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestSubmitHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestSubmitHandler.cxx.s
 .PHONY : CTest/cmCTestSubmitHandler.cxx.s
 
 CTest/cmCTestTestCommand.obj: CTest/cmCTestTestCommand.cxx.obj
@@ -1803,7 +1803,7 @@ CTest/cmCTestTestCommand.obj: CTest/cmCTestTestCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestTestCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.obj
 .PHONY : CTest/cmCTestTestCommand.cxx.obj
 
 CTest/cmCTestTestCommand.i: CTest/cmCTestTestCommand.cxx.i
@@ -1811,7 +1811,7 @@ CTest/cmCTestTestCommand.i: CTest/cmCTestTestCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestTestCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.i
 .PHONY : CTest/cmCTestTestCommand.cxx.i
 
 CTest/cmCTestTestCommand.s: CTest/cmCTestTestCommand.cxx.s
@@ -1819,7 +1819,7 @@ CTest/cmCTestTestCommand.s: CTest/cmCTestTestCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestTestCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestCommand.cxx.s
 .PHONY : CTest/cmCTestTestCommand.cxx.s
 
 CTest/cmCTestTestHandler.obj: CTest/cmCTestTestHandler.cxx.obj
@@ -1827,7 +1827,7 @@ CTest/cmCTestTestHandler.obj: CTest/cmCTestTestHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestTestHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.obj
 .PHONY : CTest/cmCTestTestHandler.cxx.obj
 
 CTest/cmCTestTestHandler.i: CTest/cmCTestTestHandler.cxx.i
@@ -1835,7 +1835,7 @@ CTest/cmCTestTestHandler.i: CTest/cmCTestTestHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestTestHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.i
 .PHONY : CTest/cmCTestTestHandler.cxx.i
 
 CTest/cmCTestTestHandler.s: CTest/cmCTestTestHandler.cxx.s
@@ -1843,7 +1843,7 @@ CTest/cmCTestTestHandler.s: CTest/cmCTestTestHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestTestHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestTestHandler.cxx.s
 .PHONY : CTest/cmCTestTestHandler.cxx.s
 
 CTest/cmCTestUpdateCommand.obj: CTest/cmCTestUpdateCommand.cxx.obj
@@ -1851,7 +1851,7 @@ CTest/cmCTestUpdateCommand.obj: CTest/cmCTestUpdateCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestUpdateCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.obj
 .PHONY : CTest/cmCTestUpdateCommand.cxx.obj
 
 CTest/cmCTestUpdateCommand.i: CTest/cmCTestUpdateCommand.cxx.i
@@ -1859,7 +1859,7 @@ CTest/cmCTestUpdateCommand.i: CTest/cmCTestUpdateCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestUpdateCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.i
 .PHONY : CTest/cmCTestUpdateCommand.cxx.i
 
 CTest/cmCTestUpdateCommand.s: CTest/cmCTestUpdateCommand.cxx.s
@@ -1867,7 +1867,7 @@ CTest/cmCTestUpdateCommand.s: CTest/cmCTestUpdateCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestUpdateCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateCommand.cxx.s
 .PHONY : CTest/cmCTestUpdateCommand.cxx.s
 
 CTest/cmCTestUpdateHandler.obj: CTest/cmCTestUpdateHandler.cxx.obj
@@ -1875,7 +1875,7 @@ CTest/cmCTestUpdateHandler.obj: CTest/cmCTestUpdateHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestUpdateHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.obj
 .PHONY : CTest/cmCTestUpdateHandler.cxx.obj
 
 CTest/cmCTestUpdateHandler.i: CTest/cmCTestUpdateHandler.cxx.i
@@ -1883,7 +1883,7 @@ CTest/cmCTestUpdateHandler.i: CTest/cmCTestUpdateHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestUpdateHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.i
 .PHONY : CTest/cmCTestUpdateHandler.cxx.i
 
 CTest/cmCTestUpdateHandler.s: CTest/cmCTestUpdateHandler.cxx.s
@@ -1891,7 +1891,7 @@ CTest/cmCTestUpdateHandler.s: CTest/cmCTestUpdateHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestUpdateHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUpdateHandler.cxx.s
 .PHONY : CTest/cmCTestUpdateHandler.cxx.s
 
 CTest/cmCTestUploadCommand.obj: CTest/cmCTestUploadCommand.cxx.obj
@@ -1899,7 +1899,7 @@ CTest/cmCTestUploadCommand.obj: CTest/cmCTestUploadCommand.cxx.obj
 
 # target to build an object file
 CTest/cmCTestUploadCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.obj
 .PHONY : CTest/cmCTestUploadCommand.cxx.obj
 
 CTest/cmCTestUploadCommand.i: CTest/cmCTestUploadCommand.cxx.i
@@ -1907,7 +1907,7 @@ CTest/cmCTestUploadCommand.i: CTest/cmCTestUploadCommand.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestUploadCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.i
 .PHONY : CTest/cmCTestUploadCommand.cxx.i
 
 CTest/cmCTestUploadCommand.s: CTest/cmCTestUploadCommand.cxx.s
@@ -1915,7 +1915,7 @@ CTest/cmCTestUploadCommand.s: CTest/cmCTestUploadCommand.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestUploadCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadCommand.cxx.s
 .PHONY : CTest/cmCTestUploadCommand.cxx.s
 
 CTest/cmCTestUploadHandler.obj: CTest/cmCTestUploadHandler.cxx.obj
@@ -1923,7 +1923,7 @@ CTest/cmCTestUploadHandler.obj: CTest/cmCTestUploadHandler.cxx.obj
 
 # target to build an object file
 CTest/cmCTestUploadHandler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.obj
 .PHONY : CTest/cmCTestUploadHandler.cxx.obj
 
 CTest/cmCTestUploadHandler.i: CTest/cmCTestUploadHandler.cxx.i
@@ -1931,7 +1931,7 @@ CTest/cmCTestUploadHandler.i: CTest/cmCTestUploadHandler.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestUploadHandler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.i
 .PHONY : CTest/cmCTestUploadHandler.cxx.i
 
 CTest/cmCTestUploadHandler.s: CTest/cmCTestUploadHandler.cxx.s
@@ -1939,7 +1939,7 @@ CTest/cmCTestUploadHandler.s: CTest/cmCTestUploadHandler.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestUploadHandler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestUploadHandler.cxx.s
 .PHONY : CTest/cmCTestUploadHandler.cxx.s
 
 CTest/cmCTestVC.obj: CTest/cmCTestVC.cxx.obj
@@ -1947,7 +1947,7 @@ CTest/cmCTestVC.obj: CTest/cmCTestVC.cxx.obj
 
 # target to build an object file
 CTest/cmCTestVC.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.obj
 .PHONY : CTest/cmCTestVC.cxx.obj
 
 CTest/cmCTestVC.i: CTest/cmCTestVC.cxx.i
@@ -1955,7 +1955,7 @@ CTest/cmCTestVC.i: CTest/cmCTestVC.cxx.i
 
 # target to preprocess a source file
 CTest/cmCTestVC.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.i
 .PHONY : CTest/cmCTestVC.cxx.i
 
 CTest/cmCTestVC.s: CTest/cmCTestVC.cxx.s
@@ -1963,7 +1963,7 @@ CTest/cmCTestVC.s: CTest/cmCTestVC.cxx.s
 
 # target to generate assembly for a file
 CTest/cmCTestVC.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmCTestVC.cxx.s
 .PHONY : CTest/cmCTestVC.cxx.s
 
 CTest/cmParseBlanketJSCoverage.obj: CTest/cmParseBlanketJSCoverage.cxx.obj
@@ -1971,7 +1971,7 @@ CTest/cmParseBlanketJSCoverage.obj: CTest/cmParseBlanketJSCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseBlanketJSCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.obj
 .PHONY : CTest/cmParseBlanketJSCoverage.cxx.obj
 
 CTest/cmParseBlanketJSCoverage.i: CTest/cmParseBlanketJSCoverage.cxx.i
@@ -1979,7 +1979,7 @@ CTest/cmParseBlanketJSCoverage.i: CTest/cmParseBlanketJSCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseBlanketJSCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.i
 .PHONY : CTest/cmParseBlanketJSCoverage.cxx.i
 
 CTest/cmParseBlanketJSCoverage.s: CTest/cmParseBlanketJSCoverage.cxx.s
@@ -1987,7 +1987,7 @@ CTest/cmParseBlanketJSCoverage.s: CTest/cmParseBlanketJSCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseBlanketJSCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseBlanketJSCoverage.cxx.s
 .PHONY : CTest/cmParseBlanketJSCoverage.cxx.s
 
 CTest/cmParseCacheCoverage.obj: CTest/cmParseCacheCoverage.cxx.obj
@@ -1995,7 +1995,7 @@ CTest/cmParseCacheCoverage.obj: CTest/cmParseCacheCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseCacheCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.obj
 .PHONY : CTest/cmParseCacheCoverage.cxx.obj
 
 CTest/cmParseCacheCoverage.i: CTest/cmParseCacheCoverage.cxx.i
@@ -2003,7 +2003,7 @@ CTest/cmParseCacheCoverage.i: CTest/cmParseCacheCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseCacheCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.i
 .PHONY : CTest/cmParseCacheCoverage.cxx.i
 
 CTest/cmParseCacheCoverage.s: CTest/cmParseCacheCoverage.cxx.s
@@ -2011,7 +2011,7 @@ CTest/cmParseCacheCoverage.s: CTest/cmParseCacheCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseCacheCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCacheCoverage.cxx.s
 .PHONY : CTest/cmParseCacheCoverage.cxx.s
 
 CTest/cmParseCoberturaCoverage.obj: CTest/cmParseCoberturaCoverage.cxx.obj
@@ -2019,7 +2019,7 @@ CTest/cmParseCoberturaCoverage.obj: CTest/cmParseCoberturaCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseCoberturaCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.obj
 .PHONY : CTest/cmParseCoberturaCoverage.cxx.obj
 
 CTest/cmParseCoberturaCoverage.i: CTest/cmParseCoberturaCoverage.cxx.i
@@ -2027,7 +2027,7 @@ CTest/cmParseCoberturaCoverage.i: CTest/cmParseCoberturaCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseCoberturaCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.i
 .PHONY : CTest/cmParseCoberturaCoverage.cxx.i
 
 CTest/cmParseCoberturaCoverage.s: CTest/cmParseCoberturaCoverage.cxx.s
@@ -2035,7 +2035,7 @@ CTest/cmParseCoberturaCoverage.s: CTest/cmParseCoberturaCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseCoberturaCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseCoberturaCoverage.cxx.s
 .PHONY : CTest/cmParseCoberturaCoverage.cxx.s
 
 CTest/cmParseDelphiCoverage.obj: CTest/cmParseDelphiCoverage.cxx.obj
@@ -2043,7 +2043,7 @@ CTest/cmParseDelphiCoverage.obj: CTest/cmParseDelphiCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseDelphiCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.obj
 .PHONY : CTest/cmParseDelphiCoverage.cxx.obj
 
 CTest/cmParseDelphiCoverage.i: CTest/cmParseDelphiCoverage.cxx.i
@@ -2051,7 +2051,7 @@ CTest/cmParseDelphiCoverage.i: CTest/cmParseDelphiCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseDelphiCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.i
 .PHONY : CTest/cmParseDelphiCoverage.cxx.i
 
 CTest/cmParseDelphiCoverage.s: CTest/cmParseDelphiCoverage.cxx.s
@@ -2059,7 +2059,7 @@ CTest/cmParseDelphiCoverage.s: CTest/cmParseDelphiCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseDelphiCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseDelphiCoverage.cxx.s
 .PHONY : CTest/cmParseDelphiCoverage.cxx.s
 
 CTest/cmParseGTMCoverage.obj: CTest/cmParseGTMCoverage.cxx.obj
@@ -2067,7 +2067,7 @@ CTest/cmParseGTMCoverage.obj: CTest/cmParseGTMCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseGTMCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.obj
 .PHONY : CTest/cmParseGTMCoverage.cxx.obj
 
 CTest/cmParseGTMCoverage.i: CTest/cmParseGTMCoverage.cxx.i
@@ -2075,7 +2075,7 @@ CTest/cmParseGTMCoverage.i: CTest/cmParseGTMCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseGTMCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.i
 .PHONY : CTest/cmParseGTMCoverage.cxx.i
 
 CTest/cmParseGTMCoverage.s: CTest/cmParseGTMCoverage.cxx.s
@@ -2083,7 +2083,7 @@ CTest/cmParseGTMCoverage.s: CTest/cmParseGTMCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseGTMCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseGTMCoverage.cxx.s
 .PHONY : CTest/cmParseGTMCoverage.cxx.s
 
 CTest/cmParseJacocoCoverage.obj: CTest/cmParseJacocoCoverage.cxx.obj
@@ -2091,7 +2091,7 @@ CTest/cmParseJacocoCoverage.obj: CTest/cmParseJacocoCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseJacocoCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.obj
 .PHONY : CTest/cmParseJacocoCoverage.cxx.obj
 
 CTest/cmParseJacocoCoverage.i: CTest/cmParseJacocoCoverage.cxx.i
@@ -2099,7 +2099,7 @@ CTest/cmParseJacocoCoverage.i: CTest/cmParseJacocoCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseJacocoCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.i
 .PHONY : CTest/cmParseJacocoCoverage.cxx.i
 
 CTest/cmParseJacocoCoverage.s: CTest/cmParseJacocoCoverage.cxx.s
@@ -2107,7 +2107,7 @@ CTest/cmParseJacocoCoverage.s: CTest/cmParseJacocoCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseJacocoCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseJacocoCoverage.cxx.s
 .PHONY : CTest/cmParseJacocoCoverage.cxx.s
 
 CTest/cmParseMumpsCoverage.obj: CTest/cmParseMumpsCoverage.cxx.obj
@@ -2115,7 +2115,7 @@ CTest/cmParseMumpsCoverage.obj: CTest/cmParseMumpsCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParseMumpsCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.obj
 .PHONY : CTest/cmParseMumpsCoverage.cxx.obj
 
 CTest/cmParseMumpsCoverage.i: CTest/cmParseMumpsCoverage.cxx.i
@@ -2123,7 +2123,7 @@ CTest/cmParseMumpsCoverage.i: CTest/cmParseMumpsCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParseMumpsCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.i
 .PHONY : CTest/cmParseMumpsCoverage.cxx.i
 
 CTest/cmParseMumpsCoverage.s: CTest/cmParseMumpsCoverage.cxx.s
@@ -2131,7 +2131,7 @@ CTest/cmParseMumpsCoverage.s: CTest/cmParseMumpsCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParseMumpsCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParseMumpsCoverage.cxx.s
 .PHONY : CTest/cmParseMumpsCoverage.cxx.s
 
 CTest/cmParsePHPCoverage.obj: CTest/cmParsePHPCoverage.cxx.obj
@@ -2139,7 +2139,7 @@ CTest/cmParsePHPCoverage.obj: CTest/cmParsePHPCoverage.cxx.obj
 
 # target to build an object file
 CTest/cmParsePHPCoverage.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.obj
 .PHONY : CTest/cmParsePHPCoverage.cxx.obj
 
 CTest/cmParsePHPCoverage.i: CTest/cmParsePHPCoverage.cxx.i
@@ -2147,7 +2147,7 @@ CTest/cmParsePHPCoverage.i: CTest/cmParsePHPCoverage.cxx.i
 
 # target to preprocess a source file
 CTest/cmParsePHPCoverage.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.i
 .PHONY : CTest/cmParsePHPCoverage.cxx.i
 
 CTest/cmParsePHPCoverage.s: CTest/cmParsePHPCoverage.cxx.s
@@ -2155,7 +2155,7 @@ CTest/cmParsePHPCoverage.s: CTest/cmParsePHPCoverage.cxx.s
 
 # target to generate assembly for a file
 CTest/cmParsePHPCoverage.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmParsePHPCoverage.cxx.s
 .PHONY : CTest/cmParsePHPCoverage.cxx.s
 
 CTest/cmProcess.obj: CTest/cmProcess.cxx.obj
@@ -2163,7 +2163,7 @@ CTest/cmProcess.obj: CTest/cmProcess.cxx.obj
 
 # target to build an object file
 CTest/cmProcess.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.obj
 .PHONY : CTest/cmProcess.cxx.obj
 
 CTest/cmProcess.i: CTest/cmProcess.cxx.i
@@ -2171,7 +2171,7 @@ CTest/cmProcess.i: CTest/cmProcess.cxx.i
 
 # target to preprocess a source file
 CTest/cmProcess.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.i
 .PHONY : CTest/cmProcess.cxx.i
 
 CTest/cmProcess.s: CTest/cmProcess.cxx.s
@@ -2179,7 +2179,7 @@ CTest/cmProcess.s: CTest/cmProcess.cxx.s
 
 # target to generate assembly for a file
 CTest/cmProcess.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/CTest/cmProcess.cxx.s
 .PHONY : CTest/cmProcess.cxx.s
 
 LexerParser/cmCTestResourceGroupsLexer.obj: LexerParser/cmCTestResourceGroupsLexer.cxx.obj
@@ -2187,7 +2187,7 @@ LexerParser/cmCTestResourceGroupsLexer.obj: LexerParser/cmCTestResourceGroupsLex
 
 # target to build an object file
 LexerParser/cmCTestResourceGroupsLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.obj
 .PHONY : LexerParser/cmCTestResourceGroupsLexer.cxx.obj
 
 LexerParser/cmCTestResourceGroupsLexer.i: LexerParser/cmCTestResourceGroupsLexer.cxx.i
@@ -2195,7 +2195,7 @@ LexerParser/cmCTestResourceGroupsLexer.i: LexerParser/cmCTestResourceGroupsLexer
 
 # target to preprocess a source file
 LexerParser/cmCTestResourceGroupsLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.i
 .PHONY : LexerParser/cmCTestResourceGroupsLexer.cxx.i
 
 LexerParser/cmCTestResourceGroupsLexer.s: LexerParser/cmCTestResourceGroupsLexer.cxx.s
@@ -2203,7 +2203,7 @@ LexerParser/cmCTestResourceGroupsLexer.s: LexerParser/cmCTestResourceGroupsLexer
 
 # target to generate assembly for a file
 LexerParser/cmCTestResourceGroupsLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/LexerParser/cmCTestResourceGroupsLexer.cxx.s
 .PHONY : LexerParser/cmCTestResourceGroupsLexer.cxx.s
 
 LexerParser/cmCommandArgumentLexer.obj: LexerParser/cmCommandArgumentLexer.cxx.obj
@@ -2211,7 +2211,7 @@ LexerParser/cmCommandArgumentLexer.obj: LexerParser/cmCommandArgumentLexer.cxx.o
 
 # target to build an object file
 LexerParser/cmCommandArgumentLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.obj
 .PHONY : LexerParser/cmCommandArgumentLexer.cxx.obj
 
 LexerParser/cmCommandArgumentLexer.i: LexerParser/cmCommandArgumentLexer.cxx.i
@@ -2219,7 +2219,7 @@ LexerParser/cmCommandArgumentLexer.i: LexerParser/cmCommandArgumentLexer.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmCommandArgumentLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.i
 .PHONY : LexerParser/cmCommandArgumentLexer.cxx.i
 
 LexerParser/cmCommandArgumentLexer.s: LexerParser/cmCommandArgumentLexer.cxx.s
@@ -2227,7 +2227,7 @@ LexerParser/cmCommandArgumentLexer.s: LexerParser/cmCommandArgumentLexer.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmCommandArgumentLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentLexer.cxx.s
 .PHONY : LexerParser/cmCommandArgumentLexer.cxx.s
 
 LexerParser/cmCommandArgumentParser.obj: LexerParser/cmCommandArgumentParser.cxx.obj
@@ -2235,7 +2235,7 @@ LexerParser/cmCommandArgumentParser.obj: LexerParser/cmCommandArgumentParser.cxx
 
 # target to build an object file
 LexerParser/cmCommandArgumentParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.obj
 .PHONY : LexerParser/cmCommandArgumentParser.cxx.obj
 
 LexerParser/cmCommandArgumentParser.i: LexerParser/cmCommandArgumentParser.cxx.i
@@ -2243,7 +2243,7 @@ LexerParser/cmCommandArgumentParser.i: LexerParser/cmCommandArgumentParser.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmCommandArgumentParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.i
 .PHONY : LexerParser/cmCommandArgumentParser.cxx.i
 
 LexerParser/cmCommandArgumentParser.s: LexerParser/cmCommandArgumentParser.cxx.s
@@ -2251,7 +2251,7 @@ LexerParser/cmCommandArgumentParser.s: LexerParser/cmCommandArgumentParser.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmCommandArgumentParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmCommandArgumentParser.cxx.s
 .PHONY : LexerParser/cmCommandArgumentParser.cxx.s
 
 LexerParser/cmDependsJavaLexer.obj: LexerParser/cmDependsJavaLexer.cxx.obj
@@ -2259,7 +2259,7 @@ LexerParser/cmDependsJavaLexer.obj: LexerParser/cmDependsJavaLexer.cxx.obj
 
 # target to build an object file
 LexerParser/cmDependsJavaLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.obj
 .PHONY : LexerParser/cmDependsJavaLexer.cxx.obj
 
 LexerParser/cmDependsJavaLexer.i: LexerParser/cmDependsJavaLexer.cxx.i
@@ -2267,7 +2267,7 @@ LexerParser/cmDependsJavaLexer.i: LexerParser/cmDependsJavaLexer.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmDependsJavaLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.i
 .PHONY : LexerParser/cmDependsJavaLexer.cxx.i
 
 LexerParser/cmDependsJavaLexer.s: LexerParser/cmDependsJavaLexer.cxx.s
@@ -2275,7 +2275,7 @@ LexerParser/cmDependsJavaLexer.s: LexerParser/cmDependsJavaLexer.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmDependsJavaLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaLexer.cxx.s
 .PHONY : LexerParser/cmDependsJavaLexer.cxx.s
 
 LexerParser/cmDependsJavaParser.obj: LexerParser/cmDependsJavaParser.cxx.obj
@@ -2283,7 +2283,7 @@ LexerParser/cmDependsJavaParser.obj: LexerParser/cmDependsJavaParser.cxx.obj
 
 # target to build an object file
 LexerParser/cmDependsJavaParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.obj
 .PHONY : LexerParser/cmDependsJavaParser.cxx.obj
 
 LexerParser/cmDependsJavaParser.i: LexerParser/cmDependsJavaParser.cxx.i
@@ -2291,7 +2291,7 @@ LexerParser/cmDependsJavaParser.i: LexerParser/cmDependsJavaParser.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmDependsJavaParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.i
 .PHONY : LexerParser/cmDependsJavaParser.cxx.i
 
 LexerParser/cmDependsJavaParser.s: LexerParser/cmDependsJavaParser.cxx.s
@@ -2299,7 +2299,7 @@ LexerParser/cmDependsJavaParser.s: LexerParser/cmDependsJavaParser.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmDependsJavaParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmDependsJavaParser.cxx.s
 .PHONY : LexerParser/cmDependsJavaParser.cxx.s
 
 LexerParser/cmExprLexer.obj: LexerParser/cmExprLexer.cxx.obj
@@ -2307,7 +2307,7 @@ LexerParser/cmExprLexer.obj: LexerParser/cmExprLexer.cxx.obj
 
 # target to build an object file
 LexerParser/cmExprLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.obj
 .PHONY : LexerParser/cmExprLexer.cxx.obj
 
 LexerParser/cmExprLexer.i: LexerParser/cmExprLexer.cxx.i
@@ -2315,7 +2315,7 @@ LexerParser/cmExprLexer.i: LexerParser/cmExprLexer.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmExprLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.i
 .PHONY : LexerParser/cmExprLexer.cxx.i
 
 LexerParser/cmExprLexer.s: LexerParser/cmExprLexer.cxx.s
@@ -2323,7 +2323,7 @@ LexerParser/cmExprLexer.s: LexerParser/cmExprLexer.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmExprLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprLexer.cxx.s
 .PHONY : LexerParser/cmExprLexer.cxx.s
 
 LexerParser/cmExprParser.obj: LexerParser/cmExprParser.cxx.obj
@@ -2331,7 +2331,7 @@ LexerParser/cmExprParser.obj: LexerParser/cmExprParser.cxx.obj
 
 # target to build an object file
 LexerParser/cmExprParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.obj
 .PHONY : LexerParser/cmExprParser.cxx.obj
 
 LexerParser/cmExprParser.i: LexerParser/cmExprParser.cxx.i
@@ -2339,7 +2339,7 @@ LexerParser/cmExprParser.i: LexerParser/cmExprParser.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmExprParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.i
 .PHONY : LexerParser/cmExprParser.cxx.i
 
 LexerParser/cmExprParser.s: LexerParser/cmExprParser.cxx.s
@@ -2347,7 +2347,7 @@ LexerParser/cmExprParser.s: LexerParser/cmExprParser.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmExprParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmExprParser.cxx.s
 .PHONY : LexerParser/cmExprParser.cxx.s
 
 LexerParser/cmFortranLexer.obj: LexerParser/cmFortranLexer.cxx.obj
@@ -2355,7 +2355,7 @@ LexerParser/cmFortranLexer.obj: LexerParser/cmFortranLexer.cxx.obj
 
 # target to build an object file
 LexerParser/cmFortranLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.obj
 .PHONY : LexerParser/cmFortranLexer.cxx.obj
 
 LexerParser/cmFortranLexer.i: LexerParser/cmFortranLexer.cxx.i
@@ -2363,7 +2363,7 @@ LexerParser/cmFortranLexer.i: LexerParser/cmFortranLexer.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmFortranLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.i
 .PHONY : LexerParser/cmFortranLexer.cxx.i
 
 LexerParser/cmFortranLexer.s: LexerParser/cmFortranLexer.cxx.s
@@ -2371,7 +2371,7 @@ LexerParser/cmFortranLexer.s: LexerParser/cmFortranLexer.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmFortranLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranLexer.cxx.s
 .PHONY : LexerParser/cmFortranLexer.cxx.s
 
 LexerParser/cmFortranParser.obj: LexerParser/cmFortranParser.cxx.obj
@@ -2379,7 +2379,7 @@ LexerParser/cmFortranParser.obj: LexerParser/cmFortranParser.cxx.obj
 
 # target to build an object file
 LexerParser/cmFortranParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.obj
 .PHONY : LexerParser/cmFortranParser.cxx.obj
 
 LexerParser/cmFortranParser.i: LexerParser/cmFortranParser.cxx.i
@@ -2387,7 +2387,7 @@ LexerParser/cmFortranParser.i: LexerParser/cmFortranParser.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmFortranParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.i
 .PHONY : LexerParser/cmFortranParser.cxx.i
 
 LexerParser/cmFortranParser.s: LexerParser/cmFortranParser.cxx.s
@@ -2395,7 +2395,7 @@ LexerParser/cmFortranParser.s: LexerParser/cmFortranParser.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmFortranParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmFortranParser.cxx.s
 .PHONY : LexerParser/cmFortranParser.cxx.s
 
 LexerParser/cmGccDepfileLexer.obj: LexerParser/cmGccDepfileLexer.cxx.obj
@@ -2403,7 +2403,7 @@ LexerParser/cmGccDepfileLexer.obj: LexerParser/cmGccDepfileLexer.cxx.obj
 
 # target to build an object file
 LexerParser/cmGccDepfileLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.obj
 .PHONY : LexerParser/cmGccDepfileLexer.cxx.obj
 
 LexerParser/cmGccDepfileLexer.i: LexerParser/cmGccDepfileLexer.cxx.i
@@ -2411,7 +2411,7 @@ LexerParser/cmGccDepfileLexer.i: LexerParser/cmGccDepfileLexer.cxx.i
 
 # target to preprocess a source file
 LexerParser/cmGccDepfileLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.i
 .PHONY : LexerParser/cmGccDepfileLexer.cxx.i
 
 LexerParser/cmGccDepfileLexer.s: LexerParser/cmGccDepfileLexer.cxx.s
@@ -2419,7 +2419,7 @@ LexerParser/cmGccDepfileLexer.s: LexerParser/cmGccDepfileLexer.cxx.s
 
 # target to generate assembly for a file
 LexerParser/cmGccDepfileLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmGccDepfileLexer.cxx.s
 .PHONY : LexerParser/cmGccDepfileLexer.cxx.s
 
 LexerParser/cmListFileLexer.obj: LexerParser/cmListFileLexer.c.obj
@@ -2427,7 +2427,7 @@ LexerParser/cmListFileLexer.obj: LexerParser/cmListFileLexer.c.obj
 
 # target to build an object file
 LexerParser/cmListFileLexer.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.obj
 .PHONY : LexerParser/cmListFileLexer.c.obj
 
 LexerParser/cmListFileLexer.i: LexerParser/cmListFileLexer.c.i
@@ -2435,7 +2435,7 @@ LexerParser/cmListFileLexer.i: LexerParser/cmListFileLexer.c.i
 
 # target to preprocess a source file
 LexerParser/cmListFileLexer.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.i
 .PHONY : LexerParser/cmListFileLexer.c.i
 
 LexerParser/cmListFileLexer.s: LexerParser/cmListFileLexer.c.s
@@ -2443,7 +2443,7 @@ LexerParser/cmListFileLexer.s: LexerParser/cmListFileLexer.c.s
 
 # target to generate assembly for a file
 LexerParser/cmListFileLexer.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/LexerParser/cmListFileLexer.c.s
 .PHONY : LexerParser/cmListFileLexer.c.s
 
 bindexplib.obj: bindexplib.cxx.obj
@@ -2451,7 +2451,7 @@ bindexplib.obj: bindexplib.cxx.obj
 
 # target to build an object file
 bindexplib.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.obj
 .PHONY : bindexplib.cxx.obj
 
 bindexplib.i: bindexplib.cxx.i
@@ -2459,7 +2459,7 @@ bindexplib.i: bindexplib.cxx.i
 
 # target to preprocess a source file
 bindexplib.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.i
 .PHONY : bindexplib.cxx.i
 
 bindexplib.s: bindexplib.cxx.s
@@ -2467,7 +2467,7 @@ bindexplib.s: bindexplib.cxx.s
 
 # target to generate assembly for a file
 bindexplib.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/bindexplib.cxx.s
 .PHONY : bindexplib.cxx.s
 
 cmAddCompileDefinitionsCommand.obj: cmAddCompileDefinitionsCommand.cxx.obj
@@ -2475,7 +2475,7 @@ cmAddCompileDefinitionsCommand.obj: cmAddCompileDefinitionsCommand.cxx.obj
 
 # target to build an object file
 cmAddCompileDefinitionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.obj
 .PHONY : cmAddCompileDefinitionsCommand.cxx.obj
 
 cmAddCompileDefinitionsCommand.i: cmAddCompileDefinitionsCommand.cxx.i
@@ -2483,7 +2483,7 @@ cmAddCompileDefinitionsCommand.i: cmAddCompileDefinitionsCommand.cxx.i
 
 # target to preprocess a source file
 cmAddCompileDefinitionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.i
 .PHONY : cmAddCompileDefinitionsCommand.cxx.i
 
 cmAddCompileDefinitionsCommand.s: cmAddCompileDefinitionsCommand.cxx.s
@@ -2491,7 +2491,7 @@ cmAddCompileDefinitionsCommand.s: cmAddCompileDefinitionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddCompileDefinitionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileDefinitionsCommand.cxx.s
 .PHONY : cmAddCompileDefinitionsCommand.cxx.s
 
 cmAddCompileOptionsCommand.obj: cmAddCompileOptionsCommand.cxx.obj
@@ -2499,7 +2499,7 @@ cmAddCompileOptionsCommand.obj: cmAddCompileOptionsCommand.cxx.obj
 
 # target to build an object file
 cmAddCompileOptionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.obj
 .PHONY : cmAddCompileOptionsCommand.cxx.obj
 
 cmAddCompileOptionsCommand.i: cmAddCompileOptionsCommand.cxx.i
@@ -2507,7 +2507,7 @@ cmAddCompileOptionsCommand.i: cmAddCompileOptionsCommand.cxx.i
 
 # target to preprocess a source file
 cmAddCompileOptionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.i
 .PHONY : cmAddCompileOptionsCommand.cxx.i
 
 cmAddCompileOptionsCommand.s: cmAddCompileOptionsCommand.cxx.s
@@ -2515,7 +2515,7 @@ cmAddCompileOptionsCommand.s: cmAddCompileOptionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddCompileOptionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCompileOptionsCommand.cxx.s
 .PHONY : cmAddCompileOptionsCommand.cxx.s
 
 cmAddCustomCommandCommand.obj: cmAddCustomCommandCommand.cxx.obj
@@ -2523,7 +2523,7 @@ cmAddCustomCommandCommand.obj: cmAddCustomCommandCommand.cxx.obj
 
 # target to build an object file
 cmAddCustomCommandCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.obj
 .PHONY : cmAddCustomCommandCommand.cxx.obj
 
 cmAddCustomCommandCommand.i: cmAddCustomCommandCommand.cxx.i
@@ -2531,7 +2531,7 @@ cmAddCustomCommandCommand.i: cmAddCustomCommandCommand.cxx.i
 
 # target to preprocess a source file
 cmAddCustomCommandCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.i
 .PHONY : cmAddCustomCommandCommand.cxx.i
 
 cmAddCustomCommandCommand.s: cmAddCustomCommandCommand.cxx.s
@@ -2539,7 +2539,7 @@ cmAddCustomCommandCommand.s: cmAddCustomCommandCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddCustomCommandCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomCommandCommand.cxx.s
 .PHONY : cmAddCustomCommandCommand.cxx.s
 
 cmAddCustomTargetCommand.obj: cmAddCustomTargetCommand.cxx.obj
@@ -2547,7 +2547,7 @@ cmAddCustomTargetCommand.obj: cmAddCustomTargetCommand.cxx.obj
 
 # target to build an object file
 cmAddCustomTargetCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.obj
 .PHONY : cmAddCustomTargetCommand.cxx.obj
 
 cmAddCustomTargetCommand.i: cmAddCustomTargetCommand.cxx.i
@@ -2555,7 +2555,7 @@ cmAddCustomTargetCommand.i: cmAddCustomTargetCommand.cxx.i
 
 # target to preprocess a source file
 cmAddCustomTargetCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.i
 .PHONY : cmAddCustomTargetCommand.cxx.i
 
 cmAddCustomTargetCommand.s: cmAddCustomTargetCommand.cxx.s
@@ -2563,7 +2563,7 @@ cmAddCustomTargetCommand.s: cmAddCustomTargetCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddCustomTargetCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddCustomTargetCommand.cxx.s
 .PHONY : cmAddCustomTargetCommand.cxx.s
 
 cmAddDefinitionsCommand.obj: cmAddDefinitionsCommand.cxx.obj
@@ -2571,7 +2571,7 @@ cmAddDefinitionsCommand.obj: cmAddDefinitionsCommand.cxx.obj
 
 # target to build an object file
 cmAddDefinitionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.obj
 .PHONY : cmAddDefinitionsCommand.cxx.obj
 
 cmAddDefinitionsCommand.i: cmAddDefinitionsCommand.cxx.i
@@ -2579,7 +2579,7 @@ cmAddDefinitionsCommand.i: cmAddDefinitionsCommand.cxx.i
 
 # target to preprocess a source file
 cmAddDefinitionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.i
 .PHONY : cmAddDefinitionsCommand.cxx.i
 
 cmAddDefinitionsCommand.s: cmAddDefinitionsCommand.cxx.s
@@ -2587,7 +2587,7 @@ cmAddDefinitionsCommand.s: cmAddDefinitionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddDefinitionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDefinitionsCommand.cxx.s
 .PHONY : cmAddDefinitionsCommand.cxx.s
 
 cmAddDependenciesCommand.obj: cmAddDependenciesCommand.cxx.obj
@@ -2595,7 +2595,7 @@ cmAddDependenciesCommand.obj: cmAddDependenciesCommand.cxx.obj
 
 # target to build an object file
 cmAddDependenciesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.obj
 .PHONY : cmAddDependenciesCommand.cxx.obj
 
 cmAddDependenciesCommand.i: cmAddDependenciesCommand.cxx.i
@@ -2603,7 +2603,7 @@ cmAddDependenciesCommand.i: cmAddDependenciesCommand.cxx.i
 
 # target to preprocess a source file
 cmAddDependenciesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.i
 .PHONY : cmAddDependenciesCommand.cxx.i
 
 cmAddDependenciesCommand.s: cmAddDependenciesCommand.cxx.s
@@ -2611,7 +2611,7 @@ cmAddDependenciesCommand.s: cmAddDependenciesCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddDependenciesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddDependenciesCommand.cxx.s
 .PHONY : cmAddDependenciesCommand.cxx.s
 
 cmAddExecutableCommand.obj: cmAddExecutableCommand.cxx.obj
@@ -2619,7 +2619,7 @@ cmAddExecutableCommand.obj: cmAddExecutableCommand.cxx.obj
 
 # target to build an object file
 cmAddExecutableCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.obj
 .PHONY : cmAddExecutableCommand.cxx.obj
 
 cmAddExecutableCommand.i: cmAddExecutableCommand.cxx.i
@@ -2627,7 +2627,7 @@ cmAddExecutableCommand.i: cmAddExecutableCommand.cxx.i
 
 # target to preprocess a source file
 cmAddExecutableCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.i
 .PHONY : cmAddExecutableCommand.cxx.i
 
 cmAddExecutableCommand.s: cmAddExecutableCommand.cxx.s
@@ -2635,7 +2635,7 @@ cmAddExecutableCommand.s: cmAddExecutableCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddExecutableCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddExecutableCommand.cxx.s
 .PHONY : cmAddExecutableCommand.cxx.s
 
 cmAddLibraryCommand.obj: cmAddLibraryCommand.cxx.obj
@@ -2643,7 +2643,7 @@ cmAddLibraryCommand.obj: cmAddLibraryCommand.cxx.obj
 
 # target to build an object file
 cmAddLibraryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.obj
 .PHONY : cmAddLibraryCommand.cxx.obj
 
 cmAddLibraryCommand.i: cmAddLibraryCommand.cxx.i
@@ -2651,7 +2651,7 @@ cmAddLibraryCommand.i: cmAddLibraryCommand.cxx.i
 
 # target to preprocess a source file
 cmAddLibraryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.i
 .PHONY : cmAddLibraryCommand.cxx.i
 
 cmAddLibraryCommand.s: cmAddLibraryCommand.cxx.s
@@ -2659,7 +2659,7 @@ cmAddLibraryCommand.s: cmAddLibraryCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddLibraryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLibraryCommand.cxx.s
 .PHONY : cmAddLibraryCommand.cxx.s
 
 cmAddLinkOptionsCommand.obj: cmAddLinkOptionsCommand.cxx.obj
@@ -2667,7 +2667,7 @@ cmAddLinkOptionsCommand.obj: cmAddLinkOptionsCommand.cxx.obj
 
 # target to build an object file
 cmAddLinkOptionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.obj
 .PHONY : cmAddLinkOptionsCommand.cxx.obj
 
 cmAddLinkOptionsCommand.i: cmAddLinkOptionsCommand.cxx.i
@@ -2675,7 +2675,7 @@ cmAddLinkOptionsCommand.i: cmAddLinkOptionsCommand.cxx.i
 
 # target to preprocess a source file
 cmAddLinkOptionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.i
 .PHONY : cmAddLinkOptionsCommand.cxx.i
 
 cmAddLinkOptionsCommand.s: cmAddLinkOptionsCommand.cxx.s
@@ -2683,7 +2683,7 @@ cmAddLinkOptionsCommand.s: cmAddLinkOptionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddLinkOptionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddLinkOptionsCommand.cxx.s
 .PHONY : cmAddLinkOptionsCommand.cxx.s
 
 cmAddSubDirectoryCommand.obj: cmAddSubDirectoryCommand.cxx.obj
@@ -2691,7 +2691,7 @@ cmAddSubDirectoryCommand.obj: cmAddSubDirectoryCommand.cxx.obj
 
 # target to build an object file
 cmAddSubDirectoryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.obj
 .PHONY : cmAddSubDirectoryCommand.cxx.obj
 
 cmAddSubDirectoryCommand.i: cmAddSubDirectoryCommand.cxx.i
@@ -2699,7 +2699,7 @@ cmAddSubDirectoryCommand.i: cmAddSubDirectoryCommand.cxx.i
 
 # target to preprocess a source file
 cmAddSubDirectoryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.i
 .PHONY : cmAddSubDirectoryCommand.cxx.i
 
 cmAddSubDirectoryCommand.s: cmAddSubDirectoryCommand.cxx.s
@@ -2707,7 +2707,7 @@ cmAddSubDirectoryCommand.s: cmAddSubDirectoryCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddSubDirectoryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddSubDirectoryCommand.cxx.s
 .PHONY : cmAddSubDirectoryCommand.cxx.s
 
 cmAddTestCommand.obj: cmAddTestCommand.cxx.obj
@@ -2715,7 +2715,7 @@ cmAddTestCommand.obj: cmAddTestCommand.cxx.obj
 
 # target to build an object file
 cmAddTestCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.obj
 .PHONY : cmAddTestCommand.cxx.obj
 
 cmAddTestCommand.i: cmAddTestCommand.cxx.i
@@ -2723,7 +2723,7 @@ cmAddTestCommand.i: cmAddTestCommand.cxx.i
 
 # target to preprocess a source file
 cmAddTestCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.i
 .PHONY : cmAddTestCommand.cxx.i
 
 cmAddTestCommand.s: cmAddTestCommand.cxx.s
@@ -2731,7 +2731,7 @@ cmAddTestCommand.s: cmAddTestCommand.cxx.s
 
 # target to generate assembly for a file
 cmAddTestCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAddTestCommand.cxx.s
 .PHONY : cmAddTestCommand.cxx.s
 
 cmAffinity.obj: cmAffinity.cxx.obj
@@ -2739,7 +2739,7 @@ cmAffinity.obj: cmAffinity.cxx.obj
 
 # target to build an object file
 cmAffinity.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.obj
 .PHONY : cmAffinity.cxx.obj
 
 cmAffinity.i: cmAffinity.cxx.i
@@ -2747,7 +2747,7 @@ cmAffinity.i: cmAffinity.cxx.i
 
 # target to preprocess a source file
 cmAffinity.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.i
 .PHONY : cmAffinity.cxx.i
 
 cmAffinity.s: cmAffinity.cxx.s
@@ -2755,7 +2755,7 @@ cmAffinity.s: cmAffinity.cxx.s
 
 # target to generate assembly for a file
 cmAffinity.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAffinity.cxx.s
 .PHONY : cmAffinity.cxx.s
 
 cmArchiveWrite.obj: cmArchiveWrite.cxx.obj
@@ -2763,7 +2763,7 @@ cmArchiveWrite.obj: cmArchiveWrite.cxx.obj
 
 # target to build an object file
 cmArchiveWrite.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.obj
 .PHONY : cmArchiveWrite.cxx.obj
 
 cmArchiveWrite.i: cmArchiveWrite.cxx.i
@@ -2771,7 +2771,7 @@ cmArchiveWrite.i: cmArchiveWrite.cxx.i
 
 # target to preprocess a source file
 cmArchiveWrite.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.i
 .PHONY : cmArchiveWrite.cxx.i
 
 cmArchiveWrite.s: cmArchiveWrite.cxx.s
@@ -2779,7 +2779,7 @@ cmArchiveWrite.s: cmArchiveWrite.cxx.s
 
 # target to generate assembly for a file
 cmArchiveWrite.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArchiveWrite.cxx.s
 .PHONY : cmArchiveWrite.cxx.s
 
 cmArgumentParser.obj: cmArgumentParser.cxx.obj
@@ -2787,7 +2787,7 @@ cmArgumentParser.obj: cmArgumentParser.cxx.obj
 
 # target to build an object file
 cmArgumentParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.obj
 .PHONY : cmArgumentParser.cxx.obj
 
 cmArgumentParser.i: cmArgumentParser.cxx.i
@@ -2795,7 +2795,7 @@ cmArgumentParser.i: cmArgumentParser.cxx.i
 
 # target to preprocess a source file
 cmArgumentParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.i
 .PHONY : cmArgumentParser.cxx.i
 
 cmArgumentParser.s: cmArgumentParser.cxx.s
@@ -2803,7 +2803,7 @@ cmArgumentParser.s: cmArgumentParser.cxx.s
 
 # target to generate assembly for a file
 cmArgumentParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmArgumentParser.cxx.s
 .PHONY : cmArgumentParser.cxx.s
 
 cmAuxSourceDirectoryCommand.obj: cmAuxSourceDirectoryCommand.cxx.obj
@@ -2811,7 +2811,7 @@ cmAuxSourceDirectoryCommand.obj: cmAuxSourceDirectoryCommand.cxx.obj
 
 # target to build an object file
 cmAuxSourceDirectoryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.obj
 .PHONY : cmAuxSourceDirectoryCommand.cxx.obj
 
 cmAuxSourceDirectoryCommand.i: cmAuxSourceDirectoryCommand.cxx.i
@@ -2819,7 +2819,7 @@ cmAuxSourceDirectoryCommand.i: cmAuxSourceDirectoryCommand.cxx.i
 
 # target to preprocess a source file
 cmAuxSourceDirectoryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.i
 .PHONY : cmAuxSourceDirectoryCommand.cxx.i
 
 cmAuxSourceDirectoryCommand.s: cmAuxSourceDirectoryCommand.cxx.s
@@ -2827,7 +2827,7 @@ cmAuxSourceDirectoryCommand.s: cmAuxSourceDirectoryCommand.cxx.s
 
 # target to generate assembly for a file
 cmAuxSourceDirectoryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmAuxSourceDirectoryCommand.cxx.s
 .PHONY : cmAuxSourceDirectoryCommand.cxx.s
 
 cmBase32.obj: cmBase32.cxx.obj
@@ -2835,7 +2835,7 @@ cmBase32.obj: cmBase32.cxx.obj
 
 # target to build an object file
 cmBase32.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.obj
 .PHONY : cmBase32.cxx.obj
 
 cmBase32.i: cmBase32.cxx.i
@@ -2843,7 +2843,7 @@ cmBase32.i: cmBase32.cxx.i
 
 # target to preprocess a source file
 cmBase32.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.i
 .PHONY : cmBase32.cxx.i
 
 cmBase32.s: cmBase32.cxx.s
@@ -2851,7 +2851,7 @@ cmBase32.s: cmBase32.cxx.s
 
 # target to generate assembly for a file
 cmBase32.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBase32.cxx.s
 .PHONY : cmBase32.cxx.s
 
 cmBinUtilsLinker.obj: cmBinUtilsLinker.cxx.obj
@@ -2859,7 +2859,7 @@ cmBinUtilsLinker.obj: cmBinUtilsLinker.cxx.obj
 
 # target to build an object file
 cmBinUtilsLinker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.obj
 .PHONY : cmBinUtilsLinker.cxx.obj
 
 cmBinUtilsLinker.i: cmBinUtilsLinker.cxx.i
@@ -2867,7 +2867,7 @@ cmBinUtilsLinker.i: cmBinUtilsLinker.cxx.i
 
 # target to preprocess a source file
 cmBinUtilsLinker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.i
 .PHONY : cmBinUtilsLinker.cxx.i
 
 cmBinUtilsLinker.s: cmBinUtilsLinker.cxx.s
@@ -2875,7 +2875,7 @@ cmBinUtilsLinker.s: cmBinUtilsLinker.cxx.s
 
 # target to generate assembly for a file
 cmBinUtilsLinker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinker.cxx.s
 .PHONY : cmBinUtilsLinker.cxx.s
 
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.obj: cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.obj
@@ -2883,7 +2883,7 @@ cmBinUtilsLinuxELFGetRuntimeDependenciesTool.obj: cmBinUtilsLinuxELFGetRuntimeDe
 
 # target to build an object file
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.i: cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.i
@@ -2891,7 +2891,7 @@ cmBinUtilsLinuxELFGetRuntimeDependenciesTool.i: cmBinUtilsLinuxELFGetRuntimeDepe
 
 # target to preprocess a source file
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.s: cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.s
@@ -2899,7 +2899,7 @@ cmBinUtilsLinuxELFGetRuntimeDependenciesTool.s: cmBinUtilsLinuxELFGetRuntimeDepe
 
 # target to generate assembly for a file
 cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsLinuxELFGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsLinuxELFLinker.obj: cmBinUtilsLinuxELFLinker.cxx.obj
@@ -2907,7 +2907,7 @@ cmBinUtilsLinuxELFLinker.obj: cmBinUtilsLinuxELFLinker.cxx.obj
 
 # target to build an object file
 cmBinUtilsLinuxELFLinker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.obj
 .PHONY : cmBinUtilsLinuxELFLinker.cxx.obj
 
 cmBinUtilsLinuxELFLinker.i: cmBinUtilsLinuxELFLinker.cxx.i
@@ -2915,7 +2915,7 @@ cmBinUtilsLinuxELFLinker.i: cmBinUtilsLinuxELFLinker.cxx.i
 
 # target to preprocess a source file
 cmBinUtilsLinuxELFLinker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.i
 .PHONY : cmBinUtilsLinuxELFLinker.cxx.i
 
 cmBinUtilsLinuxELFLinker.s: cmBinUtilsLinuxELFLinker.cxx.s
@@ -2923,7 +2923,7 @@ cmBinUtilsLinuxELFLinker.s: cmBinUtilsLinuxELFLinker.cxx.s
 
 # target to generate assembly for a file
 cmBinUtilsLinuxELFLinker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFLinker.cxx.s
 .PHONY : cmBinUtilsLinuxELFLinker.cxx.s
 
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.obj: cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.obj
@@ -2931,7 +2931,7 @@ cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.obj: cmBinUtilsLinuxELFObjdu
 
 # target to build an object file
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.i: cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.i
@@ -2939,7 +2939,7 @@ cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.i: cmBinUtilsLinuxELFObjdump
 
 # target to preprocess a source file
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.s: cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.s
@@ -2947,7 +2947,7 @@ cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.s: cmBinUtilsLinuxELFObjdump
 
 # target to generate assembly for a file
 cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.obj: cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.obj
@@ -2955,7 +2955,7 @@ cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.obj: cmBinUtilsMacOSMachOGetRunti
 
 # target to build an object file
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.i: cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.i
@@ -2963,7 +2963,7 @@ cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.i: cmBinUtilsMacOSMachOGetRuntime
 
 # target to preprocess a source file
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.s: cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.s
@@ -2971,7 +2971,7 @@ cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.s: cmBinUtilsMacOSMachOGetRuntime
 
 # target to generate assembly for a file
 cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsMacOSMachOGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsMacOSMachOLinker.obj: cmBinUtilsMacOSMachOLinker.cxx.obj
@@ -2979,7 +2979,7 @@ cmBinUtilsMacOSMachOLinker.obj: cmBinUtilsMacOSMachOLinker.cxx.obj
 
 # target to build an object file
 cmBinUtilsMacOSMachOLinker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.obj
 .PHONY : cmBinUtilsMacOSMachOLinker.cxx.obj
 
 cmBinUtilsMacOSMachOLinker.i: cmBinUtilsMacOSMachOLinker.cxx.i
@@ -2987,7 +2987,7 @@ cmBinUtilsMacOSMachOLinker.i: cmBinUtilsMacOSMachOLinker.cxx.i
 
 # target to preprocess a source file
 cmBinUtilsMacOSMachOLinker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.i
 .PHONY : cmBinUtilsMacOSMachOLinker.cxx.i
 
 cmBinUtilsMacOSMachOLinker.s: cmBinUtilsMacOSMachOLinker.cxx.s
@@ -2995,7 +2995,7 @@ cmBinUtilsMacOSMachOLinker.s: cmBinUtilsMacOSMachOLinker.cxx.s
 
 # target to generate assembly for a file
 cmBinUtilsMacOSMachOLinker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOLinker.cxx.s
 .PHONY : cmBinUtilsMacOSMachOLinker.cxx.s
 
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.obj: cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.obj
@@ -3003,7 +3003,7 @@ cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.obj: cmBinUtilsMacOSMachOOTo
 
 # target to build an object file
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.i: cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.i
@@ -3011,7 +3011,7 @@ cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.i: cmBinUtilsMacOSMachOOTool
 
 # target to preprocess a source file
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.s: cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.s
@@ -3019,7 +3019,7 @@ cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.s: cmBinUtilsMacOSMachOOTool
 
 # target to generate assembly for a file
 cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.obj
@@ -3027,7 +3027,7 @@ cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEDum
 
 # target to build an object file
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.i
@@ -3035,7 +3035,7 @@ cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEDumpb
 
 # target to preprocess a source file
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.s
@@ -3043,7 +3043,7 @@ cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEDumpb
 
 # target to generate assembly for a file
 cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.obj
@@ -3051,7 +3051,7 @@ cmBinUtilsWindowsPEGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEGetRuntime
 
 # target to build an object file
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.i
@@ -3059,7 +3059,7 @@ cmBinUtilsWindowsPEGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEGetRuntimeDe
 
 # target to preprocess a source file
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.s
@@ -3067,7 +3067,7 @@ cmBinUtilsWindowsPEGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEGetRuntimeDe
 
 # target to generate assembly for a file
 cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsWindowsPEGetRuntimeDependenciesTool.cxx.s
 
 cmBinUtilsWindowsPELinker.obj: cmBinUtilsWindowsPELinker.cxx.obj
@@ -3075,7 +3075,7 @@ cmBinUtilsWindowsPELinker.obj: cmBinUtilsWindowsPELinker.cxx.obj
 
 # target to build an object file
 cmBinUtilsWindowsPELinker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.obj
 .PHONY : cmBinUtilsWindowsPELinker.cxx.obj
 
 cmBinUtilsWindowsPELinker.i: cmBinUtilsWindowsPELinker.cxx.i
@@ -3083,7 +3083,7 @@ cmBinUtilsWindowsPELinker.i: cmBinUtilsWindowsPELinker.cxx.i
 
 # target to preprocess a source file
 cmBinUtilsWindowsPELinker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.i
 .PHONY : cmBinUtilsWindowsPELinker.cxx.i
 
 cmBinUtilsWindowsPELinker.s: cmBinUtilsWindowsPELinker.cxx.s
@@ -3091,7 +3091,7 @@ cmBinUtilsWindowsPELinker.s: cmBinUtilsWindowsPELinker.cxx.s
 
 # target to generate assembly for a file
 cmBinUtilsWindowsPELinker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPELinker.cxx.s
 .PHONY : cmBinUtilsWindowsPELinker.cxx.s
 
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.obj
@@ -3099,7 +3099,7 @@ cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.obj: cmBinUtilsWindowsPEObj
 
 # target to build an object file
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.obj
 .PHONY : cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.obj
 
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.i
@@ -3107,7 +3107,7 @@ cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.i: cmBinUtilsWindowsPEObjdu
 
 # target to preprocess a source file
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.i
 .PHONY : cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.i
 
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.s
@@ -3115,7 +3115,7 @@ cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.s: cmBinUtilsWindowsPEObjdu
 
 # target to generate assembly for a file
 cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.s
 .PHONY : cmBinUtilsWindowsPEObjdumpGetRuntimeDependenciesTool.cxx.s
 
 cmBreakCommand.obj: cmBreakCommand.cxx.obj
@@ -3123,7 +3123,7 @@ cmBreakCommand.obj: cmBreakCommand.cxx.obj
 
 # target to build an object file
 cmBreakCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.obj
 .PHONY : cmBreakCommand.cxx.obj
 
 cmBreakCommand.i: cmBreakCommand.cxx.i
@@ -3131,7 +3131,7 @@ cmBreakCommand.i: cmBreakCommand.cxx.i
 
 # target to preprocess a source file
 cmBreakCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.i
 .PHONY : cmBreakCommand.cxx.i
 
 cmBreakCommand.s: cmBreakCommand.cxx.s
@@ -3139,7 +3139,7 @@ cmBreakCommand.s: cmBreakCommand.cxx.s
 
 # target to generate assembly for a file
 cmBreakCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBreakCommand.cxx.s
 .PHONY : cmBreakCommand.cxx.s
 
 cmBuildCommand.obj: cmBuildCommand.cxx.obj
@@ -3147,7 +3147,7 @@ cmBuildCommand.obj: cmBuildCommand.cxx.obj
 
 # target to build an object file
 cmBuildCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.obj
 .PHONY : cmBuildCommand.cxx.obj
 
 cmBuildCommand.i: cmBuildCommand.cxx.i
@@ -3155,7 +3155,7 @@ cmBuildCommand.i: cmBuildCommand.cxx.i
 
 # target to preprocess a source file
 cmBuildCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.i
 .PHONY : cmBuildCommand.cxx.i
 
 cmBuildCommand.s: cmBuildCommand.cxx.s
@@ -3163,7 +3163,7 @@ cmBuildCommand.s: cmBuildCommand.cxx.s
 
 # target to generate assembly for a file
 cmBuildCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildCommand.cxx.s
 .PHONY : cmBuildCommand.cxx.s
 
 cmBuildNameCommand.obj: cmBuildNameCommand.cxx.obj
@@ -3171,7 +3171,7 @@ cmBuildNameCommand.obj: cmBuildNameCommand.cxx.obj
 
 # target to build an object file
 cmBuildNameCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.obj
 .PHONY : cmBuildNameCommand.cxx.obj
 
 cmBuildNameCommand.i: cmBuildNameCommand.cxx.i
@@ -3179,7 +3179,7 @@ cmBuildNameCommand.i: cmBuildNameCommand.cxx.i
 
 # target to preprocess a source file
 cmBuildNameCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.i
 .PHONY : cmBuildNameCommand.cxx.i
 
 cmBuildNameCommand.s: cmBuildNameCommand.cxx.s
@@ -3187,7 +3187,7 @@ cmBuildNameCommand.s: cmBuildNameCommand.cxx.s
 
 # target to generate assembly for a file
 cmBuildNameCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmBuildNameCommand.cxx.s
 .PHONY : cmBuildNameCommand.cxx.s
 
 cmCLocaleEnvironmentScope.obj: cmCLocaleEnvironmentScope.cxx.obj
@@ -3195,7 +3195,7 @@ cmCLocaleEnvironmentScope.obj: cmCLocaleEnvironmentScope.cxx.obj
 
 # target to build an object file
 cmCLocaleEnvironmentScope.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.obj
 .PHONY : cmCLocaleEnvironmentScope.cxx.obj
 
 cmCLocaleEnvironmentScope.i: cmCLocaleEnvironmentScope.cxx.i
@@ -3203,7 +3203,7 @@ cmCLocaleEnvironmentScope.i: cmCLocaleEnvironmentScope.cxx.i
 
 # target to preprocess a source file
 cmCLocaleEnvironmentScope.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.i
 .PHONY : cmCLocaleEnvironmentScope.cxx.i
 
 cmCLocaleEnvironmentScope.s: cmCLocaleEnvironmentScope.cxx.s
@@ -3211,7 +3211,7 @@ cmCLocaleEnvironmentScope.s: cmCLocaleEnvironmentScope.cxx.s
 
 # target to generate assembly for a file
 cmCLocaleEnvironmentScope.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCLocaleEnvironmentScope.cxx.s
 .PHONY : cmCLocaleEnvironmentScope.cxx.s
 
 cmCMakeHostSystemInformationCommand.obj: cmCMakeHostSystemInformationCommand.cxx.obj
@@ -3219,7 +3219,7 @@ cmCMakeHostSystemInformationCommand.obj: cmCMakeHostSystemInformationCommand.cxx
 
 # target to build an object file
 cmCMakeHostSystemInformationCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.obj
 .PHONY : cmCMakeHostSystemInformationCommand.cxx.obj
 
 cmCMakeHostSystemInformationCommand.i: cmCMakeHostSystemInformationCommand.cxx.i
@@ -3227,7 +3227,7 @@ cmCMakeHostSystemInformationCommand.i: cmCMakeHostSystemInformationCommand.cxx.i
 
 # target to preprocess a source file
 cmCMakeHostSystemInformationCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.i
 .PHONY : cmCMakeHostSystemInformationCommand.cxx.i
 
 cmCMakeHostSystemInformationCommand.s: cmCMakeHostSystemInformationCommand.cxx.s
@@ -3235,7 +3235,7 @@ cmCMakeHostSystemInformationCommand.s: cmCMakeHostSystemInformationCommand.cxx.s
 
 # target to generate assembly for a file
 cmCMakeHostSystemInformationCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeHostSystemInformationCommand.cxx.s
 .PHONY : cmCMakeHostSystemInformationCommand.cxx.s
 
 cmCMakeLanguageCommand.obj: cmCMakeLanguageCommand.cxx.obj
@@ -3243,7 +3243,7 @@ cmCMakeLanguageCommand.obj: cmCMakeLanguageCommand.cxx.obj
 
 # target to build an object file
 cmCMakeLanguageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.obj
 .PHONY : cmCMakeLanguageCommand.cxx.obj
 
 cmCMakeLanguageCommand.i: cmCMakeLanguageCommand.cxx.i
@@ -3251,7 +3251,7 @@ cmCMakeLanguageCommand.i: cmCMakeLanguageCommand.cxx.i
 
 # target to preprocess a source file
 cmCMakeLanguageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.i
 .PHONY : cmCMakeLanguageCommand.cxx.i
 
 cmCMakeLanguageCommand.s: cmCMakeLanguageCommand.cxx.s
@@ -3259,7 +3259,7 @@ cmCMakeLanguageCommand.s: cmCMakeLanguageCommand.cxx.s
 
 # target to generate assembly for a file
 cmCMakeLanguageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeLanguageCommand.cxx.s
 .PHONY : cmCMakeLanguageCommand.cxx.s
 
 cmCMakeMinimumRequired.obj: cmCMakeMinimumRequired.cxx.obj
@@ -3267,7 +3267,7 @@ cmCMakeMinimumRequired.obj: cmCMakeMinimumRequired.cxx.obj
 
 # target to build an object file
 cmCMakeMinimumRequired.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.obj
 .PHONY : cmCMakeMinimumRequired.cxx.obj
 
 cmCMakeMinimumRequired.i: cmCMakeMinimumRequired.cxx.i
@@ -3275,7 +3275,7 @@ cmCMakeMinimumRequired.i: cmCMakeMinimumRequired.cxx.i
 
 # target to preprocess a source file
 cmCMakeMinimumRequired.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.i
 .PHONY : cmCMakeMinimumRequired.cxx.i
 
 cmCMakeMinimumRequired.s: cmCMakeMinimumRequired.cxx.s
@@ -3283,7 +3283,7 @@ cmCMakeMinimumRequired.s: cmCMakeMinimumRequired.cxx.s
 
 # target to generate assembly for a file
 cmCMakeMinimumRequired.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakeMinimumRequired.cxx.s
 .PHONY : cmCMakeMinimumRequired.cxx.s
 
 cmCMakePath.obj: cmCMakePath.cxx.obj
@@ -3291,7 +3291,7 @@ cmCMakePath.obj: cmCMakePath.cxx.obj
 
 # target to build an object file
 cmCMakePath.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.obj
 .PHONY : cmCMakePath.cxx.obj
 
 cmCMakePath.i: cmCMakePath.cxx.i
@@ -3299,7 +3299,7 @@ cmCMakePath.i: cmCMakePath.cxx.i
 
 # target to preprocess a source file
 cmCMakePath.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.i
 .PHONY : cmCMakePath.cxx.i
 
 cmCMakePath.s: cmCMakePath.cxx.s
@@ -3307,7 +3307,7 @@ cmCMakePath.s: cmCMakePath.cxx.s
 
 # target to generate assembly for a file
 cmCMakePath.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePath.cxx.s
 .PHONY : cmCMakePath.cxx.s
 
 cmCMakePathCommand.obj: cmCMakePathCommand.cxx.obj
@@ -3315,7 +3315,7 @@ cmCMakePathCommand.obj: cmCMakePathCommand.cxx.obj
 
 # target to build an object file
 cmCMakePathCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.obj
 .PHONY : cmCMakePathCommand.cxx.obj
 
 cmCMakePathCommand.i: cmCMakePathCommand.cxx.i
@@ -3323,7 +3323,7 @@ cmCMakePathCommand.i: cmCMakePathCommand.cxx.i
 
 # target to preprocess a source file
 cmCMakePathCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.i
 .PHONY : cmCMakePathCommand.cxx.i
 
 cmCMakePathCommand.s: cmCMakePathCommand.cxx.s
@@ -3331,7 +3331,7 @@ cmCMakePathCommand.s: cmCMakePathCommand.cxx.s
 
 # target to generate assembly for a file
 cmCMakePathCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePathCommand.cxx.s
 .PHONY : cmCMakePathCommand.cxx.s
 
 cmCMakePolicyCommand.obj: cmCMakePolicyCommand.cxx.obj
@@ -3339,7 +3339,7 @@ cmCMakePolicyCommand.obj: cmCMakePolicyCommand.cxx.obj
 
 # target to build an object file
 cmCMakePolicyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.obj
 .PHONY : cmCMakePolicyCommand.cxx.obj
 
 cmCMakePolicyCommand.i: cmCMakePolicyCommand.cxx.i
@@ -3347,7 +3347,7 @@ cmCMakePolicyCommand.i: cmCMakePolicyCommand.cxx.i
 
 # target to preprocess a source file
 cmCMakePolicyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.i
 .PHONY : cmCMakePolicyCommand.cxx.i
 
 cmCMakePolicyCommand.s: cmCMakePolicyCommand.cxx.s
@@ -3355,7 +3355,7 @@ cmCMakePolicyCommand.s: cmCMakePolicyCommand.cxx.s
 
 # target to generate assembly for a file
 cmCMakePolicyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePolicyCommand.cxx.s
 .PHONY : cmCMakePolicyCommand.cxx.s
 
 cmCMakePresetsFile.obj: cmCMakePresetsFile.cxx.obj
@@ -3363,7 +3363,7 @@ cmCMakePresetsFile.obj: cmCMakePresetsFile.cxx.obj
 
 # target to build an object file
 cmCMakePresetsFile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.obj
 .PHONY : cmCMakePresetsFile.cxx.obj
 
 cmCMakePresetsFile.i: cmCMakePresetsFile.cxx.i
@@ -3371,7 +3371,7 @@ cmCMakePresetsFile.i: cmCMakePresetsFile.cxx.i
 
 # target to preprocess a source file
 cmCMakePresetsFile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.i
 .PHONY : cmCMakePresetsFile.cxx.i
 
 cmCMakePresetsFile.s: cmCMakePresetsFile.cxx.s
@@ -3379,7 +3379,7 @@ cmCMakePresetsFile.s: cmCMakePresetsFile.cxx.s
 
 # target to generate assembly for a file
 cmCMakePresetsFile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFile.cxx.s
 .PHONY : cmCMakePresetsFile.cxx.s
 
 cmCMakePresetsFileReadJSON.obj: cmCMakePresetsFileReadJSON.cxx.obj
@@ -3387,7 +3387,7 @@ cmCMakePresetsFileReadJSON.obj: cmCMakePresetsFileReadJSON.cxx.obj
 
 # target to build an object file
 cmCMakePresetsFileReadJSON.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.obj
 .PHONY : cmCMakePresetsFileReadJSON.cxx.obj
 
 cmCMakePresetsFileReadJSON.i: cmCMakePresetsFileReadJSON.cxx.i
@@ -3395,7 +3395,7 @@ cmCMakePresetsFileReadJSON.i: cmCMakePresetsFileReadJSON.cxx.i
 
 # target to preprocess a source file
 cmCMakePresetsFileReadJSON.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.i
 .PHONY : cmCMakePresetsFileReadJSON.cxx.i
 
 cmCMakePresetsFileReadJSON.s: cmCMakePresetsFileReadJSON.cxx.s
@@ -3403,7 +3403,7 @@ cmCMakePresetsFileReadJSON.s: cmCMakePresetsFileReadJSON.cxx.s
 
 # target to generate assembly for a file
 cmCMakePresetsFileReadJSON.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCMakePresetsFileReadJSON.cxx.s
 .PHONY : cmCMakePresetsFileReadJSON.cxx.s
 
 cmCPackPropertiesGenerator.obj: cmCPackPropertiesGenerator.cxx.obj
@@ -3411,7 +3411,7 @@ cmCPackPropertiesGenerator.obj: cmCPackPropertiesGenerator.cxx.obj
 
 # target to build an object file
 cmCPackPropertiesGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.obj
 .PHONY : cmCPackPropertiesGenerator.cxx.obj
 
 cmCPackPropertiesGenerator.i: cmCPackPropertiesGenerator.cxx.i
@@ -3419,7 +3419,7 @@ cmCPackPropertiesGenerator.i: cmCPackPropertiesGenerator.cxx.i
 
 # target to preprocess a source file
 cmCPackPropertiesGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.i
 .PHONY : cmCPackPropertiesGenerator.cxx.i
 
 cmCPackPropertiesGenerator.s: cmCPackPropertiesGenerator.cxx.s
@@ -3427,7 +3427,7 @@ cmCPackPropertiesGenerator.s: cmCPackPropertiesGenerator.cxx.s
 
 # target to generate assembly for a file
 cmCPackPropertiesGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCPackPropertiesGenerator.cxx.s
 .PHONY : cmCPackPropertiesGenerator.cxx.s
 
 cmCTest.obj: cmCTest.cxx.obj
@@ -3435,7 +3435,7 @@ cmCTest.obj: cmCTest.cxx.obj
 
 # target to build an object file
 cmCTest.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.obj
 .PHONY : cmCTest.cxx.obj
 
 cmCTest.i: cmCTest.cxx.i
@@ -3443,7 +3443,7 @@ cmCTest.i: cmCTest.cxx.i
 
 # target to preprocess a source file
 cmCTest.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.i
 .PHONY : cmCTest.cxx.i
 
 cmCTest.s: cmCTest.cxx.s
@@ -3451,7 +3451,7 @@ cmCTest.s: cmCTest.cxx.s
 
 # target to generate assembly for a file
 cmCTest.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CTestLib.dir\build.make Source/CMakeFiles/CTestLib.dir/cmCTest.cxx.s
 .PHONY : cmCTest.cxx.s
 
 cmCacheManager.obj: cmCacheManager.cxx.obj
@@ -3459,7 +3459,7 @@ cmCacheManager.obj: cmCacheManager.cxx.obj
 
 # target to build an object file
 cmCacheManager.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.obj
 .PHONY : cmCacheManager.cxx.obj
 
 cmCacheManager.i: cmCacheManager.cxx.i
@@ -3467,7 +3467,7 @@ cmCacheManager.i: cmCacheManager.cxx.i
 
 # target to preprocess a source file
 cmCacheManager.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.i
 .PHONY : cmCacheManager.cxx.i
 
 cmCacheManager.s: cmCacheManager.cxx.s
@@ -3475,7 +3475,7 @@ cmCacheManager.s: cmCacheManager.cxx.s
 
 # target to generate assembly for a file
 cmCacheManager.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCacheManager.cxx.s
 .PHONY : cmCacheManager.cxx.s
 
 cmCallVisualStudioMacro.obj: cmCallVisualStudioMacro.cxx.obj
@@ -3483,7 +3483,7 @@ cmCallVisualStudioMacro.obj: cmCallVisualStudioMacro.cxx.obj
 
 # target to build an object file
 cmCallVisualStudioMacro.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.obj
 .PHONY : cmCallVisualStudioMacro.cxx.obj
 
 cmCallVisualStudioMacro.i: cmCallVisualStudioMacro.cxx.i
@@ -3491,7 +3491,7 @@ cmCallVisualStudioMacro.i: cmCallVisualStudioMacro.cxx.i
 
 # target to preprocess a source file
 cmCallVisualStudioMacro.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.i
 .PHONY : cmCallVisualStudioMacro.cxx.i
 
 cmCallVisualStudioMacro.s: cmCallVisualStudioMacro.cxx.s
@@ -3499,7 +3499,7 @@ cmCallVisualStudioMacro.s: cmCallVisualStudioMacro.cxx.s
 
 # target to generate assembly for a file
 cmCallVisualStudioMacro.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCallVisualStudioMacro.cxx.s
 .PHONY : cmCallVisualStudioMacro.cxx.s
 
 cmCommand.obj: cmCommand.cxx.obj
@@ -3507,7 +3507,7 @@ cmCommand.obj: cmCommand.cxx.obj
 
 # target to build an object file
 cmCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.obj
 .PHONY : cmCommand.cxx.obj
 
 cmCommand.i: cmCommand.cxx.i
@@ -3515,7 +3515,7 @@ cmCommand.i: cmCommand.cxx.i
 
 # target to preprocess a source file
 cmCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.i
 .PHONY : cmCommand.cxx.i
 
 cmCommand.s: cmCommand.cxx.s
@@ -3523,7 +3523,7 @@ cmCommand.s: cmCommand.cxx.s
 
 # target to generate assembly for a file
 cmCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommand.cxx.s
 .PHONY : cmCommand.cxx.s
 
 cmCommandArgumentParserHelper.obj: cmCommandArgumentParserHelper.cxx.obj
@@ -3531,7 +3531,7 @@ cmCommandArgumentParserHelper.obj: cmCommandArgumentParserHelper.cxx.obj
 
 # target to build an object file
 cmCommandArgumentParserHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.obj
 .PHONY : cmCommandArgumentParserHelper.cxx.obj
 
 cmCommandArgumentParserHelper.i: cmCommandArgumentParserHelper.cxx.i
@@ -3539,7 +3539,7 @@ cmCommandArgumentParserHelper.i: cmCommandArgumentParserHelper.cxx.i
 
 # target to preprocess a source file
 cmCommandArgumentParserHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.i
 .PHONY : cmCommandArgumentParserHelper.cxx.i
 
 cmCommandArgumentParserHelper.s: cmCommandArgumentParserHelper.cxx.s
@@ -3547,7 +3547,7 @@ cmCommandArgumentParserHelper.s: cmCommandArgumentParserHelper.cxx.s
 
 # target to generate assembly for a file
 cmCommandArgumentParserHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommandArgumentParserHelper.cxx.s
 .PHONY : cmCommandArgumentParserHelper.cxx.s
 
 cmCommands.obj: cmCommands.cxx.obj
@@ -3555,7 +3555,7 @@ cmCommands.obj: cmCommands.cxx.obj
 
 # target to build an object file
 cmCommands.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.obj
 .PHONY : cmCommands.cxx.obj
 
 cmCommands.i: cmCommands.cxx.i
@@ -3563,7 +3563,7 @@ cmCommands.i: cmCommands.cxx.i
 
 # target to preprocess a source file
 cmCommands.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.i
 .PHONY : cmCommands.cxx.i
 
 cmCommands.s: cmCommands.cxx.s
@@ -3571,7 +3571,7 @@ cmCommands.s: cmCommands.cxx.s
 
 # target to generate assembly for a file
 cmCommands.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommands.cxx.s
 .PHONY : cmCommands.cxx.s
 
 cmCommonTargetGenerator.obj: cmCommonTargetGenerator.cxx.obj
@@ -3579,7 +3579,7 @@ cmCommonTargetGenerator.obj: cmCommonTargetGenerator.cxx.obj
 
 # target to build an object file
 cmCommonTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.obj
 .PHONY : cmCommonTargetGenerator.cxx.obj
 
 cmCommonTargetGenerator.i: cmCommonTargetGenerator.cxx.i
@@ -3587,7 +3587,7 @@ cmCommonTargetGenerator.i: cmCommonTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmCommonTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.i
 .PHONY : cmCommonTargetGenerator.cxx.i
 
 cmCommonTargetGenerator.s: cmCommonTargetGenerator.cxx.s
@@ -3595,7 +3595,7 @@ cmCommonTargetGenerator.s: cmCommonTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmCommonTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCommonTargetGenerator.cxx.s
 .PHONY : cmCommonTargetGenerator.cxx.s
 
 cmComputeComponentGraph.obj: cmComputeComponentGraph.cxx.obj
@@ -3603,7 +3603,7 @@ cmComputeComponentGraph.obj: cmComputeComponentGraph.cxx.obj
 
 # target to build an object file
 cmComputeComponentGraph.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.obj
 .PHONY : cmComputeComponentGraph.cxx.obj
 
 cmComputeComponentGraph.i: cmComputeComponentGraph.cxx.i
@@ -3611,7 +3611,7 @@ cmComputeComponentGraph.i: cmComputeComponentGraph.cxx.i
 
 # target to preprocess a source file
 cmComputeComponentGraph.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.i
 .PHONY : cmComputeComponentGraph.cxx.i
 
 cmComputeComponentGraph.s: cmComputeComponentGraph.cxx.s
@@ -3619,7 +3619,7 @@ cmComputeComponentGraph.s: cmComputeComponentGraph.cxx.s
 
 # target to generate assembly for a file
 cmComputeComponentGraph.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeComponentGraph.cxx.s
 .PHONY : cmComputeComponentGraph.cxx.s
 
 cmComputeLinkDepends.obj: cmComputeLinkDepends.cxx.obj
@@ -3627,7 +3627,7 @@ cmComputeLinkDepends.obj: cmComputeLinkDepends.cxx.obj
 
 # target to build an object file
 cmComputeLinkDepends.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.obj
 .PHONY : cmComputeLinkDepends.cxx.obj
 
 cmComputeLinkDepends.i: cmComputeLinkDepends.cxx.i
@@ -3635,7 +3635,7 @@ cmComputeLinkDepends.i: cmComputeLinkDepends.cxx.i
 
 # target to preprocess a source file
 cmComputeLinkDepends.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.i
 .PHONY : cmComputeLinkDepends.cxx.i
 
 cmComputeLinkDepends.s: cmComputeLinkDepends.cxx.s
@@ -3643,7 +3643,7 @@ cmComputeLinkDepends.s: cmComputeLinkDepends.cxx.s
 
 # target to generate assembly for a file
 cmComputeLinkDepends.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkDepends.cxx.s
 .PHONY : cmComputeLinkDepends.cxx.s
 
 cmComputeLinkInformation.obj: cmComputeLinkInformation.cxx.obj
@@ -3651,7 +3651,7 @@ cmComputeLinkInformation.obj: cmComputeLinkInformation.cxx.obj
 
 # target to build an object file
 cmComputeLinkInformation.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.obj
 .PHONY : cmComputeLinkInformation.cxx.obj
 
 cmComputeLinkInformation.i: cmComputeLinkInformation.cxx.i
@@ -3659,7 +3659,7 @@ cmComputeLinkInformation.i: cmComputeLinkInformation.cxx.i
 
 # target to preprocess a source file
 cmComputeLinkInformation.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.i
 .PHONY : cmComputeLinkInformation.cxx.i
 
 cmComputeLinkInformation.s: cmComputeLinkInformation.cxx.s
@@ -3667,7 +3667,7 @@ cmComputeLinkInformation.s: cmComputeLinkInformation.cxx.s
 
 # target to generate assembly for a file
 cmComputeLinkInformation.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeLinkInformation.cxx.s
 .PHONY : cmComputeLinkInformation.cxx.s
 
 cmComputeTargetDepends.obj: cmComputeTargetDepends.cxx.obj
@@ -3675,7 +3675,7 @@ cmComputeTargetDepends.obj: cmComputeTargetDepends.cxx.obj
 
 # target to build an object file
 cmComputeTargetDepends.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.obj
 .PHONY : cmComputeTargetDepends.cxx.obj
 
 cmComputeTargetDepends.i: cmComputeTargetDepends.cxx.i
@@ -3683,7 +3683,7 @@ cmComputeTargetDepends.i: cmComputeTargetDepends.cxx.i
 
 # target to preprocess a source file
 cmComputeTargetDepends.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.i
 .PHONY : cmComputeTargetDepends.cxx.i
 
 cmComputeTargetDepends.s: cmComputeTargetDepends.cxx.s
@@ -3691,7 +3691,7 @@ cmComputeTargetDepends.s: cmComputeTargetDepends.cxx.s
 
 # target to generate assembly for a file
 cmComputeTargetDepends.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmComputeTargetDepends.cxx.s
 .PHONY : cmComputeTargetDepends.cxx.s
 
 cmConditionEvaluator.obj: cmConditionEvaluator.cxx.obj
@@ -3699,7 +3699,7 @@ cmConditionEvaluator.obj: cmConditionEvaluator.cxx.obj
 
 # target to build an object file
 cmConditionEvaluator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.obj
 .PHONY : cmConditionEvaluator.cxx.obj
 
 cmConditionEvaluator.i: cmConditionEvaluator.cxx.i
@@ -3707,7 +3707,7 @@ cmConditionEvaluator.i: cmConditionEvaluator.cxx.i
 
 # target to preprocess a source file
 cmConditionEvaluator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.i
 .PHONY : cmConditionEvaluator.cxx.i
 
 cmConditionEvaluator.s: cmConditionEvaluator.cxx.s
@@ -3715,7 +3715,7 @@ cmConditionEvaluator.s: cmConditionEvaluator.cxx.s
 
 # target to generate assembly for a file
 cmConditionEvaluator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConditionEvaluator.cxx.s
 .PHONY : cmConditionEvaluator.cxx.s
 
 cmConfigureFileCommand.obj: cmConfigureFileCommand.cxx.obj
@@ -3723,7 +3723,7 @@ cmConfigureFileCommand.obj: cmConfigureFileCommand.cxx.obj
 
 # target to build an object file
 cmConfigureFileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.obj
 .PHONY : cmConfigureFileCommand.cxx.obj
 
 cmConfigureFileCommand.i: cmConfigureFileCommand.cxx.i
@@ -3731,7 +3731,7 @@ cmConfigureFileCommand.i: cmConfigureFileCommand.cxx.i
 
 # target to preprocess a source file
 cmConfigureFileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.i
 .PHONY : cmConfigureFileCommand.cxx.i
 
 cmConfigureFileCommand.s: cmConfigureFileCommand.cxx.s
@@ -3739,7 +3739,7 @@ cmConfigureFileCommand.s: cmConfigureFileCommand.cxx.s
 
 # target to generate assembly for a file
 cmConfigureFileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConfigureFileCommand.cxx.s
 .PHONY : cmConfigureFileCommand.cxx.s
 
 cmConsoleBuf.obj: cmConsoleBuf.cxx.obj
@@ -3747,7 +3747,7 @@ cmConsoleBuf.obj: cmConsoleBuf.cxx.obj
 
 # target to build an object file
 cmConsoleBuf.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.obj
 .PHONY : cmConsoleBuf.cxx.obj
 
 cmConsoleBuf.i: cmConsoleBuf.cxx.i
@@ -3755,7 +3755,7 @@ cmConsoleBuf.i: cmConsoleBuf.cxx.i
 
 # target to preprocess a source file
 cmConsoleBuf.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.i
 .PHONY : cmConsoleBuf.cxx.i
 
 cmConsoleBuf.s: cmConsoleBuf.cxx.s
@@ -3763,7 +3763,7 @@ cmConsoleBuf.s: cmConsoleBuf.cxx.s
 
 # target to generate assembly for a file
 cmConsoleBuf.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmConsoleBuf.cxx.s
 .PHONY : cmConsoleBuf.cxx.s
 
 cmContinueCommand.obj: cmContinueCommand.cxx.obj
@@ -3771,7 +3771,7 @@ cmContinueCommand.obj: cmContinueCommand.cxx.obj
 
 # target to build an object file
 cmContinueCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.obj
 .PHONY : cmContinueCommand.cxx.obj
 
 cmContinueCommand.i: cmContinueCommand.cxx.i
@@ -3779,7 +3779,7 @@ cmContinueCommand.i: cmContinueCommand.cxx.i
 
 # target to preprocess a source file
 cmContinueCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.i
 .PHONY : cmContinueCommand.cxx.i
 
 cmContinueCommand.s: cmContinueCommand.cxx.s
@@ -3787,7 +3787,7 @@ cmContinueCommand.s: cmContinueCommand.cxx.s
 
 # target to generate assembly for a file
 cmContinueCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmContinueCommand.cxx.s
 .PHONY : cmContinueCommand.cxx.s
 
 cmCoreTryCompile.obj: cmCoreTryCompile.cxx.obj
@@ -3795,7 +3795,7 @@ cmCoreTryCompile.obj: cmCoreTryCompile.cxx.obj
 
 # target to build an object file
 cmCoreTryCompile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.obj
 .PHONY : cmCoreTryCompile.cxx.obj
 
 cmCoreTryCompile.i: cmCoreTryCompile.cxx.i
@@ -3803,7 +3803,7 @@ cmCoreTryCompile.i: cmCoreTryCompile.cxx.i
 
 # target to preprocess a source file
 cmCoreTryCompile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.i
 .PHONY : cmCoreTryCompile.cxx.i
 
 cmCoreTryCompile.s: cmCoreTryCompile.cxx.s
@@ -3811,7 +3811,7 @@ cmCoreTryCompile.s: cmCoreTryCompile.cxx.s
 
 # target to generate assembly for a file
 cmCoreTryCompile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCoreTryCompile.cxx.s
 .PHONY : cmCoreTryCompile.cxx.s
 
 cmCreateTestSourceList.obj: cmCreateTestSourceList.cxx.obj
@@ -3819,7 +3819,7 @@ cmCreateTestSourceList.obj: cmCreateTestSourceList.cxx.obj
 
 # target to build an object file
 cmCreateTestSourceList.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.obj
 .PHONY : cmCreateTestSourceList.cxx.obj
 
 cmCreateTestSourceList.i: cmCreateTestSourceList.cxx.i
@@ -3827,7 +3827,7 @@ cmCreateTestSourceList.i: cmCreateTestSourceList.cxx.i
 
 # target to preprocess a source file
 cmCreateTestSourceList.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.i
 .PHONY : cmCreateTestSourceList.cxx.i
 
 cmCreateTestSourceList.s: cmCreateTestSourceList.cxx.s
@@ -3835,7 +3835,7 @@ cmCreateTestSourceList.s: cmCreateTestSourceList.cxx.s
 
 # target to generate assembly for a file
 cmCreateTestSourceList.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCreateTestSourceList.cxx.s
 .PHONY : cmCreateTestSourceList.cxx.s
 
 cmCryptoHash.obj: cmCryptoHash.cxx.obj
@@ -3843,7 +3843,7 @@ cmCryptoHash.obj: cmCryptoHash.cxx.obj
 
 # target to build an object file
 cmCryptoHash.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.obj
 .PHONY : cmCryptoHash.cxx.obj
 
 cmCryptoHash.i: cmCryptoHash.cxx.i
@@ -3851,7 +3851,7 @@ cmCryptoHash.i: cmCryptoHash.cxx.i
 
 # target to preprocess a source file
 cmCryptoHash.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.i
 .PHONY : cmCryptoHash.cxx.i
 
 cmCryptoHash.s: cmCryptoHash.cxx.s
@@ -3859,7 +3859,7 @@ cmCryptoHash.s: cmCryptoHash.cxx.s
 
 # target to generate assembly for a file
 cmCryptoHash.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCryptoHash.cxx.s
 .PHONY : cmCryptoHash.cxx.s
 
 cmCurl.obj: cmCurl.cxx.obj
@@ -3867,7 +3867,7 @@ cmCurl.obj: cmCurl.cxx.obj
 
 # target to build an object file
 cmCurl.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.obj
 .PHONY : cmCurl.cxx.obj
 
 cmCurl.i: cmCurl.cxx.i
@@ -3875,7 +3875,7 @@ cmCurl.i: cmCurl.cxx.i
 
 # target to preprocess a source file
 cmCurl.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.i
 .PHONY : cmCurl.cxx.i
 
 cmCurl.s: cmCurl.cxx.s
@@ -3883,7 +3883,7 @@ cmCurl.s: cmCurl.cxx.s
 
 # target to generate assembly for a file
 cmCurl.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCurl.cxx.s
 .PHONY : cmCurl.cxx.s
 
 cmCustomCommand.obj: cmCustomCommand.cxx.obj
@@ -3891,7 +3891,7 @@ cmCustomCommand.obj: cmCustomCommand.cxx.obj
 
 # target to build an object file
 cmCustomCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.obj
 .PHONY : cmCustomCommand.cxx.obj
 
 cmCustomCommand.i: cmCustomCommand.cxx.i
@@ -3899,7 +3899,7 @@ cmCustomCommand.i: cmCustomCommand.cxx.i
 
 # target to preprocess a source file
 cmCustomCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.i
 .PHONY : cmCustomCommand.cxx.i
 
 cmCustomCommand.s: cmCustomCommand.cxx.s
@@ -3907,7 +3907,7 @@ cmCustomCommand.s: cmCustomCommand.cxx.s
 
 # target to generate assembly for a file
 cmCustomCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommand.cxx.s
 .PHONY : cmCustomCommand.cxx.s
 
 cmCustomCommandGenerator.obj: cmCustomCommandGenerator.cxx.obj
@@ -3915,7 +3915,7 @@ cmCustomCommandGenerator.obj: cmCustomCommandGenerator.cxx.obj
 
 # target to build an object file
 cmCustomCommandGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.obj
 .PHONY : cmCustomCommandGenerator.cxx.obj
 
 cmCustomCommandGenerator.i: cmCustomCommandGenerator.cxx.i
@@ -3923,7 +3923,7 @@ cmCustomCommandGenerator.i: cmCustomCommandGenerator.cxx.i
 
 # target to preprocess a source file
 cmCustomCommandGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.i
 .PHONY : cmCustomCommandGenerator.cxx.i
 
 cmCustomCommandGenerator.s: cmCustomCommandGenerator.cxx.s
@@ -3931,7 +3931,7 @@ cmCustomCommandGenerator.s: cmCustomCommandGenerator.cxx.s
 
 # target to generate assembly for a file
 cmCustomCommandGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandGenerator.cxx.s
 .PHONY : cmCustomCommandGenerator.cxx.s
 
 cmCustomCommandLines.obj: cmCustomCommandLines.cxx.obj
@@ -3939,7 +3939,7 @@ cmCustomCommandLines.obj: cmCustomCommandLines.cxx.obj
 
 # target to build an object file
 cmCustomCommandLines.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.obj
 .PHONY : cmCustomCommandLines.cxx.obj
 
 cmCustomCommandLines.i: cmCustomCommandLines.cxx.i
@@ -3947,7 +3947,7 @@ cmCustomCommandLines.i: cmCustomCommandLines.cxx.i
 
 # target to preprocess a source file
 cmCustomCommandLines.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.i
 .PHONY : cmCustomCommandLines.cxx.i
 
 cmCustomCommandLines.s: cmCustomCommandLines.cxx.s
@@ -3955,7 +3955,7 @@ cmCustomCommandLines.s: cmCustomCommandLines.cxx.s
 
 # target to generate assembly for a file
 cmCustomCommandLines.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmCustomCommandLines.cxx.s
 .PHONY : cmCustomCommandLines.cxx.s
 
 cmDefinePropertyCommand.obj: cmDefinePropertyCommand.cxx.obj
@@ -3963,7 +3963,7 @@ cmDefinePropertyCommand.obj: cmDefinePropertyCommand.cxx.obj
 
 # target to build an object file
 cmDefinePropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.obj
 .PHONY : cmDefinePropertyCommand.cxx.obj
 
 cmDefinePropertyCommand.i: cmDefinePropertyCommand.cxx.i
@@ -3971,7 +3971,7 @@ cmDefinePropertyCommand.i: cmDefinePropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmDefinePropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.i
 .PHONY : cmDefinePropertyCommand.cxx.i
 
 cmDefinePropertyCommand.s: cmDefinePropertyCommand.cxx.s
@@ -3979,7 +3979,7 @@ cmDefinePropertyCommand.s: cmDefinePropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmDefinePropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinePropertyCommand.cxx.s
 .PHONY : cmDefinePropertyCommand.cxx.s
 
 cmDefinitions.obj: cmDefinitions.cxx.obj
@@ -3987,7 +3987,7 @@ cmDefinitions.obj: cmDefinitions.cxx.obj
 
 # target to build an object file
 cmDefinitions.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.obj
 .PHONY : cmDefinitions.cxx.obj
 
 cmDefinitions.i: cmDefinitions.cxx.i
@@ -3995,7 +3995,7 @@ cmDefinitions.i: cmDefinitions.cxx.i
 
 # target to preprocess a source file
 cmDefinitions.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.i
 .PHONY : cmDefinitions.cxx.i
 
 cmDefinitions.s: cmDefinitions.cxx.s
@@ -4003,7 +4003,7 @@ cmDefinitions.s: cmDefinitions.cxx.s
 
 # target to generate assembly for a file
 cmDefinitions.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDefinitions.cxx.s
 .PHONY : cmDefinitions.cxx.s
 
 cmDepends.obj: cmDepends.cxx.obj
@@ -4011,7 +4011,7 @@ cmDepends.obj: cmDepends.cxx.obj
 
 # target to build an object file
 cmDepends.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.obj
 .PHONY : cmDepends.cxx.obj
 
 cmDepends.i: cmDepends.cxx.i
@@ -4019,7 +4019,7 @@ cmDepends.i: cmDepends.cxx.i
 
 # target to preprocess a source file
 cmDepends.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.i
 .PHONY : cmDepends.cxx.i
 
 cmDepends.s: cmDepends.cxx.s
@@ -4027,7 +4027,7 @@ cmDepends.s: cmDepends.cxx.s
 
 # target to generate assembly for a file
 cmDepends.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDepends.cxx.s
 .PHONY : cmDepends.cxx.s
 
 cmDependsC.obj: cmDependsC.cxx.obj
@@ -4035,7 +4035,7 @@ cmDependsC.obj: cmDependsC.cxx.obj
 
 # target to build an object file
 cmDependsC.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.obj
 .PHONY : cmDependsC.cxx.obj
 
 cmDependsC.i: cmDependsC.cxx.i
@@ -4043,7 +4043,7 @@ cmDependsC.i: cmDependsC.cxx.i
 
 # target to preprocess a source file
 cmDependsC.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.i
 .PHONY : cmDependsC.cxx.i
 
 cmDependsC.s: cmDependsC.cxx.s
@@ -4051,7 +4051,7 @@ cmDependsC.s: cmDependsC.cxx.s
 
 # target to generate assembly for a file
 cmDependsC.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsC.cxx.s
 .PHONY : cmDependsC.cxx.s
 
 cmDependsCompiler.obj: cmDependsCompiler.cxx.obj
@@ -4059,7 +4059,7 @@ cmDependsCompiler.obj: cmDependsCompiler.cxx.obj
 
 # target to build an object file
 cmDependsCompiler.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.obj
 .PHONY : cmDependsCompiler.cxx.obj
 
 cmDependsCompiler.i: cmDependsCompiler.cxx.i
@@ -4067,7 +4067,7 @@ cmDependsCompiler.i: cmDependsCompiler.cxx.i
 
 # target to preprocess a source file
 cmDependsCompiler.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.i
 .PHONY : cmDependsCompiler.cxx.i
 
 cmDependsCompiler.s: cmDependsCompiler.cxx.s
@@ -4075,7 +4075,7 @@ cmDependsCompiler.s: cmDependsCompiler.cxx.s
 
 # target to generate assembly for a file
 cmDependsCompiler.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsCompiler.cxx.s
 .PHONY : cmDependsCompiler.cxx.s
 
 cmDependsFortran.obj: cmDependsFortran.cxx.obj
@@ -4083,7 +4083,7 @@ cmDependsFortran.obj: cmDependsFortran.cxx.obj
 
 # target to build an object file
 cmDependsFortran.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.obj
 .PHONY : cmDependsFortran.cxx.obj
 
 cmDependsFortran.i: cmDependsFortran.cxx.i
@@ -4091,7 +4091,7 @@ cmDependsFortran.i: cmDependsFortran.cxx.i
 
 # target to preprocess a source file
 cmDependsFortran.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.i
 .PHONY : cmDependsFortran.cxx.i
 
 cmDependsFortran.s: cmDependsFortran.cxx.s
@@ -4099,7 +4099,7 @@ cmDependsFortran.s: cmDependsFortran.cxx.s
 
 # target to generate assembly for a file
 cmDependsFortran.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsFortran.cxx.s
 .PHONY : cmDependsFortran.cxx.s
 
 cmDependsJava.obj: cmDependsJava.cxx.obj
@@ -4107,7 +4107,7 @@ cmDependsJava.obj: cmDependsJava.cxx.obj
 
 # target to build an object file
 cmDependsJava.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.obj
 .PHONY : cmDependsJava.cxx.obj
 
 cmDependsJava.i: cmDependsJava.cxx.i
@@ -4115,7 +4115,7 @@ cmDependsJava.i: cmDependsJava.cxx.i
 
 # target to preprocess a source file
 cmDependsJava.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.i
 .PHONY : cmDependsJava.cxx.i
 
 cmDependsJava.s: cmDependsJava.cxx.s
@@ -4123,7 +4123,7 @@ cmDependsJava.s: cmDependsJava.cxx.s
 
 # target to generate assembly for a file
 cmDependsJava.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJava.cxx.s
 .PHONY : cmDependsJava.cxx.s
 
 cmDependsJavaParserHelper.obj: cmDependsJavaParserHelper.cxx.obj
@@ -4131,7 +4131,7 @@ cmDependsJavaParserHelper.obj: cmDependsJavaParserHelper.cxx.obj
 
 # target to build an object file
 cmDependsJavaParserHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.obj
 .PHONY : cmDependsJavaParserHelper.cxx.obj
 
 cmDependsJavaParserHelper.i: cmDependsJavaParserHelper.cxx.i
@@ -4139,7 +4139,7 @@ cmDependsJavaParserHelper.i: cmDependsJavaParserHelper.cxx.i
 
 # target to preprocess a source file
 cmDependsJavaParserHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.i
 .PHONY : cmDependsJavaParserHelper.cxx.i
 
 cmDependsJavaParserHelper.s: cmDependsJavaParserHelper.cxx.s
@@ -4147,7 +4147,7 @@ cmDependsJavaParserHelper.s: cmDependsJavaParserHelper.cxx.s
 
 # target to generate assembly for a file
 cmDependsJavaParserHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDependsJavaParserHelper.cxx.s
 .PHONY : cmDependsJavaParserHelper.cxx.s
 
 cmDocumentation.obj: cmDocumentation.cxx.obj
@@ -4155,7 +4155,7 @@ cmDocumentation.obj: cmDocumentation.cxx.obj
 
 # target to build an object file
 cmDocumentation.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.obj
 .PHONY : cmDocumentation.cxx.obj
 
 cmDocumentation.i: cmDocumentation.cxx.i
@@ -4163,7 +4163,7 @@ cmDocumentation.i: cmDocumentation.cxx.i
 
 # target to preprocess a source file
 cmDocumentation.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.i
 .PHONY : cmDocumentation.cxx.i
 
 cmDocumentation.s: cmDocumentation.cxx.s
@@ -4171,7 +4171,7 @@ cmDocumentation.s: cmDocumentation.cxx.s
 
 # target to generate assembly for a file
 cmDocumentation.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentation.cxx.s
 .PHONY : cmDocumentation.cxx.s
 
 cmDocumentationFormatter.obj: cmDocumentationFormatter.cxx.obj
@@ -4179,7 +4179,7 @@ cmDocumentationFormatter.obj: cmDocumentationFormatter.cxx.obj
 
 # target to build an object file
 cmDocumentationFormatter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.obj
 .PHONY : cmDocumentationFormatter.cxx.obj
 
 cmDocumentationFormatter.i: cmDocumentationFormatter.cxx.i
@@ -4187,7 +4187,7 @@ cmDocumentationFormatter.i: cmDocumentationFormatter.cxx.i
 
 # target to preprocess a source file
 cmDocumentationFormatter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.i
 .PHONY : cmDocumentationFormatter.cxx.i
 
 cmDocumentationFormatter.s: cmDocumentationFormatter.cxx.s
@@ -4195,7 +4195,7 @@ cmDocumentationFormatter.s: cmDocumentationFormatter.cxx.s
 
 # target to generate assembly for a file
 cmDocumentationFormatter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationFormatter.cxx.s
 .PHONY : cmDocumentationFormatter.cxx.s
 
 cmDocumentationSection.obj: cmDocumentationSection.cxx.obj
@@ -4203,7 +4203,7 @@ cmDocumentationSection.obj: cmDocumentationSection.cxx.obj
 
 # target to build an object file
 cmDocumentationSection.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.obj
 .PHONY : cmDocumentationSection.cxx.obj
 
 cmDocumentationSection.i: cmDocumentationSection.cxx.i
@@ -4211,7 +4211,7 @@ cmDocumentationSection.i: cmDocumentationSection.cxx.i
 
 # target to preprocess a source file
 cmDocumentationSection.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.i
 .PHONY : cmDocumentationSection.cxx.i
 
 cmDocumentationSection.s: cmDocumentationSection.cxx.s
@@ -4219,7 +4219,7 @@ cmDocumentationSection.s: cmDocumentationSection.cxx.s
 
 # target to generate assembly for a file
 cmDocumentationSection.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDocumentationSection.cxx.s
 .PHONY : cmDocumentationSection.cxx.s
 
 cmDuration.obj: cmDuration.cxx.obj
@@ -4227,7 +4227,7 @@ cmDuration.obj: cmDuration.cxx.obj
 
 # target to build an object file
 cmDuration.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.obj
 .PHONY : cmDuration.cxx.obj
 
 cmDuration.i: cmDuration.cxx.i
@@ -4235,7 +4235,7 @@ cmDuration.i: cmDuration.cxx.i
 
 # target to preprocess a source file
 cmDuration.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.i
 .PHONY : cmDuration.cxx.i
 
 cmDuration.s: cmDuration.cxx.s
@@ -4243,7 +4243,7 @@ cmDuration.s: cmDuration.cxx.s
 
 # target to generate assembly for a file
 cmDuration.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDuration.cxx.s
 .PHONY : cmDuration.cxx.s
 
 cmDynamicLoader.obj: cmDynamicLoader.cxx.obj
@@ -4251,7 +4251,7 @@ cmDynamicLoader.obj: cmDynamicLoader.cxx.obj
 
 # target to build an object file
 cmDynamicLoader.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.obj
 .PHONY : cmDynamicLoader.cxx.obj
 
 cmDynamicLoader.i: cmDynamicLoader.cxx.i
@@ -4259,7 +4259,7 @@ cmDynamicLoader.i: cmDynamicLoader.cxx.i
 
 # target to preprocess a source file
 cmDynamicLoader.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.i
 .PHONY : cmDynamicLoader.cxx.i
 
 cmDynamicLoader.s: cmDynamicLoader.cxx.s
@@ -4267,7 +4267,7 @@ cmDynamicLoader.s: cmDynamicLoader.cxx.s
 
 # target to generate assembly for a file
 cmDynamicLoader.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmDynamicLoader.cxx.s
 .PHONY : cmDynamicLoader.cxx.s
 
 cmEnableLanguageCommand.obj: cmEnableLanguageCommand.cxx.obj
@@ -4275,7 +4275,7 @@ cmEnableLanguageCommand.obj: cmEnableLanguageCommand.cxx.obj
 
 # target to build an object file
 cmEnableLanguageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.obj
 .PHONY : cmEnableLanguageCommand.cxx.obj
 
 cmEnableLanguageCommand.i: cmEnableLanguageCommand.cxx.i
@@ -4283,7 +4283,7 @@ cmEnableLanguageCommand.i: cmEnableLanguageCommand.cxx.i
 
 # target to preprocess a source file
 cmEnableLanguageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.i
 .PHONY : cmEnableLanguageCommand.cxx.i
 
 cmEnableLanguageCommand.s: cmEnableLanguageCommand.cxx.s
@@ -4291,7 +4291,7 @@ cmEnableLanguageCommand.s: cmEnableLanguageCommand.cxx.s
 
 # target to generate assembly for a file
 cmEnableLanguageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableLanguageCommand.cxx.s
 .PHONY : cmEnableLanguageCommand.cxx.s
 
 cmEnableTestingCommand.obj: cmEnableTestingCommand.cxx.obj
@@ -4299,7 +4299,7 @@ cmEnableTestingCommand.obj: cmEnableTestingCommand.cxx.obj
 
 # target to build an object file
 cmEnableTestingCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.obj
 .PHONY : cmEnableTestingCommand.cxx.obj
 
 cmEnableTestingCommand.i: cmEnableTestingCommand.cxx.i
@@ -4307,7 +4307,7 @@ cmEnableTestingCommand.i: cmEnableTestingCommand.cxx.i
 
 # target to preprocess a source file
 cmEnableTestingCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.i
 .PHONY : cmEnableTestingCommand.cxx.i
 
 cmEnableTestingCommand.s: cmEnableTestingCommand.cxx.s
@@ -4315,7 +4315,7 @@ cmEnableTestingCommand.s: cmEnableTestingCommand.cxx.s
 
 # target to generate assembly for a file
 cmEnableTestingCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmEnableTestingCommand.cxx.s
 .PHONY : cmEnableTestingCommand.cxx.s
 
 cmExecProgramCommand.obj: cmExecProgramCommand.cxx.obj
@@ -4323,7 +4323,7 @@ cmExecProgramCommand.obj: cmExecProgramCommand.cxx.obj
 
 # target to build an object file
 cmExecProgramCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.obj
 .PHONY : cmExecProgramCommand.cxx.obj
 
 cmExecProgramCommand.i: cmExecProgramCommand.cxx.i
@@ -4331,7 +4331,7 @@ cmExecProgramCommand.i: cmExecProgramCommand.cxx.i
 
 # target to preprocess a source file
 cmExecProgramCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.i
 .PHONY : cmExecProgramCommand.cxx.i
 
 cmExecProgramCommand.s: cmExecProgramCommand.cxx.s
@@ -4339,7 +4339,7 @@ cmExecProgramCommand.s: cmExecProgramCommand.cxx.s
 
 # target to generate assembly for a file
 cmExecProgramCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecProgramCommand.cxx.s
 .PHONY : cmExecProgramCommand.cxx.s
 
 cmExecuteProcessCommand.obj: cmExecuteProcessCommand.cxx.obj
@@ -4347,7 +4347,7 @@ cmExecuteProcessCommand.obj: cmExecuteProcessCommand.cxx.obj
 
 # target to build an object file
 cmExecuteProcessCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.obj
 .PHONY : cmExecuteProcessCommand.cxx.obj
 
 cmExecuteProcessCommand.i: cmExecuteProcessCommand.cxx.i
@@ -4355,7 +4355,7 @@ cmExecuteProcessCommand.i: cmExecuteProcessCommand.cxx.i
 
 # target to preprocess a source file
 cmExecuteProcessCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.i
 .PHONY : cmExecuteProcessCommand.cxx.i
 
 cmExecuteProcessCommand.s: cmExecuteProcessCommand.cxx.s
@@ -4363,7 +4363,7 @@ cmExecuteProcessCommand.s: cmExecuteProcessCommand.cxx.s
 
 # target to generate assembly for a file
 cmExecuteProcessCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExecuteProcessCommand.cxx.s
 .PHONY : cmExecuteProcessCommand.cxx.s
 
 cmExpandedCommandArgument.obj: cmExpandedCommandArgument.cxx.obj
@@ -4371,7 +4371,7 @@ cmExpandedCommandArgument.obj: cmExpandedCommandArgument.cxx.obj
 
 # target to build an object file
 cmExpandedCommandArgument.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.obj
 .PHONY : cmExpandedCommandArgument.cxx.obj
 
 cmExpandedCommandArgument.i: cmExpandedCommandArgument.cxx.i
@@ -4379,7 +4379,7 @@ cmExpandedCommandArgument.i: cmExpandedCommandArgument.cxx.i
 
 # target to preprocess a source file
 cmExpandedCommandArgument.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.i
 .PHONY : cmExpandedCommandArgument.cxx.i
 
 cmExpandedCommandArgument.s: cmExpandedCommandArgument.cxx.s
@@ -4387,7 +4387,7 @@ cmExpandedCommandArgument.s: cmExpandedCommandArgument.cxx.s
 
 # target to generate assembly for a file
 cmExpandedCommandArgument.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExpandedCommandArgument.cxx.s
 .PHONY : cmExpandedCommandArgument.cxx.s
 
 cmExportBuildAndroidMKGenerator.obj: cmExportBuildAndroidMKGenerator.cxx.obj
@@ -4395,7 +4395,7 @@ cmExportBuildAndroidMKGenerator.obj: cmExportBuildAndroidMKGenerator.cxx.obj
 
 # target to build an object file
 cmExportBuildAndroidMKGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.obj
 .PHONY : cmExportBuildAndroidMKGenerator.cxx.obj
 
 cmExportBuildAndroidMKGenerator.i: cmExportBuildAndroidMKGenerator.cxx.i
@@ -4403,7 +4403,7 @@ cmExportBuildAndroidMKGenerator.i: cmExportBuildAndroidMKGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportBuildAndroidMKGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.i
 .PHONY : cmExportBuildAndroidMKGenerator.cxx.i
 
 cmExportBuildAndroidMKGenerator.s: cmExportBuildAndroidMKGenerator.cxx.s
@@ -4411,7 +4411,7 @@ cmExportBuildAndroidMKGenerator.s: cmExportBuildAndroidMKGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportBuildAndroidMKGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildAndroidMKGenerator.cxx.s
 .PHONY : cmExportBuildAndroidMKGenerator.cxx.s
 
 cmExportBuildFileGenerator.obj: cmExportBuildFileGenerator.cxx.obj
@@ -4419,7 +4419,7 @@ cmExportBuildFileGenerator.obj: cmExportBuildFileGenerator.cxx.obj
 
 # target to build an object file
 cmExportBuildFileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.obj
 .PHONY : cmExportBuildFileGenerator.cxx.obj
 
 cmExportBuildFileGenerator.i: cmExportBuildFileGenerator.cxx.i
@@ -4427,7 +4427,7 @@ cmExportBuildFileGenerator.i: cmExportBuildFileGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportBuildFileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.i
 .PHONY : cmExportBuildFileGenerator.cxx.i
 
 cmExportBuildFileGenerator.s: cmExportBuildFileGenerator.cxx.s
@@ -4435,7 +4435,7 @@ cmExportBuildFileGenerator.s: cmExportBuildFileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportBuildFileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportBuildFileGenerator.cxx.s
 .PHONY : cmExportBuildFileGenerator.cxx.s
 
 cmExportCommand.obj: cmExportCommand.cxx.obj
@@ -4443,7 +4443,7 @@ cmExportCommand.obj: cmExportCommand.cxx.obj
 
 # target to build an object file
 cmExportCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.obj
 .PHONY : cmExportCommand.cxx.obj
 
 cmExportCommand.i: cmExportCommand.cxx.i
@@ -4451,7 +4451,7 @@ cmExportCommand.i: cmExportCommand.cxx.i
 
 # target to preprocess a source file
 cmExportCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.i
 .PHONY : cmExportCommand.cxx.i
 
 cmExportCommand.s: cmExportCommand.cxx.s
@@ -4459,7 +4459,7 @@ cmExportCommand.s: cmExportCommand.cxx.s
 
 # target to generate assembly for a file
 cmExportCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportCommand.cxx.s
 .PHONY : cmExportCommand.cxx.s
 
 cmExportFileGenerator.obj: cmExportFileGenerator.cxx.obj
@@ -4467,7 +4467,7 @@ cmExportFileGenerator.obj: cmExportFileGenerator.cxx.obj
 
 # target to build an object file
 cmExportFileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.obj
 .PHONY : cmExportFileGenerator.cxx.obj
 
 cmExportFileGenerator.i: cmExportFileGenerator.cxx.i
@@ -4475,7 +4475,7 @@ cmExportFileGenerator.i: cmExportFileGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportFileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.i
 .PHONY : cmExportFileGenerator.cxx.i
 
 cmExportFileGenerator.s: cmExportFileGenerator.cxx.s
@@ -4483,7 +4483,7 @@ cmExportFileGenerator.s: cmExportFileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportFileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportFileGenerator.cxx.s
 .PHONY : cmExportFileGenerator.cxx.s
 
 cmExportInstallAndroidMKGenerator.obj: cmExportInstallAndroidMKGenerator.cxx.obj
@@ -4491,7 +4491,7 @@ cmExportInstallAndroidMKGenerator.obj: cmExportInstallAndroidMKGenerator.cxx.obj
 
 # target to build an object file
 cmExportInstallAndroidMKGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.obj
 .PHONY : cmExportInstallAndroidMKGenerator.cxx.obj
 
 cmExportInstallAndroidMKGenerator.i: cmExportInstallAndroidMKGenerator.cxx.i
@@ -4499,7 +4499,7 @@ cmExportInstallAndroidMKGenerator.i: cmExportInstallAndroidMKGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportInstallAndroidMKGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.i
 .PHONY : cmExportInstallAndroidMKGenerator.cxx.i
 
 cmExportInstallAndroidMKGenerator.s: cmExportInstallAndroidMKGenerator.cxx.s
@@ -4507,7 +4507,7 @@ cmExportInstallAndroidMKGenerator.s: cmExportInstallAndroidMKGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportInstallAndroidMKGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallAndroidMKGenerator.cxx.s
 .PHONY : cmExportInstallAndroidMKGenerator.cxx.s
 
 cmExportInstallFileGenerator.obj: cmExportInstallFileGenerator.cxx.obj
@@ -4515,7 +4515,7 @@ cmExportInstallFileGenerator.obj: cmExportInstallFileGenerator.cxx.obj
 
 # target to build an object file
 cmExportInstallFileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.obj
 .PHONY : cmExportInstallFileGenerator.cxx.obj
 
 cmExportInstallFileGenerator.i: cmExportInstallFileGenerator.cxx.i
@@ -4523,7 +4523,7 @@ cmExportInstallFileGenerator.i: cmExportInstallFileGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportInstallFileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.i
 .PHONY : cmExportInstallFileGenerator.cxx.i
 
 cmExportInstallFileGenerator.s: cmExportInstallFileGenerator.cxx.s
@@ -4531,7 +4531,7 @@ cmExportInstallFileGenerator.s: cmExportInstallFileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportInstallFileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportInstallFileGenerator.cxx.s
 .PHONY : cmExportInstallFileGenerator.cxx.s
 
 cmExportLibraryDependenciesCommand.obj: cmExportLibraryDependenciesCommand.cxx.obj
@@ -4539,7 +4539,7 @@ cmExportLibraryDependenciesCommand.obj: cmExportLibraryDependenciesCommand.cxx.o
 
 # target to build an object file
 cmExportLibraryDependenciesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.obj
 .PHONY : cmExportLibraryDependenciesCommand.cxx.obj
 
 cmExportLibraryDependenciesCommand.i: cmExportLibraryDependenciesCommand.cxx.i
@@ -4547,7 +4547,7 @@ cmExportLibraryDependenciesCommand.i: cmExportLibraryDependenciesCommand.cxx.i
 
 # target to preprocess a source file
 cmExportLibraryDependenciesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.i
 .PHONY : cmExportLibraryDependenciesCommand.cxx.i
 
 cmExportLibraryDependenciesCommand.s: cmExportLibraryDependenciesCommand.cxx.s
@@ -4555,7 +4555,7 @@ cmExportLibraryDependenciesCommand.s: cmExportLibraryDependenciesCommand.cxx.s
 
 # target to generate assembly for a file
 cmExportLibraryDependenciesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportLibraryDependenciesCommand.cxx.s
 .PHONY : cmExportLibraryDependenciesCommand.cxx.s
 
 cmExportSet.obj: cmExportSet.cxx.obj
@@ -4563,7 +4563,7 @@ cmExportSet.obj: cmExportSet.cxx.obj
 
 # target to build an object file
 cmExportSet.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.obj
 .PHONY : cmExportSet.cxx.obj
 
 cmExportSet.i: cmExportSet.cxx.i
@@ -4571,7 +4571,7 @@ cmExportSet.i: cmExportSet.cxx.i
 
 # target to preprocess a source file
 cmExportSet.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.i
 .PHONY : cmExportSet.cxx.i
 
 cmExportSet.s: cmExportSet.cxx.s
@@ -4579,7 +4579,7 @@ cmExportSet.s: cmExportSet.cxx.s
 
 # target to generate assembly for a file
 cmExportSet.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportSet.cxx.s
 .PHONY : cmExportSet.cxx.s
 
 cmExportTryCompileFileGenerator.obj: cmExportTryCompileFileGenerator.cxx.obj
@@ -4587,7 +4587,7 @@ cmExportTryCompileFileGenerator.obj: cmExportTryCompileFileGenerator.cxx.obj
 
 # target to build an object file
 cmExportTryCompileFileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.obj
 .PHONY : cmExportTryCompileFileGenerator.cxx.obj
 
 cmExportTryCompileFileGenerator.i: cmExportTryCompileFileGenerator.cxx.i
@@ -4595,7 +4595,7 @@ cmExportTryCompileFileGenerator.i: cmExportTryCompileFileGenerator.cxx.i
 
 # target to preprocess a source file
 cmExportTryCompileFileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.i
 .PHONY : cmExportTryCompileFileGenerator.cxx.i
 
 cmExportTryCompileFileGenerator.s: cmExportTryCompileFileGenerator.cxx.s
@@ -4603,7 +4603,7 @@ cmExportTryCompileFileGenerator.s: cmExportTryCompileFileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExportTryCompileFileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExportTryCompileFileGenerator.cxx.s
 .PHONY : cmExportTryCompileFileGenerator.cxx.s
 
 cmExprParserHelper.obj: cmExprParserHelper.cxx.obj
@@ -4611,7 +4611,7 @@ cmExprParserHelper.obj: cmExprParserHelper.cxx.obj
 
 # target to build an object file
 cmExprParserHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.obj
 .PHONY : cmExprParserHelper.cxx.obj
 
 cmExprParserHelper.i: cmExprParserHelper.cxx.i
@@ -4619,7 +4619,7 @@ cmExprParserHelper.i: cmExprParserHelper.cxx.i
 
 # target to preprocess a source file
 cmExprParserHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.i
 .PHONY : cmExprParserHelper.cxx.i
 
 cmExprParserHelper.s: cmExprParserHelper.cxx.s
@@ -4627,7 +4627,7 @@ cmExprParserHelper.s: cmExprParserHelper.cxx.s
 
 # target to generate assembly for a file
 cmExprParserHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExprParserHelper.cxx.s
 .PHONY : cmExprParserHelper.cxx.s
 
 cmExternalMakefileProjectGenerator.obj: cmExternalMakefileProjectGenerator.cxx.obj
@@ -4635,7 +4635,7 @@ cmExternalMakefileProjectGenerator.obj: cmExternalMakefileProjectGenerator.cxx.o
 
 # target to build an object file
 cmExternalMakefileProjectGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.obj
 .PHONY : cmExternalMakefileProjectGenerator.cxx.obj
 
 cmExternalMakefileProjectGenerator.i: cmExternalMakefileProjectGenerator.cxx.i
@@ -4643,7 +4643,7 @@ cmExternalMakefileProjectGenerator.i: cmExternalMakefileProjectGenerator.cxx.i
 
 # target to preprocess a source file
 cmExternalMakefileProjectGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.i
 .PHONY : cmExternalMakefileProjectGenerator.cxx.i
 
 cmExternalMakefileProjectGenerator.s: cmExternalMakefileProjectGenerator.cxx.s
@@ -4651,7 +4651,7 @@ cmExternalMakefileProjectGenerator.s: cmExternalMakefileProjectGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExternalMakefileProjectGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExternalMakefileProjectGenerator.cxx.s
 .PHONY : cmExternalMakefileProjectGenerator.cxx.s
 
 cmExtraCodeBlocksGenerator.obj: cmExtraCodeBlocksGenerator.cxx.obj
@@ -4659,7 +4659,7 @@ cmExtraCodeBlocksGenerator.obj: cmExtraCodeBlocksGenerator.cxx.obj
 
 # target to build an object file
 cmExtraCodeBlocksGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.obj
 .PHONY : cmExtraCodeBlocksGenerator.cxx.obj
 
 cmExtraCodeBlocksGenerator.i: cmExtraCodeBlocksGenerator.cxx.i
@@ -4667,7 +4667,7 @@ cmExtraCodeBlocksGenerator.i: cmExtraCodeBlocksGenerator.cxx.i
 
 # target to preprocess a source file
 cmExtraCodeBlocksGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.i
 .PHONY : cmExtraCodeBlocksGenerator.cxx.i
 
 cmExtraCodeBlocksGenerator.s: cmExtraCodeBlocksGenerator.cxx.s
@@ -4675,7 +4675,7 @@ cmExtraCodeBlocksGenerator.s: cmExtraCodeBlocksGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExtraCodeBlocksGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeBlocksGenerator.cxx.s
 .PHONY : cmExtraCodeBlocksGenerator.cxx.s
 
 cmExtraCodeLiteGenerator.obj: cmExtraCodeLiteGenerator.cxx.obj
@@ -4683,7 +4683,7 @@ cmExtraCodeLiteGenerator.obj: cmExtraCodeLiteGenerator.cxx.obj
 
 # target to build an object file
 cmExtraCodeLiteGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.obj
 .PHONY : cmExtraCodeLiteGenerator.cxx.obj
 
 cmExtraCodeLiteGenerator.i: cmExtraCodeLiteGenerator.cxx.i
@@ -4691,7 +4691,7 @@ cmExtraCodeLiteGenerator.i: cmExtraCodeLiteGenerator.cxx.i
 
 # target to preprocess a source file
 cmExtraCodeLiteGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.i
 .PHONY : cmExtraCodeLiteGenerator.cxx.i
 
 cmExtraCodeLiteGenerator.s: cmExtraCodeLiteGenerator.cxx.s
@@ -4699,7 +4699,7 @@ cmExtraCodeLiteGenerator.s: cmExtraCodeLiteGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExtraCodeLiteGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraCodeLiteGenerator.cxx.s
 .PHONY : cmExtraCodeLiteGenerator.cxx.s
 
 cmExtraEclipseCDT4Generator.obj: cmExtraEclipseCDT4Generator.cxx.obj
@@ -4707,7 +4707,7 @@ cmExtraEclipseCDT4Generator.obj: cmExtraEclipseCDT4Generator.cxx.obj
 
 # target to build an object file
 cmExtraEclipseCDT4Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.obj
 .PHONY : cmExtraEclipseCDT4Generator.cxx.obj
 
 cmExtraEclipseCDT4Generator.i: cmExtraEclipseCDT4Generator.cxx.i
@@ -4715,7 +4715,7 @@ cmExtraEclipseCDT4Generator.i: cmExtraEclipseCDT4Generator.cxx.i
 
 # target to preprocess a source file
 cmExtraEclipseCDT4Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.i
 .PHONY : cmExtraEclipseCDT4Generator.cxx.i
 
 cmExtraEclipseCDT4Generator.s: cmExtraEclipseCDT4Generator.cxx.s
@@ -4723,7 +4723,7 @@ cmExtraEclipseCDT4Generator.s: cmExtraEclipseCDT4Generator.cxx.s
 
 # target to generate assembly for a file
 cmExtraEclipseCDT4Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraEclipseCDT4Generator.cxx.s
 .PHONY : cmExtraEclipseCDT4Generator.cxx.s
 
 cmExtraKateGenerator.obj: cmExtraKateGenerator.cxx.obj
@@ -4731,7 +4731,7 @@ cmExtraKateGenerator.obj: cmExtraKateGenerator.cxx.obj
 
 # target to build an object file
 cmExtraKateGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.obj
 .PHONY : cmExtraKateGenerator.cxx.obj
 
 cmExtraKateGenerator.i: cmExtraKateGenerator.cxx.i
@@ -4739,7 +4739,7 @@ cmExtraKateGenerator.i: cmExtraKateGenerator.cxx.i
 
 # target to preprocess a source file
 cmExtraKateGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.i
 .PHONY : cmExtraKateGenerator.cxx.i
 
 cmExtraKateGenerator.s: cmExtraKateGenerator.cxx.s
@@ -4747,7 +4747,7 @@ cmExtraKateGenerator.s: cmExtraKateGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExtraKateGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraKateGenerator.cxx.s
 .PHONY : cmExtraKateGenerator.cxx.s
 
 cmExtraSublimeTextGenerator.obj: cmExtraSublimeTextGenerator.cxx.obj
@@ -4755,7 +4755,7 @@ cmExtraSublimeTextGenerator.obj: cmExtraSublimeTextGenerator.cxx.obj
 
 # target to build an object file
 cmExtraSublimeTextGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.obj
 .PHONY : cmExtraSublimeTextGenerator.cxx.obj
 
 cmExtraSublimeTextGenerator.i: cmExtraSublimeTextGenerator.cxx.i
@@ -4763,7 +4763,7 @@ cmExtraSublimeTextGenerator.i: cmExtraSublimeTextGenerator.cxx.i
 
 # target to preprocess a source file
 cmExtraSublimeTextGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.i
 .PHONY : cmExtraSublimeTextGenerator.cxx.i
 
 cmExtraSublimeTextGenerator.s: cmExtraSublimeTextGenerator.cxx.s
@@ -4771,7 +4771,7 @@ cmExtraSublimeTextGenerator.s: cmExtraSublimeTextGenerator.cxx.s
 
 # target to generate assembly for a file
 cmExtraSublimeTextGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmExtraSublimeTextGenerator.cxx.s
 .PHONY : cmExtraSublimeTextGenerator.cxx.s
 
 cmFLTKWrapUICommand.obj: cmFLTKWrapUICommand.cxx.obj
@@ -4779,7 +4779,7 @@ cmFLTKWrapUICommand.obj: cmFLTKWrapUICommand.cxx.obj
 
 # target to build an object file
 cmFLTKWrapUICommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.obj
 .PHONY : cmFLTKWrapUICommand.cxx.obj
 
 cmFLTKWrapUICommand.i: cmFLTKWrapUICommand.cxx.i
@@ -4787,7 +4787,7 @@ cmFLTKWrapUICommand.i: cmFLTKWrapUICommand.cxx.i
 
 # target to preprocess a source file
 cmFLTKWrapUICommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.i
 .PHONY : cmFLTKWrapUICommand.cxx.i
 
 cmFLTKWrapUICommand.s: cmFLTKWrapUICommand.cxx.s
@@ -4795,7 +4795,7 @@ cmFLTKWrapUICommand.s: cmFLTKWrapUICommand.cxx.s
 
 # target to generate assembly for a file
 cmFLTKWrapUICommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFLTKWrapUICommand.cxx.s
 .PHONY : cmFLTKWrapUICommand.cxx.s
 
 cmFSPermissions.obj: cmFSPermissions.cxx.obj
@@ -4803,7 +4803,7 @@ cmFSPermissions.obj: cmFSPermissions.cxx.obj
 
 # target to build an object file
 cmFSPermissions.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.obj
 .PHONY : cmFSPermissions.cxx.obj
 
 cmFSPermissions.i: cmFSPermissions.cxx.i
@@ -4811,7 +4811,7 @@ cmFSPermissions.i: cmFSPermissions.cxx.i
 
 # target to preprocess a source file
 cmFSPermissions.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.i
 .PHONY : cmFSPermissions.cxx.i
 
 cmFSPermissions.s: cmFSPermissions.cxx.s
@@ -4819,7 +4819,7 @@ cmFSPermissions.s: cmFSPermissions.cxx.s
 
 # target to generate assembly for a file
 cmFSPermissions.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFSPermissions.cxx.s
 .PHONY : cmFSPermissions.cxx.s
 
 cmFileAPI.obj: cmFileAPI.cxx.obj
@@ -4827,7 +4827,7 @@ cmFileAPI.obj: cmFileAPI.cxx.obj
 
 # target to build an object file
 cmFileAPI.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.obj
 .PHONY : cmFileAPI.cxx.obj
 
 cmFileAPI.i: cmFileAPI.cxx.i
@@ -4835,7 +4835,7 @@ cmFileAPI.i: cmFileAPI.cxx.i
 
 # target to preprocess a source file
 cmFileAPI.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.i
 .PHONY : cmFileAPI.cxx.i
 
 cmFileAPI.s: cmFileAPI.cxx.s
@@ -4843,7 +4843,7 @@ cmFileAPI.s: cmFileAPI.cxx.s
 
 # target to generate assembly for a file
 cmFileAPI.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPI.cxx.s
 .PHONY : cmFileAPI.cxx.s
 
 cmFileAPICMakeFiles.obj: cmFileAPICMakeFiles.cxx.obj
@@ -4851,7 +4851,7 @@ cmFileAPICMakeFiles.obj: cmFileAPICMakeFiles.cxx.obj
 
 # target to build an object file
 cmFileAPICMakeFiles.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.obj
 .PHONY : cmFileAPICMakeFiles.cxx.obj
 
 cmFileAPICMakeFiles.i: cmFileAPICMakeFiles.cxx.i
@@ -4859,7 +4859,7 @@ cmFileAPICMakeFiles.i: cmFileAPICMakeFiles.cxx.i
 
 # target to preprocess a source file
 cmFileAPICMakeFiles.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.i
 .PHONY : cmFileAPICMakeFiles.cxx.i
 
 cmFileAPICMakeFiles.s: cmFileAPICMakeFiles.cxx.s
@@ -4867,7 +4867,7 @@ cmFileAPICMakeFiles.s: cmFileAPICMakeFiles.cxx.s
 
 # target to generate assembly for a file
 cmFileAPICMakeFiles.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICMakeFiles.cxx.s
 .PHONY : cmFileAPICMakeFiles.cxx.s
 
 cmFileAPICache.obj: cmFileAPICache.cxx.obj
@@ -4875,7 +4875,7 @@ cmFileAPICache.obj: cmFileAPICache.cxx.obj
 
 # target to build an object file
 cmFileAPICache.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.obj
 .PHONY : cmFileAPICache.cxx.obj
 
 cmFileAPICache.i: cmFileAPICache.cxx.i
@@ -4883,7 +4883,7 @@ cmFileAPICache.i: cmFileAPICache.cxx.i
 
 # target to preprocess a source file
 cmFileAPICache.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.i
 .PHONY : cmFileAPICache.cxx.i
 
 cmFileAPICache.s: cmFileAPICache.cxx.s
@@ -4891,7 +4891,7 @@ cmFileAPICache.s: cmFileAPICache.cxx.s
 
 # target to generate assembly for a file
 cmFileAPICache.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICache.cxx.s
 .PHONY : cmFileAPICache.cxx.s
 
 cmFileAPICodemodel.obj: cmFileAPICodemodel.cxx.obj
@@ -4899,7 +4899,7 @@ cmFileAPICodemodel.obj: cmFileAPICodemodel.cxx.obj
 
 # target to build an object file
 cmFileAPICodemodel.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.obj
 .PHONY : cmFileAPICodemodel.cxx.obj
 
 cmFileAPICodemodel.i: cmFileAPICodemodel.cxx.i
@@ -4907,7 +4907,7 @@ cmFileAPICodemodel.i: cmFileAPICodemodel.cxx.i
 
 # target to preprocess a source file
 cmFileAPICodemodel.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.i
 .PHONY : cmFileAPICodemodel.cxx.i
 
 cmFileAPICodemodel.s: cmFileAPICodemodel.cxx.s
@@ -4915,7 +4915,7 @@ cmFileAPICodemodel.s: cmFileAPICodemodel.cxx.s
 
 # target to generate assembly for a file
 cmFileAPICodemodel.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPICodemodel.cxx.s
 .PHONY : cmFileAPICodemodel.cxx.s
 
 cmFileAPIToolchains.obj: cmFileAPIToolchains.cxx.obj
@@ -4923,7 +4923,7 @@ cmFileAPIToolchains.obj: cmFileAPIToolchains.cxx.obj
 
 # target to build an object file
 cmFileAPIToolchains.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.obj
 .PHONY : cmFileAPIToolchains.cxx.obj
 
 cmFileAPIToolchains.i: cmFileAPIToolchains.cxx.i
@@ -4931,7 +4931,7 @@ cmFileAPIToolchains.i: cmFileAPIToolchains.cxx.i
 
 # target to preprocess a source file
 cmFileAPIToolchains.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.i
 .PHONY : cmFileAPIToolchains.cxx.i
 
 cmFileAPIToolchains.s: cmFileAPIToolchains.cxx.s
@@ -4939,7 +4939,7 @@ cmFileAPIToolchains.s: cmFileAPIToolchains.cxx.s
 
 # target to generate assembly for a file
 cmFileAPIToolchains.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileAPIToolchains.cxx.s
 .PHONY : cmFileAPIToolchains.cxx.s
 
 cmFileCommand.obj: cmFileCommand.cxx.obj
@@ -4947,7 +4947,7 @@ cmFileCommand.obj: cmFileCommand.cxx.obj
 
 # target to build an object file
 cmFileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.obj
 .PHONY : cmFileCommand.cxx.obj
 
 cmFileCommand.i: cmFileCommand.cxx.i
@@ -4955,7 +4955,7 @@ cmFileCommand.i: cmFileCommand.cxx.i
 
 # target to preprocess a source file
 cmFileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.i
 .PHONY : cmFileCommand.cxx.i
 
 cmFileCommand.s: cmFileCommand.cxx.s
@@ -4963,7 +4963,7 @@ cmFileCommand.s: cmFileCommand.cxx.s
 
 # target to generate assembly for a file
 cmFileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCommand.cxx.s
 .PHONY : cmFileCommand.cxx.s
 
 cmFileCopier.obj: cmFileCopier.cxx.obj
@@ -4971,7 +4971,7 @@ cmFileCopier.obj: cmFileCopier.cxx.obj
 
 # target to build an object file
 cmFileCopier.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.obj
 .PHONY : cmFileCopier.cxx.obj
 
 cmFileCopier.i: cmFileCopier.cxx.i
@@ -4979,7 +4979,7 @@ cmFileCopier.i: cmFileCopier.cxx.i
 
 # target to preprocess a source file
 cmFileCopier.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.i
 .PHONY : cmFileCopier.cxx.i
 
 cmFileCopier.s: cmFileCopier.cxx.s
@@ -4987,7 +4987,7 @@ cmFileCopier.s: cmFileCopier.cxx.s
 
 # target to generate assembly for a file
 cmFileCopier.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileCopier.cxx.s
 .PHONY : cmFileCopier.cxx.s
 
 cmFileInstaller.obj: cmFileInstaller.cxx.obj
@@ -4995,7 +4995,7 @@ cmFileInstaller.obj: cmFileInstaller.cxx.obj
 
 # target to build an object file
 cmFileInstaller.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.obj
 .PHONY : cmFileInstaller.cxx.obj
 
 cmFileInstaller.i: cmFileInstaller.cxx.i
@@ -5003,7 +5003,7 @@ cmFileInstaller.i: cmFileInstaller.cxx.i
 
 # target to preprocess a source file
 cmFileInstaller.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.i
 .PHONY : cmFileInstaller.cxx.i
 
 cmFileInstaller.s: cmFileInstaller.cxx.s
@@ -5011,7 +5011,7 @@ cmFileInstaller.s: cmFileInstaller.cxx.s
 
 # target to generate assembly for a file
 cmFileInstaller.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileInstaller.cxx.s
 .PHONY : cmFileInstaller.cxx.s
 
 cmFileLock.obj: cmFileLock.cxx.obj
@@ -5019,7 +5019,7 @@ cmFileLock.obj: cmFileLock.cxx.obj
 
 # target to build an object file
 cmFileLock.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.obj
 .PHONY : cmFileLock.cxx.obj
 
 cmFileLock.i: cmFileLock.cxx.i
@@ -5027,7 +5027,7 @@ cmFileLock.i: cmFileLock.cxx.i
 
 # target to preprocess a source file
 cmFileLock.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.i
 .PHONY : cmFileLock.cxx.i
 
 cmFileLock.s: cmFileLock.cxx.s
@@ -5035,7 +5035,7 @@ cmFileLock.s: cmFileLock.cxx.s
 
 # target to generate assembly for a file
 cmFileLock.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLock.cxx.s
 .PHONY : cmFileLock.cxx.s
 
 cmFileLockPool.obj: cmFileLockPool.cxx.obj
@@ -5043,7 +5043,7 @@ cmFileLockPool.obj: cmFileLockPool.cxx.obj
 
 # target to build an object file
 cmFileLockPool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.obj
 .PHONY : cmFileLockPool.cxx.obj
 
 cmFileLockPool.i: cmFileLockPool.cxx.i
@@ -5051,7 +5051,7 @@ cmFileLockPool.i: cmFileLockPool.cxx.i
 
 # target to preprocess a source file
 cmFileLockPool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.i
 .PHONY : cmFileLockPool.cxx.i
 
 cmFileLockPool.s: cmFileLockPool.cxx.s
@@ -5059,7 +5059,7 @@ cmFileLockPool.s: cmFileLockPool.cxx.s
 
 # target to generate assembly for a file
 cmFileLockPool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockPool.cxx.s
 .PHONY : cmFileLockPool.cxx.s
 
 cmFileLockResult.obj: cmFileLockResult.cxx.obj
@@ -5067,7 +5067,7 @@ cmFileLockResult.obj: cmFileLockResult.cxx.obj
 
 # target to build an object file
 cmFileLockResult.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.obj
 .PHONY : cmFileLockResult.cxx.obj
 
 cmFileLockResult.i: cmFileLockResult.cxx.i
@@ -5075,7 +5075,7 @@ cmFileLockResult.i: cmFileLockResult.cxx.i
 
 # target to preprocess a source file
 cmFileLockResult.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.i
 .PHONY : cmFileLockResult.cxx.i
 
 cmFileLockResult.s: cmFileLockResult.cxx.s
@@ -5083,7 +5083,7 @@ cmFileLockResult.s: cmFileLockResult.cxx.s
 
 # target to generate assembly for a file
 cmFileLockResult.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileLockResult.cxx.s
 .PHONY : cmFileLockResult.cxx.s
 
 cmFilePathChecksum.obj: cmFilePathChecksum.cxx.obj
@@ -5091,7 +5091,7 @@ cmFilePathChecksum.obj: cmFilePathChecksum.cxx.obj
 
 # target to build an object file
 cmFilePathChecksum.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.obj
 .PHONY : cmFilePathChecksum.cxx.obj
 
 cmFilePathChecksum.i: cmFilePathChecksum.cxx.i
@@ -5099,7 +5099,7 @@ cmFilePathChecksum.i: cmFilePathChecksum.cxx.i
 
 # target to preprocess a source file
 cmFilePathChecksum.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.i
 .PHONY : cmFilePathChecksum.cxx.i
 
 cmFilePathChecksum.s: cmFilePathChecksum.cxx.s
@@ -5107,7 +5107,7 @@ cmFilePathChecksum.s: cmFilePathChecksum.cxx.s
 
 # target to generate assembly for a file
 cmFilePathChecksum.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFilePathChecksum.cxx.s
 .PHONY : cmFilePathChecksum.cxx.s
 
 cmFileTime.obj: cmFileTime.cxx.obj
@@ -5115,7 +5115,7 @@ cmFileTime.obj: cmFileTime.cxx.obj
 
 # target to build an object file
 cmFileTime.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.obj
 .PHONY : cmFileTime.cxx.obj
 
 cmFileTime.i: cmFileTime.cxx.i
@@ -5123,7 +5123,7 @@ cmFileTime.i: cmFileTime.cxx.i
 
 # target to preprocess a source file
 cmFileTime.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.i
 .PHONY : cmFileTime.cxx.i
 
 cmFileTime.s: cmFileTime.cxx.s
@@ -5131,7 +5131,7 @@ cmFileTime.s: cmFileTime.cxx.s
 
 # target to generate assembly for a file
 cmFileTime.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTime.cxx.s
 .PHONY : cmFileTime.cxx.s
 
 cmFileTimeCache.obj: cmFileTimeCache.cxx.obj
@@ -5139,7 +5139,7 @@ cmFileTimeCache.obj: cmFileTimeCache.cxx.obj
 
 # target to build an object file
 cmFileTimeCache.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.obj
 .PHONY : cmFileTimeCache.cxx.obj
 
 cmFileTimeCache.i: cmFileTimeCache.cxx.i
@@ -5147,7 +5147,7 @@ cmFileTimeCache.i: cmFileTimeCache.cxx.i
 
 # target to preprocess a source file
 cmFileTimeCache.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.i
 .PHONY : cmFileTimeCache.cxx.i
 
 cmFileTimeCache.s: cmFileTimeCache.cxx.s
@@ -5155,7 +5155,7 @@ cmFileTimeCache.s: cmFileTimeCache.cxx.s
 
 # target to generate assembly for a file
 cmFileTimeCache.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimeCache.cxx.s
 .PHONY : cmFileTimeCache.cxx.s
 
 cmFileTimes.obj: cmFileTimes.cxx.obj
@@ -5163,7 +5163,7 @@ cmFileTimes.obj: cmFileTimes.cxx.obj
 
 # target to build an object file
 cmFileTimes.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.obj
 .PHONY : cmFileTimes.cxx.obj
 
 cmFileTimes.i: cmFileTimes.cxx.i
@@ -5171,7 +5171,7 @@ cmFileTimes.i: cmFileTimes.cxx.i
 
 # target to preprocess a source file
 cmFileTimes.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.i
 .PHONY : cmFileTimes.cxx.i
 
 cmFileTimes.s: cmFileTimes.cxx.s
@@ -5179,7 +5179,7 @@ cmFileTimes.s: cmFileTimes.cxx.s
 
 # target to generate assembly for a file
 cmFileTimes.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFileTimes.cxx.s
 .PHONY : cmFileTimes.cxx.s
 
 cmFindBase.obj: cmFindBase.cxx.obj
@@ -5187,7 +5187,7 @@ cmFindBase.obj: cmFindBase.cxx.obj
 
 # target to build an object file
 cmFindBase.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.obj
 .PHONY : cmFindBase.cxx.obj
 
 cmFindBase.i: cmFindBase.cxx.i
@@ -5195,7 +5195,7 @@ cmFindBase.i: cmFindBase.cxx.i
 
 # target to preprocess a source file
 cmFindBase.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.i
 .PHONY : cmFindBase.cxx.i
 
 cmFindBase.s: cmFindBase.cxx.s
@@ -5203,7 +5203,7 @@ cmFindBase.s: cmFindBase.cxx.s
 
 # target to generate assembly for a file
 cmFindBase.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindBase.cxx.s
 .PHONY : cmFindBase.cxx.s
 
 cmFindCommon.obj: cmFindCommon.cxx.obj
@@ -5211,7 +5211,7 @@ cmFindCommon.obj: cmFindCommon.cxx.obj
 
 # target to build an object file
 cmFindCommon.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.obj
 .PHONY : cmFindCommon.cxx.obj
 
 cmFindCommon.i: cmFindCommon.cxx.i
@@ -5219,7 +5219,7 @@ cmFindCommon.i: cmFindCommon.cxx.i
 
 # target to preprocess a source file
 cmFindCommon.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.i
 .PHONY : cmFindCommon.cxx.i
 
 cmFindCommon.s: cmFindCommon.cxx.s
@@ -5227,7 +5227,7 @@ cmFindCommon.s: cmFindCommon.cxx.s
 
 # target to generate assembly for a file
 cmFindCommon.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindCommon.cxx.s
 .PHONY : cmFindCommon.cxx.s
 
 cmFindFileCommand.obj: cmFindFileCommand.cxx.obj
@@ -5235,7 +5235,7 @@ cmFindFileCommand.obj: cmFindFileCommand.cxx.obj
 
 # target to build an object file
 cmFindFileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.obj
 .PHONY : cmFindFileCommand.cxx.obj
 
 cmFindFileCommand.i: cmFindFileCommand.cxx.i
@@ -5243,7 +5243,7 @@ cmFindFileCommand.i: cmFindFileCommand.cxx.i
 
 # target to preprocess a source file
 cmFindFileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.i
 .PHONY : cmFindFileCommand.cxx.i
 
 cmFindFileCommand.s: cmFindFileCommand.cxx.s
@@ -5251,7 +5251,7 @@ cmFindFileCommand.s: cmFindFileCommand.cxx.s
 
 # target to generate assembly for a file
 cmFindFileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindFileCommand.cxx.s
 .PHONY : cmFindFileCommand.cxx.s
 
 cmFindLibraryCommand.obj: cmFindLibraryCommand.cxx.obj
@@ -5259,7 +5259,7 @@ cmFindLibraryCommand.obj: cmFindLibraryCommand.cxx.obj
 
 # target to build an object file
 cmFindLibraryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.obj
 .PHONY : cmFindLibraryCommand.cxx.obj
 
 cmFindLibraryCommand.i: cmFindLibraryCommand.cxx.i
@@ -5267,7 +5267,7 @@ cmFindLibraryCommand.i: cmFindLibraryCommand.cxx.i
 
 # target to preprocess a source file
 cmFindLibraryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.i
 .PHONY : cmFindLibraryCommand.cxx.i
 
 cmFindLibraryCommand.s: cmFindLibraryCommand.cxx.s
@@ -5275,7 +5275,7 @@ cmFindLibraryCommand.s: cmFindLibraryCommand.cxx.s
 
 # target to generate assembly for a file
 cmFindLibraryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindLibraryCommand.cxx.s
 .PHONY : cmFindLibraryCommand.cxx.s
 
 cmFindPackageCommand.obj: cmFindPackageCommand.cxx.obj
@@ -5283,7 +5283,7 @@ cmFindPackageCommand.obj: cmFindPackageCommand.cxx.obj
 
 # target to build an object file
 cmFindPackageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.obj
 .PHONY : cmFindPackageCommand.cxx.obj
 
 cmFindPackageCommand.i: cmFindPackageCommand.cxx.i
@@ -5291,7 +5291,7 @@ cmFindPackageCommand.i: cmFindPackageCommand.cxx.i
 
 # target to preprocess a source file
 cmFindPackageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.i
 .PHONY : cmFindPackageCommand.cxx.i
 
 cmFindPackageCommand.s: cmFindPackageCommand.cxx.s
@@ -5299,7 +5299,7 @@ cmFindPackageCommand.s: cmFindPackageCommand.cxx.s
 
 # target to generate assembly for a file
 cmFindPackageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPackageCommand.cxx.s
 .PHONY : cmFindPackageCommand.cxx.s
 
 cmFindPathCommand.obj: cmFindPathCommand.cxx.obj
@@ -5307,7 +5307,7 @@ cmFindPathCommand.obj: cmFindPathCommand.cxx.obj
 
 # target to build an object file
 cmFindPathCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.obj
 .PHONY : cmFindPathCommand.cxx.obj
 
 cmFindPathCommand.i: cmFindPathCommand.cxx.i
@@ -5315,7 +5315,7 @@ cmFindPathCommand.i: cmFindPathCommand.cxx.i
 
 # target to preprocess a source file
 cmFindPathCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.i
 .PHONY : cmFindPathCommand.cxx.i
 
 cmFindPathCommand.s: cmFindPathCommand.cxx.s
@@ -5323,7 +5323,7 @@ cmFindPathCommand.s: cmFindPathCommand.cxx.s
 
 # target to generate assembly for a file
 cmFindPathCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindPathCommand.cxx.s
 .PHONY : cmFindPathCommand.cxx.s
 
 cmFindProgramCommand.obj: cmFindProgramCommand.cxx.obj
@@ -5331,7 +5331,7 @@ cmFindProgramCommand.obj: cmFindProgramCommand.cxx.obj
 
 # target to build an object file
 cmFindProgramCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.obj
 .PHONY : cmFindProgramCommand.cxx.obj
 
 cmFindProgramCommand.i: cmFindProgramCommand.cxx.i
@@ -5339,7 +5339,7 @@ cmFindProgramCommand.i: cmFindProgramCommand.cxx.i
 
 # target to preprocess a source file
 cmFindProgramCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.i
 .PHONY : cmFindProgramCommand.cxx.i
 
 cmFindProgramCommand.s: cmFindProgramCommand.cxx.s
@@ -5347,7 +5347,7 @@ cmFindProgramCommand.s: cmFindProgramCommand.cxx.s
 
 # target to generate assembly for a file
 cmFindProgramCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFindProgramCommand.cxx.s
 .PHONY : cmFindProgramCommand.cxx.s
 
 cmForEachCommand.obj: cmForEachCommand.cxx.obj
@@ -5355,7 +5355,7 @@ cmForEachCommand.obj: cmForEachCommand.cxx.obj
 
 # target to build an object file
 cmForEachCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.obj
 .PHONY : cmForEachCommand.cxx.obj
 
 cmForEachCommand.i: cmForEachCommand.cxx.i
@@ -5363,7 +5363,7 @@ cmForEachCommand.i: cmForEachCommand.cxx.i
 
 # target to preprocess a source file
 cmForEachCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.i
 .PHONY : cmForEachCommand.cxx.i
 
 cmForEachCommand.s: cmForEachCommand.cxx.s
@@ -5371,7 +5371,7 @@ cmForEachCommand.s: cmForEachCommand.cxx.s
 
 # target to generate assembly for a file
 cmForEachCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmForEachCommand.cxx.s
 .PHONY : cmForEachCommand.cxx.s
 
 cmFortranParserImpl.obj: cmFortranParserImpl.cxx.obj
@@ -5379,7 +5379,7 @@ cmFortranParserImpl.obj: cmFortranParserImpl.cxx.obj
 
 # target to build an object file
 cmFortranParserImpl.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.obj
 .PHONY : cmFortranParserImpl.cxx.obj
 
 cmFortranParserImpl.i: cmFortranParserImpl.cxx.i
@@ -5387,7 +5387,7 @@ cmFortranParserImpl.i: cmFortranParserImpl.cxx.i
 
 # target to preprocess a source file
 cmFortranParserImpl.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.i
 .PHONY : cmFortranParserImpl.cxx.i
 
 cmFortranParserImpl.s: cmFortranParserImpl.cxx.s
@@ -5395,7 +5395,7 @@ cmFortranParserImpl.s: cmFortranParserImpl.cxx.s
 
 # target to generate assembly for a file
 cmFortranParserImpl.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFortranParserImpl.cxx.s
 .PHONY : cmFortranParserImpl.cxx.s
 
 cmFunctionBlocker.obj: cmFunctionBlocker.cxx.obj
@@ -5403,7 +5403,7 @@ cmFunctionBlocker.obj: cmFunctionBlocker.cxx.obj
 
 # target to build an object file
 cmFunctionBlocker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.obj
 .PHONY : cmFunctionBlocker.cxx.obj
 
 cmFunctionBlocker.i: cmFunctionBlocker.cxx.i
@@ -5411,7 +5411,7 @@ cmFunctionBlocker.i: cmFunctionBlocker.cxx.i
 
 # target to preprocess a source file
 cmFunctionBlocker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.i
 .PHONY : cmFunctionBlocker.cxx.i
 
 cmFunctionBlocker.s: cmFunctionBlocker.cxx.s
@@ -5419,7 +5419,7 @@ cmFunctionBlocker.s: cmFunctionBlocker.cxx.s
 
 # target to generate assembly for a file
 cmFunctionBlocker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionBlocker.cxx.s
 .PHONY : cmFunctionBlocker.cxx.s
 
 cmFunctionCommand.obj: cmFunctionCommand.cxx.obj
@@ -5427,7 +5427,7 @@ cmFunctionCommand.obj: cmFunctionCommand.cxx.obj
 
 # target to build an object file
 cmFunctionCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.obj
 .PHONY : cmFunctionCommand.cxx.obj
 
 cmFunctionCommand.i: cmFunctionCommand.cxx.i
@@ -5435,7 +5435,7 @@ cmFunctionCommand.i: cmFunctionCommand.cxx.i
 
 # target to preprocess a source file
 cmFunctionCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.i
 .PHONY : cmFunctionCommand.cxx.i
 
 cmFunctionCommand.s: cmFunctionCommand.cxx.s
@@ -5443,7 +5443,7 @@ cmFunctionCommand.s: cmFunctionCommand.cxx.s
 
 # target to generate assembly for a file
 cmFunctionCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmFunctionCommand.cxx.s
 .PHONY : cmFunctionCommand.cxx.s
 
 cmGccDepfileLexerHelper.obj: cmGccDepfileLexerHelper.cxx.obj
@@ -5451,7 +5451,7 @@ cmGccDepfileLexerHelper.obj: cmGccDepfileLexerHelper.cxx.obj
 
 # target to build an object file
 cmGccDepfileLexerHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.obj
 .PHONY : cmGccDepfileLexerHelper.cxx.obj
 
 cmGccDepfileLexerHelper.i: cmGccDepfileLexerHelper.cxx.i
@@ -5459,7 +5459,7 @@ cmGccDepfileLexerHelper.i: cmGccDepfileLexerHelper.cxx.i
 
 # target to preprocess a source file
 cmGccDepfileLexerHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.i
 .PHONY : cmGccDepfileLexerHelper.cxx.i
 
 cmGccDepfileLexerHelper.s: cmGccDepfileLexerHelper.cxx.s
@@ -5467,7 +5467,7 @@ cmGccDepfileLexerHelper.s: cmGccDepfileLexerHelper.cxx.s
 
 # target to generate assembly for a file
 cmGccDepfileLexerHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileLexerHelper.cxx.s
 .PHONY : cmGccDepfileLexerHelper.cxx.s
 
 cmGccDepfileReader.obj: cmGccDepfileReader.cxx.obj
@@ -5475,7 +5475,7 @@ cmGccDepfileReader.obj: cmGccDepfileReader.cxx.obj
 
 # target to build an object file
 cmGccDepfileReader.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.obj
 .PHONY : cmGccDepfileReader.cxx.obj
 
 cmGccDepfileReader.i: cmGccDepfileReader.cxx.i
@@ -5483,7 +5483,7 @@ cmGccDepfileReader.i: cmGccDepfileReader.cxx.i
 
 # target to preprocess a source file
 cmGccDepfileReader.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.i
 .PHONY : cmGccDepfileReader.cxx.i
 
 cmGccDepfileReader.s: cmGccDepfileReader.cxx.s
@@ -5491,7 +5491,7 @@ cmGccDepfileReader.s: cmGccDepfileReader.cxx.s
 
 # target to generate assembly for a file
 cmGccDepfileReader.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGccDepfileReader.cxx.s
 .PHONY : cmGccDepfileReader.cxx.s
 
 cmGeneratedFileStream.obj: cmGeneratedFileStream.cxx.obj
@@ -5499,7 +5499,7 @@ cmGeneratedFileStream.obj: cmGeneratedFileStream.cxx.obj
 
 # target to build an object file
 cmGeneratedFileStream.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.obj
 .PHONY : cmGeneratedFileStream.cxx.obj
 
 cmGeneratedFileStream.i: cmGeneratedFileStream.cxx.i
@@ -5507,7 +5507,7 @@ cmGeneratedFileStream.i: cmGeneratedFileStream.cxx.i
 
 # target to preprocess a source file
 cmGeneratedFileStream.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.i
 .PHONY : cmGeneratedFileStream.cxx.i
 
 cmGeneratedFileStream.s: cmGeneratedFileStream.cxx.s
@@ -5515,7 +5515,7 @@ cmGeneratedFileStream.s: cmGeneratedFileStream.cxx.s
 
 # target to generate assembly for a file
 cmGeneratedFileStream.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratedFileStream.cxx.s
 .PHONY : cmGeneratedFileStream.cxx.s
 
 cmGeneratorExpression.obj: cmGeneratorExpression.cxx.obj
@@ -5523,7 +5523,7 @@ cmGeneratorExpression.obj: cmGeneratorExpression.cxx.obj
 
 # target to build an object file
 cmGeneratorExpression.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.obj
 .PHONY : cmGeneratorExpression.cxx.obj
 
 cmGeneratorExpression.i: cmGeneratorExpression.cxx.i
@@ -5531,7 +5531,7 @@ cmGeneratorExpression.i: cmGeneratorExpression.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpression.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.i
 .PHONY : cmGeneratorExpression.cxx.i
 
 cmGeneratorExpression.s: cmGeneratorExpression.cxx.s
@@ -5539,7 +5539,7 @@ cmGeneratorExpression.s: cmGeneratorExpression.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpression.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpression.cxx.s
 .PHONY : cmGeneratorExpression.cxx.s
 
 cmGeneratorExpressionContext.obj: cmGeneratorExpressionContext.cxx.obj
@@ -5547,7 +5547,7 @@ cmGeneratorExpressionContext.obj: cmGeneratorExpressionContext.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionContext.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.obj
 .PHONY : cmGeneratorExpressionContext.cxx.obj
 
 cmGeneratorExpressionContext.i: cmGeneratorExpressionContext.cxx.i
@@ -5555,7 +5555,7 @@ cmGeneratorExpressionContext.i: cmGeneratorExpressionContext.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionContext.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.i
 .PHONY : cmGeneratorExpressionContext.cxx.i
 
 cmGeneratorExpressionContext.s: cmGeneratorExpressionContext.cxx.s
@@ -5563,7 +5563,7 @@ cmGeneratorExpressionContext.s: cmGeneratorExpressionContext.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionContext.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionContext.cxx.s
 .PHONY : cmGeneratorExpressionContext.cxx.s
 
 cmGeneratorExpressionDAGChecker.obj: cmGeneratorExpressionDAGChecker.cxx.obj
@@ -5571,7 +5571,7 @@ cmGeneratorExpressionDAGChecker.obj: cmGeneratorExpressionDAGChecker.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionDAGChecker.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.obj
 .PHONY : cmGeneratorExpressionDAGChecker.cxx.obj
 
 cmGeneratorExpressionDAGChecker.i: cmGeneratorExpressionDAGChecker.cxx.i
@@ -5579,7 +5579,7 @@ cmGeneratorExpressionDAGChecker.i: cmGeneratorExpressionDAGChecker.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionDAGChecker.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.i
 .PHONY : cmGeneratorExpressionDAGChecker.cxx.i
 
 cmGeneratorExpressionDAGChecker.s: cmGeneratorExpressionDAGChecker.cxx.s
@@ -5587,7 +5587,7 @@ cmGeneratorExpressionDAGChecker.s: cmGeneratorExpressionDAGChecker.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionDAGChecker.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionDAGChecker.cxx.s
 .PHONY : cmGeneratorExpressionDAGChecker.cxx.s
 
 cmGeneratorExpressionEvaluationFile.obj: cmGeneratorExpressionEvaluationFile.cxx.obj
@@ -5595,7 +5595,7 @@ cmGeneratorExpressionEvaluationFile.obj: cmGeneratorExpressionEvaluationFile.cxx
 
 # target to build an object file
 cmGeneratorExpressionEvaluationFile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.obj
 .PHONY : cmGeneratorExpressionEvaluationFile.cxx.obj
 
 cmGeneratorExpressionEvaluationFile.i: cmGeneratorExpressionEvaluationFile.cxx.i
@@ -5603,7 +5603,7 @@ cmGeneratorExpressionEvaluationFile.i: cmGeneratorExpressionEvaluationFile.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionEvaluationFile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.i
 .PHONY : cmGeneratorExpressionEvaluationFile.cxx.i
 
 cmGeneratorExpressionEvaluationFile.s: cmGeneratorExpressionEvaluationFile.cxx.s
@@ -5611,7 +5611,7 @@ cmGeneratorExpressionEvaluationFile.s: cmGeneratorExpressionEvaluationFile.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionEvaluationFile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluationFile.cxx.s
 .PHONY : cmGeneratorExpressionEvaluationFile.cxx.s
 
 cmGeneratorExpressionEvaluator.obj: cmGeneratorExpressionEvaluator.cxx.obj
@@ -5619,7 +5619,7 @@ cmGeneratorExpressionEvaluator.obj: cmGeneratorExpressionEvaluator.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionEvaluator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.obj
 .PHONY : cmGeneratorExpressionEvaluator.cxx.obj
 
 cmGeneratorExpressionEvaluator.i: cmGeneratorExpressionEvaluator.cxx.i
@@ -5627,7 +5627,7 @@ cmGeneratorExpressionEvaluator.i: cmGeneratorExpressionEvaluator.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionEvaluator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.i
 .PHONY : cmGeneratorExpressionEvaluator.cxx.i
 
 cmGeneratorExpressionEvaluator.s: cmGeneratorExpressionEvaluator.cxx.s
@@ -5635,7 +5635,7 @@ cmGeneratorExpressionEvaluator.s: cmGeneratorExpressionEvaluator.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionEvaluator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionEvaluator.cxx.s
 .PHONY : cmGeneratorExpressionEvaluator.cxx.s
 
 cmGeneratorExpressionLexer.obj: cmGeneratorExpressionLexer.cxx.obj
@@ -5643,7 +5643,7 @@ cmGeneratorExpressionLexer.obj: cmGeneratorExpressionLexer.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionLexer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.obj
 .PHONY : cmGeneratorExpressionLexer.cxx.obj
 
 cmGeneratorExpressionLexer.i: cmGeneratorExpressionLexer.cxx.i
@@ -5651,7 +5651,7 @@ cmGeneratorExpressionLexer.i: cmGeneratorExpressionLexer.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionLexer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.i
 .PHONY : cmGeneratorExpressionLexer.cxx.i
 
 cmGeneratorExpressionLexer.s: cmGeneratorExpressionLexer.cxx.s
@@ -5659,7 +5659,7 @@ cmGeneratorExpressionLexer.s: cmGeneratorExpressionLexer.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionLexer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionLexer.cxx.s
 .PHONY : cmGeneratorExpressionLexer.cxx.s
 
 cmGeneratorExpressionNode.obj: cmGeneratorExpressionNode.cxx.obj
@@ -5667,7 +5667,7 @@ cmGeneratorExpressionNode.obj: cmGeneratorExpressionNode.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionNode.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.obj
 .PHONY : cmGeneratorExpressionNode.cxx.obj
 
 cmGeneratorExpressionNode.i: cmGeneratorExpressionNode.cxx.i
@@ -5675,7 +5675,7 @@ cmGeneratorExpressionNode.i: cmGeneratorExpressionNode.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionNode.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.i
 .PHONY : cmGeneratorExpressionNode.cxx.i
 
 cmGeneratorExpressionNode.s: cmGeneratorExpressionNode.cxx.s
@@ -5683,7 +5683,7 @@ cmGeneratorExpressionNode.s: cmGeneratorExpressionNode.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionNode.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionNode.cxx.s
 .PHONY : cmGeneratorExpressionNode.cxx.s
 
 cmGeneratorExpressionParser.obj: cmGeneratorExpressionParser.cxx.obj
@@ -5691,7 +5691,7 @@ cmGeneratorExpressionParser.obj: cmGeneratorExpressionParser.cxx.obj
 
 # target to build an object file
 cmGeneratorExpressionParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.obj
 .PHONY : cmGeneratorExpressionParser.cxx.obj
 
 cmGeneratorExpressionParser.i: cmGeneratorExpressionParser.cxx.i
@@ -5699,7 +5699,7 @@ cmGeneratorExpressionParser.i: cmGeneratorExpressionParser.cxx.i
 
 # target to preprocess a source file
 cmGeneratorExpressionParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.i
 .PHONY : cmGeneratorExpressionParser.cxx.i
 
 cmGeneratorExpressionParser.s: cmGeneratorExpressionParser.cxx.s
@@ -5707,7 +5707,7 @@ cmGeneratorExpressionParser.s: cmGeneratorExpressionParser.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorExpressionParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorExpressionParser.cxx.s
 .PHONY : cmGeneratorExpressionParser.cxx.s
 
 cmGeneratorTarget.obj: cmGeneratorTarget.cxx.obj
@@ -5715,7 +5715,7 @@ cmGeneratorTarget.obj: cmGeneratorTarget.cxx.obj
 
 # target to build an object file
 cmGeneratorTarget.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.obj
 .PHONY : cmGeneratorTarget.cxx.obj
 
 cmGeneratorTarget.i: cmGeneratorTarget.cxx.i
@@ -5723,7 +5723,7 @@ cmGeneratorTarget.i: cmGeneratorTarget.cxx.i
 
 # target to preprocess a source file
 cmGeneratorTarget.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.i
 .PHONY : cmGeneratorTarget.cxx.i
 
 cmGeneratorTarget.s: cmGeneratorTarget.cxx.s
@@ -5731,7 +5731,7 @@ cmGeneratorTarget.s: cmGeneratorTarget.cxx.s
 
 # target to generate assembly for a file
 cmGeneratorTarget.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGeneratorTarget.cxx.s
 .PHONY : cmGeneratorTarget.cxx.s
 
 cmGetCMakePropertyCommand.obj: cmGetCMakePropertyCommand.cxx.obj
@@ -5739,7 +5739,7 @@ cmGetCMakePropertyCommand.obj: cmGetCMakePropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetCMakePropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.obj
 .PHONY : cmGetCMakePropertyCommand.cxx.obj
 
 cmGetCMakePropertyCommand.i: cmGetCMakePropertyCommand.cxx.i
@@ -5747,7 +5747,7 @@ cmGetCMakePropertyCommand.i: cmGetCMakePropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetCMakePropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.i
 .PHONY : cmGetCMakePropertyCommand.cxx.i
 
 cmGetCMakePropertyCommand.s: cmGetCMakePropertyCommand.cxx.s
@@ -5755,7 +5755,7 @@ cmGetCMakePropertyCommand.s: cmGetCMakePropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetCMakePropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetCMakePropertyCommand.cxx.s
 .PHONY : cmGetCMakePropertyCommand.cxx.s
 
 cmGetDirectoryPropertyCommand.obj: cmGetDirectoryPropertyCommand.cxx.obj
@@ -5763,7 +5763,7 @@ cmGetDirectoryPropertyCommand.obj: cmGetDirectoryPropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetDirectoryPropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.obj
 .PHONY : cmGetDirectoryPropertyCommand.cxx.obj
 
 cmGetDirectoryPropertyCommand.i: cmGetDirectoryPropertyCommand.cxx.i
@@ -5771,7 +5771,7 @@ cmGetDirectoryPropertyCommand.i: cmGetDirectoryPropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetDirectoryPropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.i
 .PHONY : cmGetDirectoryPropertyCommand.cxx.i
 
 cmGetDirectoryPropertyCommand.s: cmGetDirectoryPropertyCommand.cxx.s
@@ -5779,7 +5779,7 @@ cmGetDirectoryPropertyCommand.s: cmGetDirectoryPropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetDirectoryPropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetDirectoryPropertyCommand.cxx.s
 .PHONY : cmGetDirectoryPropertyCommand.cxx.s
 
 cmGetFilenameComponentCommand.obj: cmGetFilenameComponentCommand.cxx.obj
@@ -5787,7 +5787,7 @@ cmGetFilenameComponentCommand.obj: cmGetFilenameComponentCommand.cxx.obj
 
 # target to build an object file
 cmGetFilenameComponentCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.obj
 .PHONY : cmGetFilenameComponentCommand.cxx.obj
 
 cmGetFilenameComponentCommand.i: cmGetFilenameComponentCommand.cxx.i
@@ -5795,7 +5795,7 @@ cmGetFilenameComponentCommand.i: cmGetFilenameComponentCommand.cxx.i
 
 # target to preprocess a source file
 cmGetFilenameComponentCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.i
 .PHONY : cmGetFilenameComponentCommand.cxx.i
 
 cmGetFilenameComponentCommand.s: cmGetFilenameComponentCommand.cxx.s
@@ -5803,7 +5803,7 @@ cmGetFilenameComponentCommand.s: cmGetFilenameComponentCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetFilenameComponentCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetFilenameComponentCommand.cxx.s
 .PHONY : cmGetFilenameComponentCommand.cxx.s
 
 cmGetPipes.obj: cmGetPipes.cxx.obj
@@ -5811,7 +5811,7 @@ cmGetPipes.obj: cmGetPipes.cxx.obj
 
 # target to build an object file
 cmGetPipes.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.obj
 .PHONY : cmGetPipes.cxx.obj
 
 cmGetPipes.i: cmGetPipes.cxx.i
@@ -5819,7 +5819,7 @@ cmGetPipes.i: cmGetPipes.cxx.i
 
 # target to preprocess a source file
 cmGetPipes.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.i
 .PHONY : cmGetPipes.cxx.i
 
 cmGetPipes.s: cmGetPipes.cxx.s
@@ -5827,7 +5827,7 @@ cmGetPipes.s: cmGetPipes.cxx.s
 
 # target to generate assembly for a file
 cmGetPipes.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPipes.cxx.s
 .PHONY : cmGetPipes.cxx.s
 
 cmGetPropertyCommand.obj: cmGetPropertyCommand.cxx.obj
@@ -5835,7 +5835,7 @@ cmGetPropertyCommand.obj: cmGetPropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetPropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.obj
 .PHONY : cmGetPropertyCommand.cxx.obj
 
 cmGetPropertyCommand.i: cmGetPropertyCommand.cxx.i
@@ -5843,7 +5843,7 @@ cmGetPropertyCommand.i: cmGetPropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetPropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.i
 .PHONY : cmGetPropertyCommand.cxx.i
 
 cmGetPropertyCommand.s: cmGetPropertyCommand.cxx.s
@@ -5851,7 +5851,7 @@ cmGetPropertyCommand.s: cmGetPropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetPropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetPropertyCommand.cxx.s
 .PHONY : cmGetPropertyCommand.cxx.s
 
 cmGetSourceFilePropertyCommand.obj: cmGetSourceFilePropertyCommand.cxx.obj
@@ -5859,7 +5859,7 @@ cmGetSourceFilePropertyCommand.obj: cmGetSourceFilePropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetSourceFilePropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.obj
 .PHONY : cmGetSourceFilePropertyCommand.cxx.obj
 
 cmGetSourceFilePropertyCommand.i: cmGetSourceFilePropertyCommand.cxx.i
@@ -5867,7 +5867,7 @@ cmGetSourceFilePropertyCommand.i: cmGetSourceFilePropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetSourceFilePropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.i
 .PHONY : cmGetSourceFilePropertyCommand.cxx.i
 
 cmGetSourceFilePropertyCommand.s: cmGetSourceFilePropertyCommand.cxx.s
@@ -5875,7 +5875,7 @@ cmGetSourceFilePropertyCommand.s: cmGetSourceFilePropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetSourceFilePropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetSourceFilePropertyCommand.cxx.s
 .PHONY : cmGetSourceFilePropertyCommand.cxx.s
 
 cmGetTargetPropertyCommand.obj: cmGetTargetPropertyCommand.cxx.obj
@@ -5883,7 +5883,7 @@ cmGetTargetPropertyCommand.obj: cmGetTargetPropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetTargetPropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.obj
 .PHONY : cmGetTargetPropertyCommand.cxx.obj
 
 cmGetTargetPropertyCommand.i: cmGetTargetPropertyCommand.cxx.i
@@ -5891,7 +5891,7 @@ cmGetTargetPropertyCommand.i: cmGetTargetPropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetTargetPropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.i
 .PHONY : cmGetTargetPropertyCommand.cxx.i
 
 cmGetTargetPropertyCommand.s: cmGetTargetPropertyCommand.cxx.s
@@ -5899,7 +5899,7 @@ cmGetTargetPropertyCommand.s: cmGetTargetPropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetTargetPropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTargetPropertyCommand.cxx.s
 .PHONY : cmGetTargetPropertyCommand.cxx.s
 
 cmGetTestPropertyCommand.obj: cmGetTestPropertyCommand.cxx.obj
@@ -5907,7 +5907,7 @@ cmGetTestPropertyCommand.obj: cmGetTestPropertyCommand.cxx.obj
 
 # target to build an object file
 cmGetTestPropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.obj
 .PHONY : cmGetTestPropertyCommand.cxx.obj
 
 cmGetTestPropertyCommand.i: cmGetTestPropertyCommand.cxx.i
@@ -5915,7 +5915,7 @@ cmGetTestPropertyCommand.i: cmGetTestPropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmGetTestPropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.i
 .PHONY : cmGetTestPropertyCommand.cxx.i
 
 cmGetTestPropertyCommand.s: cmGetTestPropertyCommand.cxx.s
@@ -5923,7 +5923,7 @@ cmGetTestPropertyCommand.s: cmGetTestPropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmGetTestPropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGetTestPropertyCommand.cxx.s
 .PHONY : cmGetTestPropertyCommand.cxx.s
 
 cmGhsMultiGpj.obj: cmGhsMultiGpj.cxx.obj
@@ -5931,7 +5931,7 @@ cmGhsMultiGpj.obj: cmGhsMultiGpj.cxx.obj
 
 # target to build an object file
 cmGhsMultiGpj.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.obj
 .PHONY : cmGhsMultiGpj.cxx.obj
 
 cmGhsMultiGpj.i: cmGhsMultiGpj.cxx.i
@@ -5939,7 +5939,7 @@ cmGhsMultiGpj.i: cmGhsMultiGpj.cxx.i
 
 # target to preprocess a source file
 cmGhsMultiGpj.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.i
 .PHONY : cmGhsMultiGpj.cxx.i
 
 cmGhsMultiGpj.s: cmGhsMultiGpj.cxx.s
@@ -5947,7 +5947,7 @@ cmGhsMultiGpj.s: cmGhsMultiGpj.cxx.s
 
 # target to generate assembly for a file
 cmGhsMultiGpj.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiGpj.cxx.s
 .PHONY : cmGhsMultiGpj.cxx.s
 
 cmGhsMultiTargetGenerator.obj: cmGhsMultiTargetGenerator.cxx.obj
@@ -5955,7 +5955,7 @@ cmGhsMultiTargetGenerator.obj: cmGhsMultiTargetGenerator.cxx.obj
 
 # target to build an object file
 cmGhsMultiTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.obj
 .PHONY : cmGhsMultiTargetGenerator.cxx.obj
 
 cmGhsMultiTargetGenerator.i: cmGhsMultiTargetGenerator.cxx.i
@@ -5963,7 +5963,7 @@ cmGhsMultiTargetGenerator.i: cmGhsMultiTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmGhsMultiTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.i
 .PHONY : cmGhsMultiTargetGenerator.cxx.i
 
 cmGhsMultiTargetGenerator.s: cmGhsMultiTargetGenerator.cxx.s
@@ -5971,7 +5971,7 @@ cmGhsMultiTargetGenerator.s: cmGhsMultiTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGhsMultiTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGhsMultiTargetGenerator.cxx.s
 .PHONY : cmGhsMultiTargetGenerator.cxx.s
 
 cmGlobVerificationManager.obj: cmGlobVerificationManager.cxx.obj
@@ -5979,7 +5979,7 @@ cmGlobVerificationManager.obj: cmGlobVerificationManager.cxx.obj
 
 # target to build an object file
 cmGlobVerificationManager.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.obj
 .PHONY : cmGlobVerificationManager.cxx.obj
 
 cmGlobVerificationManager.i: cmGlobVerificationManager.cxx.i
@@ -5987,7 +5987,7 @@ cmGlobVerificationManager.i: cmGlobVerificationManager.cxx.i
 
 # target to preprocess a source file
 cmGlobVerificationManager.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.i
 .PHONY : cmGlobVerificationManager.cxx.i
 
 cmGlobVerificationManager.s: cmGlobVerificationManager.cxx.s
@@ -5995,7 +5995,7 @@ cmGlobVerificationManager.s: cmGlobVerificationManager.cxx.s
 
 # target to generate assembly for a file
 cmGlobVerificationManager.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobVerificationManager.cxx.s
 .PHONY : cmGlobVerificationManager.cxx.s
 
 cmGlobalBorlandMakefileGenerator.obj: cmGlobalBorlandMakefileGenerator.cxx.obj
@@ -6003,7 +6003,7 @@ cmGlobalBorlandMakefileGenerator.obj: cmGlobalBorlandMakefileGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalBorlandMakefileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.obj
 .PHONY : cmGlobalBorlandMakefileGenerator.cxx.obj
 
 cmGlobalBorlandMakefileGenerator.i: cmGlobalBorlandMakefileGenerator.cxx.i
@@ -6011,7 +6011,7 @@ cmGlobalBorlandMakefileGenerator.i: cmGlobalBorlandMakefileGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalBorlandMakefileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.i
 .PHONY : cmGlobalBorlandMakefileGenerator.cxx.i
 
 cmGlobalBorlandMakefileGenerator.s: cmGlobalBorlandMakefileGenerator.cxx.s
@@ -6019,7 +6019,7 @@ cmGlobalBorlandMakefileGenerator.s: cmGlobalBorlandMakefileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalBorlandMakefileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalBorlandMakefileGenerator.cxx.s
 .PHONY : cmGlobalBorlandMakefileGenerator.cxx.s
 
 cmGlobalCommonGenerator.obj: cmGlobalCommonGenerator.cxx.obj
@@ -6027,7 +6027,7 @@ cmGlobalCommonGenerator.obj: cmGlobalCommonGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalCommonGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.obj
 .PHONY : cmGlobalCommonGenerator.cxx.obj
 
 cmGlobalCommonGenerator.i: cmGlobalCommonGenerator.cxx.i
@@ -6035,7 +6035,7 @@ cmGlobalCommonGenerator.i: cmGlobalCommonGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalCommonGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.i
 .PHONY : cmGlobalCommonGenerator.cxx.i
 
 cmGlobalCommonGenerator.s: cmGlobalCommonGenerator.cxx.s
@@ -6043,7 +6043,7 @@ cmGlobalCommonGenerator.s: cmGlobalCommonGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalCommonGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalCommonGenerator.cxx.s
 .PHONY : cmGlobalCommonGenerator.cxx.s
 
 cmGlobalGenerator.obj: cmGlobalGenerator.cxx.obj
@@ -6051,7 +6051,7 @@ cmGlobalGenerator.obj: cmGlobalGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.obj
 .PHONY : cmGlobalGenerator.cxx.obj
 
 cmGlobalGenerator.i: cmGlobalGenerator.cxx.i
@@ -6059,7 +6059,7 @@ cmGlobalGenerator.i: cmGlobalGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.i
 .PHONY : cmGlobalGenerator.cxx.i
 
 cmGlobalGenerator.s: cmGlobalGenerator.cxx.s
@@ -6067,7 +6067,7 @@ cmGlobalGenerator.s: cmGlobalGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGenerator.cxx.s
 .PHONY : cmGlobalGenerator.cxx.s
 
 cmGlobalGhsMultiGenerator.obj: cmGlobalGhsMultiGenerator.cxx.obj
@@ -6075,7 +6075,7 @@ cmGlobalGhsMultiGenerator.obj: cmGlobalGhsMultiGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalGhsMultiGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.obj
 .PHONY : cmGlobalGhsMultiGenerator.cxx.obj
 
 cmGlobalGhsMultiGenerator.i: cmGlobalGhsMultiGenerator.cxx.i
@@ -6083,7 +6083,7 @@ cmGlobalGhsMultiGenerator.i: cmGlobalGhsMultiGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalGhsMultiGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.i
 .PHONY : cmGlobalGhsMultiGenerator.cxx.i
 
 cmGlobalGhsMultiGenerator.s: cmGlobalGhsMultiGenerator.cxx.s
@@ -6091,7 +6091,7 @@ cmGlobalGhsMultiGenerator.s: cmGlobalGhsMultiGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalGhsMultiGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalGhsMultiGenerator.cxx.s
 .PHONY : cmGlobalGhsMultiGenerator.cxx.s
 
 cmGlobalJOMMakefileGenerator.obj: cmGlobalJOMMakefileGenerator.cxx.obj
@@ -6099,7 +6099,7 @@ cmGlobalJOMMakefileGenerator.obj: cmGlobalJOMMakefileGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalJOMMakefileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.obj
 .PHONY : cmGlobalJOMMakefileGenerator.cxx.obj
 
 cmGlobalJOMMakefileGenerator.i: cmGlobalJOMMakefileGenerator.cxx.i
@@ -6107,7 +6107,7 @@ cmGlobalJOMMakefileGenerator.i: cmGlobalJOMMakefileGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalJOMMakefileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.i
 .PHONY : cmGlobalJOMMakefileGenerator.cxx.i
 
 cmGlobalJOMMakefileGenerator.s: cmGlobalJOMMakefileGenerator.cxx.s
@@ -6115,7 +6115,7 @@ cmGlobalJOMMakefileGenerator.s: cmGlobalJOMMakefileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalJOMMakefileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalJOMMakefileGenerator.cxx.s
 .PHONY : cmGlobalJOMMakefileGenerator.cxx.s
 
 cmGlobalMSYSMakefileGenerator.obj: cmGlobalMSYSMakefileGenerator.cxx.obj
@@ -6123,7 +6123,7 @@ cmGlobalMSYSMakefileGenerator.obj: cmGlobalMSYSMakefileGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalMSYSMakefileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.obj
 .PHONY : cmGlobalMSYSMakefileGenerator.cxx.obj
 
 cmGlobalMSYSMakefileGenerator.i: cmGlobalMSYSMakefileGenerator.cxx.i
@@ -6131,7 +6131,7 @@ cmGlobalMSYSMakefileGenerator.i: cmGlobalMSYSMakefileGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalMSYSMakefileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.i
 .PHONY : cmGlobalMSYSMakefileGenerator.cxx.i
 
 cmGlobalMSYSMakefileGenerator.s: cmGlobalMSYSMakefileGenerator.cxx.s
@@ -6139,7 +6139,7 @@ cmGlobalMSYSMakefileGenerator.s: cmGlobalMSYSMakefileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalMSYSMakefileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMSYSMakefileGenerator.cxx.s
 .PHONY : cmGlobalMSYSMakefileGenerator.cxx.s
 
 cmGlobalMinGWMakefileGenerator.obj: cmGlobalMinGWMakefileGenerator.cxx.obj
@@ -6147,7 +6147,7 @@ cmGlobalMinGWMakefileGenerator.obj: cmGlobalMinGWMakefileGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalMinGWMakefileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.obj
 .PHONY : cmGlobalMinGWMakefileGenerator.cxx.obj
 
 cmGlobalMinGWMakefileGenerator.i: cmGlobalMinGWMakefileGenerator.cxx.i
@@ -6155,7 +6155,7 @@ cmGlobalMinGWMakefileGenerator.i: cmGlobalMinGWMakefileGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalMinGWMakefileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.i
 .PHONY : cmGlobalMinGWMakefileGenerator.cxx.i
 
 cmGlobalMinGWMakefileGenerator.s: cmGlobalMinGWMakefileGenerator.cxx.s
@@ -6163,7 +6163,7 @@ cmGlobalMinGWMakefileGenerator.s: cmGlobalMinGWMakefileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalMinGWMakefileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalMinGWMakefileGenerator.cxx.s
 .PHONY : cmGlobalMinGWMakefileGenerator.cxx.s
 
 cmGlobalNMakeMakefileGenerator.obj: cmGlobalNMakeMakefileGenerator.cxx.obj
@@ -6171,7 +6171,7 @@ cmGlobalNMakeMakefileGenerator.obj: cmGlobalNMakeMakefileGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalNMakeMakefileGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.obj
 .PHONY : cmGlobalNMakeMakefileGenerator.cxx.obj
 
 cmGlobalNMakeMakefileGenerator.i: cmGlobalNMakeMakefileGenerator.cxx.i
@@ -6179,7 +6179,7 @@ cmGlobalNMakeMakefileGenerator.i: cmGlobalNMakeMakefileGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalNMakeMakefileGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.i
 .PHONY : cmGlobalNMakeMakefileGenerator.cxx.i
 
 cmGlobalNMakeMakefileGenerator.s: cmGlobalNMakeMakefileGenerator.cxx.s
@@ -6187,7 +6187,7 @@ cmGlobalNMakeMakefileGenerator.s: cmGlobalNMakeMakefileGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalNMakeMakefileGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNMakeMakefileGenerator.cxx.s
 .PHONY : cmGlobalNMakeMakefileGenerator.cxx.s
 
 cmGlobalNinjaGenerator.obj: cmGlobalNinjaGenerator.cxx.obj
@@ -6195,7 +6195,7 @@ cmGlobalNinjaGenerator.obj: cmGlobalNinjaGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalNinjaGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.obj
 .PHONY : cmGlobalNinjaGenerator.cxx.obj
 
 cmGlobalNinjaGenerator.i: cmGlobalNinjaGenerator.cxx.i
@@ -6203,7 +6203,7 @@ cmGlobalNinjaGenerator.i: cmGlobalNinjaGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalNinjaGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.i
 .PHONY : cmGlobalNinjaGenerator.cxx.i
 
 cmGlobalNinjaGenerator.s: cmGlobalNinjaGenerator.cxx.s
@@ -6211,7 +6211,7 @@ cmGlobalNinjaGenerator.s: cmGlobalNinjaGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalNinjaGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalNinjaGenerator.cxx.s
 .PHONY : cmGlobalNinjaGenerator.cxx.s
 
 cmGlobalUnixMakefileGenerator3.obj: cmGlobalUnixMakefileGenerator3.cxx.obj
@@ -6219,7 +6219,7 @@ cmGlobalUnixMakefileGenerator3.obj: cmGlobalUnixMakefileGenerator3.cxx.obj
 
 # target to build an object file
 cmGlobalUnixMakefileGenerator3.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.obj
 .PHONY : cmGlobalUnixMakefileGenerator3.cxx.obj
 
 cmGlobalUnixMakefileGenerator3.i: cmGlobalUnixMakefileGenerator3.cxx.i
@@ -6227,7 +6227,7 @@ cmGlobalUnixMakefileGenerator3.i: cmGlobalUnixMakefileGenerator3.cxx.i
 
 # target to preprocess a source file
 cmGlobalUnixMakefileGenerator3.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.i
 .PHONY : cmGlobalUnixMakefileGenerator3.cxx.i
 
 cmGlobalUnixMakefileGenerator3.s: cmGlobalUnixMakefileGenerator3.cxx.s
@@ -6235,7 +6235,7 @@ cmGlobalUnixMakefileGenerator3.s: cmGlobalUnixMakefileGenerator3.cxx.s
 
 # target to generate assembly for a file
 cmGlobalUnixMakefileGenerator3.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalUnixMakefileGenerator3.cxx.s
 .PHONY : cmGlobalUnixMakefileGenerator3.cxx.s
 
 cmGlobalVisualStudio10Generator.obj: cmGlobalVisualStudio10Generator.cxx.obj
@@ -6243,7 +6243,7 @@ cmGlobalVisualStudio10Generator.obj: cmGlobalVisualStudio10Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio10Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio10Generator.cxx.obj
 
 cmGlobalVisualStudio10Generator.i: cmGlobalVisualStudio10Generator.cxx.i
@@ -6251,7 +6251,7 @@ cmGlobalVisualStudio10Generator.i: cmGlobalVisualStudio10Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio10Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.i
 .PHONY : cmGlobalVisualStudio10Generator.cxx.i
 
 cmGlobalVisualStudio10Generator.s: cmGlobalVisualStudio10Generator.cxx.s
@@ -6259,7 +6259,7 @@ cmGlobalVisualStudio10Generator.s: cmGlobalVisualStudio10Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio10Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio10Generator.cxx.s
 .PHONY : cmGlobalVisualStudio10Generator.cxx.s
 
 cmGlobalVisualStudio11Generator.obj: cmGlobalVisualStudio11Generator.cxx.obj
@@ -6267,7 +6267,7 @@ cmGlobalVisualStudio11Generator.obj: cmGlobalVisualStudio11Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio11Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio11Generator.cxx.obj
 
 cmGlobalVisualStudio11Generator.i: cmGlobalVisualStudio11Generator.cxx.i
@@ -6275,7 +6275,7 @@ cmGlobalVisualStudio11Generator.i: cmGlobalVisualStudio11Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio11Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.i
 .PHONY : cmGlobalVisualStudio11Generator.cxx.i
 
 cmGlobalVisualStudio11Generator.s: cmGlobalVisualStudio11Generator.cxx.s
@@ -6283,7 +6283,7 @@ cmGlobalVisualStudio11Generator.s: cmGlobalVisualStudio11Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio11Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio11Generator.cxx.s
 .PHONY : cmGlobalVisualStudio11Generator.cxx.s
 
 cmGlobalVisualStudio12Generator.obj: cmGlobalVisualStudio12Generator.cxx.obj
@@ -6291,7 +6291,7 @@ cmGlobalVisualStudio12Generator.obj: cmGlobalVisualStudio12Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio12Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio12Generator.cxx.obj
 
 cmGlobalVisualStudio12Generator.i: cmGlobalVisualStudio12Generator.cxx.i
@@ -6299,7 +6299,7 @@ cmGlobalVisualStudio12Generator.i: cmGlobalVisualStudio12Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio12Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.i
 .PHONY : cmGlobalVisualStudio12Generator.cxx.i
 
 cmGlobalVisualStudio12Generator.s: cmGlobalVisualStudio12Generator.cxx.s
@@ -6307,7 +6307,7 @@ cmGlobalVisualStudio12Generator.s: cmGlobalVisualStudio12Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio12Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio12Generator.cxx.s
 .PHONY : cmGlobalVisualStudio12Generator.cxx.s
 
 cmGlobalVisualStudio14Generator.obj: cmGlobalVisualStudio14Generator.cxx.obj
@@ -6315,7 +6315,7 @@ cmGlobalVisualStudio14Generator.obj: cmGlobalVisualStudio14Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio14Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio14Generator.cxx.obj
 
 cmGlobalVisualStudio14Generator.i: cmGlobalVisualStudio14Generator.cxx.i
@@ -6323,7 +6323,7 @@ cmGlobalVisualStudio14Generator.i: cmGlobalVisualStudio14Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio14Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.i
 .PHONY : cmGlobalVisualStudio14Generator.cxx.i
 
 cmGlobalVisualStudio14Generator.s: cmGlobalVisualStudio14Generator.cxx.s
@@ -6331,7 +6331,7 @@ cmGlobalVisualStudio14Generator.s: cmGlobalVisualStudio14Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio14Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio14Generator.cxx.s
 .PHONY : cmGlobalVisualStudio14Generator.cxx.s
 
 cmGlobalVisualStudio71Generator.obj: cmGlobalVisualStudio71Generator.cxx.obj
@@ -6339,7 +6339,7 @@ cmGlobalVisualStudio71Generator.obj: cmGlobalVisualStudio71Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio71Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio71Generator.cxx.obj
 
 cmGlobalVisualStudio71Generator.i: cmGlobalVisualStudio71Generator.cxx.i
@@ -6347,7 +6347,7 @@ cmGlobalVisualStudio71Generator.i: cmGlobalVisualStudio71Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio71Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.i
 .PHONY : cmGlobalVisualStudio71Generator.cxx.i
 
 cmGlobalVisualStudio71Generator.s: cmGlobalVisualStudio71Generator.cxx.s
@@ -6355,7 +6355,7 @@ cmGlobalVisualStudio71Generator.s: cmGlobalVisualStudio71Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio71Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio71Generator.cxx.s
 .PHONY : cmGlobalVisualStudio71Generator.cxx.s
 
 cmGlobalVisualStudio7Generator.obj: cmGlobalVisualStudio7Generator.cxx.obj
@@ -6363,7 +6363,7 @@ cmGlobalVisualStudio7Generator.obj: cmGlobalVisualStudio7Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio7Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio7Generator.cxx.obj
 
 cmGlobalVisualStudio7Generator.i: cmGlobalVisualStudio7Generator.cxx.i
@@ -6371,7 +6371,7 @@ cmGlobalVisualStudio7Generator.i: cmGlobalVisualStudio7Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio7Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.i
 .PHONY : cmGlobalVisualStudio7Generator.cxx.i
 
 cmGlobalVisualStudio7Generator.s: cmGlobalVisualStudio7Generator.cxx.s
@@ -6379,7 +6379,7 @@ cmGlobalVisualStudio7Generator.s: cmGlobalVisualStudio7Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio7Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio7Generator.cxx.s
 .PHONY : cmGlobalVisualStudio7Generator.cxx.s
 
 cmGlobalVisualStudio8Generator.obj: cmGlobalVisualStudio8Generator.cxx.obj
@@ -6387,7 +6387,7 @@ cmGlobalVisualStudio8Generator.obj: cmGlobalVisualStudio8Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio8Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio8Generator.cxx.obj
 
 cmGlobalVisualStudio8Generator.i: cmGlobalVisualStudio8Generator.cxx.i
@@ -6395,7 +6395,7 @@ cmGlobalVisualStudio8Generator.i: cmGlobalVisualStudio8Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio8Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.i
 .PHONY : cmGlobalVisualStudio8Generator.cxx.i
 
 cmGlobalVisualStudio8Generator.s: cmGlobalVisualStudio8Generator.cxx.s
@@ -6403,7 +6403,7 @@ cmGlobalVisualStudio8Generator.s: cmGlobalVisualStudio8Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio8Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio8Generator.cxx.s
 .PHONY : cmGlobalVisualStudio8Generator.cxx.s
 
 cmGlobalVisualStudio9Generator.obj: cmGlobalVisualStudio9Generator.cxx.obj
@@ -6411,7 +6411,7 @@ cmGlobalVisualStudio9Generator.obj: cmGlobalVisualStudio9Generator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudio9Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.obj
 .PHONY : cmGlobalVisualStudio9Generator.cxx.obj
 
 cmGlobalVisualStudio9Generator.i: cmGlobalVisualStudio9Generator.cxx.i
@@ -6419,7 +6419,7 @@ cmGlobalVisualStudio9Generator.i: cmGlobalVisualStudio9Generator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudio9Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.i
 .PHONY : cmGlobalVisualStudio9Generator.cxx.i
 
 cmGlobalVisualStudio9Generator.s: cmGlobalVisualStudio9Generator.cxx.s
@@ -6427,7 +6427,7 @@ cmGlobalVisualStudio9Generator.s: cmGlobalVisualStudio9Generator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudio9Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudio9Generator.cxx.s
 .PHONY : cmGlobalVisualStudio9Generator.cxx.s
 
 cmGlobalVisualStudioGenerator.obj: cmGlobalVisualStudioGenerator.cxx.obj
@@ -6435,7 +6435,7 @@ cmGlobalVisualStudioGenerator.obj: cmGlobalVisualStudioGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalVisualStudioGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.obj
 .PHONY : cmGlobalVisualStudioGenerator.cxx.obj
 
 cmGlobalVisualStudioGenerator.i: cmGlobalVisualStudioGenerator.cxx.i
@@ -6443,7 +6443,7 @@ cmGlobalVisualStudioGenerator.i: cmGlobalVisualStudioGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalVisualStudioGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.i
 .PHONY : cmGlobalVisualStudioGenerator.cxx.i
 
 cmGlobalVisualStudioGenerator.s: cmGlobalVisualStudioGenerator.cxx.s
@@ -6451,7 +6451,7 @@ cmGlobalVisualStudioGenerator.s: cmGlobalVisualStudioGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalVisualStudioGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioGenerator.cxx.s
 .PHONY : cmGlobalVisualStudioGenerator.cxx.s
 
 cmGlobalVisualStudioVersionedGenerator.obj: cmGlobalVisualStudioVersionedGenerator.cxx.obj
@@ -6459,7 +6459,7 @@ cmGlobalVisualStudioVersionedGenerator.obj: cmGlobalVisualStudioVersionedGenerat
 
 # target to build an object file
 cmGlobalVisualStudioVersionedGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.obj
 .PHONY : cmGlobalVisualStudioVersionedGenerator.cxx.obj
 
 cmGlobalVisualStudioVersionedGenerator.i: cmGlobalVisualStudioVersionedGenerator.cxx.i
@@ -6467,7 +6467,7 @@ cmGlobalVisualStudioVersionedGenerator.i: cmGlobalVisualStudioVersionedGenerator
 
 # target to preprocess a source file
 cmGlobalVisualStudioVersionedGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.i
 .PHONY : cmGlobalVisualStudioVersionedGenerator.cxx.i
 
 cmGlobalVisualStudioVersionedGenerator.s: cmGlobalVisualStudioVersionedGenerator.cxx.s
@@ -6475,7 +6475,7 @@ cmGlobalVisualStudioVersionedGenerator.s: cmGlobalVisualStudioVersionedGenerator
 
 # target to generate assembly for a file
 cmGlobalVisualStudioVersionedGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalVisualStudioVersionedGenerator.cxx.s
 .PHONY : cmGlobalVisualStudioVersionedGenerator.cxx.s
 
 cmGlobalWatcomWMakeGenerator.obj: cmGlobalWatcomWMakeGenerator.cxx.obj
@@ -6483,7 +6483,7 @@ cmGlobalWatcomWMakeGenerator.obj: cmGlobalWatcomWMakeGenerator.cxx.obj
 
 # target to build an object file
 cmGlobalWatcomWMakeGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.obj
 .PHONY : cmGlobalWatcomWMakeGenerator.cxx.obj
 
 cmGlobalWatcomWMakeGenerator.i: cmGlobalWatcomWMakeGenerator.cxx.i
@@ -6491,7 +6491,7 @@ cmGlobalWatcomWMakeGenerator.i: cmGlobalWatcomWMakeGenerator.cxx.i
 
 # target to preprocess a source file
 cmGlobalWatcomWMakeGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.i
 .PHONY : cmGlobalWatcomWMakeGenerator.cxx.i
 
 cmGlobalWatcomWMakeGenerator.s: cmGlobalWatcomWMakeGenerator.cxx.s
@@ -6499,7 +6499,7 @@ cmGlobalWatcomWMakeGenerator.s: cmGlobalWatcomWMakeGenerator.cxx.s
 
 # target to generate assembly for a file
 cmGlobalWatcomWMakeGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGlobalWatcomWMakeGenerator.cxx.s
 .PHONY : cmGlobalWatcomWMakeGenerator.cxx.s
 
 cmGraphVizWriter.obj: cmGraphVizWriter.cxx.obj
@@ -6507,7 +6507,7 @@ cmGraphVizWriter.obj: cmGraphVizWriter.cxx.obj
 
 # target to build an object file
 cmGraphVizWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.obj
 .PHONY : cmGraphVizWriter.cxx.obj
 
 cmGraphVizWriter.i: cmGraphVizWriter.cxx.i
@@ -6515,7 +6515,7 @@ cmGraphVizWriter.i: cmGraphVizWriter.cxx.i
 
 # target to preprocess a source file
 cmGraphVizWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.i
 .PHONY : cmGraphVizWriter.cxx.i
 
 cmGraphVizWriter.s: cmGraphVizWriter.cxx.s
@@ -6523,7 +6523,7 @@ cmGraphVizWriter.s: cmGraphVizWriter.cxx.s
 
 # target to generate assembly for a file
 cmGraphVizWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmGraphVizWriter.cxx.s
 .PHONY : cmGraphVizWriter.cxx.s
 
 cmHexFileConverter.obj: cmHexFileConverter.cxx.obj
@@ -6531,7 +6531,7 @@ cmHexFileConverter.obj: cmHexFileConverter.cxx.obj
 
 # target to build an object file
 cmHexFileConverter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.obj
 .PHONY : cmHexFileConverter.cxx.obj
 
 cmHexFileConverter.i: cmHexFileConverter.cxx.i
@@ -6539,7 +6539,7 @@ cmHexFileConverter.i: cmHexFileConverter.cxx.i
 
 # target to preprocess a source file
 cmHexFileConverter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.i
 .PHONY : cmHexFileConverter.cxx.i
 
 cmHexFileConverter.s: cmHexFileConverter.cxx.s
@@ -6547,7 +6547,7 @@ cmHexFileConverter.s: cmHexFileConverter.cxx.s
 
 # target to generate assembly for a file
 cmHexFileConverter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmHexFileConverter.cxx.s
 .PHONY : cmHexFileConverter.cxx.s
 
 cmIDEOptions.obj: cmIDEOptions.cxx.obj
@@ -6555,7 +6555,7 @@ cmIDEOptions.obj: cmIDEOptions.cxx.obj
 
 # target to build an object file
 cmIDEOptions.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.obj
 .PHONY : cmIDEOptions.cxx.obj
 
 cmIDEOptions.i: cmIDEOptions.cxx.i
@@ -6563,7 +6563,7 @@ cmIDEOptions.i: cmIDEOptions.cxx.i
 
 # target to preprocess a source file
 cmIDEOptions.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.i
 .PHONY : cmIDEOptions.cxx.i
 
 cmIDEOptions.s: cmIDEOptions.cxx.s
@@ -6571,7 +6571,7 @@ cmIDEOptions.s: cmIDEOptions.cxx.s
 
 # target to generate assembly for a file
 cmIDEOptions.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIDEOptions.cxx.s
 .PHONY : cmIDEOptions.cxx.s
 
 cmIfCommand.obj: cmIfCommand.cxx.obj
@@ -6579,7 +6579,7 @@ cmIfCommand.obj: cmIfCommand.cxx.obj
 
 # target to build an object file
 cmIfCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.obj
 .PHONY : cmIfCommand.cxx.obj
 
 cmIfCommand.i: cmIfCommand.cxx.i
@@ -6587,7 +6587,7 @@ cmIfCommand.i: cmIfCommand.cxx.i
 
 # target to preprocess a source file
 cmIfCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.i
 .PHONY : cmIfCommand.cxx.i
 
 cmIfCommand.s: cmIfCommand.cxx.s
@@ -6595,7 +6595,7 @@ cmIfCommand.s: cmIfCommand.cxx.s
 
 # target to generate assembly for a file
 cmIfCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIfCommand.cxx.s
 .PHONY : cmIfCommand.cxx.s
 
 cmIncludeCommand.obj: cmIncludeCommand.cxx.obj
@@ -6603,7 +6603,7 @@ cmIncludeCommand.obj: cmIncludeCommand.cxx.obj
 
 # target to build an object file
 cmIncludeCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.obj
 .PHONY : cmIncludeCommand.cxx.obj
 
 cmIncludeCommand.i: cmIncludeCommand.cxx.i
@@ -6611,7 +6611,7 @@ cmIncludeCommand.i: cmIncludeCommand.cxx.i
 
 # target to preprocess a source file
 cmIncludeCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.i
 .PHONY : cmIncludeCommand.cxx.i
 
 cmIncludeCommand.s: cmIncludeCommand.cxx.s
@@ -6619,7 +6619,7 @@ cmIncludeCommand.s: cmIncludeCommand.cxx.s
 
 # target to generate assembly for a file
 cmIncludeCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeCommand.cxx.s
 .PHONY : cmIncludeCommand.cxx.s
 
 cmIncludeDirectoryCommand.obj: cmIncludeDirectoryCommand.cxx.obj
@@ -6627,7 +6627,7 @@ cmIncludeDirectoryCommand.obj: cmIncludeDirectoryCommand.cxx.obj
 
 # target to build an object file
 cmIncludeDirectoryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.obj
 .PHONY : cmIncludeDirectoryCommand.cxx.obj
 
 cmIncludeDirectoryCommand.i: cmIncludeDirectoryCommand.cxx.i
@@ -6635,7 +6635,7 @@ cmIncludeDirectoryCommand.i: cmIncludeDirectoryCommand.cxx.i
 
 # target to preprocess a source file
 cmIncludeDirectoryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.i
 .PHONY : cmIncludeDirectoryCommand.cxx.i
 
 cmIncludeDirectoryCommand.s: cmIncludeDirectoryCommand.cxx.s
@@ -6643,7 +6643,7 @@ cmIncludeDirectoryCommand.s: cmIncludeDirectoryCommand.cxx.s
 
 # target to generate assembly for a file
 cmIncludeDirectoryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeDirectoryCommand.cxx.s
 .PHONY : cmIncludeDirectoryCommand.cxx.s
 
 cmIncludeExternalMSProjectCommand.obj: cmIncludeExternalMSProjectCommand.cxx.obj
@@ -6651,7 +6651,7 @@ cmIncludeExternalMSProjectCommand.obj: cmIncludeExternalMSProjectCommand.cxx.obj
 
 # target to build an object file
 cmIncludeExternalMSProjectCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.obj
 .PHONY : cmIncludeExternalMSProjectCommand.cxx.obj
 
 cmIncludeExternalMSProjectCommand.i: cmIncludeExternalMSProjectCommand.cxx.i
@@ -6659,7 +6659,7 @@ cmIncludeExternalMSProjectCommand.i: cmIncludeExternalMSProjectCommand.cxx.i
 
 # target to preprocess a source file
 cmIncludeExternalMSProjectCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.i
 .PHONY : cmIncludeExternalMSProjectCommand.cxx.i
 
 cmIncludeExternalMSProjectCommand.s: cmIncludeExternalMSProjectCommand.cxx.s
@@ -6667,7 +6667,7 @@ cmIncludeExternalMSProjectCommand.s: cmIncludeExternalMSProjectCommand.cxx.s
 
 # target to generate assembly for a file
 cmIncludeExternalMSProjectCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeExternalMSProjectCommand.cxx.s
 .PHONY : cmIncludeExternalMSProjectCommand.cxx.s
 
 cmIncludeGuardCommand.obj: cmIncludeGuardCommand.cxx.obj
@@ -6675,7 +6675,7 @@ cmIncludeGuardCommand.obj: cmIncludeGuardCommand.cxx.obj
 
 # target to build an object file
 cmIncludeGuardCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.obj
 .PHONY : cmIncludeGuardCommand.cxx.obj
 
 cmIncludeGuardCommand.i: cmIncludeGuardCommand.cxx.i
@@ -6683,7 +6683,7 @@ cmIncludeGuardCommand.i: cmIncludeGuardCommand.cxx.i
 
 # target to preprocess a source file
 cmIncludeGuardCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.i
 .PHONY : cmIncludeGuardCommand.cxx.i
 
 cmIncludeGuardCommand.s: cmIncludeGuardCommand.cxx.s
@@ -6691,7 +6691,7 @@ cmIncludeGuardCommand.s: cmIncludeGuardCommand.cxx.s
 
 # target to generate assembly for a file
 cmIncludeGuardCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeGuardCommand.cxx.s
 .PHONY : cmIncludeGuardCommand.cxx.s
 
 cmIncludeRegularExpressionCommand.obj: cmIncludeRegularExpressionCommand.cxx.obj
@@ -6699,7 +6699,7 @@ cmIncludeRegularExpressionCommand.obj: cmIncludeRegularExpressionCommand.cxx.obj
 
 # target to build an object file
 cmIncludeRegularExpressionCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.obj
 .PHONY : cmIncludeRegularExpressionCommand.cxx.obj
 
 cmIncludeRegularExpressionCommand.i: cmIncludeRegularExpressionCommand.cxx.i
@@ -6707,7 +6707,7 @@ cmIncludeRegularExpressionCommand.i: cmIncludeRegularExpressionCommand.cxx.i
 
 # target to preprocess a source file
 cmIncludeRegularExpressionCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.i
 .PHONY : cmIncludeRegularExpressionCommand.cxx.i
 
 cmIncludeRegularExpressionCommand.s: cmIncludeRegularExpressionCommand.cxx.s
@@ -6715,7 +6715,7 @@ cmIncludeRegularExpressionCommand.s: cmIncludeRegularExpressionCommand.cxx.s
 
 # target to generate assembly for a file
 cmIncludeRegularExpressionCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmIncludeRegularExpressionCommand.cxx.s
 .PHONY : cmIncludeRegularExpressionCommand.cxx.s
 
 cmInstallCommand.obj: cmInstallCommand.cxx.obj
@@ -6723,7 +6723,7 @@ cmInstallCommand.obj: cmInstallCommand.cxx.obj
 
 # target to build an object file
 cmInstallCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.obj
 .PHONY : cmInstallCommand.cxx.obj
 
 cmInstallCommand.i: cmInstallCommand.cxx.i
@@ -6731,7 +6731,7 @@ cmInstallCommand.i: cmInstallCommand.cxx.i
 
 # target to preprocess a source file
 cmInstallCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.i
 .PHONY : cmInstallCommand.cxx.i
 
 cmInstallCommand.s: cmInstallCommand.cxx.s
@@ -6739,7 +6739,7 @@ cmInstallCommand.s: cmInstallCommand.cxx.s
 
 # target to generate assembly for a file
 cmInstallCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommand.cxx.s
 .PHONY : cmInstallCommand.cxx.s
 
 cmInstallCommandArguments.obj: cmInstallCommandArguments.cxx.obj
@@ -6747,7 +6747,7 @@ cmInstallCommandArguments.obj: cmInstallCommandArguments.cxx.obj
 
 # target to build an object file
 cmInstallCommandArguments.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.obj
 .PHONY : cmInstallCommandArguments.cxx.obj
 
 cmInstallCommandArguments.i: cmInstallCommandArguments.cxx.i
@@ -6755,7 +6755,7 @@ cmInstallCommandArguments.i: cmInstallCommandArguments.cxx.i
 
 # target to preprocess a source file
 cmInstallCommandArguments.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.i
 .PHONY : cmInstallCommandArguments.cxx.i
 
 cmInstallCommandArguments.s: cmInstallCommandArguments.cxx.s
@@ -6763,7 +6763,7 @@ cmInstallCommandArguments.s: cmInstallCommandArguments.cxx.s
 
 # target to generate assembly for a file
 cmInstallCommandArguments.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallCommandArguments.cxx.s
 .PHONY : cmInstallCommandArguments.cxx.s
 
 cmInstallDirectoryGenerator.obj: cmInstallDirectoryGenerator.cxx.obj
@@ -6771,7 +6771,7 @@ cmInstallDirectoryGenerator.obj: cmInstallDirectoryGenerator.cxx.obj
 
 # target to build an object file
 cmInstallDirectoryGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.obj
 .PHONY : cmInstallDirectoryGenerator.cxx.obj
 
 cmInstallDirectoryGenerator.i: cmInstallDirectoryGenerator.cxx.i
@@ -6779,7 +6779,7 @@ cmInstallDirectoryGenerator.i: cmInstallDirectoryGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallDirectoryGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.i
 .PHONY : cmInstallDirectoryGenerator.cxx.i
 
 cmInstallDirectoryGenerator.s: cmInstallDirectoryGenerator.cxx.s
@@ -6787,7 +6787,7 @@ cmInstallDirectoryGenerator.s: cmInstallDirectoryGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallDirectoryGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallDirectoryGenerator.cxx.s
 .PHONY : cmInstallDirectoryGenerator.cxx.s
 
 cmInstallExportGenerator.obj: cmInstallExportGenerator.cxx.obj
@@ -6795,7 +6795,7 @@ cmInstallExportGenerator.obj: cmInstallExportGenerator.cxx.obj
 
 # target to build an object file
 cmInstallExportGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.obj
 .PHONY : cmInstallExportGenerator.cxx.obj
 
 cmInstallExportGenerator.i: cmInstallExportGenerator.cxx.i
@@ -6803,7 +6803,7 @@ cmInstallExportGenerator.i: cmInstallExportGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallExportGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.i
 .PHONY : cmInstallExportGenerator.cxx.i
 
 cmInstallExportGenerator.s: cmInstallExportGenerator.cxx.s
@@ -6811,7 +6811,7 @@ cmInstallExportGenerator.s: cmInstallExportGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallExportGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallExportGenerator.cxx.s
 .PHONY : cmInstallExportGenerator.cxx.s
 
 cmInstallFilesCommand.obj: cmInstallFilesCommand.cxx.obj
@@ -6819,7 +6819,7 @@ cmInstallFilesCommand.obj: cmInstallFilesCommand.cxx.obj
 
 # target to build an object file
 cmInstallFilesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.obj
 .PHONY : cmInstallFilesCommand.cxx.obj
 
 cmInstallFilesCommand.i: cmInstallFilesCommand.cxx.i
@@ -6827,7 +6827,7 @@ cmInstallFilesCommand.i: cmInstallFilesCommand.cxx.i
 
 # target to preprocess a source file
 cmInstallFilesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.i
 .PHONY : cmInstallFilesCommand.cxx.i
 
 cmInstallFilesCommand.s: cmInstallFilesCommand.cxx.s
@@ -6835,7 +6835,7 @@ cmInstallFilesCommand.s: cmInstallFilesCommand.cxx.s
 
 # target to generate assembly for a file
 cmInstallFilesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesCommand.cxx.s
 .PHONY : cmInstallFilesCommand.cxx.s
 
 cmInstallFilesGenerator.obj: cmInstallFilesGenerator.cxx.obj
@@ -6843,7 +6843,7 @@ cmInstallFilesGenerator.obj: cmInstallFilesGenerator.cxx.obj
 
 # target to build an object file
 cmInstallFilesGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.obj
 .PHONY : cmInstallFilesGenerator.cxx.obj
 
 cmInstallFilesGenerator.i: cmInstallFilesGenerator.cxx.i
@@ -6851,7 +6851,7 @@ cmInstallFilesGenerator.i: cmInstallFilesGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallFilesGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.i
 .PHONY : cmInstallFilesGenerator.cxx.i
 
 cmInstallFilesGenerator.s: cmInstallFilesGenerator.cxx.s
@@ -6859,7 +6859,7 @@ cmInstallFilesGenerator.s: cmInstallFilesGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallFilesGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallFilesGenerator.cxx.s
 .PHONY : cmInstallFilesGenerator.cxx.s
 
 cmInstallGenerator.obj: cmInstallGenerator.cxx.obj
@@ -6867,7 +6867,7 @@ cmInstallGenerator.obj: cmInstallGenerator.cxx.obj
 
 # target to build an object file
 cmInstallGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.obj
 .PHONY : cmInstallGenerator.cxx.obj
 
 cmInstallGenerator.i: cmInstallGenerator.cxx.i
@@ -6875,7 +6875,7 @@ cmInstallGenerator.i: cmInstallGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.i
 .PHONY : cmInstallGenerator.cxx.i
 
 cmInstallGenerator.s: cmInstallGenerator.cxx.s
@@ -6883,7 +6883,7 @@ cmInstallGenerator.s: cmInstallGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGenerator.cxx.s
 .PHONY : cmInstallGenerator.cxx.s
 
 cmInstallGetRuntimeDependenciesGenerator.obj: cmInstallGetRuntimeDependenciesGenerator.cxx.obj
@@ -6891,7 +6891,7 @@ cmInstallGetRuntimeDependenciesGenerator.obj: cmInstallGetRuntimeDependenciesGen
 
 # target to build an object file
 cmInstallGetRuntimeDependenciesGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.obj
 .PHONY : cmInstallGetRuntimeDependenciesGenerator.cxx.obj
 
 cmInstallGetRuntimeDependenciesGenerator.i: cmInstallGetRuntimeDependenciesGenerator.cxx.i
@@ -6899,7 +6899,7 @@ cmInstallGetRuntimeDependenciesGenerator.i: cmInstallGetRuntimeDependenciesGener
 
 # target to preprocess a source file
 cmInstallGetRuntimeDependenciesGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.i
 .PHONY : cmInstallGetRuntimeDependenciesGenerator.cxx.i
 
 cmInstallGetRuntimeDependenciesGenerator.s: cmInstallGetRuntimeDependenciesGenerator.cxx.s
@@ -6907,7 +6907,7 @@ cmInstallGetRuntimeDependenciesGenerator.s: cmInstallGetRuntimeDependenciesGener
 
 # target to generate assembly for a file
 cmInstallGetRuntimeDependenciesGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallGetRuntimeDependenciesGenerator.cxx.s
 .PHONY : cmInstallGetRuntimeDependenciesGenerator.cxx.s
 
 cmInstallImportedRuntimeArtifactsGenerator.obj: cmInstallImportedRuntimeArtifactsGenerator.cxx.obj
@@ -6915,7 +6915,7 @@ cmInstallImportedRuntimeArtifactsGenerator.obj: cmInstallImportedRuntimeArtifact
 
 # target to build an object file
 cmInstallImportedRuntimeArtifactsGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.obj
 .PHONY : cmInstallImportedRuntimeArtifactsGenerator.cxx.obj
 
 cmInstallImportedRuntimeArtifactsGenerator.i: cmInstallImportedRuntimeArtifactsGenerator.cxx.i
@@ -6923,7 +6923,7 @@ cmInstallImportedRuntimeArtifactsGenerator.i: cmInstallImportedRuntimeArtifactsG
 
 # target to preprocess a source file
 cmInstallImportedRuntimeArtifactsGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.i
 .PHONY : cmInstallImportedRuntimeArtifactsGenerator.cxx.i
 
 cmInstallImportedRuntimeArtifactsGenerator.s: cmInstallImportedRuntimeArtifactsGenerator.cxx.s
@@ -6931,7 +6931,7 @@ cmInstallImportedRuntimeArtifactsGenerator.s: cmInstallImportedRuntimeArtifactsG
 
 # target to generate assembly for a file
 cmInstallImportedRuntimeArtifactsGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallImportedRuntimeArtifactsGenerator.cxx.s
 .PHONY : cmInstallImportedRuntimeArtifactsGenerator.cxx.s
 
 cmInstallProgramsCommand.obj: cmInstallProgramsCommand.cxx.obj
@@ -6939,7 +6939,7 @@ cmInstallProgramsCommand.obj: cmInstallProgramsCommand.cxx.obj
 
 # target to build an object file
 cmInstallProgramsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.obj
 .PHONY : cmInstallProgramsCommand.cxx.obj
 
 cmInstallProgramsCommand.i: cmInstallProgramsCommand.cxx.i
@@ -6947,7 +6947,7 @@ cmInstallProgramsCommand.i: cmInstallProgramsCommand.cxx.i
 
 # target to preprocess a source file
 cmInstallProgramsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.i
 .PHONY : cmInstallProgramsCommand.cxx.i
 
 cmInstallProgramsCommand.s: cmInstallProgramsCommand.cxx.s
@@ -6955,7 +6955,7 @@ cmInstallProgramsCommand.s: cmInstallProgramsCommand.cxx.s
 
 # target to generate assembly for a file
 cmInstallProgramsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallProgramsCommand.cxx.s
 .PHONY : cmInstallProgramsCommand.cxx.s
 
 cmInstallRuntimeDependencySet.obj: cmInstallRuntimeDependencySet.cxx.obj
@@ -6963,7 +6963,7 @@ cmInstallRuntimeDependencySet.obj: cmInstallRuntimeDependencySet.cxx.obj
 
 # target to build an object file
 cmInstallRuntimeDependencySet.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.obj
 .PHONY : cmInstallRuntimeDependencySet.cxx.obj
 
 cmInstallRuntimeDependencySet.i: cmInstallRuntimeDependencySet.cxx.i
@@ -6971,7 +6971,7 @@ cmInstallRuntimeDependencySet.i: cmInstallRuntimeDependencySet.cxx.i
 
 # target to preprocess a source file
 cmInstallRuntimeDependencySet.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.i
 .PHONY : cmInstallRuntimeDependencySet.cxx.i
 
 cmInstallRuntimeDependencySet.s: cmInstallRuntimeDependencySet.cxx.s
@@ -6979,7 +6979,7 @@ cmInstallRuntimeDependencySet.s: cmInstallRuntimeDependencySet.cxx.s
 
 # target to generate assembly for a file
 cmInstallRuntimeDependencySet.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySet.cxx.s
 .PHONY : cmInstallRuntimeDependencySet.cxx.s
 
 cmInstallRuntimeDependencySetGenerator.obj: cmInstallRuntimeDependencySetGenerator.cxx.obj
@@ -6987,7 +6987,7 @@ cmInstallRuntimeDependencySetGenerator.obj: cmInstallRuntimeDependencySetGenerat
 
 # target to build an object file
 cmInstallRuntimeDependencySetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.obj
 .PHONY : cmInstallRuntimeDependencySetGenerator.cxx.obj
 
 cmInstallRuntimeDependencySetGenerator.i: cmInstallRuntimeDependencySetGenerator.cxx.i
@@ -6995,7 +6995,7 @@ cmInstallRuntimeDependencySetGenerator.i: cmInstallRuntimeDependencySetGenerator
 
 # target to preprocess a source file
 cmInstallRuntimeDependencySetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.i
 .PHONY : cmInstallRuntimeDependencySetGenerator.cxx.i
 
 cmInstallRuntimeDependencySetGenerator.s: cmInstallRuntimeDependencySetGenerator.cxx.s
@@ -7003,7 +7003,7 @@ cmInstallRuntimeDependencySetGenerator.s: cmInstallRuntimeDependencySetGenerator
 
 # target to generate assembly for a file
 cmInstallRuntimeDependencySetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallRuntimeDependencySetGenerator.cxx.s
 .PHONY : cmInstallRuntimeDependencySetGenerator.cxx.s
 
 cmInstallScriptGenerator.obj: cmInstallScriptGenerator.cxx.obj
@@ -7011,7 +7011,7 @@ cmInstallScriptGenerator.obj: cmInstallScriptGenerator.cxx.obj
 
 # target to build an object file
 cmInstallScriptGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.obj
 .PHONY : cmInstallScriptGenerator.cxx.obj
 
 cmInstallScriptGenerator.i: cmInstallScriptGenerator.cxx.i
@@ -7019,7 +7019,7 @@ cmInstallScriptGenerator.i: cmInstallScriptGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallScriptGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.i
 .PHONY : cmInstallScriptGenerator.cxx.i
 
 cmInstallScriptGenerator.s: cmInstallScriptGenerator.cxx.s
@@ -7027,7 +7027,7 @@ cmInstallScriptGenerator.s: cmInstallScriptGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallScriptGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallScriptGenerator.cxx.s
 .PHONY : cmInstallScriptGenerator.cxx.s
 
 cmInstallSubdirectoryGenerator.obj: cmInstallSubdirectoryGenerator.cxx.obj
@@ -7035,7 +7035,7 @@ cmInstallSubdirectoryGenerator.obj: cmInstallSubdirectoryGenerator.cxx.obj
 
 # target to build an object file
 cmInstallSubdirectoryGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.obj
 .PHONY : cmInstallSubdirectoryGenerator.cxx.obj
 
 cmInstallSubdirectoryGenerator.i: cmInstallSubdirectoryGenerator.cxx.i
@@ -7043,7 +7043,7 @@ cmInstallSubdirectoryGenerator.i: cmInstallSubdirectoryGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallSubdirectoryGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.i
 .PHONY : cmInstallSubdirectoryGenerator.cxx.i
 
 cmInstallSubdirectoryGenerator.s: cmInstallSubdirectoryGenerator.cxx.s
@@ -7051,7 +7051,7 @@ cmInstallSubdirectoryGenerator.s: cmInstallSubdirectoryGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallSubdirectoryGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallSubdirectoryGenerator.cxx.s
 .PHONY : cmInstallSubdirectoryGenerator.cxx.s
 
 cmInstallTargetGenerator.obj: cmInstallTargetGenerator.cxx.obj
@@ -7059,7 +7059,7 @@ cmInstallTargetGenerator.obj: cmInstallTargetGenerator.cxx.obj
 
 # target to build an object file
 cmInstallTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.obj
 .PHONY : cmInstallTargetGenerator.cxx.obj
 
 cmInstallTargetGenerator.i: cmInstallTargetGenerator.cxx.i
@@ -7067,7 +7067,7 @@ cmInstallTargetGenerator.i: cmInstallTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmInstallTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.i
 .PHONY : cmInstallTargetGenerator.cxx.i
 
 cmInstallTargetGenerator.s: cmInstallTargetGenerator.cxx.s
@@ -7075,7 +7075,7 @@ cmInstallTargetGenerator.s: cmInstallTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmInstallTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetGenerator.cxx.s
 .PHONY : cmInstallTargetGenerator.cxx.s
 
 cmInstallTargetsCommand.obj: cmInstallTargetsCommand.cxx.obj
@@ -7083,7 +7083,7 @@ cmInstallTargetsCommand.obj: cmInstallTargetsCommand.cxx.obj
 
 # target to build an object file
 cmInstallTargetsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.obj
 .PHONY : cmInstallTargetsCommand.cxx.obj
 
 cmInstallTargetsCommand.i: cmInstallTargetsCommand.cxx.i
@@ -7091,7 +7091,7 @@ cmInstallTargetsCommand.i: cmInstallTargetsCommand.cxx.i
 
 # target to preprocess a source file
 cmInstallTargetsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.i
 .PHONY : cmInstallTargetsCommand.cxx.i
 
 cmInstallTargetsCommand.s: cmInstallTargetsCommand.cxx.s
@@ -7099,7 +7099,7 @@ cmInstallTargetsCommand.s: cmInstallTargetsCommand.cxx.s
 
 # target to generate assembly for a file
 cmInstallTargetsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstallTargetsCommand.cxx.s
 .PHONY : cmInstallTargetsCommand.cxx.s
 
 cmInstalledFile.obj: cmInstalledFile.cxx.obj
@@ -7107,7 +7107,7 @@ cmInstalledFile.obj: cmInstalledFile.cxx.obj
 
 # target to build an object file
 cmInstalledFile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.obj
 .PHONY : cmInstalledFile.cxx.obj
 
 cmInstalledFile.i: cmInstalledFile.cxx.i
@@ -7115,7 +7115,7 @@ cmInstalledFile.i: cmInstalledFile.cxx.i
 
 # target to preprocess a source file
 cmInstalledFile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.i
 .PHONY : cmInstalledFile.cxx.i
 
 cmInstalledFile.s: cmInstalledFile.cxx.s
@@ -7123,7 +7123,7 @@ cmInstalledFile.s: cmInstalledFile.cxx.s
 
 # target to generate assembly for a file
 cmInstalledFile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmInstalledFile.cxx.s
 .PHONY : cmInstalledFile.cxx.s
 
 cmLDConfigLDConfigTool.obj: cmLDConfigLDConfigTool.cxx.obj
@@ -7131,7 +7131,7 @@ cmLDConfigLDConfigTool.obj: cmLDConfigLDConfigTool.cxx.obj
 
 # target to build an object file
 cmLDConfigLDConfigTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.obj
 .PHONY : cmLDConfigLDConfigTool.cxx.obj
 
 cmLDConfigLDConfigTool.i: cmLDConfigLDConfigTool.cxx.i
@@ -7139,7 +7139,7 @@ cmLDConfigLDConfigTool.i: cmLDConfigLDConfigTool.cxx.i
 
 # target to preprocess a source file
 cmLDConfigLDConfigTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.i
 .PHONY : cmLDConfigLDConfigTool.cxx.i
 
 cmLDConfigLDConfigTool.s: cmLDConfigLDConfigTool.cxx.s
@@ -7147,7 +7147,7 @@ cmLDConfigLDConfigTool.s: cmLDConfigLDConfigTool.cxx.s
 
 # target to generate assembly for a file
 cmLDConfigLDConfigTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigLDConfigTool.cxx.s
 .PHONY : cmLDConfigLDConfigTool.cxx.s
 
 cmLDConfigTool.obj: cmLDConfigTool.cxx.obj
@@ -7155,7 +7155,7 @@ cmLDConfigTool.obj: cmLDConfigTool.cxx.obj
 
 # target to build an object file
 cmLDConfigTool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.obj
 .PHONY : cmLDConfigTool.cxx.obj
 
 cmLDConfigTool.i: cmLDConfigTool.cxx.i
@@ -7163,7 +7163,7 @@ cmLDConfigTool.i: cmLDConfigTool.cxx.i
 
 # target to preprocess a source file
 cmLDConfigTool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.i
 .PHONY : cmLDConfigTool.cxx.i
 
 cmLDConfigTool.s: cmLDConfigTool.cxx.s
@@ -7171,7 +7171,7 @@ cmLDConfigTool.s: cmLDConfigTool.cxx.s
 
 # target to generate assembly for a file
 cmLDConfigTool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLDConfigTool.cxx.s
 .PHONY : cmLDConfigTool.cxx.s
 
 cmLinkDirectoriesCommand.obj: cmLinkDirectoriesCommand.cxx.obj
@@ -7179,7 +7179,7 @@ cmLinkDirectoriesCommand.obj: cmLinkDirectoriesCommand.cxx.obj
 
 # target to build an object file
 cmLinkDirectoriesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.obj
 .PHONY : cmLinkDirectoriesCommand.cxx.obj
 
 cmLinkDirectoriesCommand.i: cmLinkDirectoriesCommand.cxx.i
@@ -7187,7 +7187,7 @@ cmLinkDirectoriesCommand.i: cmLinkDirectoriesCommand.cxx.i
 
 # target to preprocess a source file
 cmLinkDirectoriesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.i
 .PHONY : cmLinkDirectoriesCommand.cxx.i
 
 cmLinkDirectoriesCommand.s: cmLinkDirectoriesCommand.cxx.s
@@ -7195,7 +7195,7 @@ cmLinkDirectoriesCommand.s: cmLinkDirectoriesCommand.cxx.s
 
 # target to generate assembly for a file
 cmLinkDirectoriesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkDirectoriesCommand.cxx.s
 .PHONY : cmLinkDirectoriesCommand.cxx.s
 
 cmLinkItem.obj: cmLinkItem.cxx.obj
@@ -7203,7 +7203,7 @@ cmLinkItem.obj: cmLinkItem.cxx.obj
 
 # target to build an object file
 cmLinkItem.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.obj
 .PHONY : cmLinkItem.cxx.obj
 
 cmLinkItem.i: cmLinkItem.cxx.i
@@ -7211,7 +7211,7 @@ cmLinkItem.i: cmLinkItem.cxx.i
 
 # target to preprocess a source file
 cmLinkItem.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.i
 .PHONY : cmLinkItem.cxx.i
 
 cmLinkItem.s: cmLinkItem.cxx.s
@@ -7219,7 +7219,7 @@ cmLinkItem.s: cmLinkItem.cxx.s
 
 # target to generate assembly for a file
 cmLinkItem.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItem.cxx.s
 .PHONY : cmLinkItem.cxx.s
 
 cmLinkItemGraphVisitor.obj: cmLinkItemGraphVisitor.cxx.obj
@@ -7227,7 +7227,7 @@ cmLinkItemGraphVisitor.obj: cmLinkItemGraphVisitor.cxx.obj
 
 # target to build an object file
 cmLinkItemGraphVisitor.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.obj
 .PHONY : cmLinkItemGraphVisitor.cxx.obj
 
 cmLinkItemGraphVisitor.i: cmLinkItemGraphVisitor.cxx.i
@@ -7235,7 +7235,7 @@ cmLinkItemGraphVisitor.i: cmLinkItemGraphVisitor.cxx.i
 
 # target to preprocess a source file
 cmLinkItemGraphVisitor.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.i
 .PHONY : cmLinkItemGraphVisitor.cxx.i
 
 cmLinkItemGraphVisitor.s: cmLinkItemGraphVisitor.cxx.s
@@ -7243,7 +7243,7 @@ cmLinkItemGraphVisitor.s: cmLinkItemGraphVisitor.cxx.s
 
 # target to generate assembly for a file
 cmLinkItemGraphVisitor.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkItemGraphVisitor.cxx.s
 .PHONY : cmLinkItemGraphVisitor.cxx.s
 
 cmLinkLibrariesCommand.obj: cmLinkLibrariesCommand.cxx.obj
@@ -7251,7 +7251,7 @@ cmLinkLibrariesCommand.obj: cmLinkLibrariesCommand.cxx.obj
 
 # target to build an object file
 cmLinkLibrariesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.obj
 .PHONY : cmLinkLibrariesCommand.cxx.obj
 
 cmLinkLibrariesCommand.i: cmLinkLibrariesCommand.cxx.i
@@ -7259,7 +7259,7 @@ cmLinkLibrariesCommand.i: cmLinkLibrariesCommand.cxx.i
 
 # target to preprocess a source file
 cmLinkLibrariesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.i
 .PHONY : cmLinkLibrariesCommand.cxx.i
 
 cmLinkLibrariesCommand.s: cmLinkLibrariesCommand.cxx.s
@@ -7267,7 +7267,7 @@ cmLinkLibrariesCommand.s: cmLinkLibrariesCommand.cxx.s
 
 # target to generate assembly for a file
 cmLinkLibrariesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLibrariesCommand.cxx.s
 .PHONY : cmLinkLibrariesCommand.cxx.s
 
 cmLinkLineComputer.obj: cmLinkLineComputer.cxx.obj
@@ -7275,7 +7275,7 @@ cmLinkLineComputer.obj: cmLinkLineComputer.cxx.obj
 
 # target to build an object file
 cmLinkLineComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.obj
 .PHONY : cmLinkLineComputer.cxx.obj
 
 cmLinkLineComputer.i: cmLinkLineComputer.cxx.i
@@ -7283,7 +7283,7 @@ cmLinkLineComputer.i: cmLinkLineComputer.cxx.i
 
 # target to preprocess a source file
 cmLinkLineComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.i
 .PHONY : cmLinkLineComputer.cxx.i
 
 cmLinkLineComputer.s: cmLinkLineComputer.cxx.s
@@ -7291,7 +7291,7 @@ cmLinkLineComputer.s: cmLinkLineComputer.cxx.s
 
 # target to generate assembly for a file
 cmLinkLineComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineComputer.cxx.s
 .PHONY : cmLinkLineComputer.cxx.s
 
 cmLinkLineDeviceComputer.obj: cmLinkLineDeviceComputer.cxx.obj
@@ -7299,7 +7299,7 @@ cmLinkLineDeviceComputer.obj: cmLinkLineDeviceComputer.cxx.obj
 
 # target to build an object file
 cmLinkLineDeviceComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.obj
 .PHONY : cmLinkLineDeviceComputer.cxx.obj
 
 cmLinkLineDeviceComputer.i: cmLinkLineDeviceComputer.cxx.i
@@ -7307,7 +7307,7 @@ cmLinkLineDeviceComputer.i: cmLinkLineDeviceComputer.cxx.i
 
 # target to preprocess a source file
 cmLinkLineDeviceComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.i
 .PHONY : cmLinkLineDeviceComputer.cxx.i
 
 cmLinkLineDeviceComputer.s: cmLinkLineDeviceComputer.cxx.s
@@ -7315,7 +7315,7 @@ cmLinkLineDeviceComputer.s: cmLinkLineDeviceComputer.cxx.s
 
 # target to generate assembly for a file
 cmLinkLineDeviceComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLinkLineDeviceComputer.cxx.s
 .PHONY : cmLinkLineDeviceComputer.cxx.s
 
 cmListCommand.obj: cmListCommand.cxx.obj
@@ -7323,7 +7323,7 @@ cmListCommand.obj: cmListCommand.cxx.obj
 
 # target to build an object file
 cmListCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.obj
 .PHONY : cmListCommand.cxx.obj
 
 cmListCommand.i: cmListCommand.cxx.i
@@ -7331,7 +7331,7 @@ cmListCommand.i: cmListCommand.cxx.i
 
 # target to preprocess a source file
 cmListCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.i
 .PHONY : cmListCommand.cxx.i
 
 cmListCommand.s: cmListCommand.cxx.s
@@ -7339,7 +7339,7 @@ cmListCommand.s: cmListCommand.cxx.s
 
 # target to generate assembly for a file
 cmListCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListCommand.cxx.s
 .PHONY : cmListCommand.cxx.s
 
 cmListFileCache.obj: cmListFileCache.cxx.obj
@@ -7347,7 +7347,7 @@ cmListFileCache.obj: cmListFileCache.cxx.obj
 
 # target to build an object file
 cmListFileCache.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.obj
 .PHONY : cmListFileCache.cxx.obj
 
 cmListFileCache.i: cmListFileCache.cxx.i
@@ -7355,7 +7355,7 @@ cmListFileCache.i: cmListFileCache.cxx.i
 
 # target to preprocess a source file
 cmListFileCache.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.i
 .PHONY : cmListFileCache.cxx.i
 
 cmListFileCache.s: cmListFileCache.cxx.s
@@ -7363,7 +7363,7 @@ cmListFileCache.s: cmListFileCache.cxx.s
 
 # target to generate assembly for a file
 cmListFileCache.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmListFileCache.cxx.s
 .PHONY : cmListFileCache.cxx.s
 
 cmLoadCacheCommand.obj: cmLoadCacheCommand.cxx.obj
@@ -7371,7 +7371,7 @@ cmLoadCacheCommand.obj: cmLoadCacheCommand.cxx.obj
 
 # target to build an object file
 cmLoadCacheCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.obj
 .PHONY : cmLoadCacheCommand.cxx.obj
 
 cmLoadCacheCommand.i: cmLoadCacheCommand.cxx.i
@@ -7379,7 +7379,7 @@ cmLoadCacheCommand.i: cmLoadCacheCommand.cxx.i
 
 # target to preprocess a source file
 cmLoadCacheCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.i
 .PHONY : cmLoadCacheCommand.cxx.i
 
 cmLoadCacheCommand.s: cmLoadCacheCommand.cxx.s
@@ -7387,7 +7387,7 @@ cmLoadCacheCommand.s: cmLoadCacheCommand.cxx.s
 
 # target to generate assembly for a file
 cmLoadCacheCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCacheCommand.cxx.s
 .PHONY : cmLoadCacheCommand.cxx.s
 
 cmLoadCommandCommand.obj: cmLoadCommandCommand.cxx.obj
@@ -7395,7 +7395,7 @@ cmLoadCommandCommand.obj: cmLoadCommandCommand.cxx.obj
 
 # target to build an object file
 cmLoadCommandCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.obj
 .PHONY : cmLoadCommandCommand.cxx.obj
 
 cmLoadCommandCommand.i: cmLoadCommandCommand.cxx.i
@@ -7403,7 +7403,7 @@ cmLoadCommandCommand.i: cmLoadCommandCommand.cxx.i
 
 # target to preprocess a source file
 cmLoadCommandCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.i
 .PHONY : cmLoadCommandCommand.cxx.i
 
 cmLoadCommandCommand.s: cmLoadCommandCommand.cxx.s
@@ -7411,7 +7411,7 @@ cmLoadCommandCommand.s: cmLoadCommandCommand.cxx.s
 
 # target to generate assembly for a file
 cmLoadCommandCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLoadCommandCommand.cxx.s
 .PHONY : cmLoadCommandCommand.cxx.s
 
 cmLocalCommonGenerator.obj: cmLocalCommonGenerator.cxx.obj
@@ -7419,7 +7419,7 @@ cmLocalCommonGenerator.obj: cmLocalCommonGenerator.cxx.obj
 
 # target to build an object file
 cmLocalCommonGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.obj
 .PHONY : cmLocalCommonGenerator.cxx.obj
 
 cmLocalCommonGenerator.i: cmLocalCommonGenerator.cxx.i
@@ -7427,7 +7427,7 @@ cmLocalCommonGenerator.i: cmLocalCommonGenerator.cxx.i
 
 # target to preprocess a source file
 cmLocalCommonGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.i
 .PHONY : cmLocalCommonGenerator.cxx.i
 
 cmLocalCommonGenerator.s: cmLocalCommonGenerator.cxx.s
@@ -7435,7 +7435,7 @@ cmLocalCommonGenerator.s: cmLocalCommonGenerator.cxx.s
 
 # target to generate assembly for a file
 cmLocalCommonGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalCommonGenerator.cxx.s
 .PHONY : cmLocalCommonGenerator.cxx.s
 
 cmLocalGenerator.obj: cmLocalGenerator.cxx.obj
@@ -7443,7 +7443,7 @@ cmLocalGenerator.obj: cmLocalGenerator.cxx.obj
 
 # target to build an object file
 cmLocalGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.obj
 .PHONY : cmLocalGenerator.cxx.obj
 
 cmLocalGenerator.i: cmLocalGenerator.cxx.i
@@ -7451,7 +7451,7 @@ cmLocalGenerator.i: cmLocalGenerator.cxx.i
 
 # target to preprocess a source file
 cmLocalGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.i
 .PHONY : cmLocalGenerator.cxx.i
 
 cmLocalGenerator.s: cmLocalGenerator.cxx.s
@@ -7459,7 +7459,7 @@ cmLocalGenerator.s: cmLocalGenerator.cxx.s
 
 # target to generate assembly for a file
 cmLocalGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGenerator.cxx.s
 .PHONY : cmLocalGenerator.cxx.s
 
 cmLocalGhsMultiGenerator.obj: cmLocalGhsMultiGenerator.cxx.obj
@@ -7467,7 +7467,7 @@ cmLocalGhsMultiGenerator.obj: cmLocalGhsMultiGenerator.cxx.obj
 
 # target to build an object file
 cmLocalGhsMultiGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.obj
 .PHONY : cmLocalGhsMultiGenerator.cxx.obj
 
 cmLocalGhsMultiGenerator.i: cmLocalGhsMultiGenerator.cxx.i
@@ -7475,7 +7475,7 @@ cmLocalGhsMultiGenerator.i: cmLocalGhsMultiGenerator.cxx.i
 
 # target to preprocess a source file
 cmLocalGhsMultiGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.i
 .PHONY : cmLocalGhsMultiGenerator.cxx.i
 
 cmLocalGhsMultiGenerator.s: cmLocalGhsMultiGenerator.cxx.s
@@ -7483,7 +7483,7 @@ cmLocalGhsMultiGenerator.s: cmLocalGhsMultiGenerator.cxx.s
 
 # target to generate assembly for a file
 cmLocalGhsMultiGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalGhsMultiGenerator.cxx.s
 .PHONY : cmLocalGhsMultiGenerator.cxx.s
 
 cmLocalNinjaGenerator.obj: cmLocalNinjaGenerator.cxx.obj
@@ -7491,7 +7491,7 @@ cmLocalNinjaGenerator.obj: cmLocalNinjaGenerator.cxx.obj
 
 # target to build an object file
 cmLocalNinjaGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.obj
 .PHONY : cmLocalNinjaGenerator.cxx.obj
 
 cmLocalNinjaGenerator.i: cmLocalNinjaGenerator.cxx.i
@@ -7499,7 +7499,7 @@ cmLocalNinjaGenerator.i: cmLocalNinjaGenerator.cxx.i
 
 # target to preprocess a source file
 cmLocalNinjaGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.i
 .PHONY : cmLocalNinjaGenerator.cxx.i
 
 cmLocalNinjaGenerator.s: cmLocalNinjaGenerator.cxx.s
@@ -7507,7 +7507,7 @@ cmLocalNinjaGenerator.s: cmLocalNinjaGenerator.cxx.s
 
 # target to generate assembly for a file
 cmLocalNinjaGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalNinjaGenerator.cxx.s
 .PHONY : cmLocalNinjaGenerator.cxx.s
 
 cmLocalUnixMakefileGenerator3.obj: cmLocalUnixMakefileGenerator3.cxx.obj
@@ -7515,7 +7515,7 @@ cmLocalUnixMakefileGenerator3.obj: cmLocalUnixMakefileGenerator3.cxx.obj
 
 # target to build an object file
 cmLocalUnixMakefileGenerator3.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.obj
 .PHONY : cmLocalUnixMakefileGenerator3.cxx.obj
 
 cmLocalUnixMakefileGenerator3.i: cmLocalUnixMakefileGenerator3.cxx.i
@@ -7523,7 +7523,7 @@ cmLocalUnixMakefileGenerator3.i: cmLocalUnixMakefileGenerator3.cxx.i
 
 # target to preprocess a source file
 cmLocalUnixMakefileGenerator3.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.i
 .PHONY : cmLocalUnixMakefileGenerator3.cxx.i
 
 cmLocalUnixMakefileGenerator3.s: cmLocalUnixMakefileGenerator3.cxx.s
@@ -7531,7 +7531,7 @@ cmLocalUnixMakefileGenerator3.s: cmLocalUnixMakefileGenerator3.cxx.s
 
 # target to generate assembly for a file
 cmLocalUnixMakefileGenerator3.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalUnixMakefileGenerator3.cxx.s
 .PHONY : cmLocalUnixMakefileGenerator3.cxx.s
 
 cmLocalVisualStudio10Generator.obj: cmLocalVisualStudio10Generator.cxx.obj
@@ -7539,7 +7539,7 @@ cmLocalVisualStudio10Generator.obj: cmLocalVisualStudio10Generator.cxx.obj
 
 # target to build an object file
 cmLocalVisualStudio10Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.obj
 .PHONY : cmLocalVisualStudio10Generator.cxx.obj
 
 cmLocalVisualStudio10Generator.i: cmLocalVisualStudio10Generator.cxx.i
@@ -7547,7 +7547,7 @@ cmLocalVisualStudio10Generator.i: cmLocalVisualStudio10Generator.cxx.i
 
 # target to preprocess a source file
 cmLocalVisualStudio10Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.i
 .PHONY : cmLocalVisualStudio10Generator.cxx.i
 
 cmLocalVisualStudio10Generator.s: cmLocalVisualStudio10Generator.cxx.s
@@ -7555,7 +7555,7 @@ cmLocalVisualStudio10Generator.s: cmLocalVisualStudio10Generator.cxx.s
 
 # target to generate assembly for a file
 cmLocalVisualStudio10Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio10Generator.cxx.s
 .PHONY : cmLocalVisualStudio10Generator.cxx.s
 
 cmLocalVisualStudio7Generator.obj: cmLocalVisualStudio7Generator.cxx.obj
@@ -7563,7 +7563,7 @@ cmLocalVisualStudio7Generator.obj: cmLocalVisualStudio7Generator.cxx.obj
 
 # target to build an object file
 cmLocalVisualStudio7Generator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.obj
 .PHONY : cmLocalVisualStudio7Generator.cxx.obj
 
 cmLocalVisualStudio7Generator.i: cmLocalVisualStudio7Generator.cxx.i
@@ -7571,7 +7571,7 @@ cmLocalVisualStudio7Generator.i: cmLocalVisualStudio7Generator.cxx.i
 
 # target to preprocess a source file
 cmLocalVisualStudio7Generator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.i
 .PHONY : cmLocalVisualStudio7Generator.cxx.i
 
 cmLocalVisualStudio7Generator.s: cmLocalVisualStudio7Generator.cxx.s
@@ -7579,7 +7579,7 @@ cmLocalVisualStudio7Generator.s: cmLocalVisualStudio7Generator.cxx.s
 
 # target to generate assembly for a file
 cmLocalVisualStudio7Generator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudio7Generator.cxx.s
 .PHONY : cmLocalVisualStudio7Generator.cxx.s
 
 cmLocalVisualStudioGenerator.obj: cmLocalVisualStudioGenerator.cxx.obj
@@ -7587,7 +7587,7 @@ cmLocalVisualStudioGenerator.obj: cmLocalVisualStudioGenerator.cxx.obj
 
 # target to build an object file
 cmLocalVisualStudioGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.obj
 .PHONY : cmLocalVisualStudioGenerator.cxx.obj
 
 cmLocalVisualStudioGenerator.i: cmLocalVisualStudioGenerator.cxx.i
@@ -7595,7 +7595,7 @@ cmLocalVisualStudioGenerator.i: cmLocalVisualStudioGenerator.cxx.i
 
 # target to preprocess a source file
 cmLocalVisualStudioGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.i
 .PHONY : cmLocalVisualStudioGenerator.cxx.i
 
 cmLocalVisualStudioGenerator.s: cmLocalVisualStudioGenerator.cxx.s
@@ -7603,7 +7603,7 @@ cmLocalVisualStudioGenerator.s: cmLocalVisualStudioGenerator.cxx.s
 
 # target to generate assembly for a file
 cmLocalVisualStudioGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmLocalVisualStudioGenerator.cxx.s
 .PHONY : cmLocalVisualStudioGenerator.cxx.s
 
 cmMSVC60LinkLineComputer.obj: cmMSVC60LinkLineComputer.cxx.obj
@@ -7611,7 +7611,7 @@ cmMSVC60LinkLineComputer.obj: cmMSVC60LinkLineComputer.cxx.obj
 
 # target to build an object file
 cmMSVC60LinkLineComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.obj
 .PHONY : cmMSVC60LinkLineComputer.cxx.obj
 
 cmMSVC60LinkLineComputer.i: cmMSVC60LinkLineComputer.cxx.i
@@ -7619,7 +7619,7 @@ cmMSVC60LinkLineComputer.i: cmMSVC60LinkLineComputer.cxx.i
 
 # target to preprocess a source file
 cmMSVC60LinkLineComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.i
 .PHONY : cmMSVC60LinkLineComputer.cxx.i
 
 cmMSVC60LinkLineComputer.s: cmMSVC60LinkLineComputer.cxx.s
@@ -7627,7 +7627,7 @@ cmMSVC60LinkLineComputer.s: cmMSVC60LinkLineComputer.cxx.s
 
 # target to generate assembly for a file
 cmMSVC60LinkLineComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMSVC60LinkLineComputer.cxx.s
 .PHONY : cmMSVC60LinkLineComputer.cxx.s
 
 cmMacroCommand.obj: cmMacroCommand.cxx.obj
@@ -7635,7 +7635,7 @@ cmMacroCommand.obj: cmMacroCommand.cxx.obj
 
 # target to build an object file
 cmMacroCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.obj
 .PHONY : cmMacroCommand.cxx.obj
 
 cmMacroCommand.i: cmMacroCommand.cxx.i
@@ -7643,7 +7643,7 @@ cmMacroCommand.i: cmMacroCommand.cxx.i
 
 # target to preprocess a source file
 cmMacroCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.i
 .PHONY : cmMacroCommand.cxx.i
 
 cmMacroCommand.s: cmMacroCommand.cxx.s
@@ -7651,7 +7651,7 @@ cmMacroCommand.s: cmMacroCommand.cxx.s
 
 # target to generate assembly for a file
 cmMacroCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMacroCommand.cxx.s
 .PHONY : cmMacroCommand.cxx.s
 
 cmMakeDirectoryCommand.obj: cmMakeDirectoryCommand.cxx.obj
@@ -7659,7 +7659,7 @@ cmMakeDirectoryCommand.obj: cmMakeDirectoryCommand.cxx.obj
 
 # target to build an object file
 cmMakeDirectoryCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.obj
 .PHONY : cmMakeDirectoryCommand.cxx.obj
 
 cmMakeDirectoryCommand.i: cmMakeDirectoryCommand.cxx.i
@@ -7667,7 +7667,7 @@ cmMakeDirectoryCommand.i: cmMakeDirectoryCommand.cxx.i
 
 # target to preprocess a source file
 cmMakeDirectoryCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.i
 .PHONY : cmMakeDirectoryCommand.cxx.i
 
 cmMakeDirectoryCommand.s: cmMakeDirectoryCommand.cxx.s
@@ -7675,7 +7675,7 @@ cmMakeDirectoryCommand.s: cmMakeDirectoryCommand.cxx.s
 
 # target to generate assembly for a file
 cmMakeDirectoryCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakeDirectoryCommand.cxx.s
 .PHONY : cmMakeDirectoryCommand.cxx.s
 
 cmMakefile.obj: cmMakefile.cxx.obj
@@ -7683,7 +7683,7 @@ cmMakefile.obj: cmMakefile.cxx.obj
 
 # target to build an object file
 cmMakefile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.obj
 .PHONY : cmMakefile.cxx.obj
 
 cmMakefile.i: cmMakefile.cxx.i
@@ -7691,7 +7691,7 @@ cmMakefile.i: cmMakefile.cxx.i
 
 # target to preprocess a source file
 cmMakefile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.i
 .PHONY : cmMakefile.cxx.i
 
 cmMakefile.s: cmMakefile.cxx.s
@@ -7699,7 +7699,7 @@ cmMakefile.s: cmMakefile.cxx.s
 
 # target to generate assembly for a file
 cmMakefile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefile.cxx.s
 .PHONY : cmMakefile.cxx.s
 
 cmMakefileExecutableTargetGenerator.obj: cmMakefileExecutableTargetGenerator.cxx.obj
@@ -7707,7 +7707,7 @@ cmMakefileExecutableTargetGenerator.obj: cmMakefileExecutableTargetGenerator.cxx
 
 # target to build an object file
 cmMakefileExecutableTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.obj
 .PHONY : cmMakefileExecutableTargetGenerator.cxx.obj
 
 cmMakefileExecutableTargetGenerator.i: cmMakefileExecutableTargetGenerator.cxx.i
@@ -7715,7 +7715,7 @@ cmMakefileExecutableTargetGenerator.i: cmMakefileExecutableTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmMakefileExecutableTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.i
 .PHONY : cmMakefileExecutableTargetGenerator.cxx.i
 
 cmMakefileExecutableTargetGenerator.s: cmMakefileExecutableTargetGenerator.cxx.s
@@ -7723,7 +7723,7 @@ cmMakefileExecutableTargetGenerator.s: cmMakefileExecutableTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmMakefileExecutableTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileExecutableTargetGenerator.cxx.s
 .PHONY : cmMakefileExecutableTargetGenerator.cxx.s
 
 cmMakefileLibraryTargetGenerator.obj: cmMakefileLibraryTargetGenerator.cxx.obj
@@ -7731,7 +7731,7 @@ cmMakefileLibraryTargetGenerator.obj: cmMakefileLibraryTargetGenerator.cxx.obj
 
 # target to build an object file
 cmMakefileLibraryTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.obj
 .PHONY : cmMakefileLibraryTargetGenerator.cxx.obj
 
 cmMakefileLibraryTargetGenerator.i: cmMakefileLibraryTargetGenerator.cxx.i
@@ -7739,7 +7739,7 @@ cmMakefileLibraryTargetGenerator.i: cmMakefileLibraryTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmMakefileLibraryTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.i
 .PHONY : cmMakefileLibraryTargetGenerator.cxx.i
 
 cmMakefileLibraryTargetGenerator.s: cmMakefileLibraryTargetGenerator.cxx.s
@@ -7747,7 +7747,7 @@ cmMakefileLibraryTargetGenerator.s: cmMakefileLibraryTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmMakefileLibraryTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileLibraryTargetGenerator.cxx.s
 .PHONY : cmMakefileLibraryTargetGenerator.cxx.s
 
 cmMakefileProfilingData.obj: cmMakefileProfilingData.cxx.obj
@@ -7755,7 +7755,7 @@ cmMakefileProfilingData.obj: cmMakefileProfilingData.cxx.obj
 
 # target to build an object file
 cmMakefileProfilingData.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.obj
 .PHONY : cmMakefileProfilingData.cxx.obj
 
 cmMakefileProfilingData.i: cmMakefileProfilingData.cxx.i
@@ -7763,7 +7763,7 @@ cmMakefileProfilingData.i: cmMakefileProfilingData.cxx.i
 
 # target to preprocess a source file
 cmMakefileProfilingData.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.i
 .PHONY : cmMakefileProfilingData.cxx.i
 
 cmMakefileProfilingData.s: cmMakefileProfilingData.cxx.s
@@ -7771,7 +7771,7 @@ cmMakefileProfilingData.s: cmMakefileProfilingData.cxx.s
 
 # target to generate assembly for a file
 cmMakefileProfilingData.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileProfilingData.cxx.s
 .PHONY : cmMakefileProfilingData.cxx.s
 
 cmMakefileTargetGenerator.obj: cmMakefileTargetGenerator.cxx.obj
@@ -7779,7 +7779,7 @@ cmMakefileTargetGenerator.obj: cmMakefileTargetGenerator.cxx.obj
 
 # target to build an object file
 cmMakefileTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.obj
 .PHONY : cmMakefileTargetGenerator.cxx.obj
 
 cmMakefileTargetGenerator.i: cmMakefileTargetGenerator.cxx.i
@@ -7787,7 +7787,7 @@ cmMakefileTargetGenerator.i: cmMakefileTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmMakefileTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.i
 .PHONY : cmMakefileTargetGenerator.cxx.i
 
 cmMakefileTargetGenerator.s: cmMakefileTargetGenerator.cxx.s
@@ -7795,7 +7795,7 @@ cmMakefileTargetGenerator.s: cmMakefileTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmMakefileTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileTargetGenerator.cxx.s
 .PHONY : cmMakefileTargetGenerator.cxx.s
 
 cmMakefileUtilityTargetGenerator.obj: cmMakefileUtilityTargetGenerator.cxx.obj
@@ -7803,7 +7803,7 @@ cmMakefileUtilityTargetGenerator.obj: cmMakefileUtilityTargetGenerator.cxx.obj
 
 # target to build an object file
 cmMakefileUtilityTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.obj
 .PHONY : cmMakefileUtilityTargetGenerator.cxx.obj
 
 cmMakefileUtilityTargetGenerator.i: cmMakefileUtilityTargetGenerator.cxx.i
@@ -7811,7 +7811,7 @@ cmMakefileUtilityTargetGenerator.i: cmMakefileUtilityTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmMakefileUtilityTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.i
 .PHONY : cmMakefileUtilityTargetGenerator.cxx.i
 
 cmMakefileUtilityTargetGenerator.s: cmMakefileUtilityTargetGenerator.cxx.s
@@ -7819,7 +7819,7 @@ cmMakefileUtilityTargetGenerator.s: cmMakefileUtilityTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmMakefileUtilityTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMakefileUtilityTargetGenerator.cxx.s
 .PHONY : cmMakefileUtilityTargetGenerator.cxx.s
 
 cmMarkAsAdvancedCommand.obj: cmMarkAsAdvancedCommand.cxx.obj
@@ -7827,7 +7827,7 @@ cmMarkAsAdvancedCommand.obj: cmMarkAsAdvancedCommand.cxx.obj
 
 # target to build an object file
 cmMarkAsAdvancedCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.obj
 .PHONY : cmMarkAsAdvancedCommand.cxx.obj
 
 cmMarkAsAdvancedCommand.i: cmMarkAsAdvancedCommand.cxx.i
@@ -7835,7 +7835,7 @@ cmMarkAsAdvancedCommand.i: cmMarkAsAdvancedCommand.cxx.i
 
 # target to preprocess a source file
 cmMarkAsAdvancedCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.i
 .PHONY : cmMarkAsAdvancedCommand.cxx.i
 
 cmMarkAsAdvancedCommand.s: cmMarkAsAdvancedCommand.cxx.s
@@ -7843,7 +7843,7 @@ cmMarkAsAdvancedCommand.s: cmMarkAsAdvancedCommand.cxx.s
 
 # target to generate assembly for a file
 cmMarkAsAdvancedCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMarkAsAdvancedCommand.cxx.s
 .PHONY : cmMarkAsAdvancedCommand.cxx.s
 
 cmMathCommand.obj: cmMathCommand.cxx.obj
@@ -7851,7 +7851,7 @@ cmMathCommand.obj: cmMathCommand.cxx.obj
 
 # target to build an object file
 cmMathCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.obj
 .PHONY : cmMathCommand.cxx.obj
 
 cmMathCommand.i: cmMathCommand.cxx.i
@@ -7859,7 +7859,7 @@ cmMathCommand.i: cmMathCommand.cxx.i
 
 # target to preprocess a source file
 cmMathCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.i
 .PHONY : cmMathCommand.cxx.i
 
 cmMathCommand.s: cmMathCommand.cxx.s
@@ -7867,7 +7867,7 @@ cmMathCommand.s: cmMathCommand.cxx.s
 
 # target to generate assembly for a file
 cmMathCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMathCommand.cxx.s
 .PHONY : cmMathCommand.cxx.s
 
 cmMessageCommand.obj: cmMessageCommand.cxx.obj
@@ -7875,7 +7875,7 @@ cmMessageCommand.obj: cmMessageCommand.cxx.obj
 
 # target to build an object file
 cmMessageCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.obj
 .PHONY : cmMessageCommand.cxx.obj
 
 cmMessageCommand.i: cmMessageCommand.cxx.i
@@ -7883,7 +7883,7 @@ cmMessageCommand.i: cmMessageCommand.cxx.i
 
 # target to preprocess a source file
 cmMessageCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.i
 .PHONY : cmMessageCommand.cxx.i
 
 cmMessageCommand.s: cmMessageCommand.cxx.s
@@ -7891,7 +7891,7 @@ cmMessageCommand.s: cmMessageCommand.cxx.s
 
 # target to generate assembly for a file
 cmMessageCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessageCommand.cxx.s
 .PHONY : cmMessageCommand.cxx.s
 
 cmMessenger.obj: cmMessenger.cxx.obj
@@ -7899,7 +7899,7 @@ cmMessenger.obj: cmMessenger.cxx.obj
 
 # target to build an object file
 cmMessenger.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.obj
 .PHONY : cmMessenger.cxx.obj
 
 cmMessenger.i: cmMessenger.cxx.i
@@ -7907,7 +7907,7 @@ cmMessenger.i: cmMessenger.cxx.i
 
 # target to preprocess a source file
 cmMessenger.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.i
 .PHONY : cmMessenger.cxx.i
 
 cmMessenger.s: cmMessenger.cxx.s
@@ -7915,7 +7915,7 @@ cmMessenger.s: cmMessenger.cxx.s
 
 # target to generate assembly for a file
 cmMessenger.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmMessenger.cxx.s
 .PHONY : cmMessenger.cxx.s
 
 cmNewLineStyle.obj: cmNewLineStyle.cxx.obj
@@ -7923,7 +7923,7 @@ cmNewLineStyle.obj: cmNewLineStyle.cxx.obj
 
 # target to build an object file
 cmNewLineStyle.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.obj
 .PHONY : cmNewLineStyle.cxx.obj
 
 cmNewLineStyle.i: cmNewLineStyle.cxx.i
@@ -7931,7 +7931,7 @@ cmNewLineStyle.i: cmNewLineStyle.cxx.i
 
 # target to preprocess a source file
 cmNewLineStyle.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.i
 .PHONY : cmNewLineStyle.cxx.i
 
 cmNewLineStyle.s: cmNewLineStyle.cxx.s
@@ -7939,7 +7939,7 @@ cmNewLineStyle.s: cmNewLineStyle.cxx.s
 
 # target to generate assembly for a file
 cmNewLineStyle.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNewLineStyle.cxx.s
 .PHONY : cmNewLineStyle.cxx.s
 
 cmNinjaLinkLineComputer.obj: cmNinjaLinkLineComputer.cxx.obj
@@ -7947,7 +7947,7 @@ cmNinjaLinkLineComputer.obj: cmNinjaLinkLineComputer.cxx.obj
 
 # target to build an object file
 cmNinjaLinkLineComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.obj
 .PHONY : cmNinjaLinkLineComputer.cxx.obj
 
 cmNinjaLinkLineComputer.i: cmNinjaLinkLineComputer.cxx.i
@@ -7955,7 +7955,7 @@ cmNinjaLinkLineComputer.i: cmNinjaLinkLineComputer.cxx.i
 
 # target to preprocess a source file
 cmNinjaLinkLineComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.i
 .PHONY : cmNinjaLinkLineComputer.cxx.i
 
 cmNinjaLinkLineComputer.s: cmNinjaLinkLineComputer.cxx.s
@@ -7963,7 +7963,7 @@ cmNinjaLinkLineComputer.s: cmNinjaLinkLineComputer.cxx.s
 
 # target to generate assembly for a file
 cmNinjaLinkLineComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineComputer.cxx.s
 .PHONY : cmNinjaLinkLineComputer.cxx.s
 
 cmNinjaLinkLineDeviceComputer.obj: cmNinjaLinkLineDeviceComputer.cxx.obj
@@ -7971,7 +7971,7 @@ cmNinjaLinkLineDeviceComputer.obj: cmNinjaLinkLineDeviceComputer.cxx.obj
 
 # target to build an object file
 cmNinjaLinkLineDeviceComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.obj
 .PHONY : cmNinjaLinkLineDeviceComputer.cxx.obj
 
 cmNinjaLinkLineDeviceComputer.i: cmNinjaLinkLineDeviceComputer.cxx.i
@@ -7979,7 +7979,7 @@ cmNinjaLinkLineDeviceComputer.i: cmNinjaLinkLineDeviceComputer.cxx.i
 
 # target to preprocess a source file
 cmNinjaLinkLineDeviceComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.i
 .PHONY : cmNinjaLinkLineDeviceComputer.cxx.i
 
 cmNinjaLinkLineDeviceComputer.s: cmNinjaLinkLineDeviceComputer.cxx.s
@@ -7987,7 +7987,7 @@ cmNinjaLinkLineDeviceComputer.s: cmNinjaLinkLineDeviceComputer.cxx.s
 
 # target to generate assembly for a file
 cmNinjaLinkLineDeviceComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaLinkLineDeviceComputer.cxx.s
 .PHONY : cmNinjaLinkLineDeviceComputer.cxx.s
 
 cmNinjaNormalTargetGenerator.obj: cmNinjaNormalTargetGenerator.cxx.obj
@@ -7995,7 +7995,7 @@ cmNinjaNormalTargetGenerator.obj: cmNinjaNormalTargetGenerator.cxx.obj
 
 # target to build an object file
 cmNinjaNormalTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.obj
 .PHONY : cmNinjaNormalTargetGenerator.cxx.obj
 
 cmNinjaNormalTargetGenerator.i: cmNinjaNormalTargetGenerator.cxx.i
@@ -8003,7 +8003,7 @@ cmNinjaNormalTargetGenerator.i: cmNinjaNormalTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmNinjaNormalTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.i
 .PHONY : cmNinjaNormalTargetGenerator.cxx.i
 
 cmNinjaNormalTargetGenerator.s: cmNinjaNormalTargetGenerator.cxx.s
@@ -8011,7 +8011,7 @@ cmNinjaNormalTargetGenerator.s: cmNinjaNormalTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmNinjaNormalTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaNormalTargetGenerator.cxx.s
 .PHONY : cmNinjaNormalTargetGenerator.cxx.s
 
 cmNinjaTargetGenerator.obj: cmNinjaTargetGenerator.cxx.obj
@@ -8019,7 +8019,7 @@ cmNinjaTargetGenerator.obj: cmNinjaTargetGenerator.cxx.obj
 
 # target to build an object file
 cmNinjaTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.obj
 .PHONY : cmNinjaTargetGenerator.cxx.obj
 
 cmNinjaTargetGenerator.i: cmNinjaTargetGenerator.cxx.i
@@ -8027,7 +8027,7 @@ cmNinjaTargetGenerator.i: cmNinjaTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmNinjaTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.i
 .PHONY : cmNinjaTargetGenerator.cxx.i
 
 cmNinjaTargetGenerator.s: cmNinjaTargetGenerator.cxx.s
@@ -8035,7 +8035,7 @@ cmNinjaTargetGenerator.s: cmNinjaTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmNinjaTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaTargetGenerator.cxx.s
 .PHONY : cmNinjaTargetGenerator.cxx.s
 
 cmNinjaUtilityTargetGenerator.obj: cmNinjaUtilityTargetGenerator.cxx.obj
@@ -8043,7 +8043,7 @@ cmNinjaUtilityTargetGenerator.obj: cmNinjaUtilityTargetGenerator.cxx.obj
 
 # target to build an object file
 cmNinjaUtilityTargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.obj
 .PHONY : cmNinjaUtilityTargetGenerator.cxx.obj
 
 cmNinjaUtilityTargetGenerator.i: cmNinjaUtilityTargetGenerator.cxx.i
@@ -8051,7 +8051,7 @@ cmNinjaUtilityTargetGenerator.i: cmNinjaUtilityTargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmNinjaUtilityTargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.i
 .PHONY : cmNinjaUtilityTargetGenerator.cxx.i
 
 cmNinjaUtilityTargetGenerator.s: cmNinjaUtilityTargetGenerator.cxx.s
@@ -8059,7 +8059,7 @@ cmNinjaUtilityTargetGenerator.s: cmNinjaUtilityTargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmNinjaUtilityTargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmNinjaUtilityTargetGenerator.cxx.s
 .PHONY : cmNinjaUtilityTargetGenerator.cxx.s
 
 cmOSXBundleGenerator.obj: cmOSXBundleGenerator.cxx.obj
@@ -8067,7 +8067,7 @@ cmOSXBundleGenerator.obj: cmOSXBundleGenerator.cxx.obj
 
 # target to build an object file
 cmOSXBundleGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.obj
 .PHONY : cmOSXBundleGenerator.cxx.obj
 
 cmOSXBundleGenerator.i: cmOSXBundleGenerator.cxx.i
@@ -8075,7 +8075,7 @@ cmOSXBundleGenerator.i: cmOSXBundleGenerator.cxx.i
 
 # target to preprocess a source file
 cmOSXBundleGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.i
 .PHONY : cmOSXBundleGenerator.cxx.i
 
 cmOSXBundleGenerator.s: cmOSXBundleGenerator.cxx.s
@@ -8083,7 +8083,7 @@ cmOSXBundleGenerator.s: cmOSXBundleGenerator.cxx.s
 
 # target to generate assembly for a file
 cmOSXBundleGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOSXBundleGenerator.cxx.s
 .PHONY : cmOSXBundleGenerator.cxx.s
 
 cmOptionCommand.obj: cmOptionCommand.cxx.obj
@@ -8091,7 +8091,7 @@ cmOptionCommand.obj: cmOptionCommand.cxx.obj
 
 # target to build an object file
 cmOptionCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.obj
 .PHONY : cmOptionCommand.cxx.obj
 
 cmOptionCommand.i: cmOptionCommand.cxx.i
@@ -8099,7 +8099,7 @@ cmOptionCommand.i: cmOptionCommand.cxx.i
 
 # target to preprocess a source file
 cmOptionCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.i
 .PHONY : cmOptionCommand.cxx.i
 
 cmOptionCommand.s: cmOptionCommand.cxx.s
@@ -8107,7 +8107,7 @@ cmOptionCommand.s: cmOptionCommand.cxx.s
 
 # target to generate assembly for a file
 cmOptionCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOptionCommand.cxx.s
 .PHONY : cmOptionCommand.cxx.s
 
 cmOrderDirectories.obj: cmOrderDirectories.cxx.obj
@@ -8115,7 +8115,7 @@ cmOrderDirectories.obj: cmOrderDirectories.cxx.obj
 
 # target to build an object file
 cmOrderDirectories.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.obj
 .PHONY : cmOrderDirectories.cxx.obj
 
 cmOrderDirectories.i: cmOrderDirectories.cxx.i
@@ -8123,7 +8123,7 @@ cmOrderDirectories.i: cmOrderDirectories.cxx.i
 
 # target to preprocess a source file
 cmOrderDirectories.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.i
 .PHONY : cmOrderDirectories.cxx.i
 
 cmOrderDirectories.s: cmOrderDirectories.cxx.s
@@ -8131,7 +8131,7 @@ cmOrderDirectories.s: cmOrderDirectories.cxx.s
 
 # target to generate assembly for a file
 cmOrderDirectories.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOrderDirectories.cxx.s
 .PHONY : cmOrderDirectories.cxx.s
 
 cmOutputConverter.obj: cmOutputConverter.cxx.obj
@@ -8139,7 +8139,7 @@ cmOutputConverter.obj: cmOutputConverter.cxx.obj
 
 # target to build an object file
 cmOutputConverter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.obj
 .PHONY : cmOutputConverter.cxx.obj
 
 cmOutputConverter.i: cmOutputConverter.cxx.i
@@ -8147,7 +8147,7 @@ cmOutputConverter.i: cmOutputConverter.cxx.i
 
 # target to preprocess a source file
 cmOutputConverter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.i
 .PHONY : cmOutputConverter.cxx.i
 
 cmOutputConverter.s: cmOutputConverter.cxx.s
@@ -8155,7 +8155,7 @@ cmOutputConverter.s: cmOutputConverter.cxx.s
 
 # target to generate assembly for a file
 cmOutputConverter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputConverter.cxx.s
 .PHONY : cmOutputConverter.cxx.s
 
 cmOutputRequiredFilesCommand.obj: cmOutputRequiredFilesCommand.cxx.obj
@@ -8163,7 +8163,7 @@ cmOutputRequiredFilesCommand.obj: cmOutputRequiredFilesCommand.cxx.obj
 
 # target to build an object file
 cmOutputRequiredFilesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.obj
 .PHONY : cmOutputRequiredFilesCommand.cxx.obj
 
 cmOutputRequiredFilesCommand.i: cmOutputRequiredFilesCommand.cxx.i
@@ -8171,7 +8171,7 @@ cmOutputRequiredFilesCommand.i: cmOutputRequiredFilesCommand.cxx.i
 
 # target to preprocess a source file
 cmOutputRequiredFilesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.i
 .PHONY : cmOutputRequiredFilesCommand.cxx.i
 
 cmOutputRequiredFilesCommand.s: cmOutputRequiredFilesCommand.cxx.s
@@ -8179,7 +8179,7 @@ cmOutputRequiredFilesCommand.s: cmOutputRequiredFilesCommand.cxx.s
 
 # target to generate assembly for a file
 cmOutputRequiredFilesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmOutputRequiredFilesCommand.cxx.s
 .PHONY : cmOutputRequiredFilesCommand.cxx.s
 
 cmParseArgumentsCommand.obj: cmParseArgumentsCommand.cxx.obj
@@ -8187,7 +8187,7 @@ cmParseArgumentsCommand.obj: cmParseArgumentsCommand.cxx.obj
 
 # target to build an object file
 cmParseArgumentsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.obj
 .PHONY : cmParseArgumentsCommand.cxx.obj
 
 cmParseArgumentsCommand.i: cmParseArgumentsCommand.cxx.i
@@ -8195,7 +8195,7 @@ cmParseArgumentsCommand.i: cmParseArgumentsCommand.cxx.i
 
 # target to preprocess a source file
 cmParseArgumentsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.i
 .PHONY : cmParseArgumentsCommand.cxx.i
 
 cmParseArgumentsCommand.s: cmParseArgumentsCommand.cxx.s
@@ -8203,7 +8203,7 @@ cmParseArgumentsCommand.s: cmParseArgumentsCommand.cxx.s
 
 # target to generate assembly for a file
 cmParseArgumentsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmParseArgumentsCommand.cxx.s
 .PHONY : cmParseArgumentsCommand.cxx.s
 
 cmPathLabel.obj: cmPathLabel.cxx.obj
@@ -8211,7 +8211,7 @@ cmPathLabel.obj: cmPathLabel.cxx.obj
 
 # target to build an object file
 cmPathLabel.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.obj
 .PHONY : cmPathLabel.cxx.obj
 
 cmPathLabel.i: cmPathLabel.cxx.i
@@ -8219,7 +8219,7 @@ cmPathLabel.i: cmPathLabel.cxx.i
 
 # target to preprocess a source file
 cmPathLabel.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.i
 .PHONY : cmPathLabel.cxx.i
 
 cmPathLabel.s: cmPathLabel.cxx.s
@@ -8227,7 +8227,7 @@ cmPathLabel.s: cmPathLabel.cxx.s
 
 # target to generate assembly for a file
 cmPathLabel.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPathLabel.cxx.s
 .PHONY : cmPathLabel.cxx.s
 
 cmPolicies.obj: cmPolicies.cxx.obj
@@ -8235,7 +8235,7 @@ cmPolicies.obj: cmPolicies.cxx.obj
 
 # target to build an object file
 cmPolicies.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.obj
 .PHONY : cmPolicies.cxx.obj
 
 cmPolicies.i: cmPolicies.cxx.i
@@ -8243,7 +8243,7 @@ cmPolicies.i: cmPolicies.cxx.i
 
 # target to preprocess a source file
 cmPolicies.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.i
 .PHONY : cmPolicies.cxx.i
 
 cmPolicies.s: cmPolicies.cxx.s
@@ -8251,7 +8251,7 @@ cmPolicies.s: cmPolicies.cxx.s
 
 # target to generate assembly for a file
 cmPolicies.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPolicies.cxx.s
 .PHONY : cmPolicies.cxx.s
 
 cmProcessOutput.obj: cmProcessOutput.cxx.obj
@@ -8259,7 +8259,7 @@ cmProcessOutput.obj: cmProcessOutput.cxx.obj
 
 # target to build an object file
 cmProcessOutput.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.obj
 .PHONY : cmProcessOutput.cxx.obj
 
 cmProcessOutput.i: cmProcessOutput.cxx.i
@@ -8267,7 +8267,7 @@ cmProcessOutput.i: cmProcessOutput.cxx.i
 
 # target to preprocess a source file
 cmProcessOutput.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.i
 .PHONY : cmProcessOutput.cxx.i
 
 cmProcessOutput.s: cmProcessOutput.cxx.s
@@ -8275,7 +8275,7 @@ cmProcessOutput.s: cmProcessOutput.cxx.s
 
 # target to generate assembly for a file
 cmProcessOutput.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessOutput.cxx.s
 .PHONY : cmProcessOutput.cxx.s
 
 cmProcessTools.obj: cmProcessTools.cxx.obj
@@ -8283,7 +8283,7 @@ cmProcessTools.obj: cmProcessTools.cxx.obj
 
 # target to build an object file
 cmProcessTools.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.obj
 .PHONY : cmProcessTools.cxx.obj
 
 cmProcessTools.i: cmProcessTools.cxx.i
@@ -8291,7 +8291,7 @@ cmProcessTools.i: cmProcessTools.cxx.i
 
 # target to preprocess a source file
 cmProcessTools.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.i
 .PHONY : cmProcessTools.cxx.i
 
 cmProcessTools.s: cmProcessTools.cxx.s
@@ -8299,7 +8299,7 @@ cmProcessTools.s: cmProcessTools.cxx.s
 
 # target to generate assembly for a file
 cmProcessTools.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProcessTools.cxx.s
 .PHONY : cmProcessTools.cxx.s
 
 cmProjectCommand.obj: cmProjectCommand.cxx.obj
@@ -8307,7 +8307,7 @@ cmProjectCommand.obj: cmProjectCommand.cxx.obj
 
 # target to build an object file
 cmProjectCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.obj
 .PHONY : cmProjectCommand.cxx.obj
 
 cmProjectCommand.i: cmProjectCommand.cxx.i
@@ -8315,7 +8315,7 @@ cmProjectCommand.i: cmProjectCommand.cxx.i
 
 # target to preprocess a source file
 cmProjectCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.i
 .PHONY : cmProjectCommand.cxx.i
 
 cmProjectCommand.s: cmProjectCommand.cxx.s
@@ -8323,7 +8323,7 @@ cmProjectCommand.s: cmProjectCommand.cxx.s
 
 # target to generate assembly for a file
 cmProjectCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmProjectCommand.cxx.s
 .PHONY : cmProjectCommand.cxx.s
 
 cmPropertyDefinition.obj: cmPropertyDefinition.cxx.obj
@@ -8331,7 +8331,7 @@ cmPropertyDefinition.obj: cmPropertyDefinition.cxx.obj
 
 # target to build an object file
 cmPropertyDefinition.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.obj
 .PHONY : cmPropertyDefinition.cxx.obj
 
 cmPropertyDefinition.i: cmPropertyDefinition.cxx.i
@@ -8339,7 +8339,7 @@ cmPropertyDefinition.i: cmPropertyDefinition.cxx.i
 
 # target to preprocess a source file
 cmPropertyDefinition.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.i
 .PHONY : cmPropertyDefinition.cxx.i
 
 cmPropertyDefinition.s: cmPropertyDefinition.cxx.s
@@ -8347,7 +8347,7 @@ cmPropertyDefinition.s: cmPropertyDefinition.cxx.s
 
 # target to generate assembly for a file
 cmPropertyDefinition.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyDefinition.cxx.s
 .PHONY : cmPropertyDefinition.cxx.s
 
 cmPropertyMap.obj: cmPropertyMap.cxx.obj
@@ -8355,7 +8355,7 @@ cmPropertyMap.obj: cmPropertyMap.cxx.obj
 
 # target to build an object file
 cmPropertyMap.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.obj
 .PHONY : cmPropertyMap.cxx.obj
 
 cmPropertyMap.i: cmPropertyMap.cxx.i
@@ -8363,7 +8363,7 @@ cmPropertyMap.i: cmPropertyMap.cxx.i
 
 # target to preprocess a source file
 cmPropertyMap.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.i
 .PHONY : cmPropertyMap.cxx.i
 
 cmPropertyMap.s: cmPropertyMap.cxx.s
@@ -8371,7 +8371,7 @@ cmPropertyMap.s: cmPropertyMap.cxx.s
 
 # target to generate assembly for a file
 cmPropertyMap.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmPropertyMap.cxx.s
 .PHONY : cmPropertyMap.cxx.s
 
 cmQTWrapCPPCommand.obj: cmQTWrapCPPCommand.cxx.obj
@@ -8379,7 +8379,7 @@ cmQTWrapCPPCommand.obj: cmQTWrapCPPCommand.cxx.obj
 
 # target to build an object file
 cmQTWrapCPPCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.obj
 .PHONY : cmQTWrapCPPCommand.cxx.obj
 
 cmQTWrapCPPCommand.i: cmQTWrapCPPCommand.cxx.i
@@ -8387,7 +8387,7 @@ cmQTWrapCPPCommand.i: cmQTWrapCPPCommand.cxx.i
 
 # target to preprocess a source file
 cmQTWrapCPPCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.i
 .PHONY : cmQTWrapCPPCommand.cxx.i
 
 cmQTWrapCPPCommand.s: cmQTWrapCPPCommand.cxx.s
@@ -8395,7 +8395,7 @@ cmQTWrapCPPCommand.s: cmQTWrapCPPCommand.cxx.s
 
 # target to generate assembly for a file
 cmQTWrapCPPCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapCPPCommand.cxx.s
 .PHONY : cmQTWrapCPPCommand.cxx.s
 
 cmQTWrapUICommand.obj: cmQTWrapUICommand.cxx.obj
@@ -8403,7 +8403,7 @@ cmQTWrapUICommand.obj: cmQTWrapUICommand.cxx.obj
 
 # target to build an object file
 cmQTWrapUICommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.obj
 .PHONY : cmQTWrapUICommand.cxx.obj
 
 cmQTWrapUICommand.i: cmQTWrapUICommand.cxx.i
@@ -8411,7 +8411,7 @@ cmQTWrapUICommand.i: cmQTWrapUICommand.cxx.i
 
 # target to preprocess a source file
 cmQTWrapUICommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.i
 .PHONY : cmQTWrapUICommand.cxx.i
 
 cmQTWrapUICommand.s: cmQTWrapUICommand.cxx.s
@@ -8419,7 +8419,7 @@ cmQTWrapUICommand.s: cmQTWrapUICommand.cxx.s
 
 # target to generate assembly for a file
 cmQTWrapUICommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQTWrapUICommand.cxx.s
 .PHONY : cmQTWrapUICommand.cxx.s
 
 cmQtAutoGen.obj: cmQtAutoGen.cxx.obj
@@ -8427,7 +8427,7 @@ cmQtAutoGen.obj: cmQtAutoGen.cxx.obj
 
 # target to build an object file
 cmQtAutoGen.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.obj
 .PHONY : cmQtAutoGen.cxx.obj
 
 cmQtAutoGen.i: cmQtAutoGen.cxx.i
@@ -8435,7 +8435,7 @@ cmQtAutoGen.i: cmQtAutoGen.cxx.i
 
 # target to preprocess a source file
 cmQtAutoGen.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.i
 .PHONY : cmQtAutoGen.cxx.i
 
 cmQtAutoGen.s: cmQtAutoGen.cxx.s
@@ -8443,7 +8443,7 @@ cmQtAutoGen.s: cmQtAutoGen.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoGen.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGen.cxx.s
 .PHONY : cmQtAutoGen.cxx.s
 
 cmQtAutoGenGlobalInitializer.obj: cmQtAutoGenGlobalInitializer.cxx.obj
@@ -8451,7 +8451,7 @@ cmQtAutoGenGlobalInitializer.obj: cmQtAutoGenGlobalInitializer.cxx.obj
 
 # target to build an object file
 cmQtAutoGenGlobalInitializer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.obj
 .PHONY : cmQtAutoGenGlobalInitializer.cxx.obj
 
 cmQtAutoGenGlobalInitializer.i: cmQtAutoGenGlobalInitializer.cxx.i
@@ -8459,7 +8459,7 @@ cmQtAutoGenGlobalInitializer.i: cmQtAutoGenGlobalInitializer.cxx.i
 
 # target to preprocess a source file
 cmQtAutoGenGlobalInitializer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.i
 .PHONY : cmQtAutoGenGlobalInitializer.cxx.i
 
 cmQtAutoGenGlobalInitializer.s: cmQtAutoGenGlobalInitializer.cxx.s
@@ -8467,7 +8467,7 @@ cmQtAutoGenGlobalInitializer.s: cmQtAutoGenGlobalInitializer.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoGenGlobalInitializer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenGlobalInitializer.cxx.s
 .PHONY : cmQtAutoGenGlobalInitializer.cxx.s
 
 cmQtAutoGenInitializer.obj: cmQtAutoGenInitializer.cxx.obj
@@ -8475,7 +8475,7 @@ cmQtAutoGenInitializer.obj: cmQtAutoGenInitializer.cxx.obj
 
 # target to build an object file
 cmQtAutoGenInitializer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.obj
 .PHONY : cmQtAutoGenInitializer.cxx.obj
 
 cmQtAutoGenInitializer.i: cmQtAutoGenInitializer.cxx.i
@@ -8483,7 +8483,7 @@ cmQtAutoGenInitializer.i: cmQtAutoGenInitializer.cxx.i
 
 # target to preprocess a source file
 cmQtAutoGenInitializer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.i
 .PHONY : cmQtAutoGenInitializer.cxx.i
 
 cmQtAutoGenInitializer.s: cmQtAutoGenInitializer.cxx.s
@@ -8491,7 +8491,7 @@ cmQtAutoGenInitializer.s: cmQtAutoGenInitializer.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoGenInitializer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenInitializer.cxx.s
 .PHONY : cmQtAutoGenInitializer.cxx.s
 
 cmQtAutoGenerator.obj: cmQtAutoGenerator.cxx.obj
@@ -8499,7 +8499,7 @@ cmQtAutoGenerator.obj: cmQtAutoGenerator.cxx.obj
 
 # target to build an object file
 cmQtAutoGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.obj
 .PHONY : cmQtAutoGenerator.cxx.obj
 
 cmQtAutoGenerator.i: cmQtAutoGenerator.cxx.i
@@ -8507,7 +8507,7 @@ cmQtAutoGenerator.i: cmQtAutoGenerator.cxx.i
 
 # target to preprocess a source file
 cmQtAutoGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.i
 .PHONY : cmQtAutoGenerator.cxx.i
 
 cmQtAutoGenerator.s: cmQtAutoGenerator.cxx.s
@@ -8515,7 +8515,7 @@ cmQtAutoGenerator.s: cmQtAutoGenerator.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoGenerator.cxx.s
 .PHONY : cmQtAutoGenerator.cxx.s
 
 cmQtAutoMocUic.obj: cmQtAutoMocUic.cxx.obj
@@ -8523,7 +8523,7 @@ cmQtAutoMocUic.obj: cmQtAutoMocUic.cxx.obj
 
 # target to build an object file
 cmQtAutoMocUic.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.obj
 .PHONY : cmQtAutoMocUic.cxx.obj
 
 cmQtAutoMocUic.i: cmQtAutoMocUic.cxx.i
@@ -8531,7 +8531,7 @@ cmQtAutoMocUic.i: cmQtAutoMocUic.cxx.i
 
 # target to preprocess a source file
 cmQtAutoMocUic.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.i
 .PHONY : cmQtAutoMocUic.cxx.i
 
 cmQtAutoMocUic.s: cmQtAutoMocUic.cxx.s
@@ -8539,7 +8539,7 @@ cmQtAutoMocUic.s: cmQtAutoMocUic.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoMocUic.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoMocUic.cxx.s
 .PHONY : cmQtAutoMocUic.cxx.s
 
 cmQtAutoRcc.obj: cmQtAutoRcc.cxx.obj
@@ -8547,7 +8547,7 @@ cmQtAutoRcc.obj: cmQtAutoRcc.cxx.obj
 
 # target to build an object file
 cmQtAutoRcc.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.obj
 .PHONY : cmQtAutoRcc.cxx.obj
 
 cmQtAutoRcc.i: cmQtAutoRcc.cxx.i
@@ -8555,7 +8555,7 @@ cmQtAutoRcc.i: cmQtAutoRcc.cxx.i
 
 # target to preprocess a source file
 cmQtAutoRcc.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.i
 .PHONY : cmQtAutoRcc.cxx.i
 
 cmQtAutoRcc.s: cmQtAutoRcc.cxx.s
@@ -8563,7 +8563,7 @@ cmQtAutoRcc.s: cmQtAutoRcc.cxx.s
 
 # target to generate assembly for a file
 cmQtAutoRcc.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmQtAutoRcc.cxx.s
 .PHONY : cmQtAutoRcc.cxx.s
 
 cmRST.obj: cmRST.cxx.obj
@@ -8571,7 +8571,7 @@ cmRST.obj: cmRST.cxx.obj
 
 # target to build an object file
 cmRST.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.obj
 .PHONY : cmRST.cxx.obj
 
 cmRST.i: cmRST.cxx.i
@@ -8579,7 +8579,7 @@ cmRST.i: cmRST.cxx.i
 
 # target to preprocess a source file
 cmRST.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.i
 .PHONY : cmRST.cxx.i
 
 cmRST.s: cmRST.cxx.s
@@ -8587,7 +8587,7 @@ cmRST.s: cmRST.cxx.s
 
 # target to generate assembly for a file
 cmRST.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRST.cxx.s
 .PHONY : cmRST.cxx.s
 
 cmRemoveCommand.obj: cmRemoveCommand.cxx.obj
@@ -8595,7 +8595,7 @@ cmRemoveCommand.obj: cmRemoveCommand.cxx.obj
 
 # target to build an object file
 cmRemoveCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.obj
 .PHONY : cmRemoveCommand.cxx.obj
 
 cmRemoveCommand.i: cmRemoveCommand.cxx.i
@@ -8603,7 +8603,7 @@ cmRemoveCommand.i: cmRemoveCommand.cxx.i
 
 # target to preprocess a source file
 cmRemoveCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.i
 .PHONY : cmRemoveCommand.cxx.i
 
 cmRemoveCommand.s: cmRemoveCommand.cxx.s
@@ -8611,7 +8611,7 @@ cmRemoveCommand.s: cmRemoveCommand.cxx.s
 
 # target to generate assembly for a file
 cmRemoveCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveCommand.cxx.s
 .PHONY : cmRemoveCommand.cxx.s
 
 cmRemoveDefinitionsCommand.obj: cmRemoveDefinitionsCommand.cxx.obj
@@ -8619,7 +8619,7 @@ cmRemoveDefinitionsCommand.obj: cmRemoveDefinitionsCommand.cxx.obj
 
 # target to build an object file
 cmRemoveDefinitionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.obj
 .PHONY : cmRemoveDefinitionsCommand.cxx.obj
 
 cmRemoveDefinitionsCommand.i: cmRemoveDefinitionsCommand.cxx.i
@@ -8627,7 +8627,7 @@ cmRemoveDefinitionsCommand.i: cmRemoveDefinitionsCommand.cxx.i
 
 # target to preprocess a source file
 cmRemoveDefinitionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.i
 .PHONY : cmRemoveDefinitionsCommand.cxx.i
 
 cmRemoveDefinitionsCommand.s: cmRemoveDefinitionsCommand.cxx.s
@@ -8635,7 +8635,7 @@ cmRemoveDefinitionsCommand.s: cmRemoveDefinitionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmRemoveDefinitionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRemoveDefinitionsCommand.cxx.s
 .PHONY : cmRemoveDefinitionsCommand.cxx.s
 
 cmReturnCommand.obj: cmReturnCommand.cxx.obj
@@ -8643,7 +8643,7 @@ cmReturnCommand.obj: cmReturnCommand.cxx.obj
 
 # target to build an object file
 cmReturnCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.obj
 .PHONY : cmReturnCommand.cxx.obj
 
 cmReturnCommand.i: cmReturnCommand.cxx.i
@@ -8651,7 +8651,7 @@ cmReturnCommand.i: cmReturnCommand.cxx.i
 
 # target to preprocess a source file
 cmReturnCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.i
 .PHONY : cmReturnCommand.cxx.i
 
 cmReturnCommand.s: cmReturnCommand.cxx.s
@@ -8659,7 +8659,7 @@ cmReturnCommand.s: cmReturnCommand.cxx.s
 
 # target to generate assembly for a file
 cmReturnCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmReturnCommand.cxx.s
 .PHONY : cmReturnCommand.cxx.s
 
 cmRulePlaceholderExpander.obj: cmRulePlaceholderExpander.cxx.obj
@@ -8667,7 +8667,7 @@ cmRulePlaceholderExpander.obj: cmRulePlaceholderExpander.cxx.obj
 
 # target to build an object file
 cmRulePlaceholderExpander.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.obj
 .PHONY : cmRulePlaceholderExpander.cxx.obj
 
 cmRulePlaceholderExpander.i: cmRulePlaceholderExpander.cxx.i
@@ -8675,7 +8675,7 @@ cmRulePlaceholderExpander.i: cmRulePlaceholderExpander.cxx.i
 
 # target to preprocess a source file
 cmRulePlaceholderExpander.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.i
 .PHONY : cmRulePlaceholderExpander.cxx.i
 
 cmRulePlaceholderExpander.s: cmRulePlaceholderExpander.cxx.s
@@ -8683,7 +8683,7 @@ cmRulePlaceholderExpander.s: cmRulePlaceholderExpander.cxx.s
 
 # target to generate assembly for a file
 cmRulePlaceholderExpander.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRulePlaceholderExpander.cxx.s
 .PHONY : cmRulePlaceholderExpander.cxx.s
 
 cmRuntimeDependencyArchive.obj: cmRuntimeDependencyArchive.cxx.obj
@@ -8691,7 +8691,7 @@ cmRuntimeDependencyArchive.obj: cmRuntimeDependencyArchive.cxx.obj
 
 # target to build an object file
 cmRuntimeDependencyArchive.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.obj
 .PHONY : cmRuntimeDependencyArchive.cxx.obj
 
 cmRuntimeDependencyArchive.i: cmRuntimeDependencyArchive.cxx.i
@@ -8699,7 +8699,7 @@ cmRuntimeDependencyArchive.i: cmRuntimeDependencyArchive.cxx.i
 
 # target to preprocess a source file
 cmRuntimeDependencyArchive.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.i
 .PHONY : cmRuntimeDependencyArchive.cxx.i
 
 cmRuntimeDependencyArchive.s: cmRuntimeDependencyArchive.cxx.s
@@ -8707,7 +8707,7 @@ cmRuntimeDependencyArchive.s: cmRuntimeDependencyArchive.cxx.s
 
 # target to generate assembly for a file
 cmRuntimeDependencyArchive.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmRuntimeDependencyArchive.cxx.s
 .PHONY : cmRuntimeDependencyArchive.cxx.s
 
 cmScanDepFormat.obj: cmScanDepFormat.cxx.obj
@@ -8715,7 +8715,7 @@ cmScanDepFormat.obj: cmScanDepFormat.cxx.obj
 
 # target to build an object file
 cmScanDepFormat.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.obj
 .PHONY : cmScanDepFormat.cxx.obj
 
 cmScanDepFormat.i: cmScanDepFormat.cxx.i
@@ -8723,7 +8723,7 @@ cmScanDepFormat.i: cmScanDepFormat.cxx.i
 
 # target to preprocess a source file
 cmScanDepFormat.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.i
 .PHONY : cmScanDepFormat.cxx.i
 
 cmScanDepFormat.s: cmScanDepFormat.cxx.s
@@ -8731,7 +8731,7 @@ cmScanDepFormat.s: cmScanDepFormat.cxx.s
 
 # target to generate assembly for a file
 cmScanDepFormat.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScanDepFormat.cxx.s
 .PHONY : cmScanDepFormat.cxx.s
 
 cmScriptGenerator.obj: cmScriptGenerator.cxx.obj
@@ -8739,7 +8739,7 @@ cmScriptGenerator.obj: cmScriptGenerator.cxx.obj
 
 # target to build an object file
 cmScriptGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.obj
 .PHONY : cmScriptGenerator.cxx.obj
 
 cmScriptGenerator.i: cmScriptGenerator.cxx.i
@@ -8747,7 +8747,7 @@ cmScriptGenerator.i: cmScriptGenerator.cxx.i
 
 # target to preprocess a source file
 cmScriptGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.i
 .PHONY : cmScriptGenerator.cxx.i
 
 cmScriptGenerator.s: cmScriptGenerator.cxx.s
@@ -8755,7 +8755,7 @@ cmScriptGenerator.s: cmScriptGenerator.cxx.s
 
 # target to generate assembly for a file
 cmScriptGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmScriptGenerator.cxx.s
 .PHONY : cmScriptGenerator.cxx.s
 
 cmSearchPath.obj: cmSearchPath.cxx.obj
@@ -8763,7 +8763,7 @@ cmSearchPath.obj: cmSearchPath.cxx.obj
 
 # target to build an object file
 cmSearchPath.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.obj
 .PHONY : cmSearchPath.cxx.obj
 
 cmSearchPath.i: cmSearchPath.cxx.i
@@ -8771,7 +8771,7 @@ cmSearchPath.i: cmSearchPath.cxx.i
 
 # target to preprocess a source file
 cmSearchPath.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.i
 .PHONY : cmSearchPath.cxx.i
 
 cmSearchPath.s: cmSearchPath.cxx.s
@@ -8779,7 +8779,7 @@ cmSearchPath.s: cmSearchPath.cxx.s
 
 # target to generate assembly for a file
 cmSearchPath.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSearchPath.cxx.s
 .PHONY : cmSearchPath.cxx.s
 
 cmSeparateArgumentsCommand.obj: cmSeparateArgumentsCommand.cxx.obj
@@ -8787,7 +8787,7 @@ cmSeparateArgumentsCommand.obj: cmSeparateArgumentsCommand.cxx.obj
 
 # target to build an object file
 cmSeparateArgumentsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.obj
 .PHONY : cmSeparateArgumentsCommand.cxx.obj
 
 cmSeparateArgumentsCommand.i: cmSeparateArgumentsCommand.cxx.i
@@ -8795,7 +8795,7 @@ cmSeparateArgumentsCommand.i: cmSeparateArgumentsCommand.cxx.i
 
 # target to preprocess a source file
 cmSeparateArgumentsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.i
 .PHONY : cmSeparateArgumentsCommand.cxx.i
 
 cmSeparateArgumentsCommand.s: cmSeparateArgumentsCommand.cxx.s
@@ -8803,7 +8803,7 @@ cmSeparateArgumentsCommand.s: cmSeparateArgumentsCommand.cxx.s
 
 # target to generate assembly for a file
 cmSeparateArgumentsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSeparateArgumentsCommand.cxx.s
 .PHONY : cmSeparateArgumentsCommand.cxx.s
 
 cmSetCommand.obj: cmSetCommand.cxx.obj
@@ -8811,7 +8811,7 @@ cmSetCommand.obj: cmSetCommand.cxx.obj
 
 # target to build an object file
 cmSetCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.obj
 .PHONY : cmSetCommand.cxx.obj
 
 cmSetCommand.i: cmSetCommand.cxx.i
@@ -8819,7 +8819,7 @@ cmSetCommand.i: cmSetCommand.cxx.i
 
 # target to preprocess a source file
 cmSetCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.i
 .PHONY : cmSetCommand.cxx.i
 
 cmSetCommand.s: cmSetCommand.cxx.s
@@ -8827,7 +8827,7 @@ cmSetCommand.s: cmSetCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetCommand.cxx.s
 .PHONY : cmSetCommand.cxx.s
 
 cmSetDirectoryPropertiesCommand.obj: cmSetDirectoryPropertiesCommand.cxx.obj
@@ -8835,7 +8835,7 @@ cmSetDirectoryPropertiesCommand.obj: cmSetDirectoryPropertiesCommand.cxx.obj
 
 # target to build an object file
 cmSetDirectoryPropertiesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.obj
 .PHONY : cmSetDirectoryPropertiesCommand.cxx.obj
 
 cmSetDirectoryPropertiesCommand.i: cmSetDirectoryPropertiesCommand.cxx.i
@@ -8843,7 +8843,7 @@ cmSetDirectoryPropertiesCommand.i: cmSetDirectoryPropertiesCommand.cxx.i
 
 # target to preprocess a source file
 cmSetDirectoryPropertiesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.i
 .PHONY : cmSetDirectoryPropertiesCommand.cxx.i
 
 cmSetDirectoryPropertiesCommand.s: cmSetDirectoryPropertiesCommand.cxx.s
@@ -8851,7 +8851,7 @@ cmSetDirectoryPropertiesCommand.s: cmSetDirectoryPropertiesCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetDirectoryPropertiesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetDirectoryPropertiesCommand.cxx.s
 .PHONY : cmSetDirectoryPropertiesCommand.cxx.s
 
 cmSetPropertyCommand.obj: cmSetPropertyCommand.cxx.obj
@@ -8859,7 +8859,7 @@ cmSetPropertyCommand.obj: cmSetPropertyCommand.cxx.obj
 
 # target to build an object file
 cmSetPropertyCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.obj
 .PHONY : cmSetPropertyCommand.cxx.obj
 
 cmSetPropertyCommand.i: cmSetPropertyCommand.cxx.i
@@ -8867,7 +8867,7 @@ cmSetPropertyCommand.i: cmSetPropertyCommand.cxx.i
 
 # target to preprocess a source file
 cmSetPropertyCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.i
 .PHONY : cmSetPropertyCommand.cxx.i
 
 cmSetPropertyCommand.s: cmSetPropertyCommand.cxx.s
@@ -8875,7 +8875,7 @@ cmSetPropertyCommand.s: cmSetPropertyCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetPropertyCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetPropertyCommand.cxx.s
 .PHONY : cmSetPropertyCommand.cxx.s
 
 cmSetSourceFilesPropertiesCommand.obj: cmSetSourceFilesPropertiesCommand.cxx.obj
@@ -8883,7 +8883,7 @@ cmSetSourceFilesPropertiesCommand.obj: cmSetSourceFilesPropertiesCommand.cxx.obj
 
 # target to build an object file
 cmSetSourceFilesPropertiesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.obj
 .PHONY : cmSetSourceFilesPropertiesCommand.cxx.obj
 
 cmSetSourceFilesPropertiesCommand.i: cmSetSourceFilesPropertiesCommand.cxx.i
@@ -8891,7 +8891,7 @@ cmSetSourceFilesPropertiesCommand.i: cmSetSourceFilesPropertiesCommand.cxx.i
 
 # target to preprocess a source file
 cmSetSourceFilesPropertiesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.i
 .PHONY : cmSetSourceFilesPropertiesCommand.cxx.i
 
 cmSetSourceFilesPropertiesCommand.s: cmSetSourceFilesPropertiesCommand.cxx.s
@@ -8899,7 +8899,7 @@ cmSetSourceFilesPropertiesCommand.s: cmSetSourceFilesPropertiesCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetSourceFilesPropertiesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetSourceFilesPropertiesCommand.cxx.s
 .PHONY : cmSetSourceFilesPropertiesCommand.cxx.s
 
 cmSetTargetPropertiesCommand.obj: cmSetTargetPropertiesCommand.cxx.obj
@@ -8907,7 +8907,7 @@ cmSetTargetPropertiesCommand.obj: cmSetTargetPropertiesCommand.cxx.obj
 
 # target to build an object file
 cmSetTargetPropertiesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.obj
 .PHONY : cmSetTargetPropertiesCommand.cxx.obj
 
 cmSetTargetPropertiesCommand.i: cmSetTargetPropertiesCommand.cxx.i
@@ -8915,7 +8915,7 @@ cmSetTargetPropertiesCommand.i: cmSetTargetPropertiesCommand.cxx.i
 
 # target to preprocess a source file
 cmSetTargetPropertiesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.i
 .PHONY : cmSetTargetPropertiesCommand.cxx.i
 
 cmSetTargetPropertiesCommand.s: cmSetTargetPropertiesCommand.cxx.s
@@ -8923,7 +8923,7 @@ cmSetTargetPropertiesCommand.s: cmSetTargetPropertiesCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetTargetPropertiesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTargetPropertiesCommand.cxx.s
 .PHONY : cmSetTargetPropertiesCommand.cxx.s
 
 cmSetTestsPropertiesCommand.obj: cmSetTestsPropertiesCommand.cxx.obj
@@ -8931,7 +8931,7 @@ cmSetTestsPropertiesCommand.obj: cmSetTestsPropertiesCommand.cxx.obj
 
 # target to build an object file
 cmSetTestsPropertiesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.obj
 .PHONY : cmSetTestsPropertiesCommand.cxx.obj
 
 cmSetTestsPropertiesCommand.i: cmSetTestsPropertiesCommand.cxx.i
@@ -8939,7 +8939,7 @@ cmSetTestsPropertiesCommand.i: cmSetTestsPropertiesCommand.cxx.i
 
 # target to preprocess a source file
 cmSetTestsPropertiesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.i
 .PHONY : cmSetTestsPropertiesCommand.cxx.i
 
 cmSetTestsPropertiesCommand.s: cmSetTestsPropertiesCommand.cxx.s
@@ -8947,7 +8947,7 @@ cmSetTestsPropertiesCommand.s: cmSetTestsPropertiesCommand.cxx.s
 
 # target to generate assembly for a file
 cmSetTestsPropertiesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSetTestsPropertiesCommand.cxx.s
 .PHONY : cmSetTestsPropertiesCommand.cxx.s
 
 cmSiteNameCommand.obj: cmSiteNameCommand.cxx.obj
@@ -8955,7 +8955,7 @@ cmSiteNameCommand.obj: cmSiteNameCommand.cxx.obj
 
 # target to build an object file
 cmSiteNameCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.obj
 .PHONY : cmSiteNameCommand.cxx.obj
 
 cmSiteNameCommand.i: cmSiteNameCommand.cxx.i
@@ -8963,7 +8963,7 @@ cmSiteNameCommand.i: cmSiteNameCommand.cxx.i
 
 # target to preprocess a source file
 cmSiteNameCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.i
 .PHONY : cmSiteNameCommand.cxx.i
 
 cmSiteNameCommand.s: cmSiteNameCommand.cxx.s
@@ -8971,7 +8971,7 @@ cmSiteNameCommand.s: cmSiteNameCommand.cxx.s
 
 # target to generate assembly for a file
 cmSiteNameCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSiteNameCommand.cxx.s
 .PHONY : cmSiteNameCommand.cxx.s
 
 cmSourceFile.obj: cmSourceFile.cxx.obj
@@ -8979,7 +8979,7 @@ cmSourceFile.obj: cmSourceFile.cxx.obj
 
 # target to build an object file
 cmSourceFile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.obj
 .PHONY : cmSourceFile.cxx.obj
 
 cmSourceFile.i: cmSourceFile.cxx.i
@@ -8987,7 +8987,7 @@ cmSourceFile.i: cmSourceFile.cxx.i
 
 # target to preprocess a source file
 cmSourceFile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.i
 .PHONY : cmSourceFile.cxx.i
 
 cmSourceFile.s: cmSourceFile.cxx.s
@@ -8995,7 +8995,7 @@ cmSourceFile.s: cmSourceFile.cxx.s
 
 # target to generate assembly for a file
 cmSourceFile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFile.cxx.s
 .PHONY : cmSourceFile.cxx.s
 
 cmSourceFileLocation.obj: cmSourceFileLocation.cxx.obj
@@ -9003,7 +9003,7 @@ cmSourceFileLocation.obj: cmSourceFileLocation.cxx.obj
 
 # target to build an object file
 cmSourceFileLocation.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.obj
 .PHONY : cmSourceFileLocation.cxx.obj
 
 cmSourceFileLocation.i: cmSourceFileLocation.cxx.i
@@ -9011,7 +9011,7 @@ cmSourceFileLocation.i: cmSourceFileLocation.cxx.i
 
 # target to preprocess a source file
 cmSourceFileLocation.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.i
 .PHONY : cmSourceFileLocation.cxx.i
 
 cmSourceFileLocation.s: cmSourceFileLocation.cxx.s
@@ -9019,7 +9019,7 @@ cmSourceFileLocation.s: cmSourceFileLocation.cxx.s
 
 # target to generate assembly for a file
 cmSourceFileLocation.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceFileLocation.cxx.s
 .PHONY : cmSourceFileLocation.cxx.s
 
 cmSourceGroup.obj: cmSourceGroup.cxx.obj
@@ -9027,7 +9027,7 @@ cmSourceGroup.obj: cmSourceGroup.cxx.obj
 
 # target to build an object file
 cmSourceGroup.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.obj
 .PHONY : cmSourceGroup.cxx.obj
 
 cmSourceGroup.i: cmSourceGroup.cxx.i
@@ -9035,7 +9035,7 @@ cmSourceGroup.i: cmSourceGroup.cxx.i
 
 # target to preprocess a source file
 cmSourceGroup.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.i
 .PHONY : cmSourceGroup.cxx.i
 
 cmSourceGroup.s: cmSourceGroup.cxx.s
@@ -9043,7 +9043,7 @@ cmSourceGroup.s: cmSourceGroup.cxx.s
 
 # target to generate assembly for a file
 cmSourceGroup.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroup.cxx.s
 .PHONY : cmSourceGroup.cxx.s
 
 cmSourceGroupCommand.obj: cmSourceGroupCommand.cxx.obj
@@ -9051,7 +9051,7 @@ cmSourceGroupCommand.obj: cmSourceGroupCommand.cxx.obj
 
 # target to build an object file
 cmSourceGroupCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.obj
 .PHONY : cmSourceGroupCommand.cxx.obj
 
 cmSourceGroupCommand.i: cmSourceGroupCommand.cxx.i
@@ -9059,7 +9059,7 @@ cmSourceGroupCommand.i: cmSourceGroupCommand.cxx.i
 
 # target to preprocess a source file
 cmSourceGroupCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.i
 .PHONY : cmSourceGroupCommand.cxx.i
 
 cmSourceGroupCommand.s: cmSourceGroupCommand.cxx.s
@@ -9067,7 +9067,7 @@ cmSourceGroupCommand.s: cmSourceGroupCommand.cxx.s
 
 # target to generate assembly for a file
 cmSourceGroupCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSourceGroupCommand.cxx.s
 .PHONY : cmSourceGroupCommand.cxx.s
 
 cmStandardLevelResolver.obj: cmStandardLevelResolver.cxx.obj
@@ -9075,7 +9075,7 @@ cmStandardLevelResolver.obj: cmStandardLevelResolver.cxx.obj
 
 # target to build an object file
 cmStandardLevelResolver.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.obj
 .PHONY : cmStandardLevelResolver.cxx.obj
 
 cmStandardLevelResolver.i: cmStandardLevelResolver.cxx.i
@@ -9083,7 +9083,7 @@ cmStandardLevelResolver.i: cmStandardLevelResolver.cxx.i
 
 # target to preprocess a source file
 cmStandardLevelResolver.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.i
 .PHONY : cmStandardLevelResolver.cxx.i
 
 cmStandardLevelResolver.s: cmStandardLevelResolver.cxx.s
@@ -9091,7 +9091,7 @@ cmStandardLevelResolver.s: cmStandardLevelResolver.cxx.s
 
 # target to generate assembly for a file
 cmStandardLevelResolver.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStandardLevelResolver.cxx.s
 .PHONY : cmStandardLevelResolver.cxx.s
 
 cmState.obj: cmState.cxx.obj
@@ -9099,7 +9099,7 @@ cmState.obj: cmState.cxx.obj
 
 # target to build an object file
 cmState.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.obj
 .PHONY : cmState.cxx.obj
 
 cmState.i: cmState.cxx.i
@@ -9107,7 +9107,7 @@ cmState.i: cmState.cxx.i
 
 # target to preprocess a source file
 cmState.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.i
 .PHONY : cmState.cxx.i
 
 cmState.s: cmState.cxx.s
@@ -9115,7 +9115,7 @@ cmState.s: cmState.cxx.s
 
 # target to generate assembly for a file
 cmState.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmState.cxx.s
 .PHONY : cmState.cxx.s
 
 cmStateDirectory.obj: cmStateDirectory.cxx.obj
@@ -9123,7 +9123,7 @@ cmStateDirectory.obj: cmStateDirectory.cxx.obj
 
 # target to build an object file
 cmStateDirectory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.obj
 .PHONY : cmStateDirectory.cxx.obj
 
 cmStateDirectory.i: cmStateDirectory.cxx.i
@@ -9131,7 +9131,7 @@ cmStateDirectory.i: cmStateDirectory.cxx.i
 
 # target to preprocess a source file
 cmStateDirectory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.i
 .PHONY : cmStateDirectory.cxx.i
 
 cmStateDirectory.s: cmStateDirectory.cxx.s
@@ -9139,7 +9139,7 @@ cmStateDirectory.s: cmStateDirectory.cxx.s
 
 # target to generate assembly for a file
 cmStateDirectory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateDirectory.cxx.s
 .PHONY : cmStateDirectory.cxx.s
 
 cmStateSnapshot.obj: cmStateSnapshot.cxx.obj
@@ -9147,7 +9147,7 @@ cmStateSnapshot.obj: cmStateSnapshot.cxx.obj
 
 # target to build an object file
 cmStateSnapshot.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.obj
 .PHONY : cmStateSnapshot.cxx.obj
 
 cmStateSnapshot.i: cmStateSnapshot.cxx.i
@@ -9155,7 +9155,7 @@ cmStateSnapshot.i: cmStateSnapshot.cxx.i
 
 # target to preprocess a source file
 cmStateSnapshot.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.i
 .PHONY : cmStateSnapshot.cxx.i
 
 cmStateSnapshot.s: cmStateSnapshot.cxx.s
@@ -9163,7 +9163,7 @@ cmStateSnapshot.s: cmStateSnapshot.cxx.s
 
 # target to generate assembly for a file
 cmStateSnapshot.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStateSnapshot.cxx.s
 .PHONY : cmStateSnapshot.cxx.s
 
 cmString.obj: cmString.cxx.obj
@@ -9171,7 +9171,7 @@ cmString.obj: cmString.cxx.obj
 
 # target to build an object file
 cmString.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.obj
 .PHONY : cmString.cxx.obj
 
 cmString.i: cmString.cxx.i
@@ -9179,7 +9179,7 @@ cmString.i: cmString.cxx.i
 
 # target to preprocess a source file
 cmString.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.i
 .PHONY : cmString.cxx.i
 
 cmString.s: cmString.cxx.s
@@ -9187,7 +9187,7 @@ cmString.s: cmString.cxx.s
 
 # target to generate assembly for a file
 cmString.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmString.cxx.s
 .PHONY : cmString.cxx.s
 
 cmStringAlgorithms.obj: cmStringAlgorithms.cxx.obj
@@ -9195,7 +9195,7 @@ cmStringAlgorithms.obj: cmStringAlgorithms.cxx.obj
 
 # target to build an object file
 cmStringAlgorithms.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.obj
 .PHONY : cmStringAlgorithms.cxx.obj
 
 cmStringAlgorithms.i: cmStringAlgorithms.cxx.i
@@ -9203,7 +9203,7 @@ cmStringAlgorithms.i: cmStringAlgorithms.cxx.i
 
 # target to preprocess a source file
 cmStringAlgorithms.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.i
 .PHONY : cmStringAlgorithms.cxx.i
 
 cmStringAlgorithms.s: cmStringAlgorithms.cxx.s
@@ -9211,7 +9211,7 @@ cmStringAlgorithms.s: cmStringAlgorithms.cxx.s
 
 # target to generate assembly for a file
 cmStringAlgorithms.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringAlgorithms.cxx.s
 .PHONY : cmStringAlgorithms.cxx.s
 
 cmStringCommand.obj: cmStringCommand.cxx.obj
@@ -9219,7 +9219,7 @@ cmStringCommand.obj: cmStringCommand.cxx.obj
 
 # target to build an object file
 cmStringCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.obj
 .PHONY : cmStringCommand.cxx.obj
 
 cmStringCommand.i: cmStringCommand.cxx.i
@@ -9227,7 +9227,7 @@ cmStringCommand.i: cmStringCommand.cxx.i
 
 # target to preprocess a source file
 cmStringCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.i
 .PHONY : cmStringCommand.cxx.i
 
 cmStringCommand.s: cmStringCommand.cxx.s
@@ -9235,7 +9235,7 @@ cmStringCommand.s: cmStringCommand.cxx.s
 
 # target to generate assembly for a file
 cmStringCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringCommand.cxx.s
 .PHONY : cmStringCommand.cxx.s
 
 cmStringReplaceHelper.obj: cmStringReplaceHelper.cxx.obj
@@ -9243,7 +9243,7 @@ cmStringReplaceHelper.obj: cmStringReplaceHelper.cxx.obj
 
 # target to build an object file
 cmStringReplaceHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.obj
 .PHONY : cmStringReplaceHelper.cxx.obj
 
 cmStringReplaceHelper.i: cmStringReplaceHelper.cxx.i
@@ -9251,7 +9251,7 @@ cmStringReplaceHelper.i: cmStringReplaceHelper.cxx.i
 
 # target to preprocess a source file
 cmStringReplaceHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.i
 .PHONY : cmStringReplaceHelper.cxx.i
 
 cmStringReplaceHelper.s: cmStringReplaceHelper.cxx.s
@@ -9259,7 +9259,7 @@ cmStringReplaceHelper.s: cmStringReplaceHelper.cxx.s
 
 # target to generate assembly for a file
 cmStringReplaceHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmStringReplaceHelper.cxx.s
 .PHONY : cmStringReplaceHelper.cxx.s
 
 cmSubcommandTable.obj: cmSubcommandTable.cxx.obj
@@ -9267,7 +9267,7 @@ cmSubcommandTable.obj: cmSubcommandTable.cxx.obj
 
 # target to build an object file
 cmSubcommandTable.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.obj
 .PHONY : cmSubcommandTable.cxx.obj
 
 cmSubcommandTable.i: cmSubcommandTable.cxx.i
@@ -9275,7 +9275,7 @@ cmSubcommandTable.i: cmSubcommandTable.cxx.i
 
 # target to preprocess a source file
 cmSubcommandTable.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.i
 .PHONY : cmSubcommandTable.cxx.i
 
 cmSubcommandTable.s: cmSubcommandTable.cxx.s
@@ -9283,7 +9283,7 @@ cmSubcommandTable.s: cmSubcommandTable.cxx.s
 
 # target to generate assembly for a file
 cmSubcommandTable.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubcommandTable.cxx.s
 .PHONY : cmSubcommandTable.cxx.s
 
 cmSubdirCommand.obj: cmSubdirCommand.cxx.obj
@@ -9291,7 +9291,7 @@ cmSubdirCommand.obj: cmSubdirCommand.cxx.obj
 
 # target to build an object file
 cmSubdirCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.obj
 .PHONY : cmSubdirCommand.cxx.obj
 
 cmSubdirCommand.i: cmSubdirCommand.cxx.i
@@ -9299,7 +9299,7 @@ cmSubdirCommand.i: cmSubdirCommand.cxx.i
 
 # target to preprocess a source file
 cmSubdirCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.i
 .PHONY : cmSubdirCommand.cxx.i
 
 cmSubdirCommand.s: cmSubdirCommand.cxx.s
@@ -9307,7 +9307,7 @@ cmSubdirCommand.s: cmSubdirCommand.cxx.s
 
 # target to generate assembly for a file
 cmSubdirCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirCommand.cxx.s
 .PHONY : cmSubdirCommand.cxx.s
 
 cmSubdirDependsCommand.obj: cmSubdirDependsCommand.cxx.obj
@@ -9315,7 +9315,7 @@ cmSubdirDependsCommand.obj: cmSubdirDependsCommand.cxx.obj
 
 # target to build an object file
 cmSubdirDependsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.obj
 .PHONY : cmSubdirDependsCommand.cxx.obj
 
 cmSubdirDependsCommand.i: cmSubdirDependsCommand.cxx.i
@@ -9323,7 +9323,7 @@ cmSubdirDependsCommand.i: cmSubdirDependsCommand.cxx.i
 
 # target to preprocess a source file
 cmSubdirDependsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.i
 .PHONY : cmSubdirDependsCommand.cxx.i
 
 cmSubdirDependsCommand.s: cmSubdirDependsCommand.cxx.s
@@ -9331,7 +9331,7 @@ cmSubdirDependsCommand.s: cmSubdirDependsCommand.cxx.s
 
 # target to generate assembly for a file
 cmSubdirDependsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSubdirDependsCommand.cxx.s
 .PHONY : cmSubdirDependsCommand.cxx.s
 
 cmSystemTools.obj: cmSystemTools.cxx.obj
@@ -9339,7 +9339,7 @@ cmSystemTools.obj: cmSystemTools.cxx.obj
 
 # target to build an object file
 cmSystemTools.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.obj
 .PHONY : cmSystemTools.cxx.obj
 
 cmSystemTools.i: cmSystemTools.cxx.i
@@ -9347,7 +9347,7 @@ cmSystemTools.i: cmSystemTools.cxx.i
 
 # target to preprocess a source file
 cmSystemTools.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.i
 .PHONY : cmSystemTools.cxx.i
 
 cmSystemTools.s: cmSystemTools.cxx.s
@@ -9355,7 +9355,7 @@ cmSystemTools.s: cmSystemTools.cxx.s
 
 # target to generate assembly for a file
 cmSystemTools.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmSystemTools.cxx.s
 .PHONY : cmSystemTools.cxx.s
 
 cmTarget.obj: cmTarget.cxx.obj
@@ -9363,7 +9363,7 @@ cmTarget.obj: cmTarget.cxx.obj
 
 # target to build an object file
 cmTarget.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.obj
 .PHONY : cmTarget.cxx.obj
 
 cmTarget.i: cmTarget.cxx.i
@@ -9371,7 +9371,7 @@ cmTarget.i: cmTarget.cxx.i
 
 # target to preprocess a source file
 cmTarget.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.i
 .PHONY : cmTarget.cxx.i
 
 cmTarget.s: cmTarget.cxx.s
@@ -9379,7 +9379,7 @@ cmTarget.s: cmTarget.cxx.s
 
 # target to generate assembly for a file
 cmTarget.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTarget.cxx.s
 .PHONY : cmTarget.cxx.s
 
 cmTargetCompileDefinitionsCommand.obj: cmTargetCompileDefinitionsCommand.cxx.obj
@@ -9387,7 +9387,7 @@ cmTargetCompileDefinitionsCommand.obj: cmTargetCompileDefinitionsCommand.cxx.obj
 
 # target to build an object file
 cmTargetCompileDefinitionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.obj
 .PHONY : cmTargetCompileDefinitionsCommand.cxx.obj
 
 cmTargetCompileDefinitionsCommand.i: cmTargetCompileDefinitionsCommand.cxx.i
@@ -9395,7 +9395,7 @@ cmTargetCompileDefinitionsCommand.i: cmTargetCompileDefinitionsCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetCompileDefinitionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.i
 .PHONY : cmTargetCompileDefinitionsCommand.cxx.i
 
 cmTargetCompileDefinitionsCommand.s: cmTargetCompileDefinitionsCommand.cxx.s
@@ -9403,7 +9403,7 @@ cmTargetCompileDefinitionsCommand.s: cmTargetCompileDefinitionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetCompileDefinitionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileDefinitionsCommand.cxx.s
 .PHONY : cmTargetCompileDefinitionsCommand.cxx.s
 
 cmTargetCompileFeaturesCommand.obj: cmTargetCompileFeaturesCommand.cxx.obj
@@ -9411,7 +9411,7 @@ cmTargetCompileFeaturesCommand.obj: cmTargetCompileFeaturesCommand.cxx.obj
 
 # target to build an object file
 cmTargetCompileFeaturesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.obj
 .PHONY : cmTargetCompileFeaturesCommand.cxx.obj
 
 cmTargetCompileFeaturesCommand.i: cmTargetCompileFeaturesCommand.cxx.i
@@ -9419,7 +9419,7 @@ cmTargetCompileFeaturesCommand.i: cmTargetCompileFeaturesCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetCompileFeaturesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.i
 .PHONY : cmTargetCompileFeaturesCommand.cxx.i
 
 cmTargetCompileFeaturesCommand.s: cmTargetCompileFeaturesCommand.cxx.s
@@ -9427,7 +9427,7 @@ cmTargetCompileFeaturesCommand.s: cmTargetCompileFeaturesCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetCompileFeaturesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileFeaturesCommand.cxx.s
 .PHONY : cmTargetCompileFeaturesCommand.cxx.s
 
 cmTargetCompileOptionsCommand.obj: cmTargetCompileOptionsCommand.cxx.obj
@@ -9435,7 +9435,7 @@ cmTargetCompileOptionsCommand.obj: cmTargetCompileOptionsCommand.cxx.obj
 
 # target to build an object file
 cmTargetCompileOptionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.obj
 .PHONY : cmTargetCompileOptionsCommand.cxx.obj
 
 cmTargetCompileOptionsCommand.i: cmTargetCompileOptionsCommand.cxx.i
@@ -9443,7 +9443,7 @@ cmTargetCompileOptionsCommand.i: cmTargetCompileOptionsCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetCompileOptionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.i
 .PHONY : cmTargetCompileOptionsCommand.cxx.i
 
 cmTargetCompileOptionsCommand.s: cmTargetCompileOptionsCommand.cxx.s
@@ -9451,7 +9451,7 @@ cmTargetCompileOptionsCommand.s: cmTargetCompileOptionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetCompileOptionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetCompileOptionsCommand.cxx.s
 .PHONY : cmTargetCompileOptionsCommand.cxx.s
 
 cmTargetIncludeDirectoriesCommand.obj: cmTargetIncludeDirectoriesCommand.cxx.obj
@@ -9459,7 +9459,7 @@ cmTargetIncludeDirectoriesCommand.obj: cmTargetIncludeDirectoriesCommand.cxx.obj
 
 # target to build an object file
 cmTargetIncludeDirectoriesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.obj
 .PHONY : cmTargetIncludeDirectoriesCommand.cxx.obj
 
 cmTargetIncludeDirectoriesCommand.i: cmTargetIncludeDirectoriesCommand.cxx.i
@@ -9467,7 +9467,7 @@ cmTargetIncludeDirectoriesCommand.i: cmTargetIncludeDirectoriesCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetIncludeDirectoriesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.i
 .PHONY : cmTargetIncludeDirectoriesCommand.cxx.i
 
 cmTargetIncludeDirectoriesCommand.s: cmTargetIncludeDirectoriesCommand.cxx.s
@@ -9475,7 +9475,7 @@ cmTargetIncludeDirectoriesCommand.s: cmTargetIncludeDirectoriesCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetIncludeDirectoriesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetIncludeDirectoriesCommand.cxx.s
 .PHONY : cmTargetIncludeDirectoriesCommand.cxx.s
 
 cmTargetLinkDirectoriesCommand.obj: cmTargetLinkDirectoriesCommand.cxx.obj
@@ -9483,7 +9483,7 @@ cmTargetLinkDirectoriesCommand.obj: cmTargetLinkDirectoriesCommand.cxx.obj
 
 # target to build an object file
 cmTargetLinkDirectoriesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.obj
 .PHONY : cmTargetLinkDirectoriesCommand.cxx.obj
 
 cmTargetLinkDirectoriesCommand.i: cmTargetLinkDirectoriesCommand.cxx.i
@@ -9491,7 +9491,7 @@ cmTargetLinkDirectoriesCommand.i: cmTargetLinkDirectoriesCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetLinkDirectoriesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.i
 .PHONY : cmTargetLinkDirectoriesCommand.cxx.i
 
 cmTargetLinkDirectoriesCommand.s: cmTargetLinkDirectoriesCommand.cxx.s
@@ -9499,7 +9499,7 @@ cmTargetLinkDirectoriesCommand.s: cmTargetLinkDirectoriesCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetLinkDirectoriesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkDirectoriesCommand.cxx.s
 .PHONY : cmTargetLinkDirectoriesCommand.cxx.s
 
 cmTargetLinkLibrariesCommand.obj: cmTargetLinkLibrariesCommand.cxx.obj
@@ -9507,7 +9507,7 @@ cmTargetLinkLibrariesCommand.obj: cmTargetLinkLibrariesCommand.cxx.obj
 
 # target to build an object file
 cmTargetLinkLibrariesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.obj
 .PHONY : cmTargetLinkLibrariesCommand.cxx.obj
 
 cmTargetLinkLibrariesCommand.i: cmTargetLinkLibrariesCommand.cxx.i
@@ -9515,7 +9515,7 @@ cmTargetLinkLibrariesCommand.i: cmTargetLinkLibrariesCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetLinkLibrariesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.i
 .PHONY : cmTargetLinkLibrariesCommand.cxx.i
 
 cmTargetLinkLibrariesCommand.s: cmTargetLinkLibrariesCommand.cxx.s
@@ -9523,7 +9523,7 @@ cmTargetLinkLibrariesCommand.s: cmTargetLinkLibrariesCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetLinkLibrariesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkLibrariesCommand.cxx.s
 .PHONY : cmTargetLinkLibrariesCommand.cxx.s
 
 cmTargetLinkOptionsCommand.obj: cmTargetLinkOptionsCommand.cxx.obj
@@ -9531,7 +9531,7 @@ cmTargetLinkOptionsCommand.obj: cmTargetLinkOptionsCommand.cxx.obj
 
 # target to build an object file
 cmTargetLinkOptionsCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.obj
 .PHONY : cmTargetLinkOptionsCommand.cxx.obj
 
 cmTargetLinkOptionsCommand.i: cmTargetLinkOptionsCommand.cxx.i
@@ -9539,7 +9539,7 @@ cmTargetLinkOptionsCommand.i: cmTargetLinkOptionsCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetLinkOptionsCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.i
 .PHONY : cmTargetLinkOptionsCommand.cxx.i
 
 cmTargetLinkOptionsCommand.s: cmTargetLinkOptionsCommand.cxx.s
@@ -9547,7 +9547,7 @@ cmTargetLinkOptionsCommand.s: cmTargetLinkOptionsCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetLinkOptionsCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetLinkOptionsCommand.cxx.s
 .PHONY : cmTargetLinkOptionsCommand.cxx.s
 
 cmTargetPrecompileHeadersCommand.obj: cmTargetPrecompileHeadersCommand.cxx.obj
@@ -9555,7 +9555,7 @@ cmTargetPrecompileHeadersCommand.obj: cmTargetPrecompileHeadersCommand.cxx.obj
 
 # target to build an object file
 cmTargetPrecompileHeadersCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.obj
 .PHONY : cmTargetPrecompileHeadersCommand.cxx.obj
 
 cmTargetPrecompileHeadersCommand.i: cmTargetPrecompileHeadersCommand.cxx.i
@@ -9563,7 +9563,7 @@ cmTargetPrecompileHeadersCommand.i: cmTargetPrecompileHeadersCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetPrecompileHeadersCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.i
 .PHONY : cmTargetPrecompileHeadersCommand.cxx.i
 
 cmTargetPrecompileHeadersCommand.s: cmTargetPrecompileHeadersCommand.cxx.s
@@ -9571,7 +9571,7 @@ cmTargetPrecompileHeadersCommand.s: cmTargetPrecompileHeadersCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetPrecompileHeadersCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPrecompileHeadersCommand.cxx.s
 .PHONY : cmTargetPrecompileHeadersCommand.cxx.s
 
 cmTargetPropCommandBase.obj: cmTargetPropCommandBase.cxx.obj
@@ -9579,7 +9579,7 @@ cmTargetPropCommandBase.obj: cmTargetPropCommandBase.cxx.obj
 
 # target to build an object file
 cmTargetPropCommandBase.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.obj
 .PHONY : cmTargetPropCommandBase.cxx.obj
 
 cmTargetPropCommandBase.i: cmTargetPropCommandBase.cxx.i
@@ -9587,7 +9587,7 @@ cmTargetPropCommandBase.i: cmTargetPropCommandBase.cxx.i
 
 # target to preprocess a source file
 cmTargetPropCommandBase.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.i
 .PHONY : cmTargetPropCommandBase.cxx.i
 
 cmTargetPropCommandBase.s: cmTargetPropCommandBase.cxx.s
@@ -9595,7 +9595,7 @@ cmTargetPropCommandBase.s: cmTargetPropCommandBase.cxx.s
 
 # target to generate assembly for a file
 cmTargetPropCommandBase.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropCommandBase.cxx.s
 .PHONY : cmTargetPropCommandBase.cxx.s
 
 cmTargetPropertyComputer.obj: cmTargetPropertyComputer.cxx.obj
@@ -9603,7 +9603,7 @@ cmTargetPropertyComputer.obj: cmTargetPropertyComputer.cxx.obj
 
 # target to build an object file
 cmTargetPropertyComputer.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.obj
 .PHONY : cmTargetPropertyComputer.cxx.obj
 
 cmTargetPropertyComputer.i: cmTargetPropertyComputer.cxx.i
@@ -9611,7 +9611,7 @@ cmTargetPropertyComputer.i: cmTargetPropertyComputer.cxx.i
 
 # target to preprocess a source file
 cmTargetPropertyComputer.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.i
 .PHONY : cmTargetPropertyComputer.cxx.i
 
 cmTargetPropertyComputer.s: cmTargetPropertyComputer.cxx.s
@@ -9619,7 +9619,7 @@ cmTargetPropertyComputer.s: cmTargetPropertyComputer.cxx.s
 
 # target to generate assembly for a file
 cmTargetPropertyComputer.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetPropertyComputer.cxx.s
 .PHONY : cmTargetPropertyComputer.cxx.s
 
 cmTargetSourcesCommand.obj: cmTargetSourcesCommand.cxx.obj
@@ -9627,7 +9627,7 @@ cmTargetSourcesCommand.obj: cmTargetSourcesCommand.cxx.obj
 
 # target to build an object file
 cmTargetSourcesCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.obj
 .PHONY : cmTargetSourcesCommand.cxx.obj
 
 cmTargetSourcesCommand.i: cmTargetSourcesCommand.cxx.i
@@ -9635,7 +9635,7 @@ cmTargetSourcesCommand.i: cmTargetSourcesCommand.cxx.i
 
 # target to preprocess a source file
 cmTargetSourcesCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.i
 .PHONY : cmTargetSourcesCommand.cxx.i
 
 cmTargetSourcesCommand.s: cmTargetSourcesCommand.cxx.s
@@ -9643,7 +9643,7 @@ cmTargetSourcesCommand.s: cmTargetSourcesCommand.cxx.s
 
 # target to generate assembly for a file
 cmTargetSourcesCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTargetSourcesCommand.cxx.s
 .PHONY : cmTargetSourcesCommand.cxx.s
 
 cmTest.obj: cmTest.cxx.obj
@@ -9651,7 +9651,7 @@ cmTest.obj: cmTest.cxx.obj
 
 # target to build an object file
 cmTest.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.obj
 .PHONY : cmTest.cxx.obj
 
 cmTest.i: cmTest.cxx.i
@@ -9659,7 +9659,7 @@ cmTest.i: cmTest.cxx.i
 
 # target to preprocess a source file
 cmTest.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.i
 .PHONY : cmTest.cxx.i
 
 cmTest.s: cmTest.cxx.s
@@ -9667,7 +9667,7 @@ cmTest.s: cmTest.cxx.s
 
 # target to generate assembly for a file
 cmTest.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTest.cxx.s
 .PHONY : cmTest.cxx.s
 
 cmTestGenerator.obj: cmTestGenerator.cxx.obj
@@ -9675,7 +9675,7 @@ cmTestGenerator.obj: cmTestGenerator.cxx.obj
 
 # target to build an object file
 cmTestGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.obj
 .PHONY : cmTestGenerator.cxx.obj
 
 cmTestGenerator.i: cmTestGenerator.cxx.i
@@ -9683,7 +9683,7 @@ cmTestGenerator.i: cmTestGenerator.cxx.i
 
 # target to preprocess a source file
 cmTestGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.i
 .PHONY : cmTestGenerator.cxx.i
 
 cmTestGenerator.s: cmTestGenerator.cxx.s
@@ -9691,7 +9691,7 @@ cmTestGenerator.s: cmTestGenerator.cxx.s
 
 # target to generate assembly for a file
 cmTestGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTestGenerator.cxx.s
 .PHONY : cmTestGenerator.cxx.s
 
 cmTimestamp.obj: cmTimestamp.cxx.obj
@@ -9699,7 +9699,7 @@ cmTimestamp.obj: cmTimestamp.cxx.obj
 
 # target to build an object file
 cmTimestamp.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.obj
 .PHONY : cmTimestamp.cxx.obj
 
 cmTimestamp.i: cmTimestamp.cxx.i
@@ -9707,7 +9707,7 @@ cmTimestamp.i: cmTimestamp.cxx.i
 
 # target to preprocess a source file
 cmTimestamp.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.i
 .PHONY : cmTimestamp.cxx.i
 
 cmTimestamp.s: cmTimestamp.cxx.s
@@ -9715,7 +9715,7 @@ cmTimestamp.s: cmTimestamp.cxx.s
 
 # target to generate assembly for a file
 cmTimestamp.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTimestamp.cxx.s
 .PHONY : cmTimestamp.cxx.s
 
 cmTransformDepfile.obj: cmTransformDepfile.cxx.obj
@@ -9723,7 +9723,7 @@ cmTransformDepfile.obj: cmTransformDepfile.cxx.obj
 
 # target to build an object file
 cmTransformDepfile.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.obj
 .PHONY : cmTransformDepfile.cxx.obj
 
 cmTransformDepfile.i: cmTransformDepfile.cxx.i
@@ -9731,7 +9731,7 @@ cmTransformDepfile.i: cmTransformDepfile.cxx.i
 
 # target to preprocess a source file
 cmTransformDepfile.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.i
 .PHONY : cmTransformDepfile.cxx.i
 
 cmTransformDepfile.s: cmTransformDepfile.cxx.s
@@ -9739,7 +9739,7 @@ cmTransformDepfile.s: cmTransformDepfile.cxx.s
 
 # target to generate assembly for a file
 cmTransformDepfile.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTransformDepfile.cxx.s
 .PHONY : cmTransformDepfile.cxx.s
 
 cmTryCompileCommand.obj: cmTryCompileCommand.cxx.obj
@@ -9747,7 +9747,7 @@ cmTryCompileCommand.obj: cmTryCompileCommand.cxx.obj
 
 # target to build an object file
 cmTryCompileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.obj
 .PHONY : cmTryCompileCommand.cxx.obj
 
 cmTryCompileCommand.i: cmTryCompileCommand.cxx.i
@@ -9755,7 +9755,7 @@ cmTryCompileCommand.i: cmTryCompileCommand.cxx.i
 
 # target to preprocess a source file
 cmTryCompileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.i
 .PHONY : cmTryCompileCommand.cxx.i
 
 cmTryCompileCommand.s: cmTryCompileCommand.cxx.s
@@ -9763,7 +9763,7 @@ cmTryCompileCommand.s: cmTryCompileCommand.cxx.s
 
 # target to generate assembly for a file
 cmTryCompileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryCompileCommand.cxx.s
 .PHONY : cmTryCompileCommand.cxx.s
 
 cmTryRunCommand.obj: cmTryRunCommand.cxx.obj
@@ -9771,7 +9771,7 @@ cmTryRunCommand.obj: cmTryRunCommand.cxx.obj
 
 # target to build an object file
 cmTryRunCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.obj
 .PHONY : cmTryRunCommand.cxx.obj
 
 cmTryRunCommand.i: cmTryRunCommand.cxx.i
@@ -9779,7 +9779,7 @@ cmTryRunCommand.i: cmTryRunCommand.cxx.i
 
 # target to preprocess a source file
 cmTryRunCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.i
 .PHONY : cmTryRunCommand.cxx.i
 
 cmTryRunCommand.s: cmTryRunCommand.cxx.s
@@ -9787,7 +9787,7 @@ cmTryRunCommand.s: cmTryRunCommand.cxx.s
 
 # target to generate assembly for a file
 cmTryRunCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmTryRunCommand.cxx.s
 .PHONY : cmTryRunCommand.cxx.s
 
 cmUVHandlePtr.obj: cmUVHandlePtr.cxx.obj
@@ -9795,7 +9795,7 @@ cmUVHandlePtr.obj: cmUVHandlePtr.cxx.obj
 
 # target to build an object file
 cmUVHandlePtr.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.obj
 .PHONY : cmUVHandlePtr.cxx.obj
 
 cmUVHandlePtr.i: cmUVHandlePtr.cxx.i
@@ -9803,7 +9803,7 @@ cmUVHandlePtr.i: cmUVHandlePtr.cxx.i
 
 # target to preprocess a source file
 cmUVHandlePtr.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.i
 .PHONY : cmUVHandlePtr.cxx.i
 
 cmUVHandlePtr.s: cmUVHandlePtr.cxx.s
@@ -9811,7 +9811,7 @@ cmUVHandlePtr.s: cmUVHandlePtr.cxx.s
 
 # target to generate assembly for a file
 cmUVHandlePtr.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVHandlePtr.cxx.s
 .PHONY : cmUVHandlePtr.cxx.s
 
 cmUVProcessChain.obj: cmUVProcessChain.cxx.obj
@@ -9819,7 +9819,7 @@ cmUVProcessChain.obj: cmUVProcessChain.cxx.obj
 
 # target to build an object file
 cmUVProcessChain.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.obj
 .PHONY : cmUVProcessChain.cxx.obj
 
 cmUVProcessChain.i: cmUVProcessChain.cxx.i
@@ -9827,7 +9827,7 @@ cmUVProcessChain.i: cmUVProcessChain.cxx.i
 
 # target to preprocess a source file
 cmUVProcessChain.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.i
 .PHONY : cmUVProcessChain.cxx.i
 
 cmUVProcessChain.s: cmUVProcessChain.cxx.s
@@ -9835,7 +9835,7 @@ cmUVProcessChain.s: cmUVProcessChain.cxx.s
 
 # target to generate assembly for a file
 cmUVProcessChain.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUVProcessChain.cxx.s
 .PHONY : cmUVProcessChain.cxx.s
 
 cmUnsetCommand.obj: cmUnsetCommand.cxx.obj
@@ -9843,7 +9843,7 @@ cmUnsetCommand.obj: cmUnsetCommand.cxx.obj
 
 # target to build an object file
 cmUnsetCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.obj
 .PHONY : cmUnsetCommand.cxx.obj
 
 cmUnsetCommand.i: cmUnsetCommand.cxx.i
@@ -9851,7 +9851,7 @@ cmUnsetCommand.i: cmUnsetCommand.cxx.i
 
 # target to preprocess a source file
 cmUnsetCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.i
 .PHONY : cmUnsetCommand.cxx.i
 
 cmUnsetCommand.s: cmUnsetCommand.cxx.s
@@ -9859,7 +9859,7 @@ cmUnsetCommand.s: cmUnsetCommand.cxx.s
 
 # target to generate assembly for a file
 cmUnsetCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUnsetCommand.cxx.s
 .PHONY : cmUnsetCommand.cxx.s
 
 cmUseMangledMesaCommand.obj: cmUseMangledMesaCommand.cxx.obj
@@ -9867,7 +9867,7 @@ cmUseMangledMesaCommand.obj: cmUseMangledMesaCommand.cxx.obj
 
 # target to build an object file
 cmUseMangledMesaCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.obj
 .PHONY : cmUseMangledMesaCommand.cxx.obj
 
 cmUseMangledMesaCommand.i: cmUseMangledMesaCommand.cxx.i
@@ -9875,7 +9875,7 @@ cmUseMangledMesaCommand.i: cmUseMangledMesaCommand.cxx.i
 
 # target to preprocess a source file
 cmUseMangledMesaCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.i
 .PHONY : cmUseMangledMesaCommand.cxx.i
 
 cmUseMangledMesaCommand.s: cmUseMangledMesaCommand.cxx.s
@@ -9883,7 +9883,7 @@ cmUseMangledMesaCommand.s: cmUseMangledMesaCommand.cxx.s
 
 # target to generate assembly for a file
 cmUseMangledMesaCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUseMangledMesaCommand.cxx.s
 .PHONY : cmUseMangledMesaCommand.cxx.s
 
 cmUtilitySourceCommand.obj: cmUtilitySourceCommand.cxx.obj
@@ -9891,7 +9891,7 @@ cmUtilitySourceCommand.obj: cmUtilitySourceCommand.cxx.obj
 
 # target to build an object file
 cmUtilitySourceCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.obj
 .PHONY : cmUtilitySourceCommand.cxx.obj
 
 cmUtilitySourceCommand.i: cmUtilitySourceCommand.cxx.i
@@ -9899,7 +9899,7 @@ cmUtilitySourceCommand.i: cmUtilitySourceCommand.cxx.i
 
 # target to preprocess a source file
 cmUtilitySourceCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.i
 .PHONY : cmUtilitySourceCommand.cxx.i
 
 cmUtilitySourceCommand.s: cmUtilitySourceCommand.cxx.s
@@ -9907,7 +9907,7 @@ cmUtilitySourceCommand.s: cmUtilitySourceCommand.cxx.s
 
 # target to generate assembly for a file
 cmUtilitySourceCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUtilitySourceCommand.cxx.s
 .PHONY : cmUtilitySourceCommand.cxx.s
 
 cmUuid.obj: cmUuid.cxx.obj
@@ -9915,7 +9915,7 @@ cmUuid.obj: cmUuid.cxx.obj
 
 # target to build an object file
 cmUuid.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.obj
 .PHONY : cmUuid.cxx.obj
 
 cmUuid.i: cmUuid.cxx.i
@@ -9923,7 +9923,7 @@ cmUuid.i: cmUuid.cxx.i
 
 # target to preprocess a source file
 cmUuid.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.i
 .PHONY : cmUuid.cxx.i
 
 cmUuid.s: cmUuid.cxx.s
@@ -9931,7 +9931,7 @@ cmUuid.s: cmUuid.cxx.s
 
 # target to generate assembly for a file
 cmUuid.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmUuid.cxx.s
 .PHONY : cmUuid.cxx.s
 
 cmVSSetupHelper.obj: cmVSSetupHelper.cxx.obj
@@ -9939,7 +9939,7 @@ cmVSSetupHelper.obj: cmVSSetupHelper.cxx.obj
 
 # target to build an object file
 cmVSSetupHelper.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.obj
 .PHONY : cmVSSetupHelper.cxx.obj
 
 cmVSSetupHelper.i: cmVSSetupHelper.cxx.i
@@ -9947,7 +9947,7 @@ cmVSSetupHelper.i: cmVSSetupHelper.cxx.i
 
 # target to preprocess a source file
 cmVSSetupHelper.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.i
 .PHONY : cmVSSetupHelper.cxx.i
 
 cmVSSetupHelper.s: cmVSSetupHelper.cxx.s
@@ -9955,7 +9955,7 @@ cmVSSetupHelper.s: cmVSSetupHelper.cxx.s
 
 # target to generate assembly for a file
 cmVSSetupHelper.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVSSetupHelper.cxx.s
 .PHONY : cmVSSetupHelper.cxx.s
 
 cmVariableRequiresCommand.obj: cmVariableRequiresCommand.cxx.obj
@@ -9963,7 +9963,7 @@ cmVariableRequiresCommand.obj: cmVariableRequiresCommand.cxx.obj
 
 # target to build an object file
 cmVariableRequiresCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.obj
 .PHONY : cmVariableRequiresCommand.cxx.obj
 
 cmVariableRequiresCommand.i: cmVariableRequiresCommand.cxx.i
@@ -9971,7 +9971,7 @@ cmVariableRequiresCommand.i: cmVariableRequiresCommand.cxx.i
 
 # target to preprocess a source file
 cmVariableRequiresCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.i
 .PHONY : cmVariableRequiresCommand.cxx.i
 
 cmVariableRequiresCommand.s: cmVariableRequiresCommand.cxx.s
@@ -9979,7 +9979,7 @@ cmVariableRequiresCommand.s: cmVariableRequiresCommand.cxx.s
 
 # target to generate assembly for a file
 cmVariableRequiresCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableRequiresCommand.cxx.s
 .PHONY : cmVariableRequiresCommand.cxx.s
 
 cmVariableWatch.obj: cmVariableWatch.cxx.obj
@@ -9987,7 +9987,7 @@ cmVariableWatch.obj: cmVariableWatch.cxx.obj
 
 # target to build an object file
 cmVariableWatch.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.obj
 .PHONY : cmVariableWatch.cxx.obj
 
 cmVariableWatch.i: cmVariableWatch.cxx.i
@@ -9995,7 +9995,7 @@ cmVariableWatch.i: cmVariableWatch.cxx.i
 
 # target to preprocess a source file
 cmVariableWatch.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.i
 .PHONY : cmVariableWatch.cxx.i
 
 cmVariableWatch.s: cmVariableWatch.cxx.s
@@ -10003,7 +10003,7 @@ cmVariableWatch.s: cmVariableWatch.cxx.s
 
 # target to generate assembly for a file
 cmVariableWatch.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatch.cxx.s
 .PHONY : cmVariableWatch.cxx.s
 
 cmVariableWatchCommand.obj: cmVariableWatchCommand.cxx.obj
@@ -10011,7 +10011,7 @@ cmVariableWatchCommand.obj: cmVariableWatchCommand.cxx.obj
 
 # target to build an object file
 cmVariableWatchCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.obj
 .PHONY : cmVariableWatchCommand.cxx.obj
 
 cmVariableWatchCommand.i: cmVariableWatchCommand.cxx.i
@@ -10019,7 +10019,7 @@ cmVariableWatchCommand.i: cmVariableWatchCommand.cxx.i
 
 # target to preprocess a source file
 cmVariableWatchCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.i
 .PHONY : cmVariableWatchCommand.cxx.i
 
 cmVariableWatchCommand.s: cmVariableWatchCommand.cxx.s
@@ -10027,7 +10027,7 @@ cmVariableWatchCommand.s: cmVariableWatchCommand.cxx.s
 
 # target to generate assembly for a file
 cmVariableWatchCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVariableWatchCommand.cxx.s
 .PHONY : cmVariableWatchCommand.cxx.s
 
 cmVersion.obj: cmVersion.cxx.obj
@@ -10035,7 +10035,7 @@ cmVersion.obj: cmVersion.cxx.obj
 
 # target to build an object file
 cmVersion.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.obj
 .PHONY : cmVersion.cxx.obj
 
 cmVersion.i: cmVersion.cxx.i
@@ -10043,7 +10043,7 @@ cmVersion.i: cmVersion.cxx.i
 
 # target to preprocess a source file
 cmVersion.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.i
 .PHONY : cmVersion.cxx.i
 
 cmVersion.s: cmVersion.cxx.s
@@ -10051,7 +10051,7 @@ cmVersion.s: cmVersion.cxx.s
 
 # target to generate assembly for a file
 cmVersion.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVersion.cxx.s
 .PHONY : cmVersion.cxx.s
 
 cmVisualStudio10TargetGenerator.obj: cmVisualStudio10TargetGenerator.cxx.obj
@@ -10059,7 +10059,7 @@ cmVisualStudio10TargetGenerator.obj: cmVisualStudio10TargetGenerator.cxx.obj
 
 # target to build an object file
 cmVisualStudio10TargetGenerator.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.obj
 .PHONY : cmVisualStudio10TargetGenerator.cxx.obj
 
 cmVisualStudio10TargetGenerator.i: cmVisualStudio10TargetGenerator.cxx.i
@@ -10067,7 +10067,7 @@ cmVisualStudio10TargetGenerator.i: cmVisualStudio10TargetGenerator.cxx.i
 
 # target to preprocess a source file
 cmVisualStudio10TargetGenerator.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.i
 .PHONY : cmVisualStudio10TargetGenerator.cxx.i
 
 cmVisualStudio10TargetGenerator.s: cmVisualStudio10TargetGenerator.cxx.s
@@ -10075,7 +10075,7 @@ cmVisualStudio10TargetGenerator.s: cmVisualStudio10TargetGenerator.cxx.s
 
 # target to generate assembly for a file
 cmVisualStudio10TargetGenerator.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudio10TargetGenerator.cxx.s
 .PHONY : cmVisualStudio10TargetGenerator.cxx.s
 
 cmVisualStudioGeneratorOptions.obj: cmVisualStudioGeneratorOptions.cxx.obj
@@ -10083,7 +10083,7 @@ cmVisualStudioGeneratorOptions.obj: cmVisualStudioGeneratorOptions.cxx.obj
 
 # target to build an object file
 cmVisualStudioGeneratorOptions.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.obj
 .PHONY : cmVisualStudioGeneratorOptions.cxx.obj
 
 cmVisualStudioGeneratorOptions.i: cmVisualStudioGeneratorOptions.cxx.i
@@ -10091,7 +10091,7 @@ cmVisualStudioGeneratorOptions.i: cmVisualStudioGeneratorOptions.cxx.i
 
 # target to preprocess a source file
 cmVisualStudioGeneratorOptions.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.i
 .PHONY : cmVisualStudioGeneratorOptions.cxx.i
 
 cmVisualStudioGeneratorOptions.s: cmVisualStudioGeneratorOptions.cxx.s
@@ -10099,7 +10099,7 @@ cmVisualStudioGeneratorOptions.s: cmVisualStudioGeneratorOptions.cxx.s
 
 # target to generate assembly for a file
 cmVisualStudioGeneratorOptions.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioGeneratorOptions.cxx.s
 .PHONY : cmVisualStudioGeneratorOptions.cxx.s
 
 cmVisualStudioSlnData.obj: cmVisualStudioSlnData.cxx.obj
@@ -10107,7 +10107,7 @@ cmVisualStudioSlnData.obj: cmVisualStudioSlnData.cxx.obj
 
 # target to build an object file
 cmVisualStudioSlnData.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.obj
 .PHONY : cmVisualStudioSlnData.cxx.obj
 
 cmVisualStudioSlnData.i: cmVisualStudioSlnData.cxx.i
@@ -10115,7 +10115,7 @@ cmVisualStudioSlnData.i: cmVisualStudioSlnData.cxx.i
 
 # target to preprocess a source file
 cmVisualStudioSlnData.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.i
 .PHONY : cmVisualStudioSlnData.cxx.i
 
 cmVisualStudioSlnData.s: cmVisualStudioSlnData.cxx.s
@@ -10123,7 +10123,7 @@ cmVisualStudioSlnData.s: cmVisualStudioSlnData.cxx.s
 
 # target to generate assembly for a file
 cmVisualStudioSlnData.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnData.cxx.s
 .PHONY : cmVisualStudioSlnData.cxx.s
 
 cmVisualStudioSlnParser.obj: cmVisualStudioSlnParser.cxx.obj
@@ -10131,7 +10131,7 @@ cmVisualStudioSlnParser.obj: cmVisualStudioSlnParser.cxx.obj
 
 # target to build an object file
 cmVisualStudioSlnParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.obj
 .PHONY : cmVisualStudioSlnParser.cxx.obj
 
 cmVisualStudioSlnParser.i: cmVisualStudioSlnParser.cxx.i
@@ -10139,7 +10139,7 @@ cmVisualStudioSlnParser.i: cmVisualStudioSlnParser.cxx.i
 
 # target to preprocess a source file
 cmVisualStudioSlnParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.i
 .PHONY : cmVisualStudioSlnParser.cxx.i
 
 cmVisualStudioSlnParser.s: cmVisualStudioSlnParser.cxx.s
@@ -10147,7 +10147,7 @@ cmVisualStudioSlnParser.s: cmVisualStudioSlnParser.cxx.s
 
 # target to generate assembly for a file
 cmVisualStudioSlnParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioSlnParser.cxx.s
 .PHONY : cmVisualStudioSlnParser.cxx.s
 
 cmVisualStudioWCEPlatformParser.obj: cmVisualStudioWCEPlatformParser.cxx.obj
@@ -10155,7 +10155,7 @@ cmVisualStudioWCEPlatformParser.obj: cmVisualStudioWCEPlatformParser.cxx.obj
 
 # target to build an object file
 cmVisualStudioWCEPlatformParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.obj
 .PHONY : cmVisualStudioWCEPlatformParser.cxx.obj
 
 cmVisualStudioWCEPlatformParser.i: cmVisualStudioWCEPlatformParser.cxx.i
@@ -10163,7 +10163,7 @@ cmVisualStudioWCEPlatformParser.i: cmVisualStudioWCEPlatformParser.cxx.i
 
 # target to preprocess a source file
 cmVisualStudioWCEPlatformParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.i
 .PHONY : cmVisualStudioWCEPlatformParser.cxx.i
 
 cmVisualStudioWCEPlatformParser.s: cmVisualStudioWCEPlatformParser.cxx.s
@@ -10171,7 +10171,7 @@ cmVisualStudioWCEPlatformParser.s: cmVisualStudioWCEPlatformParser.cxx.s
 
 # target to generate assembly for a file
 cmVisualStudioWCEPlatformParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmVisualStudioWCEPlatformParser.cxx.s
 .PHONY : cmVisualStudioWCEPlatformParser.cxx.s
 
 cmWhileCommand.obj: cmWhileCommand.cxx.obj
@@ -10179,7 +10179,7 @@ cmWhileCommand.obj: cmWhileCommand.cxx.obj
 
 # target to build an object file
 cmWhileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.obj
 .PHONY : cmWhileCommand.cxx.obj
 
 cmWhileCommand.i: cmWhileCommand.cxx.i
@@ -10187,7 +10187,7 @@ cmWhileCommand.i: cmWhileCommand.cxx.i
 
 # target to preprocess a source file
 cmWhileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.i
 .PHONY : cmWhileCommand.cxx.i
 
 cmWhileCommand.s: cmWhileCommand.cxx.s
@@ -10195,7 +10195,7 @@ cmWhileCommand.s: cmWhileCommand.cxx.s
 
 # target to generate assembly for a file
 cmWhileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWhileCommand.cxx.s
 .PHONY : cmWhileCommand.cxx.s
 
 cmWorkerPool.obj: cmWorkerPool.cxx.obj
@@ -10203,7 +10203,7 @@ cmWorkerPool.obj: cmWorkerPool.cxx.obj
 
 # target to build an object file
 cmWorkerPool.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.obj
 .PHONY : cmWorkerPool.cxx.obj
 
 cmWorkerPool.i: cmWorkerPool.cxx.i
@@ -10211,7 +10211,7 @@ cmWorkerPool.i: cmWorkerPool.cxx.i
 
 # target to preprocess a source file
 cmWorkerPool.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.i
 .PHONY : cmWorkerPool.cxx.i
 
 cmWorkerPool.s: cmWorkerPool.cxx.s
@@ -10219,7 +10219,7 @@ cmWorkerPool.s: cmWorkerPool.cxx.s
 
 # target to generate assembly for a file
 cmWorkerPool.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkerPool.cxx.s
 .PHONY : cmWorkerPool.cxx.s
 
 cmWorkingDirectory.obj: cmWorkingDirectory.cxx.obj
@@ -10227,7 +10227,7 @@ cmWorkingDirectory.obj: cmWorkingDirectory.cxx.obj
 
 # target to build an object file
 cmWorkingDirectory.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.obj
 .PHONY : cmWorkingDirectory.cxx.obj
 
 cmWorkingDirectory.i: cmWorkingDirectory.cxx.i
@@ -10235,7 +10235,7 @@ cmWorkingDirectory.i: cmWorkingDirectory.cxx.i
 
 # target to preprocess a source file
 cmWorkingDirectory.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.i
 .PHONY : cmWorkingDirectory.cxx.i
 
 cmWorkingDirectory.s: cmWorkingDirectory.cxx.s
@@ -10243,7 +10243,7 @@ cmWorkingDirectory.s: cmWorkingDirectory.cxx.s
 
 # target to generate assembly for a file
 cmWorkingDirectory.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWorkingDirectory.cxx.s
 .PHONY : cmWorkingDirectory.cxx.s
 
 cmWriteFileCommand.obj: cmWriteFileCommand.cxx.obj
@@ -10251,7 +10251,7 @@ cmWriteFileCommand.obj: cmWriteFileCommand.cxx.obj
 
 # target to build an object file
 cmWriteFileCommand.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.obj
 .PHONY : cmWriteFileCommand.cxx.obj
 
 cmWriteFileCommand.i: cmWriteFileCommand.cxx.i
@@ -10259,7 +10259,7 @@ cmWriteFileCommand.i: cmWriteFileCommand.cxx.i
 
 # target to preprocess a source file
 cmWriteFileCommand.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.i
 .PHONY : cmWriteFileCommand.cxx.i
 
 cmWriteFileCommand.s: cmWriteFileCommand.cxx.s
@@ -10267,7 +10267,7 @@ cmWriteFileCommand.s: cmWriteFileCommand.cxx.s
 
 # target to generate assembly for a file
 cmWriteFileCommand.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmWriteFileCommand.cxx.s
 .PHONY : cmWriteFileCommand.cxx.s
 
 cmXMLParser.obj: cmXMLParser.cxx.obj
@@ -10275,7 +10275,7 @@ cmXMLParser.obj: cmXMLParser.cxx.obj
 
 # target to build an object file
 cmXMLParser.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.obj
 .PHONY : cmXMLParser.cxx.obj
 
 cmXMLParser.i: cmXMLParser.cxx.i
@@ -10283,7 +10283,7 @@ cmXMLParser.i: cmXMLParser.cxx.i
 
 # target to preprocess a source file
 cmXMLParser.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.i
 .PHONY : cmXMLParser.cxx.i
 
 cmXMLParser.s: cmXMLParser.cxx.s
@@ -10291,7 +10291,7 @@ cmXMLParser.s: cmXMLParser.cxx.s
 
 # target to generate assembly for a file
 cmXMLParser.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLParser.cxx.s
 .PHONY : cmXMLParser.cxx.s
 
 cmXMLSafe.obj: cmXMLSafe.cxx.obj
@@ -10299,7 +10299,7 @@ cmXMLSafe.obj: cmXMLSafe.cxx.obj
 
 # target to build an object file
 cmXMLSafe.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.obj
 .PHONY : cmXMLSafe.cxx.obj
 
 cmXMLSafe.i: cmXMLSafe.cxx.i
@@ -10307,7 +10307,7 @@ cmXMLSafe.i: cmXMLSafe.cxx.i
 
 # target to preprocess a source file
 cmXMLSafe.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.i
 .PHONY : cmXMLSafe.cxx.i
 
 cmXMLSafe.s: cmXMLSafe.cxx.s
@@ -10315,7 +10315,7 @@ cmXMLSafe.s: cmXMLSafe.cxx.s
 
 # target to generate assembly for a file
 cmXMLSafe.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLSafe.cxx.s
 .PHONY : cmXMLSafe.cxx.s
 
 cmXMLWriter.obj: cmXMLWriter.cxx.obj
@@ -10323,7 +10323,7 @@ cmXMLWriter.obj: cmXMLWriter.cxx.obj
 
 # target to build an object file
 cmXMLWriter.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.obj
 .PHONY : cmXMLWriter.cxx.obj
 
 cmXMLWriter.i: cmXMLWriter.cxx.i
@@ -10331,7 +10331,7 @@ cmXMLWriter.i: cmXMLWriter.cxx.i
 
 # target to preprocess a source file
 cmXMLWriter.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.i
 .PHONY : cmXMLWriter.cxx.i
 
 cmXMLWriter.s: cmXMLWriter.cxx.s
@@ -10339,7 +10339,7 @@ cmXMLWriter.s: cmXMLWriter.cxx.s
 
 # target to generate assembly for a file
 cmXMLWriter.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmXMLWriter.cxx.s
 .PHONY : cmXMLWriter.cxx.s
 
 cm_codecvt.obj: cm_codecvt.cxx.obj
@@ -10347,7 +10347,7 @@ cm_codecvt.obj: cm_codecvt.cxx.obj
 
 # target to build an object file
 cm_codecvt.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.obj
 .PHONY : cm_codecvt.cxx.obj
 
 cm_codecvt.i: cm_codecvt.cxx.i
@@ -10355,7 +10355,7 @@ cm_codecvt.i: cm_codecvt.cxx.i
 
 # target to preprocess a source file
 cm_codecvt.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.i
 .PHONY : cm_codecvt.cxx.i
 
 cm_codecvt.s: cm_codecvt.cxx.s
@@ -10363,7 +10363,7 @@ cm_codecvt.s: cm_codecvt.cxx.s
 
 # target to generate assembly for a file
 cm_codecvt.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_codecvt.cxx.s
 .PHONY : cm_codecvt.cxx.s
 
 cm_get_date.obj: cm_get_date.c.obj
@@ -10371,7 +10371,7 @@ cm_get_date.obj: cm_get_date.c.obj
 
 # target to build an object file
 cm_get_date.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.obj
 .PHONY : cm_get_date.c.obj
 
 cm_get_date.i: cm_get_date.c.i
@@ -10379,7 +10379,7 @@ cm_get_date.i: cm_get_date.c.i
 
 # target to preprocess a source file
 cm_get_date.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.i
 .PHONY : cm_get_date.c.i
 
 cm_get_date.s: cm_get_date.c.s
@@ -10387,7 +10387,7 @@ cm_get_date.s: cm_get_date.c.s
 
 # target to generate assembly for a file
 cm_get_date.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_get_date.c.s
 .PHONY : cm_get_date.c.s
 
 cm_utf8.obj: cm_utf8.c.obj
@@ -10395,7 +10395,7 @@ cm_utf8.obj: cm_utf8.c.obj
 
 # target to build an object file
 cm_utf8.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.obj
 .PHONY : cm_utf8.c.obj
 
 cm_utf8.i: cm_utf8.c.i
@@ -10403,7 +10403,7 @@ cm_utf8.i: cm_utf8.c.i
 
 # target to preprocess a source file
 cm_utf8.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.i
 .PHONY : cm_utf8.c.i
 
 cm_utf8.s: cm_utf8.c.s
@@ -10411,7 +10411,7 @@ cm_utf8.s: cm_utf8.c.s
 
 # target to generate assembly for a file
 cm_utf8.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cm_utf8.c.s
 .PHONY : cm_utf8.c.s
 
 cmake.obj: cmake.cxx.obj
@@ -10419,7 +10419,7 @@ cmake.obj: cmake.cxx.obj
 
 # target to build an object file
 cmake.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.obj
 .PHONY : cmake.cxx.obj
 
 cmake.i: cmake.cxx.i
@@ -10427,7 +10427,7 @@ cmake.i: cmake.cxx.i
 
 # target to preprocess a source file
 cmake.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.i
 .PHONY : cmake.cxx.i
 
 cmake.s: cmake.cxx.s
@@ -10435,7 +10435,7 @@ cmake.s: cmake.cxx.s
 
 # target to generate assembly for a file
 cmake.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\CMakeLib.dir\build.make Source/CMakeFiles/CMakeLib.dir/cmake.cxx.s
 .PHONY : cmake.cxx.s
 
 cmakemain.obj: cmakemain.cxx.obj
@@ -10443,7 +10443,7 @@ cmakemain.obj: cmakemain.cxx.obj
 
 # target to build an object file
 cmakemain.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.obj
 .PHONY : cmakemain.cxx.obj
 
 cmakemain.i: cmakemain.cxx.i
@@ -10451,7 +10451,7 @@ cmakemain.i: cmakemain.cxx.i
 
 # target to preprocess a source file
 cmakemain.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.i
 .PHONY : cmakemain.cxx.i
 
 cmakemain.s: cmakemain.cxx.s
@@ -10459,7 +10459,7 @@ cmakemain.s: cmakemain.cxx.s
 
 # target to generate assembly for a file
 cmakemain.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmakemain.cxx.s
 .PHONY : cmakemain.cxx.s
 
 cmcldeps.obj: cmcldeps.cxx.obj
@@ -10467,7 +10467,7 @@ cmcldeps.obj: cmcldeps.cxx.obj
 
 # target to build an object file
 cmcldeps.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.obj
 .PHONY : cmcldeps.cxx.obj
 
 cmcldeps.i: cmcldeps.cxx.i
@@ -10475,7 +10475,7 @@ cmcldeps.i: cmcldeps.cxx.i
 
 # target to preprocess a source file
 cmcldeps.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.i
 .PHONY : cmcldeps.cxx.i
 
 cmcldeps.s: cmcldeps.cxx.s
@@ -10483,7 +10483,7 @@ cmcldeps.s: cmcldeps.cxx.s
 
 # target to generate assembly for a file
 cmcldeps.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmcldeps.dir\build.make Source/CMakeFiles/cmcldeps.dir/cmcldeps.cxx.s
 .PHONY : cmcldeps.cxx.s
 
 cmcmd.obj: cmcmd.cxx.obj
@@ -10491,7 +10491,7 @@ cmcmd.obj: cmcmd.cxx.obj
 
 # target to build an object file
 cmcmd.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.obj
 .PHONY : cmcmd.cxx.obj
 
 cmcmd.i: cmcmd.cxx.i
@@ -10499,7 +10499,7 @@ cmcmd.i: cmcmd.cxx.i
 
 # target to preprocess a source file
 cmcmd.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.i
 .PHONY : cmcmd.cxx.i
 
 cmcmd.s: cmcmd.cxx.s
@@ -10507,7 +10507,7 @@ cmcmd.s: cmcmd.cxx.s
 
 # target to generate assembly for a file
 cmcmd.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\cmake.dir\build.make Source/CMakeFiles/cmake.dir/cmcmd.cxx.s
 .PHONY : cmcmd.cxx.s
 
 ctest.obj: ctest.cxx.obj
@@ -10515,7 +10515,7 @@ ctest.obj: ctest.cxx.obj
 
 # target to build an object file
 ctest.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.obj
 .PHONY : ctest.cxx.obj
 
 ctest.i: ctest.cxx.i
@@ -10523,7 +10523,7 @@ ctest.i: ctest.cxx.i
 
 # target to preprocess a source file
 ctest.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.i
 .PHONY : ctest.cxx.i
 
 ctest.s: ctest.cxx.s
@@ -10531,7 +10531,7 @@ ctest.s: ctest.cxx.s
 
 # target to generate assembly for a file
 ctest.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Source\CMakeFiles\ctest.dir\build.make Source/CMakeFiles/ctest.dir/ctest.cxx.s
 .PHONY : ctest.cxx.s
 
 # Help Target
@@ -11847,6 +11847,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

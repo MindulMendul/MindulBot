@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/std/CMakeFiles/cmstd.dir/depend.make
@@ -70,33 +70,33 @@ include Utilities/std/CMakeFiles/cmstd.dir/flags.make
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/flags.make
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/includes_CXX.rsp
-Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/std/cm/bits/fs_path.cxx
+Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/std/cm/bits/fs_path.cxx
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj -MF CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.obj.d -o CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj -MF CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.obj.d -o CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx > CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx > CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.i
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx -o CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\fs_path.cxx -o CMakeFiles\cmstd.dir\cm\bits\fs_path.cxx.s
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/flags.make
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/includes_CXX.rsp
-Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/std/cm/bits/string_view.cxx
+Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/std/cm/bits/string_view.cxx
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj: Utilities/std/CMakeFiles/cmstd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj -MF CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.obj.d -o CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj -MF CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.obj.d -o CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx > CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx > CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.i
 
 Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx -o CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std\cm\bits\string_view.cxx -o CMakeFiles\cmstd.dir\cm\bits\string_view.cxx.s
 
 # Object files for target cmstd
 cmstd_OBJECTS = \
@@ -110,19 +110,19 @@ Utilities/std/libcmstd.a: Utilities/std/CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx
 Utilities/std/libcmstd.a: Utilities/std/CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj
 Utilities/std/libcmstd.a: Utilities/std/CMakeFiles/cmstd.dir/build.make
 Utilities/std/libcmstd.a: Utilities/std/CMakeFiles/cmstd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcmstd.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && $(CMAKE_COMMAND) -P CMakeFiles\cmstd.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmstd.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcmstd.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && $(CMAKE_COMMAND) -P CMakeFiles\cmstd.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmstd.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/std/CMakeFiles/cmstd.dir/build: Utilities/std/libcmstd.a
 .PHONY : Utilities/std/CMakeFiles/cmstd.dir/build
 
 Utilities/std/CMakeFiles/cmstd.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std && $(CMAKE_COMMAND) -P CMakeFiles\cmstd.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std && $(CMAKE_COMMAND) -P CMakeFiles\cmstd.dir\cmake_clean.cmake
 .PHONY : Utilities/std/CMakeFiles/cmstd.dir/clean
 
 Utilities/std/CMakeFiles/cmstd.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\std\CMakeFiles\cmstd.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\std C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\std\CMakeFiles\cmstd.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/std/CMakeFiles/cmstd.dir/depend
 

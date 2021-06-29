@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmnghttp2\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmnghttp2\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/rule
 .PHONY : Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmnghttp2: Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/rule
 
 # fast build rule for target.
 cmnghttp2/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/build
 .PHONY : cmnghttp2/fast
 
 lib/nghttp2_buf.obj: lib/nghttp2_buf.c.obj
@@ -209,7 +209,7 @@ lib/nghttp2_buf.obj: lib/nghttp2_buf.c.obj
 
 # target to build an object file
 lib/nghttp2_buf.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.obj
 .PHONY : lib/nghttp2_buf.c.obj
 
 lib/nghttp2_buf.i: lib/nghttp2_buf.c.i
@@ -217,7 +217,7 @@ lib/nghttp2_buf.i: lib/nghttp2_buf.c.i
 
 # target to preprocess a source file
 lib/nghttp2_buf.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.i
 .PHONY : lib/nghttp2_buf.c.i
 
 lib/nghttp2_buf.s: lib/nghttp2_buf.c.s
@@ -225,7 +225,7 @@ lib/nghttp2_buf.s: lib/nghttp2_buf.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_buf.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_buf.c.s
 .PHONY : lib/nghttp2_buf.c.s
 
 lib/nghttp2_callbacks.obj: lib/nghttp2_callbacks.c.obj
@@ -233,7 +233,7 @@ lib/nghttp2_callbacks.obj: lib/nghttp2_callbacks.c.obj
 
 # target to build an object file
 lib/nghttp2_callbacks.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.obj
 .PHONY : lib/nghttp2_callbacks.c.obj
 
 lib/nghttp2_callbacks.i: lib/nghttp2_callbacks.c.i
@@ -241,7 +241,7 @@ lib/nghttp2_callbacks.i: lib/nghttp2_callbacks.c.i
 
 # target to preprocess a source file
 lib/nghttp2_callbacks.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.i
 .PHONY : lib/nghttp2_callbacks.c.i
 
 lib/nghttp2_callbacks.s: lib/nghttp2_callbacks.c.s
@@ -249,7 +249,7 @@ lib/nghttp2_callbacks.s: lib/nghttp2_callbacks.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_callbacks.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_callbacks.c.s
 .PHONY : lib/nghttp2_callbacks.c.s
 
 lib/nghttp2_debug.obj: lib/nghttp2_debug.c.obj
@@ -257,7 +257,7 @@ lib/nghttp2_debug.obj: lib/nghttp2_debug.c.obj
 
 # target to build an object file
 lib/nghttp2_debug.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.obj
 .PHONY : lib/nghttp2_debug.c.obj
 
 lib/nghttp2_debug.i: lib/nghttp2_debug.c.i
@@ -265,7 +265,7 @@ lib/nghttp2_debug.i: lib/nghttp2_debug.c.i
 
 # target to preprocess a source file
 lib/nghttp2_debug.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.i
 .PHONY : lib/nghttp2_debug.c.i
 
 lib/nghttp2_debug.s: lib/nghttp2_debug.c.s
@@ -273,7 +273,7 @@ lib/nghttp2_debug.s: lib/nghttp2_debug.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_debug.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_debug.c.s
 .PHONY : lib/nghttp2_debug.c.s
 
 lib/nghttp2_frame.obj: lib/nghttp2_frame.c.obj
@@ -281,7 +281,7 @@ lib/nghttp2_frame.obj: lib/nghttp2_frame.c.obj
 
 # target to build an object file
 lib/nghttp2_frame.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.obj
 .PHONY : lib/nghttp2_frame.c.obj
 
 lib/nghttp2_frame.i: lib/nghttp2_frame.c.i
@@ -289,7 +289,7 @@ lib/nghttp2_frame.i: lib/nghttp2_frame.c.i
 
 # target to preprocess a source file
 lib/nghttp2_frame.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.i
 .PHONY : lib/nghttp2_frame.c.i
 
 lib/nghttp2_frame.s: lib/nghttp2_frame.c.s
@@ -297,7 +297,7 @@ lib/nghttp2_frame.s: lib/nghttp2_frame.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_frame.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_frame.c.s
 .PHONY : lib/nghttp2_frame.c.s
 
 lib/nghttp2_hd.obj: lib/nghttp2_hd.c.obj
@@ -305,7 +305,7 @@ lib/nghttp2_hd.obj: lib/nghttp2_hd.c.obj
 
 # target to build an object file
 lib/nghttp2_hd.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.obj
 .PHONY : lib/nghttp2_hd.c.obj
 
 lib/nghttp2_hd.i: lib/nghttp2_hd.c.i
@@ -313,7 +313,7 @@ lib/nghttp2_hd.i: lib/nghttp2_hd.c.i
 
 # target to preprocess a source file
 lib/nghttp2_hd.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.i
 .PHONY : lib/nghttp2_hd.c.i
 
 lib/nghttp2_hd.s: lib/nghttp2_hd.c.s
@@ -321,7 +321,7 @@ lib/nghttp2_hd.s: lib/nghttp2_hd.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_hd.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd.c.s
 .PHONY : lib/nghttp2_hd.c.s
 
 lib/nghttp2_hd_huffman.obj: lib/nghttp2_hd_huffman.c.obj
@@ -329,7 +329,7 @@ lib/nghttp2_hd_huffman.obj: lib/nghttp2_hd_huffman.c.obj
 
 # target to build an object file
 lib/nghttp2_hd_huffman.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.obj
 .PHONY : lib/nghttp2_hd_huffman.c.obj
 
 lib/nghttp2_hd_huffman.i: lib/nghttp2_hd_huffman.c.i
@@ -337,7 +337,7 @@ lib/nghttp2_hd_huffman.i: lib/nghttp2_hd_huffman.c.i
 
 # target to preprocess a source file
 lib/nghttp2_hd_huffman.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.i
 .PHONY : lib/nghttp2_hd_huffman.c.i
 
 lib/nghttp2_hd_huffman.s: lib/nghttp2_hd_huffman.c.s
@@ -345,7 +345,7 @@ lib/nghttp2_hd_huffman.s: lib/nghttp2_hd_huffman.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_hd_huffman.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman.c.s
 .PHONY : lib/nghttp2_hd_huffman.c.s
 
 lib/nghttp2_hd_huffman_data.obj: lib/nghttp2_hd_huffman_data.c.obj
@@ -353,7 +353,7 @@ lib/nghttp2_hd_huffman_data.obj: lib/nghttp2_hd_huffman_data.c.obj
 
 # target to build an object file
 lib/nghttp2_hd_huffman_data.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.obj
 .PHONY : lib/nghttp2_hd_huffman_data.c.obj
 
 lib/nghttp2_hd_huffman_data.i: lib/nghttp2_hd_huffman_data.c.i
@@ -361,7 +361,7 @@ lib/nghttp2_hd_huffman_data.i: lib/nghttp2_hd_huffman_data.c.i
 
 # target to preprocess a source file
 lib/nghttp2_hd_huffman_data.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.i
 .PHONY : lib/nghttp2_hd_huffman_data.c.i
 
 lib/nghttp2_hd_huffman_data.s: lib/nghttp2_hd_huffman_data.c.s
@@ -369,7 +369,7 @@ lib/nghttp2_hd_huffman_data.s: lib/nghttp2_hd_huffman_data.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_hd_huffman_data.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_hd_huffman_data.c.s
 .PHONY : lib/nghttp2_hd_huffman_data.c.s
 
 lib/nghttp2_helper.obj: lib/nghttp2_helper.c.obj
@@ -377,7 +377,7 @@ lib/nghttp2_helper.obj: lib/nghttp2_helper.c.obj
 
 # target to build an object file
 lib/nghttp2_helper.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.obj
 .PHONY : lib/nghttp2_helper.c.obj
 
 lib/nghttp2_helper.i: lib/nghttp2_helper.c.i
@@ -385,7 +385,7 @@ lib/nghttp2_helper.i: lib/nghttp2_helper.c.i
 
 # target to preprocess a source file
 lib/nghttp2_helper.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.i
 .PHONY : lib/nghttp2_helper.c.i
 
 lib/nghttp2_helper.s: lib/nghttp2_helper.c.s
@@ -393,7 +393,7 @@ lib/nghttp2_helper.s: lib/nghttp2_helper.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_helper.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_helper.c.s
 .PHONY : lib/nghttp2_helper.c.s
 
 lib/nghttp2_http.obj: lib/nghttp2_http.c.obj
@@ -401,7 +401,7 @@ lib/nghttp2_http.obj: lib/nghttp2_http.c.obj
 
 # target to build an object file
 lib/nghttp2_http.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.obj
 .PHONY : lib/nghttp2_http.c.obj
 
 lib/nghttp2_http.i: lib/nghttp2_http.c.i
@@ -409,7 +409,7 @@ lib/nghttp2_http.i: lib/nghttp2_http.c.i
 
 # target to preprocess a source file
 lib/nghttp2_http.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.i
 .PHONY : lib/nghttp2_http.c.i
 
 lib/nghttp2_http.s: lib/nghttp2_http.c.s
@@ -417,7 +417,7 @@ lib/nghttp2_http.s: lib/nghttp2_http.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_http.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_http.c.s
 .PHONY : lib/nghttp2_http.c.s
 
 lib/nghttp2_map.obj: lib/nghttp2_map.c.obj
@@ -425,7 +425,7 @@ lib/nghttp2_map.obj: lib/nghttp2_map.c.obj
 
 # target to build an object file
 lib/nghttp2_map.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.obj
 .PHONY : lib/nghttp2_map.c.obj
 
 lib/nghttp2_map.i: lib/nghttp2_map.c.i
@@ -433,7 +433,7 @@ lib/nghttp2_map.i: lib/nghttp2_map.c.i
 
 # target to preprocess a source file
 lib/nghttp2_map.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.i
 .PHONY : lib/nghttp2_map.c.i
 
 lib/nghttp2_map.s: lib/nghttp2_map.c.s
@@ -441,7 +441,7 @@ lib/nghttp2_map.s: lib/nghttp2_map.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_map.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_map.c.s
 .PHONY : lib/nghttp2_map.c.s
 
 lib/nghttp2_mem.obj: lib/nghttp2_mem.c.obj
@@ -449,7 +449,7 @@ lib/nghttp2_mem.obj: lib/nghttp2_mem.c.obj
 
 # target to build an object file
 lib/nghttp2_mem.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.obj
 .PHONY : lib/nghttp2_mem.c.obj
 
 lib/nghttp2_mem.i: lib/nghttp2_mem.c.i
@@ -457,7 +457,7 @@ lib/nghttp2_mem.i: lib/nghttp2_mem.c.i
 
 # target to preprocess a source file
 lib/nghttp2_mem.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.i
 .PHONY : lib/nghttp2_mem.c.i
 
 lib/nghttp2_mem.s: lib/nghttp2_mem.c.s
@@ -465,7 +465,7 @@ lib/nghttp2_mem.s: lib/nghttp2_mem.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_mem.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_mem.c.s
 .PHONY : lib/nghttp2_mem.c.s
 
 lib/nghttp2_npn.obj: lib/nghttp2_npn.c.obj
@@ -473,7 +473,7 @@ lib/nghttp2_npn.obj: lib/nghttp2_npn.c.obj
 
 # target to build an object file
 lib/nghttp2_npn.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.obj
 .PHONY : lib/nghttp2_npn.c.obj
 
 lib/nghttp2_npn.i: lib/nghttp2_npn.c.i
@@ -481,7 +481,7 @@ lib/nghttp2_npn.i: lib/nghttp2_npn.c.i
 
 # target to preprocess a source file
 lib/nghttp2_npn.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.i
 .PHONY : lib/nghttp2_npn.c.i
 
 lib/nghttp2_npn.s: lib/nghttp2_npn.c.s
@@ -489,7 +489,7 @@ lib/nghttp2_npn.s: lib/nghttp2_npn.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_npn.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_npn.c.s
 .PHONY : lib/nghttp2_npn.c.s
 
 lib/nghttp2_option.obj: lib/nghttp2_option.c.obj
@@ -497,7 +497,7 @@ lib/nghttp2_option.obj: lib/nghttp2_option.c.obj
 
 # target to build an object file
 lib/nghttp2_option.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.obj
 .PHONY : lib/nghttp2_option.c.obj
 
 lib/nghttp2_option.i: lib/nghttp2_option.c.i
@@ -505,7 +505,7 @@ lib/nghttp2_option.i: lib/nghttp2_option.c.i
 
 # target to preprocess a source file
 lib/nghttp2_option.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.i
 .PHONY : lib/nghttp2_option.c.i
 
 lib/nghttp2_option.s: lib/nghttp2_option.c.s
@@ -513,7 +513,7 @@ lib/nghttp2_option.s: lib/nghttp2_option.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_option.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_option.c.s
 .PHONY : lib/nghttp2_option.c.s
 
 lib/nghttp2_outbound_item.obj: lib/nghttp2_outbound_item.c.obj
@@ -521,7 +521,7 @@ lib/nghttp2_outbound_item.obj: lib/nghttp2_outbound_item.c.obj
 
 # target to build an object file
 lib/nghttp2_outbound_item.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.obj
 .PHONY : lib/nghttp2_outbound_item.c.obj
 
 lib/nghttp2_outbound_item.i: lib/nghttp2_outbound_item.c.i
@@ -529,7 +529,7 @@ lib/nghttp2_outbound_item.i: lib/nghttp2_outbound_item.c.i
 
 # target to preprocess a source file
 lib/nghttp2_outbound_item.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.i
 .PHONY : lib/nghttp2_outbound_item.c.i
 
 lib/nghttp2_outbound_item.s: lib/nghttp2_outbound_item.c.s
@@ -537,7 +537,7 @@ lib/nghttp2_outbound_item.s: lib/nghttp2_outbound_item.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_outbound_item.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_outbound_item.c.s
 .PHONY : lib/nghttp2_outbound_item.c.s
 
 lib/nghttp2_pq.obj: lib/nghttp2_pq.c.obj
@@ -545,7 +545,7 @@ lib/nghttp2_pq.obj: lib/nghttp2_pq.c.obj
 
 # target to build an object file
 lib/nghttp2_pq.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.obj
 .PHONY : lib/nghttp2_pq.c.obj
 
 lib/nghttp2_pq.i: lib/nghttp2_pq.c.i
@@ -553,7 +553,7 @@ lib/nghttp2_pq.i: lib/nghttp2_pq.c.i
 
 # target to preprocess a source file
 lib/nghttp2_pq.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.i
 .PHONY : lib/nghttp2_pq.c.i
 
 lib/nghttp2_pq.s: lib/nghttp2_pq.c.s
@@ -561,7 +561,7 @@ lib/nghttp2_pq.s: lib/nghttp2_pq.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_pq.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_pq.c.s
 .PHONY : lib/nghttp2_pq.c.s
 
 lib/nghttp2_priority_spec.obj: lib/nghttp2_priority_spec.c.obj
@@ -569,7 +569,7 @@ lib/nghttp2_priority_spec.obj: lib/nghttp2_priority_spec.c.obj
 
 # target to build an object file
 lib/nghttp2_priority_spec.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.obj
 .PHONY : lib/nghttp2_priority_spec.c.obj
 
 lib/nghttp2_priority_spec.i: lib/nghttp2_priority_spec.c.i
@@ -577,7 +577,7 @@ lib/nghttp2_priority_spec.i: lib/nghttp2_priority_spec.c.i
 
 # target to preprocess a source file
 lib/nghttp2_priority_spec.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.i
 .PHONY : lib/nghttp2_priority_spec.c.i
 
 lib/nghttp2_priority_spec.s: lib/nghttp2_priority_spec.c.s
@@ -585,7 +585,7 @@ lib/nghttp2_priority_spec.s: lib/nghttp2_priority_spec.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_priority_spec.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_priority_spec.c.s
 .PHONY : lib/nghttp2_priority_spec.c.s
 
 lib/nghttp2_queue.obj: lib/nghttp2_queue.c.obj
@@ -593,7 +593,7 @@ lib/nghttp2_queue.obj: lib/nghttp2_queue.c.obj
 
 # target to build an object file
 lib/nghttp2_queue.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.obj
 .PHONY : lib/nghttp2_queue.c.obj
 
 lib/nghttp2_queue.i: lib/nghttp2_queue.c.i
@@ -601,7 +601,7 @@ lib/nghttp2_queue.i: lib/nghttp2_queue.c.i
 
 # target to preprocess a source file
 lib/nghttp2_queue.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.i
 .PHONY : lib/nghttp2_queue.c.i
 
 lib/nghttp2_queue.s: lib/nghttp2_queue.c.s
@@ -609,7 +609,7 @@ lib/nghttp2_queue.s: lib/nghttp2_queue.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_queue.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_queue.c.s
 .PHONY : lib/nghttp2_queue.c.s
 
 lib/nghttp2_rcbuf.obj: lib/nghttp2_rcbuf.c.obj
@@ -617,7 +617,7 @@ lib/nghttp2_rcbuf.obj: lib/nghttp2_rcbuf.c.obj
 
 # target to build an object file
 lib/nghttp2_rcbuf.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.obj
 .PHONY : lib/nghttp2_rcbuf.c.obj
 
 lib/nghttp2_rcbuf.i: lib/nghttp2_rcbuf.c.i
@@ -625,7 +625,7 @@ lib/nghttp2_rcbuf.i: lib/nghttp2_rcbuf.c.i
 
 # target to preprocess a source file
 lib/nghttp2_rcbuf.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.i
 .PHONY : lib/nghttp2_rcbuf.c.i
 
 lib/nghttp2_rcbuf.s: lib/nghttp2_rcbuf.c.s
@@ -633,7 +633,7 @@ lib/nghttp2_rcbuf.s: lib/nghttp2_rcbuf.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_rcbuf.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_rcbuf.c.s
 .PHONY : lib/nghttp2_rcbuf.c.s
 
 lib/nghttp2_session.obj: lib/nghttp2_session.c.obj
@@ -641,7 +641,7 @@ lib/nghttp2_session.obj: lib/nghttp2_session.c.obj
 
 # target to build an object file
 lib/nghttp2_session.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.obj
 .PHONY : lib/nghttp2_session.c.obj
 
 lib/nghttp2_session.i: lib/nghttp2_session.c.i
@@ -649,7 +649,7 @@ lib/nghttp2_session.i: lib/nghttp2_session.c.i
 
 # target to preprocess a source file
 lib/nghttp2_session.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.i
 .PHONY : lib/nghttp2_session.c.i
 
 lib/nghttp2_session.s: lib/nghttp2_session.c.s
@@ -657,7 +657,7 @@ lib/nghttp2_session.s: lib/nghttp2_session.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_session.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_session.c.s
 .PHONY : lib/nghttp2_session.c.s
 
 lib/nghttp2_stream.obj: lib/nghttp2_stream.c.obj
@@ -665,7 +665,7 @@ lib/nghttp2_stream.obj: lib/nghttp2_stream.c.obj
 
 # target to build an object file
 lib/nghttp2_stream.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.obj
 .PHONY : lib/nghttp2_stream.c.obj
 
 lib/nghttp2_stream.i: lib/nghttp2_stream.c.i
@@ -673,7 +673,7 @@ lib/nghttp2_stream.i: lib/nghttp2_stream.c.i
 
 # target to preprocess a source file
 lib/nghttp2_stream.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.i
 .PHONY : lib/nghttp2_stream.c.i
 
 lib/nghttp2_stream.s: lib/nghttp2_stream.c.s
@@ -681,7 +681,7 @@ lib/nghttp2_stream.s: lib/nghttp2_stream.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_stream.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_stream.c.s
 .PHONY : lib/nghttp2_stream.c.s
 
 lib/nghttp2_submit.obj: lib/nghttp2_submit.c.obj
@@ -689,7 +689,7 @@ lib/nghttp2_submit.obj: lib/nghttp2_submit.c.obj
 
 # target to build an object file
 lib/nghttp2_submit.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.obj
 .PHONY : lib/nghttp2_submit.c.obj
 
 lib/nghttp2_submit.i: lib/nghttp2_submit.c.i
@@ -697,7 +697,7 @@ lib/nghttp2_submit.i: lib/nghttp2_submit.c.i
 
 # target to preprocess a source file
 lib/nghttp2_submit.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.i
 .PHONY : lib/nghttp2_submit.c.i
 
 lib/nghttp2_submit.s: lib/nghttp2_submit.c.s
@@ -705,7 +705,7 @@ lib/nghttp2_submit.s: lib/nghttp2_submit.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_submit.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_submit.c.s
 .PHONY : lib/nghttp2_submit.c.s
 
 lib/nghttp2_version.obj: lib/nghttp2_version.c.obj
@@ -713,7 +713,7 @@ lib/nghttp2_version.obj: lib/nghttp2_version.c.obj
 
 # target to build an object file
 lib/nghttp2_version.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.obj
 .PHONY : lib/nghttp2_version.c.obj
 
 lib/nghttp2_version.i: lib/nghttp2_version.c.i
@@ -721,7 +721,7 @@ lib/nghttp2_version.i: lib/nghttp2_version.c.i
 
 # target to preprocess a source file
 lib/nghttp2_version.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.i
 .PHONY : lib/nghttp2_version.c.i
 
 lib/nghttp2_version.s: lib/nghttp2_version.c.s
@@ -729,7 +729,7 @@ lib/nghttp2_version.s: lib/nghttp2_version.c.s
 
 # target to generate assembly for a file
 lib/nghttp2_version.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmnghttp2\CMakeFiles\cmnghttp2.dir\build.make Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/lib/nghttp2_version.c.s
 .PHONY : lib/nghttp2_version.c.s
 
 # Help Target
@@ -825,6 +825,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

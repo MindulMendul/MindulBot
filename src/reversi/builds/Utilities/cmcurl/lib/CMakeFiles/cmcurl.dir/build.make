@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/depend.make
@@ -70,2313 +70,2313 @@ include Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/altsvc.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/altsvc.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj -MF CMakeFiles\cmcurl.dir\altsvc.c.obj.d -o CMakeFiles\cmcurl.dir\altsvc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.obj -MF CMakeFiles\cmcurl.dir\altsvc.c.obj.d -o CMakeFiles\cmcurl.dir\altsvc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/altsvc.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c > CMakeFiles\cmcurl.dir\altsvc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c > CMakeFiles\cmcurl.dir\altsvc.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/altsvc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/altsvc.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c -o CMakeFiles\cmcurl.dir\altsvc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\altsvc.c -o CMakeFiles\cmcurl.dir\altsvc.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/amigaos.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/amigaos.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj -MF CMakeFiles\cmcurl.dir\amigaos.c.obj.d -o CMakeFiles\cmcurl.dir\amigaos.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.obj -MF CMakeFiles\cmcurl.dir\amigaos.c.obj.d -o CMakeFiles\cmcurl.dir\amigaos.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/amigaos.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c > CMakeFiles\cmcurl.dir\amigaos.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c > CMakeFiles\cmcurl.dir\amigaos.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/amigaos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/amigaos.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c -o CMakeFiles\cmcurl.dir\amigaos.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\amigaos.c -o CMakeFiles\cmcurl.dir\amigaos.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/asyn-ares.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/asyn-ares.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj -MF CMakeFiles\cmcurl.dir\asyn-ares.c.obj.d -o CMakeFiles\cmcurl.dir\asyn-ares.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.obj -MF CMakeFiles\cmcurl.dir\asyn-ares.c.obj.d -o CMakeFiles\cmcurl.dir\asyn-ares.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/asyn-ares.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c > CMakeFiles\cmcurl.dir\asyn-ares.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c > CMakeFiles\cmcurl.dir\asyn-ares.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-ares.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/asyn-ares.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c -o CMakeFiles\cmcurl.dir\asyn-ares.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-ares.c -o CMakeFiles\cmcurl.dir\asyn-ares.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/asyn-thread.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/asyn-thread.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj -MF CMakeFiles\cmcurl.dir\asyn-thread.c.obj.d -o CMakeFiles\cmcurl.dir\asyn-thread.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.obj -MF CMakeFiles\cmcurl.dir\asyn-thread.c.obj.d -o CMakeFiles\cmcurl.dir\asyn-thread.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/asyn-thread.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c > CMakeFiles\cmcurl.dir\asyn-thread.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c > CMakeFiles\cmcurl.dir\asyn-thread.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/asyn-thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/asyn-thread.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c -o CMakeFiles\cmcurl.dir\asyn-thread.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\asyn-thread.c -o CMakeFiles\cmcurl.dir\asyn-thread.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/base64.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/base64.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj -MF CMakeFiles\cmcurl.dir\base64.c.obj.d -o CMakeFiles\cmcurl.dir\base64.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.obj -MF CMakeFiles\cmcurl.dir\base64.c.obj.d -o CMakeFiles\cmcurl.dir\base64.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/base64.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c > CMakeFiles\cmcurl.dir\base64.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c > CMakeFiles\cmcurl.dir\base64.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/base64.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c -o CMakeFiles\cmcurl.dir\base64.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\base64.c -o CMakeFiles\cmcurl.dir\base64.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/bufref.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/bufref.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj -MF CMakeFiles\cmcurl.dir\bufref.c.obj.d -o CMakeFiles\cmcurl.dir\bufref.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.obj -MF CMakeFiles\cmcurl.dir\bufref.c.obj.d -o CMakeFiles\cmcurl.dir\bufref.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/bufref.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c > CMakeFiles\cmcurl.dir\bufref.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c > CMakeFiles\cmcurl.dir\bufref.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/bufref.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/bufref.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c -o CMakeFiles\cmcurl.dir\bufref.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\bufref.c -o CMakeFiles\cmcurl.dir\bufref.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/c-hyper.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/c-hyper.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj -MF CMakeFiles\cmcurl.dir\c-hyper.c.obj.d -o CMakeFiles\cmcurl.dir\c-hyper.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.obj -MF CMakeFiles\cmcurl.dir\c-hyper.c.obj.d -o CMakeFiles\cmcurl.dir\c-hyper.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/c-hyper.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c > CMakeFiles\cmcurl.dir\c-hyper.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c > CMakeFiles\cmcurl.dir\c-hyper.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/c-hyper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/c-hyper.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c -o CMakeFiles\cmcurl.dir\c-hyper.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\c-hyper.c -o CMakeFiles\cmcurl.dir\c-hyper.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/conncache.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/conncache.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj -MF CMakeFiles\cmcurl.dir\conncache.c.obj.d -o CMakeFiles\cmcurl.dir\conncache.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.obj -MF CMakeFiles\cmcurl.dir\conncache.c.obj.d -o CMakeFiles\cmcurl.dir\conncache.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/conncache.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c > CMakeFiles\cmcurl.dir\conncache.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c > CMakeFiles\cmcurl.dir\conncache.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/conncache.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/conncache.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c -o CMakeFiles\cmcurl.dir\conncache.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\conncache.c -o CMakeFiles\cmcurl.dir\conncache.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/connect.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/connect.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj -MF CMakeFiles\cmcurl.dir\connect.c.obj.d -o CMakeFiles\cmcurl.dir\connect.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.obj -MF CMakeFiles\cmcurl.dir\connect.c.obj.d -o CMakeFiles\cmcurl.dir\connect.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/connect.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c > CMakeFiles\cmcurl.dir\connect.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c > CMakeFiles\cmcurl.dir\connect.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/connect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/connect.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c -o CMakeFiles\cmcurl.dir\connect.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\connect.c -o CMakeFiles\cmcurl.dir\connect.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/content_encoding.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/content_encoding.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj -MF CMakeFiles\cmcurl.dir\content_encoding.c.obj.d -o CMakeFiles\cmcurl.dir\content_encoding.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.obj -MF CMakeFiles\cmcurl.dir\content_encoding.c.obj.d -o CMakeFiles\cmcurl.dir\content_encoding.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/content_encoding.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c > CMakeFiles\cmcurl.dir\content_encoding.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c > CMakeFiles\cmcurl.dir\content_encoding.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/content_encoding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/content_encoding.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c -o CMakeFiles\cmcurl.dir\content_encoding.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\content_encoding.c -o CMakeFiles\cmcurl.dir\content_encoding.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/cookie.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/cookie.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj -MF CMakeFiles\cmcurl.dir\cookie.c.obj.d -o CMakeFiles\cmcurl.dir\cookie.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.obj -MF CMakeFiles\cmcurl.dir\cookie.c.obj.d -o CMakeFiles\cmcurl.dir\cookie.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/cookie.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c > CMakeFiles\cmcurl.dir\cookie.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c > CMakeFiles\cmcurl.dir\cookie.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/cookie.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/cookie.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c -o CMakeFiles\cmcurl.dir\cookie.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\cookie.c -o CMakeFiles\cmcurl.dir\cookie.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_addrinfo.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_addrinfo.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj -MF CMakeFiles\cmcurl.dir\curl_addrinfo.c.obj.d -o CMakeFiles\cmcurl.dir\curl_addrinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.obj -MF CMakeFiles\cmcurl.dir\curl_addrinfo.c.obj.d -o CMakeFiles\cmcurl.dir\curl_addrinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_addrinfo.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c > CMakeFiles\cmcurl.dir\curl_addrinfo.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c > CMakeFiles\cmcurl.dir\curl_addrinfo.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_addrinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_addrinfo.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c -o CMakeFiles\cmcurl.dir\curl_addrinfo.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_addrinfo.c -o CMakeFiles\cmcurl.dir\curl_addrinfo.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ctype.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ctype.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj -MF CMakeFiles\cmcurl.dir\curl_ctype.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ctype.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.obj -MF CMakeFiles\cmcurl.dir\curl_ctype.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ctype.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_ctype.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c > CMakeFiles\cmcurl.dir\curl_ctype.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c > CMakeFiles\cmcurl.dir\curl_ctype.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ctype.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_ctype.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c -o CMakeFiles\cmcurl.dir\curl_ctype.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ctype.c -o CMakeFiles\cmcurl.dir\curl_ctype.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_des.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_des.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj -MF CMakeFiles\cmcurl.dir\curl_des.c.obj.d -o CMakeFiles\cmcurl.dir\curl_des.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.obj -MF CMakeFiles\cmcurl.dir\curl_des.c.obj.d -o CMakeFiles\cmcurl.dir\curl_des.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_des.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c > CMakeFiles\cmcurl.dir\curl_des.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c > CMakeFiles\cmcurl.dir\curl_des.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_des.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_des.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c -o CMakeFiles\cmcurl.dir\curl_des.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_des.c -o CMakeFiles\cmcurl.dir\curl_des.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_endian.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_endian.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj -MF CMakeFiles\cmcurl.dir\curl_endian.c.obj.d -o CMakeFiles\cmcurl.dir\curl_endian.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.obj -MF CMakeFiles\cmcurl.dir\curl_endian.c.obj.d -o CMakeFiles\cmcurl.dir\curl_endian.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_endian.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c > CMakeFiles\cmcurl.dir\curl_endian.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c > CMakeFiles\cmcurl.dir\curl_endian.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_endian.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_endian.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c -o CMakeFiles\cmcurl.dir\curl_endian.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_endian.c -o CMakeFiles\cmcurl.dir\curl_endian.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_fnmatch.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_fnmatch.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj -MF CMakeFiles\cmcurl.dir\curl_fnmatch.c.obj.d -o CMakeFiles\cmcurl.dir\curl_fnmatch.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.obj -MF CMakeFiles\cmcurl.dir\curl_fnmatch.c.obj.d -o CMakeFiles\cmcurl.dir\curl_fnmatch.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_fnmatch.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c > CMakeFiles\cmcurl.dir\curl_fnmatch.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c > CMakeFiles\cmcurl.dir\curl_fnmatch.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_fnmatch.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_fnmatch.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c -o CMakeFiles\cmcurl.dir\curl_fnmatch.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_fnmatch.c -o CMakeFiles\cmcurl.dir\curl_fnmatch.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_get_line.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_get_line.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj -MF CMakeFiles\cmcurl.dir\curl_get_line.c.obj.d -o CMakeFiles\cmcurl.dir\curl_get_line.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.obj -MF CMakeFiles\cmcurl.dir\curl_get_line.c.obj.d -o CMakeFiles\cmcurl.dir\curl_get_line.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_get_line.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c > CMakeFiles\cmcurl.dir\curl_get_line.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c > CMakeFiles\cmcurl.dir\curl_get_line.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_get_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_get_line.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c -o CMakeFiles\cmcurl.dir\curl_get_line.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_get_line.c -o CMakeFiles\cmcurl.dir\curl_get_line.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_gethostname.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_gethostname.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj -MF CMakeFiles\cmcurl.dir\curl_gethostname.c.obj.d -o CMakeFiles\cmcurl.dir\curl_gethostname.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.obj -MF CMakeFiles\cmcurl.dir\curl_gethostname.c.obj.d -o CMakeFiles\cmcurl.dir\curl_gethostname.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_gethostname.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c > CMakeFiles\cmcurl.dir\curl_gethostname.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c > CMakeFiles\cmcurl.dir\curl_gethostname.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gethostname.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_gethostname.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c -o CMakeFiles\cmcurl.dir\curl_gethostname.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gethostname.c -o CMakeFiles\cmcurl.dir\curl_gethostname.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_gssapi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_gssapi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\curl_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\curl_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\curl_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\curl_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_gssapi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c > CMakeFiles\cmcurl.dir\curl_gssapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c > CMakeFiles\cmcurl.dir\curl_gssapi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_gssapi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c -o CMakeFiles\cmcurl.dir\curl_gssapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_gssapi.c -o CMakeFiles\cmcurl.dir\curl_gssapi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_memrchr.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_memrchr.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj -MF CMakeFiles\cmcurl.dir\curl_memrchr.c.obj.d -o CMakeFiles\cmcurl.dir\curl_memrchr.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.obj -MF CMakeFiles\cmcurl.dir\curl_memrchr.c.obj.d -o CMakeFiles\cmcurl.dir\curl_memrchr.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_memrchr.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c > CMakeFiles\cmcurl.dir\curl_memrchr.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c > CMakeFiles\cmcurl.dir\curl_memrchr.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_memrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_memrchr.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c -o CMakeFiles\cmcurl.dir\curl_memrchr.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_memrchr.c -o CMakeFiles\cmcurl.dir\curl_memrchr.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_multibyte.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_multibyte.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj -MF CMakeFiles\cmcurl.dir\curl_multibyte.c.obj.d -o CMakeFiles\cmcurl.dir\curl_multibyte.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.obj -MF CMakeFiles\cmcurl.dir\curl_multibyte.c.obj.d -o CMakeFiles\cmcurl.dir\curl_multibyte.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_multibyte.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c > CMakeFiles\cmcurl.dir\curl_multibyte.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c > CMakeFiles\cmcurl.dir\curl_multibyte.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_multibyte.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_multibyte.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c -o CMakeFiles\cmcurl.dir\curl_multibyte.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_multibyte.c -o CMakeFiles\cmcurl.dir\curl_multibyte.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ntlm_core.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ntlm_core.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj -MF CMakeFiles\cmcurl.dir\curl_ntlm_core.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ntlm_core.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.obj -MF CMakeFiles\cmcurl.dir\curl_ntlm_core.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ntlm_core.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_ntlm_core.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c > CMakeFiles\cmcurl.dir\curl_ntlm_core.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c > CMakeFiles\cmcurl.dir\curl_ntlm_core.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_ntlm_core.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c -o CMakeFiles\cmcurl.dir\curl_ntlm_core.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_core.c -o CMakeFiles\cmcurl.dir\curl_ntlm_core.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ntlm_wb.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_ntlm_wb.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj -MF CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.obj -MF CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.obj.d -o CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c > CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c > CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_ntlm_wb.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c -o CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_ntlm_wb.c -o CMakeFiles\cmcurl.dir\curl_ntlm_wb.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_path.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_path.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj -MF CMakeFiles\cmcurl.dir\curl_path.c.obj.d -o CMakeFiles\cmcurl.dir\curl_path.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.obj -MF CMakeFiles\cmcurl.dir\curl_path.c.obj.d -o CMakeFiles\cmcurl.dir\curl_path.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_path.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c > CMakeFiles\cmcurl.dir\curl_path.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c > CMakeFiles\cmcurl.dir\curl_path.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_path.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c -o CMakeFiles\cmcurl.dir\curl_path.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_path.c -o CMakeFiles\cmcurl.dir\curl_path.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_range.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_range.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj -MF CMakeFiles\cmcurl.dir\curl_range.c.obj.d -o CMakeFiles\cmcurl.dir\curl_range.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.obj -MF CMakeFiles\cmcurl.dir\curl_range.c.obj.d -o CMakeFiles\cmcurl.dir\curl_range.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_range.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c > CMakeFiles\cmcurl.dir\curl_range.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c > CMakeFiles\cmcurl.dir\curl_range.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_range.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_range.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c -o CMakeFiles\cmcurl.dir\curl_range.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_range.c -o CMakeFiles\cmcurl.dir\curl_range.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_rtmp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_rtmp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj -MF CMakeFiles\cmcurl.dir\curl_rtmp.c.obj.d -o CMakeFiles\cmcurl.dir\curl_rtmp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.obj -MF CMakeFiles\cmcurl.dir\curl_rtmp.c.obj.d -o CMakeFiles\cmcurl.dir\curl_rtmp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_rtmp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c > CMakeFiles\cmcurl.dir\curl_rtmp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c > CMakeFiles\cmcurl.dir\curl_rtmp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_rtmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_rtmp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c -o CMakeFiles\cmcurl.dir\curl_rtmp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_rtmp.c -o CMakeFiles\cmcurl.dir\curl_rtmp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_sasl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_sasl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj -MF CMakeFiles\cmcurl.dir\curl_sasl.c.obj.d -o CMakeFiles\cmcurl.dir\curl_sasl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.obj -MF CMakeFiles\cmcurl.dir\curl_sasl.c.obj.d -o CMakeFiles\cmcurl.dir\curl_sasl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_sasl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c > CMakeFiles\cmcurl.dir\curl_sasl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c > CMakeFiles\cmcurl.dir\curl_sasl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sasl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_sasl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c -o CMakeFiles\cmcurl.dir\curl_sasl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sasl.c -o CMakeFiles\cmcurl.dir\curl_sasl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj -MF CMakeFiles\cmcurl.dir\curl_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\curl_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.obj -MF CMakeFiles\cmcurl.dir\curl_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\curl_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c > CMakeFiles\cmcurl.dir\curl_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c > CMakeFiles\cmcurl.dir\curl_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c -o CMakeFiles\cmcurl.dir\curl_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_sspi.c -o CMakeFiles\cmcurl.dir\curl_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_threads.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/curl_threads.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj -MF CMakeFiles\cmcurl.dir\curl_threads.c.obj.d -o CMakeFiles\cmcurl.dir\curl_threads.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.obj -MF CMakeFiles\cmcurl.dir\curl_threads.c.obj.d -o CMakeFiles\cmcurl.dir\curl_threads.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/curl_threads.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c > CMakeFiles\cmcurl.dir\curl_threads.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c > CMakeFiles\cmcurl.dir\curl_threads.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/curl_threads.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/curl_threads.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c -o CMakeFiles\cmcurl.dir\curl_threads.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\curl_threads.c -o CMakeFiles\cmcurl.dir\curl_threads.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dict.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dict.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj -MF CMakeFiles\cmcurl.dir\dict.c.obj.d -o CMakeFiles\cmcurl.dir\dict.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.obj -MF CMakeFiles\cmcurl.dir\dict.c.obj.d -o CMakeFiles\cmcurl.dir\dict.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/dict.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c > CMakeFiles\cmcurl.dir\dict.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c > CMakeFiles\cmcurl.dir\dict.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dict.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/dict.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c -o CMakeFiles\cmcurl.dir\dict.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dict.c -o CMakeFiles\cmcurl.dir\dict.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/doh.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/doh.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj -MF CMakeFiles\cmcurl.dir\doh.c.obj.d -o CMakeFiles\cmcurl.dir\doh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.obj -MF CMakeFiles\cmcurl.dir\doh.c.obj.d -o CMakeFiles\cmcurl.dir\doh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/doh.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c > CMakeFiles\cmcurl.dir\doh.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c > CMakeFiles\cmcurl.dir\doh.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/doh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/doh.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c -o CMakeFiles\cmcurl.dir\doh.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\doh.c -o CMakeFiles\cmcurl.dir\doh.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dotdot.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dotdot.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj -MF CMakeFiles\cmcurl.dir\dotdot.c.obj.d -o CMakeFiles\cmcurl.dir\dotdot.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.obj -MF CMakeFiles\cmcurl.dir\dotdot.c.obj.d -o CMakeFiles\cmcurl.dir\dotdot.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/dotdot.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c > CMakeFiles\cmcurl.dir\dotdot.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c > CMakeFiles\cmcurl.dir\dotdot.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dotdot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/dotdot.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c -o CMakeFiles\cmcurl.dir\dotdot.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dotdot.c -o CMakeFiles\cmcurl.dir\dotdot.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dynbuf.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/dynbuf.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj -MF CMakeFiles\cmcurl.dir\dynbuf.c.obj.d -o CMakeFiles\cmcurl.dir\dynbuf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.obj -MF CMakeFiles\cmcurl.dir\dynbuf.c.obj.d -o CMakeFiles\cmcurl.dir\dynbuf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/dynbuf.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c > CMakeFiles\cmcurl.dir\dynbuf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c > CMakeFiles\cmcurl.dir\dynbuf.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/dynbuf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/dynbuf.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c -o CMakeFiles\cmcurl.dir\dynbuf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\dynbuf.c -o CMakeFiles\cmcurl.dir\dynbuf.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easy.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easy.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj -MF CMakeFiles\cmcurl.dir\easy.c.obj.d -o CMakeFiles\cmcurl.dir\easy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.obj -MF CMakeFiles\cmcurl.dir\easy.c.obj.d -o CMakeFiles\cmcurl.dir\easy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/easy.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c > CMakeFiles\cmcurl.dir\easy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c > CMakeFiles\cmcurl.dir\easy.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/easy.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c -o CMakeFiles\cmcurl.dir\easy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easy.c -o CMakeFiles\cmcurl.dir\easy.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easygetopt.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easygetopt.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj -MF CMakeFiles\cmcurl.dir\easygetopt.c.obj.d -o CMakeFiles\cmcurl.dir\easygetopt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.obj -MF CMakeFiles\cmcurl.dir\easygetopt.c.obj.d -o CMakeFiles\cmcurl.dir\easygetopt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/easygetopt.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c > CMakeFiles\cmcurl.dir\easygetopt.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c > CMakeFiles\cmcurl.dir\easygetopt.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easygetopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/easygetopt.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c -o CMakeFiles\cmcurl.dir\easygetopt.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easygetopt.c -o CMakeFiles\cmcurl.dir\easygetopt.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easyoptions.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/easyoptions.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj -MF CMakeFiles\cmcurl.dir\easyoptions.c.obj.d -o CMakeFiles\cmcurl.dir\easyoptions.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.obj -MF CMakeFiles\cmcurl.dir\easyoptions.c.obj.d -o CMakeFiles\cmcurl.dir\easyoptions.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/easyoptions.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c > CMakeFiles\cmcurl.dir\easyoptions.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c > CMakeFiles\cmcurl.dir\easyoptions.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/easyoptions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/easyoptions.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c -o CMakeFiles\cmcurl.dir\easyoptions.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\easyoptions.c -o CMakeFiles\cmcurl.dir\easyoptions.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/escape.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/escape.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj -MF CMakeFiles\cmcurl.dir\escape.c.obj.d -o CMakeFiles\cmcurl.dir\escape.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.obj -MF CMakeFiles\cmcurl.dir\escape.c.obj.d -o CMakeFiles\cmcurl.dir\escape.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/escape.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c > CMakeFiles\cmcurl.dir\escape.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c > CMakeFiles\cmcurl.dir\escape.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/escape.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/escape.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c -o CMakeFiles\cmcurl.dir\escape.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\escape.c -o CMakeFiles\cmcurl.dir\escape.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/file.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/file.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj -MF CMakeFiles\cmcurl.dir\file.c.obj.d -o CMakeFiles\cmcurl.dir\file.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.obj -MF CMakeFiles\cmcurl.dir\file.c.obj.d -o CMakeFiles\cmcurl.dir\file.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/file.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c > CMakeFiles\cmcurl.dir\file.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c > CMakeFiles\cmcurl.dir\file.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/file.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c -o CMakeFiles\cmcurl.dir\file.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\file.c -o CMakeFiles\cmcurl.dir\file.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/fileinfo.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/fileinfo.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj -MF CMakeFiles\cmcurl.dir\fileinfo.c.obj.d -o CMakeFiles\cmcurl.dir\fileinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.obj -MF CMakeFiles\cmcurl.dir\fileinfo.c.obj.d -o CMakeFiles\cmcurl.dir\fileinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/fileinfo.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c > CMakeFiles\cmcurl.dir\fileinfo.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c > CMakeFiles\cmcurl.dir\fileinfo.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/fileinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/fileinfo.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c -o CMakeFiles\cmcurl.dir\fileinfo.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\fileinfo.c -o CMakeFiles\cmcurl.dir\fileinfo.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/formdata.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/formdata.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj -MF CMakeFiles\cmcurl.dir\formdata.c.obj.d -o CMakeFiles\cmcurl.dir\formdata.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.obj -MF CMakeFiles\cmcurl.dir\formdata.c.obj.d -o CMakeFiles\cmcurl.dir\formdata.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/formdata.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c > CMakeFiles\cmcurl.dir\formdata.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c > CMakeFiles\cmcurl.dir\formdata.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/formdata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/formdata.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c -o CMakeFiles\cmcurl.dir\formdata.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\formdata.c -o CMakeFiles\cmcurl.dir\formdata.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ftp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ftp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj -MF CMakeFiles\cmcurl.dir\ftp.c.obj.d -o CMakeFiles\cmcurl.dir\ftp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.obj -MF CMakeFiles\cmcurl.dir\ftp.c.obj.d -o CMakeFiles\cmcurl.dir\ftp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/ftp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c > CMakeFiles\cmcurl.dir\ftp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c > CMakeFiles\cmcurl.dir\ftp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/ftp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c -o CMakeFiles\cmcurl.dir\ftp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftp.c -o CMakeFiles\cmcurl.dir\ftp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ftplistparser.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ftplistparser.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj -MF CMakeFiles\cmcurl.dir\ftplistparser.c.obj.d -o CMakeFiles\cmcurl.dir\ftplistparser.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.obj -MF CMakeFiles\cmcurl.dir\ftplistparser.c.obj.d -o CMakeFiles\cmcurl.dir\ftplistparser.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/ftplistparser.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c > CMakeFiles\cmcurl.dir\ftplistparser.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c > CMakeFiles\cmcurl.dir\ftplistparser.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ftplistparser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/ftplistparser.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c -o CMakeFiles\cmcurl.dir\ftplistparser.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ftplistparser.c -o CMakeFiles\cmcurl.dir\ftplistparser.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/getenv.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/getenv.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj -MF CMakeFiles\cmcurl.dir\getenv.c.obj.d -o CMakeFiles\cmcurl.dir\getenv.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.obj -MF CMakeFiles\cmcurl.dir\getenv.c.obj.d -o CMakeFiles\cmcurl.dir\getenv.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/getenv.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c > CMakeFiles\cmcurl.dir\getenv.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c > CMakeFiles\cmcurl.dir\getenv.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/getenv.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c -o CMakeFiles\cmcurl.dir\getenv.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getenv.c -o CMakeFiles\cmcurl.dir\getenv.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/getinfo.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/getinfo.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj -MF CMakeFiles\cmcurl.dir\getinfo.c.obj.d -o CMakeFiles\cmcurl.dir\getinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.obj -MF CMakeFiles\cmcurl.dir\getinfo.c.obj.d -o CMakeFiles\cmcurl.dir\getinfo.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/getinfo.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c > CMakeFiles\cmcurl.dir\getinfo.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c > CMakeFiles\cmcurl.dir\getinfo.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/getinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/getinfo.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c -o CMakeFiles\cmcurl.dir\getinfo.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\getinfo.c -o CMakeFiles\cmcurl.dir\getinfo.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/gopher.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/gopher.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj -MF CMakeFiles\cmcurl.dir\gopher.c.obj.d -o CMakeFiles\cmcurl.dir\gopher.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.obj -MF CMakeFiles\cmcurl.dir\gopher.c.obj.d -o CMakeFiles\cmcurl.dir\gopher.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/gopher.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c > CMakeFiles\cmcurl.dir\gopher.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c > CMakeFiles\cmcurl.dir\gopher.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/gopher.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/gopher.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c -o CMakeFiles\cmcurl.dir\gopher.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\gopher.c -o CMakeFiles\cmcurl.dir\gopher.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hash.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hash.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj -MF CMakeFiles\cmcurl.dir\hash.c.obj.d -o CMakeFiles\cmcurl.dir\hash.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.obj -MF CMakeFiles\cmcurl.dir\hash.c.obj.d -o CMakeFiles\cmcurl.dir\hash.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hash.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c > CMakeFiles\cmcurl.dir\hash.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c > CMakeFiles\cmcurl.dir\hash.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hash.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c -o CMakeFiles\cmcurl.dir\hash.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hash.c -o CMakeFiles\cmcurl.dir\hash.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hmac.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hmac.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj -MF CMakeFiles\cmcurl.dir\hmac.c.obj.d -o CMakeFiles\cmcurl.dir\hmac.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.obj -MF CMakeFiles\cmcurl.dir\hmac.c.obj.d -o CMakeFiles\cmcurl.dir\hmac.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hmac.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c > CMakeFiles\cmcurl.dir\hmac.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c > CMakeFiles\cmcurl.dir\hmac.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hmac.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hmac.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c -o CMakeFiles\cmcurl.dir\hmac.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hmac.c -o CMakeFiles\cmcurl.dir\hmac.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostasyn.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostasyn.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj -MF CMakeFiles\cmcurl.dir\hostasyn.c.obj.d -o CMakeFiles\cmcurl.dir\hostasyn.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.obj -MF CMakeFiles\cmcurl.dir\hostasyn.c.obj.d -o CMakeFiles\cmcurl.dir\hostasyn.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostasyn.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c > CMakeFiles\cmcurl.dir\hostasyn.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c > CMakeFiles\cmcurl.dir\hostasyn.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostasyn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostasyn.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c -o CMakeFiles\cmcurl.dir\hostasyn.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostasyn.c -o CMakeFiles\cmcurl.dir\hostasyn.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostcheck.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostcheck.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj -MF CMakeFiles\cmcurl.dir\hostcheck.c.obj.d -o CMakeFiles\cmcurl.dir\hostcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.obj -MF CMakeFiles\cmcurl.dir\hostcheck.c.obj.d -o CMakeFiles\cmcurl.dir\hostcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostcheck.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c > CMakeFiles\cmcurl.dir\hostcheck.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c > CMakeFiles\cmcurl.dir\hostcheck.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostcheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostcheck.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c -o CMakeFiles\cmcurl.dir\hostcheck.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostcheck.c -o CMakeFiles\cmcurl.dir\hostcheck.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj -MF CMakeFiles\cmcurl.dir\hostip.c.obj.d -o CMakeFiles\cmcurl.dir\hostip.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.obj -MF CMakeFiles\cmcurl.dir\hostip.c.obj.d -o CMakeFiles\cmcurl.dir\hostip.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostip.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c > CMakeFiles\cmcurl.dir\hostip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c > CMakeFiles\cmcurl.dir\hostip.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostip.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c -o CMakeFiles\cmcurl.dir\hostip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip.c -o CMakeFiles\cmcurl.dir\hostip.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip4.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip4.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj -MF CMakeFiles\cmcurl.dir\hostip4.c.obj.d -o CMakeFiles\cmcurl.dir\hostip4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.obj -MF CMakeFiles\cmcurl.dir\hostip4.c.obj.d -o CMakeFiles\cmcurl.dir\hostip4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostip4.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c > CMakeFiles\cmcurl.dir\hostip4.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c > CMakeFiles\cmcurl.dir\hostip4.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostip4.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c -o CMakeFiles\cmcurl.dir\hostip4.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip4.c -o CMakeFiles\cmcurl.dir\hostip4.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip6.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostip6.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj -MF CMakeFiles\cmcurl.dir\hostip6.c.obj.d -o CMakeFiles\cmcurl.dir\hostip6.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.obj -MF CMakeFiles\cmcurl.dir\hostip6.c.obj.d -o CMakeFiles\cmcurl.dir\hostip6.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostip6.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c > CMakeFiles\cmcurl.dir\hostip6.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c > CMakeFiles\cmcurl.dir\hostip6.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostip6.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostip6.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c -o CMakeFiles\cmcurl.dir\hostip6.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostip6.c -o CMakeFiles\cmcurl.dir\hostip6.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostsyn.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hostsyn.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj -MF CMakeFiles\cmcurl.dir\hostsyn.c.obj.d -o CMakeFiles\cmcurl.dir\hostsyn.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.obj -MF CMakeFiles\cmcurl.dir\hostsyn.c.obj.d -o CMakeFiles\cmcurl.dir\hostsyn.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hostsyn.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c > CMakeFiles\cmcurl.dir\hostsyn.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c > CMakeFiles\cmcurl.dir\hostsyn.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hostsyn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hostsyn.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c -o CMakeFiles\cmcurl.dir\hostsyn.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hostsyn.c -o CMakeFiles\cmcurl.dir\hostsyn.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hsts.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/hsts.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj -MF CMakeFiles\cmcurl.dir\hsts.c.obj.d -o CMakeFiles\cmcurl.dir\hsts.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.obj -MF CMakeFiles\cmcurl.dir\hsts.c.obj.d -o CMakeFiles\cmcurl.dir\hsts.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/hsts.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c > CMakeFiles\cmcurl.dir\hsts.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c > CMakeFiles\cmcurl.dir\hsts.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/hsts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/hsts.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c -o CMakeFiles\cmcurl.dir\hsts.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\hsts.c -o CMakeFiles\cmcurl.dir\hsts.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj -MF CMakeFiles\cmcurl.dir\http.c.obj.d -o CMakeFiles\cmcurl.dir\http.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.obj -MF CMakeFiles\cmcurl.dir\http.c.obj.d -o CMakeFiles\cmcurl.dir\http.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c > CMakeFiles\cmcurl.dir\http.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c > CMakeFiles\cmcurl.dir\http.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c -o CMakeFiles\cmcurl.dir\http.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http.c -o CMakeFiles\cmcurl.dir\http.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http2.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http2.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj -MF CMakeFiles\cmcurl.dir\http2.c.obj.d -o CMakeFiles\cmcurl.dir\http2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.obj -MF CMakeFiles\cmcurl.dir\http2.c.obj.d -o CMakeFiles\cmcurl.dir\http2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http2.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c > CMakeFiles\cmcurl.dir\http2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c > CMakeFiles\cmcurl.dir\http2.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http2.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c -o CMakeFiles\cmcurl.dir\http2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http2.c -o CMakeFiles\cmcurl.dir\http2.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_chunks.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_chunks.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj -MF CMakeFiles\cmcurl.dir\http_chunks.c.obj.d -o CMakeFiles\cmcurl.dir\http_chunks.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.obj -MF CMakeFiles\cmcurl.dir\http_chunks.c.obj.d -o CMakeFiles\cmcurl.dir\http_chunks.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_chunks.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c > CMakeFiles\cmcurl.dir\http_chunks.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c > CMakeFiles\cmcurl.dir\http_chunks.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_chunks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_chunks.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c -o CMakeFiles\cmcurl.dir\http_chunks.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_chunks.c -o CMakeFiles\cmcurl.dir\http_chunks.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_digest.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_digest.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj -MF CMakeFiles\cmcurl.dir\http_digest.c.obj.d -o CMakeFiles\cmcurl.dir\http_digest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.obj -MF CMakeFiles\cmcurl.dir\http_digest.c.obj.d -o CMakeFiles\cmcurl.dir\http_digest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_digest.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c > CMakeFiles\cmcurl.dir\http_digest.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c > CMakeFiles\cmcurl.dir\http_digest.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_digest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_digest.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c -o CMakeFiles\cmcurl.dir\http_digest.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_digest.c -o CMakeFiles\cmcurl.dir\http_digest.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_negotiate.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_negotiate.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj -MF CMakeFiles\cmcurl.dir\http_negotiate.c.obj.d -o CMakeFiles\cmcurl.dir\http_negotiate.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.obj -MF CMakeFiles\cmcurl.dir\http_negotiate.c.obj.d -o CMakeFiles\cmcurl.dir\http_negotiate.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_negotiate.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c > CMakeFiles\cmcurl.dir\http_negotiate.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c > CMakeFiles\cmcurl.dir\http_negotiate.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_negotiate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_negotiate.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c -o CMakeFiles\cmcurl.dir\http_negotiate.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_negotiate.c -o CMakeFiles\cmcurl.dir\http_negotiate.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_ntlm.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_ntlm.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj -MF CMakeFiles\cmcurl.dir\http_ntlm.c.obj.d -o CMakeFiles\cmcurl.dir\http_ntlm.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.obj -MF CMakeFiles\cmcurl.dir\http_ntlm.c.obj.d -o CMakeFiles\cmcurl.dir\http_ntlm.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_ntlm.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c > CMakeFiles\cmcurl.dir\http_ntlm.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c > CMakeFiles\cmcurl.dir\http_ntlm.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_ntlm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_ntlm.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c -o CMakeFiles\cmcurl.dir\http_ntlm.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_ntlm.c -o CMakeFiles\cmcurl.dir\http_ntlm.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_proxy.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_proxy.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj -MF CMakeFiles\cmcurl.dir\http_proxy.c.obj.d -o CMakeFiles\cmcurl.dir\http_proxy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.obj -MF CMakeFiles\cmcurl.dir\http_proxy.c.obj.d -o CMakeFiles\cmcurl.dir\http_proxy.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_proxy.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c > CMakeFiles\cmcurl.dir\http_proxy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c > CMakeFiles\cmcurl.dir\http_proxy.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_proxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_proxy.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c -o CMakeFiles\cmcurl.dir\http_proxy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_proxy.c -o CMakeFiles\cmcurl.dir\http_proxy.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_aws_sigv4.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/http_aws_sigv4.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj -MF CMakeFiles\cmcurl.dir\http_aws_sigv4.c.obj.d -o CMakeFiles\cmcurl.dir\http_aws_sigv4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.obj -MF CMakeFiles\cmcurl.dir\http_aws_sigv4.c.obj.d -o CMakeFiles\cmcurl.dir\http_aws_sigv4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/http_aws_sigv4.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c > CMakeFiles\cmcurl.dir\http_aws_sigv4.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c > CMakeFiles\cmcurl.dir\http_aws_sigv4.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/http_aws_sigv4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/http_aws_sigv4.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c -o CMakeFiles\cmcurl.dir\http_aws_sigv4.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\http_aws_sigv4.c -o CMakeFiles\cmcurl.dir\http_aws_sigv4.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/idn_win32.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/idn_win32.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj -MF CMakeFiles\cmcurl.dir\idn_win32.c.obj.d -o CMakeFiles\cmcurl.dir\idn_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.obj -MF CMakeFiles\cmcurl.dir\idn_win32.c.obj.d -o CMakeFiles\cmcurl.dir\idn_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/idn_win32.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c > CMakeFiles\cmcurl.dir\idn_win32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c > CMakeFiles\cmcurl.dir\idn_win32.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/idn_win32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/idn_win32.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c -o CMakeFiles\cmcurl.dir\idn_win32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\idn_win32.c -o CMakeFiles\cmcurl.dir\idn_win32.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/if2ip.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/if2ip.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj -MF CMakeFiles\cmcurl.dir\if2ip.c.obj.d -o CMakeFiles\cmcurl.dir\if2ip.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.obj -MF CMakeFiles\cmcurl.dir\if2ip.c.obj.d -o CMakeFiles\cmcurl.dir\if2ip.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/if2ip.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c > CMakeFiles\cmcurl.dir\if2ip.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c > CMakeFiles\cmcurl.dir\if2ip.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/if2ip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/if2ip.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c -o CMakeFiles\cmcurl.dir\if2ip.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\if2ip.c -o CMakeFiles\cmcurl.dir\if2ip.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/imap.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/imap.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj -MF CMakeFiles\cmcurl.dir\imap.c.obj.d -o CMakeFiles\cmcurl.dir\imap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.obj -MF CMakeFiles\cmcurl.dir\imap.c.obj.d -o CMakeFiles\cmcurl.dir\imap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/imap.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c > CMakeFiles\cmcurl.dir\imap.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c > CMakeFiles\cmcurl.dir\imap.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/imap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/imap.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c -o CMakeFiles\cmcurl.dir\imap.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\imap.c -o CMakeFiles\cmcurl.dir\imap.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/inet_ntop.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/inet_ntop.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj -MF CMakeFiles\cmcurl.dir\inet_ntop.c.obj.d -o CMakeFiles\cmcurl.dir\inet_ntop.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.obj -MF CMakeFiles\cmcurl.dir\inet_ntop.c.obj.d -o CMakeFiles\cmcurl.dir\inet_ntop.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/inet_ntop.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c > CMakeFiles\cmcurl.dir\inet_ntop.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c > CMakeFiles\cmcurl.dir\inet_ntop.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_ntop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/inet_ntop.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c -o CMakeFiles\cmcurl.dir\inet_ntop.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_ntop.c -o CMakeFiles\cmcurl.dir\inet_ntop.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/inet_pton.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/inet_pton.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj -MF CMakeFiles\cmcurl.dir\inet_pton.c.obj.d -o CMakeFiles\cmcurl.dir\inet_pton.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.obj -MF CMakeFiles\cmcurl.dir\inet_pton.c.obj.d -o CMakeFiles\cmcurl.dir\inet_pton.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/inet_pton.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c > CMakeFiles\cmcurl.dir\inet_pton.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c > CMakeFiles\cmcurl.dir\inet_pton.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/inet_pton.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/inet_pton.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c -o CMakeFiles\cmcurl.dir\inet_pton.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\inet_pton.c -o CMakeFiles\cmcurl.dir\inet_pton.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/krb5.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/krb5.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj -MF CMakeFiles\cmcurl.dir\krb5.c.obj.d -o CMakeFiles\cmcurl.dir\krb5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.obj -MF CMakeFiles\cmcurl.dir\krb5.c.obj.d -o CMakeFiles\cmcurl.dir\krb5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/krb5.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c > CMakeFiles\cmcurl.dir\krb5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c > CMakeFiles\cmcurl.dir\krb5.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/krb5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/krb5.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c -o CMakeFiles\cmcurl.dir\krb5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\krb5.c -o CMakeFiles\cmcurl.dir\krb5.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ldap.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/ldap.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj -MF CMakeFiles\cmcurl.dir\ldap.c.obj.d -o CMakeFiles\cmcurl.dir\ldap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.obj -MF CMakeFiles\cmcurl.dir\ldap.c.obj.d -o CMakeFiles\cmcurl.dir\ldap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/ldap.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c > CMakeFiles\cmcurl.dir\ldap.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c > CMakeFiles\cmcurl.dir\ldap.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/ldap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/ldap.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c -o CMakeFiles\cmcurl.dir\ldap.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\ldap.c -o CMakeFiles\cmcurl.dir\ldap.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/llist.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/llist.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj -MF CMakeFiles\cmcurl.dir\llist.c.obj.d -o CMakeFiles\cmcurl.dir\llist.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.obj -MF CMakeFiles\cmcurl.dir\llist.c.obj.d -o CMakeFiles\cmcurl.dir\llist.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/llist.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c > CMakeFiles\cmcurl.dir\llist.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c > CMakeFiles\cmcurl.dir\llist.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/llist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/llist.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c -o CMakeFiles\cmcurl.dir\llist.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\llist.c -o CMakeFiles\cmcurl.dir\llist.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/md4.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/md4.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj -MF CMakeFiles\cmcurl.dir\md4.c.obj.d -o CMakeFiles\cmcurl.dir\md4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.obj -MF CMakeFiles\cmcurl.dir\md4.c.obj.d -o CMakeFiles\cmcurl.dir\md4.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/md4.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c > CMakeFiles\cmcurl.dir\md4.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c > CMakeFiles\cmcurl.dir\md4.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/md4.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c -o CMakeFiles\cmcurl.dir\md4.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md4.c -o CMakeFiles\cmcurl.dir\md4.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/md5.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/md5.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj -MF CMakeFiles\cmcurl.dir\md5.c.obj.d -o CMakeFiles\cmcurl.dir\md5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.obj -MF CMakeFiles\cmcurl.dir\md5.c.obj.d -o CMakeFiles\cmcurl.dir\md5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/md5.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c > CMakeFiles\cmcurl.dir\md5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c > CMakeFiles\cmcurl.dir\md5.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/md5.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c -o CMakeFiles\cmcurl.dir\md5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\md5.c -o CMakeFiles\cmcurl.dir\md5.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/memdebug.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/memdebug.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj -MF CMakeFiles\cmcurl.dir\memdebug.c.obj.d -o CMakeFiles\cmcurl.dir\memdebug.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.obj -MF CMakeFiles\cmcurl.dir\memdebug.c.obj.d -o CMakeFiles\cmcurl.dir\memdebug.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/memdebug.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c > CMakeFiles\cmcurl.dir\memdebug.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c > CMakeFiles\cmcurl.dir\memdebug.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/memdebug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/memdebug.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c -o CMakeFiles\cmcurl.dir\memdebug.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\memdebug.c -o CMakeFiles\cmcurl.dir\memdebug.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mime.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mime.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj -MF CMakeFiles\cmcurl.dir\mime.c.obj.d -o CMakeFiles\cmcurl.dir\mime.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.obj -MF CMakeFiles\cmcurl.dir\mime.c.obj.d -o CMakeFiles\cmcurl.dir\mime.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/mime.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c > CMakeFiles\cmcurl.dir\mime.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c > CMakeFiles\cmcurl.dir\mime.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/mime.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c -o CMakeFiles\cmcurl.dir\mime.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mime.c -o CMakeFiles\cmcurl.dir\mime.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mprintf.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mprintf.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj -MF CMakeFiles\cmcurl.dir\mprintf.c.obj.d -o CMakeFiles\cmcurl.dir\mprintf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.obj -MF CMakeFiles\cmcurl.dir\mprintf.c.obj.d -o CMakeFiles\cmcurl.dir\mprintf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/mprintf.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c > CMakeFiles\cmcurl.dir\mprintf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c > CMakeFiles\cmcurl.dir\mprintf.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mprintf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/mprintf.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c -o CMakeFiles\cmcurl.dir\mprintf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mprintf.c -o CMakeFiles\cmcurl.dir\mprintf.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mqtt.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/mqtt.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj -MF CMakeFiles\cmcurl.dir\mqtt.c.obj.d -o CMakeFiles\cmcurl.dir\mqtt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.obj -MF CMakeFiles\cmcurl.dir\mqtt.c.obj.d -o CMakeFiles\cmcurl.dir\mqtt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/mqtt.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c > CMakeFiles\cmcurl.dir\mqtt.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c > CMakeFiles\cmcurl.dir\mqtt.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/mqtt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/mqtt.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c -o CMakeFiles\cmcurl.dir\mqtt.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\mqtt.c -o CMakeFiles\cmcurl.dir\mqtt.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/multi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/multi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj -MF CMakeFiles\cmcurl.dir\multi.c.obj.d -o CMakeFiles\cmcurl.dir\multi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.obj -MF CMakeFiles\cmcurl.dir\multi.c.obj.d -o CMakeFiles\cmcurl.dir\multi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/multi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c > CMakeFiles\cmcurl.dir\multi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c > CMakeFiles\cmcurl.dir\multi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/multi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/multi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c -o CMakeFiles\cmcurl.dir\multi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\multi.c -o CMakeFiles\cmcurl.dir\multi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/netrc.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/netrc.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj -MF CMakeFiles\cmcurl.dir\netrc.c.obj.d -o CMakeFiles\cmcurl.dir\netrc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.obj -MF CMakeFiles\cmcurl.dir\netrc.c.obj.d -o CMakeFiles\cmcurl.dir\netrc.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/netrc.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c > CMakeFiles\cmcurl.dir\netrc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c > CMakeFiles\cmcurl.dir\netrc.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/netrc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/netrc.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c -o CMakeFiles\cmcurl.dir\netrc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\netrc.c -o CMakeFiles\cmcurl.dir\netrc.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/non-ascii.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/non-ascii.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj -MF CMakeFiles\cmcurl.dir\non-ascii.c.obj.d -o CMakeFiles\cmcurl.dir\non-ascii.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.obj -MF CMakeFiles\cmcurl.dir\non-ascii.c.obj.d -o CMakeFiles\cmcurl.dir\non-ascii.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/non-ascii.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c > CMakeFiles\cmcurl.dir\non-ascii.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c > CMakeFiles\cmcurl.dir\non-ascii.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/non-ascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/non-ascii.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c -o CMakeFiles\cmcurl.dir\non-ascii.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\non-ascii.c -o CMakeFiles\cmcurl.dir\non-ascii.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/nonblock.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/nonblock.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj -MF CMakeFiles\cmcurl.dir\nonblock.c.obj.d -o CMakeFiles\cmcurl.dir\nonblock.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.obj -MF CMakeFiles\cmcurl.dir\nonblock.c.obj.d -o CMakeFiles\cmcurl.dir\nonblock.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/nonblock.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c > CMakeFiles\cmcurl.dir\nonblock.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c > CMakeFiles\cmcurl.dir\nonblock.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/nonblock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/nonblock.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c -o CMakeFiles\cmcurl.dir\nonblock.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\nonblock.c -o CMakeFiles\cmcurl.dir\nonblock.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/openldap.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/openldap.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj -MF CMakeFiles\cmcurl.dir\openldap.c.obj.d -o CMakeFiles\cmcurl.dir\openldap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.obj -MF CMakeFiles\cmcurl.dir\openldap.c.obj.d -o CMakeFiles\cmcurl.dir\openldap.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/openldap.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c > CMakeFiles\cmcurl.dir\openldap.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c > CMakeFiles\cmcurl.dir\openldap.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/openldap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/openldap.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c -o CMakeFiles\cmcurl.dir\openldap.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\openldap.c -o CMakeFiles\cmcurl.dir\openldap.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/parsedate.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/parsedate.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj -MF CMakeFiles\cmcurl.dir\parsedate.c.obj.d -o CMakeFiles\cmcurl.dir\parsedate.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.obj -MF CMakeFiles\cmcurl.dir\parsedate.c.obj.d -o CMakeFiles\cmcurl.dir\parsedate.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/parsedate.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c > CMakeFiles\cmcurl.dir\parsedate.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c > CMakeFiles\cmcurl.dir\parsedate.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/parsedate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/parsedate.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c -o CMakeFiles\cmcurl.dir\parsedate.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\parsedate.c -o CMakeFiles\cmcurl.dir\parsedate.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/pingpong.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/pingpong.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj -MF CMakeFiles\cmcurl.dir\pingpong.c.obj.d -o CMakeFiles\cmcurl.dir\pingpong.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.obj -MF CMakeFiles\cmcurl.dir\pingpong.c.obj.d -o CMakeFiles\cmcurl.dir\pingpong.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/pingpong.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c > CMakeFiles\cmcurl.dir\pingpong.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c > CMakeFiles\cmcurl.dir\pingpong.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pingpong.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/pingpong.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c -o CMakeFiles\cmcurl.dir\pingpong.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pingpong.c -o CMakeFiles\cmcurl.dir\pingpong.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/pop3.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/pop3.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj -MF CMakeFiles\cmcurl.dir\pop3.c.obj.d -o CMakeFiles\cmcurl.dir\pop3.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.obj -MF CMakeFiles\cmcurl.dir\pop3.c.obj.d -o CMakeFiles\cmcurl.dir\pop3.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/pop3.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c > CMakeFiles\cmcurl.dir\pop3.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c > CMakeFiles\cmcurl.dir\pop3.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/pop3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/pop3.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c -o CMakeFiles\cmcurl.dir\pop3.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\pop3.c -o CMakeFiles\cmcurl.dir\pop3.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/progress.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/progress.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj -MF CMakeFiles\cmcurl.dir\progress.c.obj.d -o CMakeFiles\cmcurl.dir\progress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.obj -MF CMakeFiles\cmcurl.dir\progress.c.obj.d -o CMakeFiles\cmcurl.dir\progress.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/progress.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c > CMakeFiles\cmcurl.dir\progress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c > CMakeFiles\cmcurl.dir\progress.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/progress.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/progress.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c -o CMakeFiles\cmcurl.dir\progress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\progress.c -o CMakeFiles\cmcurl.dir\progress.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/psl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/psl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj -MF CMakeFiles\cmcurl.dir\psl.c.obj.d -o CMakeFiles\cmcurl.dir\psl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.obj -MF CMakeFiles\cmcurl.dir\psl.c.obj.d -o CMakeFiles\cmcurl.dir\psl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/psl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c > CMakeFiles\cmcurl.dir\psl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c > CMakeFiles\cmcurl.dir\psl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/psl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/psl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c -o CMakeFiles\cmcurl.dir\psl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\psl.c -o CMakeFiles\cmcurl.dir\psl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rand.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rand.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj -MF CMakeFiles\cmcurl.dir\rand.c.obj.d -o CMakeFiles\cmcurl.dir\rand.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.obj -MF CMakeFiles\cmcurl.dir\rand.c.obj.d -o CMakeFiles\cmcurl.dir\rand.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/rand.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c > CMakeFiles\cmcurl.dir\rand.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c > CMakeFiles\cmcurl.dir\rand.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rand.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/rand.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c -o CMakeFiles\cmcurl.dir\rand.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rand.c -o CMakeFiles\cmcurl.dir\rand.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rename.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rename.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj -MF CMakeFiles\cmcurl.dir\rename.c.obj.d -o CMakeFiles\cmcurl.dir\rename.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.obj -MF CMakeFiles\cmcurl.dir\rename.c.obj.d -o CMakeFiles\cmcurl.dir\rename.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/rename.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c > CMakeFiles\cmcurl.dir\rename.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c > CMakeFiles\cmcurl.dir\rename.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rename.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/rename.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c -o CMakeFiles\cmcurl.dir\rename.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rename.c -o CMakeFiles\cmcurl.dir\rename.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rtsp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/rtsp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj -MF CMakeFiles\cmcurl.dir\rtsp.c.obj.d -o CMakeFiles\cmcurl.dir\rtsp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.obj -MF CMakeFiles\cmcurl.dir\rtsp.c.obj.d -o CMakeFiles\cmcurl.dir\rtsp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/rtsp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c > CMakeFiles\cmcurl.dir\rtsp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c > CMakeFiles\cmcurl.dir\rtsp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/rtsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/rtsp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c -o CMakeFiles\cmcurl.dir\rtsp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\rtsp.c -o CMakeFiles\cmcurl.dir\rtsp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/select.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/select.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj -MF CMakeFiles\cmcurl.dir\select.c.obj.d -o CMakeFiles\cmcurl.dir\select.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.obj -MF CMakeFiles\cmcurl.dir\select.c.obj.d -o CMakeFiles\cmcurl.dir\select.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/select.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c > CMakeFiles\cmcurl.dir\select.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c > CMakeFiles\cmcurl.dir\select.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/select.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/select.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c -o CMakeFiles\cmcurl.dir\select.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\select.c -o CMakeFiles\cmcurl.dir\select.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/sendf.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/sendf.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj -MF CMakeFiles\cmcurl.dir\sendf.c.obj.d -o CMakeFiles\cmcurl.dir\sendf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.obj -MF CMakeFiles\cmcurl.dir\sendf.c.obj.d -o CMakeFiles\cmcurl.dir\sendf.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/sendf.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c > CMakeFiles\cmcurl.dir\sendf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c > CMakeFiles\cmcurl.dir\sendf.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sendf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/sendf.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c -o CMakeFiles\cmcurl.dir\sendf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sendf.c -o CMakeFiles\cmcurl.dir\sendf.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/setopt.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/setopt.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj -MF CMakeFiles\cmcurl.dir\setopt.c.obj.d -o CMakeFiles\cmcurl.dir\setopt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.obj -MF CMakeFiles\cmcurl.dir\setopt.c.obj.d -o CMakeFiles\cmcurl.dir\setopt.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/setopt.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c > CMakeFiles\cmcurl.dir\setopt.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c > CMakeFiles\cmcurl.dir\setopt.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/setopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/setopt.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c -o CMakeFiles\cmcurl.dir\setopt.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\setopt.c -o CMakeFiles\cmcurl.dir\setopt.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/sha256.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/sha256.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj -MF CMakeFiles\cmcurl.dir\sha256.c.obj.d -o CMakeFiles\cmcurl.dir\sha256.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.obj -MF CMakeFiles\cmcurl.dir\sha256.c.obj.d -o CMakeFiles\cmcurl.dir\sha256.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/sha256.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c > CMakeFiles\cmcurl.dir\sha256.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c > CMakeFiles\cmcurl.dir\sha256.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/sha256.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/sha256.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c -o CMakeFiles\cmcurl.dir\sha256.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\sha256.c -o CMakeFiles\cmcurl.dir\sha256.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/share.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/share.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj -MF CMakeFiles\cmcurl.dir\share.c.obj.d -o CMakeFiles\cmcurl.dir\share.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.obj -MF CMakeFiles\cmcurl.dir\share.c.obj.d -o CMakeFiles\cmcurl.dir\share.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/share.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c > CMakeFiles\cmcurl.dir\share.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c > CMakeFiles\cmcurl.dir\share.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/share.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/share.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c -o CMakeFiles\cmcurl.dir\share.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\share.c -o CMakeFiles\cmcurl.dir\share.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/slist.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/slist.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj -MF CMakeFiles\cmcurl.dir\slist.c.obj.d -o CMakeFiles\cmcurl.dir\slist.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.obj -MF CMakeFiles\cmcurl.dir\slist.c.obj.d -o CMakeFiles\cmcurl.dir\slist.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/slist.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c > CMakeFiles\cmcurl.dir\slist.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c > CMakeFiles\cmcurl.dir\slist.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/slist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/slist.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c -o CMakeFiles\cmcurl.dir\slist.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\slist.c -o CMakeFiles\cmcurl.dir\slist.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/smb.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/smb.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj -MF CMakeFiles\cmcurl.dir\smb.c.obj.d -o CMakeFiles\cmcurl.dir\smb.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.obj -MF CMakeFiles\cmcurl.dir\smb.c.obj.d -o CMakeFiles\cmcurl.dir\smb.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/smb.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c > CMakeFiles\cmcurl.dir\smb.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c > CMakeFiles\cmcurl.dir\smb.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/smb.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c -o CMakeFiles\cmcurl.dir\smb.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smb.c -o CMakeFiles\cmcurl.dir\smb.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/smtp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/smtp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj -MF CMakeFiles\cmcurl.dir\smtp.c.obj.d -o CMakeFiles\cmcurl.dir\smtp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.obj -MF CMakeFiles\cmcurl.dir\smtp.c.obj.d -o CMakeFiles\cmcurl.dir\smtp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/smtp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c > CMakeFiles\cmcurl.dir\smtp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c > CMakeFiles\cmcurl.dir\smtp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/smtp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/smtp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c -o CMakeFiles\cmcurl.dir\smtp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\smtp.c -o CMakeFiles\cmcurl.dir\smtp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socketpair.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socketpair.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj -MF CMakeFiles\cmcurl.dir\socketpair.c.obj.d -o CMakeFiles\cmcurl.dir\socketpair.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.obj -MF CMakeFiles\cmcurl.dir\socketpair.c.obj.d -o CMakeFiles\cmcurl.dir\socketpair.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/socketpair.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c > CMakeFiles\cmcurl.dir\socketpair.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c > CMakeFiles\cmcurl.dir\socketpair.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socketpair.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/socketpair.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c -o CMakeFiles\cmcurl.dir\socketpair.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socketpair.c -o CMakeFiles\cmcurl.dir\socketpair.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj -MF CMakeFiles\cmcurl.dir\socks.c.obj.d -o CMakeFiles\cmcurl.dir\socks.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.obj -MF CMakeFiles\cmcurl.dir\socks.c.obj.d -o CMakeFiles\cmcurl.dir\socks.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/socks.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c > CMakeFiles\cmcurl.dir\socks.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c > CMakeFiles\cmcurl.dir\socks.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/socks.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c -o CMakeFiles\cmcurl.dir\socks.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks.c -o CMakeFiles\cmcurl.dir\socks.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks_gssapi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks_gssapi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\socks_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\socks_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\socks_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\socks_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/socks_gssapi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c > CMakeFiles\cmcurl.dir\socks_gssapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c > CMakeFiles\cmcurl.dir\socks_gssapi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/socks_gssapi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c -o CMakeFiles\cmcurl.dir\socks_gssapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_gssapi.c -o CMakeFiles\cmcurl.dir\socks_gssapi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/socks_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj -MF CMakeFiles\cmcurl.dir\socks_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\socks_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.obj -MF CMakeFiles\cmcurl.dir\socks_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\socks_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/socks_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c > CMakeFiles\cmcurl.dir\socks_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c > CMakeFiles\cmcurl.dir\socks_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/socks_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/socks_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c -o CMakeFiles\cmcurl.dir\socks_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\socks_sspi.c -o CMakeFiles\cmcurl.dir\socks_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/speedcheck.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/speedcheck.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj -MF CMakeFiles\cmcurl.dir\speedcheck.c.obj.d -o CMakeFiles\cmcurl.dir\speedcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.obj -MF CMakeFiles\cmcurl.dir\speedcheck.c.obj.d -o CMakeFiles\cmcurl.dir\speedcheck.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/speedcheck.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c > CMakeFiles\cmcurl.dir\speedcheck.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c > CMakeFiles\cmcurl.dir\speedcheck.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/speedcheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/speedcheck.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c -o CMakeFiles\cmcurl.dir\speedcheck.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\speedcheck.c -o CMakeFiles\cmcurl.dir\speedcheck.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/splay.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/splay.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj -MF CMakeFiles\cmcurl.dir\splay.c.obj.d -o CMakeFiles\cmcurl.dir\splay.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.obj -MF CMakeFiles\cmcurl.dir\splay.c.obj.d -o CMakeFiles\cmcurl.dir\splay.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/splay.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c > CMakeFiles\cmcurl.dir\splay.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c > CMakeFiles\cmcurl.dir\splay.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/splay.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/splay.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c -o CMakeFiles\cmcurl.dir\splay.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\splay.c -o CMakeFiles\cmcurl.dir\splay.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strcase.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strcase.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj -MF CMakeFiles\cmcurl.dir\strcase.c.obj.d -o CMakeFiles\cmcurl.dir\strcase.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.obj -MF CMakeFiles\cmcurl.dir\strcase.c.obj.d -o CMakeFiles\cmcurl.dir\strcase.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/strcase.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c > CMakeFiles\cmcurl.dir\strcase.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c > CMakeFiles\cmcurl.dir\strcase.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strcase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/strcase.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c -o CMakeFiles\cmcurl.dir\strcase.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strcase.c -o CMakeFiles\cmcurl.dir\strcase.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strdup.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strdup.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj -MF CMakeFiles\cmcurl.dir\strdup.c.obj.d -o CMakeFiles\cmcurl.dir\strdup.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.obj -MF CMakeFiles\cmcurl.dir\strdup.c.obj.d -o CMakeFiles\cmcurl.dir\strdup.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/strdup.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c > CMakeFiles\cmcurl.dir\strdup.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c > CMakeFiles\cmcurl.dir\strdup.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/strdup.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c -o CMakeFiles\cmcurl.dir\strdup.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strdup.c -o CMakeFiles\cmcurl.dir\strdup.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strerror.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strerror.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj -MF CMakeFiles\cmcurl.dir\strerror.c.obj.d -o CMakeFiles\cmcurl.dir\strerror.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.obj -MF CMakeFiles\cmcurl.dir\strerror.c.obj.d -o CMakeFiles\cmcurl.dir\strerror.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/strerror.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c > CMakeFiles\cmcurl.dir\strerror.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c > CMakeFiles\cmcurl.dir\strerror.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strerror.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/strerror.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c -o CMakeFiles\cmcurl.dir\strerror.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strerror.c -o CMakeFiles\cmcurl.dir\strerror.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strtok.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strtok.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj -MF CMakeFiles\cmcurl.dir\strtok.c.obj.d -o CMakeFiles\cmcurl.dir\strtok.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.obj -MF CMakeFiles\cmcurl.dir\strtok.c.obj.d -o CMakeFiles\cmcurl.dir\strtok.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/strtok.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c > CMakeFiles\cmcurl.dir\strtok.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c > CMakeFiles\cmcurl.dir\strtok.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtok.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/strtok.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c -o CMakeFiles\cmcurl.dir\strtok.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtok.c -o CMakeFiles\cmcurl.dir\strtok.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strtoofft.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/strtoofft.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj -MF CMakeFiles\cmcurl.dir\strtoofft.c.obj.d -o CMakeFiles\cmcurl.dir\strtoofft.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.obj -MF CMakeFiles\cmcurl.dir\strtoofft.c.obj.d -o CMakeFiles\cmcurl.dir\strtoofft.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/strtoofft.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c > CMakeFiles\cmcurl.dir\strtoofft.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c > CMakeFiles\cmcurl.dir\strtoofft.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/strtoofft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/strtoofft.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c -o CMakeFiles\cmcurl.dir\strtoofft.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\strtoofft.c -o CMakeFiles\cmcurl.dir\strtoofft.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/system_win32.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/system_win32.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj -MF CMakeFiles\cmcurl.dir\system_win32.c.obj.d -o CMakeFiles\cmcurl.dir\system_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.obj -MF CMakeFiles\cmcurl.dir\system_win32.c.obj.d -o CMakeFiles\cmcurl.dir\system_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/system_win32.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c > CMakeFiles\cmcurl.dir\system_win32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c > CMakeFiles\cmcurl.dir\system_win32.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/system_win32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/system_win32.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c -o CMakeFiles\cmcurl.dir\system_win32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\system_win32.c -o CMakeFiles\cmcurl.dir\system_win32.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/telnet.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/telnet.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj -MF CMakeFiles\cmcurl.dir\telnet.c.obj.d -o CMakeFiles\cmcurl.dir\telnet.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.obj -MF CMakeFiles\cmcurl.dir\telnet.c.obj.d -o CMakeFiles\cmcurl.dir\telnet.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/telnet.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c > CMakeFiles\cmcurl.dir\telnet.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c > CMakeFiles\cmcurl.dir\telnet.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/telnet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/telnet.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c -o CMakeFiles\cmcurl.dir\telnet.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\telnet.c -o CMakeFiles\cmcurl.dir\telnet.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/tftp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/tftp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj -MF CMakeFiles\cmcurl.dir\tftp.c.obj.d -o CMakeFiles\cmcurl.dir\tftp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.obj -MF CMakeFiles\cmcurl.dir\tftp.c.obj.d -o CMakeFiles\cmcurl.dir\tftp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/tftp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c > CMakeFiles\cmcurl.dir\tftp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c > CMakeFiles\cmcurl.dir\tftp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/tftp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/tftp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c -o CMakeFiles\cmcurl.dir\tftp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\tftp.c -o CMakeFiles\cmcurl.dir\tftp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/timeval.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/timeval.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj -MF CMakeFiles\cmcurl.dir\timeval.c.obj.d -o CMakeFiles\cmcurl.dir\timeval.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.obj -MF CMakeFiles\cmcurl.dir\timeval.c.obj.d -o CMakeFiles\cmcurl.dir\timeval.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/timeval.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c > CMakeFiles\cmcurl.dir\timeval.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c > CMakeFiles\cmcurl.dir\timeval.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/timeval.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/timeval.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c -o CMakeFiles\cmcurl.dir\timeval.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\timeval.c -o CMakeFiles\cmcurl.dir\timeval.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/transfer.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/transfer.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj -MF CMakeFiles\cmcurl.dir\transfer.c.obj.d -o CMakeFiles\cmcurl.dir\transfer.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.obj -MF CMakeFiles\cmcurl.dir\transfer.c.obj.d -o CMakeFiles\cmcurl.dir\transfer.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/transfer.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c > CMakeFiles\cmcurl.dir\transfer.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c > CMakeFiles\cmcurl.dir\transfer.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/transfer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/transfer.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c -o CMakeFiles\cmcurl.dir\transfer.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\transfer.c -o CMakeFiles\cmcurl.dir\transfer.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/url.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/url.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj -MF CMakeFiles\cmcurl.dir\url.c.obj.d -o CMakeFiles\cmcurl.dir\url.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.obj -MF CMakeFiles\cmcurl.dir\url.c.obj.d -o CMakeFiles\cmcurl.dir\url.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/url.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c > CMakeFiles\cmcurl.dir\url.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c > CMakeFiles\cmcurl.dir\url.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/url.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/url.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c -o CMakeFiles\cmcurl.dir\url.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\url.c -o CMakeFiles\cmcurl.dir\url.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/urlapi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/urlapi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj -MF CMakeFiles\cmcurl.dir\urlapi.c.obj.d -o CMakeFiles\cmcurl.dir\urlapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.obj -MF CMakeFiles\cmcurl.dir\urlapi.c.obj.d -o CMakeFiles\cmcurl.dir\urlapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/urlapi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c > CMakeFiles\cmcurl.dir\urlapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c > CMakeFiles\cmcurl.dir\urlapi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/urlapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/urlapi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c -o CMakeFiles\cmcurl.dir\urlapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\urlapi.c -o CMakeFiles\cmcurl.dir\urlapi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/version.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/version.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj -MF CMakeFiles\cmcurl.dir\version.c.obj.d -o CMakeFiles\cmcurl.dir\version.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.obj -MF CMakeFiles\cmcurl.dir\version.c.obj.d -o CMakeFiles\cmcurl.dir\version.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/version.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c > CMakeFiles\cmcurl.dir\version.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c > CMakeFiles\cmcurl.dir\version.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/version.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c -o CMakeFiles\cmcurl.dir\version.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version.c -o CMakeFiles\cmcurl.dir\version.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/version_win32.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/version_win32.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj -MF CMakeFiles\cmcurl.dir\version_win32.c.obj.d -o CMakeFiles\cmcurl.dir\version_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.obj -MF CMakeFiles\cmcurl.dir\version_win32.c.obj.d -o CMakeFiles\cmcurl.dir\version_win32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/version_win32.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c > CMakeFiles\cmcurl.dir\version_win32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c > CMakeFiles\cmcurl.dir\version_win32.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/version_win32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/version_win32.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c -o CMakeFiles\cmcurl.dir\version_win32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\version_win32.c -o CMakeFiles\cmcurl.dir\version_win32.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/warnless.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/warnless.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj -MF CMakeFiles\cmcurl.dir\warnless.c.obj.d -o CMakeFiles\cmcurl.dir\warnless.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.obj -MF CMakeFiles\cmcurl.dir\warnless.c.obj.d -o CMakeFiles\cmcurl.dir\warnless.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/warnless.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c > CMakeFiles\cmcurl.dir\warnless.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c > CMakeFiles\cmcurl.dir\warnless.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/warnless.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/warnless.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c -o CMakeFiles\cmcurl.dir\warnless.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\warnless.c -o CMakeFiles\cmcurl.dir\warnless.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/wildcard.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/wildcard.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj -MF CMakeFiles\cmcurl.dir\wildcard.c.obj.d -o CMakeFiles\cmcurl.dir\wildcard.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.obj -MF CMakeFiles\cmcurl.dir\wildcard.c.obj.d -o CMakeFiles\cmcurl.dir\wildcard.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/wildcard.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c > CMakeFiles\cmcurl.dir\wildcard.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c > CMakeFiles\cmcurl.dir\wildcard.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/wildcard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/wildcard.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c -o CMakeFiles\cmcurl.dir\wildcard.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\wildcard.c -o CMakeFiles\cmcurl.dir\wildcard.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/x509asn1.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/x509asn1.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj -MF CMakeFiles\cmcurl.dir\x509asn1.c.obj.d -o CMakeFiles\cmcurl.dir\x509asn1.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.obj -MF CMakeFiles\cmcurl.dir\x509asn1.c.obj.d -o CMakeFiles\cmcurl.dir\x509asn1.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/x509asn1.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c > CMakeFiles\cmcurl.dir\x509asn1.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c > CMakeFiles\cmcurl.dir\x509asn1.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/x509asn1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/x509asn1.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c -o CMakeFiles\cmcurl.dir\x509asn1.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\x509asn1.c -o CMakeFiles\cmcurl.dir\x509asn1.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/cleartext.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/cleartext.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj -MF CMakeFiles\cmcurl.dir\vauth\cleartext.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\cleartext.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.obj -MF CMakeFiles\cmcurl.dir\vauth\cleartext.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\cleartext.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/cleartext.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c > CMakeFiles\cmcurl.dir\vauth\cleartext.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c > CMakeFiles\cmcurl.dir\vauth\cleartext.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cleartext.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/cleartext.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c -o CMakeFiles\cmcurl.dir\vauth\cleartext.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cleartext.c -o CMakeFiles\cmcurl.dir\vauth\cleartext.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/cram.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/cram.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj -MF CMakeFiles\cmcurl.dir\vauth\cram.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\cram.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.obj -MF CMakeFiles\cmcurl.dir\vauth\cram.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\cram.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/cram.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c > CMakeFiles\cmcurl.dir\vauth\cram.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c > CMakeFiles\cmcurl.dir\vauth\cram.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/cram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/cram.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c -o CMakeFiles\cmcurl.dir\vauth\cram.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\cram.c -o CMakeFiles\cmcurl.dir\vauth\cram.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/digest.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/digest.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj -MF CMakeFiles\cmcurl.dir\vauth\digest.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\digest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.obj -MF CMakeFiles\cmcurl.dir\vauth\digest.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\digest.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/digest.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c > CMakeFiles\cmcurl.dir\vauth\digest.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c > CMakeFiles\cmcurl.dir\vauth\digest.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/digest.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c -o CMakeFiles\cmcurl.dir\vauth\digest.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest.c -o CMakeFiles\cmcurl.dir\vauth\digest.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/digest_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/digest_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c > CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c > CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/digest_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c -o CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\digest_sspi.c -o CMakeFiles\cmcurl.dir\vauth\digest_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/gsasl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/gsasl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj -MF CMakeFiles\cmcurl.dir\vauth\gsasl.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\gsasl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.obj -MF CMakeFiles\cmcurl.dir\vauth\gsasl.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\gsasl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/gsasl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c > CMakeFiles\cmcurl.dir\vauth\gsasl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c > CMakeFiles\cmcurl.dir\vauth\gsasl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/gsasl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/gsasl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c -o CMakeFiles\cmcurl.dir\vauth\gsasl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\gsasl.c -o CMakeFiles\cmcurl.dir\vauth\gsasl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/krb5_gssapi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/krb5_gssapi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c > CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c > CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/krb5_gssapi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c -o CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_gssapi.c -o CMakeFiles\cmcurl.dir\vauth\krb5_gssapi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/krb5_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/krb5_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c > CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c > CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/krb5_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c -o CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\krb5_sspi.c -o CMakeFiles\cmcurl.dir\vauth\krb5_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/ntlm.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/ntlm.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj -MF CMakeFiles\cmcurl.dir\vauth\ntlm.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\ntlm.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.obj -MF CMakeFiles\cmcurl.dir\vauth\ntlm.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\ntlm.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/ntlm.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c > CMakeFiles\cmcurl.dir\vauth\ntlm.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c > CMakeFiles\cmcurl.dir\vauth\ntlm.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/ntlm.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c -o CMakeFiles\cmcurl.dir\vauth\ntlm.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm.c -o CMakeFiles\cmcurl.dir\vauth\ntlm.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/ntlm_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/ntlm_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c > CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c > CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/ntlm_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c -o CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\ntlm_sspi.c -o CMakeFiles\cmcurl.dir\vauth\ntlm_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/oauth2.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/oauth2.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj -MF CMakeFiles\cmcurl.dir\vauth\oauth2.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\oauth2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.obj -MF CMakeFiles\cmcurl.dir\vauth\oauth2.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\oauth2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/oauth2.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c > CMakeFiles\cmcurl.dir\vauth\oauth2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c > CMakeFiles\cmcurl.dir\vauth\oauth2.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/oauth2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/oauth2.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c -o CMakeFiles\cmcurl.dir\vauth\oauth2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\oauth2.c -o CMakeFiles\cmcurl.dir\vauth\oauth2.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/spnego_gssapi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/spnego_gssapi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c > CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c > CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/spnego_gssapi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c -o CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_gssapi.c -o CMakeFiles\cmcurl.dir\vauth\spnego_gssapi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/spnego_sspi.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/spnego_sspi.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.obj -MF CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c > CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c > CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/spnego_sspi.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c -o CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\spnego_sspi.c -o CMakeFiles\cmcurl.dir\vauth\spnego_sspi.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/vauth.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vauth/vauth.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj -MF CMakeFiles\cmcurl.dir\vauth\vauth.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\vauth.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.obj -MF CMakeFiles\cmcurl.dir\vauth\vauth.c.obj.d -o CMakeFiles\cmcurl.dir\vauth\vauth.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vauth/vauth.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c > CMakeFiles\cmcurl.dir\vauth\vauth.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c > CMakeFiles\cmcurl.dir\vauth\vauth.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vauth/vauth.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vauth/vauth.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c -o CMakeFiles\cmcurl.dir\vauth\vauth.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vauth\vauth.c -o CMakeFiles\cmcurl.dir\vauth\vauth.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/bearssl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/bearssl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\bearssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\bearssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\bearssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\bearssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/bearssl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c > CMakeFiles\cmcurl.dir\vtls\bearssl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c > CMakeFiles\cmcurl.dir\vtls\bearssl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/bearssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/bearssl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c -o CMakeFiles\cmcurl.dir\vtls\bearssl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\bearssl.c -o CMakeFiles\cmcurl.dir\vtls\bearssl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/gskit.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/gskit.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj -MF CMakeFiles\cmcurl.dir\vtls\gskit.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\gskit.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.obj -MF CMakeFiles\cmcurl.dir\vtls\gskit.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\gskit.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/gskit.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c > CMakeFiles\cmcurl.dir\vtls\gskit.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c > CMakeFiles\cmcurl.dir\vtls\gskit.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gskit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/gskit.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c -o CMakeFiles\cmcurl.dir\vtls\gskit.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gskit.c -o CMakeFiles\cmcurl.dir\vtls\gskit.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/gtls.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/gtls.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\gtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\gtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\gtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\gtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/gtls.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c > CMakeFiles\cmcurl.dir\vtls\gtls.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c > CMakeFiles\cmcurl.dir\vtls\gtls.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/gtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/gtls.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c -o CMakeFiles\cmcurl.dir\vtls\gtls.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\gtls.c -o CMakeFiles\cmcurl.dir\vtls\gtls.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/keylog.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/keylog.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj -MF CMakeFiles\cmcurl.dir\vtls\keylog.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\keylog.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.obj -MF CMakeFiles\cmcurl.dir\vtls\keylog.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\keylog.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/keylog.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c > CMakeFiles\cmcurl.dir\vtls\keylog.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c > CMakeFiles\cmcurl.dir\vtls\keylog.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/keylog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/keylog.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c -o CMakeFiles\cmcurl.dir\vtls\keylog.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\keylog.c -o CMakeFiles\cmcurl.dir\vtls\keylog.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mbedtls.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mbedtls.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mbedtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mbedtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mbedtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mbedtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/mbedtls.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c > CMakeFiles\cmcurl.dir\vtls\mbedtls.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c > CMakeFiles\cmcurl.dir\vtls\mbedtls.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/mbedtls.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c -o CMakeFiles\cmcurl.dir\vtls\mbedtls.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls.c -o CMakeFiles\cmcurl.dir\vtls\mbedtls.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mbedtls_threadlock.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mbedtls_threadlock.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c > CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c > CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/mbedtls_threadlock.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c -o CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mbedtls_threadlock.c -o CMakeFiles\cmcurl.dir\vtls\mbedtls_threadlock.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mesalink.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/mesalink.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mesalink.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mesalink.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.obj -MF CMakeFiles\cmcurl.dir\vtls\mesalink.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\mesalink.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/mesalink.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c > CMakeFiles\cmcurl.dir\vtls\mesalink.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c > CMakeFiles\cmcurl.dir\vtls\mesalink.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/mesalink.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/mesalink.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c -o CMakeFiles\cmcurl.dir\vtls\mesalink.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\mesalink.c -o CMakeFiles\cmcurl.dir\vtls\mesalink.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/nss.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/nss.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj -MF CMakeFiles\cmcurl.dir\vtls\nss.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\nss.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.obj -MF CMakeFiles\cmcurl.dir\vtls\nss.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\nss.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/nss.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c > CMakeFiles\cmcurl.dir\vtls\nss.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c > CMakeFiles\cmcurl.dir\vtls\nss.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/nss.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/nss.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c -o CMakeFiles\cmcurl.dir\vtls\nss.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\nss.c -o CMakeFiles\cmcurl.dir\vtls\nss.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/openssl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/openssl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\openssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\openssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\openssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\openssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/openssl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c > CMakeFiles\cmcurl.dir\vtls\openssl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c > CMakeFiles\cmcurl.dir\vtls\openssl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/openssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/openssl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c -o CMakeFiles\cmcurl.dir\vtls\openssl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\openssl.c -o CMakeFiles\cmcurl.dir\vtls\openssl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/rustls.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/rustls.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\rustls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\rustls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\rustls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\rustls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/rustls.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c > CMakeFiles\cmcurl.dir\vtls\rustls.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c > CMakeFiles\cmcurl.dir\vtls\rustls.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/rustls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/rustls.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c -o CMakeFiles\cmcurl.dir\vtls\rustls.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\rustls.c -o CMakeFiles\cmcurl.dir\vtls\rustls.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/schannel.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/schannel.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj -MF CMakeFiles\cmcurl.dir\vtls\schannel.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\schannel.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.obj -MF CMakeFiles\cmcurl.dir\vtls\schannel.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\schannel.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/schannel.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c > CMakeFiles\cmcurl.dir\vtls\schannel.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c > CMakeFiles\cmcurl.dir\vtls\schannel.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/schannel.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c -o CMakeFiles\cmcurl.dir\vtls\schannel.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel.c -o CMakeFiles\cmcurl.dir\vtls\schannel.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/schannel_verify.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/schannel_verify.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj -MF CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.obj -MF CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c > CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c > CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/schannel_verify.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c -o CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\schannel_verify.c -o CMakeFiles\cmcurl.dir\vtls\schannel_verify.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/sectransp.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/sectransp.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj -MF CMakeFiles\cmcurl.dir\vtls\sectransp.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\sectransp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.obj -MF CMakeFiles\cmcurl.dir\vtls\sectransp.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\sectransp.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/sectransp.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c > CMakeFiles\cmcurl.dir\vtls\sectransp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c > CMakeFiles\cmcurl.dir\vtls\sectransp.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/sectransp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/sectransp.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c -o CMakeFiles\cmcurl.dir\vtls\sectransp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\sectransp.c -o CMakeFiles\cmcurl.dir\vtls\sectransp.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/vtls.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/vtls.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\vtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\vtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.obj -MF CMakeFiles\cmcurl.dir\vtls\vtls.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\vtls.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/vtls.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c > CMakeFiles\cmcurl.dir\vtls\vtls.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c > CMakeFiles\cmcurl.dir\vtls\vtls.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/vtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/vtls.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c -o CMakeFiles\cmcurl.dir\vtls\vtls.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\vtls.c -o CMakeFiles\cmcurl.dir\vtls\vtls.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/wolfssl.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vtls/wolfssl.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\wolfssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\wolfssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.obj -MF CMakeFiles\cmcurl.dir\vtls\wolfssl.c.obj.d -o CMakeFiles\cmcurl.dir\vtls\wolfssl.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vtls/wolfssl.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c > CMakeFiles\cmcurl.dir\vtls\wolfssl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c > CMakeFiles\cmcurl.dir\vtls\wolfssl.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vtls/wolfssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vtls/wolfssl.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c -o CMakeFiles\cmcurl.dir\vtls\wolfssl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vtls\wolfssl.c -o CMakeFiles\cmcurl.dir\vtls\wolfssl.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/ngtcp2.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/ngtcp2.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj -MF CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.obj -MF CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c > CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c > CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vquic/ngtcp2.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c -o CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\ngtcp2.c -o CMakeFiles\cmcurl.dir\vquic\ngtcp2.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/quiche.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/quiche.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj -MF CMakeFiles\cmcurl.dir\vquic\quiche.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\quiche.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.obj -MF CMakeFiles\cmcurl.dir\vquic\quiche.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\quiche.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vquic/quiche.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c > CMakeFiles\cmcurl.dir\vquic\quiche.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c > CMakeFiles\cmcurl.dir\vquic\quiche.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/quiche.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vquic/quiche.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c -o CMakeFiles\cmcurl.dir\vquic\quiche.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\quiche.c -o CMakeFiles\cmcurl.dir\vquic\quiche.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/vquic.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vquic/vquic.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj -MF CMakeFiles\cmcurl.dir\vquic\vquic.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\vquic.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.obj -MF CMakeFiles\cmcurl.dir\vquic\vquic.c.obj.d -o CMakeFiles\cmcurl.dir\vquic\vquic.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vquic/vquic.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c > CMakeFiles\cmcurl.dir\vquic\vquic.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c > CMakeFiles\cmcurl.dir\vquic\vquic.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vquic/vquic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vquic/vquic.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c -o CMakeFiles\cmcurl.dir\vquic\vquic.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vquic\vquic.c -o CMakeFiles\cmcurl.dir\vquic\vquic.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/libssh.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/libssh.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj -MF CMakeFiles\cmcurl.dir\vssh\libssh.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\libssh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.obj -MF CMakeFiles\cmcurl.dir\vssh\libssh.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\libssh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vssh/libssh.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c > CMakeFiles\cmcurl.dir\vssh\libssh.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c > CMakeFiles\cmcurl.dir\vssh\libssh.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vssh/libssh.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c -o CMakeFiles\cmcurl.dir\vssh\libssh.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh.c -o CMakeFiles\cmcurl.dir\vssh\libssh.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/libssh2.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/libssh2.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj -MF CMakeFiles\cmcurl.dir\vssh\libssh2.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\libssh2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.obj -MF CMakeFiles\cmcurl.dir\vssh\libssh2.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\libssh2.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vssh/libssh2.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c > CMakeFiles\cmcurl.dir\vssh\libssh2.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c > CMakeFiles\cmcurl.dir\vssh\libssh2.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/libssh2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vssh/libssh2.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c -o CMakeFiles\cmcurl.dir\vssh\libssh2.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\libssh2.c -o CMakeFiles\cmcurl.dir\vssh\libssh2.c.s
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/flags.make
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/includes_C.rsp
-Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/wolfssh.c
+Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Utilities/cmcurl/lib/vssh/wolfssh.c
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj -MF CMakeFiles\cmcurl.dir\vssh\wolfssh.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\wolfssh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj -MF CMakeFiles\cmcurl.dir\vssh\wolfssh.c.obj.d -o CMakeFiles\cmcurl.dir\vssh\wolfssh.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmcurl.dir/vssh/wolfssh.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c > CMakeFiles\cmcurl.dir\vssh\wolfssh.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c > CMakeFiles\cmcurl.dir\vssh\wolfssh.c.i
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmcurl.dir/vssh/wolfssh.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c -o CMakeFiles\cmcurl.dir\vssh\wolfssh.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib\vssh\wolfssh.c -o CMakeFiles\cmcurl.dir\vssh\wolfssh.c.s
 
 # Object files for target cmcurl
 cmcurl_OBJECTS = \
@@ -2694,19 +2694,19 @@ Utilities/cmcurl/lib/libcmcurl.a: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vss
 Utilities/cmcurl/lib/libcmcurl.a: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/vssh/wolfssh.c.obj
 Utilities/cmcurl/lib/libcmcurl.a: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/build.make
 Utilities/cmcurl/lib/libcmcurl.a: Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Linking C static library libcmcurl.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -P CMakeFiles\cmcurl.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmcurl.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Linking C static library libcmcurl.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -P CMakeFiles\cmcurl.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmcurl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/build: Utilities/cmcurl/lib/libcmcurl.a
 .PHONY : Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/build
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -P CMakeFiles\cmcurl.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib && $(CMAKE_COMMAND) -P CMakeFiles\cmcurl.dir\cmake_clean.cmake
 .PHONY : Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/clean
 
 Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmcurl\lib\CMakeFiles\cmcurl.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\lib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmcurl\lib\CMakeFiles\cmcurl.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/depend
 

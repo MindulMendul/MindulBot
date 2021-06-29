@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeLib/CMakeLibTests.cxx" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj" "gcc" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj.d"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeLib/CMakeLibTests.cxx" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj" "gcc" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/CMakeLibTests.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testArgumentParser.cxx" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.obj" "gcc" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testArgumentParser.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testCMExtAlgorithm.cxx" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.obj" "gcc" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtAlgorithm.cxx.obj.d"
   "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CMakeLib/testCMExtMemory.cxx" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.obj" "gcc" "Tests/CMakeLib/CMakeFiles/CMakeLibTests.dir/testCMExtMemory.cxx.obj.d"
@@ -38,21 +38,21 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/CMakeFiles/CMakeLib.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/CMakeFiles/CTestLib.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/CMakeFiles/cmsys.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/std/CMakeFiles/cmstd.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmexpat/CMakeFiles/cmexpat.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmzstd/CMakeFiles/cmzstd.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmzlib/CMakeFiles/cmzlib.dir/DependInfo.cmake"
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/CMakeFiles/CMakeLib.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/CMakeFiles/CTestLib.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/CMakeFiles/cmsys.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/std/CMakeFiles/cmstd.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmexpat/CMakeFiles/cmexpat.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibarchive/libarchive/CMakeFiles/cmlibarchive.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmliblzma/CMakeFiles/cmliblzma.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmzstd/CMakeFiles/cmzstd.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmbzip2/CMakeFiles/cmbzip2.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmjsoncpp/CMakeFiles/cmjsoncpp.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibrhash/CMakeFiles/cmlibrhash.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmcurl/lib/CMakeFiles/cmcurl.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmzlib/CMakeFiles/cmzlib.dir/DependInfo.cmake"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmnghttp2/CMakeFiles/cmnghttp2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

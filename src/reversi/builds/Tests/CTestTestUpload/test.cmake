@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 2.8.12)
 
 # Settings:
-set(CTEST_DASHBOARD_ROOT                "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestTest")
+set(CTEST_DASHBOARD_ROOT                "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestTest")
 set(CTEST_SITE                          "Mindul-Laptop")
 set(CTEST_BUILD_NAME                    "CTestTest-Win32-mingw32-make-Upload")
 
 set(CTEST_SOURCE_DIRECTORY              "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CTestTestUpload")
-set(CTEST_BINARY_DIRECTORY              "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestTestUpload")
+set(CTEST_BINARY_DIRECTORY              "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestTestUpload")
 set(CTEST_CMAKE_GENERATOR               "MinGW Makefiles")
 set(CTEST_CMAKE_GENERATOR_PLATFORM      "")
 set(CTEST_CMAKE_GENERATOR_TOOLSET       "")

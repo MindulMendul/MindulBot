@@ -5,7 +5,7 @@
 
 # Configuration directories and files
 SourceDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1
-BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi
+BuildDirectory: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds
 
 # Where to place the cost data store
 CostDataFile: 

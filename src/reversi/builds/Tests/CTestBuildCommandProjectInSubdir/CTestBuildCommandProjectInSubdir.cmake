@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.10)
 
 set(CTEST_SOURCE_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/VSProjectInSubdir")
-set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestBuildCommandProjectInSubdir/Nested")
+set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestBuildCommandProjectInSubdir/Nested")
 set(CTEST_CMAKE_GENERATOR "MinGW Makefiles")
 set(CTEST_BUILD_CONFIGURATION "Debug")
 

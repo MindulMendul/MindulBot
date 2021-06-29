@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeLib/PseudoMemcheck/NoLog/ret0.c" "Tests/CMakeLib/PseudoMemcheck/NoLog/CMakeFiles/pseudonl_valgrind.dir/ret0.c.obj" "gcc" "Tests/CMakeLib/PseudoMemcheck/NoLog/CMakeFiles/pseudonl_valgrind.dir/ret0.c.obj.d"
+  "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeLib/PseudoMemcheck/NoLog/ret0.c" "Tests/CMakeLib/PseudoMemcheck/NoLog/CMakeFiles/pseudonl_valgrind.dir/ret0.c.obj" "gcc" "Tests/CMakeLib/PseudoMemcheck/NoLog/CMakeFiles/pseudonl_valgrind.dir/ret0.c.obj.d"
   )
 
 # Targets to which this target links.

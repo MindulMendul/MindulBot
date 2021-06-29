@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmzlib\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmzlib\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmzlib/CMakeFiles/cmzlib.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/CMakeFiles/cmzlib.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmzlib/CMakeFiles/cmzlib.dir/rule
 .PHONY : Utilities/cmzlib/CMakeFiles/cmzlib.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmzlib: Utilities/cmzlib/CMakeFiles/cmzlib.dir/rule
 
 # fast build rule for target.
 cmzlib/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/build
 .PHONY : cmzlib/fast
 
 adler32.obj: adler32.c.obj
@@ -209,7 +209,7 @@ adler32.obj: adler32.c.obj
 
 # target to build an object file
 adler32.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.obj
 .PHONY : adler32.c.obj
 
 adler32.i: adler32.c.i
@@ -217,7 +217,7 @@ adler32.i: adler32.c.i
 
 # target to preprocess a source file
 adler32.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.i
 .PHONY : adler32.c.i
 
 adler32.s: adler32.c.s
@@ -225,7 +225,7 @@ adler32.s: adler32.c.s
 
 # target to generate assembly for a file
 adler32.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/adler32.c.s
 .PHONY : adler32.c.s
 
 compress.obj: compress.c.obj
@@ -233,7 +233,7 @@ compress.obj: compress.c.obj
 
 # target to build an object file
 compress.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.obj
 .PHONY : compress.c.obj
 
 compress.i: compress.c.i
@@ -241,7 +241,7 @@ compress.i: compress.c.i
 
 # target to preprocess a source file
 compress.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.i
 .PHONY : compress.c.i
 
 compress.s: compress.c.s
@@ -249,7 +249,7 @@ compress.s: compress.c.s
 
 # target to generate assembly for a file
 compress.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/compress.c.s
 .PHONY : compress.c.s
 
 crc32.obj: crc32.c.obj
@@ -257,7 +257,7 @@ crc32.obj: crc32.c.obj
 
 # target to build an object file
 crc32.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.obj
 .PHONY : crc32.c.obj
 
 crc32.i: crc32.c.i
@@ -265,7 +265,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -273,7 +273,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 deflate.obj: deflate.c.obj
@@ -281,7 +281,7 @@ deflate.obj: deflate.c.obj
 
 # target to build an object file
 deflate.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.obj
 .PHONY : deflate.c.obj
 
 deflate.i: deflate.c.i
@@ -289,7 +289,7 @@ deflate.i: deflate.c.i
 
 # target to preprocess a source file
 deflate.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.i
 .PHONY : deflate.c.i
 
 deflate.s: deflate.c.s
@@ -297,7 +297,7 @@ deflate.s: deflate.c.s
 
 # target to generate assembly for a file
 deflate.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/deflate.c.s
 .PHONY : deflate.c.s
 
 gzio.obj: gzio.c.obj
@@ -305,7 +305,7 @@ gzio.obj: gzio.c.obj
 
 # target to build an object file
 gzio.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.obj
 .PHONY : gzio.c.obj
 
 gzio.i: gzio.c.i
@@ -313,7 +313,7 @@ gzio.i: gzio.c.i
 
 # target to preprocess a source file
 gzio.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.i
 .PHONY : gzio.c.i
 
 gzio.s: gzio.c.s
@@ -321,7 +321,7 @@ gzio.s: gzio.c.s
 
 # target to generate assembly for a file
 gzio.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/gzio.c.s
 .PHONY : gzio.c.s
 
 inffast.obj: inffast.c.obj
@@ -329,7 +329,7 @@ inffast.obj: inffast.c.obj
 
 # target to build an object file
 inffast.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.obj
 .PHONY : inffast.c.obj
 
 inffast.i: inffast.c.i
@@ -337,7 +337,7 @@ inffast.i: inffast.c.i
 
 # target to preprocess a source file
 inffast.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.i
 .PHONY : inffast.c.i
 
 inffast.s: inffast.c.s
@@ -345,7 +345,7 @@ inffast.s: inffast.c.s
 
 # target to generate assembly for a file
 inffast.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inffast.c.s
 .PHONY : inffast.c.s
 
 inflate.obj: inflate.c.obj
@@ -353,7 +353,7 @@ inflate.obj: inflate.c.obj
 
 # target to build an object file
 inflate.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.obj
 .PHONY : inflate.c.obj
 
 inflate.i: inflate.c.i
@@ -361,7 +361,7 @@ inflate.i: inflate.c.i
 
 # target to preprocess a source file
 inflate.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.i
 .PHONY : inflate.c.i
 
 inflate.s: inflate.c.s
@@ -369,7 +369,7 @@ inflate.s: inflate.c.s
 
 # target to generate assembly for a file
 inflate.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inflate.c.s
 .PHONY : inflate.c.s
 
 inftrees.obj: inftrees.c.obj
@@ -377,7 +377,7 @@ inftrees.obj: inftrees.c.obj
 
 # target to build an object file
 inftrees.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.obj
 .PHONY : inftrees.c.obj
 
 inftrees.i: inftrees.c.i
@@ -385,7 +385,7 @@ inftrees.i: inftrees.c.i
 
 # target to preprocess a source file
 inftrees.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.i
 .PHONY : inftrees.c.i
 
 inftrees.s: inftrees.c.s
@@ -393,7 +393,7 @@ inftrees.s: inftrees.c.s
 
 # target to generate assembly for a file
 inftrees.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/inftrees.c.s
 .PHONY : inftrees.c.s
 
 trees.obj: trees.c.obj
@@ -401,7 +401,7 @@ trees.obj: trees.c.obj
 
 # target to build an object file
 trees.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.obj
 .PHONY : trees.c.obj
 
 trees.i: trees.c.i
@@ -409,7 +409,7 @@ trees.i: trees.c.i
 
 # target to preprocess a source file
 trees.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.i
 .PHONY : trees.c.i
 
 trees.s: trees.c.s
@@ -417,7 +417,7 @@ trees.s: trees.c.s
 
 # target to generate assembly for a file
 trees.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/trees.c.s
 .PHONY : trees.c.s
 
 uncompr.obj: uncompr.c.obj
@@ -425,7 +425,7 @@ uncompr.obj: uncompr.c.obj
 
 # target to build an object file
 uncompr.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.obj
 .PHONY : uncompr.c.obj
 
 uncompr.i: uncompr.c.i
@@ -433,7 +433,7 @@ uncompr.i: uncompr.c.i
 
 # target to preprocess a source file
 uncompr.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.i
 .PHONY : uncompr.c.i
 
 uncompr.s: uncompr.c.s
@@ -441,7 +441,7 @@ uncompr.s: uncompr.c.s
 
 # target to generate assembly for a file
 uncompr.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/uncompr.c.s
 .PHONY : uncompr.c.s
 
 zutil.obj: zutil.c.obj
@@ -449,7 +449,7 @@ zutil.obj: zutil.c.obj
 
 # target to build an object file
 zutil.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.obj
 .PHONY : zutil.c.obj
 
 zutil.i: zutil.c.i
@@ -457,7 +457,7 @@ zutil.i: zutil.c.i
 
 # target to preprocess a source file
 zutil.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.i
 .PHONY : zutil.c.i
 
 zutil.s: zutil.c.s
@@ -465,7 +465,7 @@ zutil.s: zutil.c.s
 
 # target to generate assembly for a file
 zutil.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmzlib\CMakeFiles\cmzlib.dir\build.make Utilities/cmzlib/CMakeFiles/cmzlib.dir/zutil.c.s
 .PHONY : zutil.c.s
 
 # Help Target
@@ -528,6 +528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

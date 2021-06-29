@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -101,7 +101,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Tests\RunCMake\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Tests\RunCMake\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/exit_code.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/exit_code.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/exit_code.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/exit_code.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ exit_code: Tests/RunCMake/CMakeFiles/exit_code.dir/rule
 
 # fast build rule for target.
 exit_code/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/build
 .PHONY : exit_code/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/rule
 
 # Convenience name for target.
@@ -215,12 +215,12 @@ pseudo_emulator: Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/rule
 
 # fast build rule for target.
 pseudo_emulator/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/build
 .PHONY : pseudo_emulator/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/rule
 
 # Convenience name for target.
@@ -229,12 +229,12 @@ pseudo_llvm-rc: Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/rule
 
 # fast build rule for target.
 pseudo_llvm-rc/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/build
 .PHONY : pseudo_llvm-rc/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/color_warning.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/color_warning.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/color_warning.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/color_warning.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ color_warning: Tests/RunCMake/CMakeFiles/color_warning.dir/rule
 
 # fast build rule for target.
 color_warning/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/build
 .PHONY : color_warning/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/ctresalloc.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/ctresalloc.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/ctresalloc.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/ctresalloc.dir/rule
 
 # Convenience name for target.
@@ -257,12 +257,12 @@ ctresalloc: Tests/RunCMake/CMakeFiles/ctresalloc.dir/rule
 
 # fast build rule for target.
 ctresalloc/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/build
 .PHONY : ctresalloc/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/fake_build_command.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/fake_build_command.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/fake_build_command.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/fake_build_command.dir/rule
 
 # Convenience name for target.
@@ -271,12 +271,12 @@ fake_build_command: Tests/RunCMake/CMakeFiles/fake_build_command.dir/rule
 
 # fast build rule for target.
 fake_build_command/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/build
 .PHONY : fake_build_command/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/rule
 
 # Convenience name for target.
@@ -285,12 +285,12 @@ pseudo_emulator_custom_command: Tests/RunCMake/CMakeFiles/pseudo_emulator_custom
 
 # fast build rule for target.
 pseudo_emulator_custom_command/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/build
 .PHONY : pseudo_emulator_custom_command/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/print_stdin.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/print_stdin.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/print_stdin.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/print_stdin.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ print_stdin: Tests/RunCMake/CMakeFiles/print_stdin.dir/rule
 
 # fast build rule for target.
 print_stdin/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/build
 .PHONY : print_stdin/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/rule
 
 # Convenience name for target.
@@ -313,12 +313,12 @@ pseudo_emulator_custom_command_arg: Tests/RunCMake/CMakeFiles/pseudo_emulator_cu
 
 # fast build rule for target.
 pseudo_emulator_custom_command_arg/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/build
 .PHONY : pseudo_emulator_custom_command_arg/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ pseudo_tidy: Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/rule
 
 # fast build rule for target.
 pseudo_tidy/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/build
 .PHONY : pseudo_tidy/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/rule
 
 # Convenience name for target.
@@ -341,12 +341,12 @@ pseudo_iwyu: Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/rule
 
 # fast build rule for target.
 pseudo_iwyu/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/build
 .PHONY : pseudo_iwyu/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/rule
 
 # Convenience name for target.
@@ -355,12 +355,12 @@ pseudo_cpplint: Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/rule
 
 # fast build rule for target.
 pseudo_cpplint/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/build
 .PHONY : pseudo_cpplint/fast
 
 # Convenience name for target.
 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/rule
 .PHONY : Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/rule
 
 # Convenience name for target.
@@ -369,7 +369,7 @@ pseudo_cppcheck: Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/rule
 
 # fast build rule for target.
 pseudo_cppcheck/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/build
 .PHONY : pseudo_cppcheck/fast
 
 CTestResourceAllocation/ctresalloc.obj: CTestResourceAllocation/ctresalloc.cxx.obj
@@ -377,7 +377,7 @@ CTestResourceAllocation/ctresalloc.obj: CTestResourceAllocation/ctresalloc.cxx.o
 
 # target to build an object file
 CTestResourceAllocation/ctresalloc.cxx.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.obj
 .PHONY : CTestResourceAllocation/ctresalloc.cxx.obj
 
 CTestResourceAllocation/ctresalloc.i: CTestResourceAllocation/ctresalloc.cxx.i
@@ -385,7 +385,7 @@ CTestResourceAllocation/ctresalloc.i: CTestResourceAllocation/ctresalloc.cxx.i
 
 # target to preprocess a source file
 CTestResourceAllocation/ctresalloc.cxx.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.i
 .PHONY : CTestResourceAllocation/ctresalloc.cxx.i
 
 CTestResourceAllocation/ctresalloc.s: CTestResourceAllocation/ctresalloc.cxx.s
@@ -393,7 +393,7 @@ CTestResourceAllocation/ctresalloc.s: CTestResourceAllocation/ctresalloc.cxx.s
 
 # target to generate assembly for a file
 CTestResourceAllocation/ctresalloc.cxx.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\ctresalloc.dir\build.make Tests/RunCMake/CMakeFiles/ctresalloc.dir/CTestResourceAllocation/ctresalloc.cxx.s
 .PHONY : CTestResourceAllocation/ctresalloc.cxx.s
 
 color_warning.obj: color_warning.c.obj
@@ -401,7 +401,7 @@ color_warning.obj: color_warning.c.obj
 
 # target to build an object file
 color_warning.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.obj
 .PHONY : color_warning.c.obj
 
 color_warning.i: color_warning.c.i
@@ -409,7 +409,7 @@ color_warning.i: color_warning.c.i
 
 # target to preprocess a source file
 color_warning.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.i
 .PHONY : color_warning.c.i
 
 color_warning.s: color_warning.c.s
@@ -417,7 +417,7 @@ color_warning.s: color_warning.c.s
 
 # target to generate assembly for a file
 color_warning.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\color_warning.dir\build.make Tests/RunCMake/CMakeFiles/color_warning.dir/color_warning.c.s
 .PHONY : color_warning.c.s
 
 exit_code.obj: exit_code.c.obj
@@ -425,7 +425,7 @@ exit_code.obj: exit_code.c.obj
 
 # target to build an object file
 exit_code.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.obj
 .PHONY : exit_code.c.obj
 
 exit_code.i: exit_code.c.i
@@ -433,7 +433,7 @@ exit_code.i: exit_code.c.i
 
 # target to preprocess a source file
 exit_code.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.i
 .PHONY : exit_code.c.i
 
 exit_code.s: exit_code.c.s
@@ -441,7 +441,7 @@ exit_code.s: exit_code.c.s
 
 # target to generate assembly for a file
 exit_code.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\exit_code.dir\build.make Tests/RunCMake/CMakeFiles/exit_code.dir/exit_code.c.s
 .PHONY : exit_code.c.s
 
 fake_build_command.obj: fake_build_command.c.obj
@@ -449,7 +449,7 @@ fake_build_command.obj: fake_build_command.c.obj
 
 # target to build an object file
 fake_build_command.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.obj
 .PHONY : fake_build_command.c.obj
 
 fake_build_command.i: fake_build_command.c.i
@@ -457,7 +457,7 @@ fake_build_command.i: fake_build_command.c.i
 
 # target to preprocess a source file
 fake_build_command.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.i
 .PHONY : fake_build_command.c.i
 
 fake_build_command.s: fake_build_command.c.s
@@ -465,7 +465,7 @@ fake_build_command.s: fake_build_command.c.s
 
 # target to generate assembly for a file
 fake_build_command.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\fake_build_command.dir\build.make Tests/RunCMake/CMakeFiles/fake_build_command.dir/fake_build_command.c.s
 .PHONY : fake_build_command.c.s
 
 print_stdin.obj: print_stdin.c.obj
@@ -473,7 +473,7 @@ print_stdin.obj: print_stdin.c.obj
 
 # target to build an object file
 print_stdin.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.obj
 .PHONY : print_stdin.c.obj
 
 print_stdin.i: print_stdin.c.i
@@ -481,7 +481,7 @@ print_stdin.i: print_stdin.c.i
 
 # target to preprocess a source file
 print_stdin.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.i
 .PHONY : print_stdin.c.i
 
 print_stdin.s: print_stdin.c.s
@@ -489,7 +489,7 @@ print_stdin.s: print_stdin.c.s
 
 # target to generate assembly for a file
 print_stdin.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\print_stdin.dir\build.make Tests/RunCMake/CMakeFiles/print_stdin.dir/print_stdin.c.s
 .PHONY : print_stdin.c.s
 
 pseudo_cppcheck.obj: pseudo_cppcheck.c.obj
@@ -497,7 +497,7 @@ pseudo_cppcheck.obj: pseudo_cppcheck.c.obj
 
 # target to build an object file
 pseudo_cppcheck.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.obj
 .PHONY : pseudo_cppcheck.c.obj
 
 pseudo_cppcheck.i: pseudo_cppcheck.c.i
@@ -505,7 +505,7 @@ pseudo_cppcheck.i: pseudo_cppcheck.c.i
 
 # target to preprocess a source file
 pseudo_cppcheck.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.i
 .PHONY : pseudo_cppcheck.c.i
 
 pseudo_cppcheck.s: pseudo_cppcheck.c.s
@@ -513,7 +513,7 @@ pseudo_cppcheck.s: pseudo_cppcheck.c.s
 
 # target to generate assembly for a file
 pseudo_cppcheck.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cppcheck.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cppcheck.dir/pseudo_cppcheck.c.s
 .PHONY : pseudo_cppcheck.c.s
 
 pseudo_cpplint.obj: pseudo_cpplint.c.obj
@@ -521,7 +521,7 @@ pseudo_cpplint.obj: pseudo_cpplint.c.obj
 
 # target to build an object file
 pseudo_cpplint.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.obj
 .PHONY : pseudo_cpplint.c.obj
 
 pseudo_cpplint.i: pseudo_cpplint.c.i
@@ -529,7 +529,7 @@ pseudo_cpplint.i: pseudo_cpplint.c.i
 
 # target to preprocess a source file
 pseudo_cpplint.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.i
 .PHONY : pseudo_cpplint.c.i
 
 pseudo_cpplint.s: pseudo_cpplint.c.s
@@ -537,7 +537,7 @@ pseudo_cpplint.s: pseudo_cpplint.c.s
 
 # target to generate assembly for a file
 pseudo_cpplint.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_cpplint.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_cpplint.dir/pseudo_cpplint.c.s
 .PHONY : pseudo_cpplint.c.s
 
 pseudo_emulator.obj: pseudo_emulator.c.obj
@@ -545,7 +545,7 @@ pseudo_emulator.obj: pseudo_emulator.c.obj
 
 # target to build an object file
 pseudo_emulator.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.obj
 .PHONY : pseudo_emulator.c.obj
 
 pseudo_emulator.i: pseudo_emulator.c.i
@@ -553,7 +553,7 @@ pseudo_emulator.i: pseudo_emulator.c.i
 
 # target to preprocess a source file
 pseudo_emulator.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.i
 .PHONY : pseudo_emulator.c.i
 
 pseudo_emulator.s: pseudo_emulator.c.s
@@ -561,7 +561,7 @@ pseudo_emulator.s: pseudo_emulator.c.s
 
 # target to generate assembly for a file
 pseudo_emulator.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator.dir/pseudo_emulator.c.s
 .PHONY : pseudo_emulator.c.s
 
 pseudo_emulator_custom_command.obj: pseudo_emulator_custom_command.c.obj
@@ -569,7 +569,7 @@ pseudo_emulator_custom_command.obj: pseudo_emulator_custom_command.c.obj
 
 # target to build an object file
 pseudo_emulator_custom_command.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.obj
 .PHONY : pseudo_emulator_custom_command.c.obj
 
 pseudo_emulator_custom_command.i: pseudo_emulator_custom_command.c.i
@@ -577,7 +577,7 @@ pseudo_emulator_custom_command.i: pseudo_emulator_custom_command.c.i
 
 # target to preprocess a source file
 pseudo_emulator_custom_command.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.i
 .PHONY : pseudo_emulator_custom_command.c.i
 
 pseudo_emulator_custom_command.s: pseudo_emulator_custom_command.c.s
@@ -585,7 +585,7 @@ pseudo_emulator_custom_command.s: pseudo_emulator_custom_command.c.s
 
 # target to generate assembly for a file
 pseudo_emulator_custom_command.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command.dir/pseudo_emulator_custom_command.c.s
 .PHONY : pseudo_emulator_custom_command.c.s
 
 pseudo_emulator_custom_command_arg.obj: pseudo_emulator_custom_command_arg.c.obj
@@ -593,7 +593,7 @@ pseudo_emulator_custom_command_arg.obj: pseudo_emulator_custom_command_arg.c.obj
 
 # target to build an object file
 pseudo_emulator_custom_command_arg.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.obj
 .PHONY : pseudo_emulator_custom_command_arg.c.obj
 
 pseudo_emulator_custom_command_arg.i: pseudo_emulator_custom_command_arg.c.i
@@ -601,7 +601,7 @@ pseudo_emulator_custom_command_arg.i: pseudo_emulator_custom_command_arg.c.i
 
 # target to preprocess a source file
 pseudo_emulator_custom_command_arg.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.i
 .PHONY : pseudo_emulator_custom_command_arg.c.i
 
 pseudo_emulator_custom_command_arg.s: pseudo_emulator_custom_command_arg.c.s
@@ -609,7 +609,7 @@ pseudo_emulator_custom_command_arg.s: pseudo_emulator_custom_command_arg.c.s
 
 # target to generate assembly for a file
 pseudo_emulator_custom_command_arg.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_emulator_custom_command_arg.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_emulator_custom_command_arg.dir/pseudo_emulator_custom_command_arg.c.s
 .PHONY : pseudo_emulator_custom_command_arg.c.s
 
 pseudo_iwyu.obj: pseudo_iwyu.c.obj
@@ -617,7 +617,7 @@ pseudo_iwyu.obj: pseudo_iwyu.c.obj
 
 # target to build an object file
 pseudo_iwyu.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.obj
 .PHONY : pseudo_iwyu.c.obj
 
 pseudo_iwyu.i: pseudo_iwyu.c.i
@@ -625,7 +625,7 @@ pseudo_iwyu.i: pseudo_iwyu.c.i
 
 # target to preprocess a source file
 pseudo_iwyu.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.i
 .PHONY : pseudo_iwyu.c.i
 
 pseudo_iwyu.s: pseudo_iwyu.c.s
@@ -633,7 +633,7 @@ pseudo_iwyu.s: pseudo_iwyu.c.s
 
 # target to generate assembly for a file
 pseudo_iwyu.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_iwyu.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_iwyu.dir/pseudo_iwyu.c.s
 .PHONY : pseudo_iwyu.c.s
 
 pseudo_llvm-rc.obj: pseudo_llvm-rc.c.obj
@@ -641,7 +641,7 @@ pseudo_llvm-rc.obj: pseudo_llvm-rc.c.obj
 
 # target to build an object file
 pseudo_llvm-rc.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.obj
 .PHONY : pseudo_llvm-rc.c.obj
 
 pseudo_llvm-rc.i: pseudo_llvm-rc.c.i
@@ -649,7 +649,7 @@ pseudo_llvm-rc.i: pseudo_llvm-rc.c.i
 
 # target to preprocess a source file
 pseudo_llvm-rc.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.i
 .PHONY : pseudo_llvm-rc.c.i
 
 pseudo_llvm-rc.s: pseudo_llvm-rc.c.s
@@ -657,7 +657,7 @@ pseudo_llvm-rc.s: pseudo_llvm-rc.c.s
 
 # target to generate assembly for a file
 pseudo_llvm-rc.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_llvm-rc.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_llvm-rc.dir/pseudo_llvm-rc.c.s
 .PHONY : pseudo_llvm-rc.c.s
 
 pseudo_tidy.obj: pseudo_tidy.c.obj
@@ -665,7 +665,7 @@ pseudo_tidy.obj: pseudo_tidy.c.obj
 
 # target to build an object file
 pseudo_tidy.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.obj
 .PHONY : pseudo_tidy.c.obj
 
 pseudo_tidy.i: pseudo_tidy.c.i
@@ -673,7 +673,7 @@ pseudo_tidy.i: pseudo_tidy.c.i
 
 # target to preprocess a source file
 pseudo_tidy.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.i
 .PHONY : pseudo_tidy.c.i
 
 pseudo_tidy.s: pseudo_tidy.c.s
@@ -681,7 +681,7 @@ pseudo_tidy.s: pseudo_tidy.c.s
 
 # target to generate assembly for a file
 pseudo_tidy.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Tests\RunCMake\CMakeFiles\pseudo_tidy.dir\build.make Tests/RunCMake/CMakeFiles/pseudo_tidy.dir/pseudo_tidy.c.s
 .PHONY : pseudo_tidy.c.s
 
 # Help Target
@@ -762,6 +762,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -3,10 +3,10 @@
 #ifndef cmsys_testSystemtools_h
 #define cmsys_testSystemtools_h
 
-#define RUNTIME_OUTPUT_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys"
+#define RUNTIME_OUTPUT_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys"
 
 #define TEST_SYSTEMTOOLS_SOURCE_DIR "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys"
-#define TEST_SYSTEMTOOLS_BINARY_DIR "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys"
+#define TEST_SYSTEMTOOLS_BINARY_DIR "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys"
 /* #undef KWSYS_TEST_SYSTEMTOOLS_LONG_PATHS */
 
 #endif

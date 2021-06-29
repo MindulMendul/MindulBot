@@ -6,7 +6,7 @@
 #include <cm3p/kwiml/int.h>
 
 /* Define to `int' if <sys/types.h> does not define. */
-#define ssize_t KWIML_INT_intptr_t
+/* #undef ssize_t */
 
 /* sizeof(int *) */
 #define SIZEOF_INT_P KWIML_ABI_SIZEOF_DATA_PTR

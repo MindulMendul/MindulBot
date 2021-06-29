@@ -1,112 +1,112 @@
 Determining if compiler supports needed C++17 constructs failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_524bb/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_524bb.dir\build.make CMakeFiles/cmTC_524bb.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_524bb.dir/cm_cxx17_check.cpp.obj
-C:\MinGW\bin\g++.exe   -std=gnu++1z -o CMakeFiles\cmTC_524bb.dir\cm_cxx17_check.cpp.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx17_check.cpp
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ce12c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ce12c.dir\build.make CMakeFiles/cmTC_ce12c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce12c.dir/cm_cxx17_check.cpp.obj
+C:\MinGW\bin\g++.exe   -std=gnu++1z -o CMakeFiles\cmTC_ce12c.dir\cm_cxx17_check.cpp.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx17_check.cpp
 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\Checks\cm_cxx17_check.cpp:4:20: fatal error: optional: No such file or directory
  #include <optional>
                     ^
 compilation terminated.
-CMakeFiles\cmTC_524bb.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_524bb.dir/cm_cxx17_check.cpp.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_524bb.dir/cm_cxx17_check.cpp.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_524bb/fast' failed
-mingw32-make.exe: *** [cmTC_524bb/fast] Error 2
+CMakeFiles\cmTC_ce12c.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_ce12c.dir/cm_cxx17_check.cpp.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ce12c.dir/cm_cxx17_check.cpp.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ce12c/fast' failed
+mingw32-make.exe: *** [cmTC_ce12c/fast] Error 2
 
 
 
 Determining if the include file pthread.h exists failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2fa40/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2fa40.dir\build.make CMakeFiles/cmTC_2fa40.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2fa40.dir/CheckIncludeFile.c.obj
-C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_2fa40.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c
-C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_e27ff/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e27ff.dir\build.make CMakeFiles/cmTC_e27ff.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e27ff.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_e27ff.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
  #include <pthread.h>
                      ^
 compilation terminated.
-CMakeFiles\cmTC_2fa40.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_2fa40.dir/CheckIncludeFile.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_2fa40.dir/CheckIncludeFile.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2fa40/fast' failed
-mingw32-make.exe: *** [cmTC_2fa40/fast] Error 2
+CMakeFiles\cmTC_e27ff.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_e27ff.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_e27ff.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e27ff/fast' failed
+mingw32-make.exe: *** [cmTC_e27ff/fast] Error 2
 
 
 
 Determining if the include file linux/tcp.h exists failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2b778/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2b778.dir\build.make CMakeFiles/cmTC_2b778.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2b778.dir/CheckIncludeFile.c.obj
-C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_2b778.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c
-C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:23: fatal error: linux/tcp.h: No such file or directory
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6428d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6428d.dir\build.make CMakeFiles/cmTC_6428d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6428d.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -w     -D_WINSOCKAPI_= -DSECURITY_WIN32 -std=gnu11 -o CMakeFiles\cmTC_6428d.dir\CheckIncludeFile.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:23: fatal error: linux/tcp.h: No such file or directory
  #include <linux/tcp.h>
                        ^
 compilation terminated.
-CMakeFiles\cmTC_2b778.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_2b778.dir/CheckIncludeFile.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_2b778.dir/CheckIncludeFile.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2b778/fast' failed
-mingw32-make.exe: *** [cmTC_2b778/fast] Error 2
+CMakeFiles\cmTC_6428d.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_6428d.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_6428d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6428d/fast' failed
+mingw32-make.exe: *** [cmTC_6428d/fast] Error 2
 
 
 
 Performing Curl Test HAVE_FILE_OFFSET_BITS failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_decdf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_decdf.dir\build.make CMakeFiles/cmTC_decdf.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_decdf.dir/CurlTests.c.obj
-C:\MinGW\bin\gcc.exe   -w -DHAVE_FILE_OFFSET_BITS  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_decdf.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_84ebc/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_84ebc.dir\build.make CMakeFiles/cmTC_84ebc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84ebc.dir/CurlTests.c.obj
+C:\MinGW\bin\gcc.exe   -w -DHAVE_FILE_OFFSET_BITS  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_84ebc.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c:281:7: error: variably modified 'off_t_is_large' at file scope
    int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
        ^~~~~~~~~~~~~~
-CMakeFiles\cmTC_decdf.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_decdf.dir/CurlTests.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_decdf.dir/CurlTests.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_decdf/fast' failed
-mingw32-make.exe: *** [cmTC_decdf/fast] Error 2
+CMakeFiles\cmTC_84ebc.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_84ebc.dir/CurlTests.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_84ebc.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84ebc/fast' failed
+mingw32-make.exe: *** [cmTC_84ebc/fast] Error 2
 
 
 Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_3fcb5/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3fcb5.dir\build.make CMakeFiles/cmTC_3fcb5.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3fcb5.dir/CurlTests.c.obj
-C:\MinGW\bin\gcc.exe   -w -DHAVE_CLOCK_GETTIME_MONOTONIC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_3fcb5.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_abedf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_abedf.dir\build.make CMakeFiles/cmTC_abedf.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_abedf.dir/CurlTests.c.obj
+C:\MinGW\bin\gcc.exe   -w -DHAVE_CLOCK_GETTIME_MONOTONIC  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -std=gnu11 -o CMakeFiles\cmTC_abedf.dir\CurlTests.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c
 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c: In function 'main':
 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c:543:17: error: 'CLOCK_MONOTONIC' undeclared (first use in this function)
    clock_gettime(CLOCK_MONOTONIC, &ts);
                  ^~~~~~~~~~~~~~~
 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Utilities\cmcurl\CMake\CurlTests.c:543:17: note: each undeclared identifier is reported only once for each function it appears in
-CMakeFiles\cmTC_3fcb5.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_3fcb5.dir/CurlTests.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_3fcb5.dir/CurlTests.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_3fcb5/fast' failed
-mingw32-make.exe: *** [cmTC_3fcb5/fast] Error 2
+CMakeFiles\cmTC_abedf.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_abedf.dir/CurlTests.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_abedf.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_abedf/fast' failed
+mingw32-make.exe: *** [cmTC_abedf/fast] Error 2
 
 
 Determining if files sys/types.h;ctype.h;direct.h;errno.h;fcntl.h;io.h;limits.h;locale.h;memory.h;process.h;pthread.h exist failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0d720/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0d720.dir\build.make CMakeFiles/cmTC_0d720.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0d720.dir/HAVE_PTHREAD_H.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_0d720.dir\HAVE_PTHREAD_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_PTHREAD_H.c
-C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_PTHREAD_H.c:12:21: fatal error: pthread.h: No such file or directory
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_17ecf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_17ecf.dir\build.make CMakeFiles/cmTC_17ecf.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17ecf.dir/HAVE_PTHREAD_H.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_17ecf.dir\HAVE_PTHREAD_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_PTHREAD_H.c
+C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_PTHREAD_H.c:12:21: fatal error: pthread.h: No such file or directory
  #include <pthread.h>
                      ^
 compilation terminated.
-CMakeFiles\cmTC_0d720.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_0d720.dir/HAVE_PTHREAD_H.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_0d720.dir/HAVE_PTHREAD_H.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_0d720/fast' failed
-mingw32-make.exe: *** [cmTC_0d720/fast] Error 2
+CMakeFiles\cmTC_17ecf.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_17ecf.dir/HAVE_PTHREAD_H.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_17ecf.dir/HAVE_PTHREAD_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_17ecf/fast' failed
+mingw32-make.exe: *** [cmTC_17ecf/fast] Error 2
 
 
 Source:
@@ -127,21 +127,21 @@ Source:
 int main(void){return 0;}
 
 Determining if files sys/types.h;ctype.h;direct.h;errno.h;fcntl.h;io.h;limits.h;locale.h;memory.h;process.h;signal.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h exist failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b6ed0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b6ed0.dir\build.make CMakeFiles/cmTC_b6ed0.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b6ed0.dir/HAVE_SYS_CDEFS_H.c.obj
-C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_b6ed0.dir\HAVE_SYS_CDEFS_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_SYS_CDEFS_H.c
-C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles\CheckIncludeFiles\HAVE_SYS_CDEFS_H.c:17:23: fatal error: sys/cdefs.h: No such file or directory
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_52ccd/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_52ccd.dir\build.make CMakeFiles/cmTC_52ccd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52ccd.dir/HAVE_SYS_CDEFS_H.c.obj
+C:\MinGW\bin\gcc.exe   -w  -std=gnu11 -o CMakeFiles\cmTC_52ccd.dir\HAVE_SYS_CDEFS_H.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_SYS_CDEFS_H.c
+C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles\CheckIncludeFiles\HAVE_SYS_CDEFS_H.c:17:23: fatal error: sys/cdefs.h: No such file or directory
  #include <sys/cdefs.h>
                        ^
 compilation terminated.
-CMakeFiles\cmTC_b6ed0.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_b6ed0.dir/HAVE_SYS_CDEFS_H.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b6ed0.dir/HAVE_SYS_CDEFS_H.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b6ed0/fast' failed
-mingw32-make.exe: *** [cmTC_b6ed0/fast] Error 2
+CMakeFiles\cmTC_52ccd.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_52ccd.dir/HAVE_SYS_CDEFS_H.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_52ccd.dir/HAVE_SYS_CDEFS_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_52ccd/fast' failed
+mingw32-make.exe: *** [cmTC_52ccd/fast] Error 2
 
 
 Source:
@@ -167,46 +167,46 @@ Source:
 int main(void){return 0;}
 
 Determining if the function _get_timezone exists failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c8240/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c8240.dir\build.make CMakeFiles/cmTC_c8240.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c8240.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_c8240.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_c8240.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c8240.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_c8240.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_c8240.dir/objects.a @CMakeFiles\cmTC_c8240.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_c8240.dir/objects.a -Wl,--no-whole-archive -o cmTC_c8240.exe -Wl,--out-implib,libcmTC_c8240.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c8240.dir\linklibs.rsp
-CMakeFiles\cmTC_c8240.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `_get_timezone'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_94e3d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_94e3d.dir\build.make CMakeFiles/cmTC_94e3d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94e3d.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_94e3d.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_94e3d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_94e3d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_94e3d.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_94e3d.dir/objects.a @CMakeFiles\cmTC_94e3d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_94e3d.dir/objects.a -Wl,--no-whole-archive -o cmTC_94e3d.exe -Wl,--out-implib,libcmTC_94e3d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_94e3d.dir\linklibs.rsp
+CMakeFiles\cmTC_94e3d.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `_get_timezone'
 collect2.exe: error: ld returned 1 exit status
-CMakeFiles\cmTC_c8240.dir\build.make:99: recipe for target 'cmTC_c8240.exe' failed
-mingw32-make.exe[1]: *** [cmTC_c8240.exe] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c8240/fast' failed
-mingw32-make.exe: *** [cmTC_c8240/fast] Error 2
+CMakeFiles\cmTC_94e3d.dir\build.make:99: recipe for target 'cmTC_94e3d.exe' failed
+mingw32-make.exe[1]: *** [cmTC_94e3d.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_94e3d/fast' failed
+mingw32-make.exe: *** [cmTC_94e3d/fast] Error 2
 
 
 
 Determining if the function fseeko exists failed with the following output:
-Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_bcb72/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bcb72.dir\build.make CMakeFiles/cmTC_bcb72.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bcb72.dir/CheckFunctionExists.c.obj
-C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=fseeko  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_bcb72.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
-Linking C executable cmTC_bcb72.exe
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bcb72.dir\link.txt --verbose=1
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_bcb72.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_bcb72.dir/objects.a @CMakeFiles\cmTC_bcb72.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=fseeko  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_bcb72.dir/objects.a -Wl,--no-whole-archive -o cmTC_bcb72.exe -Wl,--out-implib,libcmTC_bcb72.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bcb72.dir\linklibs.rsp
-CMakeFiles\cmTC_bcb72.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `fseeko'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1658b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1658b.dir\build.make CMakeFiles/cmTC_1658b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1658b.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -w -DCHECK_FUNCTION_EXISTS=fseeko  -fno-builtin -std=gnu11 -o CMakeFiles\cmTC_1658b.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_1658b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1658b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_1658b.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_1658b.dir/objects.a @CMakeFiles\cmTC_1658b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -w -DCHECK_FUNCTION_EXISTS=fseeko  -fno-builtin -Wl,--whole-archive CMakeFiles\cmTC_1658b.dir/objects.a -Wl,--no-whole-archive -o cmTC_1658b.exe -Wl,--out-implib,libcmTC_1658b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1658b.dir\linklibs.rsp
+CMakeFiles\cmTC_1658b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `fseeko'
 collect2.exe: error: ld returned 1 exit status
-CMakeFiles\cmTC_bcb72.dir\build.make:99: recipe for target 'cmTC_bcb72.exe' failed
-mingw32-make.exe[1]: *** [cmTC_bcb72.exe] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_bcb72/fast' failed
-mingw32-make.exe: *** [cmTC_bcb72/fast] Error 2
+CMakeFiles\cmTC_1658b.dir\build.make:99: recipe for target 'cmTC_1658b.exe' failed
+mingw32-make.exe[1]: *** [cmTC_1658b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1658b/fast' failed
+mingw32-make.exe: *** [cmTC_1658b/fast] Error 2
 
 
 
@@ -221,6 +221,6 @@ CMake Error at CMakeLists.txt:2 (project):
 
 
 -- Configuring incomplete, errors occurred!
-See also "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
-See also "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+See also "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
 

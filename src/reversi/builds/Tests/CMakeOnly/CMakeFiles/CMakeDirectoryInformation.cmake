@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/leesj/Desktop/DiscordBot/src/reversi")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

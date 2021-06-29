@@ -55,7 +55,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 # Include any dependencies generated for this target.
 include Source/kwsys/CMakeFiles/cmsys.dir/depend.make
@@ -70,258 +70,258 @@ include Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 
 Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/ProcessWin32.c
+Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/ProcessWin32.c
 Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj -MF CMakeFiles\cmsys.dir\ProcessWin32.c.obj.d -o CMakeFiles\cmsys.dir\ProcessWin32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.obj -MF CMakeFiles\cmsys.dir\ProcessWin32.c.obj.d -o CMakeFiles\cmsys.dir\ProcessWin32.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/ProcessWin32.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c > CMakeFiles\cmsys.dir\ProcessWin32.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c > CMakeFiles\cmsys.dir\ProcessWin32.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/ProcessWin32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/ProcessWin32.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c -o CMakeFiles\cmsys.dir\ProcessWin32.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\ProcessWin32.c -o CMakeFiles\cmsys.dir\ProcessWin32.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Base64.c
+Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Base64.c
 Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj -MF CMakeFiles\cmsys.dir\Base64.c.obj.d -o CMakeFiles\cmsys.dir\Base64.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.obj -MF CMakeFiles\cmsys.dir\Base64.c.obj.d -o CMakeFiles\cmsys.dir\Base64.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/Base64.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c > CMakeFiles\cmsys.dir\Base64.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c > CMakeFiles\cmsys.dir\Base64.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/Base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/Base64.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c -o CMakeFiles\cmsys.dir\Base64.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Base64.c -o CMakeFiles\cmsys.dir\Base64.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingC.c
+Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingC.c
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj -MF CMakeFiles\cmsys.dir\EncodingC.c.obj.d -o CMakeFiles\cmsys.dir\EncodingC.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.obj -MF CMakeFiles\cmsys.dir\EncodingC.c.obj.d -o CMakeFiles\cmsys.dir\EncodingC.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/EncodingC.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c > CMakeFiles\cmsys.dir\EncodingC.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c > CMakeFiles\cmsys.dir\EncodingC.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingC.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/EncodingC.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c -o CMakeFiles\cmsys.dir\EncodingC.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingC.c -o CMakeFiles\cmsys.dir\EncodingC.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/MD5.c
+Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/MD5.c
 Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj -MF CMakeFiles\cmsys.dir\MD5.c.obj.d -o CMakeFiles\cmsys.dir\MD5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.obj -MF CMakeFiles\cmsys.dir\MD5.c.obj.d -o CMakeFiles\cmsys.dir\MD5.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/MD5.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c > CMakeFiles\cmsys.dir\MD5.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c > CMakeFiles\cmsys.dir\MD5.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/MD5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/MD5.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c -o CMakeFiles\cmsys.dir\MD5.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\MD5.c -o CMakeFiles\cmsys.dir\MD5.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Terminal.c
+Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Terminal.c
 Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj -MF CMakeFiles\cmsys.dir\Terminal.c.obj.d -o CMakeFiles\cmsys.dir\Terminal.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.obj -MF CMakeFiles\cmsys.dir\Terminal.c.obj.d -o CMakeFiles\cmsys.dir\Terminal.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/Terminal.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c > CMakeFiles\cmsys.dir\Terminal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c > CMakeFiles\cmsys.dir\Terminal.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/Terminal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/Terminal.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c -o CMakeFiles\cmsys.dir\Terminal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Terminal.c -o CMakeFiles\cmsys.dir\Terminal.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/System.c
+Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/System.c
 Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj -MF CMakeFiles\cmsys.dir\System.c.obj.d -o CMakeFiles\cmsys.dir\System.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/System.c.obj -MF CMakeFiles\cmsys.dir\System.c.obj.d -o CMakeFiles\cmsys.dir\System.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/System.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/System.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c > CMakeFiles\cmsys.dir\System.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c > CMakeFiles\cmsys.dir\System.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/System.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/System.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c -o CMakeFiles\cmsys.dir\System.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_C_HAS_PTRDIFF_T=1 -DKWSYS_C_HAS_SSIZE_T=1 -DKWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC=0 -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\System.c -o CMakeFiles\cmsys.dir\System.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_C.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/String.c
+Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/String.c
 Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj -MF CMakeFiles\cmsys.dir\String.c.obj.d -o CMakeFiles\cmsys.dir\String.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/String.c.obj -MF CMakeFiles\cmsys.dir\String.c.obj.d -o CMakeFiles\cmsys.dir\String.c.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c
 
 Source/kwsys/CMakeFiles/cmsys.dir/String.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsys.dir/String.c.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c > CMakeFiles\cmsys.dir\String.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c > CMakeFiles\cmsys.dir\String.c.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/String.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsys.dir/String.c.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c -o CMakeFiles\cmsys.dir\String.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -DKWSYS_STRING_C -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\String.c -o CMakeFiles\cmsys.dir\String.c.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Directory.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Directory.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj -MF CMakeFiles\cmsys.dir\Directory.cxx.obj.d -o CMakeFiles\cmsys.dir\Directory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.obj -MF CMakeFiles\cmsys.dir\Directory.cxx.obj.d -o CMakeFiles\cmsys.dir\Directory.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/Directory.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx > CMakeFiles\cmsys.dir\Directory.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx > CMakeFiles\cmsys.dir\Directory.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/Directory.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/Directory.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx -o CMakeFiles\cmsys.dir\Directory.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Directory.cxx -o CMakeFiles\cmsys.dir\Directory.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/DynamicLoader.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/DynamicLoader.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj -MF CMakeFiles\cmsys.dir\DynamicLoader.cxx.obj.d -o CMakeFiles\cmsys.dir\DynamicLoader.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.obj -MF CMakeFiles\cmsys.dir\DynamicLoader.cxx.obj.d -o CMakeFiles\cmsys.dir\DynamicLoader.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/DynamicLoader.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx > CMakeFiles\cmsys.dir\DynamicLoader.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx > CMakeFiles\cmsys.dir\DynamicLoader.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/DynamicLoader.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/DynamicLoader.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx -o CMakeFiles\cmsys.dir\DynamicLoader.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SUPPORTS_SHARED_LIBS=1 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\DynamicLoader.cxx -o CMakeFiles\cmsys.dir\DynamicLoader.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingCXX.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/EncodingCXX.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj -MF CMakeFiles\cmsys.dir\EncodingCXX.cxx.obj.d -o CMakeFiles\cmsys.dir\EncodingCXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.obj -MF CMakeFiles\cmsys.dir\EncodingCXX.cxx.obj.d -o CMakeFiles\cmsys.dir\EncodingCXX.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/EncodingCXX.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx > CMakeFiles\cmsys.dir\EncodingCXX.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx > CMakeFiles\cmsys.dir\EncodingCXX.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/EncodingCXX.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/EncodingCXX.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx -o CMakeFiles\cmsys.dir\EncodingCXX.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_ENCODING_DEFAULT_CODEPAGE=CP_UTF8 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\EncodingCXX.cxx -o CMakeFiles\cmsys.dir\EncodingCXX.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Glob.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Glob.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj -MF CMakeFiles\cmsys.dir\Glob.cxx.obj.d -o CMakeFiles\cmsys.dir\Glob.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.obj -MF CMakeFiles\cmsys.dir\Glob.cxx.obj.d -o CMakeFiles\cmsys.dir\Glob.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/Glob.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx > CMakeFiles\cmsys.dir\Glob.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx > CMakeFiles\cmsys.dir\Glob.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/Glob.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/Glob.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx -o CMakeFiles\cmsys.dir\Glob.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Glob.cxx -o CMakeFiles\cmsys.dir\Glob.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/RegularExpression.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/RegularExpression.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj -MF CMakeFiles\cmsys.dir\RegularExpression.cxx.obj.d -o CMakeFiles\cmsys.dir\RegularExpression.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.obj -MF CMakeFiles\cmsys.dir\RegularExpression.cxx.obj.d -o CMakeFiles\cmsys.dir\RegularExpression.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/RegularExpression.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx > CMakeFiles\cmsys.dir\RegularExpression.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx > CMakeFiles\cmsys.dir\RegularExpression.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/RegularExpression.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/RegularExpression.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx -o CMakeFiles\cmsys.dir\RegularExpression.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\RegularExpression.cxx -o CMakeFiles\cmsys.dir\RegularExpression.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemTools.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemTools.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj -MF CMakeFiles\cmsys.dir\SystemTools.cxx.obj.d -o CMakeFiles\cmsys.dir\SystemTools.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.obj -MF CMakeFiles\cmsys.dir\SystemTools.cxx.obj.d -o CMakeFiles\cmsys.dir\SystemTools.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/SystemTools.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx > CMakeFiles\cmsys.dir\SystemTools.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx > CMakeFiles\cmsys.dir\SystemTools.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemTools.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/SystemTools.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx -o CMakeFiles\cmsys.dir\SystemTools.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1 -DKWSYS_CXX_HAS_SETENV=0 -DKWSYS_CXX_HAS_UNSETENV=0 -DKWSYS_CXX_HAS_UTIMENSAT=0 -DKWSYS_CXX_HAS_UTIMES=0 -DKWSYS_CXX_STAT_HAS_ST_MTIM=0 -DKWSYS_CXX_STAT_HAS_ST_MTIMESPEC=0 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemTools.cxx -o CMakeFiles\cmsys.dir\SystemTools.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/CommandLineArguments.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/CommandLineArguments.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj -MF CMakeFiles\cmsys.dir\CommandLineArguments.cxx.obj.d -o CMakeFiles\cmsys.dir\CommandLineArguments.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.obj -MF CMakeFiles\cmsys.dir\CommandLineArguments.cxx.obj.d -o CMakeFiles\cmsys.dir\CommandLineArguments.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/CommandLineArguments.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx > CMakeFiles\cmsys.dir\CommandLineArguments.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx > CMakeFiles\cmsys.dir\CommandLineArguments.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/CommandLineArguments.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/CommandLineArguments.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx -o CMakeFiles\cmsys.dir\CommandLineArguments.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\CommandLineArguments.cxx -o CMakeFiles\cmsys.dir\CommandLineArguments.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/FStream.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/FStream.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj -MF CMakeFiles\cmsys.dir\FStream.cxx.obj.d -o CMakeFiles\cmsys.dir\FStream.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.obj -MF CMakeFiles\cmsys.dir\FStream.cxx.obj.d -o CMakeFiles\cmsys.dir\FStream.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/FStream.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx > CMakeFiles\cmsys.dir\FStream.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx > CMakeFiles\cmsys.dir\FStream.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/FStream.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/FStream.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx -o CMakeFiles\cmsys.dir\FStream.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\FStream.cxx -o CMakeFiles\cmsys.dir\FStream.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemInformation.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/SystemInformation.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj -MF CMakeFiles\cmsys.dir\SystemInformation.cxx.obj.d -o CMakeFiles\cmsys.dir\SystemInformation.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.obj -MF CMakeFiles\cmsys.dir\SystemInformation.cxx.obj.d -o CMakeFiles\cmsys.dir\SystemInformation.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/SystemInformation.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx > CMakeFiles\cmsys.dir\SystemInformation.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx > CMakeFiles\cmsys.dir\SystemInformation.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/SystemInformation.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx -o CMakeFiles\cmsys.dir\SystemInformation.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) -DKWSYS_SYS_HAS_PSAPI=1 -DSIZEOF_VOID_P=4 $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\SystemInformation.cxx -o CMakeFiles\cmsys.dir\SystemInformation.cxx.s
 
 Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/flags.make
 Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/includes_CXX.rsp
-Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj: opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Status.cxx
+Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj: C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Source/kwsys/Status.cxx
 Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj: Source/kwsys/CMakeFiles/cmsys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj -MF CMakeFiles\cmsys.dir\Status.cxx.obj.d -o CMakeFiles\cmsys.dir\Status.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj -MF CMakeFiles\cmsys.dir\Status.cxx.obj.d -o CMakeFiles\cmsys.dir\Status.cxx.obj -c C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx
 
 Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmsys.dir/Status.cxx.i"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx > CMakeFiles\cmsys.dir\Status.cxx.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx > CMakeFiles\cmsys.dir\Status.cxx.i
 
 Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmsys.dir/Status.cxx.s"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx -o CMakeFiles\cmsys.dir\Status.cxx.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys\Status.cxx -o CMakeFiles\cmsys.dir\Status.cxx.s
 
 # Object files for target cmsys
 cmsys_OBJECTS = \
@@ -365,19 +365,19 @@ Source/kwsys/libcmsys.a: Source/kwsys/CMakeFiles/cmsys.dir/SystemInformation.cxx
 Source/kwsys/libcmsys.a: Source/kwsys/CMakeFiles/cmsys.dir/Status.cxx.obj
 Source/kwsys/libcmsys.a: Source/kwsys/CMakeFiles/cmsys.dir/build.make
 Source/kwsys/libcmsys.a: Source/kwsys/CMakeFiles/cmsys.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libcmsys.a"
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsys.dir\cmake_clean_target.cmake
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsys.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libcmsys.a"
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsys.dir\cmake_clean_target.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cmsys.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Source/kwsys/CMakeFiles/cmsys.dir/build: Source/kwsys/libcmsys.a
 .PHONY : Source/kwsys/CMakeFiles/cmsys.dir/build
 
 Source/kwsys/CMakeFiles/cmsys.dir/clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsys.dir\cmake_clean.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys && $(CMAKE_COMMAND) -P CMakeFiles\cmsys.dir\cmake_clean.cmake
 .PHONY : Source/kwsys/CMakeFiles/cmsys.dir/clean
 
 Source/kwsys/CMakeFiles/cmsys.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\Source\kwsys\CMakeFiles\cmsys.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1 C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Source\kwsys\CMakeFiles\cmsys.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Source/kwsys/CMakeFiles/cmsys.dir/depend
 

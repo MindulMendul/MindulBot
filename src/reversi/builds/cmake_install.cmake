@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CMake")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,72 +39,72 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/kwsys/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/kwsys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/std/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/std/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/KWIML/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/KWIML/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibrhash/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibrhash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmzlib/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmzlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmcurl/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmcurl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmnghttp2/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmnghttp2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmexpat/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmexpat/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmbzip2/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmbzip2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmzstd/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmzstd/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmliblzma/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmliblzma/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibarchive/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibarchive/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmjsoncpp/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmjsoncpp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmlibuv/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmlibuv/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -113,17 +113,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Source/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Source/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Utilities/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Utilities/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -140,7 +140,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/Auxiliary/cmake_install.cmake")
+  include("C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Auxiliary/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -151,5 +151,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/leesj/Desktop/DiscordBot/src/reversi/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 set(CTEST_RUN_CURRENT_SCRIPT 0)
 
 set(CTEST_SOURCE_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/opencv_sources/cmake-3.21.0-rc1/cmake-3.21.0-rc1/Tests/CTestTestEmptyBinaryDirectory")
-set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/Tests/CTestTestEmptyBinaryDirectory")
+set(CTEST_BINARY_DIRECTORY "C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/Tests/CTestTestEmptyBinaryDirectory")
 
 # make sure ctest does not remove directories without a CMakeCache.txt in it
 set(EMPTY_BINARY_DIR "${CTEST_BINARY_DIRECTORY}/empty_binary_dir")

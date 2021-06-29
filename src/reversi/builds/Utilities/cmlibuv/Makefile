@@ -59,7 +59,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\opencv_sources\cmake-3.21.0-rc1\cmake-3.21.0-rc1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
+CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\leesj\Desktop\DiscordBot\src\reversi
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/CPackSourceConfig.cmake
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/leesj/Desktop/DiscordBot/src/reversi/builds/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\Utilities\cmlibuv\\CMakeFiles\progress.marks
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\CMakeFiles 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\Utilities\cmlibuv\\CMakeFiles\progress.marks
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/clean
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/preinstall
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/rule:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/rule
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/rule
 .PHONY : Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ cmlibuv: Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/rule
 
 # fast build rule for target.
 cmlibuv/fast:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/build
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/build
 .PHONY : cmlibuv/fast
 
 src/fs-poll.obj: src/fs-poll.c.obj
@@ -209,7 +209,7 @@ src/fs-poll.obj: src/fs-poll.c.obj
 
 # target to build an object file
 src/fs-poll.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.obj
 .PHONY : src/fs-poll.c.obj
 
 src/fs-poll.i: src/fs-poll.c.i
@@ -217,7 +217,7 @@ src/fs-poll.i: src/fs-poll.c.i
 
 # target to preprocess a source file
 src/fs-poll.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.i
 .PHONY : src/fs-poll.c.i
 
 src/fs-poll.s: src/fs-poll.c.s
@@ -225,7 +225,7 @@ src/fs-poll.s: src/fs-poll.c.s
 
 # target to generate assembly for a file
 src/fs-poll.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/fs-poll.c.s
 .PHONY : src/fs-poll.c.s
 
 src/idna.obj: src/idna.c.obj
@@ -233,7 +233,7 @@ src/idna.obj: src/idna.c.obj
 
 # target to build an object file
 src/idna.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.obj
 .PHONY : src/idna.c.obj
 
 src/idna.i: src/idna.c.i
@@ -241,7 +241,7 @@ src/idna.i: src/idna.c.i
 
 # target to preprocess a source file
 src/idna.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.i
 .PHONY : src/idna.c.i
 
 src/idna.s: src/idna.c.s
@@ -249,7 +249,7 @@ src/idna.s: src/idna.c.s
 
 # target to generate assembly for a file
 src/idna.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/idna.c.s
 .PHONY : src/idna.c.s
 
 src/inet.obj: src/inet.c.obj
@@ -257,7 +257,7 @@ src/inet.obj: src/inet.c.obj
 
 # target to build an object file
 src/inet.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.obj
 .PHONY : src/inet.c.obj
 
 src/inet.i: src/inet.c.i
@@ -265,7 +265,7 @@ src/inet.i: src/inet.c.i
 
 # target to preprocess a source file
 src/inet.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.i
 .PHONY : src/inet.c.i
 
 src/inet.s: src/inet.c.s
@@ -273,7 +273,7 @@ src/inet.s: src/inet.c.s
 
 # target to generate assembly for a file
 src/inet.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/inet.c.s
 .PHONY : src/inet.c.s
 
 src/strscpy.obj: src/strscpy.c.obj
@@ -281,7 +281,7 @@ src/strscpy.obj: src/strscpy.c.obj
 
 # target to build an object file
 src/strscpy.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.obj
 .PHONY : src/strscpy.c.obj
 
 src/strscpy.i: src/strscpy.c.i
@@ -289,7 +289,7 @@ src/strscpy.i: src/strscpy.c.i
 
 # target to preprocess a source file
 src/strscpy.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.i
 .PHONY : src/strscpy.c.i
 
 src/strscpy.s: src/strscpy.c.s
@@ -297,7 +297,7 @@ src/strscpy.s: src/strscpy.c.s
 
 # target to generate assembly for a file
 src/strscpy.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/strscpy.c.s
 .PHONY : src/strscpy.c.s
 
 src/threadpool.obj: src/threadpool.c.obj
@@ -305,7 +305,7 @@ src/threadpool.obj: src/threadpool.c.obj
 
 # target to build an object file
 src/threadpool.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.obj
 .PHONY : src/threadpool.c.obj
 
 src/threadpool.i: src/threadpool.c.i
@@ -313,7 +313,7 @@ src/threadpool.i: src/threadpool.c.i
 
 # target to preprocess a source file
 src/threadpool.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.i
 .PHONY : src/threadpool.c.i
 
 src/threadpool.s: src/threadpool.c.s
@@ -321,7 +321,7 @@ src/threadpool.s: src/threadpool.c.s
 
 # target to generate assembly for a file
 src/threadpool.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/threadpool.c.s
 .PHONY : src/threadpool.c.s
 
 src/timer.obj: src/timer.c.obj
@@ -329,7 +329,7 @@ src/timer.obj: src/timer.c.obj
 
 # target to build an object file
 src/timer.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.obj
 .PHONY : src/timer.c.obj
 
 src/timer.i: src/timer.c.i
@@ -337,7 +337,7 @@ src/timer.i: src/timer.c.i
 
 # target to preprocess a source file
 src/timer.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.i
 .PHONY : src/timer.c.i
 
 src/timer.s: src/timer.c.s
@@ -345,7 +345,7 @@ src/timer.s: src/timer.c.s
 
 # target to generate assembly for a file
 src/timer.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/timer.c.s
 .PHONY : src/timer.c.s
 
 src/uv-common.obj: src/uv-common.c.obj
@@ -353,7 +353,7 @@ src/uv-common.obj: src/uv-common.c.obj
 
 # target to build an object file
 src/uv-common.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.obj
 .PHONY : src/uv-common.c.obj
 
 src/uv-common.i: src/uv-common.c.i
@@ -361,7 +361,7 @@ src/uv-common.i: src/uv-common.c.i
 
 # target to preprocess a source file
 src/uv-common.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.i
 .PHONY : src/uv-common.c.i
 
 src/uv-common.s: src/uv-common.c.s
@@ -369,7 +369,7 @@ src/uv-common.s: src/uv-common.c.s
 
 # target to generate assembly for a file
 src/uv-common.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-common.c.s
 .PHONY : src/uv-common.c.s
 
 src/uv-data-getter-setters.obj: src/uv-data-getter-setters.c.obj
@@ -377,7 +377,7 @@ src/uv-data-getter-setters.obj: src/uv-data-getter-setters.c.obj
 
 # target to build an object file
 src/uv-data-getter-setters.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.obj
 .PHONY : src/uv-data-getter-setters.c.obj
 
 src/uv-data-getter-setters.i: src/uv-data-getter-setters.c.i
@@ -385,7 +385,7 @@ src/uv-data-getter-setters.i: src/uv-data-getter-setters.c.i
 
 # target to preprocess a source file
 src/uv-data-getter-setters.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.i
 .PHONY : src/uv-data-getter-setters.c.i
 
 src/uv-data-getter-setters.s: src/uv-data-getter-setters.c.s
@@ -393,7 +393,7 @@ src/uv-data-getter-setters.s: src/uv-data-getter-setters.c.s
 
 # target to generate assembly for a file
 src/uv-data-getter-setters.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/uv-data-getter-setters.c.s
 .PHONY : src/uv-data-getter-setters.c.s
 
 src/version.obj: src/version.c.obj
@@ -401,7 +401,7 @@ src/version.obj: src/version.c.obj
 
 # target to build an object file
 src/version.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.obj
 .PHONY : src/version.c.obj
 
 src/version.i: src/version.c.i
@@ -409,7 +409,7 @@ src/version.i: src/version.c.i
 
 # target to preprocess a source file
 src/version.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.i
 .PHONY : src/version.c.i
 
 src/version.s: src/version.c.s
@@ -417,7 +417,7 @@ src/version.s: src/version.c.s
 
 # target to generate assembly for a file
 src/version.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/version.c.s
 .PHONY : src/version.c.s
 
 src/win/async.obj: src/win/async.c.obj
@@ -425,7 +425,7 @@ src/win/async.obj: src/win/async.c.obj
 
 # target to build an object file
 src/win/async.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.obj
 .PHONY : src/win/async.c.obj
 
 src/win/async.i: src/win/async.c.i
@@ -433,7 +433,7 @@ src/win/async.i: src/win/async.c.i
 
 # target to preprocess a source file
 src/win/async.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.i
 .PHONY : src/win/async.c.i
 
 src/win/async.s: src/win/async.c.s
@@ -441,7 +441,7 @@ src/win/async.s: src/win/async.c.s
 
 # target to generate assembly for a file
 src/win/async.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/async.c.s
 .PHONY : src/win/async.c.s
 
 src/win/core.obj: src/win/core.c.obj
@@ -449,7 +449,7 @@ src/win/core.obj: src/win/core.c.obj
 
 # target to build an object file
 src/win/core.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.obj
 .PHONY : src/win/core.c.obj
 
 src/win/core.i: src/win/core.c.i
@@ -457,7 +457,7 @@ src/win/core.i: src/win/core.c.i
 
 # target to preprocess a source file
 src/win/core.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.i
 .PHONY : src/win/core.c.i
 
 src/win/core.s: src/win/core.c.s
@@ -465,7 +465,7 @@ src/win/core.s: src/win/core.c.s
 
 # target to generate assembly for a file
 src/win/core.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/core.c.s
 .PHONY : src/win/core.c.s
 
 src/win/detect-wakeup.obj: src/win/detect-wakeup.c.obj
@@ -473,7 +473,7 @@ src/win/detect-wakeup.obj: src/win/detect-wakeup.c.obj
 
 # target to build an object file
 src/win/detect-wakeup.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.obj
 .PHONY : src/win/detect-wakeup.c.obj
 
 src/win/detect-wakeup.i: src/win/detect-wakeup.c.i
@@ -481,7 +481,7 @@ src/win/detect-wakeup.i: src/win/detect-wakeup.c.i
 
 # target to preprocess a source file
 src/win/detect-wakeup.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.i
 .PHONY : src/win/detect-wakeup.c.i
 
 src/win/detect-wakeup.s: src/win/detect-wakeup.c.s
@@ -489,7 +489,7 @@ src/win/detect-wakeup.s: src/win/detect-wakeup.c.s
 
 # target to generate assembly for a file
 src/win/detect-wakeup.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/detect-wakeup.c.s
 .PHONY : src/win/detect-wakeup.c.s
 
 src/win/dl.obj: src/win/dl.c.obj
@@ -497,7 +497,7 @@ src/win/dl.obj: src/win/dl.c.obj
 
 # target to build an object file
 src/win/dl.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.obj
 .PHONY : src/win/dl.c.obj
 
 src/win/dl.i: src/win/dl.c.i
@@ -505,7 +505,7 @@ src/win/dl.i: src/win/dl.c.i
 
 # target to preprocess a source file
 src/win/dl.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.i
 .PHONY : src/win/dl.c.i
 
 src/win/dl.s: src/win/dl.c.s
@@ -513,7 +513,7 @@ src/win/dl.s: src/win/dl.c.s
 
 # target to generate assembly for a file
 src/win/dl.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/dl.c.s
 .PHONY : src/win/dl.c.s
 
 src/win/error.obj: src/win/error.c.obj
@@ -521,7 +521,7 @@ src/win/error.obj: src/win/error.c.obj
 
 # target to build an object file
 src/win/error.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.obj
 .PHONY : src/win/error.c.obj
 
 src/win/error.i: src/win/error.c.i
@@ -529,7 +529,7 @@ src/win/error.i: src/win/error.c.i
 
 # target to preprocess a source file
 src/win/error.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.i
 .PHONY : src/win/error.c.i
 
 src/win/error.s: src/win/error.c.s
@@ -537,7 +537,7 @@ src/win/error.s: src/win/error.c.s
 
 # target to generate assembly for a file
 src/win/error.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/error.c.s
 .PHONY : src/win/error.c.s
 
 src/win/fs-event.obj: src/win/fs-event.c.obj
@@ -545,7 +545,7 @@ src/win/fs-event.obj: src/win/fs-event.c.obj
 
 # target to build an object file
 src/win/fs-event.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.obj
 .PHONY : src/win/fs-event.c.obj
 
 src/win/fs-event.i: src/win/fs-event.c.i
@@ -553,7 +553,7 @@ src/win/fs-event.i: src/win/fs-event.c.i
 
 # target to preprocess a source file
 src/win/fs-event.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.i
 .PHONY : src/win/fs-event.c.i
 
 src/win/fs-event.s: src/win/fs-event.c.s
@@ -561,7 +561,7 @@ src/win/fs-event.s: src/win/fs-event.c.s
 
 # target to generate assembly for a file
 src/win/fs-event.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs-event.c.s
 .PHONY : src/win/fs-event.c.s
 
 src/win/fs.obj: src/win/fs.c.obj
@@ -569,7 +569,7 @@ src/win/fs.obj: src/win/fs.c.obj
 
 # target to build an object file
 src/win/fs.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.obj
 .PHONY : src/win/fs.c.obj
 
 src/win/fs.i: src/win/fs.c.i
@@ -577,7 +577,7 @@ src/win/fs.i: src/win/fs.c.i
 
 # target to preprocess a source file
 src/win/fs.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.i
 .PHONY : src/win/fs.c.i
 
 src/win/fs.s: src/win/fs.c.s
@@ -585,7 +585,7 @@ src/win/fs.s: src/win/fs.c.s
 
 # target to generate assembly for a file
 src/win/fs.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/fs.c.s
 .PHONY : src/win/fs.c.s
 
 src/win/getaddrinfo.obj: src/win/getaddrinfo.c.obj
@@ -593,7 +593,7 @@ src/win/getaddrinfo.obj: src/win/getaddrinfo.c.obj
 
 # target to build an object file
 src/win/getaddrinfo.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.obj
 .PHONY : src/win/getaddrinfo.c.obj
 
 src/win/getaddrinfo.i: src/win/getaddrinfo.c.i
@@ -601,7 +601,7 @@ src/win/getaddrinfo.i: src/win/getaddrinfo.c.i
 
 # target to preprocess a source file
 src/win/getaddrinfo.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.i
 .PHONY : src/win/getaddrinfo.c.i
 
 src/win/getaddrinfo.s: src/win/getaddrinfo.c.s
@@ -609,7 +609,7 @@ src/win/getaddrinfo.s: src/win/getaddrinfo.c.s
 
 # target to generate assembly for a file
 src/win/getaddrinfo.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getaddrinfo.c.s
 .PHONY : src/win/getaddrinfo.c.s
 
 src/win/getnameinfo.obj: src/win/getnameinfo.c.obj
@@ -617,7 +617,7 @@ src/win/getnameinfo.obj: src/win/getnameinfo.c.obj
 
 # target to build an object file
 src/win/getnameinfo.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.obj
 .PHONY : src/win/getnameinfo.c.obj
 
 src/win/getnameinfo.i: src/win/getnameinfo.c.i
@@ -625,7 +625,7 @@ src/win/getnameinfo.i: src/win/getnameinfo.c.i
 
 # target to preprocess a source file
 src/win/getnameinfo.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.i
 .PHONY : src/win/getnameinfo.c.i
 
 src/win/getnameinfo.s: src/win/getnameinfo.c.s
@@ -633,7 +633,7 @@ src/win/getnameinfo.s: src/win/getnameinfo.c.s
 
 # target to generate assembly for a file
 src/win/getnameinfo.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/getnameinfo.c.s
 .PHONY : src/win/getnameinfo.c.s
 
 src/win/handle.obj: src/win/handle.c.obj
@@ -641,7 +641,7 @@ src/win/handle.obj: src/win/handle.c.obj
 
 # target to build an object file
 src/win/handle.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.obj
 .PHONY : src/win/handle.c.obj
 
 src/win/handle.i: src/win/handle.c.i
@@ -649,7 +649,7 @@ src/win/handle.i: src/win/handle.c.i
 
 # target to preprocess a source file
 src/win/handle.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.i
 .PHONY : src/win/handle.c.i
 
 src/win/handle.s: src/win/handle.c.s
@@ -657,7 +657,7 @@ src/win/handle.s: src/win/handle.c.s
 
 # target to generate assembly for a file
 src/win/handle.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/handle.c.s
 .PHONY : src/win/handle.c.s
 
 src/win/loop-watcher.obj: src/win/loop-watcher.c.obj
@@ -665,7 +665,7 @@ src/win/loop-watcher.obj: src/win/loop-watcher.c.obj
 
 # target to build an object file
 src/win/loop-watcher.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.obj
 .PHONY : src/win/loop-watcher.c.obj
 
 src/win/loop-watcher.i: src/win/loop-watcher.c.i
@@ -673,7 +673,7 @@ src/win/loop-watcher.i: src/win/loop-watcher.c.i
 
 # target to preprocess a source file
 src/win/loop-watcher.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.i
 .PHONY : src/win/loop-watcher.c.i
 
 src/win/loop-watcher.s: src/win/loop-watcher.c.s
@@ -681,7 +681,7 @@ src/win/loop-watcher.s: src/win/loop-watcher.c.s
 
 # target to generate assembly for a file
 src/win/loop-watcher.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/loop-watcher.c.s
 .PHONY : src/win/loop-watcher.c.s
 
 src/win/pipe.obj: src/win/pipe.c.obj
@@ -689,7 +689,7 @@ src/win/pipe.obj: src/win/pipe.c.obj
 
 # target to build an object file
 src/win/pipe.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.obj
 .PHONY : src/win/pipe.c.obj
 
 src/win/pipe.i: src/win/pipe.c.i
@@ -697,7 +697,7 @@ src/win/pipe.i: src/win/pipe.c.i
 
 # target to preprocess a source file
 src/win/pipe.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.i
 .PHONY : src/win/pipe.c.i
 
 src/win/pipe.s: src/win/pipe.c.s
@@ -705,7 +705,7 @@ src/win/pipe.s: src/win/pipe.c.s
 
 # target to generate assembly for a file
 src/win/pipe.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/pipe.c.s
 .PHONY : src/win/pipe.c.s
 
 src/win/poll.obj: src/win/poll.c.obj
@@ -713,7 +713,7 @@ src/win/poll.obj: src/win/poll.c.obj
 
 # target to build an object file
 src/win/poll.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.obj
 .PHONY : src/win/poll.c.obj
 
 src/win/poll.i: src/win/poll.c.i
@@ -721,7 +721,7 @@ src/win/poll.i: src/win/poll.c.i
 
 # target to preprocess a source file
 src/win/poll.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.i
 .PHONY : src/win/poll.c.i
 
 src/win/poll.s: src/win/poll.c.s
@@ -729,7 +729,7 @@ src/win/poll.s: src/win/poll.c.s
 
 # target to generate assembly for a file
 src/win/poll.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/poll.c.s
 .PHONY : src/win/poll.c.s
 
 src/win/process-stdio.obj: src/win/process-stdio.c.obj
@@ -737,7 +737,7 @@ src/win/process-stdio.obj: src/win/process-stdio.c.obj
 
 # target to build an object file
 src/win/process-stdio.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.obj
 .PHONY : src/win/process-stdio.c.obj
 
 src/win/process-stdio.i: src/win/process-stdio.c.i
@@ -745,7 +745,7 @@ src/win/process-stdio.i: src/win/process-stdio.c.i
 
 # target to preprocess a source file
 src/win/process-stdio.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.i
 .PHONY : src/win/process-stdio.c.i
 
 src/win/process-stdio.s: src/win/process-stdio.c.s
@@ -753,7 +753,7 @@ src/win/process-stdio.s: src/win/process-stdio.c.s
 
 # target to generate assembly for a file
 src/win/process-stdio.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process-stdio.c.s
 .PHONY : src/win/process-stdio.c.s
 
 src/win/process.obj: src/win/process.c.obj
@@ -761,7 +761,7 @@ src/win/process.obj: src/win/process.c.obj
 
 # target to build an object file
 src/win/process.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.obj
 .PHONY : src/win/process.c.obj
 
 src/win/process.i: src/win/process.c.i
@@ -769,7 +769,7 @@ src/win/process.i: src/win/process.c.i
 
 # target to preprocess a source file
 src/win/process.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.i
 .PHONY : src/win/process.c.i
 
 src/win/process.s: src/win/process.c.s
@@ -777,7 +777,7 @@ src/win/process.s: src/win/process.c.s
 
 # target to generate assembly for a file
 src/win/process.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/process.c.s
 .PHONY : src/win/process.c.s
 
 src/win/signal.obj: src/win/signal.c.obj
@@ -785,7 +785,7 @@ src/win/signal.obj: src/win/signal.c.obj
 
 # target to build an object file
 src/win/signal.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.obj
 .PHONY : src/win/signal.c.obj
 
 src/win/signal.i: src/win/signal.c.i
@@ -793,7 +793,7 @@ src/win/signal.i: src/win/signal.c.i
 
 # target to preprocess a source file
 src/win/signal.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.i
 .PHONY : src/win/signal.c.i
 
 src/win/signal.s: src/win/signal.c.s
@@ -801,7 +801,7 @@ src/win/signal.s: src/win/signal.c.s
 
 # target to generate assembly for a file
 src/win/signal.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/signal.c.s
 .PHONY : src/win/signal.c.s
 
 src/win/snprintf.obj: src/win/snprintf.c.obj
@@ -809,7 +809,7 @@ src/win/snprintf.obj: src/win/snprintf.c.obj
 
 # target to build an object file
 src/win/snprintf.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.obj
 .PHONY : src/win/snprintf.c.obj
 
 src/win/snprintf.i: src/win/snprintf.c.i
@@ -817,7 +817,7 @@ src/win/snprintf.i: src/win/snprintf.c.i
 
 # target to preprocess a source file
 src/win/snprintf.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.i
 .PHONY : src/win/snprintf.c.i
 
 src/win/snprintf.s: src/win/snprintf.c.s
@@ -825,7 +825,7 @@ src/win/snprintf.s: src/win/snprintf.c.s
 
 # target to generate assembly for a file
 src/win/snprintf.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/snprintf.c.s
 .PHONY : src/win/snprintf.c.s
 
 src/win/stream.obj: src/win/stream.c.obj
@@ -833,7 +833,7 @@ src/win/stream.obj: src/win/stream.c.obj
 
 # target to build an object file
 src/win/stream.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.obj
 .PHONY : src/win/stream.c.obj
 
 src/win/stream.i: src/win/stream.c.i
@@ -841,7 +841,7 @@ src/win/stream.i: src/win/stream.c.i
 
 # target to preprocess a source file
 src/win/stream.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.i
 .PHONY : src/win/stream.c.i
 
 src/win/stream.s: src/win/stream.c.s
@@ -849,7 +849,7 @@ src/win/stream.s: src/win/stream.c.s
 
 # target to generate assembly for a file
 src/win/stream.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/stream.c.s
 .PHONY : src/win/stream.c.s
 
 src/win/tcp.obj: src/win/tcp.c.obj
@@ -857,7 +857,7 @@ src/win/tcp.obj: src/win/tcp.c.obj
 
 # target to build an object file
 src/win/tcp.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.obj
 .PHONY : src/win/tcp.c.obj
 
 src/win/tcp.i: src/win/tcp.c.i
@@ -865,7 +865,7 @@ src/win/tcp.i: src/win/tcp.c.i
 
 # target to preprocess a source file
 src/win/tcp.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.i
 .PHONY : src/win/tcp.c.i
 
 src/win/tcp.s: src/win/tcp.c.s
@@ -873,7 +873,7 @@ src/win/tcp.s: src/win/tcp.c.s
 
 # target to generate assembly for a file
 src/win/tcp.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tcp.c.s
 .PHONY : src/win/tcp.c.s
 
 src/win/thread.obj: src/win/thread.c.obj
@@ -881,7 +881,7 @@ src/win/thread.obj: src/win/thread.c.obj
 
 # target to build an object file
 src/win/thread.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.obj
 .PHONY : src/win/thread.c.obj
 
 src/win/thread.i: src/win/thread.c.i
@@ -889,7 +889,7 @@ src/win/thread.i: src/win/thread.c.i
 
 # target to preprocess a source file
 src/win/thread.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.i
 .PHONY : src/win/thread.c.i
 
 src/win/thread.s: src/win/thread.c.s
@@ -897,7 +897,7 @@ src/win/thread.s: src/win/thread.c.s
 
 # target to generate assembly for a file
 src/win/thread.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/thread.c.s
 .PHONY : src/win/thread.c.s
 
 src/win/tty.obj: src/win/tty.c.obj
@@ -905,7 +905,7 @@ src/win/tty.obj: src/win/tty.c.obj
 
 # target to build an object file
 src/win/tty.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.obj
 .PHONY : src/win/tty.c.obj
 
 src/win/tty.i: src/win/tty.c.i
@@ -913,7 +913,7 @@ src/win/tty.i: src/win/tty.c.i
 
 # target to preprocess a source file
 src/win/tty.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.i
 .PHONY : src/win/tty.c.i
 
 src/win/tty.s: src/win/tty.c.s
@@ -921,7 +921,7 @@ src/win/tty.s: src/win/tty.c.s
 
 # target to generate assembly for a file
 src/win/tty.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/tty.c.s
 .PHONY : src/win/tty.c.s
 
 src/win/udp.obj: src/win/udp.c.obj
@@ -929,7 +929,7 @@ src/win/udp.obj: src/win/udp.c.obj
 
 # target to build an object file
 src/win/udp.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.obj
 .PHONY : src/win/udp.c.obj
 
 src/win/udp.i: src/win/udp.c.i
@@ -937,7 +937,7 @@ src/win/udp.i: src/win/udp.c.i
 
 # target to preprocess a source file
 src/win/udp.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.i
 .PHONY : src/win/udp.c.i
 
 src/win/udp.s: src/win/udp.c.s
@@ -945,7 +945,7 @@ src/win/udp.s: src/win/udp.c.s
 
 # target to generate assembly for a file
 src/win/udp.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/udp.c.s
 .PHONY : src/win/udp.c.s
 
 src/win/util.obj: src/win/util.c.obj
@@ -953,7 +953,7 @@ src/win/util.obj: src/win/util.c.obj
 
 # target to build an object file
 src/win/util.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.obj
 .PHONY : src/win/util.c.obj
 
 src/win/util.i: src/win/util.c.i
@@ -961,7 +961,7 @@ src/win/util.i: src/win/util.c.i
 
 # target to preprocess a source file
 src/win/util.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.i
 .PHONY : src/win/util.c.i
 
 src/win/util.s: src/win/util.c.s
@@ -969,7 +969,7 @@ src/win/util.s: src/win/util.c.s
 
 # target to generate assembly for a file
 src/win/util.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/util.c.s
 .PHONY : src/win/util.c.s
 
 src/win/winapi.obj: src/win/winapi.c.obj
@@ -977,7 +977,7 @@ src/win/winapi.obj: src/win/winapi.c.obj
 
 # target to build an object file
 src/win/winapi.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.obj
 .PHONY : src/win/winapi.c.obj
 
 src/win/winapi.i: src/win/winapi.c.i
@@ -985,7 +985,7 @@ src/win/winapi.i: src/win/winapi.c.i
 
 # target to preprocess a source file
 src/win/winapi.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.i
 .PHONY : src/win/winapi.c.i
 
 src/win/winapi.s: src/win/winapi.c.s
@@ -993,7 +993,7 @@ src/win/winapi.s: src/win/winapi.c.s
 
 # target to generate assembly for a file
 src/win/winapi.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winapi.c.s
 .PHONY : src/win/winapi.c.s
 
 src/win/winsock.obj: src/win/winsock.c.obj
@@ -1001,7 +1001,7 @@ src/win/winsock.obj: src/win/winsock.c.obj
 
 # target to build an object file
 src/win/winsock.c.obj:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.obj
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.obj
 .PHONY : src/win/winsock.c.obj
 
 src/win/winsock.i: src/win/winsock.c.i
@@ -1009,7 +1009,7 @@ src/win/winsock.i: src/win/winsock.c.i
 
 # target to preprocess a source file
 src/win/winsock.c.i:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.i
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.i
 .PHONY : src/win/winsock.c.i
 
 src/win/winsock.s: src/win/winsock.c.s
@@ -1017,7 +1017,7 @@ src/win/winsock.s: src/win/winsock.c.s
 
 # target to generate assembly for a file
 src/win/winsock.c.s:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.s
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(MAKE) $(MAKESILENT) -f Utilities\cmlibuv\CMakeFiles\cmlibuv.dir\build.make Utilities/cmlibuv/CMakeFiles/cmlibuv.dir/src/win/winsock.c.s
 .PHONY : src/win/winsock.c.s
 
 # Help Target
@@ -1149,6 +1149,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\leesj\Desktop\DiscordBot\src\reversi\builds && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
