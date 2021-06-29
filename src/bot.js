@@ -544,8 +544,7 @@ bot.on('message', async (msg) => {
                                 if(reeee!=undefined) await reeee.delete();
                                 await msg.delete();*/
                             }
-                            
-                            
+                        
                         }
                     break;
 
@@ -570,7 +569,7 @@ bot.on('message', async (msg) => {
             case "아님":
                 msg.channel.send('맞는데?');
             break;
-  
+            
             case "거짓말":
                 msg.channel.send("그걸 믿냐 ㅋㅋㅋㅋ");
             break;
@@ -598,4 +597,4 @@ bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.MORMOTTE_TOKEN);
