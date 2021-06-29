@@ -1,10 +1,12 @@
-#include <stdio.h>
-#include <iostream>
-using std::cin;
+#include <opencv.hpp>
 
-int main(void){
-    int a;
-    cin >> a;
-    printf("%d",a);
-    return 0;
+using namespace cv;
+int main(int argc, char **argv)
+{
+  Mat image;
+  image = imread(argv[1], 1);
+  namedWindow("Display Image", CV_WINDOW_AUTOSIZE);
+  imshow("Display Image", image);
+  waitKey(0);
+  return 0;
 }
