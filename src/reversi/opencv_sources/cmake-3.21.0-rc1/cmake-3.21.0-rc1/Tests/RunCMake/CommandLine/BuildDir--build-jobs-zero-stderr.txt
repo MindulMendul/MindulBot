@@ -1,0 +1,3 @@
+^The <jobs> value requires a positive integer argument\.
++
+Usage: cmake --build \[<dir> \| --preset <preset>\] \[options\] \[-- \[native-options\]\]
