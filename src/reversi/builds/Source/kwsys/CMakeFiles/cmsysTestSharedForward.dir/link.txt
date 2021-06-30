@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmsysTestSharedForward.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmsysTestSharedForward.dir/objects.a @CMakeFiles\cmsysTestSharedForward.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmsysTestSharedForward.dir/objects.a -Wl,--no-whole-archive -o cmsysTestSharedForward.exe -Wl,--out-implib,libcmsysTestSharedForward.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmsysTestSharedForward.dir\linklibs.rsp

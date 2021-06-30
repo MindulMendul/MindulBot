@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\fake_build_command.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\fake_build_command.dir/objects.a @CMakeFiles\fake_build_command.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\fake_build_command.dir/objects.a -Wl,--no-whole-archive -o fake_build_command.exe -Wl,--out-implib,libfake_build_command.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fake_build_command.dir\linklibs.rsp

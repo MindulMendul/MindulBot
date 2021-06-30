@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\pseudo_emulator_custom_command.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\pseudo_emulator_custom_command.dir/objects.a @CMakeFiles\pseudo_emulator_custom_command.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\pseudo_emulator_custom_command.dir/objects.a -Wl,--no-whole-archive -o pseudo_emulator_custom_command.exe -Wl,--out-implib,libpseudo_emulator_custom_command.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pseudo_emulator_custom_command.dir\linklibs.rsp

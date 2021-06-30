@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\pseudo_llvm-rc.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\pseudo_llvm-rc.dir/objects.a @CMakeFiles\pseudo_llvm-rc.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\pseudo_llvm-rc.dir/objects.a -Wl,--no-whole-archive -o pseudo_llvm-rc.exe -Wl,--out-implib,libpseudo_llvm-rc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pseudo_llvm-rc.dir\linklibs.rsp

@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\color_warning.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\color_warning.dir/objects.a @CMakeFiles\color_warning.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\color_warning.dir/objects.a -Wl,--no-whole-archive -o color_warning.exe -Wl,--out-implib,libcolor_warning.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\color_warning.dir\linklibs.rsp

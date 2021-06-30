@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\pseudonl_BC.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\pseudonl_BC.dir/objects.a @CMakeFiles\pseudonl_BC.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\pseudonl_BC.dir/objects.a -Wl,--no-whole-archive -o BC.exe -Wl,--out-implib,libBC.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pseudonl_BC.dir\linklibs.rsp

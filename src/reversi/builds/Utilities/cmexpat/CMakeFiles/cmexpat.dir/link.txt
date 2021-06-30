@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libcmexpat.a CMakeFiles/cmexpat.dir/lib/xmlparse.c.obj CMakeFiles/cmexpat.dir/lib/xmlrole.c.obj CMakeFiles/cmexpat.dir/lib/xmltok.c.obj CMakeFiles/cmexpat.dir/lib/xmltok_impl.c.obj CMakeFiles/cmexpat.dir/lib/xmltok_ns.c.obj
-C:\MinGW\bin\ranlib.exe libcmexpat.a

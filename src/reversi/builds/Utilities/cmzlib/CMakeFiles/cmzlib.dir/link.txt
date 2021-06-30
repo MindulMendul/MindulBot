@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libcmzlib.a CMakeFiles/cmzlib.dir/adler32.c.obj CMakeFiles/cmzlib.dir/compress.c.obj CMakeFiles/cmzlib.dir/crc32.c.obj CMakeFiles/cmzlib.dir/deflate.c.obj CMakeFiles/cmzlib.dir/gzio.c.obj CMakeFiles/cmzlib.dir/inffast.c.obj CMakeFiles/cmzlib.dir/inflate.c.obj CMakeFiles/cmzlib.dir/inftrees.c.obj CMakeFiles/cmzlib.dir/trees.c.obj CMakeFiles/cmzlib.dir/uncompr.c.obj CMakeFiles/cmzlib.dir/zutil.c.obj
-C:\MinGW\bin\ranlib.exe libcmzlib.a

@@ -4,8 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/src/reversi/opencv_sources/opencv-3.4.9/opencv-3.4.9/include/opencv",
-                "${workspaceFolder}/src/reversi/opencv_sources/opencv-3.4.9/opencv-3.4.9/include/opencv2"
+                "${workspaceFolder}/src/reversi/opencv_sources/opencv-3.4.9/opencv-3.4.9/include/**"
             ],
             "defines": [
                 "_DEBUG",

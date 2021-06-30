@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmsysTestProcess.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\cmsysTestProcess.dir/objects.a @CMakeFiles\cmsysTestProcess.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmsysTestProcess.dir/objects.a -Wl,--no-whole-archive -o cmsysTestProcess.exe -Wl,--out-implib,libcmsysTestProcess.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmsysTestProcess.dir\linklibs.rsp

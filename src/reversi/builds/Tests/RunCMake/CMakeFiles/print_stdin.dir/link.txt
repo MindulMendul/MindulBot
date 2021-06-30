@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\print_stdin.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\print_stdin.dir/objects.a @CMakeFiles\print_stdin.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\print_stdin.dir/objects.a -Wl,--no-whole-archive -o print_stdin.exe -Wl,--out-implib,libprint_stdin.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\print_stdin.dir\linklibs.rsp

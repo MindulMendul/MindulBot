@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libcmstd.a CMakeFiles/cmstd.dir/cm/bits/fs_path.cxx.obj CMakeFiles/cmstd.dir/cm/bits/string_view.cxx.obj
-C:\MinGW\bin\ranlib.exe libcmstd.a
