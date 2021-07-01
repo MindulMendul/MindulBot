@@ -1000,6 +1000,7 @@ bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
 
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 bot.login(process.env.MORMOTTE_TOKEN);
@@ -1015,3 +1016,6 @@ bot.login(GV.LoginBotToken);
 =======
 //bot.login(GV.LoginBotToken);
 >>>>>>> 40105dd3 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
+=======
+bot.login(process.env.BOT_TOKEN);
+>>>>>>> 4d039ce8 (민둘봇 토큰 실수;;):src/bot.js
