@@ -8,6 +8,7 @@
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
   },
   "dependencies": {
+<<<<<<< HEAD
     "discord.js": "^13.11.0",
     "dotenv": "^16.0.2",
     "libsodium-wrappers": "^0.7.10",
@@ -24,5 +25,22 @@
   "devDependencies": {
     "@discordjs/voice": "^0.11.0",
     "prettier": "^2.7.1"
+=======
+    "@discordjs/opus": "^0.3.3",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "https": "^1.0.0",
+    "moment": "^2.28.0",
+    "moment-timezone": "^0.5.31",
+    "p-queue": "^6.6.1",
+    "queue": "^6.0.1",
+    "queue-fifo": "^0.2.6",
+    "stack": "^0.1.0",
+    "youtube-node": "^1.3.3",
+    "ytdl-core": "^4.8.3"
+>>>>>>> 778f98fe (ytdl 업데이트)
   }
 }
