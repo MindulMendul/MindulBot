@@ -116,16 +116,13 @@ async function play(guild, song){
         }, 30*1000);
         return;
     }
-
+    try {
     const dispatcher = serverQueue.connection
         .play(ytdl(song.url))
         .on("finish", () => {//finish라는 명령어가 있으니 주의!
-                             //끝! 뭐 이런 식으로 바꾸지 마, 멍청아!
             serverQueue.songs.shift();
             play(guild, serverQueue.songs[0]);
-        })
-        .on("error", error => console.error(error));//역시 이것도 위와 동
-    
+        });
     dispatcher.setVolume(serverQueue.volume/100);
     serverQueue.dispatcher=dispatcher;//디스패쳐 저장
     
@@ -136,6 +133,10 @@ async function play(guild, song){
           .then(()=>tmpmsg.react("🔇"))
           .then(()=>tmpmsg.react("🔉"))
           .then(()=>tmpmsg.react("🔊"));
+    } catch(err) {
+        bot.users.cache.get(OWNER_ID).send(`${guild}길드 ${serverQueue.textChannel}에서 \n${err}`);
+        serverQueue.textChannel.send("재생하려고는 했는데 에러가 떴어요, 죄송해요 ㅠㅠ");
+    }
 }
 
 function show(msg){
@@ -168,7 +169,7 @@ function show(msg){
 }
 
 //remove 함수
-function remove(msg, array){
+async function remove(msg, array){
     const serverQueue = musicQueue.get(msg.guild.id);
 
     if (!msg.member.voice.channel)
@@ -179,10 +180,10 @@ function remove(msg, array){
     
     if(array==[])
         return msg.channel.send("어떤 곡을 지울지 모르겠어요!");
-    
+
     let tempStr="해당 노래가 맞아요?\n";
     array.forEach(element=>{
-        tempStr+=`> **${element.charAt()}. ${serverQueue.songs[element.charAt()-1].title}**\n`;
+        tempStr+=`> **${element+1}. ${serverQueue.songs[element].title}**\n`;
     });
     tempStr+="7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.";
     msg.channel.send(tempStr);
@@ -193,8 +194,8 @@ async function searchYoutubeList(question, limit){
         try {
             return axios.get(`https://www.youtube.com/results?search_query=${encodeURI(question)}&sp=EgIQAQ%253D%253D`);
             // axios.get 함수를 이용하여 비동기로 유튜브 html 파일을 가져온다.
-        } catch (error) {
-            console.error(error);
+        } catch (err) {
+            console.error(err);
         }
     };
 
@@ -225,7 +226,7 @@ async function searchYoutubeList(question, limit){
 
 async function searchYoutube(msg, searchStr){
     const word = searchStr; // 검색어 지정
-    const limit = 10;  // 출력 갯수
+    const limit = 8;  // 출력 갯수
 
     const embedSearchYoutube = {
         title:"노래 검색 목록",
