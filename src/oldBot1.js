@@ -1001,6 +1001,7 @@ bot.on('guildMemberAdd',async (member) => {
 });
 
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 bot.login(process.env.MORMOTTE_TOKEN);
@@ -1019,3 +1020,6 @@ bot.login(GV.LoginBotToken);
 =======
 bot.login(process.env.BOT_TOKEN);
 >>>>>>> 4d039ce8 (민둘봇 토큰 실수;;):src/bot.js
+=======
+bot.login(process.env.MORMOTTE_TOKEN);
+>>>>>>> c90f7f09 (.env 없이도 돌아가나 테스트):src/bot.js
