@@ -258,22 +258,27 @@ bot.on('messageReactionAdd', async (reaction, user) => {
                             msg.channel.send(`음소거되었어요`)
 <<<<<<< HEAD
                         } else {//뮤트 걸린 거 풀 때
+<<<<<<< HEAD:src/oldBot1.js
                             dispatcher.setVolume(serverQueue.volume/100);
 =======
                         } else {//뮤트 풀리고 나서
                             dispatcher.setVolume(serverQueue.volume/200);
 >>>>>>> 2c0157ca (셔플 기능 강화 & 루프 기능 추가)
+=======
+                            dispatcher.setVolume(serverQueue.volume/200);
+>>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
                             msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`)
                         }
                     break;
 
                     case "🔉":
-                        serverQueue.volume=Math.max(serverQueue.volume-10,0);
-                        dispatcher.setVolume(serverQueue.volume/100);
+                        serverQueue.volume=Math.max(serverQueue.volume-10, 0);
+                        dispatcher.setVolume(serverQueue.volume/200);
                         msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
                     break;
 
                     case "🔊":
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                         serverQueue.volume=Math.min(serverQueue.volume+10,100);
                         dispatcher.setVolume(serverQueue.volume/100);
@@ -281,6 +286,10 @@ bot.on('messageReactionAdd', async (reaction, user) => {
                         serverQueue.volume=Math.min(serverQueue.volume+10, 100);
                         dispatcher.setVolume(serverQueue.volume/200);
 >>>>>>> 736cbc30 (사운드 버그  & 타로 문구 수정)
+=======
+                        serverQueue.volume=Math.min(serverQueue.volume+10, 50);
+                        dispatcher.setVolume(serverQueue.volume/200);
+>>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
                         msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
                     break;
                 }
@@ -790,8 +799,11 @@ bot.on('message', async (msg) => {
                     if(msgResponse.get(msg.member.id)!=undefined)
                         return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                     
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                     musicBot.remove(msg, args);
+=======
+>>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
                     let argsTemp=[];
                     args.forEach(element=>{//args의 각각의 성분을
                         element.split(",").forEach(elem=>{
@@ -805,14 +817,32 @@ bot.on('message', async (msg) => {
                     else{musicBot.remove(msg, argsArr);}
 >>>>>>> 94bc2140 (소스 모듈화 작업 중)
 
+                    let argsCheck=[];//명령어가 유효한지 전수 조사
+                    while(argsTemp.length>0) {
+                        const tmpFunc = async ()=>{
+                            let tmp=argsTemp.shift(); tmp++; tmp--; if(isNaN(tmp)) return;//숫자로 형변환이 되는지 확인
+                            tmp=Math.floor(tmp); if(tmp<1 || tmp>8) return;//숫자라면, 정수로 만들어서 1~8 사이에 있는지 확인
+                            argsCheck.push(tmp-1);
+                        }
+                        await tmpFunc();
+                    }
+                    const setCheck=new Set(argsCheck);//중복 제거
+                    argsCheck=[...setCheck];
+
+                    musicBot.remove(msg, argsCheck);
+
                     msgResponse.set(msg.member.id,//멤버를 기준으로
                         {
                             guild: msg.guild.id,    cmd: "musicRemove",
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                             args: argsTemp,//이게 실제 명령어
 =======
                             args: argsArr,//이게 실제 명령어
 >>>>>>> 94bc2140 (소스 모듈화 작업 중)
+=======
+                            args: argsCheck,//이게 실제 명령어
+>>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
                             timer: setTimeout(()=>{
                                 msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
                                 msgResponse.delete(msg.member.id);
@@ -826,7 +856,7 @@ bot.on('message', async (msg) => {
                 break;
 
                 default:
-                    msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
+                    msg.channel.send("명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!");
                     console.log(CMD_NAME);
                     cmdCheck=true;
                 break;
@@ -852,11 +882,12 @@ bot.on('message', async (msg) => {
                         while(arrTemp.length>0) {
                             const tmpFunc = async ()=>{
                                 let tmp=arrTemp.shift(); tmp++; tmp--; if(isNaN(tmp)) return;//숫자로 형변환이 되는지 확인
-                                tmp=Math.floor(tmp); if(tmp<1 || tmp>10) return;//숫자라면, 정수로 만들어서 1~10 사이에 있는지 확인
+                                tmp=Math.floor(tmp); if(tmp<1 || tmp>8) return;//숫자라면, 정수로 만들어서 1~8 사이에 있는지 확인
                                 arrCheck.push(tmp-1);
                             }
                             await tmpFunc();
                         }
+
                         if(arrCheck.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
 =======
                         if(msgArr.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
@@ -879,11 +910,12 @@ bot.on('message', async (msg) => {
                     case 'musicRemove':
                         const correctArr=["네","어","ㅇㅋ","ㅇㅇ","y","Y","알았어","dz","dd", "얍"];
                         if(correctArr.includes(msg.content)){//긍정
-                            cmdResponse.args.forEach(element => {
-                                if(element.charAt()-1==0){musicBot.skip(msg);}
-                                else{musicBot.musicQueue.get(msg.guild.id).songs.splice(element.charAt()-1,1);}
+                            clearTimeout(cmdResponse.timer);
+                            cmdResponse.args.sort((a,b)=>{return b-a;})
+                            .forEach(element => {
+                                if(element==0){musicBot.skip(msg);}
+                                else{musicBot.musicQueue.get(msg.guild.id).songs.splice(element,1);}
                             });
-                            clearTimeout(msgResponse.timer);
                             await msg.channel.send("삭제 완료!");
                             if(musicBot.musicQueue.get(msg.guild.id).songs.length>0)
                                 musicBot.show(msg);//큐에 남아있는 노래가 있다면 보여주기
@@ -975,18 +1007,6 @@ bot.on('message', async (msg) => {
                 msg.channel.send("그걸 믿냐 ㅋㅋㅋㅋ");
             break;
 
-            case "한로원":
-                msg.channel.send("로바~");
-            break;
-
-            case "로바":
-                msg.channel.send("ㅇㅈ");
-            break;
-            
-            case "레순튀":
-                msg.channel.send("레또팅!!");
-            break;
-
             default:
                 cmdCheck=true;
             break;
@@ -1000,6 +1020,7 @@ bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
 
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
@@ -1023,3 +1044,6 @@ bot.login(process.env.BOT_TOKEN);
 =======
 bot.login(process.env.MORMOTTE_TOKEN);
 >>>>>>> c90f7f09 (.env 없이도 돌아가나 테스트):src/bot.js
+=======
+bot.login(process.env.BOT_TOKEN);
+>>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
