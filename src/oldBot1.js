@@ -14,12 +14,33 @@ moment.tz.setDefault("Asia/Seoul"); //서울 시간
 require('./botAlarm');
 
 const bot = new Client();
+<<<<<<< HEAD
 <<<<<<< HEAD:src/bot.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 const GV=require("../GlobalVariable");
 >>>>>>> 67f199ac (노래봇 자잘한 거 다 고침):src/oldBot1.js
+=======
+<<<<<<< HEAD:src/oldBot1.js
+const GV=require("../GlobalVariable");
+=======
+
+const GV = require("./../GlobalVariable.js");
+const PREFIX=GV.PREFIX;
+const PREFIX_REACTION_MF="@#$4578$#@"; // 중지 이모지 반응용(중지 날린 곳에 지문 남긴 것)
+
+const BOT_ID="751733763838443530";
+const MORMOTTE_ID="751773063766343721";
+const OWNER_ID="554178159717777420";
+
+const LoginBotToken=process.env.BOT_TOKEN;
+const LoginBotID=BOT_ID;
+
+var msgMiddleFinger=0; // 중지 이모지 반응용 변수
+var nagaStance=0; // 나가라고 전에 삼고초려 변수
+>>>>>>> 0dd88ae8 (볼륨 이모지 작동 오류 버그 수정):src/bot.js
+>>>>>>> cf085648 (볼륨 이모지 작동 오류 버그 수정)
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";
@@ -215,8 +236,13 @@ bot.on('messageReactionAdd', async (reaction, user) => {
         }
     } else {//특수 명령어가 없는 경우 ex)노래 사운드 조절
         const msg=reaction.message;
+<<<<<<< HEAD:src/oldBot1.js
         if(msg.author.id==GV.LoginBotID){//봇이 단 메시지의 이모지인지 확인
             if(user.id==GV.LoginBotID) return;//자기가 이모지 단 거에 대한 이벤트는 의미 없지
+=======
+        if(msg.author.id==LoginBotID){//봇이 단 메시지의 이모지인지 확인
+            if(user.id==LoginBotID) return;//자기가 이모지 단 거에 대한 이벤트는 의미 없지
+>>>>>>> 0dd88ae8 (볼륨 이모지 작동 오류 버그 수정):src/bot.js
             if(msg.content.startsWith("이번 선곡은~\n")){//노래 이모지
                 const musicBot=require("./Commands/music/Music.js");
                 const serverQueue=musicBot.musicQueue.get(msg.guild.id);
@@ -1023,6 +1049,7 @@ bot.on('guildMemberAdd',async (member) => {
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 bot.login(process.env.MORMOTTE_TOKEN);
@@ -1047,3 +1074,6 @@ bot.login(process.env.MORMOTTE_TOKEN);
 =======
 bot.login(process.env.BOT_TOKEN);
 >>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
+=======
+bot.login(LoginBotToken);
+>>>>>>> 0dd88ae8 (볼륨 이모지 작동 오류 버그 수정):src/bot.js
