@@ -2,8 +2,8 @@ const ytdl=require("ytdl-core"); //노래봇
 const musicQueue = new Map();
 
 //youtube 검색 코드
-const Youtube = require('youtube-node');
-const youtube = new Youtube();
+//const Youtube = require('youtube-node');
+//const youtube = new Youtube();
 
 var https = require("https");
 const axios = require("axios");
@@ -99,6 +99,7 @@ function stop(msg){
 
     if (!serverQueue)
         return msg.channel.send("멈출 노래가 없는데요?");
+    
     serverQueue.songs = [];
     serverQueue.connection.dispatcher.end();
 }
@@ -123,7 +124,7 @@ async function play(guild, song){
             serverQueue.songs.shift();
             play(guild, serverQueue.songs[0]);
         });
-    dispatcher.setVolume(serverQueue.volume/100);
+    dispatcher.setVolume(serverQueue.volume/200);
     serverQueue.dispatcher=dispatcher;//디스패쳐 저장
     
     const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);

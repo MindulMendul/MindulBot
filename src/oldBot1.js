@@ -34,8 +34,8 @@ const BOT_ID="751733763838443530";
 const MORMOTTE_ID="751773063766343721";
 const OWNER_ID="554178159717777420";
 
-const LoginBotToken=process.env.BOT_TOKEN;
-const LoginBotID=BOT_ID;
+const LoginBotToken=process.env.MORMOTTE_TOKEN;
+const LoginBotID=MORMOTTE_ID;
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
@@ -305,6 +305,7 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 
                     case "🔊":
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                         serverQueue.volume=Math.min(serverQueue.volume+10,100);
                         dispatcher.setVolume(serverQueue.volume/100);
@@ -314,6 +315,9 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 >>>>>>> 736cbc30 (사운드 버그  & 타로 문구 수정)
 =======
                         serverQueue.volume=Math.min(serverQueue.volume+10, 50);
+=======
+                        serverQueue.volume=Math.min(serverQueue.volume+10, 100);
+>>>>>>> 24a5c4bf (사운드 버그  & 타로 문구 수정):src/bot.js
                         dispatcher.setVolume(serverQueue.volume/200);
 >>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
                         msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
@@ -425,6 +429,7 @@ bot.on('message', async (msg) => {
         //코드 시작 CommandBasic
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
         switch(cmd){
+<<<<<<< HEAD:src/oldBot1.js
             case "테스트":
                 
             break;
@@ -760,6 +765,154 @@ bot.on('message', async (msg) => {
                 }
             break;
 
+=======
+
+            case "나가":
+                require(CommandBasic+"CmdNaga.js")
+                .CommandNaga(msg);
+            break;
+            
+            case "시간":
+                require(CommandBasic+"CmdTime.js")
+                .CommandTime(msg);
+            break;
+
+            case "날짜":
+                require(CommandBasic+"CmdDate.js")
+                .CommandDate(msg);
+            break;
+
+            case "얍":
+                msg.reply("얍");
+            break;
+
+            case "ping":
+                msg.reply('Pong!');
+            break;
+
+            case "gnip":
+                msg.reply('!gnoP');
+            break;
+
+            case "민둘":
+                msg.channel.send('민둘이는 바보');
+            break;
+
+            case "맨둘":
+                msg.channel.send('맨둘이는 집나갔음');
+            break;
+            
+            case "야":
+                require(CommandBasic+"CmdAngry.js")
+                .CommandAngry(msg);
+            break;
+
+            case "도움말":
+                const helpEmbed=require(CommandBasic+"CmdHelp.js").helpEmbed;
+                msg.channel.send({embed : helpEmbed});
+            break;
+
+            case "개발":
+                const devEmbed=require(CommandBasic+"CmdDev.js").devEmbed;
+                msg.channel.send({embed : devEmbed});
+            break;
+
+            case "타로":
+                if(!permissions.has("ADD_REACTIONS"))
+                    return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
+                
+                if(msgResponse.get(msg.member.id)!=undefined)
+                    return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+                
+                const tarot=require(CommandBasic+"CmdTarot.js");
+                msgResponse.set(msg.member.id, {guild: msg.guild.id, cmd: "tarotCard-Waiting",});//이모지 작업 중 명령어 방지 코드
+                msgResponse.set(msg.member.id,
+                    {
+                        guild: msg.guild.id,    cmd: "tarotCard", 
+                        msg: (await tarot.firstStep(msg))
+                    }
+                );
+            break;
+
+            case"건의":
+                bot.users.cache.get(OWNER_ID).send(`'${msg.guild.name}'길드의 '${msg.channel.name}'채널에서 '${msg.author.username}'님이 건의사항 보내주셨어요.\n> ${args.join(" ")}`);
+            break;
+
+            case "한로원":
+                msg.channel.send("로바~");
+            break;
+
+            case "로바":
+                msg.channel.send("로원 바보라는 뜻~");
+            break;
+            
+            case "레순튀":
+                msg.channel.send("레또팅!!");
+            break;
+
+            case "네고마워요ㅕ":
+                msg.channel.send("진짜 검토한다고요 ㅡㅡ");
+            break;
+
+            case "텍스트게임":
+                if(msg.author!=OWNER_ID)//테스트 기능은 나만 쓸 수 있어~
+                    return msg.channel.send("개발자 전용 명령어입니다. 죄송해요 ^^;;");
+
+                if(!permissions.has(["ADD_REACTIONS","MANAGE_MESSAGES"]))
+                    return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}\n> 택스트 편집 권한: ${permissions.has("MANAGE_MESSAGES")}`);
+                
+                const gameData=require(`./Commands/game/gameData.js`);
+                const getData=gameData.getData(msg);
+
+                if(msgResponse.get(msg.member.id)!=undefined){
+                    if(msgResponse.get(msg.member.id).cmd=="textGame"){
+                        if(args[0]=="끄기") { //끄기 명령어는 게임을 저장하고 끔
+                            msgResponse.delete(msg.member.id);
+
+                            if(getData==undefined){//선택창인 경우만 해당
+                                return msg.channel.send("게임이 선택되지 않고 종료되었습니다. 다음에는 꼭 게임을 실행해서 재밌게 즐겨주세요 ㅎㅎ");
+                            } //나머지의 경우 무조건 data가 있는 경우. 없으면 에러인데, 에러체크는 절대 안하쥬~? ㅋㅋㅋㅋ;;;.... ㅠㅠㅠ
+                            //data가 있는데 끄기 명령어면 data를 저장하고 끄겠다는 얘기지.
+                            const gleer=require(`./Commands/game/${getData.gameName}.js`);
+                            const answerAPI=await gleer.getAPI(msg);
+                            gameData.setData(msg.member.id, {
+                                gameName: getData.gameName,
+                                stage: answerAPI.stage
+                            });
+                            return msg.channel.send("해당 게임이 종료되었습니다. 아직은 저장되지 않습니다;;;");
+                        }
+                    }
+                    return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
+                }
+                
+                if(getData==undefined){//정보가 없으면 새로 만들어야지
+                    const embed = await msg.channel.send({embed: require("./Commands/game/gameList.js").gameList})
+                    msgResponse.set(msg.member.id,//최초 게임 선택지
+                        {
+                            guild: msg.guild.id,    cmd: "textGame", 
+                            gameName: undefined,
+                            msg: embed,
+                            reply: undefined,
+                        }
+                    );
+                } else {//정보가 있으면 정보를 불러와야지 
+                    msg.channel.send("저장된 정보 확인");
+                    const gleer=require(`./Commands/game/${getData.gameName}.js`);
+                    const answerAPI= await gleer.createAPI(msg);   await gleer.refreshQuest(msg, getData.stage);
+                    const embed = await msg.channel.send({embed : answerAPI.quest});
+
+                    msgResponse.set(msg.member.id,//최초 게임 선택지
+                        {
+                            guild: msg.guild.id,    cmd: "textGame", 
+                            gameName: getData.gameName,
+                            msg: embed,
+                            reply: undefined,
+                        }
+                    );
+                }
+            break;
+
+>>>>>>> 24a5c4bf (사운드 버그  & 타로 문구 수정):src/bot.js
             default:
 <<<<<<< HEAD
                 msg.channel.send("명령어로 사용될 수 있는지 검토해볼게요~");
@@ -782,6 +935,10 @@ bot.on('message', async (msg) => {
         if(cmdCheck){
             cmdCheck=false;
             switch(cmd){
+                case "상태":
+                    console.log(musicBot.musicQueue.get(msg.guild.id).dispatcher);
+                break;
+
                 case "노래":
                     musicBot.execute(msg, args.join(" "));
                 break;
