@@ -1,2 +1,2 @@
-const PREFIX="ㅣ";
+const PREFIX="ㅏ";
 exports.PREFIX=PREFIX;
