@@ -34,8 +34,8 @@ const BOT_ID="751733763838443530";
 const MORMOTTE_ID="751773063766343721";
 const OWNER_ID="554178159717777420";
 
-const LoginBotToken=process.env.MORMOTTE_TOKEN;
-const LoginBotID=MORMOTTE_ID;
+const LoginBotToken=process.env.BOT_TOKEN;
+const LoginBotID=BOT_ID;
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
@@ -895,7 +895,7 @@ bot.on('message', async (msg) => {
                             reply: undefined,
                         }
                     );
-                } else {//정보가 있으면 정보를 불러와야지 
+                } else {//정보가 있으면 정보를 불러와야지
                     msg.channel.send("저장된 정보 확인");
                     const gleer=require(`./Commands/game/${getData.gameName}.js`);
                     const answerAPI= await gleer.createAPI(msg);   await gleer.refreshQuest(msg, getData.stage);
