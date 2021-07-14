@@ -76,7 +76,7 @@ async function execute(msg, searchStr){
         serverQueue.songs.push(song);
         return msg.channel.send(`**${song.title}**가 큐에 들어왔어요!`);
     }
-} 
+}
 
 //skip 함수
 function skip(msg){
@@ -91,7 +91,7 @@ function skip(msg){
 }
 
 //stop 함수
-function stop(msg){
+function empty(msg){
     const serverQueue = musicQueue.get(msg.guild.id);
 
     if (!msg.member.voice.channel)
@@ -121,7 +121,8 @@ async function play(guild, song){
     const dispatcher = serverQueue.connection
         .play(ytdl(song.url))
         .on("finish", () => {//finish라는 명령어가 있으니 주의!
-            serverQueue.songs.shift();
+            if(serverQueue.loop)serverQueue.songs.push(serverQueue.songs.shift());
+            else serverQueue.songs.shift();
             play(guild, serverQueue.songs[0]);
         });
     dispatcher.setVolume(serverQueue.volume/200);
@@ -131,6 +132,8 @@ async function play(guild, song){
     tmpmsg.react("⏯")
           .then(()=>tmpmsg.react("⏩"))
           .then(()=>tmpmsg.react("⏹"))
+          .then(()=>tmpmsg.react("🔁"))
+          .then(()=>tmpmsg.react("🔀"))
           .then(()=>tmpmsg.react("🔇"))
           .then(()=>tmpmsg.react("🔉"))
           .then(()=>tmpmsg.react("🔊"));
@@ -140,6 +143,7 @@ async function play(guild, song){
     }
 }
 
+//show 함수
 function show(msg){
     const serverQueue = musicQueue.get(msg.guild.id);
 
@@ -169,6 +173,40 @@ function show(msg){
     }
 }
 
+//shuffle 함수
+const func=require("./../../func.js");
+function shuffle(msg){
+    const serverQueue = musicQueue.get(msg.guild.id);
+
+    if (!msg.member.voice.channel)
+        return msg.channel.send("보이스채널에서 해주세요");
+
+    if(!serverQueue)
+        return msg.channel.send("재생목록에 노래가 없어요!");
+    else{
+        let i=1;//첫 라벨은 그냥
+
+        const embedQueue = {
+            color: 0xF7CAC9,
+            title:"큐에 들어간 노래 목록",
+            fields: []
+        }
+        let temp=serverQueue.songs.shift();//맨 앞 큐는 재생 중인 노래
+        func.shuffle(serverQueue.songs);
+        serverQueue.songs.unshift(temp);//맨 앞 큐를 다시 집어넣음
+        msg.channel.send("큐에 들어간 곡이 무작위로 재배치되었습니다!");
+        show(msg);
+    }
+}
+
+//loop 함수
+function loop(msg){
+    const serverQueue = musicQueue.get(msg.guild.id);
+    serverQueue.loop=!(serverQueue.loop);
+    if(serverQueue.loop)msg.channel.send("큐 반복 기능이 활성화되었습니다~");
+    else msg.channel.send("더이상 큐에 있던 녀석들이 반복되지 않아요!");
+}
+
 //remove 함수
 async function remove(msg, array){
     const serverQueue = musicQueue.get(msg.guild.id);
@@ -190,6 +228,7 @@ async function remove(msg, array){
     msg.channel.send(tempStr);
 }
 
+//유튜브찾기 함수
 async function searchYoutubeList(question, limit){
     const getHtml = async () => {
         try {
@@ -225,6 +264,7 @@ async function searchYoutubeList(question, limit){
     return List;
 }
 
+//찾은 유튜브 주소를 배열에 집어넣는 함수
 async function searchYoutube(msg, searchStr){
     const word = searchStr; // 검색어 지정
     const limit = 8;  // 출력 갯수
@@ -253,4 +293,4 @@ async function searchYoutube(msg, searchStr){
     return await embedTempFunc();
 }
 
-module.exports={musicQueue, scheduling, execute, skip, stop, play, show, remove, searchYoutube};
+module.exports={musicQueue, scheduling, execute, skip, empty, play, show, shuffle, loop, remove, searchYoutube};

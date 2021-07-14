@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "mindulbot",
   "version": "1.1.1",
+=======
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+>>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가)
   "scripts": {
     "start": "nodemon --exec ts-node bot.ts",
     "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
