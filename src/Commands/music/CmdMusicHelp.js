@@ -1,4 +1,4 @@
-const {PREFIX} = require("../../../GlobalVariable.js");
+const {PREFIX} = require("./../../GlobalVariable.js");
 const moment = require('moment');
 
 const helpembed = {
