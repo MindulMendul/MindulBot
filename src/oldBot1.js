@@ -287,10 +287,6 @@ setInterval( () => {
     //테스트
 });
 
-bot.on('error', (err)=>{//에러났을때 어디서나는지 알고 싶다ㅏㅏㅏ
-    bot.users.cache.get(OWNER_ID).send(err);
-});
-
 //이모지 달았을 때 반응
 >>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
 >>>>>>> 35c39431 (소스 모듈화 작업 중)
@@ -526,6 +522,9 @@ bot.on('message', async (msg) => {
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
         switch(cmd){
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
+=======
+>>>>>>> 67e1203e (핫픽스 (타로 기능 안 됨)):src/bot.js
             case "테스트":
                 
             break;
