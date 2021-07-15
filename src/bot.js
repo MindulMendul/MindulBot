@@ -6,89 +6,32 @@ require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 
 const bot = new Client();
-const GV=require("./../GlobalVariable.js");
-
-var msgMiddleFinger=0; // 중지 이모지 반응용 변수
-var nagaStance=0; // 나가라고 전에 삼고초려 변수
+const GV=require("./../GlobalVariable");
 
 var msgResponse = new Map();//music searching 같은 명령어에 대한 변수 관리
+const func=require("./func");//잡다한 함수 모음
 
-bot.on('ready', async () => {
+bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
     bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+
+    exports.bot=bot;//알람 모음
+    //테스트
 });
 
-const func=require("./func.js");
+bot.on('error', (err)=>{//에러났을때 어디서나는지 알고 싶다ㅏㅏㅏ
+    bot.users.cache.get(OWNER_ID).send(err);
+});
 
-//기본길드 전용 알람(현재는 그럼)
-setInterval( () => {
-    if(moment().minute()==25){//매 시간 25분마다 알람
-        //펀치킹 알람
-        let ampm;
-        if(moment().hour()<12){
-            if(moment().hour()==0){ampm="밤12";}
-            else if(moment().hour()<6){ampm=`새벽${moment().hour()}`;}
-            else if(moment().hour()<10){ampm=`아침${moment().hour()}`;}
-            else{ampm=`오전${moment().hour()}`;}
-        } else {
-            if(moment().hour()==12){ampm="낮12";}
-            else if(moment().hour()<18){ampm=`오후${moment().hour()-12}`;}
-            else if(moment().hour()<22){ampm=`저녁${moment().hour()-12}`;}
-            else{ampm=`밤${moment().hour()-12}`;}
-        }
-        const reminderMessage=`${moment().hour()}시(${ampm}시) 플래그하러 가세요~`;
-        bot.guilds.cache.forEach( (guild)=>{
-            if(guild.name!="💛 기본 💛") return; //기본길드 전용 코드
-            const guildReminder=guild.channels.cache.find( (channel)=>{
-                if(channel.name.startsWith('잡담'))
-                    return channel; //소야봇-공지
-            });
-            try{
-                guildReminder.send(reminderMessage)
-                .then( msg => msg.delete({timeout: 10*60*1000}));
-            } catch {  
-                guild.systemChannel.send(reminderMessage)
-                .then( msg => msg.delete({timeout: 10*60*1000}));
-            }
-        })
-    }
-}, 60*1000); // every minutes
-
-
+//이모지 달았을 때 반응
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
     if(asdf!=undefined){//특수 명령어가 있는 경우 ex) 타로
-        let strDes="", strField="";
         if(asdf.cmd=="tarotCard"){
-            const tarot=require("./Commands/basic/TarotList.js");
-            const arr=tarot.script;
-            
-            reaction.users.remove(user);
-            switch(reaction.emoji.name){
-                case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
-                case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
-                case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
-                case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
-                case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
-                case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
-            }
+            const tarot=require("./Commands/basic/CmdTarot");
 
-            const tarotEmbed = {
-                color: 0xF7CAC9,
-                author: {
-                    name: '민둘봇의 타로 하트',
-                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-                },
-                description: `${strDes}`,
-                fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
-                image: {url: strField[1]},
-                footer: {
-                    text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
-                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-                },
-            };
-            asdf.msg.edit({embed: tarotEmbed});
+            asdf.msg.edit({embed: (await tarot.secondStep(reaction, user))});//세컨 스텝
             msgResponse.delete(user.id);
         }
     } else {//특수 명령어가 없는 경우 ex)노래 사운드 조절
@@ -149,7 +92,6 @@ bot.on('messageReactionAdd', async (reaction, user) => {
             }
         }
     }
-
 });
 
 // 명령어 모음
@@ -231,9 +173,11 @@ bot.on('message', async (msg) => {
             break;
 
             case "타로":
+                //권한 확인
                 if(!permissions.has("ADD_REACTIONS"))
                     return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
                 
+                //진행중인 명령어 확인
                 if(msgResponse.get(msg.member.id)!=undefined)
                     return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                 
@@ -242,7 +186,7 @@ bot.on('message', async (msg) => {
                 msgResponse.set(msg.member.id,
                     {
                         guild: msg.guild.id,    cmd: "tarotCard", 
-                        msg: (await tarot.firstStep(msg))
+                        msg: (await tarot.firstStep(msg))//이거 되기까지 시간 걸림;;
                     }
                 );
             break;
@@ -371,31 +315,15 @@ bot.on('message', async (msg) => {
                     if(msgResponse.get(msg.member.id)!=undefined)
                         return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                     
-                    let argsTemp=[];
-                    args.forEach(element=>{//args의 각각의 성분을
-                        element.split(",").forEach(elem=>{
-                            if(elem!="")argsTemp.push(elem); //,단위로 쪼개어 하나하나 집어넣기
-                        });
-                    });
-
-                    let argsCheck=[];//명령어가 유효한지 전수 조사
-                    while(argsTemp.length>0) {
-                        const tmpFunc = async ()=>{
-                            let tmp=argsTemp.shift(); tmp++; tmp--; if(isNaN(tmp)) return;//숫자로 형변환이 되는지 확인
-                            tmp=Math.floor(tmp); if(tmp<1 || tmp>8) return;//숫자라면, 정수로 만들어서 1~8 사이에 있는지 확인
-                            argsCheck.push(tmp-1);
-                        }
-                        await tmpFunc();
-                    }
-                    const setCheck=new Set(argsCheck);//중복 제거
-                    argsCheck=[...setCheck];
-
-                    musicBot.remove(msg, argsCheck);
+                    const argsArr=await func.effectiveArr(args.toString(),",",1,8);//배열이 유효한지 조사
+                    
+                    if(argsArr.length==0){msg.channel.send("올바른 명령이 입력되지 않아 삭제 명령이 취소되었습니다.");}
+                    else{musicBot.remove(msg, argsArr);}
 
                     msgResponse.set(msg.member.id,//멤버를 기준으로
                         {
                             guild: msg.guild.id,    cmd: "musicRemove",
-                            args: argsCheck,//이게 실제 명령어
+                            args: argsArr,//이게 실제 명령어
                             timer: setTimeout(()=>{
                                 msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
                                 msgResponse.delete(msg.member.id);
@@ -427,30 +355,16 @@ bot.on('message', async (msg) => {
             if(cmdResponse!=undefined){//있어야 작동함
                 switch(cmdResponse.cmd){
                     case 'musicSearch':
-                        let arrTemp=[];//일단 명령어 담아두기
-                        msg.content.split(",").forEach(element => {
-                            if(element!="") arrTemp.push(element.trim());
-                        });
+                        const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
-                        let arrCheck=[];//명령어가 유효한지 전수 조사
-
-                        while(arrTemp.length>0) {
-                            const tmpFunc = async ()=>{
-                                let tmp=arrTemp.shift(); tmp++; tmp--; if(isNaN(tmp)) return;//숫자로 형변환이 되는지 확인
-                                tmp=Math.floor(tmp); if(tmp<1 || tmp>8) return;//숫자라면, 정수로 만들어서 1~8 사이에 있는지 확인
-                                arrCheck.push(tmp-1);
-                            }
-                            await tmpFunc();
-                        }
-
-                        if(arrCheck.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+                        if(msgArr.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
                             cmdResponse.message.delete();
                             msgResponse.delete(msg.member.id);
-                            return msg.channel.send("노래 검색 취소할게요;;");
+                            return msg.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
                         }
 
-                        while(arrCheck.length>0){
-                            await musicBot.execute(msg, cmdResponse.embed.fields[arrCheck.shift()].url);
+                        while(msgArr.length>0){
+                            await musicBot.execute(msg, cmdResponse.embed.fields[msgArr.shift()].url);
                         }
 
                         msg.delete();
@@ -469,7 +383,8 @@ bot.on('message', async (msg) => {
                                 else{musicBot.musicQueue.get(msg.guild.id).songs.splice(element,1);}
                             });
                             await msg.channel.send("삭제 완료!");
-                            musicBot.show(msg);
+                            if(musicBot.musicQueue.get(msg.guild.id).songs.length>0)
+                                musicBot.show(msg);//큐에 남아있는 노래가 있다면 보여주기
                         } else {//부정
                             msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
                         }
@@ -564,10 +479,6 @@ bot.on('message', async (msg) => {
             break;
         }
     }
-});
-
-bot.on('guildMemberAdd',async (member) => {
-    console.log(`${member.user.tag}: 접속`);
 });
 
 bot.login(GV.LoginBotToken);

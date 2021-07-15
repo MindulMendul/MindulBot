@@ -1,11 +1,7 @@
-const ytdl=require("ytdl-core"); //노래봇
-const musicQueue = new Map();
+const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
+const musicQueue = new Map();//큐 담아두는 곳
 
-//youtube 검색 코드
-//const Youtube = require('youtube-node');
-//const youtube = new Youtube();
-
-var https = require("https");
+//크롤링때 쓰는 거
 const axios = require("axios");
 const cheerio = require("cheerio");
 
@@ -16,11 +12,8 @@ async function execute(msg, searchStr){
     //권한 체크
     const voiceChannel = msg.member.voice.channel;
     if (!voiceChannel){
-        return msg.channel.send(
-            "보이스채널에서 해주세요"
-        );
+        return msg.channel.send("보이스채널에서 해주세요");
     }
-
     const permissions = voiceChannel.permissionsFor(msg.client.user);
     if (!permissions.has("CONNECT") || !permissions.has("SPEAK") || !msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")) {
         return msg.channel.send(
@@ -121,7 +114,7 @@ async function play(guild, song){
     const dispatcher = serverQueue.connection
         .play(ytdl(song.url))
         .on("finish", () => {//finish라는 명령어가 있으니 주의!
-            if(serverQueue.loop)serverQueue.songs.push(serverQueue.songs.shift());
+            if(serverQueue.loop) serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
             else serverQueue.songs.shift();
             play(guild, serverQueue.songs[0]);
         });
@@ -184,13 +177,6 @@ function shuffle(msg){
     if(!serverQueue)
         return msg.channel.send("재생목록에 노래가 없어요!");
     else{
-        let i=1;//첫 라벨은 그냥
-
-        const embedQueue = {
-            color: 0xF7CAC9,
-            title:"큐에 들어간 노래 목록",
-            fields: []
-        }
         let temp=serverQueue.songs.shift();//맨 앞 큐는 재생 중인 노래
         func.shuffle(serverQueue.songs);
         serverQueue.songs.unshift(temp);//맨 앞 큐를 다시 집어넣음
@@ -246,7 +232,7 @@ async function searchYoutubeList(question, limit){
     const $bodyList = $("body");
     let txt="", tmpIndex=0, count=limit;
     
-    $bodyList.children().each( function(i, elem) {
+    $bodyList.children().each( function(i) {
         if(i==15){//여기에 제목이랑 주소 담겨있음. 이건 내가 하나하나 찾은 거라 변경 ㄴㄴ... 제발 ㅠㅠ
             txt=$(this).html();
             while(txt.indexOf('"watchEndpoint":{"videoId":"')>0 && count>0){
@@ -265,8 +251,7 @@ async function searchYoutubeList(question, limit){
 }
 
 //찾은 유튜브 주소를 배열에 집어넣는 함수
-async function searchYoutube(msg, searchStr){
-    const word = searchStr; // 검색어 지정
+async function searchYoutube(searchStr){
     const limit = 8;  // 출력 갯수
 
     const embedSearchYoutube = {
