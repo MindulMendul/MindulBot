@@ -33,7 +33,7 @@ async function execute(msg, searchStr){
     }
     
     //노래 정보 추출
-    const tmpMusicSite=await searchYoutubeList(searchStr, 1);
+    const tmpMusicSite = await searchYoutubeList(searchStr, 1);
     const musicSite = `https://www.youtube.com/watch?v=${tmpMusicSite.pop().url}`;
 
     const songInfo = await ytdl.getInfo(musicSite);
@@ -252,6 +252,9 @@ async function searchYoutubeList(question, limit){
 
 //찾은 유튜브 주소를 배열에 집어넣는 함수
 async function searchYoutube(searchStr){
+    if (!msg.member.voice.channel)
+        return msg.channel.send("보이스채널에서 해주세요");
+
     const limit = 8;  // 출력 갯수
 
     const embedSearchYoutube = {
