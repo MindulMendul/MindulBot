@@ -20,10 +20,6 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
     //테스트
 });
 
-bot.on('error', (err)=>{//에러났을때 어디서나는지 알고 싶다ㅏㅏㅏ
-    bot.users.cache.get(OWNER_ID).send(err);
-});
-
 //이모지 달았을 때 반응
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
@@ -131,6 +127,9 @@ bot.on('message', async (msg) => {
         
         //코드 시작 CommandBasic
         switch(cmd){
+            case "테스트":
+                
+            break;
 
             case "나가":
                 require(CommandBasic+"CmdNaga.js")
@@ -455,9 +454,7 @@ bot.on('message', async (msg) => {
                 return;
             }
         }
-
-        let cmdCheck=false;
-
+        
         const CMD_Array= msg.content.trim().split(/\s+/); // 정규 표현식 공부하기
         const psudoCommand_BASIC=require(CommandBasic+"/PsudoCommand.json");
         const cmd = Object.keys(psudoCommand_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴

@@ -37,7 +37,7 @@ async function firstStep(msg){
 
 //타로하트 선택 후 결과 창
 async function secondStep(reaction, user){
-    let strDes="", strField=new Array[3];
+    let strDes="", strField=new Array(3);
 
     const tarot=require("./TarotList");
     const arr=tarot.script;
