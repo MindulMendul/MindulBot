@@ -24,6 +24,7 @@ const GV=require("../GlobalVariable");
 =======
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 const GV=require("../GlobalVariable");
 =======
 
@@ -44,7 +45,13 @@ const GV=require("./../GlobalVariable.js");
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
 >>>>>>> 0dd88ae8 (볼륨 이모지 작동 오류 버그 수정):src/bot.js
+<<<<<<< HEAD
 >>>>>>> cf085648 (볼륨 이모지 작동 오류 버그 수정)
+=======
+=======
+const GV=require("./../GlobalVariable");
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
+>>>>>>> 35c39431 (소스 모듈화 작업 중)
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";
@@ -223,6 +230,7 @@ setInterval( () => {
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 =======
 
+<<<<<<< HEAD:src/oldBot1.js
     exports.bot=bot;
     //테스트
 });
@@ -271,11 +279,26 @@ setInterval( () => {
 
 
 >>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가):src/bot.js
+<<<<<<< HEAD
 >>>>>>> 84f29ce2 (셔플 기능 강화 & 루프 기능 추가)
+=======
+=======
+    exports.bot=bot;//알람 모음
+    //테스트
+});
+
+bot.on('error', (err)=>{//에러났을때 어디서나는지 알고 싶다ㅏㅏㅏ
+    bot.users.cache.get(OWNER_ID).send(err);
+});
+
+//이모지 달았을 때 반응
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
+>>>>>>> 35c39431 (소스 모듈화 작업 중)
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
     if(asdf!=undefined){//특수 명령어가 있는 경우 ex) 타로
         if(asdf.cmd=="tarotCard"){
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
             const tarot=require("./Commands/basic/CmdTarot");
 =======
@@ -292,6 +315,9 @@ bot.on('messageReactionAdd', async (reaction, user) => {
                 case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
             }
 >>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가):src/bot.js
+=======
+            const tarot=require("./Commands/basic/CmdTarot");
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
 
             asdf.msg.edit({embed: (await tarot.secondStep(reaction, user))});//세컨 스텝
             msgResponse.delete(user.id);
@@ -878,9 +904,11 @@ bot.on('message', async (msg) => {
             break;
 
             case "타로":
+                //권한 확인
                 if(!permissions.has("ADD_REACTIONS"))
                     return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
                 
+                //진행중인 명령어 확인
                 if(msgResponse.get(msg.member.id)!=undefined)
                     return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                 
@@ -889,7 +917,7 @@ bot.on('message', async (msg) => {
                 msgResponse.set(msg.member.id,
                     {
                         guild: msg.guild.id,    cmd: "tarotCard", 
-                        msg: (await tarot.firstStep(msg))
+                        msg: (await tarot.firstStep(msg))//이거 되기까지 시간 걸림;;
                     }
                 );
             break;
@@ -1027,6 +1055,7 @@ bot.on('message', async (msg) => {
                         return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                     
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                     musicBot.remove(msg, args);
 =======
@@ -1038,10 +1067,13 @@ bot.on('message', async (msg) => {
                         });
                     });
 =======
+=======
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
                     const argsArr=await func.effectiveArr(args.toString(),",",1,8);//배열이 유효한지 조사
                     
                     if(argsArr.length==0){msg.channel.send("올바른 명령이 입력되지 않아 삭제 명령이 취소되었습니다.");}
                     else{musicBot.remove(msg, argsArr);}
+<<<<<<< HEAD:src/oldBot1.js
 >>>>>>> 94bc2140 (소스 모듈화 작업 중)
 
                     let argsCheck=[];//명령어가 유효한지 전수 조사
@@ -1057,10 +1089,13 @@ bot.on('message', async (msg) => {
                     argsCheck=[...setCheck];
 
                     musicBot.remove(msg, argsCheck);
+=======
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
 
                     msgResponse.set(msg.member.id,//멤버를 기준으로
                         {
                             guild: msg.guild.id,    cmd: "musicRemove",
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                             args: argsTemp,//이게 실제 명령어
@@ -1070,6 +1105,9 @@ bot.on('message', async (msg) => {
 =======
                             args: argsCheck,//이게 실제 명령어
 >>>>>>> b5c25080 (노래봇 버그 수정 & 임베드 문구 수정):src/bot.js
+=======
+                            args: argsArr,//이게 실제 명령어
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
                             timer: setTimeout(()=>{
                                 msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
                                 msgResponse.delete(msg.member.id);
@@ -1103,6 +1141,7 @@ bot.on('message', async (msg) => {
                     case 'musicSearch':
                         const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
                         let arrCheck=[];//명령어가 유효한지 전수 조사
 
@@ -1119,6 +1158,9 @@ bot.on('message', async (msg) => {
 =======
                         if(msgArr.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
 >>>>>>> 94bc2140 (소스 모듈화 작업 중)
+=======
+                        if(msgArr.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
                             cmdResponse.message.delete();
                             msgResponse.delete(msg.member.id);
                             return msg.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
@@ -1241,6 +1283,7 @@ bot.on('message', async (msg) => {
     }
 });
 
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 bot.on('guildMemberAdd',async (member) => {
@@ -1282,3 +1325,6 @@ bot.login(LoginBotToken);
 =======
 bot.login(GV.LoginBotToken);
 >>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가):src/bot.js
+=======
+bot.login(GV.LoginBotToken);
+>>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
