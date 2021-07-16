@@ -37,8 +37,31 @@ mindulBot_privateKey.ppk
 >>>>>>> e369aa69 (트레쉬파일 삭제)
 =======
 oldFile/
+<<<<<<< HEAD
 >>>>>>> 8effe22f (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
 =======
 oldFile/
 src/cmd/admin/
 >>>>>>> 8a223d8d (리스너 관련 문제 해결)
+=======
+<<<<<<< HEAD
+src/cmd/admin/
+=======
+src/cmd/admin/
+=======
+
+package-lock.json
+<<<<<<< HEAD
+node_modules
+node_modules
+node_modules
+<<<<<<< HEAD
+>>>>>>> 59112e1a (opencv)
+=======
+node_modules
+>>>>>>> e8012686 (제발 돼라 openCV)
+=======
+.env
+>>>>>>> 18ce1158 (안쓰는 코드 정리 & 토큰 관리)
+>>>>>>> 01e1153e (안쓰는 코드 정리 & 토큰 관리)
+>>>>>>> d9fb9a2e (안쓰는 코드 정리 & 토큰 관리)

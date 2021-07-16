@@ -231,6 +231,7 @@ setInterval( () => {
 =======
 
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
     exports.bot=bot;
     //테스트
 });
@@ -284,6 +285,9 @@ setInterval( () => {
 =======
 =======
     exports.bot=bot;//알람 모음
+=======
+    exports.bot=bot;
+>>>>>>> 18ce1158 (안쓰는 코드 정리 & 토큰 관리):src/bot.js
     //테스트
 });
 
