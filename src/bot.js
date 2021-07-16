@@ -16,7 +16,7 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
     bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
 
-    exports.bot=bot;//알람 모음
+    exports.bot=bot;
     //테스트
 });
 
