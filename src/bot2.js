@@ -21,4 +21,8 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
 
 bot.on('message', async (msg) => {
     const [CMD_NAME, ...args] = msg.content.trim().substring(GV.PREFIX.length).split("/");//문장 정리
+    const Command_BASIC=require("./Commands/CmdBasic.json");
+    let cmd = Object.keys(Command_BASIC).find( (property) => //Command.js 파일에서 모든 프로퍼티를 문자배열화 시킴
+        Command_BASIC[property].find( element=>element==CMD_NAME )!=undefined// 그 프로퍼티 배열 안에서 CMD_NAME과 같은 문자열 찾기
+    );
 });

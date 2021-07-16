@@ -52,6 +52,7 @@ src/cmd/admin/
 
 package-lock.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 node_modules
 node_modules
@@ -61,6 +62,9 @@ node_modules
 node_modules
 >>>>>>> e8012686 (제발 돼라 openCV)
 =======
+=======
+
+>>>>>>> b737f908 (봇을 돌릴 수 있게 다시 깃)
 .env
 >>>>>>> 18ce1158 (안쓰는 코드 정리 & 토큰 관리)
 >>>>>>> 01e1153e (안쓰는 코드 정리 & 토큰 관리)
