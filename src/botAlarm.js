@@ -9,6 +9,8 @@ setTimeout(() => {
 }, 1000);
 */
 
+const moment = require('moment');
+
 //타로 카드 셔플
 func=require("./func");
 setImmediate(()=>{
