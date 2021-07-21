@@ -44,7 +44,7 @@ bot.on('message', async (msg) => {//명령어 있는 텍스트
     if (!bot.commands.get(command)) {msg.channel.send("명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!"); return;}
     try {
 		if(bot.commands.get(command).type=="music")msg.channel.send("현재는 노래봇 사용이 불가능합니다, 불편을 끼쳐드려 죄송해요 ㅠㅠ");
-		bot.commands.get(command).execute(msg, args);
+		else bot.commands.get(command).execute(msg, args);
 	} catch (error) {
 		msg.channel.send(`${command} 명령어 입력에 문제가 생겼어요! 우리 주인님이 고생할 거라 생각하니 기분이 좋네요 ㅎㅎ\n${error}`);
 		bot.users.cache.get(OWNER_ID).send(`명령어 입력 문제 : ${bot.commands.get(command).name}\n${error}`);
