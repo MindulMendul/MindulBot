@@ -6,6 +6,7 @@
   "name": "discordbot",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "bot.js",
 >>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가)
   "scripts": {
@@ -13,6 +14,13 @@
     "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
     "prepublish": "npm run pretty",
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
+=======
+  "main": "bot2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bot2.js",
+    "dev": "nodemon ./bot2.js"
+>>>>>>> db77e027 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
   },
   "dependencies": {
 <<<<<<< HEAD
@@ -35,10 +43,11 @@
 =======
     "@discordjs/opus": "^0.3.3",
     "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.5",
+    "cheerio": "^1.0.0-rc.10",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.7",
+    "fs": "0.0.1-security",
     "https": "^1.0.0",
     "moment": "^2.28.0",
     "moment-timezone": "^0.5.31",

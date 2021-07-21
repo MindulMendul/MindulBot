@@ -1010,10 +1010,6 @@ bot.on('message', async (msg) => {
         if(cmdCheck){
             cmdCheck=false;
             switch(cmd){
-                case "상태":
-                    console.log(musicBot.musicQueue.get(msg.guild.id).dispatcher);
-                break;
-
                 case "노래":
                     musicBot.execute(msg, args.join(" "));
                 break;
@@ -1287,6 +1283,7 @@ bot.on('message', async (msg) => {
 });
 
 <<<<<<< HEAD:src/oldBot1.js
+<<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD
 <<<<<<< HEAD
 bot.on('guildMemberAdd',async (member) => {
@@ -1331,3 +1328,6 @@ bot.login(GV.LoginBotToken);
 =======
 bot.login(GV.LoginBotToken);
 >>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
+=======
+//bot.login(GV.LoginBotToken);
+>>>>>>> db77e027 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠)):src/bot.js

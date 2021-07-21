@@ -26,8 +26,8 @@ async function effectiveArr(arr, tokenizer, min, max){
         }
         await tmpFunc();
     }
-    const setCheck=new Set(arrCheck);//중복 제거
-    return [...setCheck];
-    }
+    
+    return [...new Set(arrCheck)];//중복제거
+}
 
 module.exports = {equalTime, shuffle, effectiveArr};
