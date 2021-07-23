@@ -1,3 +1,6 @@
+const musicBot=require("./musicBot");
+const musicQueue=musicBot.musicQueue;
+
 module.exports = {
 	name: "셔플",
 	cmd: ["셔플","ㅅㅍ","shuffle"],

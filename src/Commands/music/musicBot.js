@@ -1,13 +1,11 @@
-const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
 const musicQueue = new Map();//큐 담아두는 곳
+let scheduling=undefined;
 
 //크롤링때 쓰는 거
 const axios = require("axios");
 const cheerio = require("cheerio");
+const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
 
-let scheduling=undefined;
-
-//유튜브찾기 함수
 async function searchYoutubeList(question, limit){
     const getHtml = async () => {
         try {
@@ -42,34 +40,4 @@ async function searchYoutubeList(question, limit){
 
     return List;
 }
-
-//찾은 유튜브 주소를 배열에 집어넣는 함수
-async function searchYoutube(msg, searchStr){
-    if (!msg.member.voice.channel)
-        return msg.channel.send("보이스채널에서 해주세요");
-
-    const limit = 8;  // 출력 갯수
-
-    const embedSearchYoutube = {
-        title:"노래 검색 목록",
-        color: 0xF7CAC9,
-        description:`**${searchStr}**에 대한 검색 결과에요~`,
-        fields: []
-    }
-    var items = await searchYoutubeList(searchStr, limit); // 결과 중 items 항목만 가져옴
-    const embedTempFunc = async function (){//이 함수를 먼저 작동되어야 함!
-        return new Promise( resolve => {//위에서 이해되지 않았던 코드를 그대로 가져와 봄
-            for (var i in items) {
-                let n=i; n++;
-                const explItem={
-                    name: '\u200b',
-                    value: `[${n}. ${items[i].title}](https://www.youtube.com/watch?v=${items[i].url})`,//markdown 사용
-                    url: items[i].url
-                };
-                embedSearchYoutube.fields.push(explItem);
-            }
-            resolve(embedSearchYoutube);
-        }); 
-    }
-    return await embedTempFunc();
-}
+module.exports={musicQueue, scheduling, searchYoutubeList};

@@ -1,4 +1,4 @@
-const bot=require("./../bot2");
+const bot=require("./../bot2").bot;
 
 //테스트용
 /*
@@ -38,7 +38,7 @@ setInterval( () => {
             else{ampm=`밤${moment().hour()-12}`;}
         }
         const reminderMessage=`${moment().hour()}시(${ampm}시) 플래그하러 가세요~`;
-        bot.bot.guilds.cache.forEach( (guild)=>{
+        bot.guilds.cache.forEach( (guild)=>{
             if(guild.name!="💛 기본 💛") return; //기본길드 전용 코드
             const guildReminder=guild.channels.cache.find( (channel)=>{
                 if(channel.name.startsWith('잡담'))
