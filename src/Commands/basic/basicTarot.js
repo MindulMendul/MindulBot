@@ -44,9 +44,10 @@ module.exports = {
         let check=false;
         const bot=require("./../../../bot2").bot;
         bot.on("messageReactionAdd",(reaction, user)=>{
+            if(check) return;//한 번 선택되면 안 바뀌게 막는 코드
             if(user.bot || user.id!=msg.author.id) return;//다른 사람이 하면 안 되게 막는 코드
             if(reaction.message!=asdf) return;
-            if(check) return;//한 번 선택되면 안 바뀌게 막는 코드
+            
             let strDes="", strField=new Array(3);
         
             const tarot=require("./TarotList");

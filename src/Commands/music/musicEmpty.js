@@ -1,3 +1,6 @@
+const musicBot=require("./musicBot");
+const musicQueue=musicBot.musicQueue;
+
 module.exports = {
 	name: "비우기",
 	cmd: ["비우기", "ㅂㅇㄱ"],

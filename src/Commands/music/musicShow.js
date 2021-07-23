@@ -1,3 +1,6 @@
+const musicBot=require("./musicBot");
+const musicQueue=musicBot.musicQueue;
+
 module.exports = {
 	name: "큐",
 	cmd: ["큐", "목록", "노래목록"],
