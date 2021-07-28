@@ -2,7 +2,7 @@ module.exports = {
 	name: `날짜`,
 	cmd: ["날짜", "skfWk", "ㄴㅉ", "sW"],
     type: "basic",
-	execute(msg) {
+	async execute(msg) {
         const moment = require('moment');
         const {OWNER_ID} = require('../../../GlobalVariable');
         
@@ -12,5 +12,6 @@ module.exports = {
         console.log(msg.author.username);
             msg.reply("날짜는 달력 찾아봐.");
         }
+        return "cmdFinished";
 	},
 };
