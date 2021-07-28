@@ -4,7 +4,6 @@ const Discord = require('discord.js');
 const {PREFIX, LoginBotToken, OWNER_ID, activityString}=require("./GlobalVariable");
 
 const moment = require('moment');
-const Queue = require('queue-fifo');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 

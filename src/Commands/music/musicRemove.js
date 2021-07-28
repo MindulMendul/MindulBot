@@ -22,7 +22,7 @@ module.exports = {
             return msg.channel.send("어떤 곡을 지울지 모르겠어요!");
 
         //명령 대기 체크
-        const bot=require("./../../../bot2").bot;
+        const bot=require("./../../../bot").bot;
         if(!bot.guildCmdQueue.get(msg.guild.id))
             return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
         bot.guildCmdQueue.set(msg.guild.id, false);
@@ -41,7 +41,7 @@ module.exports = {
         bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
     },
     async react (args){
-        const bot=require("./../../../bot2").bot;
+        const bot=require("./../../../bot").bot;
         const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍"];
 
         let check=false;

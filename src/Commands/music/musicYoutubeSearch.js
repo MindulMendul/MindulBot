@@ -1,4 +1,4 @@
-const bot = require("./../../../bot2");
+const bot=require("./../../../bot");
 const musicBot=require("./musicBot");
 
 module.exports = {
@@ -14,10 +14,9 @@ module.exports = {
             return msg.channel.send("검색어를 입력해주세요");
 
         //명령 대기 체크
-        const bot=require("./../../../bot2").bot;
-        if(!bot.guildCmdQueue.get(msg.guild.id))
+        if(!bot.bot.guildCmdQueue.get(msg.guild.id))
             return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
-        bot.guildCmdQueue.set(msg.guild.id, false);
+        bot.bot.guildCmdQueue.set(msg.guild.id, false);
 
         const searchStr=args.join(" ");
         
@@ -40,24 +39,27 @@ module.exports = {
             };
             embedSearchYoutube.fields.push(explItem);
         }
-        msg.channel.send({embed: embedSearchYoutube});
-        await this.react(embedSearchYoutube);
-        bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
+        const embedMsg=await msg.channel.send({embed: embedSearchYoutube});
+        await this.react(embedSearchYoutube, embedMsg);
+        bot.bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
     }, 
-    async react(embed){
+    async react(embed, embedMsg){
         let check=false;
         bot.bot.on("message", async (msg)=>{
             if(check || msg.author.bot) return;
             const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
-            if(msgArr.length==0) //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+            if(msgArr.length==0){ //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+                check=true; msg.delete(); embedMsg.delete();
                 return msg.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
+            }
 
             while(msgArr.length>0){
                 const tmpStr=embed.fields[msgArr.shift()].url.split(/\s+/);
                 await require("./musicExecute").execute(msg, tmpStr);
             }
             msg.delete();
+            embedMsg.delete();
             check=true;
         });
     }

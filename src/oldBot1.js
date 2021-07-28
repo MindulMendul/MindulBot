@@ -15,6 +15,7 @@ require('./botAlarm');
 
 const bot = new Client();
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:src/bot.js
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ const bot = new Client();
 const GV=require("../GlobalVariable");
 >>>>>>> 67f199ac (노래봇 자잘한 거 다 고침):src/oldBot1.js
 =======
+=======
+>>>>>>> 4f7a646a (노래봇 자잘한 거 다 고침)
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
 <<<<<<< HEAD:src/oldBot1.js
@@ -51,7 +54,13 @@ var nagaStance=0; // 나가라고 전에 삼고초려 변수
 =======
 const GV=require("./../GlobalVariable");
 >>>>>>> af6be4f6 (소스 모듈화 작업 중):src/bot.js
+<<<<<<< HEAD
 >>>>>>> 35c39431 (소스 모듈화 작업 중)
+=======
+=======
+const GV=require("../GlobalVariable");
+>>>>>>> 3388e252 (노래봇 자잘한 거 다 고침)
+>>>>>>> 4f7a646a (노래봇 자잘한 거 다 고침)
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";

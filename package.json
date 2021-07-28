@@ -7,6 +7,7 @@
   "version": "1.0.0",
   "description": "",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "main": "bot.js",
 >>>>>>> 5299454e (셔플 기능 강화 & 루프 기능 추가)
   "scripts": {
@@ -21,6 +22,12 @@
     "start": "node ./bot2.js",
     "dev": "nodemon ./bot2.js"
 >>>>>>> db77e027 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
+=======
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ./bot.js",
+    "dev": "nodemon ./bot.js"
+>>>>>>> 3388e252 (노래봇 자잘한 거 다 고침)
   },
   "dependencies": {
 <<<<<<< HEAD
