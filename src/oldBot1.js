@@ -7,7 +7,7 @@ moment.tz.setDefault("Asia/Seoul"); //서울 시간
 require('./botAlarm');
 
 const bot = new Client();
-const GV=require("./../GlobalVariable");
+const GV=require("../GlobalVariable");
 
 var msgResponse = new Map();//music searching 같은 명령어에 대한 변수 관리
 const func=require("./func");//잡다한 함수 모음

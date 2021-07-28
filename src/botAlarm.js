@@ -1,4 +1,4 @@
-const bot=require("./../bot2").bot;
+const bot=require("../bot").bot;
 
 //테스트용
 /*

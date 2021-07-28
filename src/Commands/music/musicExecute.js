@@ -24,7 +24,7 @@ module.exports = {
             return msg.channel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
 
         //명령 대기 체크
-        const bot=require("./../../../bot2").bot;
+        const bot=require("./../../../bot").bot;
         if(!bot.guildCmdQueue.get(msg.guild.id))
             return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
         bot.guildCmdQueue.set(msg.guild.id, false);
@@ -103,7 +103,7 @@ module.exports = {
         serverQueue.dispatcher=dispatcher;//디스패쳐 저장
         
         const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
-        /*
+        
         tmpmsg.react("⏯")
             .then(()=>tmpmsg.react("⏩"))
             .then(()=>tmpmsg.react("⏹"))
@@ -112,6 +112,60 @@ module.exports = {
             .then(()=>tmpmsg.react("🔇"))
             .then(()=>tmpmsg.react("🔉"))
             .then(()=>tmpmsg.react("🔊"));
-        */
+
+        this.react(tmpmsg);
+    },
+    async react(msg){
+        const serverQueue = musicQueue.get(msg.guild.id);
+        const dispatcher = serverQueue.dispatcher;
+        return new Promise(()=>{
+            const bot=require("./../../../bot").bot;
+            bot.on("messageReactionAdd", (reaction, user)=>{
+                if(user.bot) return;//봇이 하면 안 되게 막는 코드
+                if(reaction.message!=msg) return;
+
+                reaction.users.remove(user);
+                switch(reaction.emoji.name){
+                    case "⏯":
+                        if(dispatcher.paused){
+                            dispatcher.resume();
+                            msg.channel.send("노래를 다시 틀어 드릴게요 ㅎㅎ");
+                        } else {
+                            dispatcher.pause();
+                            msg.channel.send("노래를 일시정지해 드렸어요!");
+                        }
+                    break;
+
+                    case "⏩": require("./musicSkip").execute(msg); break;
+                    case "⏹": require("./musicEmpty").execute(msg); break;
+                    case "🔁": require("./musicLoop").execute(msg); break;
+                    case "🔀": require("./musicShuffle").execute(msg); break;
+
+                    case "🔇": 
+                        serverQueue.mute=!(serverQueue.mute);
+                        if(serverQueue.mute){//뮤트 걸리고 나서
+                            dispatcher.setVolume(0);
+                            msg.channel.send(`음소거되었어요`)
+                        } else {//뮤트 풀리고 나서
+                            dispatcher.setVolume(serverQueue.volume/200);
+                            msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`)
+                        }
+                    break;
+
+                    case "🔉":
+                        serverQueue.volume=Math.max(serverQueue.volume-10, 0);
+                        dispatcher.setVolume(serverQueue.volume/200);
+                        msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    break;
+
+                    case "🔊":
+                        serverQueue.volume=Math.min(serverQueue.volume+10, 100);
+                        dispatcher.setVolume(serverQueue.volume/200);
+                        msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    break;
+                }
+            });
+        });
     }
+
 };
