@@ -17,5 +17,6 @@ module.exports = {
             }
             msg.channel.send("미안, 뒤에 다 수정함 ㅋㅋ");
         }
+        return "cmdFinished";
 	},
 };
