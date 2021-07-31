@@ -9,7 +9,6 @@ module.exports = {
 	//remove 함수
     async execute(msg, args){
         const serverQueue = musicQueue.get(msg.guild.id);
-
         const argsArr=await func.effectiveArr(args.toString(),",",1,serverQueue.songs.length);//배열이 유효한지 조사
 
         if (!msg.member.voice.channel)
@@ -20,12 +19,6 @@ module.exports = {
         
         if(argsArr.length==0)
             return msg.channel.send("어떤 곡을 지울지 모르겠어요!");
-
-        //명령 대기 체크
-        const bot=require("./../../../bot").bot;
-        if(!bot.guildCmdQueue.get(msg.guild.id))
-            return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
-        bot.guildCmdQueue.set(msg.guild.id, false);
         
         let tempStr="해당 노래가 맞아요?\n";
         argsArr.forEach(element=>{
@@ -57,7 +50,7 @@ module.exports = {
                 });
                 await msg.channel.send("삭제 완료!");
                 if(musicBot.musicQueue.get(msg.guild.id).songs.length>0)
-                    require("./musicShow").execute(msg)//musicBot.show(msg);//큐에 남아있는 노래가 있다면 보여주기
+                    require("./musicShow").execute(msg)//큐에 남아있는 노래가 있다면 보여주기
             } else //부정
                 msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
                 clearTimeout(scheduling);
