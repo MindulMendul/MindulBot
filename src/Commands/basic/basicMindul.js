@@ -4,6 +4,5 @@ module.exports = {
 	type: "basic",
 	async execute(msg) {
 		await msg.channel.send('민둘이는 바보');
-		return "cmdFinished";
 	},
 };

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int pan[9][9];
 int turn=1;
@@ -11,6 +13,7 @@ void can_pan(int turn);
 void ini_list();
 void reversi(int turn, int pick);
 void make_trap();
+int bot(int listLast);
 
 int main(void){
 	int finish=0;
@@ -20,12 +23,8 @@ int main(void){
 	pan[3][3]=1;	pan[4][4]=1;
 	pan[3][4]=-1;	pan[4][3]=-1;
 	int a, b;
-	for(int i=0; i<5; i++){
-		scanf("%d",&a);
-		fflush(stdin);
-		scanf("%d",&b);
-		pan[a][b]=-100;
-	}
+	
+	make_trap();
 	
 	can_pan(turn);
 	print_pan();
@@ -42,7 +41,10 @@ int main(void){
 		}
 		else {
 			printf("----------------\nturn=%d  number :", turn);
-			while(pick<1 || pick>listLast-1) scanf("%d", &pick);
+			while(pick<1 || pick>listLast-1) {
+				if(turn==1)scanf("%d", &pick);
+				else pick=bot(listLast);
+			}
 			printf("----------------\n");
 			pick=list[pick];
 			ini_list();
@@ -111,12 +113,26 @@ void reversi(int turn, int pick){
 }
 
 void make_trap(){
-	int a, b;
+	srand(time(NULL));
+	int a=rand()%8, b=rand()%8;
 	for(int i=0; i<5; i++){
-		scanf("%d",&a);
-		fflush(stdin);
-		scanf("%d",&b);
+		//scanf("%d",&a);
+		//fflush(stdin);
+		//scanf("%d",&b);
+
+		a=rand()%8;
+		b=rand()%8;
+		while(a*b==9 || a*b==16 || (a==3&&b==4) || (a==4 && b==3)){
+			a=rand()%8;
+			b=rand()%8;
+		}
+		
 		pan[a][b]=-100;
 	}
 }
 
+int bot(int listLast){
+	int a=rand()%(listLast-1)+1;
+	printf("%d (max : %d)\n", a, listLast-1);
+	return a;
+}
