@@ -16,9 +16,6 @@ module.exports = {
         if (!voiceChannel)//보이스채널 체크
             return msg.channel.send("보이스채널에서 해주세요!");
         
-        if (msg.member.voice.channel!=serverQueue.voiceChannel)
-            return msg.channel.send("같은 보이스채널에서 해주세요!");
-        
         //퍼미션 체크
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         if (!permissions.has("CONNECT") || !permissions.has("SPEAK") || !msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS"))
