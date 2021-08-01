@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "mindulbot",
   "version": "1.1.1",
 =======
@@ -23,6 +24,11 @@
     "dev": "nodemon ./bot2.js"
 >>>>>>> db77e027 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
 =======
+=======
+  "name": "mindulbot",
+  "version": "1.0.0",
+  "description": "MindulBot",
+>>>>>>> a8932d1a (서버에서 에러난 거 픽스중 2)
   "main": "bot.js",
   "scripts": {
 <<<<<<< HEAD
@@ -34,6 +40,12 @@
     "dev": "nodemon ./bot"
 >>>>>>> 19e99289 (민둘봇 돌아가게 시키는 마법의 깃)
   },
+<<<<<<< HEAD
+=======
+  "keywords":[],
+  "author": "",
+  "license": "ISC",
+>>>>>>> a8932d1a (서버에서 에러난 거 픽스중 2)
   "dependencies": {
 <<<<<<< HEAD
     "discord.js": "^13.11.0",
@@ -63,6 +75,7 @@
     "https": "^1.0.0",
     "moment": "^2.28.0",
     "moment-timezone": "^0.5.31",
+<<<<<<< HEAD
     "p-queue": "^6.6.1",
     "queue": "^6.0.2",
     "queue-fifo": "^0.2.6",
@@ -72,6 +85,8 @@
     "ytdl-core": "^4.8.3"
 >>>>>>> 778f98fe (ytdl 업데이트)
 =======
+=======
+>>>>>>> a8932d1a (서버에서 에러난 거 픽스중 2)
     "ytdl-core": "^4.9.0"
 >>>>>>> 0b75a0bd (노래봇 작동!)
   }
