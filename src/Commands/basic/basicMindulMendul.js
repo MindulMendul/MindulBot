@@ -3,6 +3,6 @@ module.exports = {
 	cmd: ["민둘맨둘","alsenfaosenf", "ㅁㄷㅁㄷ"],
 	type: "basic",
 	execute(msg) {
-		msg.channel.send('민머리 맨머리 민둘맨둘');
+		return msg.channel.send('민머리 맨머리 민둘맨둘');
 	},
 };

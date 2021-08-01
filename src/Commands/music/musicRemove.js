@@ -12,7 +12,10 @@ module.exports = {
         const argsArr=await func.effectiveArr(args.toString(),",",1,serverQueue.songs.length);//배열이 유효한지 조사
 
         if (!msg.member.voice.channel)
-            return msg.channel.send("보이스채널에서 해주세요");
+            return msg.channel.send("보이스채널에서 해주세요!");
+
+        if (msg.member.voice.channel!=serverQueue.voiceChannel)
+            return msg.channel.send("같은 보이스채널에서 해주세요!");
         
         if(!serverQueue)
             return msg.channel.send("재생목록에 노래가 없어요!");
@@ -30,17 +33,14 @@ module.exports = {
             msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
         },7*1000)//setTimeout 켜고 끄게 하려고
 
-        await this.react(argsArr);
-        bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
+        this.react(argsArr);
     },
     async react (args){
-        const bot=require("./../../../bot").bot;
         const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍"];
 
-        let check=false;
-        bot.on("message",async (msg)=>{
-            if(msg.author.bot) {check=true; return;}
-            if(check) return;
+        const reactionFilter = (msg) => {return msg.author.bot;}
+        const collector = msg.createMessgeCollector(reactionFilter, {max:1});
+        collector.on('collect', async (msg) => {
             if(correctArr.includes(msg.content)){//긍정
                 clearTimeout(scheduling);
                 args.sort((a,b)=>{return b-a;})
@@ -54,7 +54,6 @@ module.exports = {
             } else //부정
                 msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
                 clearTimeout(scheduling);
-            check=true;
         });
     }
 };
