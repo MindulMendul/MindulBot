@@ -8,21 +8,15 @@ module.exports = {
     async execute(msg){
         const serverQueue = musicQueue.get(msg.guild.id);
 
-        if (!msg.member.voice.channel){
-            await msg.channel.send("보이스채널에서 해주세요");
-            //명령어 끝났다는 신호 주기
-            const bot=require("./../../../bot").bot;
-            bot.guildCmdQueue.get(msg.guild.id).shift();
-            return;
-        }
+        if (!msg.member.voice.channel)
+            return msg.channel.send("보이스채널에서 해주세요!");
 
-        if(!serverQueue){
-            await msg.channel.send("재생목록에 노래가 없어요!");
-            //명령어 끝났다는 신호 주기
-            const bot=require("./../../../bot").bot;
-            bot.guildCmdQueue.get(msg.guild.id).shift();
-            return;
-        } else {
+        if (msg.member.voice.channel!=serverQueue.voiceChannel)
+            return msg.channel.send("같은 보이스채널에서 해주세요!");
+
+        if(!serverQueue)
+            return msg.channel.send("재생목록에 노래가 없어요!");
+        else {
             let i=1;//첫 라벨은 그냥
 
             const embedQueue = {
@@ -39,13 +33,7 @@ module.exports = {
                 embedQueue.fields.push(explSong);
             });
 
-            await msg.channel.send({embed: embedQueue});
-
-            //명령어 끝났다는 신호 주기
-            const bot=require("./../../../bot").bot;
-            bot.guildCmdQueue.get(msg.guild.id).shift();
-
-            return;
+            return msg.channel.send({embed: embedQueue});
         }
     }
 };            
