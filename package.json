@@ -32,6 +32,7 @@
   "main": "bot.js",
   "scripts": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "start": "node ./bot.js",
     "dev": "nodemon ./bot.js"
 >>>>>>> 3388e252 (노래봇 자잘한 거 다 고침)
@@ -39,6 +40,10 @@
     "start": "node ./bot",
     "dev": "nodemon ./bot"
 >>>>>>> 19e99289 (민둘봇 돌아가게 시키는 마법의 깃)
+=======
+    "start": "node ./bot.js",
+    "dev": "nodemon ./bot.js"
+>>>>>>> 973ef6d4 (서버 버그 고치는 중3)
   },
 <<<<<<< HEAD
 =======
