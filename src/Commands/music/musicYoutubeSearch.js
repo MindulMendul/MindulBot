@@ -1,3 +1,4 @@
+const {musicQueue}=require("./musicBot");
 module.exports = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
@@ -8,8 +9,8 @@ module.exports = {
         
         if (!msg.member.voice.channel)
             return msg.channel.send("보이스채널에서 해주세요!");
-        
-        if (msg.member.voice.channel!=serverQueue.voiceChannel)
+
+        if(musicQueue.get(msg.guild.id)!=undefined) if (msg.member.voice.channel!=musicQueue.get(msg.guild.id).voiceChannel)
             return msg.channel.send("같은 보이스채널에서 해주세요!");
         
         if(args.length==0)
@@ -36,12 +37,12 @@ module.exports = {
             };
             embedSearchYoutube.fields.push(explItem);
         }
-        const embedMsg=await msg.channel.send({embed: embedSearchYoutube});
+        const embedMsg = await msg.channel.send({embed: embedSearchYoutube});
         this.react(embedSearchYoutube, embedMsg);
     }, 
     async react(embed, embedMsg){
         const msgFilter = (msg) => {return !(msg.author.bot);}
-        const collector = msg.createMessageCollector(msgFilter, {max: 1});
+        const collector = embedMsg.channel.createMessageCollector(msgFilter, {max: 1});
         collector.on('collect', async (msg) => {
             const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
