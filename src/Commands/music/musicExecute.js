@@ -88,13 +88,13 @@ module.exports = {
         
         const dispatcher = serverQueue.connection
             .play(ytdl(song.url))
-            .on("finish", (asdf) => {//finish라는 명령어가 있으니 주의!
+            .on("finish", () => {//finish라는 명령어가 있으니 주의!
                 if(serverQueue.loop&&!serverQueue.skip) serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
                 else serverQueue.songs.shift();
                 this.play(guild, serverQueue.songs[0]);
                 serverQueue.skip=false;
             });
-        dispatcher.setVolume(serverQueue.volume/200);
+        dispatcher.setVolume(!serverQueue.mute*serverQueue.volume/200);
         serverQueue.dispatcher=dispatcher;//디스패쳐 저장
         
         const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
@@ -107,6 +107,8 @@ module.exports = {
         tmpmsg.react("🔇");
         tmpmsg.react("🔉");
         tmpmsg.react("🔊");
+
+        if(serverQueue.mute) tmpmsg.channel.send("현재는 음소거가 된 상태에요, 참고하세요 ㅎㅎ");
 
         this.react(tmpmsg);
     },
@@ -124,6 +126,9 @@ module.exports = {
             
             const serverQueue = musicQueue.get(msg.guild.id);
             const dispatcher = serverQueue.dispatcher;
+
+            if(!serverQueue.voiceChannel.members.get(user.id))
+                return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
             
             switch (reaction.emoji.name) {
                 case "⏯":
@@ -145,10 +150,10 @@ module.exports = {
                     serverQueue.mute = !(serverQueue.mute);
                     if (serverQueue.mute) {//뮤트 걸리고 나서
                         dispatcher.setVolume(0);
-                        msg.channel.send(`음소거되었어요`)
+                        msg.channel.send(`음소거되었어요`);
                     } else {//뮤트 풀리고 나서
                         dispatcher.setVolume(serverQueue.volume / 200);
-                        msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`)
+                        msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`);
                     }
                 break;
 
