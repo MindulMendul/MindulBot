@@ -16,6 +16,8 @@ module.exports = {
         if (msg.member.voice.channel!=serverQueue.voiceChannel)
             return msg.channel.send("같은 보이스채널에서 해주세요!");
 
+        serverQueue.dispatcher.resume();
+        
         await serverQueue.connection.dispatcher.end();
         serverQueue.skip=true;
     }
