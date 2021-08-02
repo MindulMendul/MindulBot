@@ -36,8 +36,9 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
 
 bot.on('message', async (msg) => {
 	if(msg.author.bot) return;//봇은 거름
-    if(!msg.content.startsWith(PREFIX)) return noCmd(msg);//명령어 없는 텍스트
-	
+	if(await noCmd(msg)) return;//명령어 없는 텍스트
+	if(msg.channel.type==="dm") return msg.channel.send("DM은 당분간 막혀있어요, 죄송합니다. ㅠㅠ");
+
 	const args = msg.content.slice(PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
 	const command = args.shift();//명령어 인식할 거
 
@@ -55,8 +56,8 @@ bot.on('message', async (msg) => {
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
 
-			await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
-			checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
+		await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
+		checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
 		} else //뭐가 실행 중이면 실행
 			msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
 	} catch (error) {
@@ -69,12 +70,14 @@ bot.on('message', async (msg) => {
 async function noCmd(msg){//명령어 없는 텍스트
 	if(msg.content.toLocaleLowerCase().includes("vs")){//vs 기능
 		if(msg.content.includes("https://")) return;
-		
+
 		let vsArr = msg.content.trim().split(/\s*vs\s*/gim);//vs 검색해서 나누기
 		vsArr=[...new Set(vsArr)].filter(elem=>elem!=='');//이거중복임 뜻) 검사한다는 뜻
 		if(vsArr.length==0) msg.channel.send("의미 있는 입력 값이 없네요.");//아무것도 없으면
 		else msg.channel.send(vsArr[Math.floor(Math.random()*vsArr.length)]);//랜덤해서 하나 보내기
-	}
+		return true;
+	} else if(!msg.content.startsWith(PREFIX)) return true;
+	return false;
 };
 
 process.on('unhandledRejection',(err)=>{//app crash걸렸을 때 실행되는 코드
