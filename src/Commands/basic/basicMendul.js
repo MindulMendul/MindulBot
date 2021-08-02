@@ -3,6 +3,6 @@ module.exports = {
 	cmd: ["맨둘", "aesenf"],
 	type: "basic",
 	execute(msg) {
-		return msg.channel.send('민둘이는 바보');
+		return msg.channel.send('맨둘이는 집나갔음');
 	},
 };

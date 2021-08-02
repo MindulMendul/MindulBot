@@ -5,7 +5,6 @@ module.exports = {
 	cmd: ["도움말", "ㄷㅇㅁ", "help"],
     type: "basic",
 	execute(msg) {
-
         const helpembed = {
             color: 0xF7CAC9,
             author: {
