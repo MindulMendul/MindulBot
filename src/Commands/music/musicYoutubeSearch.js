@@ -18,7 +18,7 @@ module.exports = {
 
         const searchStr=args.join(" ");
         
-        const limit = 8;  // 출력 갯수
+        const limit = 8;  //출력 갯수
 
         const embedSearchYoutube = {
             title:"노래 검색 목록",
@@ -27,7 +27,9 @@ module.exports = {
             fields: []
         }
 
-        var items = await musicBot.searchYoutubeList(searchStr, limit); // 결과 중 items 항목만 가져옴
+        try{var items = await musicBot.searchYoutubeList(searchStr, limit);}// 결과 중 items 항목만 가져옴
+        catch(err){return msg.channel.send(err);}//검색결과 없으면 없다고 말해주는 곳
+
         for (var i in items) {
             let n=i; n++;
             const explItem={

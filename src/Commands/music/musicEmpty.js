@@ -18,7 +18,7 @@ module.exports = {
 
         serverQueue.dispatcher.resume();
 
-        serverQueue.connection.dispatcher.end();
+        serverQueue.dispatcher.end();
         serverQueue.songs = [];
         serverQueue.skip=true;
     }

@@ -37,7 +37,7 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
 bot.on('message', async (msg) => {
 	if(msg.author.bot) return;//봇은 거름
 	if(await noCmd(msg)) return;//명령어 없는 텍스트
-	if(msg.channel.type==="dm") return msg.channel.send("DM은 당분간 막혀있어요, 죄송합니다. ㅠㅠ");
+	if(msg.channel.type==="dm") return msg.channel.send("DM은 막혀있어요, 죄송합니다. ㅠㅠ");
 
 	const args = msg.content.slice(PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
 	const command = args.shift();//명령어 인식할 거

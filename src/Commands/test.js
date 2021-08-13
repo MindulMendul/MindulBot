@@ -1,14 +1,15 @@
 const { OWNER_ID } = require("../../GlobalVariable");
+const {musicQueue}=require("./../Commands/music/musicBot");
 
 module.exports = {
 	name: "테스트",
-	cmd: ["테스트","ㅌㅅㅌ","ㅎㅇ"],
+	cmd: ["테스트","ㅌㅅㅌ","ㅎ"],
 	type: "test",
 	this: module,
 	needReact: false,
 	async execute(msg) {
 		if(msg.author.id!=OWNER_ID) return;
-		msg.channel.send('아라아라~');
+		console.log(musicQueue);
 	},
 };
 
