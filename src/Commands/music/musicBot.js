@@ -13,6 +13,7 @@ async function searchYoutubeList(question, limit){
             // axios.get 함수를 이용하여 비동기로 유튜브 html 파일을 가져온다.
         } catch (err) {
             console.error(err);
+            throw err;
         }
     };
 
@@ -37,6 +38,8 @@ async function searchYoutubeList(question, limit){
             }
         };
     });
+
+    if(List.length==0) throw "노래 검색결과가 없습니다."
 
     return List;
 }

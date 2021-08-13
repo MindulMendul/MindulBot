@@ -57,6 +57,7 @@
 >>>>>>> a8932d1a (서버에서 에러난 거 픽스중 2)
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "discord.js": "^13.11.0",
     "dotenv": "^16.0.2",
     "libsodium-wrappers": "^0.7.10",
@@ -75,13 +76,18 @@
     "prettier": "^2.7.1"
 =======
     "@discordjs/opus": "^0.3.3",
+=======
+    "@discordjs/opus": "^0.5.3",
+>>>>>>> da11cd7d (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.10",
-    "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0",
-    "ffmpeg-static": "^4.2.7",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.6.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.4.0",
     "fs": "0.0.1-security",
     "https": "^1.0.0",
+<<<<<<< HEAD
     "moment": "^2.28.0",
     "moment-timezone": "^0.5.31",
 <<<<<<< HEAD
@@ -106,5 +112,14 @@
 >>>>>>> 7b563680 (노래봇 버전확인 버그 수정)
     "ytdl-core": "^4.9.0"
 >>>>>>> 0b75a0bd (노래봇 작동!)
+=======
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "node": "^16.6.1",
+    "node-pre-gyp": "^0.17.0",
+    "nodemon": "^2.0.12",
+    "package.json": "^2.0.1",
+    "ytdl-core": "^4.9.1"
+>>>>>>> da11cd7d (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)
   }
 }

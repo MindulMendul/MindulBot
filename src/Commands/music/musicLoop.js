@@ -3,7 +3,7 @@ const musicQueue=musicBot.musicQueue;
 
 module.exports = {
 	name: "루프",
-	cmd: ["루프","반복","loop"],
+	cmd: ["루프","반복","loop","ㄿ","ㄹㅍ"],
     type: "music",
     execute(msg){
         if (!msg.member.voice.channel)
