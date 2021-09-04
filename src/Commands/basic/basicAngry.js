@@ -2,6 +2,7 @@ module.exports = {
 	name: `야`,
 	cmd: ["야", "야!", "민둘!", "ㅡㅡ", "뭐하냐", "제대로 말해라"],
     type: "basic",
+    permission: [""],
 	async execute(msg) {
 		let msg_edit = msg.channel.messages.cache.find( (message) =>
         message.content=="민둘이는 바보"

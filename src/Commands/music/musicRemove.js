@@ -5,6 +5,7 @@ module.exports = {
 	name: "제거",
 	cmd: ["제거", "삭제", "ㅈㄱ", "ㅅㅈ"],
     type: "music",
+    permission: [""],
 	//remove 함수
     async execute(msg, args){
         if (!msg.member.voice.channel)

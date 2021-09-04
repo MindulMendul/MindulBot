@@ -2,15 +2,9 @@ module.exports = {
 	name: `타로`,
 	cmd: ["타로","ㅌㄹ","운세","오늘의운세"],
     type:"basic",
-    this: module,
-    needReact: true,
+    permission: ["ADD_REACTIONS"],
     //타로하트 생성과정
     async execute(msg){
-        //권한 확인
-        const permissions=msg.channel.permissionsFor(msg.client.user);
-        if(!permissions.has("ADD_REACTIONS"))
-        return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
-
         const tarotEmbed = {
             color: 0xF7CAC9,
             author: {

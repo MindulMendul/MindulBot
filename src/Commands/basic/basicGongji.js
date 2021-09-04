@@ -2,6 +2,7 @@ module.exports = {
 	name: `공지`,
 	cmd: ["공지"],
 	type: "basic",
+    permission: [""],
 	execute(msg) {
         console.log("ㅎㅇ");
         const {bot}=require("./../../../bot");
