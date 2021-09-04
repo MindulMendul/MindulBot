@@ -2,6 +2,7 @@ module.exports = {
 	name: `개발`,
 	cmd: ["개발", "ㄱㅂ", "개발일정", "ㄱㅂㅇㅈ","dev"],
     type: "basic",
+    permission: [""],
 	execute(msg) {
         const moment = require('moment');
 

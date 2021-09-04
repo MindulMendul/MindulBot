@@ -4,6 +4,7 @@ module.exports = {
 	name: "노래도움말",
 	cmd: ["노래도움말", "노래명령어", "ㄴㄹㄷㅇㅁ", "ㄴㄻㄹㅇ", "ㄴㄹㅁㄹㅇ"],
 	type: "music",
+    permission: [""],
     execute(msg) {
         const helpembed = {
             color: 0xF7CAC9,

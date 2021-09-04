@@ -5,6 +5,7 @@ module.exports = {
 	name: "셔플",
 	cmd: ["셔플","ㅅㅍ","shuffle"],
     type: "music",
+    permission: [""],
 	//shuffle 함수
     async execute(msg){
         if (!msg.member.voice.channel)
