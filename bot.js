@@ -51,15 +51,15 @@ bot.on('message', async (msg) => {
 		const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${bot.commands.get(command).type}`);
 	try {
 		if(bot.commands.get(command).type=="music"){//노래봇은 최신 버전이어야만 쓸 수 있음
-			const tmp=await require("./src/Commands/music/musicVerCheck").verCheck(bot, msg); if(tmp) return;}
+			return msg.channel.send("discord.js v13에 대응하기 위해 당분간 내렸습니다. 죄송해요 ㅠㅠ");}
+			//const tmp=await require("./src/Commands/music/musicVerCheck").verCheck(bot, msg); if(tmp) return;}
 
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
-
-		if(!require("./src/permission.js").checkPermissions(msg, bot.commands.get(command).permission)) {checkGuildCmdQueue.shift(); return;}
 		
-		await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
-		checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
+		if(await require("./src/permission.js").checkPermissions(msg, bot.commands.get(command).permission))
+			await bot.commands.get(command).execute(msg, args); //실행이 끝날 때까지 대기
+		checkGuildCmdQueue.shift(); //명령어 끝나면 대기열 제거
 		} else {//뭐가 실행 중이면 실행
 			msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
 		}

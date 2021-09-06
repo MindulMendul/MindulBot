@@ -2,7 +2,7 @@ module.exports = {
 	name: `타로`,
 	cmd: ["타로","ㅌㄹ","운세","오늘의운세"],
     type:"basic",
-    permission: ["ADD_REACTIONS","MANAGE_EMOJIS"],
+    permission: ["ADD_REACTIONS"],
     //타로하트 생성과정
     async execute(msg){
         const tarotEmbed = {
@@ -45,7 +45,7 @@ module.exports = {
             const tarot=require("./TarotList");
             const arr=tarot.script;
             
-            reaction.users.remove(user);
+            //reaction.users.remove(user);
             switch(reaction.emoji.name){
                 case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
                 case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
