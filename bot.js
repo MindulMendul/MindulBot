@@ -6,8 +6,10 @@ const {PREFIX, LoginBotToken, OWNER_ID, activityString}=require("./GlobalVariabl
 const moment = require('moment');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
+const {Intents, MessageActionRow, MessageButton} = require('discord.js');
 
-const bot = new Discord.Client(); exports.bot=bot;//봇
+const bot = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+exports.bot=bot;//봇
 bot.commands = new Discord.Collection(); //명령어 모음집
 bot.guildCmdQueue = new Discord.Collection(); //길드 명령어큐
 
@@ -34,14 +36,14 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
 	require("./src/botAlarm");
 });
 
-bot.on('message', async (msg) => {
+bot.on('messageCreate', async (msg) => {
 	if(msg.author.bot) return;//봇은 거름
 	if(await noCmd(msg)) return;//명령어 없는 텍스트
 	if(msg.channel.type==="dm") return msg.channel.send("DM은 막혀있어요, 죄송합니다. ㅠㅠ");
 
 	const args = msg.content.slice(PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
 	const command = args.shift();//명령어 인식할 거
-
+	
     if (!bot.commands.get(command))//명령어 인식 못하는 거 거름
 		return msg.channel.send("명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!");
 

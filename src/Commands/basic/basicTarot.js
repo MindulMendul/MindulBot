@@ -2,7 +2,7 @@ module.exports = {
 	name: `타로`,
 	cmd: ["타로","ㅌㄹ","운세","오늘의운세"],
     type:"basic",
-    permission: ["ADD_REACTIONS"],
+    permission: ["ADD_REACTIONS", "MANAGE_EMOJIS_AND_STICKERS"],
     //타로하트 생성과정
     async execute(msg){
         const tarotEmbed = {
@@ -22,15 +22,15 @@ module.exports = {
             },
             description: '6개의 이모지로 입력된 하트를 하나만 아무거나 선택해 주세요!',
         };
-        
-        const asdf=await msg.channel.send({embed: tarotEmbed});//하트 만드는 과정
+        //msg.channel.send({embed: tarotEmbed});
+        const asdf=await msg.channel.send("ㅎㅇ");//하트 만드는 과정
         asdf.react("❤️");
         asdf.react("🧡");
         asdf.react("💛");
         asdf.react("💚");
         asdf.react("💙");
         await asdf.react("💜");
-        asdf.edit({embed: tarotEditedEmbed});
+        asdf.edit({embed: [tarotEditedEmbed]});
 
         this.react(asdf, msg);
     },
