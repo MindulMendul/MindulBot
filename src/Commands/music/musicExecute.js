@@ -6,7 +6,7 @@ module.exports = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
-    permission: ["CONNECT", "SPEAK", "ADD_REACTIONS", "MANAGE_EMOJIS"],
+    permission: ["CONNECT", "SPEAK", "ADD_REACTIONS", "MANAGE_EMOJIS_AND_STICKERS"],
     async execute(msg, args){
         //권한 체크
         const voiceChannel = msg.member.voice.channel;
