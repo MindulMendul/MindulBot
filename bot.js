@@ -54,8 +54,8 @@ bot.on('messageCreate', async (msg) => {
 	try {
 		if(bot.commands.get(command).type=="music"){//노래봇은 최신 버전이어야만 쓸 수 있음
 			//return msg.channel.send("discord.js v13에 대응하기 위해 당분간 내렸습니다. 죄송해요 ㅠㅠ");}
-			const tmp=await require("./src/Commands/music/musicVerCheck").verCheck(bot, msg); if(tmp) return;
-		}
+			const tmp=await require("./src/Commands/music/musicVerCheck").verCheck(bot, msg); if(tmp) return;}
+		
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
 		
