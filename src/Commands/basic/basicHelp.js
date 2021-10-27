@@ -65,6 +65,6 @@ module.exports = {
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
             },
         };
-		msg.channel.send({embed: helpembed});
+		msg.channel.send({embeds: [helpembed]});
 	}
 };

@@ -40,7 +40,7 @@ module.exports = {
             };
             embedSearchYoutube.fields.push(explItem);
         }
-        const embedMsg = await msg.channel.send({embed: embedSearchYoutube});
+        const embedMsg = await msg.channel.send({embeds: [embedSearchYoutube]});
         this.react(embedSearchYoutube, embedMsg);
     }, 
     async react(embed, embedMsg){

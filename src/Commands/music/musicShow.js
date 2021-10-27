@@ -34,7 +34,7 @@ module.exports = {
                 embedQueue.fields.push(explSong);
             });
 
-            return msg.channel.send({embed: embedQueue});
+            return msg.channel.send({embeds: [embedQueue]});
         }
     }
 };            
