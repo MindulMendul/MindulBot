@@ -23,19 +23,20 @@ module.exports = {
             description: '6개의 이모지로 입력된 하트를 하나만 아무거나 선택해 주세요!',
         };
         //msg.channel.send({embed: tarotEmbed});
-        const asdf=await msg.channel.send("ㅎㅇ");//하트 만드는 과정
+        const asdf=await msg.channel.send({embeds: [tarotEmbed]});//하트 만드는 과정
         asdf.react("❤️");
         asdf.react("🧡");
         asdf.react("💛");
         asdf.react("💚");
         asdf.react("💙");
         await asdf.react("💜");
-        asdf.edit({embed: [tarotEditedEmbed]});
+        asdf.edit({embeds: [tarotEditedEmbed]});
 
         this.react(asdf, msg);
     },
     //타로하트 선택 후 결과 창
     async react(asdf, msg){
+        //콜렉터 다시 연구하기~
         const reactionFilter = (reaction, user) => {return (user.id==msg.author.id);}
         const collector = asdf.createReactionCollector(reactionFilter, {maxEmojis:1});
         collector.on('collect', (reaction, user) => {
@@ -75,7 +76,7 @@ module.exports = {
                     icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
                 },
             };
-            asdf.edit({embed: tarotEmbed});
+            asdf.edit({embeds: [tarotEmbed]});
         });
     }
 };

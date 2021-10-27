@@ -9,7 +9,14 @@ module.exports = {
     permission: ["CONNECT", "SPEAK", "ADD_REACTIONS", "MANAGE_EMOJIS_AND_STICKERS"],
     async execute(msg, args){
         //권한 체크
-        const voiceChannel = msg.member.voice.channel;
+        const { joinVoiceChannel } = require('@discordjs/voice');
+        const channel=msg.member.voice.channel;
+        const voiceChannel = joinVoiceChannel({
+            channelId: channel.id,
+            guildId: channel.guild.id,
+            adapterCreator: channel.guild.voiceAdapterCreator,
+        });
+        
         const searchStr=args.join(" ");
 
         if (!voiceChannel)//보이스채널 체크
