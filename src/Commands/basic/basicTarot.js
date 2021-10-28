@@ -37,10 +37,10 @@ module.exports = {
     //타로하트 선택 후 결과 창
     async react(asdf, msg){
         //콜렉터 다시 연구하기~
-        const reactionFilter = (reaction, user) => {return (user.id==msg.author.id);}
-        const collector = asdf.createReactionCollector(reactionFilter, {maxEmojis:1});
+        const filter = (reaction, user) => {return (user.id === msg.author.id);}
+        const collector = asdf.createReactionCollector({filter, maxEojis:1});
         collector.on('collect', (reaction, user) => {
-            if(reaction.message!=asdf) return;
+            console.log("ㅎㅇ");
             let strDes="", strField=new Array(3);
             
             const tarot=require("./TarotList");
