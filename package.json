@@ -90,7 +90,7 @@
     "axios": "^0.21.4",
 >>>>>>> bd8476cc (임베드 버그 해결)
     "cheerio": "^1.0.0-rc.10",
-    "discord.js": "^13.1.0",
+    "discord.js": "^13.2.0",
     "dotenv": "^8.6.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.4.0",
@@ -124,9 +124,9 @@
 =======
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.33",
-    "node": "^16.6.1",
+    "node": "^16.13.0",
     "node-pre-gyp": "^0.17.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.14",
     "package.json": "^2.0.1",
     "ytdl-core": "^4.9.1"
 >>>>>>> da11cd7d (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)
