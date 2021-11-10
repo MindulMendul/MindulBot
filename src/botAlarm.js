@@ -41,7 +41,7 @@ setInterval( () => {
         bot.guilds.cache.forEach( (guild)=>{
             if(guild.name!="💛 기본 💛") return; //기본길드 전용 코드
             const guildReminder=guild.channels.cache.find( (channel)=>{
-                if(channel.name.startsWith('잡담'))
+                if(channel.name.startsWith('민둘봇'))
                     return channel; //소야봇-공지
             });
             try{

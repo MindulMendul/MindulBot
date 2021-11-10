@@ -1,9 +1,8 @@
-const {musicQueue}=require("./musicBot");
 module.exports = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
     type: "music",
-    permission: [""],
+    permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY", "MANAGE_MESSAGES"],
     //찾은 유튜브 주소를 배열에 집어넣는 함수
     async execute(msg, args){
         const musicBot=require("./musicBot");
@@ -11,8 +10,8 @@ module.exports = {
         if (!msg.member.voice.channel)
             return msg.channel.send("보이스채널에서 해주세요!");
 
-        if(musicQueue.get(msg.guild.id)!=undefined) if (msg.member.voice.channel!=musicQueue.get(msg.guild.id).voiceChannel)
-            return msg.channel.send("같은 보이스채널에서 해주세요!");
+        //if(musicQueue.get(msg.guild.id)!=undefined) if (msg.member.voice.channel!=musicQueue.get(msg.guild.id).voiceChannel)
+        //    return msg.channel.send("같은 보이스채널에서 해주세요!");
         
         if(args.length==0)
             return msg.channel.send("검색어를 입력해주세요!");
@@ -45,7 +44,7 @@ module.exports = {
     }, 
     async react(embed, embedMsg){
         const msgFilter = (msg) => {return !(msg.author.bot);}
-        const collector = embedMsg.channel.createMessageCollector(msgFilter, {max: 1});
+        const collector = embedMsg.channel.createMessageCollector({msgFilter, max: 1});
         collector.on('collect', async (msg) => {
             const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
