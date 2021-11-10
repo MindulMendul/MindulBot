@@ -117,6 +117,7 @@ module.exports = {
                 const loop=subscription.option.loop;
                 if(loop) subscription.songs.push(player.resource);
             } else {
+                connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
                 audioPlayer.stop();
                 if(connection)connection.destroy();
             }
