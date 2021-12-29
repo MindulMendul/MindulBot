@@ -8,7 +8,15 @@ require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 const {Intents, MessageActionRow, MessageButton} = require('discord.js');
 
-const bot = new Discord.Client({ intents: ['GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILDS', 'GUILD_MESSAGE_REACTIONS'] });
+const bot = new Discord.Client({
+	intents: ['GUILD_VOICE_STATES',
+			'GUILD_MESSAGES',
+			'GUILDS',
+			'GUILD_MESSAGE_REACTIONS',
+			'DIRECT_MESSAGES',
+			'DIRECT_MESSAGE_REACTIONS',
+			'DIRECT_MESSAGE_TYPING'],
+	partials: ['CHANNEL',]});
 exports.bot=bot;//봇
 bot.commands = new Discord.Collection(); //명령어 모음집
 bot.guildCmdQueue = new Discord.Collection(); //길드 명령어큐
@@ -39,8 +47,8 @@ bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코�
 bot.on('messageCreate', async (msg) => {
 	if(msg.author.bot) return;//봇은 거름
 	if(await noCmd(msg)) return;//명령어 없는 텍스트
-	if(msg.channel.type==="dm") return msg.channel.send("DM은 막혀있어요, 죄송합니다. ㅠㅠ");
-
+	if(msg.channel.type==="DM") return msg.channel.send("DM은 막혀있어요, 죄송합니다. ㅠㅠ");
+	
 	const args = msg.content.slice(PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
 	const command = args.shift();//명령어 인식할 거
 	
