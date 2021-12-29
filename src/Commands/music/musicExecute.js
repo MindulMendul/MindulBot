@@ -52,7 +52,7 @@ module.exports = {
             inlineVolume: true,
             silencePaddingFrames:5,
             });
-        resource.volume.setVolume(1/12);
+
         //Guild 체크해서 생성자가 존재하는지 확인하는 곳
         if(getVoiceConnection(voiceChannel.guild.id)==undefined) {
             //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
@@ -76,6 +76,7 @@ module.exports = {
                 mute:false,
                 loop:false,
             };
+            resource.volume.setVolume(1/12);//노래 사운드 최초 설정해주는 곳
 
             connection.on(VoiceConnectionStatus.Ready, () => {
                 console.log('The connection has entered the Ready state - ready to play audio!');
@@ -85,6 +86,7 @@ module.exports = {
             //플레이어가 존재해서 큐에 넣으면 되는 상황
             const connection = getVoiceConnection(voiceChannel.guild.id);
             connection.subscription.songs.push(resource);
+            resource.volume.setVolume(1/12);
             msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
         }
     },
@@ -106,7 +108,7 @@ module.exports = {
             audioPlayer.stop();
         });
 
-        audioPlayer.on(AudioPlayerStatus.Idle, (player) => {
+        audioPlayer.on(AudioPlayerStatus.Idle, async (player) => {
              //틀었던 노래가 끝났을 때
             console.log("노래끝");
             if(subscription.songs.length){
@@ -115,11 +117,14 @@ module.exports = {
 
                 //스킵 루프 조건 만족하면 루프돌리는 부분
                 const loop=subscription.option.loop;
-                if(loop) subscription.songs.push(player.resource);
+                if(loop) {
+                    player.resource.ended=false;
+                    subscription.songs.push(player.resource);
+                }
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
-                audioPlayer.stop();
-                if(connection)connection.destroy();
+                await audioPlayer.stop();
+                if(connection) connection.destroy();
             }
         });
 
