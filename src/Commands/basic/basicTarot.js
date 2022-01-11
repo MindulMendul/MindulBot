@@ -6,15 +6,6 @@ module.exports = {
     permission: ["ADD_REACTIONS", "EMBED_LINKS"],
     //타로하트 생성과정
     async execute(msg){
-        const tarotEmbed = {
-            color: 0xF7CAC9,
-            author: {
-                name: '민둘봇의 타로 하트',
-                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-            },
-            description: '타로 하트를 생성 중입니다.. 잠시만 기다려주세요~',
-        };
-
         const tarotEditedEmbed = {
             color: 0xF7CAC9,
             author: {
@@ -23,8 +14,6 @@ module.exports = {
             },
             description: '6개의 이모지로 입력된 하트를 하나만 아무거나 선택해 주세요!',
         };
-        //msg.channel.send({embed: tarotEmbed});
-        const asdf=await msg.channel.send({embeds: [tarotEmbed]});//하트 만드는 과정
         
         const button1 = new MessageActionRow()
         .addComponents(new MessageButton().setCustomId('❤️').setLabel('❤️').setStyle('SECONDARY'),)
@@ -35,7 +24,7 @@ module.exports = {
         .addComponents(new MessageButton().setCustomId('💙').setLabel('💙').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('💜').setLabel('💜').setStyle('SECONDARY'),)
 
-        asdf.edit({embeds: [tarotEditedEmbed], components:[button1, button2]});
+        const asdf=await msg.channel.send({embeds: [tarotEditedEmbed], components:[button1, button2]});
 
         //타로하트 선택 후 결과 창
         const filter = i => {return (i.user.id === msg.author.id);}
