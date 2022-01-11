@@ -1,3 +1,4 @@
+const {MessageActionRow, MessageButton}=require('discord.js');
 module.exports = {
 	name: `타로`,
 	cmd: ["타로","ㅌㄹ","운세","오늘의운세"],
@@ -24,28 +25,29 @@ module.exports = {
         };
         //msg.channel.send({embed: tarotEmbed});
         const asdf=await msg.channel.send({embeds: [tarotEmbed]});//하트 만드는 과정
-        asdf.react("❤️");
-        asdf.react("🧡");
-        asdf.react("💛");
-        asdf.react("💚");
-        asdf.react("💙");
-        await asdf.react("💜");
-        asdf.edit({embeds: [tarotEditedEmbed]});
+        
+        const button1 = new MessageActionRow()
+        .addComponents(new MessageButton().setCustomId('❤️').setLabel('❤️').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('🧡').setLabel('🧡').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('💛').setLabel('💛').setStyle('SECONDARY'),)
+        const button2 = new MessageActionRow()
+        .addComponents(new MessageButton().setCustomId('💚').setLabel('💚').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('💙').setLabel('💙').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('💜').setLabel('💜').setStyle('SECONDARY'),)
 
-        this.react(asdf, msg);
-    },
-    //타로하트 선택 후 결과 창
-    async react(asdf, msg){
-        const filter = (reaction, user) => {return (user.id === msg.author.id);}
-        const collector = asdf.createReactionCollector({filter, maxEojis:1});
-        collector.on('collect', (reaction, user) => {
+        asdf.edit({embeds: [tarotEditedEmbed], components:[button1, button2]});
+
+        //타로하트 선택 후 결과 창
+        const filter = i => {return (i.user.id === msg.author.id);}
+        const collector = asdf.createMessageComponentCollector({filter});
+        collector.on('collect', async i => {
+            
             let strDes="", strField=new Array(3);
             
             const tarot=require("./TarotList");
             const arr=tarot.script;
             
-            //reaction.users.remove(user);
-            switch(reaction.emoji.name){
+            switch (i.customId) {
                 case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
                 case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
                 case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
@@ -74,7 +76,7 @@ module.exports = {
                     icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
                 },
             };
-            asdf.edit({embeds: [tarotEmbed]});
+            i.update({embeds: [tarotEmbed], components:[]});
         });
     }
 };
