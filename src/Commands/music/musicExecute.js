@@ -133,7 +133,7 @@ module.exports = {
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
                 if(connection) connection.destroy();
-                console.log(collector);
+                if(collector) collector.stop();
             }
         });
 
@@ -153,11 +153,9 @@ module.exports = {
         const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSound]};
         const msg = await connection.joinConfig.textChannel.send(sendedContent);
 
-        const filter = i => {console.log(i.id); console.log(msg.components[0].components[3]);
-            return i.id===msg.id};
+        const filter = i => {return true};
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
-            
             i.update(sendedContent);
             switch (i.customId) {
                 case "⏯":
