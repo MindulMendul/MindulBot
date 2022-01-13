@@ -108,7 +108,6 @@ module.exports = {
             connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
             console.log(error);
             if(connection) connection.destroy();
-            audioPlayer.stop();
         });
 
         audioPlayer.once(AudioPlayerStatus.Idle, (player) => {
@@ -132,19 +131,19 @@ module.exports = {
                 }
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
-                if(connection) connection.destroy();
-                if(collector) collector.stop();
+                if(connection) connection.destroy();//커넥션 삭제
+                if(collector) collector.stop();//인터렉션 삭제
             }
         });
 
         //Embed 생성하는 코드
-        const button = new MessageActionRow()
+        const button = new MessageActionRow()//첫 번째 줄 버튼
         .addComponents(new MessageButton().setCustomId('⏯').setLabel('⏯').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('⏹').setLabel('⏹').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('🔁').setLabel('🔁').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('🔀').setLabel('🔀').setStyle('PRIMARY'),)
-        const buttonSound = new MessageActionRow()
+        const buttonSound = new MessageActionRow()//두 번째 줄 버튼
         .addComponents(new MessageButton().setCustomId('🔇').setLabel('🔇').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('🔉').setLabel('🔉').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('🔊').setLabel('🔊').setStyle('SECONDARY'),);
@@ -153,6 +152,7 @@ module.exports = {
         const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSound]};
         const msg = await connection.joinConfig.textChannel.send(sendedContent);
 
+        //버튼 인터렉션 콜렉터 부분
         const filter = i => {return true};
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
