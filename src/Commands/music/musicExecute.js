@@ -107,6 +107,7 @@ module.exports = {
         audioPlayer.on('error', error => {
             connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
             console.log(error);
+            if(connection) connection.destroy();
             audioPlayer.stop();
         });
 
@@ -132,12 +133,11 @@ module.exports = {
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
                 if(connection) connection.destroy();
+                console.log(collector);
             }
         });
 
         //Embed 생성하는 코드
-        
-        
         const button = new MessageActionRow()
         .addComponents(new MessageButton().setCustomId('⏯').setLabel('⏯').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'),)
@@ -153,9 +153,11 @@ module.exports = {
         const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSound]};
         const msg = await connection.joinConfig.textChannel.send(sendedContent);
 
-        const filter = i => {return true;};
+        const filter = i => {console.log(i.id); console.log(msg.components[0].components[3]);
+            return i.id===msg.id};
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
+            
             i.update(sendedContent);
             switch (i.customId) {
                 case "⏯":
