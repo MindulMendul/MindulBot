@@ -1,3 +1,5 @@
+const {search}=require('play-dl');
+
 module.exports = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
@@ -17,8 +19,10 @@ module.exports = {
             return msg.channel.send("검색어를 입력해주세요!");
 
         const searchStr=args.join(" ");
-        
-        const limit = 8;  //출력 갯수
+
+        const items=(await search(searchStr, { source : { youtube : "video" }, limit: 8}));
+        if(items.length==0)
+            return msg.channel.send("검색결과가 없네요. 다른 키워드로 다시 시도해보세요!");
 
         const embedSearchYoutube = {
             title:"노래 검색 목록",
@@ -26,9 +30,6 @@ module.exports = {
             description:`**${searchStr}**에 대한 검색 결과에요~`,
             fields: []
         }
-
-        try{var items = await musicBot.searchYoutubeList(searchStr, limit);}// 결과 중 items 항목만 가져옴
-        catch(err){return msg.channel.send(err);}//검색결과 없으면 없다고 말해주는 곳
 
         for (var i in items) {
             let n=i; n++;
@@ -46,7 +47,7 @@ module.exports = {
         const msgFilter = (msg) => {return !(msg.author.bot);}
         const collector = embedMsg.channel.createMessageCollector({msgFilter, max: 1});
         collector.on('collect', async (msg) => {
-            const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
+            const msgArr=await func.effectiveArr(msg.content, ",", 1, 8);//배열이 유효한지 조사
 
             if(msgArr.length==0){ //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
                 check=true; msg.delete(); embedMsg.delete();

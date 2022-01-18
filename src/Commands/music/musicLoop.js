@@ -1,4 +1,3 @@
-const musicBot=require("./musicBot");
 const {getVoiceConnection,} = require('@discordjs/voice');
 
 module.exports = {
