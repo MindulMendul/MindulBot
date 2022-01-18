@@ -1,9 +1,21 @@
+const {MessageActionRow, MessageButton}=require('discord.js');
+
 module.exports = {
 	name: `주사위`,
-	cmd: ["데굴", "데굴데굴", "주사위", "ㄷㄱ", "ㄷㄱㄷㄱ"],
+	cmd: ["데굴", "데굴데굴", "주사위", "ㄷㄱㄷㄱ"],
 	type: "basic",
 	permission: [""],
-	execute(msg) {
-		return msg.channel.send(`주사위 결과 : ${Math.ceil(Math.random()*6)}`);
+	async execute(msg) {
+		const button = new MessageActionRow()//첫 번째 줄 버튼
+        .addComponents(new MessageButton().setCustomId('🛎️').setLabel('🛎️').setStyle('PRIMARY'),);
+		
+		const filter = i => {return (i.user.id===msg.author.id) & (i.message.id===msgDice.id)};
+        const collector = msg.channel.createMessageComponentCollector({filter});
+        collector.on('collect', async i => {
+			const contentNum=Number(i.message.content.charAt(i.user.tag.length+3))+1;
+			i.update({content:`${i.user.tag}님의 ${contentNum}번째 주사위 결과입니다.\n> ${Math.ceil(Math.random()*6)}`, components:[button]});
+		});
+		const msgDice=await msg.channel.send({content:`${msg.author.tag}님의 1번째 주사위 결과입니다.\n> ${Math.ceil(Math.random()*6)}`, components:[button]});
+		return;
 	},
 };
