@@ -1,5 +1,4 @@
 const {getVoiceConnection,} = require('@discordjs/voice');
-let {scheduling}=require("./musicBot");
 
 module.exports = {
 	name: "제거",
@@ -39,7 +38,6 @@ module.exports = {
         const reactionFilter = (msg) => {return !msg.author.bot;}
         const collector = msg.channel.createMessageCollector({reactionFilter, max:1, time:7000});
         collector.on('collect', async (msg) => {
-            clearTimeout(scheduling);
             if(correctArr.includes(msg.content)){//긍정
                 args.sort((a,b)=>{return b-a;})
                 .forEach(element => {

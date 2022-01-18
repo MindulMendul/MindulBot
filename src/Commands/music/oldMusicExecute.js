@@ -164,7 +164,7 @@ module.exports = {
         const collector = msg.createReactionCollector(reactionFilter, {});
         collector.on('collect', (reaction, user) => {
             reaction.users.remove(user);
-            const {bot}=require("./../../../bot");
+            const {bot}=require("../../../bot");
             const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${this.type}`);
             if(checkGuildCmdQueue.length!=0)
                 return msg.channel.send(`${checkGuildCmdQueue} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
