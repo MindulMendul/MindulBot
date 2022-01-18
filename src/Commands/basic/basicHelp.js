@@ -44,6 +44,11 @@ module.exports = {
                     inline: true,
                 },
                 {
+                    name: '주사위',
+                    value: '1부터 6까지 정수 중에 하나를 말해줘요!',
+                    inline: true,
+                },
+                {
                     name: '타로',
                     value: '오늘의 운세를 봐줘요.',
                     inline: false,
