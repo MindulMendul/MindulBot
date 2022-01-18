@@ -32,7 +32,7 @@ module.exports = {
         this.react(msg, argsArr, connection);
     },
     async react (msg, args, connection){
-        const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍"];
+        const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍",'0'];
 
         //콜렉터 부분
         const reactionFilter = (msg) => {return !msg.author.bot;}
