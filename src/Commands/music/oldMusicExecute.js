@@ -1,3 +1,4 @@
+/*
 const ytdl=require("ytdl-core");
 
 module.exports = {
@@ -119,7 +120,7 @@ module.exports = {
         serverQueue.dispatcher=dispatcher;//디스패쳐 저장
 
         //collector로 해결할 수 있지 않을까...??
-        /*
+        
         const {bot}=require("./../../../bot");
         bot.on('voiceStateUpdate', async (oldState, newState) => {
             if(!newState) return;//누가 방을 나갔는지 파악
@@ -139,7 +140,7 @@ module.exports = {
                 }, 3*1000); // 3초
             }
         });
-        */
+        
         
         const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
         
@@ -244,3 +245,4 @@ module.exports = {
         });
     }
 };
+*/
