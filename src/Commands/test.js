@@ -1,5 +1,4 @@
 const { OWNER_ID } = require("../../GlobalVariable");
-const {musicQueue}=require("./../Commands/music/musicBot");
 const {bot}=require("./../../bot");
 
 module.exports = {
