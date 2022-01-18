@@ -1,5 +1,3 @@
-const {musicQueue, searchYoutubeList}=require("./musicBot");
-let {scheduling}=require("./musicBot");
 const ytdl=require("ytdl-core");
 
 module.exports = {
