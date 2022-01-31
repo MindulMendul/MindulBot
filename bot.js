@@ -41,7 +41,7 @@ for (const file of commandFiles) {//명령어 라이브러리 만드는 반복�
 bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     bot.user.setActivity(activityString, { type: 'PLAYING' });
-	require("./src/botAlarm");
+	//require("./src/botAlarm");
 });
 
 bot.on('messageCreate', async (msg) => {
