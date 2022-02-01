@@ -1,5 +1,5 @@
 const {getVoiceConnection,} = require('@discordjs/voice');
-
+const func = require("./../../func");
 module.exports = {
 	name: "제거",
 	cmd: ["제거", "삭제", "ㅈㄱ", "ㅅㅈ"],
