@@ -35,8 +35,8 @@ module.exports = {
         const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍",'0'];
 
         //콜렉터 부분
-        const reactionFilter = (msg) => {return !msg.author.bot;}
-        const collector = msg.channel.createMessageCollector({reactionFilter, max:1, time:7000});
+        const filter = (message) => {return (!message.author.bot)&(message.author.id===msg.author.id);};
+        const collector = msg.channel.createMessageCollector({filter, max:1, time:7000});
         collector.on('collect', async (msg) => {
             if(correctArr.includes(msg.content)){//긍정
                 args.sort((a,b)=>{return b-a;})
