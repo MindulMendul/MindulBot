@@ -29,8 +29,12 @@ module.exports = {
             return textChannel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
 
         const searched = (await search(searchStr, { source : { youtube : "video" }, limit: 1})).pop();
-        if (searched==undefined)
+        if (searched==undefined){
+            console.log("버그 발생부분 => 검색결과가 안 잡힘.");
+            console.log(`searchStr: ${searchStr}`);
+            console.log(`searched: ${searched}`);
             return textChannel.send("검색결과가 없네요. 다른 키워드로 다시 시도해보세요!\n만약 유튜브 링크를 검색했다면 링크 뒷부분의 **&list**이후를 지워서 입력해보세요!");
+        }
 
         const playStream = await stream(searched.id);
         const songInfo = (await video_basic_info(searched.id)).video_details;
@@ -110,8 +114,6 @@ module.exports = {
             //스킵 루프 조건 만족하면 루프돌리는 부분
             const loop=subscription.option.loop;
             const skip=subscription.option.skip;
-            console.log(loop);
-            console.log(skip);
             if(loop & !skip) {
                 const meta=player.resource.metadata;
                 const playStream = await stream(meta.url);

@@ -55,6 +55,7 @@ module.exports = {
                 const tmpStr=embedSearchYoutube.fields[msgArr.shift()].url.split(/\s+/);
                 await require("./musicExecute").execute(message, tmpStr);
             }
+            
             message.delete();
             embedMsg.delete();
         });
