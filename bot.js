@@ -7,6 +7,9 @@ const moment = require('moment');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 const {Intents, MessageActionRow, MessageButton} = require('discord.js');
+const util = require('util');
+const { verCheck } = require('./src/Commands/music/musicVerCheck');
+const execFile = util.promisify(require('child_process').execFile);
 
 const bot = new Discord.Client({
 	intents: ['GUILD_VOICE_STATES',
@@ -38,7 +41,7 @@ for (const file of commandFiles) {//명령어 라이브러리 만드는 반복�
 		});
 }
 
-bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코드
+bot.on('ready', async (a) => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     bot.user.setActivity(activityString, { type: 'PLAYING' });
 	//require("./src/botAlarm");
@@ -62,6 +65,14 @@ bot.on('messageCreate', async (msg) => {
 	try {
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
+		
+		if(bot.commands.get(command).type==="music"){//노래 재생 시에 문제 있으면 업데이트 진행
+			if(!verCheck(msg)){
+				msg.channel.send("노래봇 버젼이 안 맞아서 업데이트 중입니다. 조금만 기다려주세요!");
+				const child=await execFile("npm",['install','play-dl@latest'],{shell:true});
+				console.log(child);
+			}
+		}
 		
 		if(await require("./src/permission.js").checkPermissions(msg, bot.commands.get(command).permission))
 			await bot.commands.get(command).execute(msg, args); //실행이 끝날 때까지 대기

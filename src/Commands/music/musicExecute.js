@@ -35,7 +35,6 @@ module.exports = {
             console.log(`searched: ${searched}`);
             return textChannel.send("검색결과가 없네요. 다른 키워드로 다시 시도해보세요!\n만약 유튜브 링크를 검색했다면 링크 뒷부분의 **&list**이후를 지워서 입력해보세요!");
         }
-
         const playStream = await stream(searched.id);
         const songInfo = (await video_basic_info(searched.id)).video_details;
         const song = {
