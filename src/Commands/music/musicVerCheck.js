@@ -1,7 +1,5 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const play_dl=require("play-dl");
-const {OWNER_ID}=require("./../../../GlobalVariable");
 
 async function verCheck(msg){
     const url=await axios.get("https://www.npmjs.com/package/play-dl");//ytdl-core 사이트에 들어감
