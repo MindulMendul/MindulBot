@@ -1,10 +1,10 @@
-/*const axios = require("axios");
+const axios = require("axios");
 const cheerio = require("cheerio");
-const ytdl=require("ytdl-core");
+const play_dl=require("play-dl");
 const {OWNER_ID}=require("./../../../GlobalVariable");
 
-async function verCheck(bot, msg){
-    const url=await axios.get("https://www.npmjs.com/package/ytdl-core");//ytdl-core 사이트에 들어감
+async function verCheck(msg){
+    const url=await axios.get("https://www.npmjs.com/package/play-dl");//ytdl-core 사이트에 들어감
     const $ = cheerio.load(url.data);//데이터를 긁어모음
     const html = $("body").children().html();//열심히 긁어모음
     const dir =`<p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4">`;//버전이 적혀있는 위치를 찾음
@@ -12,10 +12,7 @@ async function verCheck(bot, msg){
     const dir2 = html.slice(index);
     const latestVersion=dir2.slice(0,dir2.indexOf("</p>"));
     
-    if(latestVersion!=ytdl.version){//슬라이스해서 비교
-        msg.channel.send("노래봇 버전이 안 맞아서 지원이 어렵네요. 해당작업은 아직 개발자의 무지함으로 인해 수작업으로 처리해야 합니다, 최대한 빨리 업데이트 해드릴게요, 양해부탁드립니다 ㅠㅠ");
-        bot.users.cache.get(OWNER_ID).send(`노래봇 업데이트 필요\nnpm install ytdl-core@latest`);
-    }
-    return (latestVersion!=ytdl.version);
+    const packageVersion=require("./../../../package.json").dependencies["play-dl"];
+    return (packageVersion.slice(1)===latestVersion);
 }
-module.exports={verCheck};*/
+module.exports={verCheck};
