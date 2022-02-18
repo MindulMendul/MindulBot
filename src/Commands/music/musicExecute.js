@@ -82,6 +82,9 @@ module.exports = {
         } else {
             //플레이어가 존재해서 큐에 넣으면 되는 상황
             const connection = getVoiceConnection(voiceChannel.guild.id);
+            if(msg.member.voice.channelId!=connection.joinConfig.channelId)
+                return msg.channel.send("같은 보이스채널에서 해주세요!");
+            
             connection.subscription.songs.push(resource);
             resource.volume.setVolume(0.5/connection.subscription.option.volumeMagnification*!connection.subscription.option.mute);//노래 사운드
             msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
@@ -169,16 +172,16 @@ module.exports = {
                 return msgSungok.channel.send("보이스채널에서 해주세요!");
             switch (i.customId) {
                 case "⏩": 
-                    require("./musicSkip").execute(msg); break;
+                    require("./musicSkip").execute(i); break;
                 
                 case "⏹":
-                    require("./musicEmpty").execute(msg); break;
+                    require("./musicEmpty").execute(i); break;
 
                 case "🔀": 
-                    require("./musicShuffle").execute(msg); break;
+                    require("./musicShuffle").execute(i); break;
                 
                 case "🔉":
-                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                    if(i.member.voice.channelId!=connection.joinConfig.channelId){
                         msg.channel.send("같은 보이스채널에서 해주세요!");
                         return await i.update(sendedContent); //버튼 업데이트
                     }
@@ -189,7 +192,7 @@ module.exports = {
                 break;
 
                 case "🔊":
-                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                    if(i.member.voice.channelId!=connection.joinConfig.channelId){
                         msg.channel.send("같은 보이스채널에서 해주세요!");
                         return await i.update(sendedContent); //버튼 업데이트
                     }
@@ -200,7 +203,7 @@ module.exports = {
                 break;
 
                 case "⏯":
-                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                    if(i.member.voice.channelId!=connection.joinConfig.channelId){
                         msg.channel.send("같은 보이스채널에서 해주세요!");
                         return await i.update(sendedContent); //버튼 업데이트
                     }
@@ -229,7 +232,7 @@ module.exports = {
                 break;
 
                 case "🔁":
-                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                    if(i.member.voice.channelId!=connection.joinConfig.channelId){
                         msg.channel.send("같은 보이스채널에서 해주세요!");
                         return await i.update(sendedContent); //버튼 업데이트
                     }
@@ -245,11 +248,11 @@ module.exports = {
                         buttonSecond.components.splice(1, 1, i.component);
                         buttonSecond.setComponents(buttonSecond.components);
                     }
-                    require("./musicLoop").execute(msg);//루프기능은 다른 곳에서 구현해둔 거 가져옴
+                    require("./musicLoop").execute(i);//루프기능은 다른 곳에서 구현해둔 거 가져옴
                 break;
 
                 case "🔇":
-                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                    if(i.member.voice.channelId!=connection.joinConfig.channelId){
                         msg.channel.send("같은 보이스채널에서 해주세요!");
                         return await i.update(sendedContent); //버튼 업데이트
                     }

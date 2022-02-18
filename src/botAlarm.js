@@ -10,6 +10,7 @@ setTimeout(() => {
 */
 
 const moment = require('moment');
+const { send } = require("process");
 
 //타로 카드 셔플
 func=require("./func");
@@ -26,10 +27,11 @@ setInterval( () => {
     if(moment().minute()==25){//매 시간 25분마다 알람
         const reminderMessage=`${moment().hour()}시 플래그하러 가세요~`;
         bot.guilds.cache.filter((guild)=>{
-            return (guild.name=="💛 기본 💛"); //기본길드 전용 코드
-        }).channels.cache.filter( (channel)=>{
+            return (guild.name==="💛 기본 💛");
+        }).first().channels.cache.filter((channel)=>{
             return (channel.name.startsWith('민둘봇'));
-        }).send(reminderMessage)
-        .then(msg=>msg.delete({timeout:10*60*1000}));;
+        }).first().send(reminderMessage).then( msg =>{
+            setTimeout( () => {msg.delete();},10*60*1000);
+        });
     }
 }, 60*1000); // every minutes
