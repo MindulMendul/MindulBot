@@ -5,9 +5,8 @@ module.exports = {
     permission: [""],
     async execute(msg) {
         const moment = require('moment');
-        const {OWNER_ID} = require('./../../../GlobalVariable');
-        
-		if(msg.author.id===OWNER_ID) { // 나
+
+		if(msg.author.id===process.env.OWNER_ID) { // 나
             msg.reply("명을 받들게 되어 망극하옵나이다.\n"
             +moment().format("지금 시각은 HH시 mm분이옵니다, 주인님"));
         } else {

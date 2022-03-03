@@ -1,5 +1,3 @@
-const { search } = require("play-dl");
-
 module.exports = {
 	name: "테스트",
 	cmd: ["테스트","ㅌㅅㅌ","ㅎ"],
@@ -8,9 +6,6 @@ module.exports = {
 	needReact: false,
 	async execute(msg, args) {
 		if(msg.member.user.id!=process.env.OWNER_ID) return;
-		const searchStr=args.join(" ");
-		const vsqq=(await search(searchStr, { source : { youtube : "video" }, limit: 1})).pop();
-		console.log(vsqq);
 	},
 };
 
