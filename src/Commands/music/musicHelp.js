@@ -1,4 +1,3 @@
-const {PREFIX} = require("../../../GlobalVariable.js");
 const moment = require('moment');
 module.exports = {
 	name: "노래도움말",
@@ -14,7 +13,7 @@ module.exports = {
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
                 url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
             },
-            description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 한글 '${PREFIX}' 를 입력하세요! `+
+            description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 한글 '${process.env.PREFIX}' 를 입력하세요! `+
             `${PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. `+
             '모든 노래봇 기능은 유튜브 영상을 기준으로 재생합니다. '+
             '개발자가 멍청해서 오랜 시간을 개발과 코딩공부에 전념했음에도 해당 기능들은 상당히 불안정한 기능들이네요. '+

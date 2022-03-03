@@ -1,12 +1,11 @@
 require('dotenv').config();
 const fs=require('fs');
 const Discord = require('discord.js');
-const {PREFIX, LoginBotToken, OWNER_ID, activityString}=require("./GlobalVariable");
 
 const moment = require('moment');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
-const {Intents, MessageActionRow, MessageButton} = require('discord.js');
+//const {Intents, MessageActionRow, MessageButton} = require('discord.js');
 const util = require('util');
 const { verCheck } = require('./src/Commands/music/musicVerCheck');
 const execFile = util.promisify(require('child_process').execFile);
@@ -43,7 +42,7 @@ for (const file of commandFiles) {//명령어 라이브러리 만드는 반복�
 
 bot.on('ready', async (a) => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
-    bot.user.setActivity(activityString, { type: 'PLAYING' });
+    bot.user.setActivity(process.env.activityString, { type: 'PLAYING' });
 	require("./src/botAlarm");
 });
 
@@ -52,7 +51,8 @@ bot.on('messageCreate', async (msg) => {
 	if(await noCmd(msg)) return;//명령어 없는 텍스트
 	if(msg.channel.type==="DM") return msg.channel.send("DM은 막혀있어요, 죄송합니다. ㅠㅠ");
 	
-	const args = msg.content.slice(PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
+	console.log(msg.author.id);
+	const args = msg.content.slice(process.env.PREFIX.length).trim().split(/\s+/);//명령어 말 배열에 담기
 	const command = args.shift();//명령어 인식할 거
 	
     if (!bot.commands.get(command))//명령어 인식 못하는 거 거름
@@ -85,7 +85,7 @@ bot.on('messageCreate', async (msg) => {
 		if(checkGuildCmdQueue) checkGuildCmdQueue.shift();//에러가 났으니 대기열 제거
 
 		msg.channel.send(`${command} 명령어 입력에 문제가 생겼어요! 우리 주인님이 고생할 거라 생각하니 기분이 좋네요 ㅎㅎ\n${error}`);
-		bot.users.cache.get(OWNER_ID).send(`명령어 입력 문제 : ${bot.commands.get(command).name}\n${error}`);
+		bot.users.cache.get(process.env.OWNER_ID).send(`명령어 입력 문제 : ${bot.commands.get(command).name}\n${error}`);
 		console.error(error);
 	}
 });
@@ -100,13 +100,13 @@ async function noCmd(msg){//명령어 없는 텍스트
 		if(vsArr.length==0) msg.channel.send("의미 있는 입력 값이 없네요.");//아무것도 없으면
 		else msg.channel.send(vsArr[Math.floor(Math.random()*vsArr.length)]);//랜덤해서 하나 보내기
 		return true;
-	} else if(!msg.content.startsWith(PREFIX)) return true;
+	} else if(!msg.content.startsWith(process.env.PREFIX)) return true;
 	return false;
 };
 
 process.on('unhandledRejection',(err)=>{//app crash걸렸을 때 실행되는 코드
-	bot.users.cache.get(OWNER_ID).send(`에러떴다ㅏㅏㅏㅏㅏ\n${err}\n`);
+	bot.users.cache.get(process.env.OWNER_ID).send(`에러떴다ㅏㅏㅏㅏㅏ\n${err}\n`);
 	console.error(err);
 });
 
-bot.login(LoginBotToken);
+bot.login(process.env.BOT_TOKEN);
