@@ -119,6 +119,7 @@ package-lock.json
 =======
 =======
 .env
+<<<<<<< HEAD
 package-lock.json
 package.json
 <<<<<<< HEAD
@@ -149,6 +150,8 @@ GlobalVariable.js
 =======
 =======
 =======
+=======
+>>>>>>> 33d05898 (.gitignore 수정)
 mindulBot_privateKey.ppk
 >>>>>>> 99cfef8e (트레쉬파일 삭제)
 >>>>>>> 369e8462 (트레쉬파일 삭제)
