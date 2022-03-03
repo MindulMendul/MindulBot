@@ -1,5 +1,4 @@
 const { search } = require("play-dl");
-const { OWNER_ID } = require("../../GlobalVariable");
 
 module.exports = {
 	name: "테스트",
@@ -8,7 +7,7 @@ module.exports = {
 	permission: [""],
 	needReact: false,
 	async execute(msg, args) {
-		if(msg.member.user.id!=OWNER_ID) return;
+		if(msg.member.user.id!=process.env.OWNER_ID) return;
 		const searchStr=args.join(" ");
 		const vsqq=(await search(searchStr, { source : { youtube : "video" }, limit: 1})).pop();
 		console.log(vsqq);
