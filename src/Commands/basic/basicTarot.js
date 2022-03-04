@@ -13,6 +13,7 @@ module.exports = {
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
             },
             description: '6개의 이모지로 입력된 하트를 하나만 아무거나 선택해 주세요!',
+            image: {url: "https://i.imgur.com/SP7ND76.png"},
         };
         
         const button1 = new MessageActionRow()
