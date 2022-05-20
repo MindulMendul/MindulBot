@@ -1,17 +1,17 @@
-const {video_basic_info, stream, search}=require('play-dl');
+import { video_basic_info, stream, search } from 'play-dl';
+import { MessageActionRow, MessageButton } from 'discord.js';
 
-const {
-    VoiceConnectionStatus,
-    AudioPlayerStatus,
-    NoSubscriberBehavior,
-    joinVoiceChannel,
-    getVoiceConnection,
-    createAudioPlayer,
-    createAudioResource,
-} = require('@discordjs/voice');
-const {MessageActionRow, MessageButton}=require('discord.js');
+import { VoiceConnectionStatus } from '@discordjs/voice';
+import { AudioPlayerStatus } from '@discordjs/voice';
+import { NoSubscriberBehavior } from '@discordjs/voice';
+import { joinVoiceChannel } from '@discordjs/voice';
+import { getVoiceConnection } from '@discordjs/voice';
+import { createAudioPlayer } from '@discordjs/voice';
+import { createAudioResource } from '@discordjs/voice';
 
-module.exports = {
+import { cmd } from "../../type";
+
+export const musicExecute: cmd = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
@@ -64,6 +64,7 @@ module.exports = {
                     noSubscriber: NoSubscriberBehavior.Pause,
                 },
             });
+
             connection.subscription = connection.subscribe(audioPlayer);
             connection.subscription.songs=[];
             connection.subscription.option={

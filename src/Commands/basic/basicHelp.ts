@@ -1,16 +1,17 @@
-const moment = require('moment');
+import moment from 'moment';
+import { cmd } from "../../type";
 
-module.exports = {
+export const basicHelp: cmd =  {
 	name: `도움말`,
 	cmd: ["도움말", "ㄷㅇㅁ", "help"],
     type: "basic",
     permission: [""],
 	execute(msg) {
-        const helpembed = {
+        const helpembed: any = {
             color: 0xF7CAC9,
             author: {
                 name: '민둘봇의 명령어 안내',
-                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+                iconURL: 'https://i.imgur.com/AD91Z6z.jpg',
                 url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
             },
             description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 "한글 '${process.env.PREFIX}' 를 입력하세요! `+
@@ -59,12 +60,12 @@ module.exports = {
                     inline: false,
                 },
             ],
-            timestamp: moment(),
+            timestamp: moment().date(),
             footer: {
                 text: 'instagram @mindul_mendul ',
-                icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
+                iconURL: 'https://i.imgur.com/AD91Z6z.jpg',
             },
         };
-		msg.channel.send({embeds: [helpembed]});
+		return msg.channel.send({embeds: [helpembed]});
 	}
 };

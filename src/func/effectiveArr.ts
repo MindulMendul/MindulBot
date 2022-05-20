@@ -1,17 +1,4 @@
-const moment = require('moment');
-function equalTime(h, m) {
-    return (moment().hour()==h && moment().minute()==m);
-}
-
-function shuffle(arr){
-  for(var i =arr.length-1 ; i>0 ;i--){
-      var j = Math.floor( Math.random() * (i + 1) ); //random index
-      [arr[i],arr[j]]=[arr[j],arr[i]]; // swap
-  }
-  return arr;
-}
-
-async function effectiveArr(arr, tokenizer, min, max){
+export async function effectiveArr(arr, tokenizer, min, max){
     let arrTemp=[];
     arr.split(tokenizer).forEach(elem=>{//string으로 받은 배열을
         if(elem!="")arrTemp.push(elem); //,단위로 쪼개어 하나하나 집어넣기
@@ -29,5 +16,3 @@ async function effectiveArr(arr, tokenizer, min, max){
     
     return [...new Set(arrCheck)];//중복제거
 }
-
-module.exports = {equalTime, shuffle, effectiveArr};

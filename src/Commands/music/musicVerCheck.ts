@@ -1,7 +1,7 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
+import axios from "axios";
+import cheerio from "cheerio";
 
-async function verCheck(msg){
+export const verCheck = async (msg: any) => {
     const url=await axios.get("https://www.npmjs.com/package/play-dl");//ytdl-core 사이트에 들어감
     const $ = cheerio.load(url.data);//데이터를 긁어모음
     const html = $("body").children().html();//열심히 긁어모음
@@ -13,4 +13,3 @@ async function verCheck(msg){
     const packageVersion=require("./../../../package.json").dependencies["play-dl"];
     return (packageVersion.slice(1)===latestVersion);
 }
-module.exports={verCheck};
