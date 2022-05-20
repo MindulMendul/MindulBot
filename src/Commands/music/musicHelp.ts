@@ -1,24 +1,26 @@
-const moment = require('moment');
-module.exports = {
+import moment from 'moment';
+import { cmd } from "../../type";
+
+export const musicHelp: cmd = {
 	name: "노래도움말",
 	cmd: ["노래도움말", "노래명령어", "ㄴㄹㄷㅇㅁ", "ㄴㄻㄹㅇ", "ㄴㄹㅁㄹㅇ"],
 	type: "music",
     permission: [""],
     execute(msg) {
         //return msg.channel.send("노래 명령어는 당분간 사용이 어렵습니다.");
-        const helpembed = {
+        const helpembed:any = {
             color: 0xF7CAC9,
             author: {
                 name: '민둘봇의 노래 명령어 안내',
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
                 url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
             },
-            description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 한글 '${process.env.PREFIX}' 를 입력하세요! `+
-            `${process.env.PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. `+
-            '모든 노래봇 기능은 유튜브 영상을 기준으로 재생합니다. '+
-            '개발자가 멍청해서 오랜 시간을 개발과 코딩공부에 전념했음에도 해당 기능들은 상당히 불안정한 기능들이네요. '+
-            '최대한 빠르게 버그에 대응하겠습니다. 그리고 앞으로 잘 작동시킬 수 있도록 하겠습니다!'+
-            '\n(해당 문서는 2022년 01월 13일에 업데이트되었습니다.)',
+            description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 한글 '${process.env.PREFIX}' 를 입력하세요! 
+            ${process.env.PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. 
+            모든 노래봇 기능은 유튜브 영상을 기준으로 재생합니다. 
+            개발자가 멍청해서 오랜 시간을 개발과 코딩공부에 전념했음에도 해당 기능들은 상당히 불안정한 기능들이네요. 
+            최대한 빠르게 버그에 대응하겠습니다. 그리고 앞으로 잘 작동시킬 수 있도록 하겠습니다!
+            (해당 문서는 2022년 01월 13일에 업데이트되었습니다.)`,
             fields: [
                 {
                     name: '노래',
@@ -67,6 +69,6 @@ module.exports = {
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
             },
         };
-        msg.channel.send({embeds:[helpembed]});
+        return msg.channel.send({embeds:[helpembed]});
 	}
 };

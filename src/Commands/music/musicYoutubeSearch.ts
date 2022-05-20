@@ -1,7 +1,8 @@
-const {search}=require('play-dl');
-const func = require("./../../func");
+import { search } from 'play-dl';
+import { effectiveArr } from "./../../func/effectiveArr";
+import { cmd } from "../../type";
 
-module.exports = {
+export const musicYoutubeSearch: cmd = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
     type: "music",
@@ -31,7 +32,7 @@ module.exports = {
         }
 
         for (var i in items) {
-            let n=i; n++;
+            let n=Number(i); n++;
             const explItem={
                 name: '\u200b',
                 value: `[${n}. ${items[i].title}](https://www.youtube.com/watch?v=${items[i].url})`,//markdown 사용
@@ -41,14 +42,16 @@ module.exports = {
         }
         const embedMsg = await msg.channel.send({embeds: [embedSearchYoutube]});
 
-        const filter = (message) => {return (!message.author.bot)&(message.author.id===msg.author.id);};
+        const filter = (message: { author: { bot: any; id: string; }; }) => {
+            return (!message.author.bot)&&(message.author.id===msg.author.id);
+        };
         const collector = msg.channel.createMessageCollector({filter, max: 1});
         collector.on('collect', async (message) => {
-            const msgArr=await func.effectiveArr(message.content, ",", 1, 8);//배열이 유효한지 조사
+            const msgArr=await effectiveArr(message.content, ",", 1, 8);//배열이 유효한지 조사
 
             if(msgArr.length==0){ //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
-                check=true; message.delete(); embedMsg.delete();
-                return message.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
+                message.delete(); embedMsg.delete();
+                message.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
             }
 
             while(msgArr.length>0){

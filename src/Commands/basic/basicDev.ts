@@ -1,9 +1,11 @@
-module.exports = {
-	name: `개발`,
-	cmd: ["개발", "ㄱㅂ", "개발일정", "ㄱㅂㅇㅈ","dev"],
+import { cmd } from "../../type";
+
+export const basicDev: cmd = {
+    name: `개발`,
+    cmd: ["개발", "ㄱㅂ", "개발일정", "ㄱㅂㅇㅈ", "dev"],
     type: "basic",
     permission: [""],
-	execute(msg) {
+    execute(msg) {
         const moment = require('moment');
 
         const devembed = {
@@ -12,11 +14,11 @@ module.exports = {
                 name: '민둘봇 개발 목표 안내',
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
             },
-            description: '민둘봇이 앞으로 어떻게 개발될지 안내하는 임베드입니다. '+
-            '해당 문서에는 앞으로 개발될 기능과, 현재 기능들 중에 제가 중점을 두고 고치고 있는 부분을 코멘트해두었습니다. '+
-            '무조건 개발된다는 건 아니고, 해당 문구들이 언제든지 사라질 수 있음을 함께 안내해드릴게요~ '+
-            '(소야봇 개발자님, 여러 도움을 주셔서 진심으로 감사드립니다.) '+
-            '\n(해당 문서는 2022년 01월 13일에 업데이트되었습니다.) ',
+            description: '민둘봇이 앞으로 어떻게 개발될지 안내하는 임베드입니다. ' +
+                '해당 문서에는 앞으로 개발될 기능과, 현재 기능들 중에 제가 중점을 두고 고치고 있는 부분을 코멘트해두었습니다. ' +
+                '무조건 개발된다는 건 아니고, 해당 문구들이 언제든지 사라질 수 있음을 함께 안내해드릴게요~ ' +
+                '(소야봇 개발자님, 여러 도움을 주셔서 진심으로 감사드립니다.) ' +
+                '\n(해당 문서는 2022년 01월 13일에 업데이트되었습니다.) ',
             fields: [
                 {
                     name: '텍스트 게임',
@@ -40,6 +42,6 @@ module.exports = {
                 icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
             },
         };
-        msg.channel.send({embeds: [devembed]});
-	}
+        return msg.channel.send({ embeds: [devembed] });
+    }
 };

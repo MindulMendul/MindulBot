@@ -1,6 +1,7 @@
-const {getVoiceConnection,} = require('@discordjs/voice');
+import { getVoiceConnection } from '@discordjs/voice';
+import { cmd } from "../../type";
 
-module.exports = {
+export const musicShow: cmd = {
 	name: "큐",
 	cmd: ["큐", "목록", "노래목록"],
     type: "music",

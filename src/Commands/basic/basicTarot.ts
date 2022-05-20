@@ -1,5 +1,7 @@
-const {MessageActionRow, MessageButton}=require('discord.js');
-module.exports = {
+import { MessageActionRow, MessageButton } from 'discord.js';
+import { cmd } from "../../type";
+
+export const basicTarot: cmd = {
 	name: `타로`,
 	cmd: ["타로","ㅌㄹ","운세","오늘의운세"],
     type:"basic",
@@ -29,10 +31,11 @@ module.exports = {
         const asdf=await msg.channel.send({embeds: [tarotEditedEmbed], components:[button1, button2]});
 
         //타로하트 선택 후 결과 창
-        const filter = i => {return (i.user.id === msg.author.id);}
+        const filter = (i: { user: { id: string; }; }) => {
+            return (i.user.id === msg.author.id);
+        }
         const collector = asdf.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
-            
             let strDes="", strField=new Array(3);
             
             const tarot=require("./TarotList");
