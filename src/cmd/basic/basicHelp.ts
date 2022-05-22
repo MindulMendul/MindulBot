@@ -5,7 +5,7 @@ export const basicHelp: cmd =  {
 	name: `도움말`,
 	cmd: ["도움말", "ㄷㅇㅁ", "help"],
     type: "basic",
-    permission: [""],
+    permission: [],
 	execute(msg) {
         const helpembed: any = {
             color: 0xF7CAC9,

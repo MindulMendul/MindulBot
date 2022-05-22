@@ -1,4 +1,4 @@
-export const script=[
+export const script = [
     ["신나는 날",                  //1
     "https://i.imgur.com/Wxw0Ifa.png",
     "카드의 그림처럼, 오늘은 돼지와 함께 춤을 추고 싶을 정도로 신나는 날이 될 거에요. 신나는 날이니까 신나게 놀아보자고요~ 일해야 한다면 폰놀이도 괜찮아요."],

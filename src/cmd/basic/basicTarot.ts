@@ -1,4 +1,5 @@
 import { MessageActionRow, MessageButton } from 'discord.js';
+import { script } from '../../assets/tarot/TarotList';
 import { cmd } from "../../type";
 
 export const basicTarot: cmd = {
@@ -38,16 +39,13 @@ export const basicTarot: cmd = {
         collector.on('collect', async i => {
             let strDes="", strField=new Array(3);
             
-            const tarot=require("./TarotList");
-            const arr=tarot.script;
-            
             switch (i.customId) {
-                case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
-                case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
-                case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
-                case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
-                case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
-                case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
+                case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=script[0]; break;
+                case "🧡": strDes="주황색 하트를 고른 당신!"; strField=script[1]; break;
+                case "💛": strDes="노란색 하트를 고른 당신!"; strField=script[2]; break;
+                case "💚": strDes="초록색 하트를 고른 당신!"; strField=script[3]; break;
+                case "💙": strDes="파란색 하트를 고른 당신!"; strField=script[4]; break;
+                case "💜": strDes="보라색 하트를 고른 당신!"; strField=script[5]; break;
                 default:
                     strDes="그 밖에 다른 선택지를 들고 온 당신!";
                     strField=["숲튽훈",

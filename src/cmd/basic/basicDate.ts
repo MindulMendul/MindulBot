@@ -4,7 +4,7 @@ export const basicDate: cmd = {
     name: `날짜`,
     cmd: ["날짜", "skfWk", "ㄴㅉ", "sW"],
     type: "basic",
-    permission: [""],
+    permission: [],
     async execute(msg) {
         const moment = require('moment');
 

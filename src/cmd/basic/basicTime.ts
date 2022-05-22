@@ -4,7 +4,7 @@ export const basicTime: cmd = {
 	name: `시간`,
 	cmd: ["시간", "ㅅㄱ"],
 	type: "basic",
-    permission: [""],
+    permission: [],
     async execute(msg) {
         const moment = require('moment');
 

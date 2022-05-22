@@ -1,43 +1,45 @@
 import { Collection, Message } from "discord.js";
 import { cmd } from "../type";
 
-import { basicAngry } from "../Commands/basic/basicAngry";
-import { basicDate } from "../Commands/basic/basicDate";
-import { basicDev } from "../Commands/basic/basicDev";
-import { basicDice } from "../Commands/basic/basicDice";
-import { basicGongji } from "../Commands/basic/basicGongji";
-import { basicHelp } from "../Commands/basic/basicHelp";
-import { basicMendul } from "../Commands/basic/basicMendul";
-import { basicMindul } from "../Commands/basic/basicMindul";
-import { basicMindulMendul } from "../Commands/basic/basicMindulMendul";
-import { basicNaga } from "../Commands/basic/basicNaga";
-import { basicSuggestion } from "../Commands/basic/basicSuggestion";
-import { basicTarot } from "../Commands/basic/basicTarot";
-import { basicTime } from "../Commands/basic/basicTime";
+import { basicAngry } from "../cmd/basic/basicAngry";
+import { basicDate } from "../cmd/basic/basicDate";
+import { basicDev } from "../cmd/basic/basicDev";
+import { basicDice } from "../cmd/basic/basicDice";
+import { basicGongji } from "../cmd/basic/basicGongji";
+import { basicHelp } from "../cmd/basic/basicHelp";
+import { basicMendul } from "../cmd/basic/basicMendul";
+import { basicMindul } from "../cmd/basic/basicMindul";
+import { basicMindulMendul } from "../cmd/basic/basicMindulMendul";
+import { basicNaga } from "../cmd/basic/basicNaga";
+import { basicSuggestion } from "../cmd/basic/basicSuggestion";
+import { basicTarot } from "../cmd/basic/basicTarot";
+import { basicTime } from "../cmd/basic/basicTime";
 
-import { musicEmpty } from "../Commands/music/musicEmpty";
-import { musicExecute } from "../Commands/music/musicExecute";
-import { musicHelp } from "../Commands/music/musicHelp";
-import { musicLoop } from "../Commands/music/musicLoop";
-import { musicRemove } from "../Commands/music/musicRemove";
-import { musicShow } from "../Commands/music/musicShow";
-import { musicShuffle } from "../Commands/music/musicShuffle";
-import { musicSkip } from "../Commands/music/musicSkip";
-import { musicYoutubeSearch } from "../Commands/music/musicYoutubeSearch";
+/*
+import { musicEmpty } from "../cmd/music/musicEmpty";
+import { musicExecute } from "../cmd/music/musicExecute";
+import { musicHelp } from "../cmd/music/musicHelp";
+import { musicLoop } from "../cmd/music/musicLoop";
+import { musicRemove } from "../cmd/music/musicRemove";
+import { musicShow } from "../cmd/music/musicShow";
+import { musicShuffle } from "../cmd/music/musicShuffle";
+import { musicSkip } from "../cmd/music/musicSkip";
+import { musicYoutubeSearch } from "../cmd/music/musicYoutubeSearch";
+*/
 
-export const putCommands = async (map: Collection<string, string>,
-                                  commands: Collection<string, (arg0: Message, arg1?: Array<string>) => Promise<void | string | Message>>) => {
-    const CmdtoName = async (map: Collection<string, string>, cmdComponent: cmd) => {
+export const putCommands = (map: Collection<string, string>,
+                                  commands: Collection<string, cmd>) => {
+    const CmdtoName = (map: Collection<string, string>, cmdComponent: cmd) => {
         const cmdList = cmdComponent.cmd;
         const name = cmdComponent.name;
         cmdList.forEach((e: string)=>map.set(e, name));
     }
     
-    const putCmd = async (map: Collection<string, string>,
-                          commands: Collection<string, (arg0: Message, arg1?: Array<string>) => Promise<void | string | Message>>,
+    const putCmd = (map: Collection<string, string>,
+                          commands: Collection<string, cmd>,
                           cmdComponent: cmd) => {
-        await CmdtoName(map, cmdComponent);
-        commands.set(cmdComponent.name, cmdComponent.execute);
+        CmdtoName(map, cmdComponent);
+        commands.set(cmdComponent.name, cmdComponent);
     }
 
     //basic
@@ -56,6 +58,7 @@ export const putCommands = async (map: Collection<string, string>,
     putCmd(map, commands, basicTime);
 
     //music
+    /*
     putCmd(map, commands, musicEmpty);
     putCmd(map, commands, musicExecute);
     putCmd(map, commands, musicHelp);
@@ -64,5 +67,5 @@ export const putCommands = async (map: Collection<string, string>,
     putCmd(map, commands, musicShow);
     putCmd(map, commands, musicShuffle);
     putCmd(map, commands, musicSkip);
-    putCmd(map, commands, musicYoutubeSearch);
+    putCmd(map, commands, musicYoutubeSearch);*/
 }
