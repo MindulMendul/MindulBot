@@ -1,4 +1,4 @@
-export async function effectiveArr(arr, tokenizer, min, max){
+export async function effectiveArr(arr: string, tokenizer: any, min: number, max: number){
     let arrTemp=[];
     arr.split(tokenizer).forEach(elem=>{//string으로 받은 배열을
         if(elem!="")arrTemp.push(elem); //,단위로 쪼개어 하나하나 집어넣기

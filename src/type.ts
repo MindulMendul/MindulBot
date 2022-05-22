@@ -1,10 +1,10 @@
-import { Message } from "discord.js"
+import { Message, PermissionResolvable } from "discord.js"
 
 export interface cmd {
     name: string
     cmd: Array<string>
     type: string
-    permission: Array<string>
+    permission: Array<PermissionResolvable>
     execute: (arg0: Message, arg1?: Array<string>) => Promise<void | string | Message>
 }
 
