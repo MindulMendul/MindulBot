@@ -1,13 +1,13 @@
 import { cmd } from '../type';
 
 export const test: cmd = {
-    name: '테스트',
-    cmd: ['테스트', 'ㅌㅅㅌ', 'ㅎ'],
-    type: 'test',
-    permission: [],
-    async execute(msg) {
-        if (msg.member.user.id != process.env.OWNER_ID) return;
-    }
+  name: '테스트',
+  cmd: ['테스트', 'ㅌㅅㅌ', 'ㅎ'],
+  type: 'test',
+  permission: [],
+  async execute(msg) {
+    if (msg.member.user.id != process.env.OWNER_ID) return;
+  }
 };
 
 /*일반 명령어 예시
