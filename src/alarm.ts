@@ -1,7 +1,7 @@
-import { alarmFlag } from "./alarm/alarmFlag";
-import { alarmTarot } from "./alarm/alarmTarot";
+import { alarmFlag } from './alarm/alarmFlag';
+import { alarmTarot } from './alarm/alarmTarot';
 
-export const alarm = ()=>{
+export const alarm = () => {
     alarmFlag();
     alarmTarot();
-}
+};
