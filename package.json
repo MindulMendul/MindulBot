@@ -3,27 +3,30 @@
   "version": "1.1.0",
   "scripts": {
     "start": "ts-node bot.ts",
-    "dev": "nodemon bot.ts"
+    "dev": "nodemon bot.ts",
+    "prepublish": "npm run pretty",
+    "pretty": "prettier --config .prettierrc --write bot.ts 'src/**/*.ts'"
   },
   "dependencies": {
     "@discordjs/node-pre-gyp": "^0.4.2",
     "@discordjs/opus": "^0.5.3",
-    "@discordjs/voice": "^0.8.0",
-    "axios": "^0.26.0",
-    "cheerio": "^1.0.0-rc.10",
-    "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "libsodium-wrappers": "^0.7.9",
-    "moment": "^2.29.2",
+    "@discordjs/voice": "^0.9.0",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11",
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1",
+    "libsodium-wrappers": "^0.7.10",
+    "moment": "^2.29.3",
     "moment-timezone": "^0.5.34",
     "node-gyp": "^9.0.0",
     "node-pre-gyp": "^0.17.0",
     "nodemon": "^2.0.16",
-    "play-dl": "^1.8.9",
+    "play-dl": "^1.9.4",
     "prism-media": "^1.3.2",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   },
   "devDependencies": {
+    "prettier": "^2.6.2",
     "ts-node": "^10.8.0"
   }
 }
