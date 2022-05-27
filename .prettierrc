@@ -1,6 +1,10 @@
 {
     "printWidth": 120,
+<<<<<<< HEAD
     "tabWidth": 2,
+=======
+    "tabWidth": 4,
+>>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
     "singleQuote": true,
     "quoteProps": "consistent",
     "semi": true,

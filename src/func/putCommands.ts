@@ -1,19 +1,19 @@
-import { Collection, Message } from "discord.js";
-import { cmd } from "../type";
+import { Collection, Message } from 'discord.js';
+import { cmd } from '../type';
 
-import { basicAngry } from "../cmd/basic/basicAngry";
-import { basicDate } from "../cmd/basic/basicDate";
-import { basicDev } from "../cmd/basic/basicDev";
-import { basicDice } from "../cmd/basic/basicDice";
-import { basicGongji } from "../cmd/basic/basicGongji";
-import { basicHelp } from "../cmd/basic/basicHelp";
-import { basicMendul } from "../cmd/basic/basicMendul";
-import { basicMindul } from "../cmd/basic/basicMindul";
-import { basicMindulMendul } from "../cmd/basic/basicMindulMendul";
-import { basicNaga } from "../cmd/basic/basicNaga";
-import { basicSuggestion } from "../cmd/basic/basicSuggestion";
-import { basicTarot } from "../cmd/basic/basicTarot";
-import { basicTime } from "../cmd/basic/basicTime";
+import { basicAngry } from '../cmd/basic/basicAngry';
+import { basicDate } from '../cmd/basic/basicDate';
+import { basicDev } from '../cmd/basic/basicDev';
+import { basicDice } from '../cmd/basic/basicDice';
+import { basicGongji } from '../cmd/basic/basicGongji';
+import { basicHelp } from '../cmd/basic/basicHelp';
+import { basicMendul } from '../cmd/basic/basicMendul';
+import { basicMindul } from '../cmd/basic/basicMindul';
+import { basicMindulMendul } from '../cmd/basic/basicMindulMendul';
+import { basicNaga } from '../cmd/basic/basicNaga';
+import { basicSuggestion } from '../cmd/basic/basicSuggestion';
+import { basicTarot } from '../cmd/basic/basicTarot';
+import { basicTime } from '../cmd/basic/basicTime';
 
 /*
 import { musicEmpty } from "../cmd/music/musicEmpty";
@@ -27,20 +27,17 @@ import { musicSkip } from "../cmd/music/musicSkip";
 import { musicYoutubeSearch } from "../cmd/music/musicYoutubeSearch";
 */
 
-export const putCommands = (map: Collection<string, string>,
-                                  commands: Collection<string, cmd>) => {
+export const putCommands = (map: Collection<string, string>, commands: Collection<string, cmd>) => {
     const CmdtoName = (map: Collection<string, string>, cmdComponent: cmd) => {
         const cmdList = cmdComponent.cmd;
         const name = cmdComponent.name;
-        cmdList.forEach((e: string)=>map.set(e, name));
-    }
-    
-    const putCmd = (map: Collection<string, string>,
-                          commands: Collection<string, cmd>,
-                          cmdComponent: cmd) => {
+        cmdList.forEach((e: string) => map.set(e, name));
+    };
+
+    const putCmd = (map: Collection<string, string>, commands: Collection<string, cmd>, cmdComponent: cmd) => {
         CmdtoName(map, cmdComponent);
         commands.set(cmdComponent.name, cmdComponent);
-    }
+    };
 
     //basic
     putCmd(map, commands, basicAngry);
@@ -68,4 +65,4 @@ export const putCommands = (map: Collection<string, string>,
     putCmd(map, commands, musicShuffle);
     putCmd(map, commands, musicSkip);
     putCmd(map, commands, musicYoutubeSearch);*/
-}
+};
