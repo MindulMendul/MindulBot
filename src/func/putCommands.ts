@@ -28,34 +28,34 @@ import { musicYoutubeSearch } from "../cmd/music/musicYoutubeSearch";
 */
 
 export const putCommands = (map: Collection<string, string>, commands: Collection<string, cmd>) => {
-    const CmdtoName = (map: Collection<string, string>, cmdComponent: cmd) => {
-        const cmdList = cmdComponent.cmd;
-        const name = cmdComponent.name;
-        cmdList.forEach((e: string) => map.set(e, name));
-    };
+  const CmdtoName = (map: Collection<string, string>, cmdComponent: cmd) => {
+    const cmdList = cmdComponent.cmd;
+    const name = cmdComponent.name;
+    cmdList.forEach((e: string) => map.set(e, name));
+  };
 
-    const putCmd = (map: Collection<string, string>, commands: Collection<string, cmd>, cmdComponent: cmd) => {
-        CmdtoName(map, cmdComponent);
-        commands.set(cmdComponent.name, cmdComponent);
-    };
+  const putCmd = (map: Collection<string, string>, commands: Collection<string, cmd>, cmdComponent: cmd) => {
+    CmdtoName(map, cmdComponent);
+    commands.set(cmdComponent.name, cmdComponent);
+  };
 
-    //basic
-    putCmd(map, commands, basicAngry);
-    putCmd(map, commands, basicDate);
-    putCmd(map, commands, basicDev);
-    putCmd(map, commands, basicDice);
-    putCmd(map, commands, basicGongji);
-    putCmd(map, commands, basicHelp);
-    putCmd(map, commands, basicMendul);
-    putCmd(map, commands, basicMindul);
-    putCmd(map, commands, basicMindulMendul);
-    putCmd(map, commands, basicNaga);
-    putCmd(map, commands, basicSuggestion);
-    putCmd(map, commands, basicTarot);
-    putCmd(map, commands, basicTime);
+  //basic
+  putCmd(map, commands, basicAngry);
+  putCmd(map, commands, basicDate);
+  putCmd(map, commands, basicDev);
+  putCmd(map, commands, basicDice);
+  putCmd(map, commands, basicGongji);
+  putCmd(map, commands, basicHelp);
+  putCmd(map, commands, basicMendul);
+  putCmd(map, commands, basicMindul);
+  putCmd(map, commands, basicMindulMendul);
+  putCmd(map, commands, basicNaga);
+  putCmd(map, commands, basicSuggestion);
+  putCmd(map, commands, basicTarot);
+  putCmd(map, commands, basicTime);
 
-    //music
-    /*
+  //music
+  /*
     putCmd(map, commands, musicEmpty);
     putCmd(map, commands, musicExecute);
     putCmd(map, commands, musicHelp);
