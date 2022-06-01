@@ -1,6 +1,6 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicTime: cmd = {
+export const basicTime: CMD = {
   name: `시간`,
   cmd: ['시간', 'ㅅㄱ'],
   type: 'basic',

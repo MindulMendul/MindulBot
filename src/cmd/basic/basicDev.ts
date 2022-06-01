@@ -1,6 +1,6 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicDev: cmd = {
+export const basicDev: CMD = {
   name: `개발`,
   cmd: ['개발', 'ㄱㅂ', '개발일정', 'ㄱㅂㅇㅈ', 'dev'],
   type: 'basic',

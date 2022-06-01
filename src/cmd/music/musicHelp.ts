@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicHelp: cmd = {
   name: '노래도움말',

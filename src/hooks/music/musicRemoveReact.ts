@@ -1,12 +1,14 @@
-export const musicRemoveReact = async(msg: any, args: any, connection: any) => {
+import { Message } from "discord.js";
+
+export const musicRemoveReact = async(msg: Message, args: any, connection: any) => {
     const correctArr = ['네', '어', 'ㅇㅋ', 'ㅇㅇ', 'ㅇ', 'd', 'D', 'y', 'Y', '알았어', 'dz', 'dd', '얍', '0'];
 
     //콜렉터 부분
-    const filter = (message: { author: { bot: any; id: any } }) => {
+    const filter = (message: Message) => {
       return !message.author.bot && message.author.id === msg.author.id;
     };
     const collector = msg.channel.createMessageCollector({ filter, max: 1, time: 7000 });
-    collector.on('collect', async (msg: { content: string; channel: { send: (arg0: string) => void } }) => {
+    collector.on('collect', async (msg: Message) => {
       if (correctArr.includes(msg.content)) {
         //긍정
         args

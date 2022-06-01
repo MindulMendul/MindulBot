@@ -1,8 +1,8 @@
 import { MessageActionRow, MessageButton } from 'discord.js';
 import { script } from '../../assets/tarot/TarotList';
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicTarot: cmd = {
+export const basicTarot: CMD = {
   name: `타로`,
   cmd: ['타로', 'ㅌㄹ', '운세', '오늘의운세'],
   type: 'basic',

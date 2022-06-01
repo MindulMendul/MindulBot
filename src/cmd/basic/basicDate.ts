@@ -1,6 +1,6 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicDate: cmd = {
+export const basicDate: CMD = {
   name: `날짜`,
   cmd: ['날짜', 'skfWk', 'ㄴㅉ', 'sW'],
   type: 'basic',

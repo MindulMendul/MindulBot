@@ -1,8 +1,8 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 import { bot } from '../../../bot';
-import { Guild, GuildBasedChannel, TextChannel } from 'discord.js';
+import { Guild, TextChannel } from 'discord.js';
 
-export const basicGongji: cmd = {
+export const basicGongji: CMD = {
   name: `공지`,
   cmd: ['공지'],
   type: 'basic',

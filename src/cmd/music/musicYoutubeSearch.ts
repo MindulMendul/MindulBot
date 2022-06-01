@@ -1,6 +1,6 @@
 import { search } from 'play-dl';
-import { effectiveArr } from './../../func/effectiveArr';
-import { cmd } from '../../type';
+import { effectiveArr } from './../../hooks/app/effectiveArr';
+import { cmd } from '../../types/type';
 
 export const musicYoutubeSearch: cmd = {
   name: '검색',

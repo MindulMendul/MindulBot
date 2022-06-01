@@ -1,22 +1,34 @@
-import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../types/type';
+import { CMD } from '../../types/type';
+import { musicCollection } from '../../../bot'
+import { GuildMember } from 'discord.js';
 
-export const musicEmpty: cmd = {
+export const musicEmpty: CMD = {
   name: '비우기',
   cmd: ['비우기', 'ㅂㅇㄱ'],
   type: 'music',
   permission: [],
   async execute(msg) {
-    if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
+    const guildId = msg.guildId as string;
+    const musicEntity = musicCollection.get(guildId);
+    const msgMember = msg.member as GuildMember;
 
-    const connection = getVoiceConnection(msg.guild.id);
-    if (!connection) return msg.channel.send('재생목록에 노래가 없어요!');
+    if (musicEntity == undefined)
+      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (msg.member.voice.channelId != connection.joinConfig.channelId)
+    if (!msgMember.voice.channel)
+      return msg.channel.send('보이스채널에서 해주세요!');
+
+    const connection = musicEntity.connection;
+    if (!connection)
+      return msg.channel.send('재생목록에 노래가 없어요!');
+
+    if (msgMember.voice.channelId != connection.joinConfig.channelId)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-    connection.subscription.songs = [];
-    connection.subscription.player.stop();
-    connection.subscription.option.skip = true;
+    musicEntity.songs = [];
+    musicEntity.subscription.player.stop();
+    musicEntity.option.skip = true;
+    
+    musicCollection.set(guildId, musicEntity);
   }
 };
