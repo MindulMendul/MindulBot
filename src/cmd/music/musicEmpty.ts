@@ -1,5 +1,5 @@
 import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicEmpty: cmd = {
   name: '비우기',

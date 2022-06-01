@@ -5,7 +5,7 @@ export const musicHelp: cmd = {
   name: '노래도움말',
   cmd: ['노래도움말', '노래명령어', 'ㄴㄹㄷㅇㅁ', 'ㄴㄻㄹㅇ', 'ㄴㄹㅁㄹㅇ'],
   type: 'music',
-  permission: [''],
+  permission: [],
   execute(msg) {
     //return msg.channel.send("노래 명령어는 당분간 사용이 어렵습니다.");
     const helpembed: any = {

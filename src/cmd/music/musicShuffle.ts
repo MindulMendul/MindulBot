@@ -5,7 +5,7 @@ export const musicShuffle: cmd = {
   name: '셔플',
   cmd: ['셔플', 'ㅅㅍ', 'shuffle'],
   type: 'music',
-  permission: [''],
+  permission: [],
   //shuffle 함수
   async execute(msg) {
     if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');

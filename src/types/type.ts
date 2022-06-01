@@ -1,4 +1,4 @@
-import { Message, PermissionResolvable } from 'discord.js';
+import { Message, PermissionResolvable, TextChannel } from 'discord.js';
 
 export interface cmd {
   name: string;
