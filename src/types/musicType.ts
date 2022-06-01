@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   CacheType,
   Guild,
@@ -33,3 +34,29 @@ export interface musicEntity {
   songQueue: AudioResource<metadata>[];
   option: musicOption;
 }
+=======
+import { TextChannel, VoiceBasedChannel } from 'discord.js';
+import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
+import { YouTubeStream } from 'play-dl';
+
+
+export interface musicOption {
+	volume: number, // 실제로 쓰이는 값이 아니라 mute용 임시변수
+	volumeMagnification: number,// 1/n 배 되는 거라 커질 수록 소리가 작아짐
+	mute: boolean,
+	loop: boolean,
+	skip: boolean,
+}
+
+export interface musicEntity {
+	guild: string
+	voiceChannel: VoiceBasedChannel
+	textChannel: TextChannel
+	playStream: YouTubeStream
+	connection: VoiceConnection
+	subscription: PlayerSubscription
+	audioPlayer: AudioPlayer
+	songs: Array<AudioResource<{ title: string; url: string; }>>
+	option: musicOption
+}
+>>>>>>> 92fc5a7c (music 부분 고치는 중)

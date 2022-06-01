@@ -1,7 +1,11 @@
 import moment from 'moment';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { shuffle } from '../hooks/system/shuffle';
+=======
+import { shuffle } from '../hooks/app/shuffle';
+>>>>>>> 92fc5a7c (music 부분 고치는 중)
 import { script } from '../assets/tarot/TarotList';
 
 export const alarmTarot = () => {

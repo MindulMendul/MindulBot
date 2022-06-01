@@ -6,7 +6,7 @@ import { GuildMember, TextChannel } from 'discord.js';
 export const musicEmpty: CMD = {
 =======
 import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicEmpty: cmd = {
 >>>>>>> 05f2a6cb (pretty한 코드 적용~)

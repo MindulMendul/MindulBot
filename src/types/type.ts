@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Message, PermissionResolvable } from 'discord.js';
 
 export interface CMD {
@@ -9,6 +10,19 @@ export interface CMD {
 }
 
 export type Embed = {
+=======
+import { Message, PermissionResolvable, TextChannel } from 'discord.js';
+
+export interface cmd {
+  name: string;
+  cmd: Array<string>;
+  type: string;
+  permission: Array<PermissionResolvable>;
+  execute: (arg0: Message, arg1?: Array<string>) => Promise<void | string | Message>;
+}
+
+export interface embed {
+>>>>>>> 92fc5a7c (music 부분 고치는 중)
   color: number;
   author: {
     name: string;

@@ -43,7 +43,7 @@ export const musicShow: cmd = {
   name: '큐',
   cmd: ['큐', '목록', '노래목록'],
   type: 'music',
-  permission: [''],
+  permission: [],
   async execute(msg) {
     if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 

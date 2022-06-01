@@ -43,14 +43,15 @@ export const musicRemove: CMD = {
     musicRemoveReact(guildId, msg.author.id, argsArr);
 =======
 import { getVoiceConnection } from '@discordjs/voice';
-import { effectiveArr } from './../../func/effectiveArr';
-import { cmd } from '../../type';
+import { effectiveArr } from './../../hooks/app/effectiveArr';
+import { cmd } from '../../types/type';
+import { musicRemoveReact } from '../../hooks/music/musicRemoveReact';
 
 export const musicRemove: cmd = {
   name: '제거',
   cmd: ['제거', '삭제', 'ㅈㄱ', 'ㅅㅈ'],
   type: 'music',
-  permission: [''],
+  permission: [],
   //remove 함수
   async execute(msg, args) {
     if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
@@ -71,6 +72,7 @@ export const musicRemove: cmd = {
     tempStr += '7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
     await msg.channel.send(tempStr);
 
+<<<<<<< HEAD
     this.react(msg, argsArr, connection);
   },
   async react(msg: any, args: any, connection: any) {
@@ -101,5 +103,8 @@ export const musicRemove: cmd = {
       if (!collected.first()) msg.channel.send('대답이 따로 없으니까 그냥 내비둘게요~');
     });
 >>>>>>> 05f2a6cb (pretty한 코드 적용~)
+=======
+    musicRemoveReact(msg, argsArr, connection);
+>>>>>>> 92fc5a7c (music 부분 고치는 중)
   }
 };
