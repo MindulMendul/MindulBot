@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CMD } from '../../types/type';
 
 export const basicDev: CMD = {
@@ -56,8 +57,11 @@ import { cmd } from "../../type";
 =======
 import { cmd } from '../../type';
 >>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
+=======
+import { CMD } from '../../types/type';
+>>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
-export const basicDev: cmd = {
+export const basicDev: CMD = {
   name: `개발`,
   cmd: ['개발', 'ㄱㅂ', '개발일정', 'ㄱㅂㅇㅈ', 'dev'],
   type: 'basic',

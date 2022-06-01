@@ -37,7 +37,7 @@ export const musicShow: CMD = {
     return textChannel.send({ embeds: [embedQueue] });
 =======
 import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicShow: cmd = {
   name: '큐',

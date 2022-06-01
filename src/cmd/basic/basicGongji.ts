@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 import { CMD } from '../../types/type';
 import { bot } from '../../../bot';
 import { Guild, TextChannel } from 'discord.js';

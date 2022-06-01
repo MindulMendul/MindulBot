@@ -1,5 +1,6 @@
 import { search } from 'play-dl';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { effectiveArr } from './../../hooks/system/effectiveArr';
 import { CMD } from '../../types/type';
 import { GuildMember, Message, TextChannel, VoiceChannel } from 'discord.js';
@@ -12,6 +13,10 @@ export const musicYoutubeSearch: CMD = {
 =======
 import { effectiveArr } from './../../func/effectiveArr';
 import { cmd } from '../../type';
+=======
+import { effectiveArr } from './../../hooks/app/effectiveArr';
+import { cmd } from '../../types/type';
+>>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
 export const musicYoutubeSearch: cmd = {
 >>>>>>> 05f2a6cb (pretty한 코드 적용~)

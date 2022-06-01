@@ -28,7 +28,7 @@ export const musicShuffle: CMD = {
     musicShow.execute(msg, []);
 =======
 import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicShuffle: cmd = {
   name: '셔플',

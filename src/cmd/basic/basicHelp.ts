@@ -1,6 +1,7 @@
 import moment from 'moment';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CMD } from '../../types/type';
 
 export const basicHelp: CMD = {
@@ -134,6 +135,11 @@ export const basicHelp: cmd = {
         return msg.channel.send({ embeds: [helpembed] });
     }
 =======
+=======
+import { CMD } from '../../types/type';
+
+export const basicHelp: CMD = {
+>>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
   name: `도움말`,
   cmd: ['도움말', 'ㄷㅇㅁ', 'help'],
   type: 'basic',

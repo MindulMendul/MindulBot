@@ -49,9 +49,9 @@ export const basicSuggestion: cmd = {
 =======
 import { Guild, TextChannel, User } from 'discord.js';
 import { bot } from '../../../bot';
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicSuggestion: cmd = {
+export const basicSuggestion: CMD = {
   name: `건의`,
   cmd: ['건의'],
   type: 'basic',

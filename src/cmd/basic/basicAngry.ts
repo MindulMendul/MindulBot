@@ -1,6 +1,6 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicAngry: cmd = {
+export const basicAngry: CMD = {
   name: `야`,
   cmd: ['야', '야!', '민둘!', 'ㅡㅡ', '뭐하냐', '제대로 말해라'],
   type: 'basic',

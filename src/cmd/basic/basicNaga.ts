@@ -1,8 +1,8 @@
 import { Guild, TextChannel } from 'discord.js';
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 let nagaStance = 0;
 
-export const basicNaga: cmd = {
+export const basicNaga: CMD = {
   name: `나가`,
   cmd: ['나가', 'skrk', '낙아', 'ㄴ가ㅏ', 'ㄴㄱ', '나가라고'],
   type: 'basic',
