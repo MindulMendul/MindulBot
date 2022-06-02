@@ -63,25 +63,29 @@ https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 해당 링크에 들어가서 원하는 디스코드 방에 초대할 수 있습니다. 
 
 2. ### 명령어
-명령어 전에는 "한글 'ㅏ' 를 입력하세요! 
+명령어를 입력하면 그에 해당하는 명령을 수행하는 형식입니다. 명령어는 각각 "도움말" 명령어와 "노래도움말" 명령어를 통해서 확인할 수 있습니다.
+명령어 전에는 "한글 'ㅏ' 를 입력하세요! (ㅏ와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요.
+명령어를 입력해도 아무런 반응이 없는 것은 그냥 민둘봇이 생각하느라 그런 것 뿐입니다. 명령어를 인식하지 못했으면 인식하지 못했다고 말을 할 거에요!
 
 ## 개발환경
 주 개발 언어 : TypeScript
+
 사용하는 모듈
-    discord.js
-    axios
-    cheerio
-    dotenv
-    libsodium-wrappers
-    moment
-    moment-timezone
-    node-gyp
-    node-pre-gyp
-    nodemon
-    play-dl
-    prism-media
+1. discord.js
+2. axios
+3. cheerio
+4. dotenv
+5. libsodium-wrappers
+6. moment
+7. moment-timezone
+8. node-gyp
+9. node-pre-gyp
+10. nodemon
+11. play-dl
+12. prism-media
 
 
+<<<<<<< HEAD
 ## 명령어
 명령어는 이런 것들이 있어요.
 명령어 전에는 "한글 'ㅏ' 를 입력하세요! ㅏ와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. 노래명령어를 원하신다면 따로 "ㅏ노래도움말" 명령어로 제공하고 있으니 참고 바랍니다^^
@@ -144,3 +148,5 @@ https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 =======
 
 >>>>>>> 207ff1b4 (Update README.md)
+=======
+>>>>>>> bc9c9e50 (Update README.md)
