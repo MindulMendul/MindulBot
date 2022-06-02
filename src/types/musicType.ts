@@ -19,6 +19,7 @@ export interface musicEntity {
 	connection: VoiceConnection
 	subscription: PlayerSubscription
 	audioPlayer: AudioPlayer
+	song: AudioResource<{ title: string; url: string; }>
 	songs: Array<AudioResource<{ title: string; url: string; }>>
 	option: musicOption
 }
