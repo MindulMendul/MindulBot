@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
   const arrTemp = arr
     .split(' ')
@@ -21,3 +22,20 @@ export const effectiveArr = async (arr: string, tokenizer: any, min: number, max
   return [...new Set(arrTemp)]; //중복제거
 }
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+export const effectiveArr = async (arr: string, tokenizer: any, min: number, max: number): Promise<Array<number>> => {
+  const arrTemp = arr
+    .split(tokenizer)
+    .filter((e) => {
+      return e != '';
+    })
+    .map((e) => {
+      return Number(e);
+    })
+    .filter((e) => {
+      return e >= min || e <= max;
+    });
+
+  return [...new Set(arrTemp)]; //중복제거
+};
+>>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))

@@ -38,18 +38,16 @@ export const musicSkip: CMD = {
     const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
 
-    if (musicEntity == undefined)
-      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
-    
-    if (!msgMember.voice.channel)
-      return msg.channel.send('보이스채널에서 해주세요!');
+    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (!musicEntity.connection)
-      return msg.channel.send('재생목록에 노래가 없어요!');
+    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
+
+    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
 
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     connection.subscription.player.stop();
     connection.subscription.option.skip = true;
@@ -58,5 +56,9 @@ export const musicSkip: CMD = {
       musicEntity.subscription.player.stop();
       musicEntity.option.skip = true;
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+    musicEntity.subscription.player.stop();
+    musicEntity.option.skip = true;
+>>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
   }
 };

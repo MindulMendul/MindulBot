@@ -13,7 +13,7 @@ export const musicEmpty: cmd = {
 >>>>>>> 05f2a6cb (pretty한 코드 적용~)
 =======
 import { CMD } from '../../types/type';
-import { musicCollection } from '../../../bot'
+import { musicCollection } from '../../../bot';
 import { GuildMember } from 'discord.js';
 
 export const musicEmpty: CMD = {
@@ -49,18 +49,16 @@ export const musicEmpty: CMD = {
     const msgMember = msg.member as GuildMember;
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
-    if (musicEntity == undefined)
-      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
+    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (!msgMember.voice.channel)
-      return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 
-    if (!musicEntity.connection)
-      return msg.channel.send('재생목록에 노래가 없어요!');
+    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
 
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     connection.subscription.songs = [];
     connection.subscription.player.stop();
@@ -73,5 +71,8 @@ export const musicEmpty: CMD = {
     
     musicCollection.set(guildId, musicEntity);
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
+=======
+    musicEntity.subscription.player.stop();
+>>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
   }
 };
