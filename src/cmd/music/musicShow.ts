@@ -12,11 +12,14 @@ export const musicShow: CMD = {
     const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
 
-    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
+    if (musicEntity == undefined)
+      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel)
+      return msg.channel.send('보이스채널에서 해주세요!');
 
-    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
+    if (!musicEntity.connection)
+      return msg.channel.send('재생목록에 노래가 없어요!');
 
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
@@ -24,7 +27,7 @@ export const musicShow: CMD = {
     const fields = musicEntity.songs.map((e, i) => {
       return {
         name: '\u200b',
-        value: `${i}. ${e.metadata.title}`
+        value: `${i+1}. ${e.metadata.title}`
       };
     });
 

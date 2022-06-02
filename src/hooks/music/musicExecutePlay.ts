@@ -129,29 +129,33 @@ export const musicExecutePlay = async (
         case '🔉':
           if (iMember.voice.channelId != voiceChannel.id) {
             msg.channel.send('같은 보이스채널에서 해주세요!');
-            //return await i.update(sendedContent); //버튼 업데이트
+            return await i.update(sendedContent); //버튼 업데이트
           }
 
-          //if (option.mute) return msgSungok.channel.send("음소거 중이에요.");
-          volume.setVolume(Math.max(volume.volume - 1 / (10 * volumeMagnification), 0));
-          msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
+          if (option.mute) msgSungok.channel.send("음소거 중이에요.");
+          else {
+            volume.setVolume(Math.max(volume.volume - 1 / (10 * volumeMagnification), 0));
+            msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
+          }
           break;
 
         case '🔊':
           if (iMember.voice.channelId != voiceChannel.id) {
             msg.channel.send('같은 보이스채널에서 해주세요!');
-            //return await i.update(sendedContent); //버튼 업데이트
+            return await i.update(sendedContent); //버튼 업데이트
           }
 
-          //if (option.mute) return msgSungok.channel.send("음소거 중이에요.");
-          volume.setVolume(Math.min(volume.volume + 1 / (10 * volumeMagnification), 1 / volumeMagnification));
-          msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
+          if (option.mute) msgSungok.channel.send("음소거 중이에요.");
+          else {
+            volume.setVolume(Math.min(volume.volume + 1 / (10 * volumeMagnification), 1 / volumeMagnification));
+            msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
+          }
           break;
 
         case '⏯':
           if (iMember.voice.channelId != voiceChannel.id) {
             msg.channel.send('같은 보이스채널에서 해주세요!');
-            //return await i.update(sendedContent); //버튼 업데이트
+            return await i.update(sendedContent); //버튼 업데이트
           }
 
           //style 부분은 버튼 on off 시각화를 위함
@@ -188,7 +192,7 @@ export const musicExecutePlay = async (
         case '🔁':
           if (iMember.voice.channelId != voiceChannel.id) {
             msg.channel.send('같은 보이스채널에서 해주세요!');
-            //return await i.update(sendedContent); //버튼 업데이트
+            return await i.update(sendedContent); //버튼 업데이트
           }
 
           //style 부분은 버튼 on off 시각화를 위함
@@ -211,13 +215,16 @@ export const musicExecutePlay = async (
             buttonSecond.components.splice(1, 1, iComponent);
             buttonSecond.setComponents(buttonSecond.components);
           }
-          //require("./musicLoop").execute(i);//루프기능은 다른 곳에서 구현해둔 거 가져옴
+
+          option.loop = !option.loop;
+          if (option.loop) msg.channel.send('큐 반복 기능이 활성화되었습니다~');
+          else msg.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
           break;
 
         case '🔇':
           if (iMember.voice.channelId != voiceChannel.id) {
             msg.channel.send('같은 보이스채널에서 해주세요!');
-            //return await i.update(sendedContent); //버튼 업데이트
+            return await i.update(sendedContent); //버튼 업데이트
           }
 
           //style 부분은 버튼 on off 시각화를 위함
