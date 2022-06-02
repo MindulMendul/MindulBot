@@ -38,7 +38,7 @@ import { createAudioResource } from '@discordjs/voice';
 import { CMD } from '../../types/type';
 import { musicExecutePlay } from '../../hooks/music/musicExecutePlay';
 import { musicCollection } from '../../../bot';
-import { GuildMember, TextChannel } from 'discord.js';
+import { Guild, GuildMember, TextChannel } from 'discord.js';
 import { musicEntity } from '../../types/musicType';
 import { VolumeTransformer } from 'prism-media';
 
@@ -275,7 +275,7 @@ export const musicExecute: CMD = {
         volume.setVolume(0.5 / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
         const entity: musicEntity = {
-          guild: guildId,
+          guild: msg.guild as Guild,
           voiceChannel: voiceChannel,
           textChannel: textChannel,
           playStream: playStream,
@@ -301,7 +301,6 @@ export const musicExecute: CMD = {
         const volume = resource.volume as VolumeTransformer;
         volume.setVolume((0.5 / option.volumeMagnification) * Number(!option.mute)); //노래 사운드
 
-        musicCollection.set(guildId, musicEntity);
         msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
       }
     }

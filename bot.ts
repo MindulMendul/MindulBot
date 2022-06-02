@@ -184,7 +184,7 @@ bot.on('messageCreate', async (msg) => {
   const channel = msg.channel;
   const guild = msg.guild as Guild;
 
-  const getCmd = commands.get(command) as CMD;
+  const getCmd = commands.get(CmdtoNameMap.get(command) as string) as CMD;
   if (!getCmd) {
     //명령어 인식 못하는 거 거름
     channel.send('명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!');

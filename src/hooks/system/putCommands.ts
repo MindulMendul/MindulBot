@@ -2,10 +2,15 @@ import { Collection } from 'discord.js';
 import { CMD } from '../../types/type';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
 =======
+=======
+import { test } from '../../cmd/test';
+
+>>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
 import { basicAngry } from '../../cmd/basic/basicAngry';
 import { basicDate } from '../../cmd/basic/basicDate';
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
@@ -87,6 +92,9 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
     CmdtoName(map, cmdComponent);
     commands.set(cmdComponent.name, cmdComponent);
   };
+
+  //test
+  putCmd(map, commands, test);
 
   //basic
   putCmd(map, commands, basicAngry);

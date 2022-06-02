@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {
   CacheType,
   Guild,
@@ -36,6 +37,9 @@ export interface musicEntity {
 }
 =======
 import { TextChannel, VoiceBasedChannel } from 'discord.js';
+=======
+import { Guild, TextChannel, VoiceBasedChannel } from 'discord.js';
+>>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -48,6 +52,7 @@ export interface musicOption {
 }
 
 export interface musicEntity {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	guild: string
 	voiceChannel: VoiceBasedChannel
@@ -63,6 +68,9 @@ export interface musicEntity {
 >>>>>>> 92fc5a7c (music 부분 고치는 중)
 =======
   guild: string;
+=======
+  guild: Guild;
+>>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
   playStream: YouTubeStream;

@@ -78,14 +78,16 @@ export const musicYoutubeSearch: CMD = {
 =======
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
 
-    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel)
+      return msg.channel.send('보이스채널에서 해주세요!');
 
     if (musicEntity != undefined) {
       if (msgMember.voice.channel.id != musicEntity.voiceChannel.id)
         return msg.channel.send('같은 보이스채널에서 해주세요!');
     }
 
-    if (args.length == 0) return msg.channel.send('검색어를 입력해주세요!');
+    if (args.length == 0)
+      return msg.channel.send('검색어를 입력해주세요!');
 
     const searchStr = args.join(' ');
 
@@ -95,7 +97,8 @@ export const musicYoutubeSearch: CMD = {
 >>>>>>> 05f2a6cb (pretty한 코드 적용~)
 =======
 
-    if (items.length == 0) return msg.channel.send('검색결과가 없네요. 다른 키워드로 다시 시도해보세요!');
+    if (items.length == 0)
+      return msg.channel.send('검색결과가 없네요. 다른 키워드로 다시 시도해보세요!');
 
     //임베드 만들기
     const fields = items.map((e, i) => {
