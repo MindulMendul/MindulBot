@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
   const arrTemp = arr
     .split(' ')
@@ -7,3 +8,16 @@ export const effectiveArr = (arr: string, min: number, max: number): Array<numbe
 
   return [...new Set(arrTemp)]; //중복제거
 };
+=======
+export const effectiveArr = async (arr: string, tokenizer: any, min: number, max: number):Promise<Array<number>> => {
+  const arrTemp = arr.split(tokenizer).filter((e) => {
+    return (e != '');
+  }).map((e)=>{
+    return Number(e);
+  }).filter((e)=>{
+    return (e>=min)||(e<=max);
+  });
+
+  return [...new Set(arrTemp)]; //중복제거
+}
+>>>>>>> 0ec61286 (노래봇 버그 고침 (최초))

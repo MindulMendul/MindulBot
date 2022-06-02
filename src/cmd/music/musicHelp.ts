@@ -1,6 +1,7 @@
 import moment from 'moment';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CMD } from '../../types/type';
 
 export const musicHelp: CMD = {
@@ -77,8 +78,11 @@ import { cmd } from '../../type';
 =======
 import { cmd } from '../../types/type';
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
+=======
+import { CMD } from '../../types/type';
+>>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 
-export const musicHelp: cmd = {
+export const musicHelp: CMD = {
   name: '노래도움말',
   cmd: ['노래도움말', '노래명령어', 'ㄴㄹㄷㅇㅁ', 'ㄴㄻㄹㅇ', 'ㄴㄹㅁㄹㅇ'],
   type: 'music',

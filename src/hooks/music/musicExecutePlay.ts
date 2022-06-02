@@ -4,10 +4,12 @@ import { MessageActionRow, MessageButton } from "discord.js";
 import { stream } from "play-dl";
 import { musicEntity } from "../../types/musicType";
 import { VolumeTransformer } from "prism-media";
+import { musicSkip } from "../../cmd/music/musicSkip";
+import { musicEmpty } from "../../cmd/music/musicEmpty";
+import { musicShuffle } from "../../cmd/music/musicShuffle";
 
 export const musicExecutePlay = async (msg: Message, musicEntity: musicEntity, resource: AudioResource<{ title: string; url: string; }>) => {
   //기본 함수
-  const subscription = musicEntity.subscription;
   const audioPlayer = musicEntity.audioPlayer;
   const option = musicEntity.option;
   const textChannel = musicEntity.textChannel;
@@ -49,6 +51,7 @@ export const musicExecutePlay = async (msg: Message, musicEntity: musicEntity, r
     }
 
     const nextSong = musicEntity.songs.shift();
+    musicEntity.song = nextSong as AudioResource<{ title: string; url: string; }>;
     if (nextSong) {
       //다음 노래 있으면 틀어주는 코드
       const volume = nextSong.volume as VolumeTransformer;
@@ -100,15 +103,15 @@ export const musicExecutePlay = async (msg: Message, musicEntity: musicEntity, r
     } else {
       switch (i.customId) {
         case "⏩":
-          require("./musicSkip").execute(i);
+          musicSkip.execute(i.message as Message, []);
           break;
 
         case "⏹":
-          require("./musicEmpty").execute(i);
+          musicEmpty.execute(i.message as Message, []);
           break;
 
         case "🔀":
-          require("./musicShuffle").execute(i);
+          musicShuffle.execute(i.message as Message, []);
           break;
 
         case "🔉":

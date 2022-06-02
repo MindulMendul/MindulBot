@@ -55,11 +55,10 @@ export const musicEmpty: CMD = {
     if (!msgMember.voice.channel)
       return msg.channel.send('보이스채널에서 해주세요!');
 
-    const connection = musicEntity.connection;
-    if (!connection)
+    if (!musicEntity.connection)
       return msg.channel.send('재생목록에 노래가 없어요!');
 
-    if (msgMember.voice.channelId != connection.joinConfig.channelId)
+    if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
 <<<<<<< HEAD

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 
@@ -23,11 +24,13 @@ import { video_basic_info, stream, search, YouTubeStream } from 'play-dl';
 =======
 import { video_basic_info, stream, search, YouTubeStream, YouTubeVideo } from 'play-dl';
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
+=======
+import { video_basic_info, stream, search, YouTubeStream } from 'play-dl';
+>>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 
-import { AudioResource, DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
+import { DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { joinVoiceChannel } from '@discordjs/voice';
-import { getVoiceConnection } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 >>>>>>> 92fc5a7c (music 부분 고치는 중)
 import { createAudioResource } from '@discordjs/voice';
@@ -273,6 +276,7 @@ export const musicExecute: CMD = {
           connection: connection,
           subscription: subscription,
           audioPlayer: audioPlayer,
+          song: resource,
           songs: [],
           option: option
         }
