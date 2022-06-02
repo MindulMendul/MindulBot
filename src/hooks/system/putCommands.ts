@@ -18,7 +18,6 @@ import { basicTime } from '../../cmd/basic/basicTime';
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicExecute } from '../../cmd/music/musicExecute';
 import { musicHelp } from '../../cmd/music/musicHelp';
-import { musicLoop } from '../../cmd/music/musicLoop';
 import { musicRemove } from '../../cmd/music/musicRemove';
 import { musicShow } from '../../cmd/music/musicShow';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
@@ -56,7 +55,6 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   putCmd(map, commands, musicEmpty);
   putCmd(map, commands, musicExecute);
   putCmd(map, commands, musicHelp);
-  putCmd(map, commands, musicLoop);
   putCmd(map, commands, musicRemove);
   putCmd(map, commands, musicShow);
   putCmd(map, commands, musicShuffle);
