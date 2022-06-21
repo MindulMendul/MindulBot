@@ -21,10 +21,6 @@ export const musicExecutePlay = async (
   audioPlayer.play(resource);
 
   //플레이어 설정코드
-  audioPlayer.once(AudioPlayerStatus.Playing, async () => {
-    console.log('The audio player has started playing!');
-  });
-
   audioPlayer.on('error', (error) => {
     musicEntity.textChannel.send(
       `에러났어요 ㅠㅠ (${error.message})
@@ -34,10 +30,7 @@ export const musicExecutePlay = async (
     audioPlayer.stop();
   });
 
-  audioPlayer.once(AudioPlayerStatus.Idle, async () => {
-    //틀었던 노래가 끝났을 때
-    console.log(`노래끝`);
-
+  audioPlayer.once(AudioPlayerStatus.Idle, async () => {//틀었던 노래가 끝났을 때
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip) {
       const meta = resource.metadata;

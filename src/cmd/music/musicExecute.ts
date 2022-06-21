@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 
@@ -27,6 +28,9 @@ import { video_basic_info, stream, search, YouTubeStream, YouTubeVideo } from 'p
 =======
 import { video_basic_info, stream, search, YouTubeStream } from 'play-dl';
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+import { video_basic_info, stream, search, YouTubeStream, attachListeners, yt_validate } from 'play-dl';
+>>>>>>> 8a301808 (노래 검색 기능 수정)
 
 import { DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
@@ -139,11 +143,12 @@ export const musicExecute: CMD = {
 
     //노래 검색부분
     const textChannel = msg.channel as TextChannel;
-    const searchStr = args.join(' ');
-    if (searchStr == '')
+    const argJoin = args.join(' ');
+    if (argJoin == '')
       //빈 항목 체크
       return textChannel.send('어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ');
 
+<<<<<<< HEAD
     const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -222,6 +227,11 @@ export const musicExecute: CMD = {
 =======
     if (searched == undefined) { // 검색이 안 된 경우
 =======
+=======
+    const searchStr = (argJoin.includes('https://www.youtube.com/watch?v='))?
+    argJoin.slice(0, 43): argJoin;
+    const searched = (await search(searchStr, { source: { youtube: 'video' }, limit:1})).pop();
+>>>>>>> 8a301808 (노래 검색 기능 수정)
     if (searched == undefined) {
       // 검색이 안 된 경우
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
@@ -262,6 +272,8 @@ export const musicExecute: CMD = {
             noSubscriber: NoSubscriberBehavior.Pause
           }
         });
+
+        attachListeners(audioPlayer, playStream);
 
         const subscription = connection.subscribe(audioPlayer) as PlayerSubscription;
         const option = {
