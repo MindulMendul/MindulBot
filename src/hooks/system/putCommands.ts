@@ -3,12 +3,17 @@ import { CMD } from '../../types/type';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
 =======
 =======
 import { test } from '../../cmd/test';
+=======
+import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot'
+import { test } from '../../cmd/admin/test';
+>>>>>>> cd3e7f95 (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
 
 >>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
 import { basicAngry } from '../../cmd/basic/basicAngry';
@@ -50,15 +55,20 @@ import { musicYoutubeSearch } from '../../cmd/music/musicYoutubeSearch';
 
 export const putCommands = (map: Collection<string, string>, commands: Collection<string, CMD>) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const CmdtoName = (cmdComponent: CMD) => {
 =======
   const CmdtoName = (map: Collection<string, string>, cmdComponent: CMD) => {
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+  const CmdtoName = (cmdComponent: CMD) => {
+>>>>>>> cd3e7f95 (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
     const cmdList = cmdComponent.cmd;
     const name = cmdComponent.name;
     cmdList.forEach((e: string) => map.set(e, name));
   };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   const putCmd = (cmdComponent: CMD) => {
     CmdtoName(cmdComponent);
@@ -90,28 +100,34 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
 =======
   const putCmd = (map: Collection<string, string>, commands: Collection<string, CMD>, cmdComponent: CMD) => {
     CmdtoName(map, cmdComponent);
+=======
+  const putCmd = (cmdComponent: CMD) => {
+    CmdtoName(cmdComponent);
+>>>>>>> cd3e7f95 (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
     commands.set(cmdComponent.name, cmdComponent);
   };
 
-  //test
-  putCmd(map, commands, test);
+  //admin
+  putCmd(adminHeapSnapshot);
+  putCmd(test);
 
   //basic
-  putCmd(map, commands, basicAngry);
-  putCmd(map, commands, basicDate);
-  putCmd(map, commands, basicDev);
-  putCmd(map, commands, basicDice);
-  putCmd(map, commands, basicGongji);
-  putCmd(map, commands, basicHelp);
-  putCmd(map, commands, basicMendul);
-  putCmd(map, commands, basicMindul);
-  putCmd(map, commands, basicMindulMendul);
-  putCmd(map, commands, basicNaga);
-  putCmd(map, commands, basicSuggestion);
-  putCmd(map, commands, basicTarot);
-  putCmd(map, commands, basicTime);
+  putCmd(basicAngry);
+  putCmd(basicDate);
+  putCmd(basicDev);
+  putCmd(basicDice);
+  putCmd(basicGongji);
+  putCmd(basicHelp);
+  putCmd(basicMendul);
+  putCmd(basicMindul);
+  putCmd(basicMindulMendul);
+  putCmd(basicNaga);
+  putCmd(basicSuggestion);
+  putCmd(basicTarot);
+  putCmd(basicTime);
 
   //music
+<<<<<<< HEAD
   putCmd(map, commands, musicEmpty);
   putCmd(map, commands, musicExecute);
   putCmd(map, commands, musicHelp);
@@ -121,4 +137,14 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   putCmd(map, commands, musicSkip);
   putCmd(map, commands, musicYoutubeSearch);
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+  putCmd(musicEmpty);
+  putCmd(musicExecute);
+  putCmd(musicHelp);
+  putCmd(musicRemove);
+  putCmd(musicShow);
+  putCmd(musicShuffle);
+  putCmd(musicSkip);
+  putCmd(musicYoutubeSearch);
+>>>>>>> cd3e7f95 (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
 };
