@@ -1,7 +1,8 @@
 import { Collection } from 'discord.js';
 import { CMD } from '../../types/type';
 
-import { test } from '../../cmd/test';
+import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot'
+import { test } from '../../cmd/admin/test';
 
 import { basicAngry } from '../../cmd/basic/basicAngry';
 import { basicDate } from '../../cmd/basic/basicDate';
@@ -27,42 +28,43 @@ import { musicSkip } from '../../cmd/music/musicSkip';
 import { musicYoutubeSearch } from '../../cmd/music/musicYoutubeSearch';
 
 export const putCommands = (map: Collection<string, string>, commands: Collection<string, CMD>) => {
-  const CmdtoName = (map: Collection<string, string>, cmdComponent: CMD) => {
+  const CmdtoName = (cmdComponent: CMD) => {
     const cmdList = cmdComponent.cmd;
     const name = cmdComponent.name;
     cmdList.forEach((e: string) => map.set(e, name));
   };
 
-  const putCmd = (map: Collection<string, string>, commands: Collection<string, CMD>, cmdComponent: CMD) => {
-    CmdtoName(map, cmdComponent);
+  const putCmd = (cmdComponent: CMD) => {
+    CmdtoName(cmdComponent);
     commands.set(cmdComponent.name, cmdComponent);
   };
 
-  //test
-  putCmd(map, commands, test);
+  //admin
+  putCmd(adminHeapSnapshot);
+  putCmd(test);
 
   //basic
-  putCmd(map, commands, basicAngry);
-  putCmd(map, commands, basicDate);
-  putCmd(map, commands, basicDev);
-  putCmd(map, commands, basicDice);
-  putCmd(map, commands, basicGongji);
-  putCmd(map, commands, basicHelp);
-  putCmd(map, commands, basicMendul);
-  putCmd(map, commands, basicMindul);
-  putCmd(map, commands, basicMindulMendul);
-  putCmd(map, commands, basicNaga);
-  putCmd(map, commands, basicSuggestion);
-  putCmd(map, commands, basicTarot);
-  putCmd(map, commands, basicTime);
+  putCmd(basicAngry);
+  putCmd(basicDate);
+  putCmd(basicDev);
+  putCmd(basicDice);
+  putCmd(basicGongji);
+  putCmd(basicHelp);
+  putCmd(basicMendul);
+  putCmd(basicMindul);
+  putCmd(basicMindulMendul);
+  putCmd(basicNaga);
+  putCmd(basicSuggestion);
+  putCmd(basicTarot);
+  putCmd(basicTime);
 
   //music
-  putCmd(map, commands, musicEmpty);
-  putCmd(map, commands, musicExecute);
-  putCmd(map, commands, musicHelp);
-  putCmd(map, commands, musicRemove);
-  putCmd(map, commands, musicShow);
-  putCmd(map, commands, musicShuffle);
-  putCmd(map, commands, musicSkip);
-  putCmd(map, commands, musicYoutubeSearch);
+  putCmd(musicEmpty);
+  putCmd(musicExecute);
+  putCmd(musicHelp);
+  putCmd(musicRemove);
+  putCmd(musicShow);
+  putCmd(musicShuffle);
+  putCmd(musicSkip);
+  putCmd(musicYoutubeSearch);
 };
