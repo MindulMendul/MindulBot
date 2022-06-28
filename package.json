@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "prettier": "^2.6.2",
-    "ts-node": "^10.8.0"
+    "ts-node": "^10.8.1"
   }
 }
