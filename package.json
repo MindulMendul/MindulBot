@@ -8,16 +8,12 @@
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
   },
   "dependencies": {
-    "@discordjs/node-pre-gyp": "^0.4.2",
-    "@discordjs/opus": "^0.5.3",
     "@discordjs/voice": "^0.9.0",
-    "@mapbox/node-pre-gyp": "^1.0.9",
     "discord.js": "^13.7.0",
     "dotenv": "^16.0.1",
     "libsodium-wrappers": "^0.7.10",
     "moment": "^2.29.3",
     "moment-timezone": "^0.5.34",
-    "node-gyp": "^9.0.0",
     "nodemon": "^2.0.16",
     "play-dl": "^1.9.4",
     "prism-media": "^1.3.2",
