@@ -149,6 +149,7 @@ export const musicExecute: CMD = {
       return textChannel.send('어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -232,6 +233,10 @@ export const musicExecute: CMD = {
     argJoin.slice(0, 43): argJoin;
     const searched = (await search(searchStr, { source: { youtube: 'video' }, limit:1})).pop();
 >>>>>>> 8a301808 (노래 검색 기능 수정)
+=======
+    const searchStr = argJoin.includes('https://www.youtube.com/watch?v=') ? argJoin.slice(0, 43) : argJoin;
+    const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
+>>>>>>> d8b8e534 (ts-node 관련 버그 해결)
     if (searched == undefined) {
       // 검색이 안 된 경우
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))

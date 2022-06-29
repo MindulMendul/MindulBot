@@ -4,6 +4,7 @@ import { CMD } from '../../types/type';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
@@ -12,6 +13,9 @@ import { CMD } from '../../types/type';
 import { test } from '../../cmd/test';
 =======
 import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot'
+=======
+import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
+>>>>>>> d8b8e534 (ts-node 관련 버그 해결)
 import { test } from '../../cmd/admin/test';
 >>>>>>> cd3e7f95 (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
 

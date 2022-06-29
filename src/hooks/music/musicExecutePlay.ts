@@ -30,7 +30,8 @@ export const musicExecutePlay = async (
     audioPlayer.stop();
   });
 
-  audioPlayer.once(AudioPlayerStatus.Idle, async () => {//틀었던 노래가 끝났을 때
+  audioPlayer.once(AudioPlayerStatus.Idle, async () => {
+    //틀었던 노래가 끝났을 때
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip) {
       const meta = resource.metadata;

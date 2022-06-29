@@ -48,14 +48,11 @@ export const musicShuffle: CMD = {
     const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
 
-    if (musicEntity == undefined)
-      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
+    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (!msgMember.voice.channel)
-      return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 
-    if (!musicEntity.connection)
-      return msg.channel.send('재생목록에 노래가 없어요!');
+    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
 
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
@@ -68,9 +65,12 @@ export const musicShuffle: CMD = {
 =======
     musicShow.execute(msg, []);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 =======
     
 >>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
+=======
+>>>>>>> d8b8e534 (ts-node 관련 버그 해결)
   }
 };
