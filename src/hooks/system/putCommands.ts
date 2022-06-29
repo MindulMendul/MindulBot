@@ -1,7 +1,7 @@
 import { Collection } from 'discord.js';
 import { CMD } from '../../types/type';
 
-import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot'
+import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 import { test } from '../../cmd/admin/test';
 
 import { basicAngry } from '../../cmd/basic/basicAngry';

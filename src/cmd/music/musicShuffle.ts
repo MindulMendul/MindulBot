@@ -15,14 +15,11 @@ export const musicShuffle: CMD = {
     const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
 
-    if (musicEntity == undefined)
-      return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
+    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
-    if (!msgMember.voice.channel)
-      return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 
-    if (!musicEntity.connection)
-      return msg.channel.send('재생목록에 노래가 없어요!');
+    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
 
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
@@ -30,6 +27,5 @@ export const musicShuffle: CMD = {
     shuffle(musicEntity.songs);
     msg.channel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
     musicShow.execute(msg, []);
-    
   }
 };
