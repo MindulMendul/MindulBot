@@ -29,6 +29,7 @@ export const musicRemove: CMD = {
 
     let tempStr = '해당 노래가 맞아요?\n';
     argsArr.forEach((e) => {
+      console.log(musicEntity.songs);
       tempStr += `> **${e + 1}. ${musicEntity.songs[e].metadata.title}**\n`;
     });
     tempStr += '7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
