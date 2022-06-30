@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ecdf2eeb (alarm 잘못 import된 거 삭제)
 import { alarmTarot } from './alarm/alarmTarot';
 
 export const alarm = () => {
