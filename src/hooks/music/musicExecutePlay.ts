@@ -18,6 +18,7 @@ export const musicExecutePlay = async (
   const textChannel = musicEntity.textChannel;
   const connection = musicEntity.connection;
 
+
   audioPlayer.play(resource);
 
   //플레이어 설정코드
@@ -52,7 +53,7 @@ export const musicExecutePlay = async (
     if (nextSong) {
       //다음 노래 있으면 틀어주는 코드
       const volume = nextSong.volume as VolumeTransformer;
-      volume.setVolume(volume.volume * Number(!option.mute));
+      volume.setVolume(option.volume / option.volumeMagnification * Number(!option.mute));
       musicExecutePlay(msg, musicEntity, nextSong);
     } else {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');

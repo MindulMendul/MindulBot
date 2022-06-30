@@ -1,4 +1,5 @@
-import { GuildMember, MessageActionRow, MessageButton } from 'discord.js';
+import { GuildMember } from 'discord.js';
+import { musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 
 export const test: CMD = {
@@ -9,5 +10,8 @@ export const test: CMD = {
   async execute(msg) {
     const msgMember = msg.member as GuildMember;
     if (msgMember.user.id != process.env.OWNER_ID) return;
+
+    const guildId=msg.guildId as string;
+    console.log(musicCollection.get(guildId));
   }
 };
