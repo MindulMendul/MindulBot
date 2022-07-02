@@ -1,4 +1,4 @@
-import { Guild, TextChannel, VoiceBasedChannel } from 'discord.js';
+import { CacheType, Guild, InteractionCollector, MessageComponentInteraction, TextChannel, VoiceBasedChannel } from 'discord.js';
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -14,6 +14,7 @@ export interface musicEntity {
   guild: Guild;
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
+  reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
   playStream: YouTubeStream;
   connection: VoiceConnection;
   subscription: PlayerSubscription;

@@ -1,4 +1,4 @@
-import { video_basic_info, stream, search, YouTubeStream, attachListeners, yt_validate } from 'play-dl';
+import { video_basic_info, stream, search, YouTubeStream, attachListeners } from 'play-dl';
 
 import { DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
@@ -12,6 +12,7 @@ import { musicCollection } from '../../../bot';
 import { Guild, GuildMember, TextChannel } from 'discord.js';
 import { musicEntity } from '../../types/musicType';
 import { VolumeTransformer } from 'prism-media';
+import { musicExecuteReact } from '../../hooks/music/musicExecuteReact';
 
 export const musicExecute: CMD = {
   name: '노래',
@@ -70,6 +71,7 @@ export const musicExecute: CMD = {
           guildId: voiceChannel.guild.id,
           adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
         });
+
         const audioPlayer = createAudioPlayer({
           behaviors: {
             noSubscriber: NoSubscriberBehavior.Pause
@@ -80,7 +82,7 @@ export const musicExecute: CMD = {
 
         const subscription = connection.subscribe(audioPlayer) as PlayerSubscription;
         const option = {
-          volume: 0.5, // 실제로 쓰이는 값이 아니라 mute용 임시변수
+          volume: 0.5, // 0 ~ 1 사이의 값
           volumeMagnification: 6, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
           mute: false,
           loop: false,
@@ -101,13 +103,24 @@ export const musicExecute: CMD = {
           songs: [],
           option: option
         };
-        musicCollection.set(guildId, entity);
 
-        connection.on(VoiceConnectionStatus.Ready, () => {
-          musicExecutePlay(msg, entity, resource); //아래에 있는 play함수 호출
+        //준비가 되면 연결해서 노래를 틀어야지!
+        connection.on(VoiceConnectionStatus.Ready, async () => {
+          const msgSungok = await musicExecutePlay(msg, entity, resource); //아래에 있는 play함수 호출
+          const collector = musicExecuteReact(msgSungok, entity, resource);
+          entity.reactCollector=collector;
+          musicCollection.set(guildId, entity);
         });
-        connection.once(VoiceConnectionStatus.Disconnected, ()=>{
-          musicCollection.delete(msg.guildId as string);
+
+        connection.on(VoiceConnectionStatus.Disconnected, ()=>{
+          const collection=musicCollection.get(guildId);
+          if(collection){ // 안에 살아있는 친구들 다 죽이기
+            collection.audioPlayer.stop();
+            collection.connection.destroy();
+            collection.reactCollector?.stop();
+            collection.subscription.unsubscribe();
+            musicCollection.delete(guildId);
+          }
         });
       } else {
         //플레이어가 존재해서 큐에 넣으면 되는 상황
