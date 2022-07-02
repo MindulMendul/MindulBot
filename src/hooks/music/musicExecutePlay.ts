@@ -4,8 +4,6 @@ import { MessageActionRow, MessageButton } from 'discord.js';
 import { stream } from 'play-dl';
 import { musicEntity } from '../../types/musicType';
 import { VolumeTransformer } from 'prism-media';
-import { musicCollection } from '../../../bot';
-import { musicExecuteReact } from './musicExecuteReact';
 
 export const musicExecutePlay = async (
   msg: Message,
@@ -17,7 +15,6 @@ export const musicExecutePlay = async (
   const option = musicEntity.option; // 이거 제대로 들어가고 있는지 확인해 봐야 함!
   const textChannel = musicEntity.textChannel;
   const connection = musicEntity.connection;
-
 
   audioPlayer.play(resource);
 
@@ -57,8 +54,7 @@ export const musicExecutePlay = async (
       musicExecutePlay(msg, musicEntity, nextSong);
     } else {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
-      if (connection) connection.destroy(); //커넥션 삭제
-      if (collector) collector.stop(); //인터렉션 삭제
+      if (connection) connection.disconnect(); //커넥션 삭제
     }
   });
 
@@ -84,7 +80,5 @@ export const musicExecutePlay = async (
     content: `이번 선곡은~\n> **${song.title}**\n> ${song.url}`,
     components: [button, buttonSecond]
   };
-  const msgSungok = await textChannel.send(sendedContent);
-
-  const collector = musicExecuteReact(msgSungok, musicEntity, resource);
+  return await textChannel.send(sendedContent);
 };

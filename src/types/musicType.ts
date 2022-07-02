@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {
   CacheType,
   Guild,
@@ -40,6 +41,9 @@ import { TextChannel, VoiceBasedChannel } from 'discord.js';
 =======
 import { Guild, TextChannel, VoiceBasedChannel } from 'discord.js';
 >>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
+=======
+import { CacheType, Guild, InteractionCollector, MessageComponentInteraction, TextChannel, VoiceBasedChannel } from 'discord.js';
+>>>>>>> 571a0101 (노래봇이 깔끔하게 메모리를 관리할  수 있도록 수정)
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -73,6 +77,7 @@ export interface musicEntity {
 >>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
+  reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
   playStream: YouTubeStream;
   connection: VoiceConnection;
   subscription: PlayerSubscription;
