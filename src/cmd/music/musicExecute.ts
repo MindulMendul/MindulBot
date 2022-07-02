@@ -306,8 +306,10 @@ export const musicExecute: CMD = {
         musicCollection.set(guildId, entity);
 
         connection.on(VoiceConnectionStatus.Ready, () => {
-          console.log('The connection has entered the Ready state - ready to play audio!');
           musicExecutePlay(msg, entity, resource); //아래에 있는 play함수 호출
+        });
+        connection.once(VoiceConnectionStatus.Disconnected, ()=>{
+          musicCollection.delete(msg.guildId as string);
         });
       } else {
         //플레이어가 존재해서 큐에 넣으면 되는 상황
