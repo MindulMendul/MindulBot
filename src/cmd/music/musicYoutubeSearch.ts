@@ -154,7 +154,13 @@ export const musicYoutubeSearch: CMD = {
         message.delete();
         embedMsg.delete();
         message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
+      } else {
+        msgArr.forEach((e) => {
+          const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
+          musicExecute.execute(message, tmpStr);
+        });
       }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -176,6 +182,8 @@ export const musicYoutubeSearch: CMD = {
       });
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
 
+=======
+>>>>>>> 982996fa (music 리펙토링중 1)
       message.delete();
       embedMsg.delete();
     });
