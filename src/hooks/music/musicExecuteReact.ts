@@ -11,12 +11,15 @@ import { musicEntity } from '../../types/musicType';
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
+import { musicCollection } from '../../../bot';
+import { musicVisualizeOnOff } from './musicVisualizeOnOff';
 
 export const musicExecuteReact = (
   msgSungok: Message,
-  musicEntity: musicEntity,
   resource: AudioResource<{ title: string; url: string }>
 ) => {
+  const guildId=msgSungok.guildId as string;
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
   const audioPlayer = musicEntity.audioPlayer;
   const option = musicEntity.option;
 
@@ -80,7 +83,7 @@ export const musicExecuteReact = (
 
         case '⏯':
           //style 부분은 버튼 on off 시각화를 위함
-          visualizeOnOff('⏯', i, 0);
+          musicVisualizeOnOff('⏯', i, 0);
 
           //pause 부분
           if (audioPlayer.state.status == 'paused') {
@@ -94,7 +97,7 @@ export const musicExecuteReact = (
 
         case '🔁':
           //style 부분은 버튼 on off 시각화를 위함
-          visualizeOnOff('🔁', i, 1);
+          musicVisualizeOnOff('🔁', i, 1);
 
           option.loop = !option.loop;
           if (option.loop) msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
@@ -103,7 +106,7 @@ export const musicExecuteReact = (
 
         case '🔇':
           //style 부분은 버튼 on off 시각화를 위함
-          visualizeOnOff('🔇', i, 2);
+          musicVisualizeOnOff('🔇', i, 2);
 
           //mute 기능
           option.mute = !option.mute;
@@ -124,25 +127,7 @@ export const musicExecuteReact = (
     }
   });
 
+  musicEntity.reactCollector?.stop();
+  musicEntity.reactCollector = collector;
   return collector;
-};
-
-export const visualizeOnOff = (emoji: string, i: MessageComponentInteraction, index: number) => {
-  const iMessage = i.message as Message;
-  const iComponent = i.component as MessageButton;
-  const buttonSecond = iMessage.components[1];
-
-  const stylePause = (
-    iMessage.components[1].components
-      .filter((elem: MessageActionRowComponent) => {
-        return (elem as MessageButton).label == emoji;
-      })
-      .pop() as MessageButton
-  ).style;
-
-  if (stylePause == 'SUCCESS') iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
-  else if (stylePause == 'SECONDARY') iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
-
-  buttonSecond.components.splice(index, 1, iComponent);
-  buttonSecond.setComponents(buttonSecond.components);
 };

@@ -61,13 +61,12 @@ export const musicYoutubeSearch: CMD = {
         message.delete();
         embedMsg.delete();
         message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
+      } else {
+        msgArr.forEach((e) => {
+          const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
+          musicExecute.execute(message, tmpStr);
+        });
       }
-
-      msgArr.forEach((e) => {
-        const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
-        musicExecute.execute(message, tmpStr);
-      });
-
       message.delete();
       embedMsg.delete();
     });
