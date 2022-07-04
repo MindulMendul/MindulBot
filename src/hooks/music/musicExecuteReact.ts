@@ -109,7 +109,6 @@ export const musicExecuteReact = (
           option.mute = !option.mute;
           if (option.mute) {
             //뮤트 걸리고 나서
-            option.volume = volume.volume;
             volume.setVolume(0);
             msgSungok.channel.send(`음소거되었어요`);
           } else {
@@ -128,7 +127,7 @@ export const musicExecuteReact = (
   return collector;
 };
 
-const visualizeOnOff = (emoji: string, i: MessageComponentInteraction, index: number) => {
+export const visualizeOnOff = (emoji: string, i: MessageComponentInteraction, index: number) => {
   const iMessage = i.message as Message;
   const iComponent = i.component as MessageButton;
   const buttonSecond = iMessage.components[1];

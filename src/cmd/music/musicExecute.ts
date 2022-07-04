@@ -88,6 +88,7 @@ export const musicExecute: CMD = {
           loop: false,
           skip: false
         };
+
         const volume = resource.volume as VolumeTransformer;
         volume.setVolume(0.5 / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
@@ -127,10 +128,10 @@ export const musicExecute: CMD = {
         if (msgMember.voice.channelId != voiceChannel.id) return msg.channel.send('같은 보이스채널에서 해주세요!');
 
         musicEntity.songs.push(resource);
-        const option = musicEntity.option; // 옵션이 제대로 안 들어간 것 같은데 이거 확인 필요
+        const option = musicEntity.option;
         const volume = resource.volume as VolumeTransformer;
-        volume.setVolume((0.5 / option.volumeMagnification) * Number(!option.mute)); //노래 사운드
-        //0.5가 아니라 기존에 있던 값을 붙여넣기 해야 함!
+        volume.setVolume((0.5 / option.volumeMagnification) * Number(!option.mute));
+        //노래 사운드는 ExecutePlay에서 다시 조정됨
 
         msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
       }
