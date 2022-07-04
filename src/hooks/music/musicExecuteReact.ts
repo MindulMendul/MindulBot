@@ -113,7 +113,7 @@ export const musicExecuteReact = (
             msgSungok.channel.send(`음소거되었어요`);
           } else {
             //뮤트 풀리고 나서
-            volume.setVolume(option.volume);
+            volume.setVolume(option.volume/volumeMagnification);
             msgSungok.channel.send(
               `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
             );
