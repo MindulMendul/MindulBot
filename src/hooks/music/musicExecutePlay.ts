@@ -55,6 +55,7 @@ export const musicExecutePlay = async (
       volume.setVolume(option.volume / option.volumeMagnification * Number(!option.mute));
       const msgSungok = await musicExecutePlay(msg, musicEntity, nextSong);
       const collector = musicExecuteReact(msgSungok, musicEntity, nextSong);
+      musicEntity.reactCollector?.stop();
       musicEntity.reactCollector=collector;
       musicCollection.set(msg.guildId as string, musicEntity);
     } else {
