@@ -4,6 +4,8 @@ import { MessageActionRow, MessageButton } from 'discord.js';
 import { stream } from 'play-dl';
 import { musicEntity } from '../../types/musicType';
 import { VolumeTransformer } from 'prism-media';
+import { musicExecuteReact } from './musicExecuteReact';
+import { musicCollection } from '../../../bot';
 
 export const musicExecutePlay = async (
   msg: Message,
@@ -51,7 +53,10 @@ export const musicExecutePlay = async (
       //다음 노래 있으면 틀어주는 코드
       const volume = nextSong.volume as VolumeTransformer;
       volume.setVolume(option.volume / option.volumeMagnification * Number(!option.mute));
-      musicExecutePlay(msg, musicEntity, nextSong);
+      const msgSungok = await musicExecutePlay(msg, musicEntity, nextSong);
+      const collector = musicExecuteReact(msgSungok, musicEntity, nextSong);
+      musicEntity.reactCollector=collector;
+      musicCollection.set(msg.guildId as string, musicEntity);
     } else {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       if (connection) connection.disconnect(); //커넥션 삭제
