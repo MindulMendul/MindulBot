@@ -21,25 +21,33 @@ import { test } from '../../cmd/admin/test';
 
 >>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
 import { basicAngry } from '../../cmd/basic/basicAngry';
+<<<<<<< HEAD
 import { basicDate } from '../../cmd/basic/basicDate';
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+>>>>>>> 2ec3eb52 (connection, player 훅 변경)
 import { basicDev } from '../../cmd/basic/basicDev';
 import { basicDice } from '../../cmd/basic/basicDice';
 import { basicGongji } from '../../cmd/basic/basicGongji';
 import { basicHelp } from '../../cmd/basic/basicHelp';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import { basicMindul } from '../../cmd/basic/basicMindul';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
 =======
 import { basicMendul } from '../../cmd/basic/basicMendul';
+=======
+>>>>>>> 2ec3eb52 (connection, player 훅 변경)
 import { basicMindul } from '../../cmd/basic/basicMindul';
-import { basicMindulMendul } from '../../cmd/basic/basicMindulMendul';
 import { basicNaga } from '../../cmd/basic/basicNaga';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
+<<<<<<< HEAD
 import { basicTime } from '../../cmd/basic/basicTime';
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
+=======
+>>>>>>> 2ec3eb52 (connection, player 훅 변경)
 
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicExecute } from '../../cmd/music/musicExecute';
@@ -117,18 +125,14 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
 
   //basic
   putCmd(basicAngry);
-  putCmd(basicDate);
   putCmd(basicDev);
   putCmd(basicDice);
   putCmd(basicGongji);
   putCmd(basicHelp);
-  putCmd(basicMendul);
   putCmd(basicMindul);
-  putCmd(basicMindulMendul);
   putCmd(basicNaga);
   putCmd(basicSuggestion);
   putCmd(basicTarot);
-  putCmd(basicTime);
 
   //music
 <<<<<<< HEAD

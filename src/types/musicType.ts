@@ -55,6 +55,11 @@ export interface musicOption {
   skip: boolean;
 }
 
+export interface metadata {
+  title: string;
+  url: string
+}
+
 export interface musicEntity {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,12 +83,11 @@ export interface musicEntity {
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
   reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
-  playStream: YouTubeStream;
   connection: VoiceConnection;
   subscription: PlayerSubscription;
   audioPlayer: AudioPlayer;
-  song: AudioResource<{ title: string; url: string }>;
-  songs: Array<AudioResource<{ title: string; url: string }>>;
+  playingSong: AudioResource<metadata>;
+  songQueue: AudioResource<metadata>[];
   option: musicOption;
 }
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
