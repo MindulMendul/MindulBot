@@ -24,7 +24,7 @@ export const musicShuffle: CMD = {
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-    shuffle(musicEntity.songs);
+    shuffle(musicEntity.songQueue);
     msg.channel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
     musicShow.execute(msg, []);
   }

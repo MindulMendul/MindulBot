@@ -19,7 +19,7 @@ export const musicRemoveReact = async (msg: Message, args: Array<number>, musicE
           return b - a;
         })
         .forEach((element: any) => {
-          musicEntity.songs.splice(element, 1);
+          musicEntity.songQueue.splice(element, 1);
         });
       await msg.channel.send('삭제 완료!');
       musicCollection.set(msg.guildId as string, musicEntity);

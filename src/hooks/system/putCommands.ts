@@ -5,18 +5,14 @@ import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 import { test } from '../../cmd/admin/test';
 
 import { basicAngry } from '../../cmd/basic/basicAngry';
-import { basicDate } from '../../cmd/basic/basicDate';
 import { basicDev } from '../../cmd/basic/basicDev';
 import { basicDice } from '../../cmd/basic/basicDice';
 import { basicGongji } from '../../cmd/basic/basicGongji';
 import { basicHelp } from '../../cmd/basic/basicHelp';
-import { basicMendul } from '../../cmd/basic/basicMendul';
 import { basicMindul } from '../../cmd/basic/basicMindul';
-import { basicMindulMendul } from '../../cmd/basic/basicMindulMendul';
 import { basicNaga } from '../../cmd/basic/basicNaga';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
-import { basicTime } from '../../cmd/basic/basicTime';
 
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicExecute } from '../../cmd/music/musicExecute';
@@ -45,18 +41,14 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
 
   //basic
   putCmd(basicAngry);
-  putCmd(basicDate);
   putCmd(basicDev);
   putCmd(basicDice);
   putCmd(basicGongji);
   putCmd(basicHelp);
-  putCmd(basicMendul);
   putCmd(basicMindul);
-  putCmd(basicMindulMendul);
   putCmd(basicNaga);
   putCmd(basicSuggestion);
   putCmd(basicTarot);
-  putCmd(basicTime);
 
   //music
   putCmd(musicEmpty);

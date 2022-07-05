@@ -21,7 +21,7 @@ export const musicShow: CMD = {
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-    const fields = musicEntity.songs.map((e, i) => {
+    const fields = musicEntity.songQueue.map((e, i) => {
       return {
         name: '\u200b',
         value: `${i + 1}. ${e.metadata.title}`
@@ -31,7 +31,7 @@ export const musicShow: CMD = {
     const embedQueue = {
       color: 0xf7cac9,
       title: '큐에 들어간 노래 목록',
-      description: `현재 재생중인 노래\n ${musicEntity.song.metadata.title}`,
+      description: `현재 재생중인 노래\n ${musicEntity.playingSong.metadata.title}`,
       fields: fields
     };
 
