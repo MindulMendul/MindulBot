@@ -19,8 +19,12 @@ import { guildCmdQueue, musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 =======
 import { musicCollection } from '../../../bot';
+<<<<<<< HEAD
 import { musicVisualizeOnOff } from './musicVisualizeOnOff';
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+import { musicVisualizeOnOff } from './musicExecuteVisualizeOnOff';
+>>>>>>> cbbf3d6f (music 리펙토링중 3)
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;

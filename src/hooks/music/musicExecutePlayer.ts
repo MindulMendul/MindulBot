@@ -1,7 +1,8 @@
-import { AudioPlayerStatus, AudioResource } from '@discordjs/voice';
+import { AudioPlayerStatus, AudioResource, createAudioResource } from '@discordjs/voice';
 import { metadata, musicEntity } from '../../types/musicType';
 import { musicCollection } from '../../../bot';
 import { musicExecuteMsg } from './musicExecuteMsg';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
@@ -13,6 +14,11 @@ export const musicExecutePlayer = async (
   playingSong: AudioResource<metadata>
 ) => {
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+import { musicExecuteStreamResource } from './musicExecuteStreamResource';
+
+export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
+>>>>>>> cbbf3d6f (music 리펙토링중 3)
   //기본 함수
   const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
@@ -59,16 +65,20 @@ export const musicExecutePlayer = async (
   });
 
   audioPlayer.once(AudioPlayerStatus.Idle, async () => {
+    //스킵 루프 조건 만족하면 루프돌리는 부분
+    if (option.loop && !option.skip){
+      musicEntity.songQueue.push(
+        await musicExecuteStreamResource(playingSong.metadata.url)
+      );
+    }
+
     //틀었던 노래가 끝났을 때
     const nextSong = musicEntity.songQueue.shift();
     if (!nextSong) {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
-      if (connection) connection.disconnect(); //커넥션 삭제
+      connection?.disconnect(); //커넥션 삭제
       return;
     }
-
-    //스킵 루프 조건 만족하면 루프돌리는 부분
-    if (option.loop && !option.skip) musicEntity.songQueue.push(playingSong);
 
     //다음 노래 있으면 틀어주는 코드
     musicEntity.playingSong = nextSong;

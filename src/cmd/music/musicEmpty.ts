@@ -49,7 +49,7 @@ export const musicEmpty: CMD = {
     const msgMember = msg.member as GuildMember;
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
-    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
+    if (!musicEntity) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
 
     if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 

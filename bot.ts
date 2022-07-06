@@ -125,13 +125,14 @@ import moment from 'moment';
 =======
 >>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
 import moment_timezone from 'moment-timezone';
-import { Client, ClientUser, Collection, Guild, Message } from 'discord.js';
+import { Client, ClientUser, Collection, Guild, Message, TextChannel } from 'discord.js';
 import { putCommands } from './src/hooks/system/putCommands';
 import { CMD } from './src/types/type';
 import { musicEntity } from './src/types/musicType';
 import { alarm } from './src/alarm';
 
 import { checkPermissions } from './src/permission';
+import { isUndefined } from './src/hooks/system/isUndefined';
 
 config();
 moment_timezone.tz.setDefault('Asia/Seoul'); //서울 시간
@@ -181,30 +182,27 @@ bot.on('messageCreate', async (msg) => {
   const args = msg.content.slice(PREFIX.length).trim().split(/\s+/); //명령어 말 배열에 담기
   const command = args.shift() as string; //명령어 인식할 거
 
-  const channel = msg.channel;
+  const channel = msg.channel as TextChannel;
   const guild = msg.guild as Guild;
 
   const getCmd = commands.get(CmdtoNameMap.get(command) as string) as CMD;
-  if (!getCmd) {
-    //명령어 인식 못하는 거 거름
-    channel.send('명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!');
-    return;
-  }
-  if (guildCmdQueue.get(`${guild.id}${getCmd.type}`) == undefined)
-    //길드 명령어 큐 만들기
-    guildCmdQueue.set(`${guild.id}${getCmd.type}`, new Array());
+  //명령어 인식 못하는 거 거름
+  if(isUndefined(getCmd,channel,'명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!')) return;
+
+  //길드 명령어 큐 만들기
+  if (!guildCmdQueue.get(`${guild.id}${getCmd.type}`))
+  guildCmdQueue.set(`${guild.id}${getCmd.type}`, new Array());
 
   const checkGuildCmdQueue = guildCmdQueue.get(`${guild.id}${getCmd.type}`) as CMD[];
   try {
-    if (checkGuildCmdQueue.length == 0) {
+    //뭐가 실행 중이면 실행
+    if (checkGuildCmdQueue.length)
+      msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
+    else {
       //아무것도 실행 안 되어 있으면 실행
       checkGuildCmdQueue.push(getCmd); //명령어 입력 중임을 알림
-
       if (checkPermissions(msg, getCmd.permission)) await getCmd.execute(msg, args); //실행이 끝날 때까지 대기
       checkGuildCmdQueue.shift(); //명령어 끝나면 대기열 제거
-    } else {
-      //뭐가 실행 중이면 실행
-      msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
     }
   } catch (error) {
     const checkGuildCmdQueue = guildCmdQueue.get(`${guild.id}${getCmd.type}`);

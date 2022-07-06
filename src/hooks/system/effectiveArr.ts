@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
   const arrTemp = arr
     .split(' ')
@@ -24,17 +25,14 @@ export const effectiveArr = async (arr: string, tokenizer: any, min: number, max
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 =======
 export const effectiveArr = async (arr: string, tokenizer: any, min: number, max: number): Promise<Array<number>> => {
+=======
+export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
+>>>>>>> cbbf3d6f (music 리펙토링중 3)
   const arrTemp = arr
-    .split(tokenizer)
-    .filter((e) => {
-      return e != '';
-    })
-    .map((e) => {
-      return Number(e);
-    })
-    .filter((e) => {
-      return e >= min || e <= max;
-    });
+    .split(" ")
+    .filter((e) => {return e.length>0})
+    .map((e) => {return Number(e);})
+    .filter((e) => {return e >= min && e <= max;});
 
   return [...new Set(arrTemp)]; //중복제거
 };
