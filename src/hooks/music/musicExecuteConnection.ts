@@ -10,7 +10,6 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
 	//준비가 되면 연결해서 노래를 틀어야지!
 	connection.on(VoiceConnectionStatus.Ready, async () => {
 		await musicExecutePlayer(guildId, resource); //아래에 있는 play함수 호출
-		
 	});
 
 	connection.on(VoiceConnectionStatus.Disconnected, () => {

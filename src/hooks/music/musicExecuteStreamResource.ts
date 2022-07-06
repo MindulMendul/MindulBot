@@ -2,8 +2,8 @@ import { AudioResource, createAudioResource } from "@discordjs/voice";
 import { stream, YouTubeStream, video_basic_info } from "play-dl";
 import { metadata } from "../../types/musicType";
 
-export const musicStreamResource = async (searchedId: string)
-	: Promise<[YouTubeStream, AudioResource<metadata>]> => {
+export const musicExecuteStreamResource = async (searchedId: string)
+	: Promise<AudioResource<metadata>> => {
 	const playStream = (await stream(searchedId)) as YouTubeStream;
 	const songInfo = (await video_basic_info(searchedId)).video_details;
 	const resource = createAudioResource(playStream.stream, {
@@ -13,7 +13,7 @@ export const musicStreamResource = async (searchedId: string)
 		},
 		inlineVolume: true,
 		silencePaddingFrames: 5,
-		inputType: playStream.type
+		inputType: playStream.type,
 	});
-	return [playStream, resource];
+	return resource;
 }

@@ -11,7 +11,7 @@ import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
 import { musicCollection } from '../../../bot';
-import { musicVisualizeOnOff } from './musicVisualizeOnOff';
+import { musicVisualizeOnOff } from './musicExecuteVisualizeOnOff';
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;
