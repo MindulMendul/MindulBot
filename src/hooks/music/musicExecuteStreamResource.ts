@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { createAudioResource } from '@discordjs/voice';
 import { stream } from 'play-dl';
 import { metadata } from '../../types/musicType';
@@ -22,11 +23,12 @@ export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
 };
 =======
 import { AudioResource, createAudioResource } from "@discordjs/voice";
+=======
+import { createAudioResource } from "@discordjs/voice";
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
 import { stream, YouTubeStream, video_basic_info } from "play-dl";
-import { metadata } from "../../types/musicType";
 
-export const musicExecuteStreamResource = async (searchedId: string)
-	: Promise<AudioResource<metadata>> => {
+export const musicExecuteStreamResource = async (searchedId: string) => {
 	const playStream = (await stream(searchedId)) as YouTubeStream;
 	const songInfo = (await video_basic_info(searchedId)).video_details;
 	const resource = createAudioResource(playStream.stream, {
@@ -38,6 +40,6 @@ export const musicExecuteStreamResource = async (searchedId: string)
 		silencePaddingFrames: 5,
 		inputType: playStream.type,
 	});
-	return resource;
+	return {playStream, resource};
 }
 >>>>>>> cbbf3d6f (music 리펙토링중 3)

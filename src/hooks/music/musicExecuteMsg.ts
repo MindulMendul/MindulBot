@@ -20,11 +20,14 @@ import { CMD } from '../../types/type';
 =======
 import { musicCollection } from '../../../bot';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { musicVisualizeOnOff } from './musicVisualizeOnOff';
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
 =======
 import { musicVisualizeOnOff } from './musicExecuteVisualizeOnOff';
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
+=======
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;
@@ -84,6 +87,7 @@ export const musicExecuteMsg = async (guildId: string) => {
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const iGuildId = i.guildId as string;
     const iComponent = i.component as MessageButton;
 
@@ -106,6 +110,9 @@ export const musicExecuteMsg = async (guildId: string) => {
       textChannel.send('같은 보이스채널에서 해주세요!');
       i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
 =======
+=======
+    const iComponent = i.component as MessageButton;
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
     
     //보이스채널 체크
     if (!voiceChannel){
@@ -148,21 +155,24 @@ export const musicExecuteMsg = async (guildId: string) => {
     
     switch (i.customId) {
       case '⏩':
-        musicSkip.execute(iMessage, []);
+        musicSkip.execute(iMessage);
         break;
 
       case '⏹':
-        musicEmpty.execute(iMessage, []);
+        musicEmpty.execute(iMessage);
         break;
 
       case '🔀':
-        musicShuffle.execute(iMessage, []);
+        musicShuffle.execute(iMessage);
         break;
 
       case '🔉':
         if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
+<<<<<<< HEAD
 
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
         option.volume = Number(Math.max(0, option.volume - 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
@@ -176,14 +186,18 @@ export const musicExecuteMsg = async (guildId: string) => {
         }
 =======
         if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
+<<<<<<< HEAD
 
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
         option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
         break;
 
       case '⏯':
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (audioPlayer.state.status == 'playing') {
           audioPlayer.pause();
@@ -197,17 +211,25 @@ export const musicExecuteMsg = async (guildId: string) => {
         musicVisualizeOnOff('⏯', i, 0);
 
         //pause 부분
+=======
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
         if (audioPlayer.state.status == 'playing') {
           audioPlayer.pause();
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           msgSungok.channel.send('노래를 일시정지해 드렸어요!');
         } else {
           audioPlayer.unpause();
+<<<<<<< HEAD
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
           msgSungok.channel.send('노래를 다시 틀어 드릴게요 ㅎㅎ');
         }
         break;
 
       case '🔁':
+<<<<<<< HEAD
 <<<<<<< HEAD
         option.loop = !option.loop;
         if (!option.loop) {
@@ -231,27 +253,32 @@ export const musicExecuteMsg = async (guildId: string) => {
         //style 부분은 버튼 on off 시각화를 위함
         musicVisualizeOnOff('🔁', i, 1);
 
+=======
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
         option.loop = !option.loop;
-        msgSungok.channel.send(
-          (option.loop) ? ('큐 반복 기능이 활성화되었습니다~') : ('더이상 큐에 있던 녀석들이 반복되지 않아요!')
-        );
+        if(option.loop){
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+          msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
+        } else {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+          msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
+        }
         break;
 
       case '🔇':
-        //style 부분은 버튼 on off 시각화를 위함
-        musicVisualizeOnOff('🔇', i, 2);
-
-        //mute 기능
         option.mute = !option.mute;
         if (option.mute) {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);
         } else {
+<<<<<<< HEAD
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+>>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
           volume.setVolume(option.volume / volumeMagnification);
-          msgSungok.channel.send(
-            `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
-          );
+          msgSungok.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
         }
         break;
     }

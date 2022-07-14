@@ -8,10 +8,10 @@ export const musicSearch = async (url: string, limit: number) => {
 import { Message, TextChannel } from "discord.js";
 import { search } from "play-dl";
 
-export const musicSearch = async (msg: Message<boolean>, args:string[], limit:number) => {
+export const musicSearch = async (msg: Message<boolean>, limit:number, args?:string[]) => {
 	const textChannel  = msg.channel as TextChannel;
 
-	if (!args.length){
+	if (!args){
 		textChannel.send('검색어를 입력해주세요!');
 		return undefined;
 	}

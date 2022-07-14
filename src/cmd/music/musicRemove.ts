@@ -83,7 +83,8 @@ export const musicRemove: CMD = {
     if (!songQueue.length)
       return msg.channel.send('대기열에 노래가 없어요, 대기열을 확인해주세요!');
     
-    const argsArr = effectiveArr(args.join(' '), 1, songQueue.length); //배열이 유효한지 조사
+    if(!args) return msg.channel.send('어떤 곡을 지울지 모르겠어요!');
+    const argsArr = effectiveArr(args?.join(' '), 1, songQueue.length); //배열이 유효한지 조사
     if (argsArr.length == 0) return msg.channel.send('어떤 곡을 지울지 모르겠어요!');
 
     const tempStr = '해당 노래가 맞아요?\n'

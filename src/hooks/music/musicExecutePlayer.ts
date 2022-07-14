@@ -67,9 +67,9 @@ export const musicExecutePlayer = async (guildId: string, playingSong: AudioReso
   audioPlayer.once(AudioPlayerStatus.Idle, async () => {
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip){
-      musicEntity.songQueue.push(
-        await musicExecuteStreamResource(playingSong.metadata.url)
-      );
+      const { resource }= await musicExecuteStreamResource(playingSong.metadata.url)
+      resource.volume?.setVolume(option.volume / option.volumeMagnification * Number(!option.mute));
+      musicEntity.songQueue.push(resource);
     }
 
     //틀었던 노래가 끝났을 때
