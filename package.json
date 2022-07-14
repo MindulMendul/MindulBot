@@ -1,6 +1,6 @@
 {
   "name": "mindulbot",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "start": "nodemon --watch bot.ts --exec ts-node bot.ts",
     "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
