@@ -6,6 +6,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import { DiscordGatewayAdapterCreator, PlayerSubscription } from '@discordjs/voice';
+>>>>>>> 9da67f69 (리스너 관련 문제 해결)
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 

@@ -74,6 +74,7 @@ export const musicExecutePlayer = async (guildId: string, playingSong: AudioReso
 
     //틀었던 노래가 끝났을 때
     const nextSong = musicEntity.songQueue.shift();
+    audioPlayer.removeAllListeners("error");
     if (!nextSong) {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       connection?.disconnect(); //커넥션 삭제
