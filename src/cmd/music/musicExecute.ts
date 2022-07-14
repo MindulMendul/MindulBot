@@ -27,7 +27,7 @@ export const musicExecute: CMD = {
 
     //노래 검색부분
     const textChannel = msg.channel as TextChannel;
-    const searched = (await musicSearch(msg, args, 1))?.pop();
+    const searched = (await musicSearch(msg, 1, args))?.pop();
     if(!searched) return; // 검색이 안 된 경우
 
     const searchedId = searched.id as string;
@@ -39,7 +39,7 @@ export const musicExecute: CMD = {
       if (msgMember.voice.channelId != voiceChannel.id)
         return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-      const resource = await musicExecuteStreamResource(searchedId);
+      const {resource} = await musicExecuteStreamResource(searchedId);
 
       const option = musicEntity.option;
       const volume = resource.volume;
@@ -49,7 +49,7 @@ export const musicExecute: CMD = {
       msg.channel.send(`${resource.metadata.title}가 큐에 들어왔어요~`);
     } else {
       //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
-      const resource = await musicExecuteStreamResource(searchedId);
+      const {playStream, resource} = await musicExecuteStreamResource(searchedId);
 
       const connection = joinVoiceChannel({
         //커넥션 생성
@@ -65,6 +65,7 @@ export const musicExecute: CMD = {
       });
 
       const subscription = connection.subscribe(audioPlayer) as PlayerSubscription;
+
       const option = {
         volume: 0.5, // 0 ~ 1 사이의 값
         volumeMagnification: 6, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
@@ -84,6 +85,7 @@ export const musicExecute: CMD = {
           connection: connection,
           subscription: subscription,
           audioPlayer: audioPlayer,
+          playStream: playStream,
           playingSong: resource,
           songQueue: [],
           option: option

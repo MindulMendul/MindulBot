@@ -23,6 +23,7 @@ export interface musicEntity {
   connection: VoiceConnection;
   subscription: PlayerSubscription;
   audioPlayer: AudioPlayer;
+  playStream: YouTubeStream;
   playingSong: AudioResource<metadata>;
   songQueue: AudioResource<metadata>[];
   option: musicOption;

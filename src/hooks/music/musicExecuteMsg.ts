@@ -11,7 +11,6 @@ import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
 import { musicCollection } from '../../../bot';
-import { musicVisualizeOnOff } from './musicExecuteVisualizeOnOff';
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;
@@ -45,6 +44,7 @@ export const musicExecuteMsg = async (guildId: string) => {
   collector.on('collect', async (i) => {
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
+    const iComponent = i.component as MessageButton;
     
     //보이스채널 체크
     if (!voiceChannel){
@@ -65,20 +65,19 @@ export const musicExecuteMsg = async (guildId: string) => {
     
     switch (i.customId) {
       case '⏩':
-        musicSkip.execute(iMessage, []);
+        musicSkip.execute(iMessage);
         break;
 
       case '⏹':
-        musicEmpty.execute(iMessage, []);
+        musicEmpty.execute(iMessage);
         break;
 
       case '🔀':
-        musicShuffle.execute(iMessage, []);
+        musicShuffle.execute(iMessage);
         break;
 
       case '🔉':
         if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
-
         option.volume = Number(Math.max(0, option.volume - 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
@@ -86,50 +85,44 @@ export const musicExecuteMsg = async (guildId: string) => {
 
       case '🔊':
         if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
-
         option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
         break;
 
       case '⏯':
-        //style 부분은 버튼 on off 시각화를 위함
-        musicVisualizeOnOff('⏯', i, 0);
-
-        //pause 부분
         if (audioPlayer.state.status == 'playing') {
           audioPlayer.pause();
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           msgSungok.channel.send('노래를 일시정지해 드렸어요!');
         } else {
           audioPlayer.unpause();
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           msgSungok.channel.send('노래를 다시 틀어 드릴게요 ㅎㅎ');
         }
         break;
 
       case '🔁':
-        //style 부분은 버튼 on off 시각화를 위함
-        musicVisualizeOnOff('🔁', i, 1);
-
         option.loop = !option.loop;
-        msgSungok.channel.send(
-          (option.loop) ? ('큐 반복 기능이 활성화되었습니다~') : ('더이상 큐에 있던 녀석들이 반복되지 않아요!')
-        );
+        if(option.loop){
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+          msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
+        } else {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+          msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
+        }
         break;
 
       case '🔇':
-        //style 부분은 버튼 on off 시각화를 위함
-        musicVisualizeOnOff('🔇', i, 2);
-
-        //mute 기능
         option.mute = !option.mute;
         if (option.mute) {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);
         } else {
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           volume.setVolume(option.volume / volumeMagnification);
-          msgSungok.channel.send(
-            `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
-          );
+          msgSungok.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
         }
         break;
     }
