@@ -5,6 +5,9 @@ import { CMD } from '../../types/type';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 690cd184 (bot 돌아가게는 할 수 있게 수정)
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
@@ -90,6 +93,7 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   //admin
   // putCmd(adminHeapSnapshot);
   // putCmd(test);
+<<<<<<< HEAD
 
   //basic
   putCmd(basicDev);
@@ -122,6 +126,8 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   //admin
   putCmd(adminHeapSnapshot);
   putCmd(test);
+=======
+>>>>>>> 690cd184 (bot 돌아가게는 할 수 있게 수정)
 
   //basic
   putCmd(basicAngry);
