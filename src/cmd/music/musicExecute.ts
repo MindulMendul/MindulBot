@@ -153,6 +153,7 @@ export const musicExecute: CMD = {
     //보이스채널 체크부분
     const voiceChannel = msgMember.voice.channel;
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!voiceChannel)
       //보이스채널 체크
 <<<<<<< HEAD
@@ -162,6 +163,10 @@ export const musicExecute: CMD = {
 =======
     if (!voiceChannel)//보이스채널 체크
 >>>>>>> 982996fa (music 리펙토링중 1)
+=======
+    if (!voiceChannel)
+      //보이스채널 체크
+>>>>>>> a468518a (pretter 적용)
       return msg.channel.send('보이스채널에서 해주세요!');
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
@@ -289,9 +294,13 @@ export const musicExecute: CMD = {
     const searched = (await musicSearch(msg, args, 1))?.pop();
 =======
     const searched = (await musicSearch(msg, 1, args))?.pop();
+<<<<<<< HEAD
 >>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
     if(!searched) return; // 검색이 안 된 경우
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
+=======
+    if (!searched) return; // 검색이 안 된 경우
+>>>>>>> a468518a (pretter 적용)
 
     const searchedId = searched.id as string;
     const musicEntity = musicCollection.get(guildId);
@@ -299,10 +308,9 @@ export const musicExecute: CMD = {
     //Guild 체크해서 생성자가 존재하는지 확인하는 곳
     if (musicEntity) {
       //플레이어가 존재해서 큐에 넣으면 되는 상황
-      if (msgMember.voice.channelId != voiceChannel.id)
-        return msg.channel.send('같은 보이스채널에서 해주세요!');
+      if (msgMember.voice.channelId != voiceChannel.id) return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-      const {resource} = await musicExecuteStreamResource(searchedId);
+      const { resource } = await musicExecuteStreamResource(searchedId);
 
       const option = musicEntity.option;
       const volume = resource.volume;
@@ -312,7 +320,7 @@ export const musicExecute: CMD = {
       msg.channel.send(`${resource.metadata.title}가 큐에 들어왔어요~`);
     } else {
       //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
-      const {playStream, resource} = await musicExecuteStreamResource(searchedId);
+      const { playStream, resource } = await musicExecuteStreamResource(searchedId);
 
       const connection = joinVoiceChannel({
         //커넥션 생성
@@ -340,21 +348,19 @@ export const musicExecute: CMD = {
       const volume = resource.volume as VolumeTransformer;
       volume.setVolume(0.5 / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
-      musicCollection.set(guildId,
-        {
-          guild: msg.guild as Guild,
-          voiceChannel: voiceChannel,
-          textChannel: textChannel,
-          connection: connection,
-          subscription: subscription,
-          audioPlayer: audioPlayer,
-          playStream: playStream,
-          playingSong: resource,
-          songQueue: [],
-          option: option
-        }
-      );
-      
+      musicCollection.set(guildId, {
+        guild: msg.guild as Guild,
+        voiceChannel: voiceChannel,
+        textChannel: textChannel,
+        connection: connection,
+        subscription: subscription,
+        audioPlayer: audioPlayer,
+        playStream: playStream,
+        playingSong: resource,
+        songQueue: [],
+        option: option
+      });
+
       musicConnection(guildId, resource);
     }
 >>>>>>> 92fc5a7c (music 부분 고치는 중)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { TextChannel } from 'discord.js';
 
 export const isUndefined = (variable: any, textChannel: TextChannel, msg: string) => {
@@ -16,3 +17,14 @@ export const isUndefined = (variable:any, textChannel:TextChannel, msg:string) =
     else {textChannel.send(msg); return true;}
 }
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
+=======
+import { TextChannel } from 'discord.js';
+
+export const isUndefined = (variable: any, textChannel: TextChannel, msg: string) => {
+  if (variable) return false;
+  else {
+    textChannel.send(msg);
+    return true;
+  }
+};
+>>>>>>> a468518a (pretter 적용)

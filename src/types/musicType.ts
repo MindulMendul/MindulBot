@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a468518a (pretter 적용)
 import {
   CacheType,
   Guild,
@@ -9,6 +12,7 @@ import {
   TextChannel,
   VoiceBasedChannel
 } from 'discord.js';
+<<<<<<< HEAD
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 
 export interface musicOption {
@@ -44,6 +48,8 @@ import { Guild, TextChannel, VoiceBasedChannel } from 'discord.js';
 =======
 import { CacheType, Guild, InteractionCollector, MessageComponentInteraction, TextChannel, VoiceBasedChannel } from 'discord.js';
 >>>>>>> 571a0101 (노래봇이 깔끔하게 메모리를 관리할  수 있도록 수정)
+=======
+>>>>>>> a468518a (pretter 적용)
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -57,7 +63,7 @@ export interface musicOption {
 
 export interface metadata {
   title: string;
-  url: string
+  url: string;
 }
 
 export interface musicEntity {
