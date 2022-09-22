@@ -1,10 +1,4 @@
-import {
-  GuildMember,
-  Message,
-  MessageButton,
-  MessageComponentInteraction,
-  MessageActionRow
-} from 'discord.js';
+import { GuildMember, Message, MessageButton, MessageComponentInteraction, MessageActionRow } from 'discord.js';
 import { VolumeTransformer } from 'prism-media';
 import { musicEntity } from '../../types/musicType';
 import { musicEmpty } from '../../cmd/music/musicEmpty';
@@ -25,8 +19,18 @@ export const musicExecuteMsg = async (guildId: string) => {
   //두 번째 줄 버튼(이건 ON OFF 시각화를 위해 추가적인 작업이 필요함)
   const buttonSecond = new MessageActionRow()
     .addComponents(new MessageButton().setCustomId('⏯').setLabel('⏯').setStyle('SUCCESS')) //pause on 상황일 때는 다음으로 넘어가지 않음
-    .addComponents(new MessageButton().setCustomId('🔁').setLabel('🔁').setStyle((option.loop) ? 'SUCCESS' : 'SECONDARY'))
-    .addComponents(new MessageButton().setCustomId('🔇').setLabel('🔇').setStyle((option.mute) ? 'SUCCESS' : 'SECONDARY'));
+    .addComponents(
+      new MessageButton()
+        .setCustomId('🔁')
+        .setLabel('🔁')
+        .setStyle(option.loop ? 'SUCCESS' : 'SECONDARY')
+    )
+    .addComponents(
+      new MessageButton()
+        .setCustomId('🔇')
+        .setLabel('🔇')
+        .setStyle(option.mute ? 'SUCCESS' : 'SECONDARY')
+    );
 
   //Embed 생성하는 코드
   //첫 번째 줄 버튼
@@ -38,31 +42,33 @@ export const musicExecuteMsg = async (guildId: string) => {
   const msgSungok = await textChannel.send(sendedContent);
 
   //버튼 인터렉션 콜렉터 부분
-  const filter = (i: MessageComponentInteraction) => { return i.message.id === msgSungok.id; };
+  const filter = (i: MessageComponentInteraction) => {
+    return i.message.id === msgSungok.id;
+  };
   const collector = msgSungok.channel.createMessageComponentCollector({ filter });
 
   collector.on('collect', async (i) => {
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
     const iComponent = i.component as MessageButton;
-    
+
     //보이스채널 체크
-    if (!voiceChannel){
+    if (!voiceChannel) {
       textChannel.send('보이스채널에서 해주세요!');
-      i.update({content: iMessage.content, components: iMessage.components}); //버튼 업데이트
+      i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
       return;
     }
-    
+
     //같은 보이스채널 체크
     if (iMember.voice.channelId != voiceChannel.id) {
       textChannel.send('같은 보이스채널에서 해주세요!');
-      i.update({content: iMessage.content, components: iMessage.components}); //버튼 업데이트
+      i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
       return;
     }
 
     const volumeMagnification = option.volumeMagnification;
     const volume = playingSong.volume as VolumeTransformer;
-    
+
     switch (i.customId) {
       case '⏩':
         musicSkip.execute(iMessage);
@@ -77,14 +83,20 @@ export const musicExecuteMsg = async (guildId: string) => {
         break;
 
       case '🔉':
-        if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
+        if (option.mute) {
+          msgSungok.channel.send('음소거 중이에요.');
+          break;
+        }
         option.volume = Number(Math.max(0, option.volume - 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
         break;
 
       case '🔊':
-        if (option.mute) { msgSungok.channel.send('음소거 중이에요.'); break; }
+        if (option.mute) {
+          msgSungok.channel.send('음소거 중이에요.');
+          break;
+        }
         option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
@@ -104,7 +116,7 @@ export const musicExecuteMsg = async (guildId: string) => {
 
       case '🔁':
         option.loop = !option.loop;
-        if(option.loop){
+        if (option.loop) {
           iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
         } else {
@@ -122,14 +134,16 @@ export const musicExecuteMsg = async (guildId: string) => {
         } else {
           iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           volume.setVolume(option.volume / volumeMagnification);
-          msgSungok.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
+          msgSungok.channel.send(
+            `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
+          );
         }
         break;
     }
-    i.update({content: iMessage.content, components: iMessage.components}); //버튼 업데이트
+    i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
   });
 
-musicEntity.reactCollector?.stop();
-musicEntity.reactCollector = collector;
-return collector;
+  musicEntity.reactCollector?.stop();
+  musicEntity.reactCollector = collector;
+  return collector;
 };

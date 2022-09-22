@@ -1,4 +1,11 @@
-import { CacheType, Guild, InteractionCollector, MessageComponentInteraction, TextChannel, VoiceBasedChannel } from 'discord.js';
+import {
+  CacheType,
+  Guild,
+  InteractionCollector,
+  MessageComponentInteraction,
+  TextChannel,
+  VoiceBasedChannel
+} from 'discord.js';
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -12,7 +19,7 @@ export interface musicOption {
 
 export interface metadata {
   title: string;
-  url: string
+  url: string;
 }
 
 export interface musicEntity {
