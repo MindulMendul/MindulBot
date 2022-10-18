@@ -51,7 +51,6 @@ import { CacheType, Guild, InteractionCollector, MessageComponentInteraction, Te
 =======
 >>>>>>> a468518a (pretter 적용)
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
-import { YouTubeStream } from 'play-dl';
 
 export interface musicOption {
   volume: number; // 실제로 쓰이는 값이 아니라 mute용 임시변수
@@ -62,7 +61,7 @@ export interface musicOption {
 }
 
 export interface metadata {
-  title: string;
+  title: string|undefined;
   url: string;
 }
 
@@ -92,7 +91,6 @@ export interface musicEntity {
   connection: VoiceConnection;
   subscription: PlayerSubscription;
   audioPlayer: AudioPlayer;
-  playStream: YouTubeStream;
   playingSong: AudioResource<metadata>;
   songQueue: AudioResource<metadata>[];
   option: musicOption;

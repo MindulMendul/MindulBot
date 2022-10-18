@@ -46,20 +46,20 @@ export const musicExecuteStreamResource = async (searchedId: string) => {
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
 =======
 import { createAudioResource } from '@discordjs/voice';
-import { stream, YouTubeStream, video_basic_info } from 'play-dl';
+import { stream, YouTubeVideo } from 'play-dl';
 
-export const musicExecuteStreamResource = async (searchedId: string) => {
-  const playStream = (await stream(searchedId)) as YouTubeStream;
-  const songInfo = (await video_basic_info(searchedId)).video_details;
+export const musicExecuteStreamResource = async (searchedInfo: YouTubeVideo) => {
+  const playStream = (await stream(searchedInfo.url));
   const resource = createAudioResource(playStream.stream, {
     metadata: {
-      title: songInfo.title as string,
-      url: songInfo.url
+      title: searchedInfo.title,
+      url: searchedInfo.url
     },
     inlineVolume: true,
     silencePaddingFrames: 5,
     inputType: playStream.type
   });
-  return { playStream, resource };
+
+  return resource;
 };
 >>>>>>> a468518a (pretter 적용)
