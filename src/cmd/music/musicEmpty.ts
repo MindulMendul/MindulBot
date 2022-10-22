@@ -36,6 +36,7 @@ export const musicEmpty: CMD = {
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
 
+<<<<<<< HEAD
     musicEntity.songQueue=[];
     musicEntity.option.skip=true;
     musicCollection.set(guildId, musicEntity);
@@ -82,5 +83,8 @@ export const musicEmpty: CMD = {
 =======
     musicEntity.subscription.player.stop();
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
+=======
+    musicEntity.subscription?.player.stop();
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
   }
 };

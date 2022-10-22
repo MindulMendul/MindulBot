@@ -19,6 +19,7 @@ import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { guildCmdQueue, musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 =======
@@ -32,6 +33,10 @@ import { musicVisualizeOnOff } from './musicExecuteVisualizeOnOff';
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
 =======
 >>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
+=======
+import { guildCmdQueue, musicCollection } from '../../../bot';
+import { CMD } from '../../types/type';
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;
@@ -104,10 +109,16 @@ export const musicExecuteMsg = async (guildId: string) => {
     const iMember = i.member as GuildMember;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     const iGuildId = i.guildId as string;
     const iComponent = i.component as MessageButton;
 
 <<<<<<< HEAD
+=======
+    const iGuildId = i.guildId as string;
+    const iComponent = i.component as MessageButton;
+
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
     const checkGuildCmdQueue=guildCmdQueue.get(`${iGuildId}music`) as CMD[];
     if (checkGuildCmdQueue.length){
       textChannel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);

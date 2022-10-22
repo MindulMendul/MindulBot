@@ -11,6 +11,7 @@ export const musicSkip: CMD = {
   permission: [],
   async execute(msg) {
     const guildId = msg.guildId as string;
+<<<<<<< HEAD
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
@@ -40,18 +41,19 @@ export const musicSkip: CMD = {
   async execute(msg) {
     const guildId = msg.guildId as string;
     const musicEntity = musicCollection.get(guildId);
+=======
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
+    const musicEntity = musicCollection.get(guildId);
 
     if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
-
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-
     if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
-
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     connection.subscription.player.stop();
@@ -63,6 +65,9 @@ export const musicSkip: CMD = {
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 =======
     musicEntity.subscription.player.stop();
+=======
+    musicEntity.subscription?.player.stop();
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
     musicEntity.option.skip = true;
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
   }

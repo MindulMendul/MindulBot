@@ -35,6 +35,7 @@ export interface musicEntity {
   reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
   connection?: VoiceConnection;
   subscription?: PlayerSubscription;
+<<<<<<< HEAD
   audioPlayer: AudioPlayer;
   playingSong: AudioResource<metadata>;
   songQueue: AudioResource<metadata>[];
@@ -90,6 +91,8 @@ export interface musicEntity {
   reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
   connection: VoiceConnection;
   subscription: PlayerSubscription;
+=======
+>>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
   audioPlayer: AudioPlayer;
   playingSong: AudioResource<metadata>;
   songQueue: AudioResource<metadata>[];
