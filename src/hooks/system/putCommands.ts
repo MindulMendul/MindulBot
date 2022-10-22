@@ -11,6 +11,7 @@ import { CMD } from '../../types/type';
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
+<<<<<<< HEAD
 =======
 =======
 import { test } from '../../cmd/test';
@@ -29,6 +30,8 @@ import { basicDate } from '../../cmd/basic/basicDate';
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
 =======
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 import { basicDev } from '../../cmd/basic/basicDev';
 import { basicDice } from '../../cmd/basic/basicDice';
 import { basicGongji } from '../../cmd/basic/basicGongji';
@@ -43,7 +46,6 @@ import { basicMendul } from '../../cmd/basic/basicMendul';
 =======
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
 import { basicMindul } from '../../cmd/basic/basicMindul';
-import { basicNaga } from '../../cmd/basic/basicNaga';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
 <<<<<<< HEAD
@@ -130,13 +132,11 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
 >>>>>>> 690cd184 (bot 돌아가게는 할 수 있게 수정)
 
   //basic
-  putCmd(basicAngry);
   putCmd(basicDev);
   putCmd(basicDice);
   putCmd(basicGongji);
   putCmd(basicHelp);
   putCmd(basicMindul);
-  putCmd(basicNaga);
   putCmd(basicSuggestion);
   putCmd(basicTarot);
 

@@ -14,7 +14,7 @@ export const musicEmpty: cmd = {
 =======
 import { CMD } from '../../types/type';
 import { musicCollection } from '../../../bot';
-import { GuildMember } from 'discord.js';
+import { GuildMember, TextChannel } from 'discord.js';
 
 export const musicEmpty: CMD = {
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
@@ -45,8 +45,8 @@ export const musicEmpty: CMD = {
     if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 =======
     const guildId = msg.guildId as string;
-    const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
+<<<<<<< HEAD
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
 
     if (!musicEntity) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
@@ -55,8 +55,16 @@ export const musicEmpty: CMD = {
 
     if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
 
+=======
+    const textChannel = msg.channel as TextChannel;
+    const musicEntity = musicCollection.get(guildId);
+    
+    if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
+    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
+    if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
-      return msg.channel.send('같은 보이스채널에서 해주세요!');
+      return textChannel.send('같은 보이스채널에서 해주세요!');
 
 <<<<<<< HEAD
 <<<<<<< HEAD

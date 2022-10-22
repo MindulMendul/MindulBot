@@ -1,7 +1,8 @@
-import { AudioPlayerStatus, AudioResource, createAudioResource } from '@discordjs/voice';
+import { AudioPlayerStatus, AudioResource } from '@discordjs/voice';
 import { metadata, musicEntity } from '../../types/musicType';
 import { musicCollection } from '../../../bot';
 import { musicExecuteMsg } from './musicExecuteMsg';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
@@ -16,6 +17,8 @@ export const musicExecutePlayer = async (
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
 =======
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
+=======
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 
 export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
@@ -67,6 +70,8 @@ export const musicExecutePlayer = async (guildId: string, playingSong: AudioReso
   audioPlayer.once(AudioPlayerStatus.Idle, async () => {
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip) {
+      console.log(playingSong);
+
       musicEntity.songQueue.push(playingSong);
     }
 

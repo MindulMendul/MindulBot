@@ -13,6 +13,7 @@ export const musicRemoveReact = async (guildId: string, memberId: string, args: 
 
   //콜렉터 부분
   const filter = (message: Message) => { return !message.author.bot && message.author.id === memberId; };
+<<<<<<< HEAD
   const collector = textChannel.createMessageCollector({ filter, max: 1, time: 7000 });
   collector.on('collect', async (msg: Message) => {
     if (correctArr.includes(msg.content)) {
@@ -55,17 +56,14 @@ export const musicRemoveReact = async (guildId: string, memberId: string, args: 
   const filter = (message: Message) => {
     return !message.author.bot && message.author.id === memberId;
   };
+=======
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
   const collector = textChannel.createMessageCollector({ filter, max: 1, time: 7000 });
   collector.on('collect', async (msg: Message) => {
     if (correctArr.includes(msg.content)) {
       //긍정
-      args
-        .sort((a: number, b: number) => {
-          return b - a;
-        })
-        .forEach((element: number) => {
-          musicEntity.songQueue.splice(element, 1);
-        });
+      args.sort((a: number, b: number) => { return b - a; })
+        .forEach((element: number) => { musicEntity.songQueue.splice(element-1, 1); });
       musicShow.execute(await textChannel.send('삭제 완료!'), []); //큐에 남아있는 노래가 있다면 보여주기
     } //부정
     else textChannel.send('부정의 의미로 받아들이고, 그대로 내버려둘게요.');

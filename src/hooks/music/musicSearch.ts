@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { search } from 'play-dl';
 
 export const musicSearch = async (url: string, limit: number) => {
@@ -10,9 +11,12 @@ import { Message, TextChannel } from "discord.js";
 import { search } from "play-dl";
 =======
 import { Message, TextChannel } from 'discord.js';
+=======
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 import { search } from 'play-dl';
 >>>>>>> a468518a (pretter 적용)
 
+<<<<<<< HEAD
 export const musicSearch = async (msg: Message<boolean>, limit: number, args?: string[]) => {
   const textChannel = msg.channel as TextChannel;
 
@@ -43,5 +47,9 @@ export const musicSearch = async (msg: Message<boolean>, limit: number, args?: s
     return undefined;
   }
   return items;
+=======
+export const musicSearch = async (url: string, limit: number) => {
+  return search(url, { source: { youtube: 'video' }, limit: limit });
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 };
 >>>>>>> a468518a (pretter 적용)

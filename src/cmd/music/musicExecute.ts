@@ -147,11 +147,14 @@ export const musicExecute: CMD = {
     const audioPlayer = connection.subscription.player;
 =======
   async execute(msg, args) {
+    //써야할 변수 모음
     const guildId = msg.guildId as string;
     const msgMember = msg.member as GuildMember;
+    const textChannel = msg.channel as TextChannel;
 
     //보이스채널 체크부분
     const voiceChannel = msgMember.voice.channel;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     if (!voiceChannel)
@@ -169,8 +172,15 @@ export const musicExecute: CMD = {
 >>>>>>> a468518a (pretter 적용)
       return msg.channel.send('보이스채널에서 해주세요!');
 >>>>>>> af63370e (노래봇 작동은 하는데 왜 되는지는 모름)
+=======
+    if (!voiceChannel) return textChannel.send('보이스채널에서 해주세요!');
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 
+    //검색어 체크부분
+    if(!args?.length) return textChannel.send("검색어를 입력해주세요!");
+    
     //노래 검색부분
+<<<<<<< HEAD
     const textChannel = msg.channel as TextChannel;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,40 +318,39 @@ export const musicExecute: CMD = {
     const searchedInfo = (await musicSearch(msg, 1, args))?.pop();
     if (!searchedInfo) return; // 검색이 안 된 경우
 >>>>>>> 586fb489 (defaultIcon 버그 해결)
+=======
+    const searchedInfo = (await musicSearch(args?.join(" "), 1))?.pop();
+    if (!searchedInfo) return textChannel.send('검색결과가 없어요 ㅠㅠ 다른 키워드로 다시 시도해보세요!'); // 검색이 안 된 경우
+    
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
     const musicEntity = musicCollection.get(guildId);
 
     //Guild 체크해서 생성자가 존재하는지 확인하는 곳
-    if (musicEntity) {
-      //플레이어가 존재해서 큐에 넣으면 되는 상황
-      if (msgMember.voice.channelId != voiceChannel.id) return msg.channel.send('같은 보이스채널에서 해주세요!');
+    //플레이어가 존재해서 큐에 넣으면 되는 상황
+    if (musicEntity) {      
+      //같은 보이스채널인지 체크
+      if (msgMember.voice.channelId != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 
+      //노래 큐에 넣어주기
       const resource = await musicExecuteStreamResource(searchedInfo);
-
       const option = musicEntity.option;
       const volume = resource.volume;
-      volume?.setVolume((0.5 / option.volumeMagnification) * Number(!option.mute));
+      volume?.setVolume((option.volume / option.volumeMagnification) * Number(!option.mute));
       musicEntity.songQueue.push(resource);
 
-      msg.channel.send(`${resource.metadata.title}가 큐에 들어왔어요~`);
-    } else {
-      //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
-      const resource = await musicExecuteStreamResource(searchedInfo);
+      textChannel.send(`${resource.metadata.title}가 큐에 들어왔어요~`);
+    }
 
+    //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
+    else {
+      //들어가야 하는 항목 전부 넣기
       const connection = joinVoiceChannel({
-        //커넥션 생성
         channelId: voiceChannel.id,
         guildId: voiceChannel.guild.id,
         adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
       });
-
-      const audioPlayer = createAudioPlayer({
-        behaviors: {
-          noSubscriber: NoSubscriberBehavior.Pause
-        }
-      });
-
+      const audioPlayer = createAudioPlayer({behaviors: {noSubscriber: NoSubscriberBehavior.Pause}});
       const subscription = connection.subscribe(audioPlayer) as PlayerSubscription;
-
       const option = {
         volume: 0.5, // 0 ~ 1 사이의 값
         volumeMagnification: 6, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
@@ -349,9 +358,9 @@ export const musicExecute: CMD = {
         loop: false,
         skip: false
       };
-
+      const resource = await musicExecuteStreamResource(searchedInfo);
       const volume = resource.volume as VolumeTransformer;
-      volume.setVolume(0.5 / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
+      volume.setVolume(option.volume / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
       musicCollection.set(guildId, {
         guild: msg.guild as Guild,

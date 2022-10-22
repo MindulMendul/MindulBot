@@ -296,7 +296,7 @@ export const musicExecuteMsg = async (guildId: string) => {
 =======
 >>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
         option.loop = !option.loop;
-        if (option.loop) {
+        if (!option.loop) {
           iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
           msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
         } else {
@@ -307,7 +307,7 @@ export const musicExecuteMsg = async (guildId: string) => {
 
       case '🔇':
         option.mute = !option.mute;
-        if (option.mute) {
+        if (!option.mute) {
           iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);

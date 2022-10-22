@@ -47,14 +47,23 @@ export const musicYoutubeSearch: CMD = {
     const musicEntity = musicCollection.get(guildId);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     //보이스채널 체크부분
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
 =======
+=======
+    //보이스채널 체크부분
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
 
+    //검색어 체크부분
+    if(!args?.length) return textChannel.send("검색어를 입력해주세요!");
+
+    //같은 보이스채널인지 체크
     if (msgMember.voice.channel.id != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 >>>>>>> a468518a (pretter 적용)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     //검색어 체크부분
     if (!args?.length) return textChannel.send("검색어를 입력해주세요!");
@@ -73,6 +82,10 @@ export const musicYoutubeSearch: CMD = {
 =======
     if (!args || !items) return msg.channel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
 >>>>>>> a468518a (pretter 적용)
+=======
+    const items = await musicSearch(args?.join(" "), 8);
+    if (!items) return textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 
     //임베드 만들기
     const fields = items.map((e, i) => {
@@ -152,6 +165,7 @@ export const musicYoutubeSearch: CMD = {
     };
 
     const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
+<<<<<<< HEAD
 
     const filter = (message: Message) => {
       return !message.author.bot && message.author.id === msg.author.id;
@@ -176,6 +190,8 @@ export const musicYoutubeSearch: CMD = {
     };
 
     const embedMsg = await msg.channel.send({ embeds: [embedSearchYoutube] });
+=======
+>>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 
     const filter = (message: Message) => {
       return !message.author.bot && message.author.id === msg.author.id;
