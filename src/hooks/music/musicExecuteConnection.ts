@@ -8,6 +8,7 @@ import { musicExecutePlayer } from './musicExecutePlayer';
 
 export const musicConnection = (guildId: string, resource: AudioResource<metadata>) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const musicEntity = musicCollection.get(guildId) as musicEntity;
   const voiceChannel = musicEntity.voiceChannel;
   
@@ -57,19 +58,24 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
   let musicEntity = musicCollection.get(guildId) as musicEntity;
   const voiceChannel = musicEntity.voiceChannel;
 >>>>>>> cb000350 (musicEntity 갱신 오류 수정)
+=======
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
+  const voiceChannel = musicEntity.voiceChannel;
+  
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
   const connection = joinVoiceChannel({
     channelId: voiceChannel.id,
     guildId: voiceChannel.guild.id,
     adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
   });
-
   const subscription = connection.subscribe(musicEntity.audioPlayer) as PlayerSubscription;
-  musicCollection.set(guildId, { ...musicEntity, ["connection"]: connection, ["subscription"]: subscription });
-  musicEntity = musicCollection.get(guildId) as musicEntity;
+  
+  musicEntity.connection=connection;
+  musicEntity.subscription=subscription;
 
   //준비가 되면 연결해서 노래를 틀어야지
   connection.on(VoiceConnectionStatus.Ready, async () => {
-    await musicExecutePlayer(guildId, resource); //아래에 있는 play함수 호출
+    musicExecutePlayer(guildId, resource); //아래에 있는 play함수 호출
   });
 
 <<<<<<< HEAD

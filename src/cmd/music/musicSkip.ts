@@ -52,6 +52,7 @@ export const musicSkip: CMD = {
     if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -70,5 +71,10 @@ export const musicSkip: CMD = {
 >>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
     musicEntity.option.skip = true;
 >>>>>>> c7854135 (노래봇 버그 수정 (노래 끝나고 다시 노래 넣을 때 안 들어가던 거 수정))
+=======
+    
+    musicEntity.option.skip = true;
+    musicEntity.subscription?.player.stop();
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
   }
 };

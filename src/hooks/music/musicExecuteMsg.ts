@@ -39,7 +39,7 @@ import { CMD } from '../../types/type';
 >>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
 
 export const musicExecuteMsg = async (guildId: string) => {
-  let musicEntity = musicCollection.get(guildId) as musicEntity;
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { voiceChannel, textChannel, audioPlayer, option, playingSong } = musicEntity;
 <<<<<<< HEAD
 <<<<<<< HEAD

@@ -27,6 +27,8 @@ import { CMD } from '../../types/type';
 import { GuildMember, Message, TextChannel, VoiceChannel } from 'discord.js';
 import { musicExecute } from './musicExecute';
 import { musicSearch } from '../../hooks/music/musicSearch';
+import { bot, musicCollection } from '../../../bot';
+import { musicEntity } from '../../types/musicType';
 
 export const musicYoutubeSearch: CMD = {
 >>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
@@ -39,9 +41,13 @@ export const musicYoutubeSearch: CMD = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     const guildId = msg.guildId as string;
 =======
 >>>>>>> cb4347e6 (자잘한 코드 변경 (아주 조금 최적화))
+=======
+    const guildId = msg.guildId as string;
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
@@ -57,9 +63,10 @@ export const musicYoutubeSearch: CMD = {
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
 
     //검색어 체크부분
-    if(!args?.length) return textChannel.send("검색어를 입력해주세요!");
+    if (!args?.length) return textChannel.send("검색어를 입력해주세요!");
 
     //같은 보이스채널인지 체크
+<<<<<<< HEAD
     if (msgMember.voice.channel.id != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 >>>>>>> a468518a (pretter 적용)
 
@@ -69,6 +76,8 @@ export const musicYoutubeSearch: CMD = {
     if (!args?.length) return textChannel.send("검색어를 입력해주세요!");
 
     //같은 보이스채널인지 체크
+=======
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
     if (musicEntity && msgMember.voice.channelId != musicEntity.voiceChannel.id)
       textChannel.send('같은 보이스채널에서 해주세요!');
 
@@ -203,11 +212,12 @@ export const musicYoutubeSearch: CMD = {
       //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
       if (!msgArr.length) message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
       else {
-        msgArr.forEach((e) => {
+        for (const e of msgArr) {
           const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
-          musicExecute.execute(message, tmpStr);
-        });
+          await musicExecute.execute(message, tmpStr);
+        }
       }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,6 +244,9 @@ export const musicYoutubeSearch: CMD = {
 
 =======
 >>>>>>> 982996fa (music 리펙토링중 1)
+=======
+
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
       message.delete();
       embedMsg.delete();
 =======

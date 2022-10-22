@@ -29,10 +29,14 @@ export const musicEmpty: CMD = {
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const musicEntity = musicCollection.get(guildId);
 =======
     let musicEntity = musicCollection.get(guildId);
 >>>>>>> 547f8b4c (비우기 기능 수정)
+=======
+    const musicEntity = musicCollection.get(guildId);
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
 
     if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
@@ -44,9 +48,12 @@ export const musicEmpty: CMD = {
 <<<<<<< HEAD
     musicEntity.songQueue=[];
     musicEntity.option.skip=true;
+<<<<<<< HEAD
 =======
     musicEntity.songQueue=[];
 >>>>>>> 547f8b4c (비우기 기능 수정)
+=======
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
     musicCollection.set(guildId, musicEntity);
 
     musicEntity.subscription?.player.stop();

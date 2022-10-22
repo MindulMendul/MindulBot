@@ -9,6 +9,7 @@ import { musicExecuteMsg } from './musicExecuteMsg';
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
 export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<metadata>) => {
+<<<<<<< HEAD
 =======
 
 export const musicExecutePlayer = async (
@@ -26,8 +27,10 @@ import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
 export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
+=======
+>>>>>>> eb194c3e (musicEntity 부분 수정 & 검색 기능 비동기 함수 적용가능하게 수정)
   //기본 함수
-  let musicEntity = musicCollection.get(guildId) as musicEntity;
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
   audioPlayer.play(playingSong);
