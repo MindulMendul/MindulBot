@@ -39,13 +39,17 @@ import { CMD } from '../../types/type';
 >>>>>>> 72fbb1b6 (music 부분 리펙토링 & 루프 기능 추가)
 
 export const musicExecuteMsg = async (guildId: string) => {
-  const musicEntity = musicCollection.get(guildId) as musicEntity;
+  let musicEntity = musicCollection.get(guildId) as musicEntity;
   const { voiceChannel, textChannel, audioPlayer, option, playingSong } = musicEntity;
+<<<<<<< HEAD
 <<<<<<< HEAD
   
 =======
 
 >>>>>>> 2ec3eb52 (connection, player 훅 변경)
+=======
+  
+>>>>>>> cb000350 (musicEntity 갱신 오류 수정)
   const buttonFirst = new MessageActionRow()
     .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'))
     .addComponents(new MessageButton().setCustomId('⏹').setLabel('⏹').setStyle('PRIMARY'))
@@ -318,7 +322,7 @@ export const musicExecuteMsg = async (guildId: string) => {
 
       case '🔇':
         option.mute = !option.mute;
-        if (!option.mute) {
+        if (option.mute) {
           iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);

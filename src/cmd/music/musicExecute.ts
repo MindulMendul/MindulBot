@@ -102,6 +102,7 @@ export const musicExecute: CMD = {
 
     //Guild 체크해서 생성자가 존재하는지 확인하는 곳
     //플레이어가 존재해서 큐에 넣으면 되는 상황
+<<<<<<< HEAD
     if (musicEntity) {
       //같은 보이스채널인지 체크
       if (msgMember.voice.channelId != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
@@ -331,6 +332,12 @@ export const musicExecute: CMD = {
     //Guild 체크해서 생성자가 존재하는지 확인하는 곳
     //플레이어가 존재해서 큐에 넣으면 되는 상황
     if (musicEntity) {      
+=======
+
+    
+
+    if (musicEntity) {
+>>>>>>> cb000350 (musicEntity 갱신 오류 수정)
       //같은 보이스채널인지 체크
       if (msgMember.voice.channelId != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 

@@ -46,7 +46,7 @@ export const musicExecuteStreamResource = async (searchedId: string) => {
 >>>>>>> cbbf3d6f (music 리펙토링중 3)
 =======
 import { createAudioResource } from '@discordjs/voice';
-import { stream, YouTubeVideo } from 'play-dl';
+import { stream } from 'play-dl';
 import { metadata } from '../../types/musicType';
 
 export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
