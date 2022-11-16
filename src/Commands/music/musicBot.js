@@ -1,10 +1,12 @@
-const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
 const musicQueue = new Map();//큐 담아두는 곳
+let scheduling=undefined;
 
 //크롤링때 쓰는 거
 const axios = require("axios");
 const cheerio = require("cheerio");
+const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
 
+<<<<<<< HEAD:src/Commands/music/Music.js
 let scheduling=undefined;
 
 <<<<<<< HEAD
@@ -230,6 +232,8 @@ function remove(msg, array){
 =======
 >>>>>>> 40105dd3 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
 //유튜브찾기 함수
+=======
+>>>>>>> 5bdc97c2 (노래봇 작동!):src/Commands/music/musicBot.js
 async function searchYoutubeList(question, limit){
     const getHtml = async () => {
         try {
@@ -264,6 +268,7 @@ async function searchYoutubeList(question, limit){
 
     return List;
 }
+<<<<<<< HEAD:src/Commands/music/Music.js
 
 //찾은 유튜브 주소를 배열에 집어넣는 함수
 <<<<<<< HEAD
@@ -305,3 +310,6 @@ async function searchYoutube(msg, searchStr){
     }
     return await embedTempFunc();
 }
+=======
+module.exports={musicQueue, scheduling, searchYoutubeList};
+>>>>>>> 5bdc97c2 (노래봇 작동!):src/Commands/music/musicBot.js
