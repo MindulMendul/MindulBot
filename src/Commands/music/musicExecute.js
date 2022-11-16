@@ -15,7 +15,7 @@ module.exports = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
-    permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY"],//링크 첨부는 뭐지?
+    permission: ["CONNECT", "SPEAK", "READ_MESSAGE_HISTORY"], //링크 첨부는 뭐지?
     async execute(msg, args){
         //보이스채널 체크부분
         const voiceChannel=msg.member.voice.channel;
