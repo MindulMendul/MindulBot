@@ -1,8 +1,9 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const ytdl=require("ytdl-core"); 
+const ytdl=require("ytdl-core");
+const {OWNER_ID}=require("./../../../GlobalVariable");
 
-async function verCheck(){
+async function verCheck(bot, msg){
     const url=await axios.get("https://www.npmjs.com/package/ytdl-core");//ytdl-core 사이트에 들어감
     const $ = cheerio.load(url.data);//데이터를 긁어모음
     const html = $("body").children().html();//열심히 긁어모음
