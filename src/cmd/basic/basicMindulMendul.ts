@@ -1,6 +1,6 @@
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicMindulMendul: cmd = {
+export const basicMindulMendul: CMD = {
   name: `민둘맨둘`,
   cmd: ['민둘맨둘', 'alsenfaosenf', 'ㅁㄷㅁㄷ'],
   type: 'basic',

@@ -1,5 +1,5 @@
 import { getVoiceConnection, getGroups } from '@discordjs/voice';
-import { cmd } from '../../type';
+import { cmd } from '../../types/type';
 
 export const musicLoop: cmd = {
   name: '루프',

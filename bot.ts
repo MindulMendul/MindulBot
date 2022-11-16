@@ -2,7 +2,7 @@ import { config } from 'dotenv';
 import moment_timezone from 'moment-timezone';
 import { Client, ClientUser, Collection, Guild, Message } from 'discord.js';
 import { putCommands } from './src/hooks/app/putCommands';
-import { cmd } from './src/types/type';
+import { CMD } from './src/types/type';
 import { musicEntity } from './src/types/musicType'
 import { alarm } from './src/alarm';
 
@@ -27,8 +27,8 @@ export const bot = new Client({
 });
 
 const CmdtoNameMap: Collection<string, string> = new Collection(); // cmd와 name 매칭해주는 맵
-const commands: Collection<string, cmd> = new Collection(); // 명령어 모음집
-const guildCmdQueue: Collection<string, Array<cmd>> = new Collection(); //길드 명령어큐
+const commands: Collection<string, CMD> = new Collection(); // 명령어 모음집
+const guildCmdQueue: Collection<string, Array<CMD>> = new Collection(); //길드 명령어큐
 
 export const musicCollection: Collection<string, musicEntity> = new Collection(); // 노래관련 맵
 
@@ -59,7 +59,7 @@ bot.on('messageCreate', async (msg) => {
   const channel = msg.channel;
   const guild = msg.guild as Guild;
 
-  const getCmd = commands.get(command) as cmd;
+  const getCmd = commands.get(command) as CMD;
   if (!getCmd) {
     //명령어 인식 못하는 거 거름
     channel.send('명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!');
@@ -69,7 +69,7 @@ bot.on('messageCreate', async (msg) => {
     //길드 명령어 큐 만들기
     guildCmdQueue.set(`${guild.id}${getCmd.type}`, new Array());
 
-  const checkGuildCmdQueue = guildCmdQueue.get(`${guild.id}${getCmd.type}`) as cmd[];
+  const checkGuildCmdQueue = guildCmdQueue.get(`${guild.id}${getCmd.type}`) as CMD[];
   try {
     if (checkGuildCmdQueue.length == 0) {
       //아무것도 실행 안 되어 있으면 실행

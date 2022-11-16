@@ -1,7 +1,7 @@
 import moment from 'moment';
-import { cmd } from '../../type';
+import { CMD } from '../../types/type';
 
-export const basicHelp: cmd = {
+export const basicHelp: CMD = {
   name: `도움말`,
   cmd: ['도움말', 'ㄷㅇㅁ', 'help'],
   type: 'basic',
