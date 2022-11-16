@@ -1,5 +1,5 @@
+const { search } = require("play-dl");
 const { OWNER_ID } = require("../../GlobalVariable");
-const {bot}=require("./../../bot");
 
 module.exports = {
 	name: "테스트",
@@ -7,20 +7,11 @@ module.exports = {
 	type: "test",
 	permission: [""],
 	needReact: false,
-	async execute(msg) {
+	async execute(msg, args) {
 		if(msg.member.user.id!=OWNER_ID) return;
-		const permissions=msg.channel.permissionsFor(msg.member.user);
-		msg.channel.send(`${msg.member.user.tag}의 권한\n> ${"ADD_REACTIONS"}: ${permissions.has("ADD_REACTIONS")}
-			> ${"MANAGE_EMOJIS_AND_STICKERS"}: ${permissions.has("MANAGE_EMOJIS_AND_STICKERS")}
-			> ${"SEND_MESSAGES"}: ${permissions.has("SEND_MESSAGES")}
-			`);
-		const permissions1=msg.channel.permissionsFor(bot.user);
-		msg.channel.send(`${bot.user.tag}의 권한\n> ${"ADD_REACTIONS"}: ${permissions1.has("ADD_REACTIONS")}
-			> ${"MANAGE_EMOJIS_AND_STICKERS"}: ${permissions1.has("MANAGE_EMOJIS_AND_STICKERS")}
-			> ${"SEND_MESSAGES"}: ${permissions.has("SEND_MESSAGES")}
-			`);
-		console.log(`${msg.member.user.tag}의 ${permissions.bitfield}`);
-		console.log(`${bot.user.tag}의 ${permissions1.bitfield}`);
+		const searchStr=args.join(" ");
+		const vsqq=(await search(searchStr, { source : { youtube : "video" }, limit: 1})).pop();
+		console.log(vsqq);
 	},
 };
 
