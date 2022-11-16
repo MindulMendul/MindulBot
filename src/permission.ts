@@ -1,22 +1,23 @@
-const {bot}=require("./../bot");
-async function checkPermissions(msg, permission){
-    if(permission[0]=="") return true;
+import { Message, PermissionResolvable, TextChannel, User } from "discord.js";
+import { bot } from "./../bot";
+export const checkPermissions = (msg: Message<boolean>, permission: PermissionResolvable[]) => {
+    if(!permission[0]) return true;
 
-    const permissions=msg.channel.permissionsFor(bot.user);
+    const channel = msg.channel as TextChannel;
+    const permissions=channel.permissionsFor(bot.user as User);
+    if(!permissions) return false; 
     
     let msgPermission=`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n`;
     const msgLen=msgPermission.length;
     
-    await permission.forEach((elem)=>{
+    permission.forEach((elem) => {
         //console.log(`${elem}: ${permissions.has(elem)}`);
-        if(!permissions.has(elem))
-            msgPermission+=`> ${elem} : ${permissions.has(elem)}\n`;
+        if (!permissions.has(elem))
+            msgPermission += `> ${elem} : ${permissions.has(elem)}\n`;
     });
 
     if(msgPermission.length>msgLen){
-        msg.channel.send(msgPermission);
+        channel.send(msgPermission);
         return false;
     } else return true;
 }
-
-module.exports={checkPermissions}
