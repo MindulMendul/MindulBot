@@ -1,4 +1,5 @@
 const {search}=require('play-dl');
+const func = require("./../../func");
 
 module.exports = {
 	name: "검색",
