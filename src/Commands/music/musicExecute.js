@@ -77,7 +77,7 @@ module.exports = {
 
             connection.on(VoiceConnectionStatus.Ready, () => {
                 console.log('The connection has entered the Ready state - ready to play audio!');
-                this.play(connection, resource);//아래에 있는 play함수 호출
+                this.play(msg, connection, resource);//아래에 있는 play함수 호출
             });
         } else {
             //플레이어가 존재해서 큐에 넣으면 되는 상황
@@ -88,7 +88,7 @@ module.exports = {
         }
     },
     //play 함수
-    async play(connection, resource){
+    async play(msg, connection, resource){
         //기본 함수
         const subscription=connection.subscription;
         const audioPlayer=connection.subscription.player;
@@ -130,7 +130,7 @@ module.exports = {
                 //다음 노래 있으면 틀어주는 코드
                 const nextSong=subscription.songs.shift();
                 nextSong.volume.setVolume(player.resource.volume.volume*!connection.subscription.option.mute);
-                this.play(connection, nextSong); 
+                this.play(msg, connection, nextSong); 
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
                 if(connection) connection.destroy();//커넥션 삭제
@@ -157,16 +157,16 @@ module.exports = {
 
         const song=audioPlayer._state.resource.metadata;
         const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSecond]};
-        const msg = await connection.joinConfig.textChannel.send(sendedContent);
+        const msgSungok = await connection.joinConfig.textChannel.send(sendedContent);
 
         //버튼 인터렉션 콜렉터 부분
-        const filter = i => {return i.message.id===msg.id};
-        const collector = msg.channel.createMessageComponentCollector({filter});
+        const filter = i => {return i.message.id===msgSungok.id};
+        const collector = msgSungok.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
             const volumeMagnification=subscription.option.volumeMagnification;
-            const voiceChannel=msg.member.voice.channel;
+            const voiceChannel=msgSungok.member.voice.channel;
             if (!voiceChannel)//보이스채널 체크
-                return msg.channel.send("보이스채널에서 해주세요!");
+                return msgSungok.channel.send("보이스채널에서 해주세요!");
             switch (i.customId) {
                 case "⏩": 
                     require("./musicSkip").execute(msg); break;
@@ -178,18 +178,33 @@ module.exports = {
                     require("./musicShuffle").execute(msg); break;
                 
                 case "🔉":
-                    if (subscription.option.mute) return msg.channel.send("음소거 중이에요.");
+                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                        msg.channel.send("같은 보이스채널에서 해주세요!");
+                        return await i.update(sendedContent); //버튼 업데이트
+                    }
+
+                    if (subscription.option.mute) return msgSungok.channel.send("음소거 중이에요.");
                     await resource.volume.setVolume(Math.max(resource.volume.volume-1/(10*volumeMagnification), 0));
-                    msg.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
+                    msgSungok.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                 break;
 
                 case "🔊":
-                    if (subscription.option.mute) return msg.channel.send("음소거 중이에요.");
+                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                        msg.channel.send("같은 보이스채널에서 해주세요!");
+                        return await i.update(sendedContent); //버튼 업데이트
+                    }
+
+                    if (subscription.option.mute) return msgSungok.channel.send("음소거 중이에요.");
                     await resource.volume.setVolume(Math.min(resource.volume.volume+1/(10*volumeMagnification), 1/volumeMagnification));
-                    msg.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
+                    msgSungok.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                 break;
 
                 case "⏯":
+                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                        msg.channel.send("같은 보이스채널에서 해주세요!");
+                        return await i.update(sendedContent); //버튼 업데이트
+                    }
+
                     //style 부분은 버튼 on off 시각화를 위함
                     const stylePause=i.message.components[1].components.filter((elem)=>{return elem.label=="⏯"}).pop().style;
                     if(stylePause=='SUCCESS'){//on일 때 off으로 시각화
@@ -205,15 +220,20 @@ module.exports = {
                     //pause 부분
                     if (audioPlayer._state.status=="paused") {
                         audioPlayer.unpause();
-                        msg.channel.send("노래를 다시 틀어 드릴게요 ㅎㅎ");
+                        msgSungok.channel.send("노래를 다시 틀어 드릴게요 ㅎㅎ");
                     }
                     else if(audioPlayer._state.status=="playing") {
                         audioPlayer.pause();
-                        msg.channel.send("노래를 일시정지해 드렸어요!");
+                        msgSungok.channel.send("노래를 일시정지해 드렸어요!");
                     }
                 break;
 
                 case "🔁":
+                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                        msg.channel.send("같은 보이스채널에서 해주세요!");
+                        return await i.update(sendedContent); //버튼 업데이트
+                    }
+
                     //style 부분은 버튼 on off 시각화를 위함
                     const styleLoop=i.message.components[1].components.filter((elem)=>{return elem.label=="🔁"}).pop().style;
                     if(styleLoop=='SUCCESS'){//on일 때 off으로 시각화
@@ -229,6 +249,11 @@ module.exports = {
                 break;
 
                 case "🔇":
+                    if(msg.member.voice.channelId!=connection.joinConfig.channelId){
+                        msg.channel.send("같은 보이스채널에서 해주세요!");
+                        return await i.update(sendedContent); //버튼 업데이트
+                    }
+                    
                     //style 부분은 버튼 on off 시각화를 위함
                     const styleMute=i.message.components[1].components.filter((elem)=>{return elem.label=="🔇"}).pop().style;
                     if(styleMute=='SUCCESS'){//on일 때 off으로 시각화
@@ -246,10 +271,10 @@ module.exports = {
                     if (subscription.option.mute) {//뮤트 걸리고 나서
                         subscription.option.volume=resource.volume.volume;
                         await resource.volume.setVolume(0);
-                        msg.channel.send(`음소거되었어요`);
+                        msgSungok.channel.send(`음소거되었어요`);
                     } else {//뮤트 풀리고 나서
                         await resource.volume.setVolume(subscription.option.volume);
-                        msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
+                        msgSungok.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                     }
                 break;
             }
