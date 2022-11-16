@@ -14,7 +14,7 @@ module.exports = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
-    permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY"],
+    permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY"],//링크 첨부는 뭐지?
     async execute(msg, args){
         //보이스채널 체크부분
         const voiceChannel=msg.member.voice.channel;
@@ -75,7 +75,6 @@ module.exports = {
                 volumeMagnification:6,// 1/n 배 되는 거라 커질 수록 소리가 작아짐
                 mute:false,
                 loop:false,
-                skip:false,
             };
 
             connection.on(VoiceConnectionStatus.Ready, () => {
@@ -115,13 +114,11 @@ module.exports = {
                 this.play(connection, subscription.songs.shift());
 
                 //스킵 루프 조건 만족하면 루프돌리는 부분
-                const skip=subscription.option.skip;
                 const loop=subscription.option.loop;
-                if(!skip&&loop) subscription.songs.push(player.resource);
-                subscription.option.skip=false;
+                if(loop) subscription.songs.push(player.resource);
             } else {
                 audioPlayer.stop();
-                connection.destroy();
+                if(connection)connection.destroy();
             }
         });
 
