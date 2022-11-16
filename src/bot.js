@@ -193,7 +193,7 @@ setInterval( () => {
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
 =======
 
-    exports.bot=bot;//알람 모음
+    exports.bot=bot;
     //테스트
 });
 
