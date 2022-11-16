@@ -4,4 +4,4 @@ export const shuffle = (arr: Array<any>) => {
     [arr[i], arr[j]] = [arr[j], arr[i]]; // swap
   }
   return arr;
-}
+};

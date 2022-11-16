@@ -8,7 +8,7 @@ import { createAudioResource } from '@discordjs/voice';
 
 import { CMD } from '../../types/type';
 import { musicExecutePlay } from '../../hooks/music/musicExecutePlay';
-import { musicCollection } from '../../../bot'
+import { musicCollection } from '../../../bot';
 import { GuildMember, TextChannel } from 'discord.js';
 import { musicEntity } from '../../types/musicType';
 import { VolumeTransformer } from 'prism-media';
@@ -31,18 +31,20 @@ export const musicExecute: CMD = {
     //노래 검색부분
     const textChannel = msg.channel as TextChannel;
     const searchStr = args.join(' ');
-    if (searchStr == '') //빈 항목 체크
+    if (searchStr == '')
+      //빈 항목 체크
       return textChannel.send('어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ');
 
     const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
-    if (searched == undefined) { // 검색이 안 된 경우
+    if (searched == undefined) {
+      // 검색이 안 된 경우
       console.log(`버그 발생부분 => 검색결과가 안 잡힘.\n> searchStr: ${searchStr}\n> searched: ${searched}`);
       return textChannel.send(
         '검색결과가 없네요. 다른 키워드로 다시 시도해보세요!\n만약 유튜브 링크를 검색했다면 링크 뒷부분의 **&list**이후를 지워서 입력해보세요!'
       );
     } else {
       const searchedId = searched.id as string;
-      const playStream = await stream(searchedId) as YouTubeStream;
+      const playStream = (await stream(searchedId)) as YouTubeStream;
       const songInfo = (await video_basic_info(searchedId)).video_details;
       const song = {
         title: songInfo.title as string,
@@ -81,7 +83,7 @@ export const musicExecute: CMD = {
           loop: false,
           skip: false
         };
-        const volume=resource.volume as VolumeTransformer;
+        const volume = resource.volume as VolumeTransformer;
         volume.setVolume(0.5 / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
         const entity: musicEntity = {
@@ -95,7 +97,7 @@ export const musicExecute: CMD = {
           song: resource,
           songs: [],
           option: option
-        }
+        };
         musicCollection.set(guildId, entity);
 
         connection.on(VoiceConnectionStatus.Ready, () => {
@@ -104,12 +106,11 @@ export const musicExecute: CMD = {
         });
       } else {
         //플레이어가 존재해서 큐에 넣으면 되는 상황
-        if (msgMember.voice.channelId != voiceChannel.id)
-          return msg.channel.send('같은 보이스채널에서 해주세요!');
+        if (msgMember.voice.channelId != voiceChannel.id) return msg.channel.send('같은 보이스채널에서 해주세요!');
 
         musicEntity.songs.push(resource);
         const option = musicEntity.option;
-        const volume=resource.volume as VolumeTransformer;
+        const volume = resource.volume as VolumeTransformer;
         volume.setVolume((0.5 / option.volumeMagnification) * Number(!option.mute)); //노래 사운드
 
         musicCollection.set(guildId, musicEntity);
