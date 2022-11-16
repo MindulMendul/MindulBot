@@ -81,7 +81,7 @@ async function noCmd(msg){//명령어 없는 텍스트
 };
 
 process.on('unhandledRejection',(err)=>{//app crash걸렸을 때 실행되는 코드
-	bot.users.cache.get(OWNER_ID).send(`에러떴다ㅏㅏㅏㅏㅏ\n${err}\n`);
+	//bot.users.cache.get(OWNER_ID).send(`에러떴다ㅏㅏㅏㅏㅏ\n${err}\n`);
 	console.error(err);
 });
 
