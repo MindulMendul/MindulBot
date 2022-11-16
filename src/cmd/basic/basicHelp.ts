@@ -18,31 +18,11 @@ export const basicHelp: CMD = {
         `명령어는 이런 것들이 있어요.\n 명령어 전에는 "한글 '${process.env.PREFIX}' 를 입력하세요! ` +
         `${process.env.PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. ` +
         `노래명령어를 원하신다면 따로 "${process.env.PREFIX}노래도움말" 명령어로 제공하고 있으니 참고 바랍니다^^ ` +
-        '\n(해당 문서는 2022년 01월 13일에 업데이트되었습니다.) ',
+        '\n(해당 문서는 2022년 07월 06일에 업데이트되었습니다.) ',
       fields: [
         {
           name: '민둘',
           value: '민둘이에 대해서 대답해요.\n그런데 화내면 앞에 말했던 것들을 수정해요. (숨은 명령어)',
-          inline: true
-        },
-        {
-          name: '맨둘',
-          value: '"맨둘이에 대해서 대답해요',
-          inline: true
-        },
-        {
-          name: '민둘맨둘',
-          value: '민둘이랑 맨둘이의 사이를 얘기해줘요.',
-          inline: false
-        },
-        {
-          name: '시간',
-          value: '시간을 대답해요.',
-          inline: true
-        },
-        {
-          name: '날짜',
-          value: '날짜를 대답ㅎ',
           inline: true
         },
         {
