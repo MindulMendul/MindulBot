@@ -8,7 +8,7 @@ async function checkPermissions(msg, permission){
     const msgLen=msgPermission.length;
     
     await permission.forEach((elem)=>{
-        console.log(`${elem}: ${permissions.has(elem)}`);
+        //console.log(`${elem}: ${permissions.has(elem)}`);
         if(!permissions.has(elem))
             msgPermission+=`> ${elem} : ${permissions.has(elem)}\n`;
     });
