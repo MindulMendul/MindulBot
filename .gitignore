@@ -32,4 +32,8 @@ GlobalVariable.js
 =======
 >>>>>>> 6f478bf8 (.gitignore 수정)
 mindulBot_privateKey.ppk
+<<<<<<< HEAD
 >>>>>>> e369aa69 (트레쉬파일 삭제)
+=======
+oldFile/
+>>>>>>> 8effe22f (v8 뭐 일단 준비해봄, 노래봇 기능 리팩토링)
