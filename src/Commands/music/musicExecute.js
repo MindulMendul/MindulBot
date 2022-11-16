@@ -158,6 +158,7 @@ module.exports = {
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
             await i.update(sendedContent);
+            const volumeMagnification=subscription.option.volumeMagnification;
             switch (i.customId) {
                 case "⏯":
                     if (audioPlayer._state.status=="paused") {
