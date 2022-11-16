@@ -14,6 +14,7 @@ moment.tz.setDefault("Asia/Seoul"); //서울 시간
 
 const bot = new Client();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";
@@ -35,6 +36,9 @@ const GV=require("./../GlobalVariable.js");
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
+=======
+const GV=require("./../GlobalVariable");
+>>>>>>> a614095d (소스 모듈화 작업 중)
 
 <<<<<<< HEAD
 const helpEmbed = {
@@ -90,9 +94,13 @@ const helpEmbed = {
 };
 =======
 var msgResponse = new Map();//music searching 같은 명령어에 대한 변수 관리
+<<<<<<< HEAD
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
+=======
+const func=require("./func");//잡다한 함수 모음
+>>>>>>> a614095d (소스 모듈화 작업 중)
 
-bot.on('ready', async () => {
+bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     console.log(moment().format("YYYY년 MM월 DD일 HH시 mm분 ss초"));
 <<<<<<< HEAD
@@ -118,6 +126,7 @@ setInterval(function() {
     //프로그램 고칠 땐 문구를 "결국 전공 수업에서 F를 피하지 못하"로 바꿔두기
 =======
     bot.user.setActivity('성적에서 F만 피', { type: 'PLAYING' });
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     bot.user.setActivity('개발 당', { type: 'PLAYING' });
@@ -182,39 +191,25 @@ setInterval( () => {
 >>>>>>> 3068f905 (기본길드 전용 플래그 알림 걸어둠)
 
 >>>>>>> 52f94846 (command 파일을 json으로 변경함)
+=======
+
+    exports.bot=bot;//알람 모음
+    //테스트
+});
+
+bot.on('error', (err)=>{//에러났을때 어디서나는지 알고 싶다ㅏㅏㅏ
+    bot.users.cache.get(OWNER_ID).send(err);
+});
+
+//이모지 달았을 때 반응
+>>>>>>> a614095d (소스 모듈화 작업 중)
 bot.on('messageReactionAdd', async (reaction, user) => {
     const asdf=msgResponse.get(user.id);
     if(asdf!=undefined){//특수 명령어가 있는 경우 ex) 타로
-        let strDes="", strField="";
         if(asdf.cmd=="tarotCard"){
-            const tarot=require("./Commands/basic/TarotList.js");
-            const arr=tarot.script;
-            
-            reaction.users.remove(user);
-            switch(reaction.emoji.name){
-                case "❤️": strDes="빨간색 하트를 고른 당신!"; strField=arr[0]; break;
-                case "🧡": strDes="주황색 하트를 고른 당신!"; strField=arr[1]; break;
-                case "💛": strDes="노란색 하트를 고른 당신!"; strField=arr[2]; break;
-                case "💚": strDes="초록색 하트를 고른 당신!"; strField=arr[3]; break;
-                case "💙": strDes="파란색 하트를 고른 당신!"; strField=arr[4]; break;
-                case "💜": strDes="보라색 하트를 고른 당신!"; strField=arr[5]; break;
-            }
+            const tarot=require("./Commands/basic/CmdTarot");
 
-            const tarotEmbed = {
-                color: 0xF7CAC9,
-                author: {
-                    name: '민둘봇의 타로 하트',
-                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-                },
-                description: `${strDes}`,
-                fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
-                image: {url: strField[1]},
-                footer: {
-                    text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
-                    icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
-                },
-            };
-            asdf.msg.edit({embed: tarotEmbed});
+            asdf.msg.edit({embed: (await tarot.secondStep(reaction, user))});//세컨 스텝
             msgResponse.delete(user.id);
         }
     } else {//특수 명령어가 없는 경우 ex)노래 사운드 조절
@@ -285,7 +280,6 @@ bot.on('messageReactionAdd', async (reaction, user) => {
             }
         }
     }
-
 });
 
 // 명령어 모음
@@ -621,9 +615,11 @@ bot.on('message', async (msg) => {
 >>>>>>> 7a1f6f12 (앞으로 개발할 내용을 개발 일지 임베드로 보내는 기능 추가)
 =======
             case "타로":
+                //권한 확인
                 if(!permissions.has("ADD_REACTIONS"))
                     return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
                 
+                //진행중인 명령어 확인
                 if(msgResponse.get(msg.member.id)!=undefined)
                     return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                 
@@ -632,7 +628,7 @@ bot.on('message', async (msg) => {
                 msgResponse.set(msg.member.id,
                     {
                         guild: msg.guild.id,    cmd: "tarotCard", 
-                        msg: (await tarot.firstStep(msg))
+                        msg: (await tarot.firstStep(msg))//이거 되기까지 시간 걸림;;
                     }
                 );
             break;
@@ -788,6 +784,7 @@ bot.on('message', async (msg) => {
                     if(msgResponse.get(msg.member.id)!=undefined)
                         return msg.channel.send(`이미 진행 중인 다른 명령어가 있네요. 해당 명령을 먼저 수행해주세요\n> 실행중인 명령어 키워드: ${msgResponse.get(msg.member.id).cmd}`);
                     
+<<<<<<< HEAD
                     musicBot.remove(msg, args);
                     let argsTemp=[];
                     args.forEach(element=>{//args의 각각의 성분을
@@ -795,11 +792,21 @@ bot.on('message', async (msg) => {
                             if(elem!="")argsTemp.push(elem); //,단위로 쪼개어 하나하나 집어넣기
                         });
                     });
+=======
+                    const argsArr=await func.effectiveArr(args.toString(),",",1,8);//배열이 유효한지 조사
+                    
+                    if(argsArr.length==0){msg.channel.send("올바른 명령이 입력되지 않아 삭제 명령이 취소되었습니다.");}
+                    else{musicBot.remove(msg, argsArr);}
+>>>>>>> 94bc2140 (소스 모듈화 작업 중)
 
                     msgResponse.set(msg.member.id,//멤버를 기준으로
                         {
                             guild: msg.guild.id,    cmd: "musicRemove",
+<<<<<<< HEAD
                             args: argsTemp,//이게 실제 명령어
+=======
+                            args: argsArr,//이게 실제 명령어
+>>>>>>> 94bc2140 (소스 모듈화 작업 중)
                             timer: setTimeout(()=>{
                                 msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
                                 msgResponse.delete(msg.member.id);
@@ -831,11 +838,9 @@ bot.on('message', async (msg) => {
             if(cmdResponse!=undefined){//있어야 작동함
                 switch(cmdResponse.cmd){
                     case 'musicSearch':
-                        let arrTemp=[];//일단 명령어 담아두기
-                        msg.content.split(",").forEach(element => {
-                            if(element!="") arrTemp.push(element.trim());
-                        });
+                        const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
+<<<<<<< HEAD
                         let arrCheck=[];//명령어가 유효한지 전수 조사
 
                         while(arrTemp.length>0) {
@@ -847,13 +852,16 @@ bot.on('message', async (msg) => {
                             await tmpFunc();
                         }
                         if(arrCheck.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+=======
+                        if(msgArr.length==0) {//리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+>>>>>>> 94bc2140 (소스 모듈화 작업 중)
                             cmdResponse.message.delete();
                             msgResponse.delete(msg.member.id);
-                            return msg.channel.send("노래 검색 취소할게요;;");
+                            return msg.channel.send("유효하지 않은 대답이에요. 노래 검색 취소할게요..;;");
                         }
 
-                        while(arrCheck.length>0){
-                            await musicBot.execute(msg, cmdResponse.embed.fields[arrCheck.shift()].url);
+                        while(msgArr.length>0){
+                            await musicBot.execute(msg, cmdResponse.embed.fields[msgArr.shift()].url);
                         }
 
                         msg.delete();
@@ -871,7 +879,8 @@ bot.on('message', async (msg) => {
                             });
                             clearTimeout(msgResponse.timer);
                             await msg.channel.send("삭제 완료!");
-                            musicBot.show(msg);
+                            if(musicBot.musicQueue.get(msg.guild.id).songs.length>0)
+                                musicBot.show(msg);//큐에 남아있는 노래가 있다면 보여주기
                         } else {//부정
                             msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
                         }
@@ -981,6 +990,7 @@ bot.on('message', async (msg) => {
     }
 });
 
+<<<<<<< HEAD
 bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
@@ -994,3 +1004,6 @@ bot.login(LoginBotToken);
 =======
 bot.login(GV.LoginBotToken);
 >>>>>>> 2c0157ca (셔플 기능 강화 & 루프 기능 추가)
+=======
+bot.login(GV.LoginBotToken);
+>>>>>>> 94bc2140 (소스 모듈화 작업 중)
