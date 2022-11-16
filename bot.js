@@ -8,7 +8,7 @@ require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 const {Intents, MessageActionRow, MessageButton} = require('discord.js');
 
-const bot = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const bot = new Discord.Client({ intents: ['GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILDS', 'GUILD_MESSAGE_REACTIONS'] });
 exports.bot=bot;//봇
 bot.commands = new Discord.Collection(); //명령어 모음집
 bot.guildCmdQueue = new Discord.Collection(); //길드 명령어큐

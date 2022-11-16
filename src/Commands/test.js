@@ -48,13 +48,13 @@ module.exports = {
 		this.react(msg);
 	},
 	async react(msg){
-		const msgFilter = (msg) => {
+		const filter = (msg) => {
             return (필터);
         }
-        const collector = msg.createMessageCollector(msgFilter, {max, maxProcessed});
+        const collector = msg.channel.createMessageCollector({msgFilter, max, maxProcessed});
         collector.on('collect', (msg) => {
 			//메시지 함수
-		}
+		});
 	}
 };
 
@@ -69,14 +69,19 @@ module.exports = {
 		this.react(reactTargetMsg, msg);
 	},
 	async react(reactTargetMsg, msg){
-		const reactionFilter = (reaction, user) => {
+		const filter = (reaction, user) => {
             return (필터);
         }
-        const collector = reactTargetMsg.createReactionCollector(reactionFilter, {maxEmojis, maxUsers, max});
+        const collector = reactTargetMsg.createReactionCollector({filter, maxEmojis, maxUsers, max});
         collector.on('collect', (reaction, user) => {
 			//리액션 함수
-		}
+		});
 	}
 };
+
+*/
+
+/* 퍼미션 체크 함수 테스트 중
+	
 
 */
