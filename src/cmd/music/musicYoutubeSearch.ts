@@ -16,14 +16,12 @@ export const musicYoutubeSearch: CMD = {
     const voiceChannel = msgMember.voice.channel as VoiceChannel;
     const textChannel = msg.channel as TextChannel;
 
-    if (!msgMember.voice.channel)
-      return textChannel.send('보이스채널에서 해주세요!');
-    
-    if (msgMember.voice.channel.id != voiceChannel.id)
-      return textChannel.send('같은 보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
+
+    if (msgMember.voice.channel.id != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 
     const items = await musicSearch(msg, 8, args);
-    if(!args || !items) return msg.channel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
+    if (!args || !items) return msg.channel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
 
     //임베드 만들기
     const fields = items.map((e, i) => {
@@ -43,21 +41,23 @@ export const musicYoutubeSearch: CMD = {
 
     const embedMsg = await msg.channel.send({ embeds: [embedSearchYoutube] });
 
-    const filter = (message: Message) => {return !message.author.bot && message.author.id === msg.author.id;};
+    const filter = (message: Message) => {
+      return !message.author.bot && message.author.id === msg.author.id;
+    };
     const collector = textChannel.createMessageCollector({ filter, max: 1 });
     collector.on('collect', async (message) => {
       const msgArr = effectiveArr(message.content, 1, items.length); //배열이 유효한지 조사
 
-       //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
-      if (!msgArr.length)
-        message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
+      //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+      if (!msgArr.length) message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
       else {
         msgArr.forEach((e) => {
           const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
           musicExecute.execute(message, tmpStr);
         });
       }
-      message.delete(); embedMsg.delete();
+      message.delete();
+      embedMsg.delete();
     });
   }
 };
