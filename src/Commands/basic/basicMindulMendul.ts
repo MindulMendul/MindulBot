@@ -1,6 +1,8 @@
-module.exports = {
+import { cmd } from "../../type";
+
+export const basicMindulMendul: cmd = {
 	name: `민둘맨둘`,
-	cmd: ["민둘맨둘","alsenfaosenf", "ㅁㄷㅁㄷ"],
+	cmd: ["민둘맨둘", "alsenfaosenf", "ㅁㄷㅁㄷ"],
 	type: "basic",
 	permission: [""],
 	execute(msg) {

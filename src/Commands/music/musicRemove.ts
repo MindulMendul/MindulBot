@@ -1,6 +1,8 @@
-const {getVoiceConnection,} = require('@discordjs/voice');
-const func = require("./../../func");
-module.exports = {
+import { getVoiceConnection } from '@discordjs/voice';
+import { effectiveArr } from "./../../func/effectiveArr";
+import { cmd } from "../../type";
+
+export const musicRemove: cmd = {
 	name: "제거",
 	cmd: ["제거", "삭제", "ㅈㄱ", "ㅅㅈ"],
     type: "music",
@@ -17,7 +19,7 @@ module.exports = {
         if(msg.member.voice.channelId!=connection.joinConfig.channelId)
             return msg.channel.send("같은 보이스채널에서 해주세요!");
 
-        const argsArr=await func.effectiveArr(args.toString(),",",1,connection.subscription.songs.length);//배열이 유효한지 조사
+        const argsArr=await effectiveArr(args.toString(),",",1,connection.subscription.songs.length);//배열이 유효한지 조사
         if(argsArr.length==0)
             return msg.channel.send("어떤 곡을 지울지 모르겠어요!");
         
@@ -30,16 +32,18 @@ module.exports = {
 
         this.react(msg, argsArr, connection);
     },
-    async react (msg, args, connection){
+    async react (msg: any, args:any, connection:any){
         const correctArr=["네","어","ㅇㅋ","ㅇㅇ","ㅇ","d","D","y","Y","알았어","dz","dd", "얍",'0'];
 
         //콜렉터 부분
-        const filter = (message) => {return (!message.author.bot)&(message.author.id===msg.author.id);};
+        const filter = (message: { author: { bot: any; id: any; }; }) => {
+            return (!message.author.bot)&&(message.author.id===msg.author.id);
+        };
         const collector = msg.channel.createMessageCollector({filter, max:1, time:7000});
-        collector.on('collect', async (msg) => {
+        collector.on('collect', async (msg: { content: string; channel: { send: (arg0: string) => void; }; }) => {
             if(correctArr.includes(msg.content)){//긍정
-                args.sort((a,b)=>{return b-a;})
-                .forEach(element => {
+                args.sort((a: number,b: number)=>{return b-a;})
+                .forEach((element: any) => {
                     connection.subscription.songs.splice(element,1);
                 });
                 await msg.channel.send("삭제 완료!");
@@ -48,7 +52,7 @@ module.exports = {
                 msg.channel.send("부정의 의미로 받아들이고, 그대로 내버려둘게요.");
         });
 
-        collector.on('end', collected => {
+        collector.on('end', (collected: { first: () => any; }) => {
             if(!collected.first()) msg.channel.send("대답이 따로 없으니까 그냥 내비둘게요~");
         });
     }

@@ -1,10 +1,11 @@
-module.exports = {
+import { cmd } from "../type";
+
+export const test: cmd = {
 	name: "테스트",
 	cmd: ["테스트","ㅌㅅㅌ","ㅎ"],
 	type: "test",
 	permission: [""],
-	needReact: false,
-	async execute(msg, args) {
+	async execute(msg) {
 		if(msg.member.user.id!=process.env.OWNER_ID) return;
 	},
 };

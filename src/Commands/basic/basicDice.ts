@@ -1,6 +1,8 @@
+import { cmd } from "../../type";
+
 const {MessageActionRow, MessageButton}=require('discord.js');
 
-module.exports = {
+export const basicDice: cmd = {
 	name: `주사위`,
 	cmd: ["데굴", "데굴데굴", "주사위", "ㄷㄱㄷㄱ"],
 	type: "basic",
@@ -9,7 +11,9 @@ module.exports = {
 		const button = new MessageActionRow()//첫 번째 줄 버튼
         .addComponents(new MessageButton().setCustomId('🛎️').setLabel('🛎️').setStyle('PRIMARY'),);
 		
-		const filter = i => {return (i.user.id===msg.author.id) & (i.message.id===msgDice.id)};
+		const filter = (i: { user: { id: string; }; message: { id: string; }; }) => {
+			return (i.user.id===msg.author.id) && (i.message.id===msgDice.id)
+		};
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
 			const contentNum=Number(i.message.content.charAt(i.user.tag.length+3))+1;
