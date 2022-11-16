@@ -4,7 +4,6 @@ let scheduling=undefined;
 //크롤링때 쓰는 거
 const axios = require("axios");
 const cheerio = require("cheerio");
-const ytdl=require("ytdl-core"); //유튜브 노래 틀어주는 거
 
 <<<<<<< HEAD:src/Commands/music/Music.js
 let scheduling=undefined;

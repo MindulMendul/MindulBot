@@ -1,5 +1,7 @@
-const { searchYoutubeList}=require("./musicBot");
-const ytdl=require("ytdl-core");
+const {searchYoutubeList}=require("./musicBot");
+//const ytdl=require("ytdl-core");
+const {video_basic_info, stream}=require('play-dl');
+
 const {
     VoiceConnectionStatus,
     AudioPlayerStatus,
@@ -28,30 +30,31 @@ module.exports = {
         if(searchStr=="")//빈 항목 체크
             return textChannel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
         
-        let tmpMusicSite="";
+        let musicSiteID="";
         try{//노래 정보 추출
             if(searchStr.includes("https://")){//링크로 틀었을 때
                 if(searchStr.includes("https://www.youtube.com/watch?v="))//유튜브 링크만 인정
-                    tmpMusicSite=searchStr.slice(searchStr.indexOf("=")+1,searchStr.length);
+                    musicSiteID=searchStr.slice(searchStr.indexOf("=")+1,searchStr.length);
                 else if(searchStr.includes("https://youtu.be/"))
-                    tmpMusicSite=searchStr.slice(searchStr.indexOf("e/")+2,searchStr.length);
+                    musicSiteID=searchStr.slice(searchStr.indexOf("e/")+2,searchStr.length);
                 else return textChannel.send("링크가 잘못 되었네요.");
             }
-            else tmpMusicSite = (await searchYoutubeList(searchStr, 1)).pop().url;
+            else musicSiteID = (await searchYoutubeList(searchStr, 1)).pop().url;
         } catch(err){return textChannel.send(err);}//검색결과 없으면 없다고 말해주는 곳
-        const musicSite = `https://www.youtube.com/watch?v=${tmpMusicSite}`;
+        //const musicSite = `https://www.youtube.com/watch?v=${musicSiteID}`;
         
-        const songInfo = await ytdl.getInfo(musicSite);
+        const playStream = await stream(musicSiteID);
+        const songInfo = (await video_basic_info(musicSiteID)).video_details;
         const song = {
-            title: songInfo.videoDetails.title,
-            url: songInfo.videoDetails.video_url,
-            lengthSeconds: songInfo.videoDetails.lengthSeconds,
+            title: songInfo.title,
+            url: songInfo.url,
         };
-        const resource=createAudioResource(ytdl(song.url),{
+        console.log(playStream.stream);
+        const resource=createAudioResource(playStream.stream, {
             metadata:song,
-            filter: 'audioonly',
             inlineVolume: true,
             silencePaddingFrames:5,
+            inputType: playStream.type,
             });
 
         //Guild 체크해서 생성자가 존재하는지 확인하는 곳
@@ -105,9 +108,13 @@ module.exports = {
         });
         
         audioPlayer.on('error', error => {
-            connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
-            console.log(error);
-            if(connection) connection.destroy();
+            if(error.message=="aborted") {
+                connection.joinConfig.textChannel.send(`에러났...나?`);
+            } else {
+                connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
+                console.log(error);
+                audioPlayer.stop();
+            }
         });
 
         audioPlayer.once(AudioPlayerStatus.Idle, (player) => {
@@ -153,10 +160,10 @@ module.exports = {
         const msg = await connection.joinConfig.textChannel.send(sendedContent);
 
         //버튼 인터렉션 콜렉터 부분
-        const filter = i => {return true};
+        const filter = i => {return i.message.id===msg.id};
         const collector = msg.channel.createMessageComponentCollector({filter});
         collector.on('collect', async i => {
-            i.update(sendedContent);
+            await i.update(sendedContent);
             switch (i.customId) {
                 case "⏯":
                     if (audioPlayer._state.status=="paused") {
