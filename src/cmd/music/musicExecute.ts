@@ -35,9 +35,8 @@ export const musicExecute: CMD = {
       //빈 항목 체크
       return textChannel.send('어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ');
 
-    const searchStr = (argJoin.includes('https://www.youtube.com/watch?v='))?
-    argJoin.slice(0, 43): argJoin;
-    const searched = (await search(searchStr, { source: { youtube: 'video' }, limit:1})).pop();
+    const searchStr = argJoin.includes('https://www.youtube.com/watch?v=') ? argJoin.slice(0, 43) : argJoin;
+    const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
     if (searched == undefined) {
       // 검색이 안 된 경우
       console.log(`버그 발생부분 => 검색결과가 안 잡힘.\n> searchStr: ${searchStr}\n> searched: ${searched}`);

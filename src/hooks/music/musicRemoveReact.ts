@@ -23,7 +23,7 @@ export const musicRemoveReact = async (msg: Message, args: Array<number>, musicE
         });
       await msg.channel.send('삭제 완료!');
       musicCollection.set(msg.guildId as string, musicEntity);
-      musicShow.execute(msg,[]); //큐에 남아있는 노래가 있다면 보여주기
+      musicShow.execute(msg, []); //큐에 남아있는 노래가 있다면 보여주기
     } //부정
     else msg.channel.send('부정의 의미로 받아들이고, 그대로 내버려둘게요.');
   });
