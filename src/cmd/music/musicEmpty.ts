@@ -11,7 +11,7 @@ export const musicEmpty: CMD = {
     const guildId = msg.guildId as string;
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
-    let musicEntity = musicCollection.get(guildId);
+    const musicEntity = musicCollection.get(guildId);
 
     if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
@@ -20,6 +20,7 @@ export const musicEmpty: CMD = {
       return textChannel.send('같은 보이스채널에서 해주세요!');
 
     musicEntity.songQueue=[];
+    musicEntity.option.skip=true;
     musicCollection.set(guildId, musicEntity);
 
     musicEntity.subscription?.player.stop();

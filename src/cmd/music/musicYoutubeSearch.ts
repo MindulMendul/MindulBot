@@ -4,6 +4,8 @@ import { CMD } from '../../types/type';
 import { GuildMember, Message, TextChannel, VoiceChannel } from 'discord.js';
 import { musicExecute } from './musicExecute';
 import { musicSearch } from '../../hooks/music/musicSearch';
+import { bot, musicCollection } from '../../../bot';
+import { musicEntity } from '../../types/musicType';
 
 export const musicYoutubeSearch: CMD = {
   name: '검색',
@@ -12,18 +14,20 @@ export const musicYoutubeSearch: CMD = {
   permission: ['CONNECT', 'SPEAK', 'MANAGE_EMOJIS_AND_STICKERS', 'READ_MESSAGE_HISTORY', 'MANAGE_MESSAGES'],
   //찾은 유튜브 주소를 배열에 집어넣는 함수
   async execute(msg, args) {
+    const guildId = msg.guildId as string;
     const msgMember = msg.member as GuildMember;
-    const voiceChannel = msgMember.voice.channel as VoiceChannel;
     const textChannel = msg.channel as TextChannel;
+    const musicEntity = musicCollection.get(guildId);
 
     //보이스채널 체크부분
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
 
     //검색어 체크부분
-    if(!args?.length) return textChannel.send("검색어를 입력해주세요!");
+    if (!args?.length) return textChannel.send("검색어를 입력해주세요!");
 
     //같은 보이스채널인지 체크
-    if (msgMember.voice.channel.id != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
+    if (musicEntity && msgMember.voice.channelId != musicEntity.voiceChannel.id)
+      textChannel.send('같은 보이스채널에서 해주세요!');
 
     const items = await musicSearch(args?.join(" "), 8);
     if (!items) return textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
@@ -56,11 +60,12 @@ export const musicYoutubeSearch: CMD = {
       //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
       if (!msgArr.length) message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
       else {
-        msgArr.forEach((e) => {
+        for (const e of msgArr) {
           const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
-          musicExecute.execute(message, tmpStr);
-        });
+          await musicExecute.execute(message, tmpStr);
+        }
       }
+
       message.delete();
       embedMsg.delete();
     });

@@ -8,7 +8,7 @@ import { guildCmdQueue, musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 
 export const musicExecuteMsg = async (guildId: string) => {
-  let musicEntity = musicCollection.get(guildId) as musicEntity;
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { voiceChannel, textChannel, audioPlayer, option, playingSong } = musicEntity;
   
   const buttonFirst = new MessageActionRow()

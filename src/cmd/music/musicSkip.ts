@@ -18,8 +18,8 @@ export const musicSkip: CMD = {
     if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
-
-    musicEntity.subscription?.player.stop();
+    
     musicEntity.option.skip = true;
+    musicEntity.subscription?.player.stop();
   }
 };

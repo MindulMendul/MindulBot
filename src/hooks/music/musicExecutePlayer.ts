@@ -4,9 +4,9 @@ import { musicCollection } from '../../../bot';
 import { musicExecuteMsg } from './musicExecuteMsg';
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
-export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
+export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<metadata>) => {
   //기본 함수
-  let musicEntity = musicCollection.get(guildId) as musicEntity;
+  const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
   audioPlayer.play(playingSong);
