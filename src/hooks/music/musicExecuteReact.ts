@@ -63,7 +63,8 @@ export const musicExecuteReact = (
         case '🔉':
           if (option.mute) msgSungok.channel.send('음소거 중이에요.');
           else {
-            volume.setVolume(Math.max(volume.volume - 1 / (10 * volumeMagnification), 0));
+            option.volume=Number(Math.max(0, option.volume-0.1).toFixed(1));
+            volume.setVolume(option.volume/volumeMagnification);
             msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
           }
           break;
@@ -71,7 +72,8 @@ export const musicExecuteReact = (
         case '🔊':
           if (option.mute) msgSungok.channel.send('음소거 중이에요.');
           else {
-            volume.setVolume(Math.min(volume.volume + 1 / (10 * volumeMagnification), 1 / volumeMagnification));
+            option.volume=Number(Math.min(1, option.volume+0.1).toFixed(1));
+            volume.setVolume(option.volume/volumeMagnification);
             msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`);
           }
           break;
