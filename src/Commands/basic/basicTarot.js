@@ -75,7 +75,7 @@ module.exports = {
                 },
                 description: `${strDes}`,
                 fields:[{name: `오늘은 **${strField[0]}**이에요`, value: strField[2]}],
-                image: {url: strField[1]},
+                image: {url: await strField[1]},
                 footer: {
                     text: `모든 설명은 심리학 이론인 바넘효과를 바탕으로 작성되었습니다.`,
                     icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
