@@ -1,14 +1,14 @@
-import { Message, PermissionResolvable, TextChannel } from 'discord.js';
+import { Message, PermissionResolvable } from 'discord.js';
 
 export interface CMD {
   name: string;
-  cmd: Array<string>;
+  cmd: string[];
   type: string;
   permission: Array<PermissionResolvable>;
-  execute: (arg0: Message, arg1?: Array<string>) => Promise<void | string | Message> | undefined;
+  execute: (arg0: Message, arg1?: string[]) => Promise<void | string | Message> | undefined;
 }
 
-export interface embed {
+export type Embed = {
   color: number;
   author: {
     name: string;

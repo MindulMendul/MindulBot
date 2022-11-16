@@ -4,13 +4,11 @@ import { CMD } from '../../types/type';
 //import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
 //import { test } from '../../cmd/admin/test';
 
-import { basicAngry } from '../../cmd/basic/basicAngry';
 import { basicDev } from '../../cmd/basic/basicDev';
 import { basicDice } from '../../cmd/basic/basicDice';
 import { basicGongji } from '../../cmd/basic/basicGongji';
 import { basicHelp } from '../../cmd/basic/basicHelp';
 import { basicMindul } from '../../cmd/basic/basicMindul';
-import { basicNaga } from '../../cmd/basic/basicNaga';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
 
@@ -40,13 +38,11 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   // putCmd(test);
 
   //basic
-  putCmd(basicAngry);
   putCmd(basicDev);
   putCmd(basicDice);
   putCmd(basicGongji);
   putCmd(basicHelp);
   putCmd(basicMindul);
-  putCmd(basicNaga);
   putCmd(basicSuggestion);
   putCmd(basicTarot);
 

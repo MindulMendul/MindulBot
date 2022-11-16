@@ -1,4 +1,4 @@
-import { GuildMember } from 'discord.js';
+import { GuildMember, TextChannel } from 'discord.js';
 import { musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 
@@ -9,17 +9,15 @@ export const musicShow: CMD = {
   permission: [],
   async execute(msg) {
     const guildId = msg.guildId as string;
-    const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
+    const textChannel = msg.channel as TextChannel;
+    const musicEntity = musicCollection.get(guildId);
 
-    if (musicEntity == undefined) return msg.channel.send('노래 명령어를 먼저 입력해주세요!');
-
-    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
-
-    if (!musicEntity.connection) return msg.channel.send('재생목록에 노래가 없어요!');
-
+    if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
+    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
+    if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
-      return msg.channel.send('같은 보이스채널에서 해주세요!');
+      return textChannel.send('같은 보이스채널에서 해주세요!');
 
     const fields = musicEntity.songQueue.map((e, i) => {
       return {
@@ -35,6 +33,6 @@ export const musicShow: CMD = {
       fields: fields
     };
 
-    return msg.channel.send({ embeds: [embedQueue] });
+    return textChannel.send({ embeds: [embedQueue] });
   }
 };
