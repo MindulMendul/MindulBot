@@ -5,7 +5,7 @@
     "start": "ts-node bot.ts",
     "dev": "nodemon bot.ts",
     "prepublish": "npm run pretty",
-    "pretty": "prettier --config .prettierrc --write bot.ts 'src/**/*.ts'"
+    "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
   },
   "dependencies": {
     "@discordjs/node-pre-gyp": "^0.4.2",
