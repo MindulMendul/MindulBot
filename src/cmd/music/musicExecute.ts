@@ -1,6 +1,4 @@
-import { DiscordGatewayAdapterCreator, PlayerSubscription } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
-import { joinVoiceChannel } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 
 import { CMD } from '../../types/type';
@@ -10,6 +8,7 @@ import { VolumeTransformer } from 'prism-media';
 import { musicExecuteStreamResource } from '../../hooks/music/musicExecuteStreamResource';
 import { musicConnection } from '../../hooks/music/musicExecuteConnection';
 import { musicSearch } from '../../hooks/music/musicSearch';
+import { metadata } from '../../types/musicType';
 
 export const musicExecute: CMD = {
   name: '노래',
@@ -42,7 +41,7 @@ export const musicExecute: CMD = {
       if (msgMember.voice.channelId != voiceChannel.id) return textChannel.send('같은 보이스채널에서 해주세요!');
 
       //노래 큐에 넣어주기
-      const resource = await musicExecuteStreamResource(searchedInfo);
+      const resource = await musicExecuteStreamResource(searchedInfo as metadata);
       const option = musicEntity.option;
       const volume = resource.volume;
       volume?.setVolume((option.volume / option.volumeMagnification) * Number(!option.mute));
@@ -54,13 +53,7 @@ export const musicExecute: CMD = {
     //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
     else {
       //들어가야 하는 항목 전부 넣기
-      const connection = joinVoiceChannel({
-        channelId: voiceChannel.id,
-        guildId: voiceChannel.guild.id,
-        adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
-      });
       const audioPlayer = createAudioPlayer({behaviors: {noSubscriber: NoSubscriberBehavior.Pause}});
-      const subscription = connection.subscribe(audioPlayer) as PlayerSubscription;
       const option = {
         volume: 0.5, // 0 ~ 1 사이의 값
         volumeMagnification: 6, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
@@ -68,7 +61,7 @@ export const musicExecute: CMD = {
         loop: false,
         skip: false
       };
-      const resource = await musicExecuteStreamResource(searchedInfo);
+      const resource = await musicExecuteStreamResource(searchedInfo as metadata);
       const volume = resource.volume as VolumeTransformer;
       volume.setVolume(option.volume / option.volumeMagnification); //노래 사운드 최초 설정해주는 곳
 
@@ -76,8 +69,6 @@ export const musicExecute: CMD = {
         guild: msg.guild as Guild,
         voiceChannel: voiceChannel,
         textChannel: textChannel,
-        connection: connection,
-        subscription: subscription,
         audioPlayer: audioPlayer,
         playingSong: resource,
         songQueue: [],

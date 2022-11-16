@@ -2,6 +2,7 @@ import { AudioPlayerStatus, AudioResource } from '@discordjs/voice';
 import { metadata, musicEntity } from '../../types/musicType';
 import { musicCollection } from '../../../bot';
 import { musicExecuteMsg } from './musicExecuteMsg';
+import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
 export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
   //기본 함수
@@ -18,15 +19,18 @@ export const musicExecutePlayer = async (guildId: string, playingSong: AudioReso
       > 에러가 난 곡 이름: ${(error.resource as AudioResource<metadata>).metadata.title}`
     );
     console.log(error);
-    audioPlayer.stop();
+    audioPlayer.stop(true);
   });
 
   audioPlayer.once(AudioPlayerStatus.Idle, async () => {
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip) {
-      console.log(playingSong);
-
-      musicEntity.songQueue.push(playingSong);
+      if(!playingSong.ended)
+        musicEntity.songQueue.push(playingSong);
+      else {
+        const newSong = await musicExecuteStreamResource(playingSong.metadata);
+        musicEntity.songQueue.push(newSong);
+      }
     }
 
     //틀었던 노래가 끝났을 때

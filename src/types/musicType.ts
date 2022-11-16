@@ -26,8 +26,8 @@ export interface musicEntity {
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
   reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
-  connection: VoiceConnection;
-  subscription: PlayerSubscription;
+  connection?: VoiceConnection;
+  subscription?: PlayerSubscription;
   audioPlayer: AudioPlayer;
   playingSong: AudioResource<metadata>;
   songQueue: AudioResource<metadata>[];

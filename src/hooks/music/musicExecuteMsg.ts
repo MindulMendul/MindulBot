@@ -4,7 +4,8 @@ import { musicEntity } from '../../types/musicType';
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
-import { musicCollection } from '../../../bot';
+import { guildCmdQueue, musicCollection } from '../../../bot';
+import { CMD } from '../../types/type';
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId) as musicEntity;
@@ -50,7 +51,15 @@ export const musicExecuteMsg = async (guildId: string) => {
   collector.on('collect', async (i) => {
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
+    const iGuildId = i.guildId as string;
     const iComponent = i.component as MessageButton;
+
+    const checkGuildCmdQueue=guildCmdQueue.get(`${iGuildId}music`) as CMD[];
+    if (checkGuildCmdQueue.length){
+      textChannel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
+      i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
+      return;
+    }
 
     //보이스채널 체크
     if (!voiceChannel) {

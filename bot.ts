@@ -29,7 +29,7 @@ export const bot = new Client({
 
 const CmdtoNameMap: Collection<string, string> = new Collection(); // cmd와 name 매칭해주는 맵
 const commands: Collection<string, CMD> = new Collection(); // 명령어 모음집
-const guildCmdQueue: Collection<string, Array<CMD>> = new Collection(); //길드 명령어큐
+export const guildCmdQueue: Collection<string, Array<CMD>> = new Collection(); //길드 명령어큐
 
 export const musicCollection: Collection<string, musicEntity> = new Collection(); // 노래관련 맵
 
