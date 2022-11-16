@@ -1,8 +1,6 @@
-const musicBot=require("./musicBot");
-const musicQueue=musicBot.musicQueue;
-let scheduling=musicBot.scheduling;
+const {musicQueue, searchYoutubeList}=require("./musicBot");
+let {scheduling}=require("./musicBot");
 const ytdl=require("ytdl-core");
-const { bot } = require("../../../bot");
 
 module.exports = {
 	name: "노래",
@@ -15,6 +13,9 @@ module.exports = {
 
         if (!voiceChannel)//보이스채널 체크
             return msg.channel.send("보이스채널에서 해주세요!");
+        
+        if(musicQueue.get(msg.guild.id)!=undefined) if (voiceChannel!=musicQueue.get(msg.guild.id).voiceChannel)
+            return msg.channel.send("같은 보이스채널에서 해주세요!");
         
         //퍼미션 체크
         const permissions = voiceChannel.permissionsFor(msg.client.user);
@@ -38,7 +39,7 @@ module.exports = {
                 tmpMusicSite=searchStr.slice(searchStr.indexOf("=")+1,searchStr.length);
             else return msg.channel.send("링크가 잘못 되었네요.");
         }
-        else tmpMusicSite = (await musicBot.searchYoutubeList(searchStr, 1)).pop().url;
+        else tmpMusicSite = (await searchYoutubeList(searchStr, 1)).pop().url;
         const musicSite = `https://www.youtube.com/watch?v=${tmpMusicSite}`;
         
         const songInfo = await ytdl.getInfo(musicSite);
@@ -88,7 +89,6 @@ module.exports = {
         const dispatcher = serverQueue.connection
             .play(ytdl(song.url))
             .on("finish", (asdf) => {//finish라는 명령어가 있으니 주의!
-                console.log(asdf);
                 if(serverQueue.loop&&!serverQueue.skip) serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
                 else serverQueue.songs.shift();
                 this.play(guild, serverQueue.songs[0]);

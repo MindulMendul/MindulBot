@@ -7,7 +7,7 @@ const moment = require('moment');
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 
-const bot = new Discord.Client(); //봇
+const bot = new Discord.Client(); exports.bot=bot;//봇
 bot.commands = new Discord.Collection(); //명령어 모음집
 bot.guildCmdQueue = new Discord.Collection(); //길드 명령어큐
 
@@ -31,8 +31,6 @@ for (const file of commandFiles) {//명령어 라이브러리 만드는 반복�
 bot.on('ready', async () => {//정상적으로 작동하는지 출력하는 코드
     console.log(`${bot.user.tag}님이 로그인했습니다.`);
     bot.user.setActivity(activityString, { type: 'PLAYING' });
-
-    exports.bot=bot;
 	require("./src/botAlarm");
 });
 
@@ -56,11 +54,11 @@ bot.on('message', async (msg) => {
 
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
-			
+
 			await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
 			checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
 		} else //뭐가 실행 중이면 실행
-			msg.channel.send(`${checkGuildCmdQueue.name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
+			msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
 	} catch (error) {
 		msg.channel.send(`${command} 명령어 입력에 문제가 생겼어요! 우리 주인님이 고생할 거라 생각하니 기분이 좋네요 ㅎㅎ\n${error}`);
 		bot.users.cache.get(OWNER_ID).send(`명령어 입력 문제 : ${bot.commands.get(command).name}\n${error}`);
