@@ -16,6 +16,7 @@ package-lock.json
 >>>>>>> ff07ca98 (이것도 깃해야 하나?2)
 =======
 .env
+<<<<<<< HEAD
 package-lock.json
 package.json
 <<<<<<< HEAD
@@ -28,5 +29,7 @@ GlobalVariable.js
 =======
 >>>>>>> c6d32f4e (.gitignore 뭔가 이상하길래 다시 커밋)
 =======
+=======
+>>>>>>> 6f478bf8 (.gitignore 수정)
 mindulBot_privateKey.ppk
 >>>>>>> e369aa69 (트레쉬파일 삭제)
