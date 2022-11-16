@@ -1,25 +1,14 @@
 const moment = require('moment');
-
 function equalTime(h, m) {
     return (moment().hour()==h && moment().minute()==m);
 }
 
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
+function shuffle(arr){
+  for(var i =arr.length-1 ; i>0 ;i--){
+      var j = Math.floor( Math.random() * (i + 1) ); //random index
+      [arr[i],arr[j]]=[arr[j],arr[i]]; // swap
+  }
+  return arr;
 }
+
 module.exports = {equalTime, shuffle};

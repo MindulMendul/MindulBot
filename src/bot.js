@@ -13,6 +13,7 @@ require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
 
 const bot = new Client();
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";
@@ -28,6 +29,9 @@ const OWNER_ID="554178159717777420";
 
 const LoginBotToken=process.env.BOT_TOKEN;
 const LoginBotID=BOT_ID;
+=======
+const GV=require("./../GlobalVariable.js");
+>>>>>>> a679a11f (셔플 기능 강화 & 루프 기능 추가)
 
 var msgMiddleFinger=0; // 중지 이모지 반응용 변수
 var nagaStance=0; // 나가라고 전에 삼고초려 변수
@@ -130,27 +134,9 @@ setInterval(function() {
 
 const func=require("./func.js");
 
-var http = require("http");//heroku 지속 갱신
-setInterval( () => {
-    http.get("http://mindulbot.herokuapp.com");
-}, 10*60*1000); // every 20 minutes
-
-//타로 카드 셔플
-setImmediate(()=>{
-    func.shuffle(require("./Commands/basic/CmdTarot.js").script);
-    setInterval(()=>{
-        if(moment().hour()==0)
-            func.shuffle(require("./Commands/basic/CmdTarot.js").script);
-    },60*60*1000)//1시간
-});
-
 //기본길드 전용 알람(현재는 그럼)
 setInterval( () => {
-    if(
-        func.equalTime(00,25) || func.equalTime(02,25) || func.equalTime(04,25) || func.equalTime(06,25) || func.equalTime(08,25) ||
-        func.equalTime(10,25) || func.equalTime(12,25) || func.equalTime(14,25) || func.equalTime(16,25) || func.equalTime(18,25) ||
-        func.equalTime(20,25) || func.equalTime(22,25)
-    ){
+    if(moment().minute()==25){//매 시간 25분마다 알람
         //펀치킹 알람
         let ampm;
         if(moment().hour()<12){
@@ -201,7 +187,7 @@ bot.on('messageReactionAdd', async (reaction, user) => {
     if(asdf!=undefined){//특수 명령어가 있는 경우 ex) 타로
         let strDes="", strField="";
         if(asdf.cmd=="tarotCard"){
-            const tarot=require("./Commands/basic/CmdTarot.js");
+            const tarot=require("./Commands/basic/TarotList.js");
             const arr=tarot.script;
             
             reaction.users.remove(user);
@@ -233,8 +219,8 @@ bot.on('messageReactionAdd', async (reaction, user) => {
         }
     } else {//특수 명령어가 없는 경우 ex)노래 사운드 조절
         const msg=reaction.message;
-        if(msg.author.id==LoginBotID){//봇이 단 메시지의 이모지인지 확인
-            if(user.id==LoginBotID) return;//자기가 이모지 단 거에 대한 이벤트는 의미 없지
+        if(msg.author.id==GV.LoginBotID){//봇이 단 메시지의 이모지인지 확인
+            if(user.id==GV.LoginBotID) return;//자기가 이모지 단 거에 대한 이벤트는 의미 없지
             if(msg.content.startsWith("이번 선곡은~\n")){//노래 이모지
                 const musicBot=require("./Commands/music/Music.js");
                 const serverQueue=musicBot.musicQueue.get(msg.guild.id);
@@ -252,18 +238,31 @@ bot.on('messageReactionAdd', async (reaction, user) => {
                     break;
 
                     case "⏹":
-                        musicBot.stop(msg);
+                        musicBot.empty(msg);
+                    break;
+
+                    case "🔁":
+                        musicBot.loop(msg);
+                    break;
+
+                    case "🔀":
+                        musicBot.shuffle(msg);
                     break;
 
                     case "🔇": 
-                        if(!serverQueue.mute){//뮤트 걸어야 할 때
+                        serverQueue.mute=!(serverQueue.mute);
+                        if(serverQueue.mute){//뮤트 걸리고 나서
                             dispatcher.setVolume(0);
                             msg.channel.send(`음소거되었어요`)
+<<<<<<< HEAD
                         } else {//뮤트 걸린 거 풀 때
                             dispatcher.setVolume(serverQueue.volume/100);
+=======
+                        } else {//뮤트 풀리고 나서
+                            dispatcher.setVolume(serverQueue.volume/200);
+>>>>>>> 2c0157ca (셔플 기능 강화 & 루프 기능 추가)
                             msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`)
                         }
-                        serverQueue.mute=!(serverQueue.mute);
                     break;
 
                     case "🔉":
@@ -296,8 +295,8 @@ bot.on('message', async (msg) => {
         if(msg.author!=OWNER_ID){
             (await msg.channel.send("DM은 명령어 안통함 ㅅㄱ"));
         } else {
-            if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
-                const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split("/");//문장 정리
+            if(msg.content.startsWith(GV.PREFIX)){//명령어 어두 감지
+                const [CMD_NAME, ...args] = msg.content.trim().substring(GV.PREFIX.length).split("/");//문장 정리
                 if(CMD_NAME!="공지") return;
                 bot.guilds.cache.find((guild)=>{//길드 이름 찾기
                     if(guild.name==args[0]){
@@ -332,9 +331,14 @@ bot.on('message', async (msg) => {
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
 =======
 
+<<<<<<< HEAD
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
     if(msg.content.startsWith(PREFIX)){//명령어 어두 감지
         const [CMD_NAME, ...args] = msg.content.trim().substring(PREFIX.length).split(/\s+/);//문장 정리
+=======
+    if(msg.content.startsWith(GV.PREFIX)){//명령어 어두 감지
+        const [CMD_NAME, ...args] = msg.content.trim().substring(GV.PREFIX.length).split(/\s+/);//문장 정리
+>>>>>>> a679a11f (셔플 기능 강화 & 루프 기능 추가)
         let cmdCheck=false;
 
         const Command_BASIC=require("./Commands/CmdBasic.json");
@@ -526,24 +530,16 @@ bot.on('message', async (msg) => {
                 .CommandDate(msg);
             break;
 
-            case "얍":
-                msg.reply("얍");
-            break;
-
-            case "ping":
-                msg.reply('Pong!');
-            break;
-
-            case "gnip":
-                msg.reply('!gnoP');
-            break;
-
             case "민둘":
                 msg.channel.send('민둘이는 바보');
             break;
 
             case "맨둘":
                 msg.channel.send('맨둘이는 집나갔음');
+            break;
+
+            case "민둘맨둘":
+                msg.channel.send('민머리 맨머리 민둘맨둘');
             break;
             
             case "야":
@@ -642,6 +638,7 @@ bot.on('message', async (msg) => {
                 bot.users.cache.get(OWNER_ID).send(`'${msg.guild.name}'길드의 '${msg.channel.name}'채널에서 '${msg.author.username}'님이 건의사항 보내주셨어요.\n> ${args.join(" ")}`);
             break;
 
+<<<<<<< HEAD
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리))
             case "한로원":
                 msg.channel.send("로바~");
@@ -659,6 +656,8 @@ bot.on('message', async (msg) => {
                 msg.channel.send("진짜 검토한다고요 ㅡㅡ");
             break;
 
+=======
+>>>>>>> a679a11f (셔플 기능 강화 & 루프 기능 추가)
             case "텍스트게임":
                 if(msg.author!=OWNER_ID)//테스트 기능은 나만 쓸 수 있어~
                     return msg.channel.send("개발자 전용 명령어입니다. 죄송해요 ^^;;");
@@ -747,8 +746,8 @@ bot.on('message', async (msg) => {
                     musicBot.execute(msg, args.join(" "));
                 break;
 
-                case "멈춤":
-                    musicBot.stop(msg);
+                case "비우기":
+                    musicBot.empty(msg);
                 break;
 
                 case "스킵":
@@ -772,6 +771,14 @@ bot.on('message', async (msg) => {
                             message: msgTemp
                         } //musicSearch는 embed, msg 저장
                     );
+                break;
+
+                case "셔플":
+                    musicBot.shuffle(msg);
+                break;
+
+                case "루프":
+                    musicBot.loop(msg);
                 break;
 
                 case "삭제":
@@ -977,7 +984,11 @@ bot.on('guildMemberAdd',async (member) => {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bot.login(process.env.MORMOTTE_TOKEN);
 =======
 bot.login(LoginBotToken);
 >>>>>>> a11f89bf (볼륨 이모지 작동 오류 버그 수정)
+=======
+bot.login(GV.LoginBotToken);
+>>>>>>> 2c0157ca (셔플 기능 강화 & 루프 기능 추가)
