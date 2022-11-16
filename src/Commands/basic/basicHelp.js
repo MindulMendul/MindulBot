@@ -14,7 +14,7 @@ module.exports = {
                 url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw',
             },
             description: `명령어는 이런 것들이 있어요.\n 명령어 전에는 "한글 '${process.env.PREFIX}' 를 입력하세요! `+
-                        `${PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. `+
+                        `${process.env.PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. `+
                         '노래명령어를 원하신다면 따로 "ㅣ노래도움말" 명령어로 제공하고 있으니 참고 바랍니다^^ '+
                         '\n(해당 문서는 2022년 01월 13일에 업데이트되었습니다.) ',
             fields: [
