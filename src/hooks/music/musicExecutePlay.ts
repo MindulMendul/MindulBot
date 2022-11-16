@@ -59,7 +59,6 @@ export const musicExecutePlay = async (
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       if (connection) connection.destroy(); //커넥션 삭제
       if (collector) collector.stop(); //인터렉션 삭제
-      musicCollection.delete(msg.guildId as string);
     }
   });
 
