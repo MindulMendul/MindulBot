@@ -1,5 +1,5 @@
 import { createAudioResource } from '@discordjs/voice';
-import { stream, YouTubeVideo } from 'play-dl';
+import { stream } from 'play-dl';
 import { metadata } from '../../types/musicType';
 
 export const musicExecuteStreamResource = async (searchedInfo: metadata) => {

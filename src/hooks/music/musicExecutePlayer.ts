@@ -6,7 +6,7 @@ import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
 export const musicExecutePlayer = async (guildId: string, playingSong: AudioResource<metadata>) => {
   //기본 함수
-  const musicEntity = musicCollection.get(guildId) as musicEntity;
+  let musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
   audioPlayer.play(playingSong);
@@ -25,14 +25,14 @@ export const musicExecutePlayer = async (guildId: string, playingSong: AudioReso
   audioPlayer.once(AudioPlayerStatus.Idle, async () => {
     //스킵 루프 조건 만족하면 루프돌리는 부분
     if (option.loop && !option.skip) {
-      if(!playingSong.ended)
+      if(!playingSong.ended){
         musicEntity.songQueue.push(playingSong);
+      }
       else {
         const newSong = await musicExecuteStreamResource(playingSong.metadata);
         musicEntity.songQueue.push(newSong);
       }
     }
-
     //틀었던 노래가 끝났을 때
     const nextSong = musicEntity.songQueue.shift();
     audioPlayer.removeAllListeners('error');

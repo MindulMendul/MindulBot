@@ -8,9 +8,9 @@ import { guildCmdQueue, musicCollection } from '../../../bot';
 import { CMD } from '../../types/type';
 
 export const musicExecuteMsg = async (guildId: string) => {
-  const musicEntity = musicCollection.get(guildId) as musicEntity;
+  let musicEntity = musicCollection.get(guildId) as musicEntity;
   const { voiceChannel, textChannel, audioPlayer, option, playingSong } = musicEntity;
-
+  
   const buttonFirst = new MessageActionRow()
     .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'))
     .addComponents(new MessageButton().setCustomId('⏹').setLabel('⏹').setStyle('PRIMARY'))
@@ -136,7 +136,7 @@ export const musicExecuteMsg = async (guildId: string) => {
 
       case '🔇':
         option.mute = !option.mute;
-        if (!option.mute) {
+        if (option.mute) {
           iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);
