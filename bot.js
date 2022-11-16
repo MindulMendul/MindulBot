@@ -60,16 +60,6 @@ bot.on('messageCreate', async (msg) => {
     
 		const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${bot.commands.get(command).type}`);
 	try {
-		/*
-		if(bot.commands.get(command).type=="music"){//노래봇은 최신 버전이어야만 쓸 수 있음
-			//return msg.channel.send("discord.js v13에 대응하기 위해 당분간 내렸습니다. 죄송해요 ㅠㅠ");}
-			const tmp=await require("./src/Commands/music/musicVerCheck").verCheck(bot, msg);
-			if(tmp) {
-				bot.users.cache.get(OWNER_ID).send("ytdl-core 업데이트 필요");
-				return msg.channel.send("ytdl-core 업데이트가 필요합니다. 자동 업데이트 기능이 없어서 개발자가 수동으로 업데이트하기 전까지는 기다려주세요 ㅠㅠ");
-			}
-		}*/
-		
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
 		
