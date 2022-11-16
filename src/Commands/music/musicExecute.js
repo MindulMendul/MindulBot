@@ -14,7 +14,10 @@ module.exports = {
         const searchStr=args.join(" ");
 
         if (!voiceChannel)//보이스채널 체크
-            return msg.channel.send("보이스채널에서 해주세요");
+            return msg.channel.send("보이스채널에서 해주세요!");
+        
+        if (msg.member.voice.channel!=serverQueue.voiceChannel)
+            return msg.channel.send("같은 보이스채널에서 해주세요!");
         
         //퍼미션 체크
         const permissions = voiceChannel.permissionsFor(msg.client.user);
@@ -56,7 +59,8 @@ module.exports = {
                 connection: null,
                 songs: [], //여기에 노래가 담김
                 dispatcher: null, //노래 틀어주는 녀석
-                volume: 30, mute: false, isPlaying: false, loop: false//노래 조절 기능
+                volume: 30, mute: false, isPlaying: false,//노래 조절 기능
+                loop: false, skip:false//노래 조절 기능
             };
 
             musicQueue.set(msg.guild.id, queueContruct);
@@ -86,10 +90,12 @@ module.exports = {
         
         const dispatcher = serverQueue.connection
             .play(ytdl(song.url))
-            .on("finish", () => {//finish라는 명령어가 있으니 주의!
-                if(serverQueue.loop) serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
+            .on("finish", (asdf) => {//finish라는 명령어가 있으니 주의!
+                console.log(asdf);
+                if(serverQueue.loop&&!serverQueue.skip) serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
                 else serverQueue.songs.shift();
                 this.play(guild, serverQueue.songs[0]);
+                serverQueue.skip=false;
             });
         dispatcher.setVolume(serverQueue.volume/200);
         serverQueue.dispatcher=dispatcher;//디스패쳐 저장
@@ -103,7 +109,7 @@ module.exports = {
         tmpmsg.react("🔀");
         tmpmsg.react("🔇");
         tmpmsg.react("🔉");
-        await tmpmsg.react("🔊");
+        tmpmsg.react("🔊");
 
         this.react(tmpmsg);
     },
@@ -112,7 +118,7 @@ module.exports = {
         const collector = msg.createReactionCollector(reactionFilter, {});
         collector.on('collect', (reaction, user) => {
             reaction.users.remove(user);
-            const bot=require("./../../../bot").bot;
+            const {bot}=require("./../../../bot");
             const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${this.type}`);
             if(checkGuildCmdQueue.length!=0)
                 return msg.channel.send(`${checkGuildCmdQueue} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);

@@ -6,6 +6,12 @@ module.exports = {
 	cmd: ["루프","반복","loop"],
     type: "music",
     execute(msg){
+        if (!msg.member.voice.channel)
+            return msg.channel.send("보이스채널에서 해주세요!");
+
+        if (msg.member.voice.channel!=serverQueue.voiceChannel)
+            return msg.channel.send("같은 보이스채널에서 해주세요!");
+        
         const serverQueue = musicQueue.get(msg.guild.id);
         serverQueue.loop=!(serverQueue.loop);
         if(serverQueue.loop) msg.channel.send("큐 반복 기능이 활성화되었습니다~");
