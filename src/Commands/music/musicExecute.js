@@ -1,6 +1,4 @@
-const {searchYoutubeList}=require("./musicBot");
-//const ytdl=require("ytdl-core");
-const {video_basic_info, stream}=require('play-dl');
+const {video_basic_info, stream, search}=require('play-dl');
 
 const {
     VoiceConnectionStatus,
@@ -29,33 +27,24 @@ module.exports = {
         const searchStr=args.join(" ");
         if(searchStr=="")//빈 항목 체크
             return textChannel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
-        
-        let musicSiteID="";
-        try{//노래 정보 추출
-            if(searchStr.includes("https://")){//링크로 틀었을 때
-                if(searchStr.includes("https://www.youtube.com/watch?v="))//유튜브 링크만 인정
-                    musicSiteID=searchStr.slice(searchStr.indexOf("=")+1,searchStr.length);
-                else if(searchStr.includes("https://youtu.be/"))
-                    musicSiteID=searchStr.slice(searchStr.indexOf("e/")+2,searchStr.length);
-                else return textChannel.send("링크가 잘못 되었네요.");
-            }
-            else musicSiteID = (await searchYoutubeList(searchStr, 1)).pop().url;
-        } catch(err){return textChannel.send(err);}//검색결과 없으면 없다고 말해주는 곳
-        //const musicSite = `https://www.youtube.com/watch?v=${musicSiteID}`;
-        
-        const playStream = await stream(musicSiteID);
-        const songInfo = (await video_basic_info(musicSiteID)).video_details;
+
+        const searched = (await search(searchStr, { source : { youtube : "video" }, limit: 1})).pop();
+        if (searched==undefined)
+            return textChannel.send("검색결과가 없네요. 다른 키워드로 다시 시도해보세요!");
+
+        const playStream = await stream(searched.id);
+        const songInfo = (await video_basic_info(searched.id)).video_details;
         const song = {
             title: songInfo.title,
             url: songInfo.url,
         };
-        console.log(playStream.stream);
+        
         const resource=createAudioResource(playStream.stream, {
             metadata:song,
             inlineVolume: true,
             silencePaddingFrames:5,
             inputType: playStream.type,
-            });
+        });
 
         //Guild 체크해서 생성자가 존재하는지 확인하는 곳
         if(getVoiceConnection(voiceChannel.guild.id)==undefined) {
@@ -79,6 +68,7 @@ module.exports = {
                 volumeMagnification:6,// 1/n 배 되는 거라 커질 수록 소리가 작아짐
                 mute:false,
                 loop:false,
+                skip:false,
             };
             resource.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드 최초 설정해주는 곳
 
@@ -117,25 +107,29 @@ module.exports = {
             }
         });
 
-        audioPlayer.once(AudioPlayerStatus.Idle, (player) => {
+        audioPlayer.once(AudioPlayerStatus.Idle, async (player) => {
              //틀었던 노래가 끝났을 때
             console.log("노래끝");
+
+            //스킵 루프 조건 만족하면 루프돌리는 부분
+            const loop=subscription.option.loop;
+            const skip=subscription.option.skip;
+            if(loop & !skip) {
+                const meta=player.resource.metadata;
+                const playStream = await stream(meta.url);
+                const nextSong=createAudioResource(playStream.stream, {
+                    metadata:meta,
+                    inlineVolume: true,
+                    silencePaddingFrames:5,
+                    inputType: playStream.type,
+                });
+                nextSong.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드 최초 설정해주는 곳
+                subscription.songs.push(nextSong);
+            }
+
             if(subscription.songs.length){
                 //다음 노래 있으면 틀어주는 코드
-                this.play(connection, subscription.songs.shift());
-                //스킵 루프 조건 만족하면 루프돌리는 부분
-                const loop=subscription.option.loop;
-                if(loop) {
-                    const meta=player.resource.metadata;
-                    const nextSong=createAudioResource(ytdl(meta.url),{
-                        metadata:meta,
-                        filter: 'audioonly',
-                        inlineVolume: true,
-                        silencePaddingFrames:5,
-                        });
-                    nextSong.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드 최초 설정해주는 곳
-                    subscription.songs.push(nextSong);
-                }
+                this.play(connection, subscription.songs.shift()); 
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
                 if(connection) connection.destroy();//커넥션 삭제
@@ -148,15 +142,15 @@ module.exports = {
         .addComponents(new MessageButton().setCustomId('⏯').setLabel('⏯').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'),)
         .addComponents(new MessageButton().setCustomId('⏹').setLabel('⏹').setStyle('PRIMARY'),)
-        .addComponents(new MessageButton().setCustomId('🔁').setLabel('🔁').setStyle('PRIMARY'),)
-        .addComponents(new MessageButton().setCustomId('🔀').setLabel('🔀').setStyle('PRIMARY'),)
-        const buttonSound = new MessageActionRow()//두 번째 줄 버튼
+        .addComponents(new MessageButton().setCustomId('🔉').setLabel('🔉').setStyle('PRIMARY'),)
+        .addComponents(new MessageButton().setCustomId('🔊').setLabel('🔊').setStyle('PRIMARY'),);
+        const buttonSecond = new MessageActionRow()//두 번째 줄 버튼
+        .addComponents(new MessageButton().setCustomId('🔁').setLabel('🔁').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('🔀').setLabel('🔀').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('🔇').setLabel('🔇').setStyle('SECONDARY'),)
-        .addComponents(new MessageButton().setCustomId('🔉').setLabel('🔉').setStyle('SECONDARY'),)
-        .addComponents(new MessageButton().setCustomId('🔊').setLabel('🔊').setStyle('SECONDARY'),);
 
         const song=audioPlayer._state.resource.metadata;
-        const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSound]};
+        const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSecond]};
         const msg = await connection.joinConfig.textChannel.send(sendedContent);
 
         //버튼 인터렉션 콜렉터 부분
