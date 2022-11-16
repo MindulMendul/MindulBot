@@ -1,5 +1,3 @@
-import { search } from 'play-dl';
-
 import { DiscordGatewayAdapterCreator, PlayerSubscription } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { joinVoiceChannel } from '@discordjs/voice';
