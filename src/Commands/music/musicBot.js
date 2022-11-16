@@ -239,8 +239,14 @@ async function searchYoutubeList(question, limit){
         try {
             return axios.get(`https://www.youtube.com/results?search_query=${encodeURI(question)}&sp=EgIQAQ%253D%253D`);
             // axios.get 함수를 이용하여 비동기로 유튜브 html 파일을 가져온다.
+<<<<<<< HEAD
         } catch (error) {
             console.error(error);
+=======
+        } catch (err) {
+            console.error(err);
+            throw err;
+>>>>>>> 66ab282f (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)
         }
     };
 
@@ -265,6 +271,8 @@ async function searchYoutubeList(question, limit){
             }
         };
     });
+
+    if(List.length==0) throw "노래 검색결과가 없습니다."
 
     return List;
 }

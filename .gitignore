@@ -1,6 +1,7 @@
 node_modules/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 package-lock.json
 
@@ -12,3 +13,8 @@ package-lock.json
 =======
 .env
 >>>>>>> ff07ca98 (이것도 깃해야 하나?2)
+=======
+.env
+package-lock.json
+package.json
+>>>>>>> b14b1306 (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)

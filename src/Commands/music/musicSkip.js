@@ -18,7 +18,7 @@ module.exports = {
 
         serverQueue.dispatcher.resume();
         
-        await serverQueue.connection.dispatcher.end();
-        serverQueue.skip=true;
+        await serverQueue.dispatcher.end();
+        serverQueue.skip=true
     }
 };
