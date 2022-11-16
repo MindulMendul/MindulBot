@@ -12,7 +12,6 @@ export const musicYoutubeSearch: CMD = {
   permission: ['CONNECT', 'SPEAK', 'MANAGE_EMOJIS_AND_STICKERS', 'READ_MESSAGE_HISTORY', 'MANAGE_MESSAGES'],
   //찾은 유튜브 주소를 배열에 집어넣는 함수
   async execute(msg, args) {
-    const guildId = msg.guildId as string;
     const msgMember = msg.member as GuildMember;
     const voiceChannel = msgMember.voice.channel as VoiceChannel;
     const textChannel = msg.channel as TextChannel;
@@ -23,8 +22,8 @@ export const musicYoutubeSearch: CMD = {
     if (msgMember.voice.channel.id != voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
 
-    const items = await musicSearch(msg, args, 8);
-    if(!items) return; // 검색이 안 된 경우
+    const items = await musicSearch(msg, 8, args);
+    if(!args || !items) return msg.channel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
 
     //임베드 만들기
     const fields = items.map((e, i) => {

@@ -62,7 +62,7 @@ bot.on('messageCreate', async (msg) => {
 
   const getCmd = commands.get(CmdtoNameMap.get(command) as string) as CMD;
   //명령어 인식 못하는 거 거름
-  if(isUndefined(getCmd,channel,'명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!')) return;
+  if(isUndefined(getCmd, channel,'명령어를 인식하지 못했어요 ㅠㅠ 명령어를 다시 한 번 확인해주세요!')) return;
 
   //길드 명령어 큐 만들기
   if (!guildCmdQueue.get(`${guild.id}${getCmd.type}`))
