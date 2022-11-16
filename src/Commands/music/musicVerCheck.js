@@ -1,4 +1,4 @@
-const axios = require("axios");
+/*const axios = require("axios");
 const cheerio = require("cheerio");
 const ytdl=require("ytdl-core");
 const {OWNER_ID}=require("./../../../GlobalVariable");
@@ -18,4 +18,4 @@ async function verCheck(bot, msg){
     }
     return (latestVersion!=ytdl.version);
 }
-module.exports={verCheck};
+module.exports={verCheck};*/
