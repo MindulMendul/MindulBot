@@ -26,12 +26,12 @@ setImmediate(()=>{
 setInterval( () => {
     if(moment().minute()==25){//매 시간 25분마다 알람
         const reminderMessage=`${moment().hour()}시 플래그하러 가세요~`;
-        bot.guilds.cache.filter((guild)=>{
-            return (guild.name==="💛 기본 💛");
-        }).first().channels.cache.filter((channel)=>{
-            return (channel.name.startsWith('민둘봇'));
-        }).first().send(reminderMessage).then( msg =>{
-            setTimeout( () => {msg.delete();},10*60*1000);
-        });
+        const guild=bot.guilds.cache.filter((guild)=>{return (guild.name==="💛 기본 💛");}).first();
+        if(!guild) return;
+
+        const ch=guild.channels.cache.filter((channel)=>{return (channel.name.startsWith('민둘봇'));}).first(); 
+        if(!ch) return;
+        
+        ch.send(reminderMessage).then( msg =>{setTimeout( () => {msg.delete();},8*60*1000);});
     }
 }, 60*1000); // every minutes
