@@ -23,6 +23,12 @@ module.exports = {
         if(searchStr=="")//빈 항목 체크
             return msg.channel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
 
+        //명령 대기 체크
+        const bot=require("./../../../bot2").bot;
+        if(!bot.guildCmdQueue.get(msg.guild.id))
+            return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
+        bot.guildCmdQueue.set(msg.guild.id, false);
+
         //나가기 스케줄링이 걸려있을 경우
         if(scheduling!=undefined) {
             clearTimeout(scheduling);
@@ -59,6 +65,7 @@ module.exports = {
                 var connection = await voiceChannel.join(); //방 들어오기
                 queueContruct.connection = connection;
                 this.play(msg.guild, queueContruct.songs[0]);
+                bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
             } catch (err) {
                 console.log(err);
                 musicQueue.delete(msg.guild.id);
@@ -66,6 +73,7 @@ module.exports = {
             }
         } else {
             serverQueue.songs.push(song);
+            bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
             return msg.channel.send(`**${song.title}**가 큐에 들어왔어요!`);
         }
     },
