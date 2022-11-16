@@ -7,8 +7,6 @@ module.exports = {
     permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY", "MANAGE_MESSAGES"],
     //찾은 유튜브 주소를 배열에 집어넣는 함수
     async execute(msg, args){
-        const musicBot=require("./musicBot");
-        
         if (!msg.member.voice.channel)
             return msg.channel.send("보이스채널에서 해주세요!");
 
