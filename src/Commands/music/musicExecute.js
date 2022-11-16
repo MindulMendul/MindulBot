@@ -9,6 +9,7 @@ const {
     createAudioPlayer,
     createAudioResource,
 } = require('@discordjs/voice');
+const {MessageActionRow, MessageButton}=require('discord.js');
 
 module.exports = {
 	name: "노래",
@@ -76,7 +77,7 @@ module.exports = {
                 mute:false,
                 loop:false,
             };
-            resource.volume.setVolume(1/12);//노래 사운드 최초 설정해주는 곳
+            resource.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드 최초 설정해주는 곳
 
             connection.on(VoiceConnectionStatus.Ready, () => {
                 console.log('The connection has entered the Ready state - ready to play audio!');
@@ -86,80 +87,77 @@ module.exports = {
             //플레이어가 존재해서 큐에 넣으면 되는 상황
             const connection = getVoiceConnection(voiceChannel.guild.id);
             connection.subscription.songs.push(resource);
-            resource.volume.setVolume(1/12);
+            resource.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드
             msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
         }
     },
     //play 함수
     async play(connection, resource){
         //기본 함수
-        const audioPlayer=connection.subscription.player;
         const subscription=connection.subscription;
-        
-        audioPlayer.play(resource);
+        const audioPlayer=connection.subscription.player;
+         
+        await audioPlayer.play(resource);
 
         //플레이어 설정코드
-        audioPlayer.on(AudioPlayerStatus.Playing, async () => {
+        audioPlayer.once(AudioPlayerStatus.Playing, async () => {
             console.log('The audio player has started playing!');
         });
         
         audioPlayer.on('error', error => {
             connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
+            console.log(error);
             audioPlayer.stop();
         });
 
-        audioPlayer.on(AudioPlayerStatus.Idle, async (player) => {
+        audioPlayer.once(AudioPlayerStatus.Idle, (player) => {
              //틀었던 노래가 끝났을 때
             console.log("노래끝");
             if(subscription.songs.length){
                 //다음 노래 있으면 틀어주는 코드
                 this.play(connection, subscription.songs.shift());
-
                 //스킵 루프 조건 만족하면 루프돌리는 부분
                 const loop=subscription.option.loop;
                 if(loop) {
-                    player.resource.ended=false;
-                    subscription.songs.push(player.resource);
+                    const meta=player.resource.metadata;
+                    const nextSong=createAudioResource(ytdl(meta.url),{
+                        metadata:meta,
+                        filter: 'audioonly',
+                        inlineVolume: true,
+                        silencePaddingFrames:5,
+                        });
+                    nextSong.volume.setVolume(0.5/connection.subscription.option.volumeMagnification);//노래 사운드 최초 설정해주는 곳
+                    subscription.songs.push(nextSong);
                 }
             } else {
                 connection.joinConfig.textChannel.send("노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ");
-                await audioPlayer.stop();
                 if(connection) connection.destroy();
             }
         });
 
         //Embed 생성하는 코드
+        
+        
+        const button = new MessageActionRow()
+        .addComponents(new MessageButton().setCustomId('⏯').setLabel('⏯').setStyle('PRIMARY'),)
+        .addComponents(new MessageButton().setCustomId('⏩').setLabel('⏩').setStyle('PRIMARY'),)
+        .addComponents(new MessageButton().setCustomId('⏹').setLabel('⏹').setStyle('PRIMARY'),)
+        .addComponents(new MessageButton().setCustomId('🔁').setLabel('🔁').setStyle('PRIMARY'),)
+        .addComponents(new MessageButton().setCustomId('🔀').setLabel('🔀').setStyle('PRIMARY'),)
+        const buttonSound = new MessageActionRow()
+        .addComponents(new MessageButton().setCustomId('🔇').setLabel('🔇').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('🔉').setLabel('🔉').setStyle('SECONDARY'),)
+        .addComponents(new MessageButton().setCustomId('🔊').setLabel('🔊').setStyle('SECONDARY'),);
+
         const song=audioPlayer._state.resource.metadata;
-        const tmpmsg = await connection.joinConfig.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
-        tmpmsg.react("⏯");
-        tmpmsg.react("⏩");
-        tmpmsg.react("⏹");
-        tmpmsg.react("🔁");
-        tmpmsg.react("🔀");
-        tmpmsg.react("🔇");
-        tmpmsg.react("🔉");
-        await tmpmsg.react("🔊");
-        this.react(tmpmsg, connection);
-    },
-    async react(msg, connection){
-        //이모지 콜렉터
-        const audioPlayer=connection.subscription.player;
-        const subscription=connection.subscription;
-        const reactionFilter = (reaction, user) => {return (reaction.message == msg)&&(!user.bot);}
-        const collector = msg.createReactionCollector(reactionFilter, {});
-        collector.on('collect', async (reaction, user) => {
-            reaction.users.remove(user);
-            const {bot}=require("../../../bot");
-            const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${this.type}`);
-            if(checkGuildCmdQueue.length!=0)
-                return msg.channel.send(`${checkGuildCmdQueue} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
-            
-            //보이스채널 체크하는 게 앞에 나오면, 아래 스위치에 해당되지 않는 이모지 선택 시에도 체크됨
-            //if(!connection.voiceChannel.members.get(user.id))
-            //    return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
-            const resource=audioPlayer._state.resource;
-            const volumeMagnification=subscription.option.volumeMagnification;
-            switch (reaction.emoji.name) {
+        const sendedContent={content:`이번 선곡은~\n> **${song.title}**\n> ${song.url}`, components:[button, buttonSound]};
+        const msg = await connection.joinConfig.textChannel.send(sendedContent);
+
+        const filter = i => {return true;};
+        const collector = msg.channel.createMessageComponentCollector({filter});
+        collector.on('collect', async i => {
+            i.update(sendedContent);
+            switch (i.customId) {
                 case "⏯":
                     if (audioPlayer._state.status=="paused") {
                         audioPlayer.unpause();
