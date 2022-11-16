@@ -19,6 +19,7 @@ module.exports = {
         .addComponents(new MessageButton().setCustomId('❤️').setLabel('❤️').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('🧡').setLabel('🧡').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('💛').setLabel('💛').setStyle('SECONDARY'),)
+        
         const button2 = new MessageActionRow()
         .addComponents(new MessageButton().setCustomId('💚').setLabel('💚').setStyle('SECONDARY'),)
         .addComponents(new MessageButton().setCustomId('💙').setLabel('💙').setStyle('SECONDARY'),)
