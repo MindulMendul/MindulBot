@@ -58,8 +58,9 @@ bot.on('message', async (msg) => {
 
 		await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
 		checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
-		} else //뭐가 실행 중이면 실행
+		} else {//뭐가 실행 중이면 실행
 			msg.channel.send(`${checkGuildCmdQueue[0].name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
+		}
 	} catch (error) {
 		msg.channel.send(`${command} 명령어 입력에 문제가 생겼어요! 우리 주인님이 고생할 거라 생각하니 기분이 좋네요 ㅎㅎ\n${error}`);
 		bot.users.cache.get(OWNER_ID).send(`명령어 입력 문제 : ${bot.commands.get(command).name}\n${error}`);

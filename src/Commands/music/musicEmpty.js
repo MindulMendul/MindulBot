@@ -16,6 +16,8 @@ module.exports = {
         if (msg.member.voice.channel!=serverQueue.voiceChannel)
             return msg.channel.send("같은 보이스채널에서 해주세요!");
 
+        serverQueue.dispatcher.resume();
+
         serverQueue.connection.dispatcher.end();
         serverQueue.songs = [];
         serverQueue.skip=true;
