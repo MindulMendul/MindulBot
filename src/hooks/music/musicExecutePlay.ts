@@ -14,7 +14,7 @@ export const musicExecutePlay = async (
 ) => {
   //기본 함수
   const audioPlayer = musicEntity.audioPlayer;
-  const option = musicEntity.option;
+  const option = musicEntity.option; // 이거 제대로 들어가고 있는지 확인해 봐야 함!
   const textChannel = musicEntity.textChannel;
   const connection = musicEntity.connection;
 
