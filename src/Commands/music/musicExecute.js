@@ -120,6 +120,8 @@ module.exports = {
             if(checkGuildCmdQueue.length!=0)
                 return msg.channel.send(`${checkGuildCmdQueue} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
             
+            if(!musicQueue.get(msg.guild.id)) return;//노래 재생 중이 아닐 땐 사용을 막음
+            
             const serverQueue = musicQueue.get(msg.guild.id);
             const dispatcher = serverQueue.dispatcher;
             
