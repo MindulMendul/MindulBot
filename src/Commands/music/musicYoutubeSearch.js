@@ -3,6 +3,7 @@ module.exports = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
     type: "music",
+    permission: [""],
     //찾은 유튜브 주소를 배열에 집어넣는 함수
     async execute(msg, args){
         const musicBot=require("./musicBot");

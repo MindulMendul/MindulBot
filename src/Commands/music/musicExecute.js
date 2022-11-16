@@ -6,6 +6,7 @@ module.exports = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
+    permission: ["CONNECT", "SPEAK", "ADD_REACTIONS", "MANAGE_EMOJIS"],
     async execute(msg, args){
         //권한 체크
         const voiceChannel = msg.member.voice.channel;
@@ -17,11 +18,6 @@ module.exports = {
         if(musicQueue.get(msg.guild.id)!=undefined) if (voiceChannel!=musicQueue.get(msg.guild.id).voiceChannel)
             return msg.channel.send("같은 보이스채널에서 해주세요!");
         
-        //퍼미션 체크
-        const permissions = voiceChannel.permissionsFor(msg.client.user);
-        if (!permissions.has("CONNECT") || !permissions.has("SPEAK") || !msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")||!msg.channel.permissionsFor(msg.client.user).has("MANAGE_EMOJIS"))
-            return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 보이스채널 입장권한: ${permissions.has("CONNECT")}\n> 보이스채널 발언권한: ${permissions.has("SPEAK")}\n> 텍스트채널 이모지권한(생성): ${msg.channel.permissionsFor(msg.client.user).has("ADD_REACTIONS")}\n> 텍스트채널 이모지권한(삭제): ${msg.channel.permissionsFor(msg.client.user).has("MANAGE_EMOJIS")}`);
-
         if(searchStr=="")//빈 항목 체크
             return msg.channel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
 
@@ -126,23 +122,22 @@ module.exports = {
         serverQueue.dispatcher=dispatcher;//디스패쳐 저장
 
         const {bot}=require("./../../../bot");
-        bot.on('voiceStateUpdate', (oldState, newState) => {
+        bot.on('voiceStateUpdate', async (oldState, newState) => {
             if(!newState) return;//누가 방을 나갔는지 파악
             if(oldState.channelID!=oldState.guild.me.voice.channelID) return;//방을 나간 게 내 방이었는지 파악
 
             // 채널에 사람이 얼마나있는지 파악하기
             const oldNumber=oldState.channel.members.size;
             if (!oldNumber-1) {
-                console.log(serverQueue);
-                const msg=serverQueue.textchannel.send("여러분 저 혼자에요... 저 혼자 남기고 그렇게 나가시는 건가요 ㅠㅠ\n괜찮아요, 전 혼자일 때가 더 많으니까요...\n그래도 지금은 너무 외로운데 같이 있어주면 안 될까요...?\n저는 여러분을 사,사,,아니 좋아하고 있어요...\n30초만 기다려보고 아니면 나가보겠습니다 ㅠㅠ");
+                const msg=await serverQueue.textChannel.send("여러분 저 혼자에요... 저 혼자 남기고 그렇게 나가시는 건가요 ㅠㅠ\n괜찮아요, 전 혼자일 때가 더 많으니까요...\n그래도 지금은 너무 외로운데 같이 있어주면 안 될까요...?\n저는 여러분을 사,사,,아니 좋아하고 있어요...\n30초만 기다려보고 아니면 나가보겠습니다 ㅠㅠ");
                 dispatcher.pause();//노래 멈춰두기
-                setTimeout(() => { 
+                setTimeout(() => {
                     if (!oldNumber - 1){ //여전히 사람이 없으면
                         msg.channel.send("이걸 안 들어오네 ㅡㅡ;;\n 님들 다음부턴 저 부르지 마세요.")
                         require("./musicEmpty").execute(msg);//노래 날리고
                         oldState.channel.leave(); // 나가기
                     }
-                }, 3*1000); // (30 초
+                }, 3*1000); // 3초
             }
         });
         

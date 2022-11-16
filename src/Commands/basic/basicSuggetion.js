@@ -2,6 +2,7 @@ module.exports = {
 	name: `건의`,
 	cmd: ['건의'],
 	type: "basic",
+	permission: [""],
 	execute(msg, args) {
 		const {bot}=require('../../../bot');
 		const {OWNER_ID} = require('../../../GlobalVariable');

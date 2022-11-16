@@ -56,6 +56,8 @@ bot.on('message', async (msg) => {
 		if(checkGuildCmdQueue.length==0){ //아무것도 실행 안 되어 있으면 실행
 			checkGuildCmdQueue.push(bot.commands.get(command));//명령어 입력 중임을 알림
 
+		if(!require("./src/permission.js").checkPermissions(msg, bot.commands.get(command).permission)) {checkGuildCmdQueue.shift(); return;}
+		
 		await bot.commands.get(command).execute(msg, args);//실행이 끝날 때까지 대기
 		checkGuildCmdQueue.shift();//명령어 끝나면 대기열 제거
 		} else {//뭐가 실행 중이면 실행

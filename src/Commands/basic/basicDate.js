@@ -2,6 +2,7 @@ module.exports = {
 	name: `날짜`,
 	cmd: ["날짜", "skfWk", "ㄴㅉ", "sW"],
     type: "basic",
+    permission: [""],
 	async execute(msg) {
         const moment = require('moment');
         const {OWNER_ID} = require('../../../GlobalVariable');

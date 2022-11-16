@@ -5,6 +5,7 @@ module.exports = {
 	name: "큐",
 	cmd: ["큐", "목록", "노래목록"],
     type: "music",
+    permission: [""],
     async execute(msg){
         const serverQueue = musicQueue.get(msg.guild.id);
 

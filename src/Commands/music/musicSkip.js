@@ -5,6 +5,7 @@ module.exports = {
 	name: "스킵",
 	cmd: ["스킵", "다음"],
     type: "music",
+    permission: [""],
     async execute(msg){
         if (!msg.member.voice.channel)
             return msg.channel.send("보이스채널에서 해주세요!");

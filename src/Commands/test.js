@@ -5,7 +5,7 @@ module.exports = {
 	name: "테스트",
 	cmd: ["테스트","ㅌㅅㅌ","ㅎ"],
 	type: "test",
-	this: module,
+	permission: "",
 	needReact: false,
 	async execute(msg) {
 		if(msg.author.id!=OWNER_ID) return;
@@ -18,7 +18,7 @@ module.exports = {
 	name: "테스트",
 	cmd: ["테스트"],
 	type:"test",
-	this: module,
+	permission: "",
 	async execute(msg) {
 		msg.channel.send('아라아라~');
 	},
@@ -30,7 +30,7 @@ module.exports = {
 	name: "테스트",
 	cmd: ["테스트"],
 	type:"test",
-	this: module,
+	permission: "",
 	async execute(msg) {
 		await msg.channel.send('아라아라~');
 		this.react(msg);
@@ -51,7 +51,7 @@ module.exports = {
 	name: "테스트",
 	cmd: ["테스트"],
 	type:"test",
-	this: module,
+	permission: "",
 	async execute(msg) {
 		const reactTargetMsg=await msg.channel.send('아라아라~');
 		this.react(reactTargetMsg, msg);

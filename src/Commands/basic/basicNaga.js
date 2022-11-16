@@ -3,6 +3,7 @@ module.exports = {
 	name: `나가`,
 	cmd: ["나가", "skrk", "낙아", "ㄴ가ㅏ", "ㄴㄱ", "나가라고"],
     type: "basic",
+    permission: [""],
 	async execute(msg) {
 		if (msg.guild.name == "Party of Yecheon") {
             if (nagaStance++ >= 3) {
