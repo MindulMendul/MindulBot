@@ -548,6 +548,7 @@ bot.on('message', async (msg) => {
             break;
 
             case "도움말":
+<<<<<<< HEAD
                 const helpEmbed=require(CommandBasic+"CmdHelp.js").helpEmbed;
                 msg.channel.send({embed : helpEmbed});
 >>>>>>> d1b3cbb3 (펀치킹 알림기능 완성!)
@@ -593,6 +594,9 @@ bot.on('message', async (msg) => {
                     console.log(err);
                     msg.channel.send('아이디를 제대로 입력해주세요 ㅎㅎ');
                 }
+=======
+                msg.channel.send({embed : require(CommandBasic+"CmdHelp.js").helpEmbed});
+>>>>>>> 2cca1b4a (노래도움말 문구 수정)
             break;
 
 <<<<<<< HEAD
@@ -610,8 +614,7 @@ bot.on('message', async (msg) => {
 =======
 =======
             case "개발":
-                const devEmbed=require(CommandBasic+"CmdDev.js").devEmbed;
-                msg.channel.send({embed : devEmbed});
+                msg.channel.send({embed : require(CommandBasic+"CmdDev.js").devEmbed});
             break;
 
 <<<<<<< HEAD
@@ -806,8 +809,7 @@ bot.on('message', async (msg) => {
                 break;
 
                 case "노래도움말":
-                    const helpEmbed=require(CommandMusic+"CmdMusicHelp.js").helpEmbed;
-                    msg.channel.send({embed : helpEmbed});
+                    msg.channel.send({embed : require(CommandMusic+"CmdMusicHelp.js").helpEmbed});
                 break;
 
                 default:

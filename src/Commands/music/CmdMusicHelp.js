@@ -1,4 +1,4 @@
-const {PREFIX} = require("./../../GlobalVariable.js");
+const {PREFIX} = require("./../../../GlobalVariable.js");
 const moment = require('moment');
 
 const helpembed = {
@@ -50,11 +50,15 @@ const helpembed = {
             inline: false,
         },
         {
-            name: '검색',
-            value: '',
+            name: '셔플',
+            value: '노래 목록에 있는 노래의 순서를 무작위로 변경합니다.',
             inline: false,
         },
-        
+        {
+            name: '루프',
+            value: '노래 목록에 있는 노래를 반복하여 재생합니다. 혹은 반복 기능을 해제합니다.',
+            inline: false,
+        },
     ],
     timestamp: moment(),
     footer: {

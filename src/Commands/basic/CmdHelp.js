@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:src/Commands/basic/CommandHelp.js
 <<<<<<<< HEAD:help.js
 const helpEmbed = {
@@ -6,6 +7,9 @@ const {PREFIX} = require("./../../../GlobalVariable.js");
 =======
 const {PREFIX} = require("../../../GlobalVariable.js");
 >>>>>>> ca3e669c (노래봇 추가(기능에 문제가 있어서 지금 올라가는 것에는 주석 처리)):src/Commands/basic/CmdHelp.js
+=======
+const {PREFIX} = require("./../../../GlobalVariable.js");
+>>>>>>> 2cca1b4a (노래도움말 문구 수정)
 const moment = require('moment');
 
 const helpembed = {
