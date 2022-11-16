@@ -16,20 +16,23 @@ export const musicYoutubeSearch: CMD = {
     const musicEntity = musicCollection.get(guildId);
     const msgMember = msg.member as GuildMember;
 
-    if (!msgMember.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
+    if (!msgMember.voice.channel)
+      return msg.channel.send('보이스채널에서 해주세요!');
 
     if (musicEntity != undefined) {
       if (msgMember.voice.channel.id != musicEntity.voiceChannel.id)
         return msg.channel.send('같은 보이스채널에서 해주세요!');
     }
 
-    if (args.length == 0) return msg.channel.send('검색어를 입력해주세요!');
+    if (args.length == 0)
+      return msg.channel.send('검색어를 입력해주세요!');
 
     const searchStr = args.join(' ');
 
     const items = await search(searchStr, { source: { youtube: 'video' }, limit: 8 });
 
-    if (items.length == 0) return msg.channel.send('검색결과가 없네요. 다른 키워드로 다시 시도해보세요!');
+    if (items.length == 0)
+      return msg.channel.send('검색결과가 없네요. 다른 키워드로 다시 시도해보세요!');
 
     //임베드 만들기
     const fields = items.map((e, i) => {

@@ -1,4 +1,4 @@
-import { TextChannel, VoiceBasedChannel } from 'discord.js';
+import { Guild, TextChannel, VoiceBasedChannel } from 'discord.js';
 import { AudioPlayer, AudioResource, PlayerSubscription, VoiceConnection } from '@discordjs/voice';
 import { YouTubeStream } from 'play-dl';
 
@@ -11,7 +11,7 @@ export interface musicOption {
 }
 
 export interface musicEntity {
-  guild: string;
+  guild: Guild;
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
   playStream: YouTubeStream;

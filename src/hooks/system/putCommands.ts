@@ -1,6 +1,8 @@
 import { Collection } from 'discord.js';
 import { CMD } from '../../types/type';
 
+import { test } from '../../cmd/test';
+
 import { basicAngry } from '../../cmd/basic/basicAngry';
 import { basicDate } from '../../cmd/basic/basicDate';
 import { basicDev } from '../../cmd/basic/basicDev';
@@ -35,6 +37,9 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
     CmdtoName(map, cmdComponent);
     commands.set(cmdComponent.name, cmdComponent);
   };
+
+  //test
+  putCmd(map, commands, test);
 
   //basic
   putCmd(map, commands, basicAngry);

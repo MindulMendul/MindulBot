@@ -1,6 +1,9 @@
 import { Message } from 'discord.js';
+import { musicCollection } from '../../../bot';
+import { musicShow } from '../../cmd/music/musicShow';
+import { musicEntity } from '../../types/musicType';
 
-export const musicRemoveReact = async (msg: Message, args: any, connection: any) => {
+export const musicRemoveReact = async (msg: Message, args: Array<number>, musicEntity: musicEntity) => {
   const correctArr = ['네', '어', 'ㅇㅋ', 'ㅇㅇ', 'ㅇ', 'd', 'D', 'y', 'Y', '알았어', 'dz', 'dd', '얍', '0'];
 
   //콜렉터 부분
@@ -16,15 +19,16 @@ export const musicRemoveReact = async (msg: Message, args: any, connection: any)
           return b - a;
         })
         .forEach((element: any) => {
-          connection.subscription.songs.splice(element, 1);
+          musicEntity.songs.splice(element, 1);
         });
       await msg.channel.send('삭제 완료!');
-      require('./musicShow').execute(msg); //큐에 남아있는 노래가 있다면 보여주기
+      musicCollection.set(msg.guildId as string, musicEntity);
+      musicShow.execute(msg,[]); //큐에 남아있는 노래가 있다면 보여주기
     } //부정
     else msg.channel.send('부정의 의미로 받아들이고, 그대로 내버려둘게요.');
   });
 
-  collector.on('end', (collected: { first: () => any }) => {
+  collector.on('end', (collected) => {
     if (!collected.first()) msg.channel.send('대답이 따로 없으니까 그냥 내비둘게요~');
   });
 };
