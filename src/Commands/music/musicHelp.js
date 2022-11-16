@@ -6,6 +6,7 @@ module.exports = {
 	type: "music",
     permission: [""],
     execute(msg) {
+        //return msg.channel.send("노래 명령어는 당분간 사용이 어렵습니다.");
         const helpembed = {
             color: 0xF7CAC9,
             author: {

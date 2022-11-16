@@ -1,51 +1,43 @@
-const {musicQueue, searchYoutubeList}=require("./musicBot");
-let {scheduling}=require("./musicBot");
+const { searchYoutubeList}=require("./musicBot");
 const ytdl=require("ytdl-core");
+const {
+    VoiceConnectionStatus,
+    AudioPlayerStatus,
+    NoSubscriberBehavior,
+    joinVoiceChannel,
+    getVoiceConnection,
+    createAudioPlayer,
+    createAudioResource,
+} = require('@discordjs/voice');
 
 module.exports = {
 	name: "노래",
 	cmd: ["노래", "시작", "선곡"],
     type: "music",
-    permission: ["CONNECT", "SPEAK", "ADD_REACTIONS", "MANAGE_EMOJIS_AND_STICKERS"],
+    permission: ["CONNECT", "SPEAK", "MANAGE_EMOJIS_AND_STICKERS", "READ_MESSAGE_HISTORY"],
     async execute(msg, args){
-        //권한 체크
-        const { joinVoiceChannel } = require('@discordjs/voice');
-        const channel=msg.member.voice.channel;
-        const voiceChannel = joinVoiceChannel({
-            channelId: channel.id,
-            guildId: channel.guild.id,
-            adapterCreator: channel.guild.voiceAdapterCreator,
-        });
-        
-        const searchStr=args.join(" ");
-
+        //보이스채널 체크부분
+        const voiceChannel=msg.member.voice.channel;
         if (!voiceChannel)//보이스채널 체크
             return msg.channel.send("보이스채널에서 해주세요!");
-        
-        if(musicQueue.get(msg.guild.id)!=undefined) if (voiceChannel!=musicQueue.get(msg.guild.id).voiceChannel)
-            return msg.channel.send("같은 보이스채널에서 해주세요!");
-        
+
+        //노래 검색부분
+        const textChannel = msg.channel;
+        const searchStr=args.join(" ");
         if(searchStr=="")//빈 항목 체크
-            return msg.channel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
-
-        //나가기 스케줄링이 걸려있을 경우
-        if(scheduling!=undefined) {
-            clearTimeout(scheduling);
-            scheduling=undefined;
-            musicQueue.delete(msg.guild.id);
-        }
-
+            return textChannel.send("어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ");
+        
         let tmpMusicSite="";
         try{//노래 정보 추출
             if(searchStr.includes("https://")){//링크로 틀었을 때
                 if(searchStr.includes("https://www.youtube.com/watch?v="))//유튜브 링크만 인정
                     tmpMusicSite=searchStr.slice(searchStr.indexOf("=")+1,searchStr.length);
                 else if(searchStr.includes("https://youtu.be/"))
-                tmpMusicSite=searchStr.slice(searchStr.indexOf("e/")+2,searchStr.length);
-                else return msg.channel.send("링크가 잘못 되었네요.");
+                    tmpMusicSite=searchStr.slice(searchStr.indexOf("e/")+2,searchStr.length);
+                else return textChannel.send("링크가 잘못 되었네요.");
             }
             else tmpMusicSite = (await searchYoutubeList(searchStr, 1)).pop().url;
-        } catch(err){return msg.channel.send(err);}//검색결과 없으면 없다고 말해주는 곳
+        } catch(err){return textChannel.send(err);}//검색결과 없으면 없다고 말해주는 곳
         const musicSite = `https://www.youtube.com/watch?v=${tmpMusicSite}`;
         
         const songInfo = await ytdl.getInfo(musicSite);
@@ -54,105 +46,88 @@ module.exports = {
             url: songInfo.videoDetails.video_url,
             lengthSeconds: songInfo.videoDetails.lengthSeconds,
         };
-        
-        const serverQueue = musicQueue.get(msg.guild.id);
-
-        if (!serverQueue) {
-            const queueContruct = {//큐 생성자
+        const resource=createAudioResource(ytdl(song.url),{
+            metadata:song,
+            filter: 'audioonly',
+            inlineVolume: true,
+            silencePaddingFrames:5,
+            });
+        resource.volume.setVolume(1/12);
+        //Guild 체크해서 생성자가 존재하는지 확인하는 곳
+        if(getVoiceConnection(voiceChannel.guild.id)==undefined) {
+            //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
+            const connection = joinVoiceChannel({//커넥션 생성
+                channelId: voiceChannel.id,
+                guildId: voiceChannel.guild.id,
+                adapterCreator: voiceChannel.guild.voiceAdapterCreator,
                 textChannel: msg.channel,
-                voiceChannel: voiceChannel,
-                connection: null,
-                songs: [], //여기에 노래가 담김
-                dispatcher: null, //노래 틀어주는 녀석
-                volume: 30, mute: false,//노래 조절 기능
-                loop: false, skip:false//노래 조절 기능
+                subscription: null,
+            });
+            const audioPlayer = createAudioPlayer({
+                behaviors: {
+                    noSubscriber: NoSubscriberBehavior.Pause,
+                },
+            });
+            connection.subscription = connection.subscribe(audioPlayer);
+            connection.subscription.songs=[];
+            connection.subscription.option={
+                volume:0, // 실제로 쓰이는 값이 아니라 mute용 임시변수
+                volumeMagnification:6,// 1/n 배 되는 거라 커질 수록 소리가 작아짐
+                mute:false,
+                loop:false,
+                skip:false,
             };
 
-            musicQueue.set(msg.guild.id, queueContruct);
-            queueContruct.songs.push(song);
-            try{
-                queueContruct.connection = await voiceChannel.join(); //방 들어오기
-            } catch(err){
-                console.error(err);
-                musicQueue.delete(msg.guild.id);
-                return msg.channel.send("접속하는데 문제가 생겼어요 ㅠㅠ 다시 한 번 실행해주세요!");
-            }
-            
-            this.play(msg.guild, queueContruct.songs[0]);
+            connection.on(VoiceConnectionStatus.Ready, () => {
+                console.log('The connection has entered the Ready state - ready to play audio!');
+                this.play(connection, resource);//아래에 있는 play함수 호출
+            });
         } else {
-            serverQueue.songs.push(song);
-            return msg.channel.send(`**${song.title}**가 큐에 들어왔어요!`);
+            //플레이어가 존재해서 큐에 넣으면 되는 상황
+            const connection = getVoiceConnection(voiceChannel.guild.id);
+            connection.subscription.songs.push(resource);
+            msg.channel.send(`${song.title}가 큐에 들어왔어요~`);
         }
     },
-
     //play 함수
-    async play(guild, song){
-        const serverQueue = musicQueue.get(guild.id);
-        if (!song) {
-            serverQueue.textChannel.send("**노래 끝!**\n30초가 되기 전에 다음 노래 선곡이 없으면 자동으로 나가집니다!");
-            musicQueue.delete(guild.id);
-            scheduling=setTimeout( ()=>{
-                serverQueue.textChannel.send("노래봇이 종료되었습니다.");
-                serverQueue.voiceChannel.leave();
-            }, 30*1000);
-            return;
-        }
+    async play(connection, resource){
+        //기본 함수
+        const audioPlayer=connection.subscription.player;
+        const subscription=connection.subscription;
         
-        const dispatcher = serverQueue.connection.play(ytdl(song.url));
-        dispatcher.on("finish", () => {//finish라는 명령어가 있으니 주의!
-            console.log("디스패쳐꺼짐");
-            if(serverQueue.loop&&!serverQueue.skip)
-                serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
-            else serverQueue.songs.shift();
-            this.play(guild, serverQueue.songs[0]);
-            serverQueue.skip=false;
+        audioPlayer.play(resource);
+
+        //플레이어 설정코드
+        audioPlayer.on(AudioPlayerStatus.Playing, async () => {
+            console.log('The audio player has started playing!');
+        });
+        
+        audioPlayer.on('error', error => {
+            connection.joinConfig.textChannel.send(`에러났어요 ㅠㅠ (${error.message})\n> 에러가 난 곡 이름: ${error.resource.metadata.title}`);
+            audioPlayer.stop();
         });
 
-        dispatcher.on("speaking", (speaking) => {
-            if(!speaking) console.log(`스피킹 안 함`);
-        });
+        audioPlayer.on(AudioPlayerStatus.Idle, (player) => {
+             //틀었던 노래가 끝났을 때
+            console.log("노래끝");
+            if(subscription.songs.length){
+                //다음 노래 있으면 틀어주는 코드
+                this.play(connection, subscription.songs.shift());
 
-        dispatcher.on("error", async (err)=>{
-            console.error(err);
-            const msg=await serverQueue.textChannel.send(`**에러발생!**\n> ${err}`);
-
-            require("./musicSkip").execute(msg);
-
-            if(serverQueue.loop&&!serverQueue.skip)
-                serverQueue.songs.push(serverQueue.songs.shift()); //루프가 되는지 확인
-            else serverQueue.songs.shift();
-            this.play(guild, serverQueue.songs[0]);
-            serverQueue.skip=false;
-        });
-
-        dispatcher.setVolume(!serverQueue.mute*serverQueue.volume/200);
-        serverQueue.dispatcher=dispatcher;//디스패쳐 저장
-
-        //collector로 해결할 수 있지 않을까...??
-        /*
-        const {bot}=require("./../../../bot");
-        bot.on('voiceStateUpdate', async (oldState, newState) => {
-            if(!newState) return;//누가 방을 나갔는지 파악
-            if(oldState.channelID!=oldState.guild.me.voice.channelID) return;//방을 나간 게 내 방이었는지 파악
-
-            // 채널에 사람이 얼마나있는지 파악하기
-            const oldNumber=oldState.channel.members.size;
-            if (!oldNumber-1) {
-                const msg=await serverQueue.textChannel.send("여러분 저 혼자에요... 저 혼자 남기고 그렇게 나가시는 건가요 ㅠㅠ\n괜찮아요, 전 혼자일 때가 더 많으니까요...\n그래도 지금은 너무 외로운데 같이 있어주면 안 될까요...?\n저는 여러분을 사,사,,아니 좋아하고 있어요...\n30초만 기다려보고 아니면 나가보겠습니다 ㅠㅠ");
-                dispatcher.pause();//노래 멈춰두기
-                setTimeout(() => {
-                    if (!oldNumber - 1){ //여전히 사람이 없으면
-                        msg.channel.send("이걸 안 들어오네 ㅡㅡ;;\n 님들 다음부턴 저 부르지 마세요.")
-                        require("./musicEmpty").execute(msg);//노래 날리고
-                        oldState.channel.leave(); // 나가기
-                    }
-                }, 3*1000); // 3초
+                //스킵 루프 조건 만족하면 루프돌리는 부분
+                const skip=subscription.option.skip;
+                const loop=subscription.option.loop;
+                if(!skip&&loop) subscription.songs.push(player.resource);
+                subscription.option.skip=false;
+            } else {
+                audioPlayer.stop();
+                connection.destroy();
             }
         });
-        */
-        
-        const tmpmsg = await serverQueue.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
-        
+
+        //Embed 생성하는 코드
+        const song=audioPlayer._state.resource.metadata;
+        const tmpmsg = await connection.joinConfig.textChannel.send(`이번 선곡은~\n> **${song.title}**\n> ${song.url}`);
         tmpmsg.react("⏯");
         tmpmsg.react("⏩");
         tmpmsg.react("⏹");
@@ -160,95 +135,73 @@ module.exports = {
         tmpmsg.react("🔀");
         tmpmsg.react("🔇");
         tmpmsg.react("🔉");
-        tmpmsg.react("🔊");
-
-        if(serverQueue.mute) tmpmsg.channel.send("현재는 음소거가 된 상태에요, 참고하세요 ㅎㅎ");
-        
-
-        this.react(tmpmsg);
+        await tmpmsg.react("🔊");
+        this.react(tmpmsg, connection);
     },
-    async react(msg){
+    async react(msg, connection){
+        //이모지 콜렉터
+        const audioPlayer=connection.subscription.player;
+        const subscription=connection.subscription;
         const reactionFilter = (reaction, user) => {return (reaction.message == msg)&&(!user.bot);}
         const collector = msg.createReactionCollector(reactionFilter, {});
-        collector.on('collect', (reaction, user) => {
+        collector.on('collect', async (reaction, user) => {
             reaction.users.remove(user);
-            const {bot}=require("./../../../bot");
+            const {bot}=require("../../../bot");
             const checkGuildCmdQueue=bot.guildCmdQueue.get(`${msg.guild.id}${this.type}`);
             if(checkGuildCmdQueue.length!=0)
                 return msg.channel.send(`${checkGuildCmdQueue} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`);
             
-            if(!musicQueue.get(msg.guild.id)) return;//노래 재생 중이 아닐 땐 사용을 막음
-            
-            const serverQueue = musicQueue.get(msg.guild.id);
-            const dispatcher = serverQueue.dispatcher;
-            
+            //보이스채널 체크하는 게 앞에 나오면, 아래 스위치에 해당되지 않는 이모지 선택 시에도 체크됨
+            //if(!connection.voiceChannel.members.get(user.id))
+            //    return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
+            const resource=audioPlayer._state.resource;
+            const volumeMagnification=subscription.option.volumeMagnification;
             switch (reaction.emoji.name) {
                 case "⏯":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
-                    
-                    if (dispatcher.paused) {
-                        dispatcher.resume();
+                    if (audioPlayer._state.status=="paused") {
+                        audioPlayer.unpause();
                         msg.channel.send("노래를 다시 틀어 드릴게요 ㅎㅎ");
-                    } else {
-                        dispatcher.pause();
+                    }
+                    else if(audioPlayer._state.status=="playing") {
+                        audioPlayer.pause();
                         msg.channel.send("노래를 일시정지해 드렸어요!");
                     }
                 break;
 
                 case "⏩": 
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
                     require("./musicSkip").execute(msg); break;
                 
                 case "⏹":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
                     require("./musicEmpty").execute(msg); break;
 
                 case "🔁":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
                     require("./musicLoop").execute(msg); break;
 
                 case "🔀": 
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
                     require("./musicShuffle").execute(msg); break;
 
-
                 case "🔇":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
-
-                    serverQueue.mute = !(serverQueue.mute);
-                    if (serverQueue.mute) {//뮤트 걸리고 나서
-                        dispatcher.setVolume(0);
+                    subscription.option.mute = !(subscription.option.mute);
+                    if (subscription.option.mute) {//뮤트 걸리고 나서
+                        subscription.option.volume=resource.volume.volume;
+                        await resource.volume.setVolume(0);
                         msg.channel.send(`음소거되었어요`);
                     } else {//뮤트 풀리고 나서
-                        dispatcher.setVolume(serverQueue.volume / 200);
-                        msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${serverQueue.volume}%`);
+                        await resource.volume.setVolume(subscription.option.volume);
+                        msg.channel.send(`원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                     }
                 break;
 
                 case "🔉":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
-
-                    if (serverQueue.mute) return msg.channel.send("음소거 중이에요.");
-                    serverQueue.volume = Math.max(serverQueue.volume - 10, 0);
-                    dispatcher.setVolume(serverQueue.volume / 200);
-                    msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    if (subscription.option.mute) return msg.channel.send("음소거 중이에요.");
+                    await resource.volume.setVolume(Math.max(resource.volume.volume-1/(10*volumeMagnification), 0));
+                    msg.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                 break;
 
                 case "🔊":
-                    if(!serverQueue.voiceChannel.members.get(user.id))
-                        return msg.channel.send("알맞은 보이스채널에서 틀어주세요!");
-                
-                    if (serverQueue.mute) return msg.channel.send("음소거 중이에요.");
-                    serverQueue.volume = Math.min(serverQueue.volume + 10, 100);
-                    dispatcher.setVolume(serverQueue.volume / 200);
-                    msg.channel.send(`현재 볼륨:${serverQueue.volume}%`);
+                    if (subscription.option.mute) return msg.channel.send("음소거 중이에요.");
+                    await resource.volume.setVolume(Math.min(resource.volume.volume+1/(10*volumeMagnification), 1/volumeMagnification));
+                    msg.channel.send(`현재 볼륨:${Math.round(resource.volume.volume*100*volumeMagnification)}%`);
                 break;
             }
         });
