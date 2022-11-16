@@ -1,4 +1,4 @@
-import { search, attachListeners } from 'play-dl';
+import { search } from 'play-dl';
 
 import { DiscordGatewayAdapterCreator, PlayerSubscription } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
@@ -9,8 +9,9 @@ import { CMD } from '../../types/type';
 import { musicCollection } from '../../../bot';
 import { Guild, GuildMember, TextChannel } from 'discord.js';
 import { VolumeTransformer } from 'prism-media';
-import { musicStreamResource } from '../../hooks/music/musicStreamResource';
-import { musicConnection } from '../../hooks/music/musicConnection';
+import { musicExecuteStreamResource } from '../../hooks/music/musicExecuteStreamResource';
+import { musicConnection } from '../../hooks/music/musicExecuteConnection';
+import { musicSearch } from '../../hooks/music/musicSearch';
 
 export const musicExecute: CMD = {
   name: '노래',
@@ -28,16 +29,8 @@ export const musicExecute: CMD = {
 
     //노래 검색부분
     const textChannel = msg.channel as TextChannel;
-    const argJoin = args.join(' ');
-    if (argJoin == '')//빈 항목 체크
-      return textChannel.send('어떤 노래를 틀어야할지 모르겠어요 ㅠㅠ');
-
-    const searchStr = argJoin.includes('https://www.youtube.com/watch?v=') ? argJoin.slice(0, 43) : argJoin;
-    const searched = (await search(searchStr, { source: { youtube: 'video' }, limit: 1 })).pop();
-    if (searched == undefined) {// 검색이 안 된 경우
-      console.log(`버그 발생부분 => 검색결과가 안 잡힘.\n> searchStr: ${searchStr}\n> searched: ${searched}`);
-      return textChannel.send('검색결과가 없어요 ㅠㅠ 다른 키워드로 다시 시도해보세요!');
-    }
+    const searched = (await musicSearch(msg, args, 1))?.pop();
+    if(!searched) return; // 검색이 안 된 경우
 
     const searchedId = searched.id as string;
     const musicEntity = musicCollection.get(guildId);
@@ -48,7 +41,7 @@ export const musicExecute: CMD = {
       if (msgMember.voice.channelId != voiceChannel.id)
         return msg.channel.send('같은 보이스채널에서 해주세요!');
 
-      const [, resource] = await musicStreamResource(searchedId);
+      const resource = await musicExecuteStreamResource(searchedId);
 
       const option = musicEntity.option;
       const volume = resource.volume;
@@ -58,7 +51,7 @@ export const musicExecute: CMD = {
       msg.channel.send(`${resource.metadata.title}가 큐에 들어왔어요~`);
     } else {
       //플레이어가 존재하지 않아 최초로 노래를 틀어줘야 하는 상황
-      const [playStream, resource] = await musicStreamResource(searchedId);
+      const resource = await musicExecuteStreamResource(searchedId);
 
       const connection = joinVoiceChannel({
         //커넥션 생성
@@ -98,8 +91,7 @@ export const musicExecute: CMD = {
           option: option
         }
       );
-
-      attachListeners(audioPlayer, playStream);
+      
       musicConnection(guildId, resource);
     }
   }
