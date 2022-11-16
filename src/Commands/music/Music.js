@@ -7,6 +7,7 @@ const cheerio = require("cheerio");
 
 let scheduling=undefined;
 
+<<<<<<< HEAD
 //execute 함수
 async function execute(msg, searchStr){
     //권한 체크
@@ -226,6 +227,8 @@ function remove(msg, array){
     msg.channel.send(tempStr);
 }
 
+=======
+>>>>>>> 40105dd3 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
 //유튜브찾기 함수
 async function searchYoutubeList(question, limit){
     const getHtml = async () => {
@@ -264,11 +267,15 @@ async function searchYoutubeList(question, limit){
 
 //찾은 유튜브 주소를 배열에 집어넣는 함수
 <<<<<<< HEAD
+<<<<<<< HEAD
 async function searchYoutube(msg, searchStr){
     const word = searchStr; // 검색어 지정
     const limit = 10;  // 출력 갯수
 =======
 async function searchYoutube(searchStr){
+=======
+async function searchYoutube(msg, searchStr){
+>>>>>>> 40105dd3 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))
     if (!msg.member.voice.channel)
         return msg.channel.send("보이스채널에서 해주세요");
 
@@ -298,5 +305,3 @@ async function searchYoutube(searchStr){
     }
     return await embedTempFunc();
 }
-
-module.exports={musicQueue, scheduling, execute, skip, empty, play, show, shuffle, loop, remove, searchYoutube};

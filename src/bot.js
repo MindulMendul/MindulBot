@@ -11,6 +11,7 @@ const { CommandNaga } = require('./Commands/basic/CommandNaga');
 >>>>>>> 8c0086a3 (음악봇 제작 시작)
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul"); //서울 시간
+require('./botAlarm');
 
 const bot = new Client();
 <<<<<<< HEAD
@@ -220,8 +221,14 @@ bot.on('messageReactionAdd', async (reaction, user) => {
                 reaction.users.remove(user);//일단 이모지부터 지우고 시작하자~
                 switch(reaction.emoji.name){
                     case "⏯":
-                        if(dispatcher.paused) dispatcher.resume();
-                        else dispatcher.pause();
+                        if(dispatcher.paused){
+                            dispatcher.resume();
+                            msg.channel.send("노래를 다시 틀어 드릴게요 ㅎㅎ");
+                        }
+                        else {
+                            dispatcher.pause();
+                            msg.channel.send("노래를 일시정지해 드렸어요!");
+                        }
                     break;
 
                     case "⏩":
@@ -736,10 +743,6 @@ bot.on('message', async (msg) => {
         if(cmdCheck){
             cmdCheck=false;
             switch(cmd){
-                case "상태":
-                    console.log(musicBot.musicQueue.get(msg.guild.id).dispatcher);
-                break;
-
                 case "노래":
                     musicBot.execute(msg, args.join(" "));
                 break;
@@ -988,6 +991,7 @@ bot.on('message', async (msg) => {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bot.on('guildMemberAdd',async (member) => {
     console.log(`${member.user.tag}: 접속`);
 });
@@ -1004,3 +1008,6 @@ bot.login(GV.LoginBotToken);
 =======
 bot.login(GV.LoginBotToken);
 >>>>>>> 94bc2140 (소스 모듈화 작업 중)
+=======
+//bot.login(GV.LoginBotToken);
+>>>>>>> 40105dd3 (민둘봇 switch구문 지우고 완전 새로 코딩함(music기능은 꺼둠))

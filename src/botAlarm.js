@@ -1,4 +1,4 @@
-const bot=require("./bot");
+const bot=require("./../bot2");
 
 //테스트용
 /*
@@ -8,6 +8,16 @@ setTimeout(() => {
     .send("ㅎㅇ");
 }, 1000);
 */
+
+//타로 카드 셔플
+func=require("./func");
+setImmediate(()=>{
+    func.shuffle(require("./Commands/basic/TarotList").script);
+    setInterval(()=>{
+        if(moment().hour()==0)
+            func.shuffle(require("./Commands/basic/TarotList").script);
+    },24*60*60*1000)//24시간
+});
 
 //기본길드 전용 알람(현재는 그럼)
 setInterval( () => {
