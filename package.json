@@ -4,8 +4,8 @@
   "description": "MindulBot",
   "main": "bot.js",
   "scripts": {
-    "start": "node ./bot",
-    "dev": "nodemon ./bot"
+    "start": "node ./bot.js",
+    "dev": "nodemon ./bot.js"
   },
   "keywords":[],
   "author": "",
