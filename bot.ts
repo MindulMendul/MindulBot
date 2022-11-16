@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import moment_timezone from 'moment-timezone';
 import { Client, ClientUser, Collection, Guild, Message } from 'discord.js';
-import { putCommands } from './src/hooks/app/putCommands';
+import { putCommands } from './src/hooks/system/putCommands';
 import { CMD } from './src/types/type';
 import { musicEntity } from './src/types/musicType'
 import { alarm } from './src/alarm';

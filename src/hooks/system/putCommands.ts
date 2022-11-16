@@ -55,7 +55,6 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   //music
   putCmd(map, commands, musicEmpty);
   putCmd(map, commands, musicExecute);
-  /*
   putCmd(map, commands, musicHelp);
   putCmd(map, commands, musicLoop);
   putCmd(map, commands, musicRemove);
@@ -63,5 +62,4 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   putCmd(map, commands, musicShuffle);
   putCmd(map, commands, musicSkip);
   putCmd(map, commands, musicYoutubeSearch);
-  */
 };

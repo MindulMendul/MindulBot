@@ -1,9 +1,8 @@
-import { video_basic_info, stream, search, YouTubeStream, YouTubeVideo } from 'play-dl';
+import { video_basic_info, stream, search, YouTubeStream } from 'play-dl';
 
-import { AudioResource, DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
+import { DiscordGatewayAdapterCreator, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { joinVoiceChannel } from '@discordjs/voice';
-import { getVoiceConnection } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 import { createAudioResource } from '@discordjs/voice';
 
@@ -93,6 +92,7 @@ export const musicExecute: CMD = {
           connection: connection,
           subscription: subscription,
           audioPlayer: audioPlayer,
+          song: resource,
           songs: [],
           option: option
         }
