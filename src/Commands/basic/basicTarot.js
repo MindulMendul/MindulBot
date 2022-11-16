@@ -1,4 +1,4 @@
-const { bot } = require("./../../../bot2");
+const { bot } = require("./../../../bot");
 
 module.exports = {
 	name: `타로`,
@@ -13,7 +13,7 @@ module.exports = {
         return msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n> 택스트채널 이모지권한: ${permissions.has("ADD_REACTIONS")}`);
 
         //명령 대기 확인
-        const bot=require("./../../../bot2").bot;
+        const bot=require("./../../../bot").bot;
         if(!bot.guildCmdQueue.get(msg.guild.id))
             return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
         bot.guildCmdQueue.set(msg.guild.id, false);
@@ -53,7 +53,7 @@ module.exports = {
     async react(asdf, msg){
         return new Promise((resolve)=>{
             let check=false;
-            const bot=require("./../../../bot2").bot;
+            const bot=require("./../../../bot").bot;
             bot.on("messageReactionAdd", (reaction, user)=>{
                 if(check) return;//한 번 선택되면 안 바뀌게 막는 코드
                 if(user.bot || user.id!=msg.author.id) return;//다른 사람이 하면 안 되게 막는 코드

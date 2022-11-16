@@ -14,8 +14,12 @@ moment.tz.setDefault("Asia/Seoul"); //서울 시간
 require('./botAlarm');
 
 const bot = new Client();
+<<<<<<< HEAD:src/bot.js
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+const GV=require("../GlobalVariable");
+>>>>>>> 67f199ac (노래봇 자잘한 거 다 고침):src/oldBot1.js
 
 <<<<<<< HEAD
 const PREFIX="ㅣ";

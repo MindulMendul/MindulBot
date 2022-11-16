@@ -3,7 +3,7 @@ module.exports = {
 	cmd: ['건의'],
 	type: "basic",
 	execute(msg, args) {
-		const {bot}=require('../../../bot2');
+		const {bot}=require('../../../bot');
 		const {OWNER_ID} = require('../../../GlobalVariable');
 		const content=args.join(" ");
 
