@@ -1,5 +1,10 @@
 node_modules/
+<<<<<<< HEAD
 
 package-lock.json
 
 .env
+=======
+.env
+package-lock.json
+>>>>>>> e9064e02 (버그 고친 거 깃)
