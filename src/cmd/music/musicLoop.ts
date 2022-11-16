@@ -5,7 +5,7 @@ export const musicLoop: cmd = {
   name: '루프',
   cmd: ['루프', '반복', 'loop', 'ㄿ', 'ㄹㅍ'],
   type: 'music',
-  permission: [''],
+  permission: [],
   execute(msg) {
     if (!msg.member.voice.channel) return msg.channel.send('보이스채널에서 해주세요!');
 

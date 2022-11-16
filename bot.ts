@@ -1,15 +1,15 @@
 import { config } from 'dotenv';
 import moment_timezone from 'moment-timezone';
 import { Client, ClientUser, Collection, Guild, Message } from 'discord.js';
-import { putCommands } from './src/func/putCommands';
-import { cmd } from './src/type';
+import { putCommands } from './src/hooks/app/putCommands';
+import { cmd } from './src/types/type';
+import { musicEntity } from './src/types/musicType'
 import { alarm } from './src/alarm';
 
 import { checkPermissions } from './src/permission';
 
 config();
 moment_timezone.tz.setDefault('Asia/Seoul'); //서울 시간
-//const {Intents, MessageActionRow, MessageButton} = require('discord.js');
 
 const env = process.env as NodeJS.ProcessEnv;
 
@@ -29,6 +29,8 @@ export const bot = new Client({
 const CmdtoNameMap: Collection<string, string> = new Collection(); // cmd와 name 매칭해주는 맵
 const commands: Collection<string, cmd> = new Collection(); // 명령어 모음집
 const guildCmdQueue: Collection<string, Array<cmd>> = new Collection(); //길드 명령어큐
+
+export const musicCollection: Collection<string, musicEntity> = new Collection(); // 노래관련 맵
 
 bot.on('ready', async () => {
   //정상적으로 작동하는지 출력하는 코드
@@ -72,14 +74,6 @@ bot.on('messageCreate', async (msg) => {
     if (checkGuildCmdQueue.length == 0) {
       //아무것도 실행 안 되어 있으면 실행
       checkGuildCmdQueue.push(getCmd); //명령어 입력 중임을 알림
-
-      /*if (getCmd.type === "music") {//노래 재생 시에 문제 있으면 업데이트 진행
-				if (!verCheck(msg)) {
-					msg.channel.send("노래봇 버젼이 안 맞아서 업데이트 중입니다. 조금만 기다려주세요!");
-					const child = await execFile("npm", ['install', 'play-dl@latest'], { shell: true });
-					console.log(child);
-				}
-			}*/
 
       if (checkPermissions(msg, getCmd.permission)) await getCmd.execute(msg, args); //실행이 끝날 때까지 대기
       checkGuildCmdQueue.shift(); //명령어 끝나면 대기열 제거
