@@ -1,8 +1,8 @@
 import { Collection } from 'discord.js';
 import { CMD } from '../../types/type';
 
-import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
-import { test } from '../../cmd/admin/test';
+//import { adminHeapSnapshot } from '../../cmd/admin/heapSnapshot';
+//import { test } from '../../cmd/admin/test';
 
 import { basicAngry } from '../../cmd/basic/basicAngry';
 import { basicDev } from '../../cmd/basic/basicDev';
@@ -36,8 +36,8 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   };
 
   //admin
-  putCmd(adminHeapSnapshot);
-  putCmd(test);
+  // putCmd(adminHeapSnapshot);
+  // putCmd(test);
 
   //basic
   putCmd(basicAngry);
