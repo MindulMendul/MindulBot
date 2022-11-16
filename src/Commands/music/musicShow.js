@@ -5,21 +5,24 @@ module.exports = {
 	name: "큐",
 	cmd: ["큐", "목록", "노래목록"],
     type: "music",
-    execute(msg){
+    async execute(msg){
         const serverQueue = musicQueue.get(msg.guild.id);
 
-        if (!msg.member.voice.channel)
-            return msg.channel.send("보이스채널에서 해주세요");
-
-        if(!serverQueue)
-            return msg.channel.send("재생목록에 노래가 없어요!");
-        else{
-            //명령 대기 체크
+        if (!msg.member.voice.channel){
+            await msg.channel.send("보이스채널에서 해주세요");
+            //명령어 끝났다는 신호 주기
             const bot=require("./../../../bot").bot;
-            if(!bot.guildCmdQueue.get(msg.guild.id))
-                return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
-            bot.guildCmdQueue.set(msg.guild.id, false);
+            bot.guildCmdQueue.get(msg.guild.id).shift();
+            return;
+        }
 
+        if(!serverQueue){
+            await msg.channel.send("재생목록에 노래가 없어요!");
+            //명령어 끝났다는 신호 주기
+            const bot=require("./../../../bot").bot;
+            bot.guildCmdQueue.get(msg.guild.id).shift();
+            return;
+        } else {
             let i=1;//첫 라벨은 그냥
 
             const embedQueue = {
@@ -35,9 +38,14 @@ module.exports = {
                 }
                 embedQueue.fields.push(explSong);
             });
-            
-            bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
-            return msg.channel.send({embed: embedQueue});
+
+            await msg.channel.send({embed: embedQueue});
+
+            //명령어 끝났다는 신호 주기
+            const bot=require("./../../../bot").bot;
+            bot.guildCmdQueue.get(msg.guild.id).shift();
+
+            return;
         }
     }
 };            

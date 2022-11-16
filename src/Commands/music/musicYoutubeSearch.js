@@ -1,22 +1,16 @@
-const bot=require("./../../../bot");
-const musicBot=require("./musicBot");
-
 module.exports = {
 	name: "검색",
 	cmd: ["검색", "노래검색", "ㄴㄹㄱㅅ", "ㄴㄺㅅ"],
     type: "music",
     //찾은 유튜브 주소를 배열에 집어넣는 함수
     async execute(msg, args){
+        const musicBot=require("./musicBot");
+        
         if (!msg.member.voice.channel)
             return msg.channel.send("보이스채널에서 해주세요");
         
         if(args.length==0)
             return msg.channel.send("검색어를 입력해주세요");
-
-        //명령 대기 체크
-        if(!bot.bot.guildCmdQueue.get(msg.guild.id))
-            return msg.reply(`명령어를 사용하려면 ${this.name} 명령어가 끝날 때까지 기다려야 합니다.`);
-        bot.bot.guildCmdQueue.set(msg.guild.id, false);
 
         const searchStr=args.join(" ");
         
@@ -40,13 +34,12 @@ module.exports = {
             embedSearchYoutube.fields.push(explItem);
         }
         const embedMsg=await msg.channel.send({embed: embedSearchYoutube});
-        await this.react(embedSearchYoutube, embedMsg);
-        bot.bot.guildCmdQueue.set(msg.guild.id, true);//명령 대기 확인
+        this.react(embedSearchYoutube, embedMsg);
     }, 
     async react(embed, embedMsg){
-        let check=false;
-        bot.bot.on("message", async (msg)=>{
-            if(check || msg.author.bot) return;
+        const msgFilter = (msg) => {return !(msg.author.bot);}
+        const collector = msg.createMessageCollector(msgFilter, {max: 1});
+        collector.on('collect', async (msg) => {
             const msgArr=await func.effectiveArr(msg.content,",",1,8);//배열이 유효한지 조사
 
             if(msgArr.length==0){ //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
@@ -60,7 +53,6 @@ module.exports = {
             }
             msg.delete();
             embedMsg.delete();
-            check=true;
         });
     }
 };
