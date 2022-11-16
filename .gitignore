@@ -16,10 +16,14 @@ package-lock.json
 >>>>>>> ff07ca98 (이것도 깃해야 하나?2)
 =======
 .env
+GlobalVariable.js
 package-lock.json
 package.json
+<<<<<<< HEAD
 >>>>>>> b14b1306 (노래봇 특정 노래에서 에러났을 때 예외두는 코드 수정)
 =======
 package.json
 GlobalVariable.js
 >>>>>>> cc6ee211 (Global 파일 변경 안 되도록 변경)
+=======
+>>>>>>> c6d32f4e (.gitignore 뭔가 이상하길래 다시 커밋)
