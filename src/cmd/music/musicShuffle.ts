@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { GuildMember, Message, TextChannel } from 'discord.js';
-=======
-import { GuildMember, Message } from 'discord.js';
->>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
-=======
-import { GuildMember, Message, TextChannel } from 'discord.js';
->>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
 import { musicCollection } from '../../../bot';
 import { shuffle } from '../../hooks/system/shuffle';
 import { CMD } from '../../types/type';
 import { musicShow } from './musicShow';
-<<<<<<< HEAD
 
 export const musicShuffle: CMD = {
   name: '셔플',
@@ -34,49 +24,6 @@ export const musicShuffle: CMD = {
 
     shuffle(musicEntity.songQueue);
     textChannel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
-    musicShow.execute(msg, []);
-=======
-import { getVoiceConnection } from '@discordjs/voice';
-import { cmd } from '../../types/type';
-=======
->>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
-
-export const musicShuffle: CMD = {
-  name: '셔플',
-  cmd: ['셔플', 'ㅅㅍ', 'shuffle'],
-  type: 'music',
-  permission: [],
-  //shuffle 함수
-  async execute(msg: Message) {
-    const guildId = msg.guildId as string;
-    const msgMember = msg.member as GuildMember;
-    const textChannel = msg.channel as TextChannel;
-    const musicEntity = musicCollection.get(guildId);
-
-    if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
-    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-    if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
-    if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
-      return textChannel.send('같은 보이스채널에서 해주세요!');
-
-    shuffle(musicEntity.songQueue);
-<<<<<<< HEAD
-    msg.channel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
-<<<<<<< HEAD
-    require('./musicShow').execute(msg);
->>>>>>> 05f2a6cb (pretty한 코드 적용~)
-=======
-=======
-    textChannel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
->>>>>>> 3ce689fd (노래 삭제기능 수정 & 노래 검색함수 수정 & 전체적인 리펙토링)
-    musicShow.execute(msg, []);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0ec61286 (노래봇 버그 고침 (최초))
-=======
-    
->>>>>>> 254ee395 (노래봇 진짜 제대로 고친 것 같은데...?? (희망사항))
-=======
->>>>>>> d8b8e534 (ts-node 관련 버그 해결)
+    if (musicShow.execute) musicShow.execute(msg);
   }
 };

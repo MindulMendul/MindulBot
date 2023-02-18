@@ -1,6 +1,4 @@
 import { MessageActionRow, MessageButton } from 'discord.js';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { TextChannel } from 'discord.js';
 import { CMD } from '../../types/type';
 
@@ -42,70 +40,3 @@ export const basicDice: CMD = {
     return;
   }
 };
-=======
-import { TextChannel } from "discord.js";
-import { cmd } from "../../type";
-=======
-import { TextChannel } from 'discord.js';
-import { cmd } from '../../type';
->>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
-
-export const basicDice: cmd = {
-  name: `주사위`,
-  cmd: ['데굴', '데굴데굴', '주사위', 'ㄷㄱㄷㄱ'],
-  type: 'basic',
-  permission: [],
-  async execute(msg) {
-    const button = new MessageActionRow() //첫 번째 줄 버튼
-      .addComponents(new MessageButton().setCustomId('🛎️').setLabel('🛎️').setStyle('PRIMARY'));
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-		const channel = msg.channel as TextChannel;
-        const collector = channel.createMessageComponentCollector({filter});
-        collector.on('collect', async i => {
-			const content=i.message.content;
-			const contentNum=Number(content.trim().split(/[^0-9]/g).filter((e)=>{return e.length>0;})[1])+1;
-			i.update({content:`${i.user.tag}님의 ${contentNum}번째 주사위 결과입니다.\n> ${Math.ceil(Math.random()*6)}`, components:[button]});
-		});
-		const msgDice=await msg.channel.send({content:`${msg.author.tag}님의 1번째 주사위 결과입니다.\n> ${Math.ceil(Math.random()*6)}`, components:[button]});
-		return;
-	},
-};
->>>>>>> 0aba8f5e (basic 명령어 모두 실행가능하도록 변경)
-=======
-        const filter = (i: { user: { id: string }; message: { id: string } }) => {
-            return i.user.id === msg.author.id && i.message.id === msgDice.id;
-        };
-=======
-    const filter = (i: { user: { id: string }; message: { id: string } }) => {
-      return i.user.id === msg.author.id && i.message.id === msgDice.id;
-    };
->>>>>>> 05f2a6cb (pretty한 코드 적용~)
-
-    const channel = msg.channel as TextChannel;
-    const collector = channel.createMessageComponentCollector({ filter });
-    collector.on('collect', async (i) => {
-      const content = i.message.content;
-      const contentNum =
-        Number(
-          content
-            .trim()
-            .split(/[^0-9]/g)
-            .filter((e) => {
-              return e.length > 0;
-            })[1]
-        ) + 1;
-      i.update({
-        content: `${i.user.tag}님의 ${contentNum}번째 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`,
-        components: [button]
-      });
-    });
-    const msgDice = await msg.channel.send({
-      content: `${msg.author.tag}님의 1번째 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`,
-      components: [button]
-    });
-    return;
-  }
-};
->>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)

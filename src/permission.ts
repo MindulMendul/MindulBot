@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { Message, PermissionResolvable, TextChannel, User } from 'discord.js';
 import { bot } from './../bot';
 export const checkPermissions = (msg: Message<boolean>, permission: PermissionResolvable[]) => {
@@ -23,59 +20,3 @@ export const checkPermissions = (msg: Message<boolean>, permission: PermissionRe
     return false;
   } else return true;
 };
-=======
-const {bot}=require("./../bot");
-async function checkPermissions(msg, permission){
-    if(permission[0]=="") return true;
-=======
-import { Message, PermissionResolvable, TextChannel, User } from "discord.js";
-import { bot } from "./../bot";
-export const checkPermissions = (msg: Message<boolean>, permission: PermissionResolvable[]) => {
-    if(!permission[0]) return true;
->>>>>>> 0aba8f5e (basic 명령어 모두 실행가능하도록 변경)
-=======
-import { Message, PermissionResolvable, TextChannel, User } from 'discord.js';
-import { bot } from './../bot';
-export const checkPermissions = (msg: Message<boolean>, permission: PermissionResolvable[]) => {
-<<<<<<< HEAD
-    if (!permission[0]) return true;
->>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
-=======
-  if (!permission[0]) return true;
->>>>>>> 05f2a6cb (pretty한 코드 적용~)
-
-  const channel = msg.channel as TextChannel;
-  const permissions = channel.permissionsFor(bot.user as User);
-  if (!permissions) return false;
-
-  let msgPermission = `권한이 없어서 사용할 수가 없어요.\n 현재 필요한 권한의 상태입니다.\n`;
-  const msgLen = msgPermission.length;
-
-  permission.forEach((elem) => {
-    //console.log(`${elem}: ${permissions.has(elem)}`);
-    if (!permissions.has(elem)) msgPermission += `> ${elem} : ${permissions.has(elem)}\n`;
-  });
-
-<<<<<<< HEAD
-    if (msgPermission.length > msgLen) {
-        channel.send(msgPermission);
-        return false;
-    } else return true;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-module.exports={checkPermissions}
->>>>>>> a8a88ed4 (es6 & ts 화 진행 중 // 아직 버그 있음)
-=======
-}
->>>>>>> 0aba8f5e (basic 명령어 모두 실행가능하도록 변경)
-=======
-=======
-  if (msgPermission.length > msgLen) {
-    channel.send(msgPermission);
-    return false;
-  } else return true;
->>>>>>> 05f2a6cb (pretty한 코드 적용~)
-};
->>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)

@@ -1,14 +1,6 @@
 {
     "printWidth": 120,
-<<<<<<< HEAD
-<<<<<<< HEAD
     "tabWidth": 2,
-=======
-    "tabWidth": 4,
->>>>>>> beffa3af (코드 정렬툴 적용 및 디펜던시 업데이트)
-=======
-    "tabWidth": 2,
->>>>>>> 05f2a6cb (pretty한 코드 적용~)
     "singleQuote": true,
     "quoteProps": "consistent",
     "semi": true,
