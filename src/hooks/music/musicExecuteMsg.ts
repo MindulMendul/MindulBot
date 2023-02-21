@@ -74,72 +74,72 @@ export const musicExecuteMsg = async (guildId: string) => {
     //같은 보이스채널 체크
     if (iMember.voice.channelId != voiceChannel.id) {
       textChannel.send('같은 보이스채널에서 해주세요!');
-      i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
-
-      const volumeMagnification = option.volumeMagnification;
-      const volume = playingSong.volume as VolumeTransformer;
-
-      switch (i.customId) {
-        case '⏩':
-          if (musicSkip.execute) musicSkip.execute(iMessage);
-          break;
-
-        case '⏹':
-          if (musicEmpty.execute) musicEmpty.execute(iMessage);
-          break;
-
-        case '🔀':
-          if (musicShuffle.execute) musicShuffle.execute(iMessage);
-          break;
-
-        case '🔉':
-          if (option.mute) {
-            msgSungok.channel.send('음소거 중이에요.');
-            break;
-          }
-          option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
-          volume.setVolume(option.volume / volumeMagnification);
-          msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
-          break;
-
-        case '⏯':
-          if (audioPlayer.state.status == 'playing') {
-            audioPlayer.pause();
-            iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
-            msgSungok.channel.send('노래를 일시정지해 드렸어요!');
-          } else {
-            audioPlayer.unpause();
-            iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
-          }
-          break;
-
-        case '🔁':
-          option.loop = !option.loop;
-          if (!option.loop) {
-            iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
-            msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
-          } else {
-            iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
-            msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
-          }
-          break;
-
-        case '🔇':
-          option.mute = !option.mute;
-          if (option.mute) {
-            iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
-            volume.setVolume(0);
-            msgSungok.channel.send(`음소거되었어요`);
-          } else {
-            iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
-            volume.setVolume(option.volume / volumeMagnification);
-            msgSungok.channel.send(
-              `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
-            );
-          }
-          break;
-      }
-      i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
+      return;
     }
+
+    const volumeMagnification = option.volumeMagnification;
+    const volume = playingSong.volume as VolumeTransformer;
+
+    switch (i.customId) {
+      case '⏩':
+        if (musicSkip.execute) musicSkip.execute(iMessage);
+        break;
+
+      case '⏹':
+        if (musicEmpty.execute) musicEmpty.execute(iMessage);
+        break;
+
+      case '🔀':
+        if (musicShuffle.execute) musicShuffle.execute(iMessage);
+        break;
+
+      case '🔉':
+        if (option.mute) {
+          msgSungok.channel.send('음소거 중이에요.');
+          break;
+        }
+        option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
+        volume.setVolume(option.volume / volumeMagnification);
+        msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
+        break;
+
+      case '⏯':
+        if (audioPlayer.state.status == 'playing') {
+          audioPlayer.pause();
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+          msgSungok.channel.send('노래를 일시정지해 드렸어요!');
+        } else {
+          audioPlayer.unpause();
+         iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+        }
+        break;
+
+      case '🔁':
+         option.loop = !option.loop;
+         if (!option.loop) {
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+          msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
+        } else {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+          msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
+        }
+      break;
+
+      case '🔇':
+        option.mute = !option.mute;
+        if (option.mute) {
+          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
+          volume.setVolume(0);
+          msgSungok.channel.send(`음소거되었어요`);
+        } else {
+          iComponent.setStyle('SECONDARY'); //on일 때 off으로 시각화
+        volume.setVolume(option.volume / volumeMagnification);
+          msgSungok.channel.send(
+            `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`
+          );
+        }
+        break;
+    }
+    await i.update({ content: iMessage.content, components: iMessage.components }); //버튼 업데이트
   });
 };

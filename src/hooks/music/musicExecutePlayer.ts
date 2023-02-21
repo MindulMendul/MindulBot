@@ -44,5 +44,7 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
     //다음 노래 있으면 틀어주는 코드
     musicEntity.playingSong = nextSong;
     nextSong.volume?.setVolume((option.volume / option.volumeMagnification) * Number(!option.mute));
+    musicCollection.set(guildId, musicEntity);
+    musicExecutePlayer(guildId, nextSong);
   });
 };
