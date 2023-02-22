@@ -18,6 +18,7 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
       `에러났어요 ㅠㅠ (${error.message})
       > 에러가 난 곡 이름: ${(error.resource as AudioResource<metadata>).metadata.title}`
     );
+    console.log(error.name);
     console.log(error);
     audioPlayer.stop(true);
   });

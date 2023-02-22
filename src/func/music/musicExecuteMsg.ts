@@ -83,17 +83,27 @@ export const musicExecuteMsg = async (guildId: string) => {
     switch (i.customId) {
       case '⏩':
         if (musicSkip.execute) musicSkip.execute(iMessage);
-        break;
+      break;
 
       case '⏹':
         if (musicEmpty.execute) musicEmpty.execute(iMessage);
-        break;
+      break;
 
       case '🔀':
         if (musicShuffle.execute) musicShuffle.execute(iMessage);
-        break;
+      break;
 
       case '🔉':
+        if (option.mute) {
+          msgSungok.channel.send('음소거 중이에요.');
+          break;
+        }
+        option.volume = Number(Math.max(0, option.volume - 0.1).toFixed(1));
+        volume.setVolume(option.volume / volumeMagnification);
+        msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
+      break;
+
+      case '🔊':
         if (option.mute) {
           msgSungok.channel.send('음소거 중이에요.');
           break;
@@ -101,7 +111,7 @@ export const musicExecuteMsg = async (guildId: string) => {
         option.volume = Number(Math.min(1, option.volume + 0.1).toFixed(1));
         volume.setVolume(option.volume / volumeMagnification);
         msgSungok.channel.send(`현재 볼륨:${Math.round(volume.volume * volumeMagnification * 100)}%`);
-        break;
+      break;
 
       case '⏯':
         if (audioPlayer.state.status == 'playing') {
@@ -112,7 +122,7 @@ export const musicExecuteMsg = async (guildId: string) => {
           audioPlayer.unpause();
          iComponent.setStyle('SUCCESS'); //off일 때 on으로 시각화
         }
-        break;
+      break;
 
       case '🔁':
          option.loop = !option.loop;

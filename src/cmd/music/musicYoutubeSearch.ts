@@ -1,8 +1,8 @@
-import { effectiveArr } from './../../hooks/system/effectiveArr';
+import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
 import { GuildMember, Message, TextChannel } from 'discord.js';
 import { musicExecute } from './musicExecute';
-import { musicSearch } from '../../hooks/music/musicSearch';
+import { musicSearch } from '../../func/music/musicSearch';
 import { musicCollection } from '../../../bot';
 
 export const musicYoutubeSearch: CMD = {

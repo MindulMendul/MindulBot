@@ -1,6 +1,6 @@
 import { GuildMember, Message, TextChannel } from 'discord.js';
 import { musicCollection } from '../../../bot';
-import { shuffle } from '../../hooks/system/shuffle';
+import { shuffle } from '../../func/system/shuffle';
 import { CMD } from '../../types/type';
 import { musicShow } from './musicShow';
 

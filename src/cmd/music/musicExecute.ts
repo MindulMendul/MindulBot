@@ -6,9 +6,9 @@ import { CMD } from '../../types/type';
 import { musicCollection } from '../../../bot';
 import { Guild, GuildMember, TextChannel } from 'discord.js';
 import { VolumeTransformer } from 'prism-media';
-import { musicExecuteStreamResource } from '../../hooks/music/musicExecuteStreamResource';
-import { musicConnection } from '../../hooks/music/musicExecuteConnection';
-import { musicSearch } from '../../hooks/music/musicSearch';
+import { musicExecuteStreamResource } from '../../func/music/musicExecuteStreamResource';
+import { musicConnection } from '../../func/music/musicExecuteConnection';
+import { musicSearch } from '../../func/music/musicSearch';
 import { metadata } from '../../types/musicType';
 
 export const musicExecute: CMD = {

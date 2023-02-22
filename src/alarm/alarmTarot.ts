@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { shuffle } from '../hooks/system/shuffle';
+import { shuffle } from '../func/system/shuffle';
 import { script } from '../assets/tarot/TarotList';
 
 export const alarmTarot = () => {

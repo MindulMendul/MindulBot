@@ -1,13 +1,13 @@
 import { config } from 'dotenv';
 import moment_timezone from 'moment-timezone';
 import { Client, ClientUser, Collection, Guild, Message, TextChannel } from 'discord.js';
-import { putCommands } from './src/hooks/system/putCommands';
+import { putCommands } from './src/func/system/putCommands';
 import { CMD } from './src/types/type';
 import { musicEntity } from './src/types/musicType';
 import { alarm } from './src/alarm';
 
 import { checkPermissions } from './src/permission';
-import { isUndefined } from './src/hooks/system/isUndefined';
+import { isUndefined } from './src/func/system/isUndefined';
 
 config();
 moment_timezone.tz.setDefault('Asia/Seoul'); //서울 시간

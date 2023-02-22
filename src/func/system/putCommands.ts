@@ -8,6 +8,7 @@ import { basicHelp } from '../../cmd/basic/basicHelp';
 import { basicMindul } from '../../cmd/basic/basicMindul';
 import { basicSuggestion } from '../../cmd/basic/basicSuggestion';
 import { basicTarot } from '../../cmd/basic/basicTarot';
+import { basicTTS } from '../../cmd/basic/basicTTS';
 
 import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicExecute } from '../../cmd/music/musicExecute';
@@ -38,6 +39,7 @@ export const putCommands = (map: Collection<string, string>, commands: Collectio
   putCmd(basicMindul);
   putCmd(basicSuggestion);
   putCmd(basicTarot);
+  putCmd(basicTTS);
 
   //music
   putCmd(musicEmpty);

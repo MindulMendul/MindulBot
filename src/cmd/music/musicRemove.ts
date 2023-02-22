@@ -1,6 +1,6 @@
-import { effectiveArr } from './../../hooks/system/effectiveArr';
+import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
-import { musicRemoveReact } from '../../hooks/music/musicRemoveReact';
+import { musicRemoveReact } from '../../func/music/musicRemoveReact';
 import { GuildMember, TextChannel } from 'discord.js';
 import { musicCollection } from '../../../bot';
 
