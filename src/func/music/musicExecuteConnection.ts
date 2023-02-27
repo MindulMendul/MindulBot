@@ -15,7 +15,7 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
 
   const connection = joinVoiceChannel({
     channelId: voiceChannel.id,
-    guildId: voiceChannel.guild.id,
+    guildId: voiceChannel.guildId,
     adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
   });
   const subscription = connection.subscribe(musicEntity.audioPlayer) as PlayerSubscription;
@@ -30,10 +30,13 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
 
   connection.on(VoiceConnectionStatus.Disconnected, () => {
     // 안에 살아있는 친구들 다 죽이기
-    musicEntity?.audioPlayer?.stop();
-    musicEntity?.connection?.destroy();
-    musicEntity?.reactCollector?.stop();
-    musicEntity?.subscription?.unsubscribe();
+    musicEntity.audioPlayer.removeAllListeners();
+    musicEntity.audioPlayer.stop();
+    musicEntity.connection?.removeAllListeners();
+    musicEntity.connection?.destroy();
+    musicEntity.reactCollector?.removeAllListeners();
+    musicEntity.reactCollector?.stop();
+    musicEntity.subscription?.unsubscribe();
     musicCollection.delete(guildId);
   });
 };

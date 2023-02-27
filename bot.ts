@@ -38,7 +38,7 @@ bot.on('ready', async () => {
   const user = bot.user as ClientUser;
   console.log(`${user.tag}님이 로그인했습니다.`);
   user.setActivity(env.activityString as string, { type: 'PLAYING' });
-
+  
   putCommands(CmdtoNameMap, commands);
   alarm();
 });

@@ -10,12 +10,16 @@ export const basicDice: CMD = {
   async execute(msg) {
     const button = new MessageActionRow() //첫 번째 줄 버튼
       .addComponents(new MessageButton().setCustomId('🛎️').setLabel('🛎️').setStyle('PRIMARY'));
+    const channel = msg.channel as TextChannel;
 
-    const filter = (i: { user: { id: string }; message: { id: string } }) => {
+    const msgDice = await channel.send({
+      content: `${msg.author.tag}님의 1번째 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`,
+      components: [button]
+    });
+
+    const filter = (i: any) => {
       return i.user.id === msg.author.id && i.message.id === msgDice.id;
     };
-
-    const channel = msg.channel as TextChannel;
     const collector = channel.createMessageComponentCollector({ filter });
     collector.on('collect', async (i) => {
       const content = i.message.content;
@@ -33,10 +37,7 @@ export const basicDice: CMD = {
         components: [button]
       });
     });
-    const msgDice = await msg.channel.send({
-      content: `${msg.author.tag}님의 1번째 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`,
-      components: [button]
-    });
-    return;
+
+    return msgDice;
   }
 };

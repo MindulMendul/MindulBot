@@ -8,7 +8,7 @@
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
   },
   "dependencies": {
-    "discord.js": "^13.12.0",
+    "discord.js": "^13.13.1",
     "dotenv": "^16.0.3",
     "libsodium-wrappers": "^0.7.10",
     "moment": "^2.29.4",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "@discordjs/voice": "^0.11.0",
     "prettier": "^2.7.1"
-  }
+  },
+  "overrides": {
+    "discord-api-types": "^0.30.0"
+  },
+  "type": "module"
 }

@@ -5,7 +5,7 @@ export interface CMD {
   cmd: string[];
   type: string;
   permission: Array<PermissionResolvable>;
-  execute?: (arg0: Message, arg1?: string[]) => Promise<void | string | Message>;
+  execute?: (arg0: Message, arg1?: string[]) => Promise<undefined | string | Message>;
 }
 
 export type Embed = {
