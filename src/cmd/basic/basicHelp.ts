@@ -19,7 +19,7 @@ export const basicHelp: CMD = {
         `명령어는 이런 것들이 있어요.\n 명령어 전에는 "한글 '${process.env.PREFIX}' 를 입력하세요! ` +
         `${process.env.PREFIX}와 명령어 사이에 띄어쓰기를 하면 인식하지 못하니 반드시 붙여서 사용하세요. ` +
         `노래명령어를 원하신다면 따로 "${process.env.PREFIX}노래도움말" 명령어로 제공하고 있으니 참고 바랍니다^^ ` +
-        '\n(해당 문서는 2022년 07월 06일에 업데이트되었습니다.) ',
+        '\n(해당 문서는 2023년 02월 28일에 업데이트되었습니다.) ',
       fields: [
         {
           name: '민둘',
@@ -37,10 +37,16 @@ export const basicHelp: CMD = {
           inline: false
         },
         {
+          name: 'TTS',
+          value: '민둘봇이 말을 해줘요! 디코 기본 기능에 TTS기능이 있는 건 알지만, 그래도 구현해보고 싶었다고요~',
+          inline: false
+        },
+        {
           name: '건의',
           value: '민둘봇에게 말하고 싶은 게 있으면 건의해주세요. 의견 참고해서 반영할 수 있도록 하겠습니다 ㅎㅎ',
           inline: false
-        }
+        },
+        
       ],
       timestamp: moment().date(),
       footer: {
