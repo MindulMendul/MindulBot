@@ -24,12 +24,12 @@ export const basicHelp: CMD = {
         {
           name: '민둘',
           value: '민둘이에 대해서 대답해요.\n그런데 화내면 앞에 말했던 것들을 수정해요. (숨은 명령어)',
-          inline: true
+          inline: false
         },
         {
           name: '주사위',
           value: '1부터 6까지 정수 중에 하나를 말해줘요!',
-          inline: true
+          inline: false
         },
         {
           name: '타로',
