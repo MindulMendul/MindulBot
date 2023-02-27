@@ -5,12 +5,18 @@ import { VoiceBasedChannel } from 'discord.js';
 import { createAudioPlayer, NoSubscriberBehavior } from '@discordjs/voice';
 import fs from 'fs';
 
+const env = process.env as NodeJS.ProcessEnv;
+
 export const basicTTS: CMD = {
   name: `티티에스`,
   cmd: ['tts', 'TTS', '티티에스', 'ㅅㅅㄴ', 'ㅌㅌㄴ', 'ㅌㅌㅇㅅ'],
   type: 'basic',
   permission: [],
   execute(msg) {
+    //기능 잠금
+    const OWNER_ID = env.OWNER_ID as string;
+    if(msg.author.id!=OWNER_ID) return;
+
     //보이스에는 들어와있어야 tts를 들을 수 있음
     const voiceChannel=(msg.member?.voice.channel) as VoiceBasedChannel;
     if(!voiceChannel) return msg.channel.send('실패: 보이스채널을 찾지 못 함');
