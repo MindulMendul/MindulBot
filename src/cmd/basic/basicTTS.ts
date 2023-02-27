@@ -12,11 +12,7 @@ export const basicTTS: CMD = {
   cmd: ['tts', 'TTS', '티티에스', 'ㅅㅅㄴ', 'ㅌㅌㄴ', 'ㅌㅌㅇㅅ'],
   type: 'basic',
   permission: [],
-  execute(msg) {
-    //기능 잠금
-    const OWNER_ID = env.OWNER_ID as string;
-    if(msg.author.id!=OWNER_ID) return;
-
+  execute(msg, args) {
     //보이스에는 들어와있어야 tts를 들을 수 있음
     const voiceChannel=(msg.member?.voice.channel) as VoiceBasedChannel;
     if(!voiceChannel) return msg.channel.send('실패: 보이스채널을 찾지 못 함');
@@ -43,7 +39,7 @@ export const basicTTS: CMD = {
     });
     
     //python에서부터 받아온 파일을 mp3로 저장 후 실행
-    const ttsPY=spawn('python3', ['./src/py/tts.py']);
+    const ttsPY=spawn('python3', ['./src/py/tts.py', args.join(' ')]);
     ttsPY.stdout.on('data', (data)=>{
       const base64=data.toString().trim().slice(2,-1);
       if(base64.length){
