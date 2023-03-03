@@ -5,8 +5,7 @@
         "lib": ["dom"],
         "moduleResolution": "node",
         "allowJs": true,
-        //"allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
     },
     "include": ["src/**/*.ts", "bot.ts"],
     "ts-node": {

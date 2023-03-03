@@ -38,7 +38,7 @@ bot.on('ready', async () => {
   const user = bot.user as ClientUser;
   console.log(`${user.tag}님이 로그인했습니다.`);
   user.setActivity(env.activityString as string, { type: 'PLAYING' });
-  
+
   putCommands(CmdtoNameMap, commands);
   alarm();
 });
@@ -108,6 +108,10 @@ async function noCmd(msg: Message<boolean>) {
   }
   return false;
 }
+
+bot.on('error',(error)=>{
+  console.log(error);
+});
 
 process.on('unhandledRejection', (err) => {
   //app crash걸렸을 때 실행되는 코드

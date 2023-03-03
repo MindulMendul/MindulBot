@@ -1,6 +1,6 @@
-import { AudioPlayerStatus, AudioResource } from '@discordjs/voice';
+import { AudioPlayerStatus, AudioResource, getVoiceConnection } from '@discordjs/voice';
 import { metadata, musicEntity } from '../../types/musicType';
-import { musicCollection } from '../../../bot';
+import { bot, musicCollection } from '../../../bot';
 import { musicExecuteMsg } from './musicExecuteMsg';
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
@@ -14,12 +14,12 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
 
   //플레이어 설정코드
   audioPlayer.on('error', (error) => {
+    bot.emit('error', new Error("Audio Player Error"));
+    console.log(error);
     musicEntity.textChannel.send(
       `에러났어요 ㅠㅠ (${error.message})
       > 에러가 난 곡 이름: ${(error.resource as AudioResource<metadata>).metadata.title}`
     );
-    console.log(error.name);
-    console.log(error);
     audioPlayer.stop(true);
   });
 
