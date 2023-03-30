@@ -14,7 +14,7 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
 
   //플레이어 설정코드
   audioPlayer.on('error', (error) => {
-    bot.emit('error', new Error("Audio Player Error"));
+    bot.emit('error', new Error('Audio Player Error'));
     console.log(error);
     musicEntity.textChannel.send(
       `에러났어요 ㅠㅠ (${error.message})

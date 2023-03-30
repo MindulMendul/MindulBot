@@ -1,6 +1,6 @@
 import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
-import { GuildMember, Message, TextChannel } from 'discord.js';
+import { GuildMember, Message, TextChannel, PermissionsBitField } from 'discord.js';
 import { musicExecute } from './musicExecute';
 import { musicSearch } from '../../func/music/musicSearch';
 import { musicCollection } from '../../../bot';
@@ -9,7 +9,13 @@ export const musicYoutubeSearch: CMD = {
   name: '검색',
   cmd: ['검색', '노래검색', 'ㄴㄹㄱㅅ', 'ㄴㄺㅅ'],
   type: 'music',
-  permission: ['CONNECT', 'SPEAK', 'MANAGE_EMOJIS_AND_STICKERS', 'READ_MESSAGE_HISTORY', 'MANAGE_MESSAGES'],
+  permission: [
+    PermissionsBitField.Flags.Connect,
+    PermissionsBitField.Flags.Speak,
+    PermissionsBitField.Flags.ManageEmojisAndStickers,
+    PermissionsBitField.Flags.ReadMessageHistory,
+    PermissionsBitField.Flags.ManageMessages
+  ],
   //찾은 유튜브 주소를 배열에 집어넣는 함수
   async execute(msg, args) {
     const guildId = msg.guildId as string;

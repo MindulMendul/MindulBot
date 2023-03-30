@@ -66,6 +66,6 @@ export const musicHelp: CMD = {
         icon_url: 'https://i.imgur.com/AD91Z6z.jpg'
       }
     };
-  return msg.channel.send({ embeds: [helpembed] });
+    return msg.channel.send({ embeds: [helpembed] });
   }
 };

@@ -25,7 +25,7 @@ export interface musicEntity {
   guild: Guild;
   voiceChannel: VoiceBasedChannel;
   textChannel: TextChannel;
-  reactCollector?: InteractionCollector<MessageComponentInteraction<CacheType>>;
+  reactCollector?: InteractionCollector<any>;
   connection?: VoiceConnection;
   subscription?: PlayerSubscription;
   audioPlayer: AudioPlayer;

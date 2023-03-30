@@ -1,4 +1,4 @@
-import { MessageActionRow, MessageButton } from 'discord.js';
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionsBitField } from 'discord.js';
 import { script } from '../../assets/tarot/TarotList';
 import { CMD } from '../../types/type';
 
@@ -6,7 +6,7 @@ export const basicTarot: CMD = {
   name: `타로`,
   cmd: ['타로', 'ㅌㄹ', '운세', '오늘의운세'],
   type: 'basic',
-  permission: ['ADD_REACTIONS', 'EMBED_LINKS'],
+  permission: [PermissionsBitField.Flags.AddReactions, PermissionsBitField.Flags.EmbedLinks],
   //타로하트 생성과정
   async execute(msg) {
     const tarotEditedEmbed = {
@@ -19,24 +19,24 @@ export const basicTarot: CMD = {
       image: { url: 'https://i.imgur.com/SP7ND76.png' }
     };
 
-    const button1 = new MessageActionRow()
-      .addComponents(new MessageButton().setCustomId('❤️').setLabel('❤️').setStyle('SECONDARY'))
-      .addComponents(new MessageButton().setCustomId('🧡').setLabel('🧡').setStyle('SECONDARY'))
-      .addComponents(new MessageButton().setCustomId('💛').setLabel('💛').setStyle('SECONDARY'));
+    const button1 = new ActionRowBuilder()
+      .addComponents(new ButtonBuilder().setCustomId('❤️').setLabel('❤️').setStyle(ButtonStyle.Secondary))
+      .addComponents(new ButtonBuilder().setCustomId('🧡').setLabel('🧡').setStyle(ButtonStyle.Secondary))
+      .addComponents(new ButtonBuilder().setCustomId('💛').setLabel('💛').setStyle(ButtonStyle.Secondary));
 
-    const button2 = new MessageActionRow()
-      .addComponents(new MessageButton().setCustomId('💚').setLabel('💚').setStyle('SECONDARY'))
-      .addComponents(new MessageButton().setCustomId('💙').setLabel('💙').setStyle('SECONDARY'))
-      .addComponents(new MessageButton().setCustomId('💜').setLabel('💜').setStyle('SECONDARY'));
+    const button2 = new ActionRowBuilder()
+      .addComponents(new ButtonBuilder().setCustomId('💚').setLabel('💚').setStyle(ButtonStyle.Secondary))
+      .addComponents(new ButtonBuilder().setCustomId('💙').setLabel('💙').setStyle(ButtonStyle.Secondary))
+      .addComponents(new ButtonBuilder().setCustomId('💜').setLabel('💜').setStyle(ButtonStyle.Secondary));
 
-    const msgTarot = await msg.channel.send({ embeds: [tarotEditedEmbed], components: [button1, button2] });
+    const msgTarot = await msg.channel.send({ embeds: [tarotEditedEmbed], components: [button1 as any, button2 as any] });
 
     //타로하트 선택 후 결과 창
     const filter = (i: any) => {
       return i.user.id === msg.author.id;
     };
     const collector = msgTarot.createMessageComponentCollector({ filter });
-    collector.on('collect', async (i) => {
+    collector.on('collect', async (i: any) => {
       let strDes = '',
         strField = new Array(3);
 

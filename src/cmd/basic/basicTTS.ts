@@ -27,7 +27,7 @@ export const basicTTS: CMD = {
     const connection = joinVoiceChannel({
       channelId: voiceChannel.id,
       guildId: voiceChannel.guild.id,
-      adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
+      adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
     });
     const player = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Pause } });
     const subscribe = connection.subscribe(player) as PlayerSubscription;

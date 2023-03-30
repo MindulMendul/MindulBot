@@ -1,10 +1,9 @@
-import { DiscordGatewayAdapterCreator, PlayerSubscription } from '@discordjs/voice';
 import { NoSubscriberBehavior } from '@discordjs/voice';
 import { createAudioPlayer } from '@discordjs/voice';
 
 import { CMD } from '../../types/type';
 import { musicCollection } from '../../../bot';
-import { Guild, GuildMember, TextChannel } from 'discord.js';
+import { Guild, GuildMember, TextChannel, PermissionsBitField } from 'discord.js';
 import { VolumeTransformer } from 'prism-media';
 import { musicExecuteStreamResource } from '../../func/music/musicExecuteStreamResource';
 import { musicConnection } from '../../func/music/musicExecuteConnection';
@@ -15,7 +14,11 @@ export const musicExecute: CMD = {
   name: '노래',
   cmd: ['노래', '시작', '선곡'],
   type: 'music',
-  permission: ['CONNECT', 'SPEAK', 'READ_MESSAGE_HISTORY'], //링크 첨부는 뭐지?
+  permission: [
+    PermissionsBitField.Flags.Connect,
+    PermissionsBitField.Flags.Speak,
+    PermissionsBitField.Flags.ReadMessageHistory
+  ],
   async execute(msg, args) {
     //써야할 변수 모음
     const guildId = msg.guildId as string;

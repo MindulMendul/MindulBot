@@ -16,7 +16,7 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
   const connection = joinVoiceChannel({
     channelId: voiceChannel.id,
     guildId: voiceChannel.guildId,
-    adapterCreator: voiceChannel.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
+    adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
   });
   const subscription = connection.subscribe(musicEntity.audioPlayer) as PlayerSubscription;
   musicEntity.connection = connection;
@@ -28,8 +28,8 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
     musicExecutePlayer(guildId, resource); //아래에 있는 play함수 호출
   });
 
-  connection.on('error',(error)=>{
-    bot.emit('error',new Error("Voice Connection Error"));
+  connection.on('error', (error) => {
+    bot.emit('error', new Error('Voice Connection Error'));
     console.log(error);
     connection.destroy();
   });
@@ -39,12 +39,12 @@ export const musicConnection = (guildId: string, resource: AudioResource<metadat
   connection.on('stateChange', (oldState, newState) => {
     const oldNetworking = Reflect.get(oldState, 'networking');
     const newNetworking = Reflect.get(newState, 'networking');
-  
+
     const networkStateChangeHandler = (oldNetworkState: any, newNetworkState: any) => {
       const newUdp = Reflect.get(newNetworkState, 'udp');
       clearInterval(newUdp?.keepAliveInterval);
-    }
-  
+    };
+
     oldNetworking?.off('stateChange', networkStateChangeHandler);
     newNetworking?.on('stateChange', networkStateChangeHandler);
   });
