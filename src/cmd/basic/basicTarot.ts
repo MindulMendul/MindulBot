@@ -35,7 +35,7 @@ export const basicTarot: CMD = {
     const filter = (i: any) => {
       return i.user.id === msg.author.id;
     };
-    const collector = msgTarot.createMessageComponentCollector({ filter });
+    const collector = msgTarot.createMessageComponentCollector({ filter, time: 60000 });
     collector.on('collect', async (i: any) => {
       let strDes = '',
         strField = new Array(3);
