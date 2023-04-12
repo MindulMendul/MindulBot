@@ -53,12 +53,15 @@ export const musicExecuteMsg = async (guildId: string) => {
   const msgSungok = await textChannel.send(sendedContent);
 
   //버튼 인터렉션 콜렉터 부분
+  musicEntity.reactCollector?.removeAllListeners();
+  musicEntity.reactCollector?.stop();
   const filter = (i: MessageComponentInteraction) => {
     return i.message.id === msgSungok.id;
   };
   const collector = msgSungok.channel.createMessageComponentCollector({ filter });
+  musicEntity.reactCollector=collector;
+  
   collector.on('collect', async (i: any) => {
-    
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
     const iGuildId = i.guildId as string;
