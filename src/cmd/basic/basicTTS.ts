@@ -21,7 +21,10 @@ export const basicTTS: CMD = {
   execute(msg, args) {
     //보이스에는 들어와있어야 tts를 들을 수 있음
     const voiceChannel = msg.member?.voice.channel as VoiceBasedChannel;
-    if (!voiceChannel) return msg.channel.send('실패: 보이스채널을 찾지 못 함');
+    if (!voiceChannel) return msg.channel.send('보이스채널에서 해주세요!');
+
+    //검색어 체크부분
+    if (!args?.length) return msg.channel.send('어떤 문장을 읽어야할지 모르겠어요!');
 
     //보이스 들어가기 위한 코드
     const connection = joinVoiceChannel({

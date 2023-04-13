@@ -23,12 +23,11 @@ export const musicYoutubeSearch: CMD = {
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
 
-    //보이스채널 체크부분
-    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-
     //검색어 체크부분
     if (!args?.length) return textChannel.send('검색어를 입력해주세요!');
 
+    //보이스채널 체크부분
+    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
     if (musicEntity && msgMember.voice.channelId != musicEntity.voiceChannel.id)
       textChannel.send('같은 보이스채널에서 해주세요!');
 

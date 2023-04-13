@@ -1,6 +1,6 @@
 import { Message } from 'discord.js';
 import { musicCollection } from '../../../bot';
-import { musicShow } from '../../cmd/music/musicShow';
+import { musicShow } from '../../cmd/music/musicQueue';
 import { musicEntity } from '../../types/musicType';
 
 export const musicRemoveReact = async (guildId: string, memberId: string, args: Array<number>) => {

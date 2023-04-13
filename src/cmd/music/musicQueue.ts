@@ -13,9 +13,8 @@ export const musicShow: CMD = {
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
 
-    if (!musicEntity) return textChannel.send('노래 명령어를 먼저 입력해주세요!');
+    if (!musicEntity?.connection) return textChannel.send('재생하고 있는 노래가 없어요!');
     if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-    if (!musicEntity.connection) return textChannel.send('재생목록에 노래가 없어요!');
     if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
       return textChannel.send('같은 보이스채널에서 해주세요!');
 

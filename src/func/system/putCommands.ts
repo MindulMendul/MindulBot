@@ -16,7 +16,7 @@ import { musicEmpty } from '../../cmd/music/musicEmpty';
 import { musicExecute } from '../../cmd/music/musicExecute';
 import { musicHelp } from '../../cmd/music/musicHelp';
 import { musicRemove } from '../../cmd/music/musicRemove';
-import { musicShow } from '../../cmd/music/musicShow';
+import { musicShow } from '../../cmd/music/musicQueue';
 import { musicShuffle } from '../../cmd/music/musicShuffle';
 import { musicSkip } from '../../cmd/music/musicSkip';
 import { musicYoutubeSearch } from '../../cmd/music/musicYoutubeSearch';
