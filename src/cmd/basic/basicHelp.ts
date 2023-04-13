@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 import { CMD } from '../../types/type';
 
 export const basicHelp: CMD = {
@@ -47,11 +45,6 @@ export const basicHelp: CMD = {
           inline: false
         }
       ],
-      timestamp: moment().date(),
-      footer: {
-        text: 'instagram @mindul_mendul ',
-        iconURL: 'https://i.imgur.com/AD91Z6z.jpg'
-      }
     };
     return msg.channel.send({ embeds: [helpembed] });
   }

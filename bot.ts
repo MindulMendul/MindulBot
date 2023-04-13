@@ -1,5 +1,4 @@
 import { config } from 'dotenv';
-import moment_timezone from 'moment-timezone';
 import {
   Client,
   ClientUser,
@@ -21,7 +20,6 @@ import { checkPermissions } from './src/permission';
 import { isUndefined } from './src/func/system/isUndefined';
 
 config();
-moment_timezone.tz.setDefault('Asia/Seoul'); //서울 시간
 
 const env = process.env as NodeJS.ProcessEnv;
 

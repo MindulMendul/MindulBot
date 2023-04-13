@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { CMD } from '../../types/type';
 
 export const musicHelp: CMD = {
@@ -60,11 +59,6 @@ export const musicHelp: CMD = {
           inline: false
         }
       ],
-      timestamp: moment(),
-      footer: {
-        text: 'instagram @mindul_mendul ',
-        icon_url: 'https://i.imgur.com/AD91Z6z.jpg'
-      }
     };
     return msg.channel.send({ embeds: [helpembed] });
   }

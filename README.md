@@ -26,13 +26,11 @@ https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 3. cheerio
 4. dotenv
 5. libsodium-wrappers
-6. moment
-7. moment-timezone
-8. node-gyp
-9. node-pre-gyp
-10. nodemon
-11. play-dl
-12. prism-media
+6. node-gyp
+7. node-pre-gyp
+8. nodemon
+9. play-dl
+10. prism-media
 
 ## 명령어
 명령어는 이런 것들이 있어요.
