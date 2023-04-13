@@ -22,11 +22,8 @@ export const musicRemove: CMD = {
       return textChannel.send('같은 보이스채널에서 해주세요!');
 
     const { songQueue } = musicEntity;
-
     if (!songQueue.length) return textChannel.send('대기열에 노래가 없어요, 대기열을 확인해주세요!');
-
-    if (!args) return textChannel.send('어떤 곡을 지울지 모르겠어요!');
-    const argsArr = effectiveArr(args?.join(' '), 1, songQueue.length); //배열이 유효한지 조사
+    const argsArr = effectiveArr(args?.join(' '), 1, songQueue.length);
     if (argsArr.length == 0) return textChannel.send('어떤 곡을 지울지 모르겠어요!');
 
     const tempStr =
@@ -36,7 +33,7 @@ export const musicRemove: CMD = {
           return `> **${e}. ${musicEntity.songQueue[e - 1].metadata.title}**`;
         })
         .join('\n') +
-      '7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
+      '\n\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
     await textChannel.send(tempStr);
 
     musicRemoveReact(guildId, msg.author.id, argsArr);
