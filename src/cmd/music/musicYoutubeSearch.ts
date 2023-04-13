@@ -1,6 +1,6 @@
 import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
-import { GuildMember, Message, TextChannel, PermissionsBitField } from 'discord.js';
+import { GuildMember, Message, TextChannel, PermissionsBitField, messageLink } from 'discord.js';
 import { musicExecute } from './musicExecute';
 import { musicSearch } from '../../func/music/musicSearch';
 import { musicCollection } from '../../../bot';
@@ -56,20 +56,18 @@ export const musicYoutubeSearch: CMD = {
       return !message.author.bot && message.author.id === msg.author.id;
     };
 
-    const collector = textChannel.createMessageCollector({ filter, max: 1 });
-    collector.on('collect', async (message) => {
-      const msgArr = effectiveArr(message.content, 1, items.length); //배열이 유효한지 조사
+    const responseMsg=(await textChannel.awaitMessages({ filter, max: 1, time:60000, errors:["time"] })).first();
+    const msgArr = effectiveArr(responseMsg.content, 1, items.length); //배열이 유효한지 조사
 
-      //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
-      if (!msgArr.length) message.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
-      else {
-        for (const e of msgArr) {
-          const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
-          if (musicExecute.execute) await musicExecute.execute(message, tmpStr);
-        }
+    //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
+    if (!msgArr) responseMsg.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
+    else {
+      for (const e of msgArr) {
+        const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
+        if (musicExecute.execute) await musicExecute.execute(responseMsg, tmpStr);
       }
-      message.delete();
-      embedMsg.delete();
-    });
+    }
+    responseMsg.delete();
+    embedMsg.delete();
   }
 };

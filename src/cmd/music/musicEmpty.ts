@@ -20,9 +20,8 @@ export const musicEmpty: CMD = {
 
     musicEntity.audioPlayer.unpause();
 
-    musicEntity.songQueue = [];
     musicEntity.option.skip = true;
-    musicCollection.set(guildId, musicEntity);
     musicEntity.subscription?.player.stop();
+    musicEntity.songQueue = [];
   }
 };
