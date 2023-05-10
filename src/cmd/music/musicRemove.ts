@@ -33,7 +33,7 @@ export const musicRemove: CMD = {
           return `> **${e}. ${musicEntity.songQueue[e - 1].metadata.title}**`;
         })
         .join('\n') +
-      '\n\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
+      '\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
     await textChannel.send(tempStr);
 
     musicRemoveReact(guildId, msg.author.id, argsArr);
