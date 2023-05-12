@@ -5,7 +5,7 @@ import { metadata } from '../../types/musicType';
 export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
   const playStream = await stream(searchedInfo.url);
 
-  const resource = createAudioResource(playStream.stream, {
+  let resource = createAudioResource(playStream.stream, {
     metadata: {
       title: searchedInfo.title,
       url: searchedInfo.url
@@ -15,7 +15,18 @@ export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
     inputType: playStream.type
   });
 
-  if (!resource.volume) throw '노래에 볼륨이가 없음';
+  while(resource.ended){
+    console.log(`${searchedInfo.title}을 넣으려고 했지만 이미 끝난 노래네요. 다시 시도해볼게요.`);
+    resource = createAudioResource(playStream.stream, {
+      metadata: {
+        title: searchedInfo.title,
+        url: searchedInfo.url
+      },
+      inlineVolume: true,
+      silencePaddingFrames: 5,
+      inputType: playStream.type
+    });
+  }
 
   return resource;
 };

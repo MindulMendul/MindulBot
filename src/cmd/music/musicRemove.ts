@@ -27,15 +27,14 @@ export const musicRemove: CMD = {
     if (argsArr.length == 0) return textChannel.send('어떤 곡을 지울지 모르겠어요!');
 
     const tempStr =
-      '해당 노래가 맞아요?\n' +
+      '해당 노래가 맞아요?\n\n' +
       argsArr
         .map((e) => {
           return `> **${e}. ${musicEntity.songQueue[e - 1].metadata.title}**`;
         })
         .join('\n') +
-      '\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
+      '\n\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
     await textChannel.send(tempStr);
-
     musicRemoveReact(guildId, msg.author.id, argsArr);
   }
 };
