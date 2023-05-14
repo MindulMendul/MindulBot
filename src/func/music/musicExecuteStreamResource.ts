@@ -14,9 +14,10 @@ export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
     silencePaddingFrames: 5,
     inputType: playStream.type
   });
-
+  console.log(resource.ended);
   while(resource.ended){
-    console.log(`${searchedInfo.title}을 넣으려고 했지만 이미 끝난 노래네요. 다시 시도해볼게요.`);
+    console.log(`${searchedInfo.title}을 넣는 도중 에러가 생겼습니다.`);
+    console.log(resource);
     resource = createAudioResource(playStream.stream, {
       metadata: {
         title: searchedInfo.title,

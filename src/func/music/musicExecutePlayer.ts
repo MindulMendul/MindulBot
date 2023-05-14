@@ -8,22 +8,22 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
   //기본 함수
   const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
-  try{
+
+  if(!playingSong.ended){
     audioPlayer.play(playingSong);
-  } catch(e){
-    console.log(e);
+  } else {
     const nextSong = musicEntity.songQueue.shift();
     audioPlayer.removeAllListeners();
-    if (!nextSong) {
+
+    if (nextSong) {
+      musicEntity.playingSong = nextSong;
+      nextSong.volume?.setVolume((option.volume / option.volumeMagnification) * Number(!option.mute));
+      musicCollection.set(guildId, musicEntity);
+      musicExecutePlayer(guildId, nextSong);
+    } else {
       textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       connection?.disconnect(); //커넥션 삭제
-      return;
     }
-    
-    musicEntity.playingSong = nextSong;
-    nextSong.volume?.setVolume((option.volume / option.volumeMagnification) * Number(!option.mute));
-    musicCollection.set(guildId, musicEntity);
-    musicExecutePlayer(guildId, nextSong);
   }
   
   musicExecuteMsg(guildId);
