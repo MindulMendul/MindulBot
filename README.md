@@ -23,14 +23,9 @@ https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 사용하는 모듈
 1. discord.js
 2. axios
-3. cheerio
 4. dotenv
-5. libsodium-wrappers
-6. node-gyp
-7. node-pre-gyp
-8. nodemon
-9. play-dl
-10. prism-media
+6. nodemon
+7. play-dl
 
 ## 명령어
 명령어는 이런 것들이 있어요.
