@@ -9,9 +9,9 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
   if(!playingSong.ended){
-    console.log(playingSong);
     audioPlayer.play(playingSong);
   } else {
+    console.log(playingSong);
     const nextSong = musicEntity.songQueue.shift();
     audioPlayer.removeAllListeners();
 
