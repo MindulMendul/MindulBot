@@ -1,6 +1,5 @@
 import {
   AudioResource,
-  DiscordGatewayAdapterCreator,
   joinVoiceChannel,
   PlayerSubscription,
   VoiceConnectionStatus

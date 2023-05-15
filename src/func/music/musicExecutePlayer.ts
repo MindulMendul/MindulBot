@@ -5,11 +5,11 @@ import { musicExecuteMsg } from './musicExecuteMsg';
 import { musicExecuteStreamResource } from './musicExecuteStreamResource';
 
 export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<metadata>) => {
-  //기본 함수
   const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
   if(!playingSong.ended){
+    console.log(playingSong);
     audioPlayer.play(playingSong);
   } else {
     const nextSong = musicEntity.songQueue.shift();
@@ -21,8 +21,8 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
       musicCollection.set(guildId, musicEntity);
       musicExecutePlayer(guildId, nextSong);
     } else {
-      textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
-      connection?.disconnect(); //커넥션 삭제
+      textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다!');
+      connection?.disconnect();
     }
   }
   

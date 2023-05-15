@@ -64,7 +64,7 @@ export const musicExecute: CMD = {
       const audioPlayer = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Pause } });
       const option = {
         volume: 0.5, // 0 ~ 1 사이의 값
-        volumeMagnification: 6, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
+        volumeMagnification: 5, // 1/n 배 되는 거라 커질 수록 소리가 작아짐
         mute: false,
         loop: false,
         skip: false
