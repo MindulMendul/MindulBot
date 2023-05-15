@@ -56,7 +56,7 @@ export const musicYoutubeSearch: CMD = {
       return !message.author.bot && message.author.id === msg.author.id;
     };
 
-    const responseMsg=(await textChannel.awaitMessages({ filter, max: 1, time:60000, errors:["time"] })).first();
+    const responseMsg = (await textChannel.awaitMessages({ filter, max: 1, time: 60000, errors: ['time'] })).first();
     const msgArr = effectiveArr(responseMsg.content, 1, items.length); //배열이 유효한지 조사
 
     //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)

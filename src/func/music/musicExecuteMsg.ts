@@ -59,8 +59,8 @@ export const musicExecuteMsg = async (guildId: string) => {
     return i.message.id === msgSungok.id;
   };
   const collector = msgSungok.channel.createMessageComponentCollector({ filter });
-  musicEntity.reactCollector=collector;
-  
+  musicEntity.reactCollector = collector;
+
   collector.on('collect', async (i: any) => {
     const iMessage = i.message as Message;
     const iMember = i.member as GuildMember;
@@ -124,21 +124,21 @@ export const musicExecuteMsg = async (guildId: string) => {
       case '⏯':
         if (audioPlayer.state.status == 'playing') {
           audioPlayer.pause();
-          iComponent.data.style=ButtonStyle.Secondary; //on일 때 off으로 시각화
+          iComponent.data.style = ButtonStyle.Secondary; //on일 때 off으로 시각화
           msgSungok.channel.send('노래를 일시정지해 드렸어요!');
         } else {
           audioPlayer.unpause();
-          iComponent.data.style=ButtonStyle.Success; //off일 때 on으로 시각화
+          iComponent.data.style = ButtonStyle.Success; //off일 때 on으로 시각화
         }
         break;
 
       case '🔁':
         option.loop = !option.loop;
         if (!option.loop) {
-          iComponent.data.style=ButtonStyle.Secondary; //on일 때 off으로 시각화
+          iComponent.data.style = ButtonStyle.Secondary; //on일 때 off으로 시각화
           msgSungok.channel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
         } else {
-          iComponent.data.style=ButtonStyle.Success; //off일 때 on으로 시각화
+          iComponent.data.style = ButtonStyle.Success; //off일 때 on으로 시각화
           msgSungok.channel.send('큐 반복 기능이 활성화되었습니다~');
         }
         break;
@@ -146,11 +146,11 @@ export const musicExecuteMsg = async (guildId: string) => {
       case '🔇':
         option.mute = !option.mute;
         if (option.mute) {
-          iComponent.data.style=ButtonStyle.Success; //off일 때 on으로 시각화
+          iComponent.data.style = ButtonStyle.Success; //off일 때 on으로 시각화
           volume.setVolume(0);
           msgSungok.channel.send(`음소거되었어요`);
         } else {
-          iComponent.data.style=ButtonStyle.Secondary; //on일 때 off으로 시각화
+          iComponent.data.style = ButtonStyle.Secondary; //on일 때 off으로 시각화
           volume.setVolume(option.volume / volumeMagnification);
           msgSungok.channel.send(
             `원래 소리로 돌아갔어요, 현재 볼륨:${Math.round(volume.volume * 100 * volumeMagnification)}%`

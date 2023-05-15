@@ -1,5 +1,5 @@
 export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
-  if(!arr) return [];
+  if (!arr) return [];
   const arrTemp = arr
     .split(' ')
     .filter((e) => {

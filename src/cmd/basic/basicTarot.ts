@@ -29,7 +29,10 @@ export const basicTarot: CMD = {
       .addComponents(new ButtonBuilder().setCustomId('💙').setLabel('💙').setStyle(ButtonStyle.Secondary))
       .addComponents(new ButtonBuilder().setCustomId('💜').setLabel('💜').setStyle(ButtonStyle.Secondary));
 
-    const msgTarot = await msg.channel.send({ embeds: [tarotEditedEmbed], components: [button1 as any, button2 as any] });
+    const msgTarot = await msg.channel.send({
+      embeds: [tarotEditedEmbed],
+      components: [button1 as any, button2 as any]
+    });
 
     //타로하트 선택 후 결과 창
     const filter = (i: any) => {

@@ -1,9 +1,4 @@
-import {
-  AudioResource,
-  joinVoiceChannel,
-  PlayerSubscription,
-  VoiceConnectionStatus
-} from '@discordjs/voice';
+import { AudioResource, joinVoiceChannel, PlayerSubscription, VoiceConnectionStatus } from '@discordjs/voice';
 import { bot, musicCollection } from '../../../bot';
 import { metadata, musicEntity } from '../../types/musicType';
 import { musicExecutePlayer } from './musicExecutePlayer';

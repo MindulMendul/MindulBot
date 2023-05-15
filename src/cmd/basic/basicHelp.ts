@@ -44,7 +44,7 @@ export const basicHelp: CMD = {
           value: '민둘봇에게 말하고 싶은 게 있으면 건의해주세요. 의견 참고해서 반영할 수 있도록 하겠습니다 ㅎㅎ',
           inline: false
         }
-      ],
+      ]
     };
     return msg.channel.send({ embeds: [helpembed] });
   }

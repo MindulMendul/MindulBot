@@ -8,7 +8,7 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
   const musicEntity = musicCollection.get(guildId) as musicEntity;
   const { audioPlayer, option, textChannel, connection } = musicEntity;
 
-  if(!playingSong.ended){
+  if (!playingSong.ended) {
     audioPlayer.play(playingSong);
   } else {
     console.log(playingSong);
@@ -25,7 +25,7 @@ export const musicExecutePlayer = (guildId: string, playingSong: AudioResource<m
       connection?.disconnect();
     }
   }
-  
+
   musicExecuteMsg(guildId);
 
   //플레이어 설정코드
