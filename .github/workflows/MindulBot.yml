@@ -44,8 +44,5 @@ jobs:
 
           script: |
             cd MindulBot
-            tmux kill-session -t 0
-            tmux new 
             npm install
-            npm run lint
             npm run start
