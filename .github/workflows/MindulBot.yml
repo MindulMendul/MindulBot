@@ -43,10 +43,4 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
-            git init
-            git remote add origin https://github.com/MindulMendul/MindulBot
-            git pull origin dev
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh                
-            npm install
-            npm run start
+            ls -al
