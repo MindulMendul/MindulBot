@@ -20,7 +20,7 @@ jobs:
     # 응용해서 runs-on에 여러 OS에서 돌릴 수도 있다.
     strategy:
       matrix:
-        node-version: [18.x] # 템플릿 기본값: [10.x, 12.x, 14.x]
+        node-version: [16.x] # 템플릿 기본값: [10.x, 12.x, 14.x]
 
     # uses 개념은 다른 사람이 작성한 내용을 실행하는 개념이다.
     # actions/checkout: GitHub의 마지막 커밋으로 Checkout 한다.
@@ -43,6 +43,8 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
+            git init
+            git remote add origin https://github.com/MindulMendul/MindulBot
             git pull origin dev
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh                
