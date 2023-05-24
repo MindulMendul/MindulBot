@@ -43,7 +43,7 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
-            git pull
+            git pull origin dev
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh                
             npm install
