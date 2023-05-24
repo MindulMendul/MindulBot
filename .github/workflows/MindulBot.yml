@@ -1,11 +1,11 @@
 #for CI/CD
 
-name: Node.js CI
+name: MindulBot CI/CD
 
 # 구독할 이벤트
 on:
   push:
-    branches: [main]
+    branches: [main, forDev]
   pull_request:
     branches: [main]
 
