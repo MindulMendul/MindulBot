@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [main]
 
-# jobs 단위로 개별 서버(정확히는 Docker 컨테이너 단위라고 한다.)에서 작업이 수행된다.
+# jobs 단위로 개별 서버에서 작업이 수행된다.
 # 각 작업은 병렬로 실행 된다고 하는데, needs: build와 같이 표시해서 기다릴 수도 있다.
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
     
-      # EC2 인스턴스 접속 및 애플리케이션 실행
+      # OCI 인스턴스 접속 및 애플리케이션 실행
       - name: Application Run
         uses: appleboy/ssh-action@master
         with:
@@ -43,6 +43,10 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
+            sudo apt update
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+            source ~/.bashrc
+            nvm install 18.14.1
             cd MindulBot
             npm install
             npm run start
