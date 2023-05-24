@@ -44,9 +44,5 @@ jobs:
 
           script: |
             sudo apt update
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-            source ~/.bashrc
-            nvm install 18.14.1
-            cd MindulBot
             npm install
             npm run start
