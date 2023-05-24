@@ -43,10 +43,6 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
-            sudo docker kill MindulBot
-            sudo docker rm -f MindulBot
-            sudo docker rmi ${{ secrets.DOCKERHUB_USERNAME }}/MindulBot
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/MindulBot
             cd MindulBot
             tmux kill-session -t 0
             tmux new 
