@@ -43,4 +43,6 @@ jobs:
           port: ${{ secrets.OCI_INSTANCE_PORT }} 
 
           script: |
+            cd MindulBot
             ls -al
+            npm run start
