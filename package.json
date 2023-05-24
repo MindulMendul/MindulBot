@@ -5,7 +5,8 @@
     "start": "nodemon --exec ts-node bot.ts",
     "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
     "prepublish": "npm run pretty",
-    "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
+    "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
@@ -22,10 +23,12 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.5",
-    "eslint": "^8.40.0",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^2.8.7",
     "typescript": "^5.0.4"
