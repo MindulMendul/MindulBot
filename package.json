@@ -4,7 +4,6 @@
   "scripts": {
     "start": "nodemon --exec ts-node bot.ts",
     "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
-    "prepublish": "npm run pretty",
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts",
     "lint": "./node_modules/.bin/eslint ."
   },

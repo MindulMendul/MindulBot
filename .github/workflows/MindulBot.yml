@@ -5,7 +5,7 @@ name: MindulBot CI/CD
 # 구독할 이벤트
 on:
   push:
-    branches: [main, forDev]
+    branches: [main, dev]
   pull_request:
     branches: [main]
 
@@ -32,10 +32,24 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      # npm ci는 npm install과 같은 기능을 수행한다.
-      - run: npm ci
-      # --if-present 옵션은 npm 스크립트가 존재할 때만 실행시키라는 의미이다.
-      # 만약 build 스크립트가 없는 경우, 오류 없이 지나간다.
-      - run: npm run build --if-present
-      - run: npm run lint
-      - run: npm run start
+    
+      # EC2 인스턴스 접속 및 애플리케이션 실행
+      - name: Application Run
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.OCI_INSTANCE_HOST }}
+          username: ${{ secrets.OCI_INSTANCE_USERNAME }}
+          key: ${{ secrets.OCI_INSTANCE_KEY }}
+          port: ${{ secrets.OCI_INSTANCE_PORT }} 
+
+          script: |
+            sudo docker kill MindulBot
+            sudo docker rm -f MindulBot
+            sudo docker rmi ${{ secrets.DOCKERHUB_USERNAME }}/MindulBot
+            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/MindulBot
+            cd MindulBot
+            tmux kill-session -t 0
+            tmux new 
+            npm install
+            npm run lint
+            npm run start
