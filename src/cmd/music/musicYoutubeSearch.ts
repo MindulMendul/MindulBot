@@ -1,9 +1,8 @@
-import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
-import { GuildMember, Message, TextChannel, PermissionsBitField, messageLink } from 'discord.js';
-import { musicExecute } from './musicExecute';
+import { GuildMember, Message, TextChannel, PermissionsBitField } from 'discord.js';
 import { musicSearch } from '../../func/music/musicSearch';
-import { musicCollection } from '../../../bot';
+import { musicYoutubeSearchCollector } from '../../collector/musicYoutubeSearchCollector';
+import { musicCollection } from '../../collection/musicCollection';
 
 export const musicYoutubeSearch: CMD = {
   name: '검색',
@@ -22,52 +21,53 @@ export const musicYoutubeSearch: CMD = {
     const msgMember = msg.member as GuildMember;
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
+    const items = await musicSearch(args?.join(' '), 8);
 
     //검색어 체크부분
-    if (!args?.length) return textChannel.send('검색어를 입력해주세요!');
+    if (!args?.length) {
+      await textChannel.send('검색어를 입력해주세요!');
+      return;
+    }
 
     //보이스채널 체크부분
-    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-    if (musicEntity && msgMember.voice.channelId != musicEntity.voiceChannel.id)
-      textChannel.send('같은 보이스채널에서 해주세요!');
-
-    const items = await musicSearch(args?.join(' '), 8);
-    if (!items) return textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!'); // 검색이 안 된 경우
-
-    //임베드 만들기
-    const fields = items.map((e, i) => {
-      return {
-        name: '\u200b',
-        value: `[${i + 1}. ${e.title}](${e.url})`, //markdown 사용
-        url: e.url
-      };
-    });
-
-    const embedSearchYoutube = {
-      title: '노래 검색 목록',
-      color: 0xf7cac9,
-      description: `**${args.join(' ')}**에 대한 검색 결과에요~`,
-      fields: fields
-    };
-
-    const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
-
-    const filter = (message: Message) => {
-      return !message.author.bot && message.author.id === msg.author.id;
-    };
-
-    const responseMsg = (await textChannel.awaitMessages({ filter, max: 1, time: 60000, errors: ['time'] })).first();
-    const msgArr = effectiveArr(responseMsg.content, 1, items.length); //배열이 유효한지 조사
-
-    //리스트에 추가할 게 없을 때(즉, 검색이 유효하지 않으면 바로 취소함)
-    if (!msgArr) responseMsg.channel.send('유효하지 않은 대답이에요. 노래 검색 취소할게요..;;');
-    else {
-      for (const e of msgArr) {
-        const tmpStr = embedSearchYoutube.fields[e - 1].url.split(/\s+/);
-        if (musicExecute.execute) await musicExecute.execute(responseMsg, tmpStr);
-      }
+    if (!msgMember.voice.channel) {
+      await textChannel.send('보이스채널에서 해주세요!');
+      return;
     }
-    responseMsg.delete();
-    embedMsg.delete();
+
+    //같은 보이스채널 체크 부분
+    if (msgMember.voice.channelId != musicEntity?.voiceChannel.id){
+      await textChannel.send('같은 보이스채널에서 해주세요!');
+      return;
+    }
+
+    // 검색이 안 된 경우
+    if (!items) {
+      await textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!'); 
+      return;
+    }
+    
+    return new Promise(async (resolve, reject)=>{
+      //임베드 만들기
+      const embedSearchYoutube = {
+        title: '노래 검색 목록',
+        color: 0xf7cac9,
+        description: `**${args.join(' ')}**에 대한 검색 결과에요~`,
+        fields:
+          items.map((e, i) => {
+            return {
+              name: '\u200b',
+              value: `[${i + 1}. ${e.title}](${e.url})`, //markdown 사용
+              url: e.url
+            };
+          }),
+      };
+
+      //검색결과 보여주기
+      const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
+      const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
+      await musicYoutubeSearchCollector(embedMsg, items, { filter, max: 1, time: 60000, errors: ['time'] });
+      resolve(undefined); return;
+    });
   }
 };

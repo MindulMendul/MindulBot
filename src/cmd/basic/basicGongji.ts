@@ -7,19 +7,18 @@ export const basicGongji: CMD = {
   cmd: ['공지'],
   type: 'basic',
   permission: [],
-  execute(msg) {
-    const args = msg.content
-      .slice(3, msg.content.length)
-      .trim()
-      .split(/\s*\/\s*/);
-    const guilds = bot.guilds.cache.find((guild: Guild) => {
-      //길드 이름 찾기
-      return guild.name == args[0];
-    }) as Guild;
-    const ch = guilds.channels.cache.find((channel) => {
-      //서버 이름 찾기
-      return channel.name == args[1]; //공지 메시지 보내기
+  async execute(msg, args) {
+    return new Promise(async (resolve, reject)=>{
+      bot.guilds.cache.forEach(async (g)=>{
+        const ch = g.channels.cache.find((channel) => {
+          //서버 이름 찾기
+          const name = channel.name.toLowerCase();
+          return name.includes("mindul") || name.includes("민둘"); //공지 메시지 보내기
+        }) as TextChannel;
+        await ch.send(args[2]);
+      });
+
+      resolve(undefined); return;
     });
-    return (ch as TextChannel).send(args[2]);
   }
 };

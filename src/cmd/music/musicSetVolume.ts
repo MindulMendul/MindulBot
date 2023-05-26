@@ -1,13 +1,13 @@
-import { TextChannel } from 'discord.js';
-import { musicCollection } from '../../collection/musicCollection';
 import { CMD } from '../../types/type';
+import { musicCollection } from '../../collection/musicCollection';
+import { TextChannel } from 'discord.js';
 
-export const musicSkip: CMD = {
-  name: '스킵',
-  cmd: ['스킵', '다음'],
+export const musicSetVolume: CMD = {
+  name: '볼륨',
+  cmd: ['볼륨', '소리', 'ㅂㄹ', 'ㅅㄹ'],
   type: 'music',
   permission: [],
-  async execute(msg) {
+  async execute(msg, args) {
     //Guard Clause
     const guildId = msg.guildId;
     const msgMember = msg.member;
@@ -24,13 +24,13 @@ export const musicSkip: CMD = {
       return;
     }
     
-    if (msgMember.voice.channelId != musicEntity.voiceChannel.id){
+    if (msgMember.voice.channelId != musicEntity?.voiceChannel.id){
       await textChannel.send('같은 보이스채널에서 해주세요!');
       return;
     }
     
     return new Promise(async (resolve, reject)=>{
-      await musicEntity.skip();
+      musicEntity.setVolume(msg, Math.round(Number(args[0]))/100);
       resolve(undefined); return;
     });
   }

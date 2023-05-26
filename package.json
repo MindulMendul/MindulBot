@@ -1,9 +1,9 @@
 {
   "name": "mindulbot",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "scripts": {
     "start": "nodemon --exec ts-node bot.ts",
-    "dev": "nodemon --watch src/**/*.ts --exec ts-node bot.ts",
+    "dev": "nodemon --watch src/**/*.ts --watch bot.ts --exec ts-node bot.ts",
     "prepublish": "npm run pretty",
     "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
   },

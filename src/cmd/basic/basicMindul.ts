@@ -5,7 +5,10 @@ export const basicMindul: CMD = {
   cmd: ['민둘', 'alsenf', '민규', '민바'],
   type: 'basic',
   permission: [],
-  execute(msg) {
-    return msg.channel.send('민둘이는 바보');
+  async execute(msg) {
+    return new Promise(async (resolve, reject)=>{
+      await msg.channel.send('민둘이는 바보')
+      resolve(undefined); return;
+    });
   }
 };

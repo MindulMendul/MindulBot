@@ -1,11 +1,11 @@
 import { Message, PermissionResolvable } from 'discord.js';
 
-export interface CMD {
+export type CMD = {
   name: string;
   cmd: string[];
   type: string;
   permission: Array<PermissionResolvable>;
-  execute?: (arg0: Message, arg1?: string[]) => Promise<undefined | string | Message>;
+  execute: (msg: Message, args?: string[]) => Promise<any>;
 }
 
 export type Embed = {

@@ -1,22 +1,31 @@
+import { musicCollection } from '../collection/musicCollection';
+import { OWNER_ID } from '../configs/env';
+import { CustomError } from '../configs/error';
+import { isOWNER } from '../func/system/owner';
 import { CMD } from '../types/type';
-import { musicCollection } from '../../bot';
-import { musicEntity } from '../types/musicType';
-import { AudioPlayerStatus } from '@discordjs/voice';
-
-const env = process.env as NodeJS.ProcessEnv;
 
 export const testMsg: CMD = {
   name: `테스트`,
   cmd: ['테스트', 'ㅌㅅㅌ', 'ㅎ'],
   type: 'basic',
   permission: [],
-  async execute(msg) {
-    const OWNER_ID = env.OWNER_ID as string;
-    if (msg.author.id != OWNER_ID) return;
-
-    const guildId = msg.guildId;
-    const musicEntity = musicCollection.get(guildId) as musicEntity;
-    console.log(musicEntity.audioPlayer.state.status);
-    return msg.channel.send('민둘이는 바보');
+  async execute(msg, args) {
+    return new Promise((resolve, reject)=>{
+      const musicEntity=musicCollection.get(msg.guildId);
+      console.log(musicEntity?.playingSong.volume.volumeDecibels);
+      resolve(undefined);
+      // if (!isOWNER(msg.author)) return resolve(undefined);
+      // console.log("1");
+      // resolve(undefined);
+      // setTimeout(()=>{
+      //   console.log("3");
+      //   resolve(newFunction(msg));
+      // },3000);
+    });
   }
 };
+
+const newFunction=(msg:any)=>{
+  console.log("2");
+  throw new CustomError("e");
+}

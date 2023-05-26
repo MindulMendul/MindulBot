@@ -4,7 +4,6 @@ import { metadata } from '../../types/musicType';
 
 export const musicExecuteStreamResource = async (searchedInfo: metadata) => {
   const playStream = await stream(searchedInfo.url);
-
   let resource = createAudioResource(playStream.stream, {
     metadata: {
       title: searchedInfo.title,

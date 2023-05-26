@@ -18,7 +18,7 @@ export const basicTTS: CMD = {
   cmd: ['tts', 'TTS', '티티에스', 'ㅅㅅㄴ', 'ㅌㅌㄴ', 'ㅌㅌㅇㅅ'],
   type: 'basic',
   permission: [],
-  execute(msg, args) {
+  async execute(msg, args) {
     //보이스에는 들어와있어야 tts를 들을 수 있음
     const voiceChannel = msg.member?.voice.channel as VoiceBasedChannel;
     if (!voiceChannel) return msg.channel.send('보이스채널에서 해주세요!');

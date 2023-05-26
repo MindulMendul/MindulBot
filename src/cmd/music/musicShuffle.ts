@@ -1,28 +1,37 @@
-import { GuildMember, Message, TextChannel } from 'discord.js';
-import { musicCollection } from '../../../bot';
-import { shuffle } from '../../func/system/shuffle';
+import { Message, TextChannel } from 'discord.js';
+import { musicCollection } from '../../collection/musicCollection';
 import { CMD } from '../../types/type';
-import { musicShow } from './musicQueue';
 
 export const musicShuffle: CMD = {
   name: '셔플',
   cmd: ['셔플', 'ㅅㅍ', 'shuffle'],
   type: 'music',
   permission: [],
-  //shuffle 함수
   async execute(msg: Message) {
-    const guildId = msg.guildId as string;
-    const msgMember = msg.member as GuildMember;
+    //Guard Clause
+    const guildId = msg.guildId;
+    const msgMember = msg.member;
     const textChannel = msg.channel as TextChannel;
     const musicEntity = musicCollection.get(guildId);
-
-    if (!musicEntity?.connection) return textChannel.send('재생하고 있는 노래가 없어요!');
-    if (!msgMember.voice.channel) return textChannel.send('보이스채널에서 해주세요!');
-    if (msgMember.voice.channelId != musicEntity.voiceChannel.id)
-      return textChannel.send('같은 보이스채널에서 해주세요!');
-
-    shuffle(musicEntity.songQueue);
-    textChannel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
-    if (musicShow.execute) musicShow.execute(msg);
+    
+    if (!msgMember.voice.channel){
+      await textChannel.send('보이스채널에서 해주세요!');
+      return;
+    }
+    
+    if (!musicEntity?.connection){
+      await textChannel.send('재생하고 있는 노래가 없어요!');
+      return;
+    }
+    
+    if (msgMember.voice.channelId != musicEntity.voiceChannel.id){
+      await textChannel.send('같은 보이스채널에서 해주세요!');
+      return;
+    }
+    
+    return new Promise(async (resolve, reject)=>{
+      await musicEntity.shuffle(msg);
+      resolve(undefined); return;
+    });
   }
 };
