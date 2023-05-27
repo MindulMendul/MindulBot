@@ -1,7 +1,7 @@
 export const effectiveArr = (arr: string, min: number, max: number): Array<number> => {
   if (!arr) return [];
   const arrTemp = arr
-    .split('')
+    .split(/\D/g)
     .filter((e) => {
       return e.length > 0;
     }) //길이가 있는 친구들만 (공백 문자 제거)
