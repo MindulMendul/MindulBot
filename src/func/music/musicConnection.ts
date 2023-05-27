@@ -11,8 +11,8 @@ export const musicConnection = async (guildId: string) => {
       guildId: voiceChannel.guildId,
       adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
     });
-
     const subscription = connection.subscribe(musicEntity.audioPlayer);
+    
     musicEntity.connection = connection;
     musicEntity.subscription = subscription;
     connection.configureNetworking();
@@ -32,18 +32,5 @@ export const musicConnection = async (guildId: string) => {
     //   oldNetworking?.off('stateChange', networkStateChangeHandler);
     //   newNetworking?.on('stateChange', networkStateChangeHandler);
     // });
-
-    connection.on(VoiceConnectionStatus.Disconnected, () => {
-      // 안에 살아있는 친구들 다 죽이기
-      musicEntity.audioPlayer.removeAllListeners();
-      musicEntity.audioPlayer.stop();
-      musicEntity.connection?.removeAllListeners();
-      musicEntity.connection?.destroy();
-      musicEntity.reactCollector?.removeAllListeners();
-      musicEntity.reactCollector?.stop();
-      musicEntity.subscription?.unsubscribe();
-      musicCollection.delete(guildId);
-      connection.removeAllListeners();
-    });
   });
 };

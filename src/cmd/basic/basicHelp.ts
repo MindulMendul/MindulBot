@@ -1,3 +1,4 @@
+import { EmbedBuilder } from 'discord.js';
 import { PREFIX } from '../../configs/env';
 import { CMD } from '../../types/type';
 
@@ -8,11 +9,11 @@ export const basicHelp: CMD = {
   permission: [],
   async execute(msg) {
     return new Promise(async (resolve, reject)=>{
-      const helpembed: any = {
+      const helpembed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
           name: '민둘봇의 명령어 안내',
-          iconURL: 'https://i.imgur.com/AD91Z6z.jpg',
+          icon_url: 'https://i.imgur.com/AD91Z6z.jpg',
           url: 'https://www.youtube.com/channel/UCNqyvS8P82pGJ_4YyHIl7Zw'
         },
         description:
@@ -47,7 +48,7 @@ export const basicHelp: CMD = {
             inline: false
           }
         ]
-      };
+      });
       await msg.channel.send({ embeds: [helpembed] });
       resolve(undefined); return;
     });

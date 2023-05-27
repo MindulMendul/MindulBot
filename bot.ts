@@ -1,6 +1,5 @@
-import { Client, Collection, GatewayIntentBits, Partials, ActivityType, ChannelType } from 'discord.js';
+import { Client, GatewayIntentBits, Partials, ActivityType, ChannelType } from 'discord.js';
 import { getCMD, initCMDs } from './src/collection/cmdMap';
-import { musicEntity } from './src/types/musicType';
 import { initAlarms } from './src/func/system/alarm';
 import { checkPERs } from './src/func/system/permission';
 import { nocmdVS } from './src/cmd/nocmd/noCmdVS';

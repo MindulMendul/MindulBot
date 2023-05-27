@@ -8,12 +8,7 @@ export type CMD = {
   execute: (msg: Message, args?: string[]) => Promise<any>;
 }
 
-export type Embed = {
-  color: number;
-  author: {
-    name: string;
-    icon_url: string;
-  };
-  description: string;
-  image: { url: string };
-};
+export type metadata = {
+  title: string;
+  url: string;
+}

@@ -1,25 +1,10 @@
-import {
-  GuildMember,
-  Message,
-  ButtonBuilder,
-  MessageComponentInteraction,
-  ActionRowBuilder,
-  ButtonStyle,
-  MessageCreateOptions
-} from 'discord.js';
-
-import { VolumeTransformer } from 'prism-media';
-import { musicEmpty } from '../../cmd/music/musicEmpty';
-import { musicShuffle } from '../../cmd/music/musicShuffle';
-import { musicSkip } from '../../cmd/music/musicSkip';
-
-import { getCMDQueue } from '../../collection/cmdQueue';
+import { ButtonBuilder, MessageComponentInteraction, ActionRowBuilder, ButtonStyle, MessageCreateOptions } from 'discord.js';
 import { musicCollection } from '../../collection/musicCollection';
 import { musicExecuteMsgCollector } from '../../collector/musicExecuteMsgCollector';
 
 export const musicExecuteMsg = async (guildId: string) => {
   const musicEntity = musicCollection.get(guildId);
-  const { voiceChannel, textChannel, audioPlayer, option, playingSong } = musicEntity;
+  const { textChannel, option, playingSong } = musicEntity;
 
   //첫 번째 줄 버튼
   const [Primary, Success, Secondary] = [ButtonStyle.Primary, ButtonStyle.Success, ButtonStyle.Secondary];
@@ -45,8 +30,6 @@ export const musicExecuteMsg = async (guildId: string) => {
   const msgSungok = await textChannel.send(sendedContent);
 
   //버튼 인터렉션 콜렉터 부분
-  musicEntity.reactCollector?.removeAllListeners();
-  musicEntity.reactCollector?.stop();
   const filter = (i: MessageComponentInteraction) => i.message.id === msgSungok.id;
   musicExecuteMsgCollector(msgSungok, {filter});
 };

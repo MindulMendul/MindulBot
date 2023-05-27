@@ -1,4 +1,4 @@
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionsBitField } from 'discord.js';
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, PermissionsBitField } from 'discord.js';
 import { basicTarotCollector } from '../../collector/basicTarotCollector';
 import { CMD } from '../../types/type';
 
@@ -10,7 +10,7 @@ export const basicTarot: CMD = {
   //타로하트 생성과정
   async execute(msg) {
     return new Promise(async (resolve, reject)=>{
-      const tarotEditedEmbed = {
+      const tarotEditedEmbed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
           name: '민둘봇의 타로 하트',
@@ -18,7 +18,7 @@ export const basicTarot: CMD = {
         },
         description: '6개의 이모지로 입력된 하트를 하나만 아무거나 선택해 주세요!',
         image: { url: 'https://i.imgur.com/SP7ND76.png' }
-      };
+      });
 
       const button1 = new ActionRowBuilder()
         .addComponents(new ButtonBuilder().setCustomId('0').setLabel('❤️').setStyle(ButtonStyle.Secondary))

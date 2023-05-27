@@ -30,7 +30,7 @@ export const musicShow: CMD = {
     }
     
     return new Promise(async (resolve, reject)=>{
-      musicEntity.show(msg);
+      musicEntity.show();
       resolve(undefined); return;
     });
   }

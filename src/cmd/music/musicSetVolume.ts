@@ -28,9 +28,14 @@ export const musicSetVolume: CMD = {
       await textChannel.send('같은 보이스채널에서 해주세요!');
       return;
     }
+
+    if(isNaN(Number(args[0]))){
+      await textChannel.send('값은 숫자로 넣어주세요!');
+      return;
+    }
     
     return new Promise(async (resolve, reject)=>{
-      musicEntity.setVolume(msg, Math.round(Number(args[0]))/100);
+      musicEntity.setVolume(Math.round(Number(args[0]))/100);
       resolve(undefined); return;
     });
   }

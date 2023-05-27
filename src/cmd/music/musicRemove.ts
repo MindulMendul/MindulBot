@@ -51,7 +51,7 @@ export const musicRemove: CMD = {
       
       //콜렉터 부분
       const filter = (i:any) => !i.author.bot && i.user.id === msg.author.id;
-      await musicRemoveCollector(msg, args, { filter, max: 1, time: 7000 });
+      await musicRemoveCollector(msg, args, { filter, time: 7000 });
       resolve(undefined); return;
     });
   }

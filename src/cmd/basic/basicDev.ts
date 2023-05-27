@@ -1,3 +1,4 @@
+import { EmbedBuilder } from 'discord.js';
 import { CMD } from '../../types/type';
 
 export const basicDev: CMD = {
@@ -7,7 +8,7 @@ export const basicDev: CMD = {
   permission: [],
   async execute(msg) {
     return new Promise(async (resolve, reject)=>{
-      const devembed = {
+      const devembed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
           name: '민둘봇 개발 목표 안내',
@@ -32,7 +33,7 @@ export const basicDev: CMD = {
             inline: false
           }
         ]
-      };
+      });
 
       await msg.channel.send({ embeds: [devembed] });
       resolve(undefined); return;

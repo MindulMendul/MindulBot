@@ -17,9 +17,9 @@ import { musicExecute } from '../cmd/music/musicExecute';
 import { musicHelp } from '../cmd/music/musicHelp';
 import { musicRemove } from '../cmd/music/musicRemove';
 import { musicShow } from '../cmd/music/musicQueue';
-import { musicShuffle } from '../cmd/music/musicShuffle';
 import { musicSkip } from '../cmd/music/musicSkip';
 import { musicYoutubeSearch } from '../cmd/music/musicYoutubeSearch';
+import { musicSetVolume } from '../cmd/music/musicSetVolume';
 
 const CMDNameMap: Collection<string, string> = new Collection(); // CMD와 name 매칭해주는 맵
 const CMDMap: Collection<string, CMD> = new Collection(); // 명령어 모음집
@@ -51,8 +51,8 @@ export const initCMDs = () => {
   initCMD(musicHelp);
   initCMD(musicRemove);
   initCMD(musicShow);
-  initCMD(musicShuffle);
   initCMD(musicSkip);
+  initCMD(musicSetVolume);
   initCMD(musicYoutubeSearch);
 };
 

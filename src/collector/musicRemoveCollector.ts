@@ -9,7 +9,7 @@ export const musicRemoveCollector = async (msg: Message, args:Array<string>, opt
     const { textChannel } = musicEntity;
 
     const collector = textChannel.createMessageCollector(options);
-    collector.on('collect', async (i: Message) => {
+    collector.once('collect', async (i: Message) => { try {
       if (correctArr.includes(i.content)) {
         //긍정
         args
@@ -23,10 +23,10 @@ export const musicRemoveCollector = async (msg: Message, args:Array<string>, opt
       } //부정
       
       textChannel.send('부정의 의미로 받아들이고, 그대로 내버려둘게요.');
-    });
+    } catch(e) {reject(e); return;}});
 
-    collector.on('end', (collected) => {
+    collector.on('end', (collected) => { try {
       if (!collected.first()) textChannel.send('대답이 따로 없으니까 그냥 내비둘게요~');
-    });
+    } catch(e) {reject(e); return;}});
   });
 }
