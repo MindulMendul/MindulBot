@@ -2,7 +2,7 @@ import { Client, GatewayIntentBits, Partials, ActivityType, ChannelType } from '
 import { getCMD, initCMDs } from './src/collection/cmdMap';
 import { initAlarms } from './src/func/system/alarm';
 import { checkPERs } from './src/func/system/permission';
-import { nocmdVS } from './src/cmd/nocmd/noCmdVS';
+import { nocmdVS } from './src/cmd/nocmd/nocmdVS';
 import { ACTIVITY_STRING, BOT_TOKEN, PREFIX } from './src/configs/env';
 import { getCMDQueue, initCMDQueue, setCMDQueue } from './src/collection/cmdQueue';
 import { getOWNER } from './src/func/system/owner';
