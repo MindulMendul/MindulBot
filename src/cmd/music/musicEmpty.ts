@@ -29,9 +29,9 @@ export const musicEmpty: CMD = {
       return;
     }
     
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       musicEntity.empty();
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

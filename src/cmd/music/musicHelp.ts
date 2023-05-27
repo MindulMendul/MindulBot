@@ -8,7 +8,7 @@ export const musicHelp: CMD = {
   type: 'music',
   permission: [],
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const helpembed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
@@ -65,6 +65,6 @@ export const musicHelp: CMD = {
       });
       await msg.channel.send({ embeds: [helpembed] });
       resolve(undefined);
-    });
+    } catch(e) {reject(e)} });
   }
 };

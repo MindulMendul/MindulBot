@@ -8,7 +8,7 @@ export const basicHelp: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const helpembed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
@@ -51,6 +51,6 @@ export const basicHelp: CMD = {
       });
       await msg.channel.send({ embeds: [helpembed] });
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

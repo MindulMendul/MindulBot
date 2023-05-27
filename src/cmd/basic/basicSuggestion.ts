@@ -13,13 +13,13 @@ export const basicSuggestion: CMD = {
       return;
     }
 
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const channel = msg.channel as TextChannel;
       await getOWNER().send(
         `'${msg.guild.name}'길드의 '${channel.name}'채널에서 '${msg.author.username}'님이 건의사항 보내주셨어요.\n> ${args.join(' ')}`
       );
 
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

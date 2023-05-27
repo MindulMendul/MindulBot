@@ -8,7 +8,7 @@ export const basicGongji: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg, args) {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       bot.guilds.cache.forEach(async (g)=>{
         const ch = g.channels.cache.find((channel) => {
           //서버 이름 찾기
@@ -19,6 +19,6 @@ export const basicGongji: CMD = {
       });
 
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

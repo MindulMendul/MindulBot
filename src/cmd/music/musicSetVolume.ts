@@ -34,9 +34,9 @@ export const musicSetVolume: CMD = {
       return;
     }
     
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       musicEntity.setVolume(Math.round(Number(args[0]))/100);
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

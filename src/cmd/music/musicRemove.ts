@@ -42,7 +42,7 @@ export const musicRemove: CMD = {
       return;
     }
 
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const tempStr =
         '해당 노래가 맞아요?\n\n' +
         argsArr.map((e) => `> **${e}. ${musicEntity.songQueue[e - 1].metadata.title}**`).join('\n') +
@@ -53,6 +53,6 @@ export const musicRemove: CMD = {
       const filter = (i:any) => !i.author.bot && i.user.id === msg.author.id;
       await musicRemoveCollector(msg, args, { filter, time: 7000 });
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

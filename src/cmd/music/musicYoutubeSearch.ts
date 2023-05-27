@@ -45,7 +45,7 @@ export const musicYoutubeSearch: CMD = {
       return;
     }
     
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       //임베드 만들기
       const embedSearchYoutube = new EmbedBuilder({
         title: '노래 검색 목록',
@@ -67,6 +67,6 @@ export const musicYoutubeSearch: CMD = {
       await musicYoutubeSearchCollector(embedMsg, items, { filter, max: 1, time: 60000, errors: ['time'] })
       .catch((e) => reject(e));
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

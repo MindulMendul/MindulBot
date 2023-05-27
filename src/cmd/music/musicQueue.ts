@@ -29,9 +29,9 @@ export const musicShow: CMD = {
       return;
     }
     
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       musicEntity.show();
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

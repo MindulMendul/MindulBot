@@ -9,7 +9,7 @@ export const basicTarot: CMD = {
   permission: [PermissionsBitField.Flags.AddReactions, PermissionsBitField.Flags.EmbedLinks],
   //타로하트 생성과정
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const tarotEditedEmbed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
@@ -38,6 +38,6 @@ export const basicTarot: CMD = {
       const filter = (i: any) => i.user.id === msg.author.id;
       await basicTarotCollector(await msgTarot, { filter, time: 60000 });
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

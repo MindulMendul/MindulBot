@@ -7,7 +7,7 @@ export const basicDev: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject)=>{ try {
       const devembed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
@@ -37,6 +37,6 @@ export const basicDev: CMD = {
 
       await msg.channel.send({ embeds: [devembed] });
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };

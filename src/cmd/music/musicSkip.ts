@@ -29,9 +29,9 @@ export const musicSkip: CMD = {
       return;
     }
     
-    return new Promise(async (resolve, reject)=>{
-      await musicEntity.skip();
+    return new Promise(async (resolve, reject)=>{ try {
+      musicEntity.skip();
       resolve(undefined); return;
-    });
+    } catch(e) {reject(e)} });
   }
 };
