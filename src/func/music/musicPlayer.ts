@@ -31,11 +31,15 @@ export const musicPlayer = async (guildId: string) => {
     try {
       musicEntity.audioPlayer.play(musicEntity.playingSong);
     } catch(e){
+      console.error(e);
       playNextSong(); reject(e); return;
     }
 
+    musicEntity.audioPlayer.on("error", (error)=>{
+      console.error(error);
+    });
     musicEntity.audioPlayer.once(AudioPlayerStatus.Idle, async () => {
-      try {playNextSong();} catch(e) {reject(e);}
+      try {playNextSong();} catch(e) {console.error(e);}
     });
 
     resolve(undefined);

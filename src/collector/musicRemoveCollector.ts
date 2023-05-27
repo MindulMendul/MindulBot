@@ -27,6 +27,6 @@ export const musicRemoveCollector = async (msg: Message, args:Array<string>, opt
 
     collector.on('end', (collected) => { try {
       if (!collected.first()) textChannel.send('대답이 따로 없으니까 그냥 내비둘게요~');
-    } catch(e) {reject(e); return;}});
+    } catch(e) {reject(e); console.error(e); return;}});
   });
 }

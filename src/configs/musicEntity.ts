@@ -93,47 +93,47 @@ export class MusicEntity {
     await this.textChannel.send({ embeds: [embedQueue] });
   }
 
-  public shuffle(){
+  public async shuffle(){
     shuffle(this.songQueue);
-    this.textChannel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
-    this.show();
+    await this.textChannel.send('큐에 들어간 곡이 무작위로 재배치되었습니다!');
+    await this.show();
   }
 
-  public pause(){
+  public async pause(){
     const audioPlayer=this.audioPlayer;
     if (audioPlayer.state.status == 'playing') {
       audioPlayer.pause();
-      this.textChannel.send('노래를 일시정지해 드렸어요!');
+      await this.textChannel.send('노래를 일시정지해 드렸어요!');
     } else {
       audioPlayer.unpause();
-      this.textChannel.send('노래를 다시 재생합니다~');
+      await this.textChannel.send('노래를 다시 재생합니다~');
     }
   }
 
-  public loop(){
+  public async loop(){
     const option = this.option;
     option.loop = !option.loop;
 
-    if (!option.loop) this.textChannel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
-    else this.textChannel.send('큐 반복 기능이 활성화되었습니다~');
+    if (!option.loop) await this.textChannel.send('더이상 큐에 있던 녀석들이 반복되지 않아요!');
+    else await this.textChannel.send('큐 반복 기능이 활성화되었습니다~');
   }
 
-  public mute(){
+  public async mute(){
     const option = this.option;
     option.mute = !option.mute;
 
     this.playingSong.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
-    if (option.mute) this.textChannel.send(`음소거되었어요`);
-    else this.textChannel.send(`원래 소리로 돌아갔어요.\n현재 볼륨:${Math.round(option.volume * 100)}%`);
+    if (option.mute) await this.textChannel.send(`음소거되었어요`);
+    else await this.textChannel.send(`원래 소리로 돌아갔어요.\n현재 볼륨:${Math.round(option.volume * 100)}%`);
   }
 
-  public setVolume(value:number){
+  public async setVolume(value:number){
     const option = this.option;
-    if (option.mute) { this.textChannel.send('음소거 중이에요.'); return; }
+    if (option.mute) { await this.textChannel.send('음소거 중이에요.'); return; }
     
     option.volume = (Math.max(0, Math.min(1, value)));
     this.playingSong.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
-    this.textChannel.send(`현재 볼륨:${Math.round(option.volume * 100)}%`);
+    await this.textChannel.send(`현재 볼륨:${Math.round(option.volume * 100)}%`);
   }
 }
 

@@ -32,6 +32,6 @@ export const musicYoutubeSearchCollector = (msg:Message, items:Array<YouTubeVide
       
       await msg.delete();
       resolve(undefined);
-    } catch(e) {reject(e); return;}});
+    } catch(e) {reject(e); console.error(e); return;}});
   });
 }

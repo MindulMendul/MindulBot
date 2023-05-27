@@ -4,7 +4,7 @@ import { script } from '../assets/tarot/TarotList';
 export const basicTarotCollector = async (msg: Message, options:any) => {
   return new Promise( async(resolve, reject)=>{
     const collector = msg.createMessageComponentCollector(options);
-    collector.once('collect', async (i: ButtonInteraction) => { try {
+    collector.on('collect', async (i: ButtonInteraction) => { try {
       const tarotEmbed = new EmbedBuilder({
         color: 0xf7cac9,
         author: {
