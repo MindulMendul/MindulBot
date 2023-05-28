@@ -34,39 +34,44 @@ export const musicYoutubeSearch: CMD = {
     }
 
     //같은 보이스채널 체크 부분
-    if (musicCollection.get(msg.guildId) && voiceChannel.id != musicCollection.get(msg.guildId).voiceChannel.id){
+    if (musicCollection.get(msg.guildId) && voiceChannel.id != musicCollection.get(msg.guildId).voiceChannel.id) {
       await textChannel.send('같은 보이스채널에서 해주세요!');
       return;
     }
 
     // 검색이 안 된 경우
     if (!items) {
-      await textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!'); 
+      await textChannel.send('어떤 곡을 찾아야 할지 모르겠어요!');
       return;
     }
-    
-    return new Promise(async (resolve, reject)=>{ try {
-      //임베드 만들기
-      const embedSearchYoutube = new EmbedBuilder({
-        title: '노래 검색 목록',
-        color: 0xf7cac9,
-        description: `**${args.join(' ')}**에 대한 검색 결과에요~`,
-        fields:
-          items.map((e, i) => {
+
+    return new Promise(async (resolve, reject) => {
+      try {
+        //임베드 만들기
+        const embedSearchYoutube = new EmbedBuilder({
+          title: '노래 검색 목록',
+          color: 0xf7cac9,
+          description: `**${args.join(' ')}**에 대한 검색 결과에요~`,
+          fields: items.map((e, i) => {
             return {
               name: `${i + 1}. ${e.title}\u200b`,
               value: `[link](${e.url})`,
               inline: false
             };
-          }),
-      });
+          })
+        });
 
-      //검색결과 보여주기
-      const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
-      const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
-      await musicYoutubeSearchCollector(embedMsg, items, { filter, max: 1, time: 60000, errors: ['time'] })
-      .catch((e) => reject(e));
-      resolve(undefined); return;
-    } catch(e) {reject(e)} });
+        //검색결과 보여주기
+        const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
+        const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
+        await musicYoutubeSearchCollector(embedMsg, items, { filter, max: 1, time: 60000, errors: ['time'] }).catch(
+          (e) => reject(e)
+        );
+        resolve(undefined);
+        return;
+      } catch (e) {
+        reject(e);
+      }
+    });
   }
 };

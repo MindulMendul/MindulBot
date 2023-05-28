@@ -5,7 +5,8 @@
     "start": "nodemon --exec ts-node bot.ts",
     "dev": "nodemon --watch src/**/*.ts --watch bot.ts --exec ts-node bot.ts",
     "prepublish": "npm run pretty",
-    "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts"
+    "pretty": "prettier --config .prettierrc --write bot.ts src/**/*.ts",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",

@@ -26,13 +26,13 @@ export const musicExecute: CMD = {
     }
 
     //보이스채널 체크부분
-    if (!voiceChannel){
+    if (!voiceChannel) {
       await textChannel.send('보이스채널에서 해주세요!');
       return;
     }
 
     //같은 보이스채널인지 체크
-    if (musicCollection.get(guildId) && voiceChannel.id != musicCollection.get(guildId).voiceChannel.id){
+    if (musicCollection.get(guildId) && voiceChannel.id != musicCollection.get(guildId).voiceChannel.id) {
       await textChannel.send('같은 보이스채널에서 해주세요!');
       return;
     }
@@ -44,14 +44,23 @@ export const musicExecute: CMD = {
       return;
     }
 
-    return new Promise(async (resolve, reject)=>{ try {
-      const musicEntity = musicCollection.get(guildId)?musicCollection.get(guildId):new MusicEntity(); // 없을 수도 있음
-      musicCollection.set(guildId, musicEntity);
-      musicEntity.init(voiceChannel, textChannel);
-      await musicEntity.pushSongQueue(searchedMetadata as metadata);
-      if(!musicEntity.connection) await musicEntity.connect().catch((e)=>{console.log("asdfasdf"); reject(e);});
-      else await textChannel.send(`${searchedMetadata.title}가 큐에 들어왔어요~`);
-      resolve(undefined); return;
-    } catch(e) {reject(e)} });
+    return new Promise(async (resolve, reject) => {
+      try {
+        const musicEntity = musicCollection.get(guildId) ? musicCollection.get(guildId) : new MusicEntity(); // 없을 수도 있음
+        musicCollection.set(guildId, musicEntity);
+        musicEntity.init(voiceChannel, textChannel);
+        await musicEntity.pushSongQueue(searchedMetadata as metadata);
+        if (!musicEntity.connection)
+          await musicEntity.connect().catch((e) => {
+            console.log('asdfasdf');
+            reject(e);
+          });
+        else await textChannel.send(`${searchedMetadata.title}가 큐에 들어왔어요~`);
+        resolve(undefined);
+        return;
+      } catch (e) {
+        reject(e);
+      }
+    });
   }
 };

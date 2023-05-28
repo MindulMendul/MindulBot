@@ -58,4 +58,4 @@ export const initCMDs = () => {
 
 export const getCMD = (CMDName: string) => {
   return CMDMap.get(CMDNameMap.get(CMDName));
-}
+};

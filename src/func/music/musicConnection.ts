@@ -2,7 +2,7 @@ import { joinVoiceChannel, VoiceConnectionStatus } from '@discordjs/voice';
 import { musicCollection } from '../../collection/musicCollection';
 
 export const musicConnection = async (guildId: string) => {
-  return new Promise((resolve, reject)=>{
+  return new Promise((resolve, reject) => {
     const musicEntity = musicCollection.get(guildId);
     const voiceChannel = musicEntity.voiceChannel;
 
@@ -12,7 +12,7 @@ export const musicConnection = async (guildId: string) => {
       adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
     });
     const subscription = connection.subscribe(musicEntity.audioPlayer);
-    
+
     musicEntity.connection = connection;
     musicEntity.subscription = subscription;
     connection.configureNetworking();
@@ -33,6 +33,8 @@ export const musicConnection = async (guildId: string) => {
       newNetworking?.on('stateChange', networkStateChangeHandler);
     });
 
-    connection.on('error',(error)=>{console.error(error);});
+    connection.on('error', (error) => {
+      console.error(error);
+    });
   });
 };

@@ -8,12 +8,17 @@ export const basicDice: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{ try {
-      await msg.channel.send({
-        content: `${msg.member.displayName}님의 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`,
-      })
-      
-      resolve(undefined); return;
-    } catch(e) {reject(e)} });
+    return new Promise(async (resolve, reject) => {
+      try {
+        await msg.channel.send({
+          content: `${msg.member.displayName}님의 주사위 결과입니다.\n> ${Math.ceil(Math.random() * 6)}`
+        });
+
+        resolve(undefined);
+        return;
+      } catch (e) {
+        reject(e);
+      }
+    });
   }
 };

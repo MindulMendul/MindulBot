@@ -11,11 +11,13 @@ export const testMsg: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg, args) {
-    return new Promise((resolve, reject)=>{ try{
-      resolve(undefined);
-      
-    } catch(e) { reject(e); }});
-
+    return new Promise((resolve, reject) => {
+      try {
+        resolve(undefined);
+      } catch (e) {
+        reject(e);
+      }
+    });
   }
 };
 
@@ -25,9 +27,9 @@ export const testMsg: CMD = {
 // }
 
 // if (!isOWNER(msg.author)) return resolve(undefined);
-      // console.log("1");
-      // resolve(undefined);
-      // setTimeout(()=>{
-      //   console.log("3");
-      //   resolve(newFunction(msg));
-      // },3000);
+// console.log("1");
+// resolve(undefined);
+// setTimeout(()=>{
+//   console.log("3");
+//   resolve(newFunction(msg));
+// },3000);

@@ -7,4 +7,4 @@ export const nocmdVS = async (msg: Message<boolean>) => {
     if (vsArr.length == 0) msg.channel.send('의미 있는 입력 값이 없네요.'); //아무것도 없으면
     else msg.channel.send(vsArr[Math.floor(Math.random() * vsArr.length)]); //랜덤해서 하나 보내기
   }
-}
+};

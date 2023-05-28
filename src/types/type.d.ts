@@ -6,9 +6,9 @@ export type CMD = {
   type: string;
   permission: Array<PermissionResolvable>;
   execute: (msg: Message, args?: string[]) => Promise<any>;
-}
+};
 
 export type metadata = {
   title: string;
   url: string;
-}
+};

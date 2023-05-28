@@ -6,9 +6,14 @@ export const basicMindul: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg) {
-    return new Promise(async (resolve, reject)=>{ try {
-      await msg.channel.send('민둘이는 바보')
-      resolve(undefined); return;
-    } catch(e) {reject(e)} });
+    return new Promise(async (resolve, reject) => {
+      try {
+        await msg.channel.send('민둘이는 바보');
+        resolve(undefined);
+        return;
+      } catch (e) {
+        reject(e);
+      }
+    });
   }
 };
