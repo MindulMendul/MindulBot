@@ -24,8 +24,8 @@ export const basicSuggestion: CMD = {
 
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

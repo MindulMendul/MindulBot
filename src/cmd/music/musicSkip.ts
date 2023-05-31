@@ -34,8 +34,8 @@ export const musicSkip: CMD = {
         musicEntity.skip();
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

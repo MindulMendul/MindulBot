@@ -38,8 +38,8 @@ export const basicDev: CMD = {
         await msg.channel.send({ embeds: [devembed] });
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

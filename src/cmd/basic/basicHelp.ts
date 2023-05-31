@@ -53,8 +53,8 @@ export const basicHelp: CMD = {
         await msg.channel.send({ embeds: [helpembed] });
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

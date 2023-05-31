@@ -23,6 +23,7 @@ export const musicRemoveCollector = async (msg: Message, args: Array<string>, op
             musicEntity.songQueue.splice(Number(element) - 1, 1);
           });
         //큐에 남아있는 노래가 있다면 보여주기
+        msg.delete();
         await musicShow.execute(await textChannel.send('삭제 완료!'));
         resolve(undefined);
       } catch (error) {
