@@ -65,12 +65,12 @@ export const musicYoutubeSearch: CMD = {
         const embedMsg = await textChannel.send({ embeds: [embedSearchYoutube] });
         const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
         await musicYoutubeSearchCollector(embedMsg, items, { filter, max: 1, time: 60000, errors: ['time'] }).catch(
-          (e) => reject(e)
+          (error) => reject(error)
         );
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

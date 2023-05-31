@@ -1,7 +1,7 @@
 import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
 import { musicRemoveCollector } from '../../collector/musicRemoveCollector';
-import { TextChannel } from 'discord.js';
+import { Message, TextChannel } from 'discord.js';
 import { musicCollection } from '../../collection/musicCollection';
 
 export const musicRemove: CMD = {
@@ -46,17 +46,17 @@ export const musicRemove: CMD = {
       try {
         const tempStr =
           '해당 노래가 맞아요?\n\n' +
-          argsArr.map((e) => `> **${e}. ${musicEntity.songQueue[e - 1].metadata.title}**`).join('\n') +
+          argsArr.map((e) => `> ${e}. **${musicEntity.songQueue[e - 1].metadata.title}**`).join('\n') +
           '\n\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
         await textChannel.send(tempStr);
 
         //콜렉터 부분
-        const filter = (i: any) => !i.author.bot && i.user.id === msg.author.id;
+        const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
         await musicRemoveCollector(msg, args, { filter, time: 7000 });
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

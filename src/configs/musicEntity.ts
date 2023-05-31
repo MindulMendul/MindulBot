@@ -94,11 +94,11 @@ export class MusicEntity {
     const embedQueue = {
       color: 0xf7cac9,
       title: '큐에 들어간 노래 목록',
-      description: `현재 재생중인 노래\n ${this.playingSong.metadata.title}`,
+      description: `현재 재생중인 노래\n **${this.playingSong.metadata.title}**`,
       fields: this.songQueue.map((e, i) => {
         return {
-          name: '\u200b',
-          value: `${i + 1}. ${e.metadata.title}`
+          name: `\u200b${i + 1}. ${e.metadata.title}`,
+          value: ``
         };
       })
     };
@@ -149,6 +149,6 @@ export class MusicEntity {
 
     option.volume = Math.max(0, Math.min(1, value));
     this.playingSong.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
-    await this.textChannel.send(`현재 볼륨:${Math.round(option.volume * 100)}%`);
+    await this.textChannel.send(`현재 볼륨: ${Math.round(option.volume * 100)}%`);
   }
 }
