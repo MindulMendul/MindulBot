@@ -34,8 +34,8 @@ export const musicEmpty: CMD = {
         musicEntity.empty();
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

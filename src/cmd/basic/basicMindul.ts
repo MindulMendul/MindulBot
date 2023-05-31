@@ -11,8 +11,8 @@ export const basicMindul: CMD = {
         await msg.channel.send('민둘이는 바보');
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

@@ -32,8 +32,8 @@ export const testMsg: CMD = {
 
 
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

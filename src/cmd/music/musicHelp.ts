@@ -64,8 +64,8 @@ export const musicHelp: CMD = {
         });
         await msg.channel.send({ embeds: [helpembed] });
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

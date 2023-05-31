@@ -51,15 +51,15 @@ export const musicExecute: CMD = {
         musicEntity.init(voiceChannel, textChannel);
         await musicEntity.pushSongQueue(searchedMetadata as metadata);
         if (!musicEntity.connection)
-          await musicEntity.connect().catch((e) => {
+          await musicEntity.connect().catch((error) => {
             console.log('asdfasdf');
-            reject(e);
+            reject(error);
           });
         else await textChannel.send(`${searchedMetadata.title}가 큐에 들어왔어요~`);
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

@@ -22,8 +22,8 @@ export const basicTarotCollector = async (msg: Message, options: any) => {
         });
         await i.update({ embeds: [tarotEmbed], components: [] });
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
         return;
       }
     });

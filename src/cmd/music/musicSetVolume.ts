@@ -39,8 +39,8 @@ export const musicSetVolume: CMD = {
         musicEntity.setVolume(Math.round(Number(args[0])) / 100);
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

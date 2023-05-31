@@ -21,8 +21,8 @@ export const basicGongji: CMD = {
 
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

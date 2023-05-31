@@ -40,8 +40,8 @@ export const basicTarot: CMD = {
         await basicTarotCollector(await msgTarot, { filter, time: 60000 });
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

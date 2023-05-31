@@ -7,12 +7,13 @@ export const testMsg: CMD = {
   type: 'basic',
   permission: [],
   async execute(msg, args) {
+    const configiration = new Configuration({
+      organization: "Personal",
+      apiKey: process.env.OPENAI_SECRET_KEY,
+    });
+    const openai = new OpenAIApi(configiration);
+
     return new Promise(async (resolve, reject) => {
-      const configiration = new Configuration({
-        organization: "Personal",
-        apiKey: process.env.OPENAI_SECRET_KEY,
-      });
-      const openai = new OpenAIApi(configiration);
       try {
         const runAPI = async () => {
           const response = await openai.createCompletion({
@@ -30,8 +31,8 @@ export const testMsg: CMD = {
 
 
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }

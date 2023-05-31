@@ -93,8 +93,8 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
 
         update();
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       } finally {
         initCMDQueue(msg.guildId);
       }

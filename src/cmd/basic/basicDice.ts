@@ -16,8 +16,8 @@ export const basicDice: CMD = {
 
         resolve(undefined);
         return;
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }
