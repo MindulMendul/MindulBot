@@ -26,17 +26,18 @@ export const musicYoutubeSearchCollector = (msg: Message, items: Array<YouTubeVi
         const musicEntity = musicCollection.get(guildId) ? musicCollection.get(guildId) : new MusicEntity(); // 없을 수도 있음
         musicCollection.set(guildId, musicEntity);
         musicEntity.init(i.member.voice.channel, textChannel);
-        msgArr.forEach(async (e) => {
+
+        for(const e of msgArr){
           await musicEntity.pushSongQueue(items[e - 1] as metadata);
           if (!musicEntity.connection) await musicEntity.connect();
           else textChannel.send(`${items[e - 1].title}가 큐에 들어왔어요~`);
-        });
+        };
 
         await msg.delete();
         resolve(undefined);
-      } catch (e) {
-        reject(e);
-        console.error(e);
+      } catch (error) {
+        reject(error);
+        console.error(error);
         return;
       }
     });
