@@ -62,8 +62,6 @@ export class MusicEntity {
   public disconnect() {
     this.audioPlayer.removeAllListeners();
     this.audioPlayer.stop();
-    this.connection?.removeAllListeners();
-    this.connection?.destroy();
     this.InteractionCollector?.removeAllListeners();
     this.InteractionCollector?.stop();
     this.subscription?.unsubscribe();
