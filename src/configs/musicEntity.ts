@@ -53,8 +53,9 @@ export class MusicEntity {
         await musicPlayer(guildId);
         await musicExecuteMsg(guildId);
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        console.log('asdfasdf3');
+        reject(error);
       }
     });
   }
