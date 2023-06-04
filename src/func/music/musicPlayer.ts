@@ -14,8 +14,8 @@ export const musicPlayer = async (guildId: string) => {
 
     //틀었던 노래가 끝났을 때
     if (musicEntity.songQueue.length == 0) {
-      musicEntity.textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       musicEntity.disconnect();
+      await musicEntity.textChannel.send('노래 대기열이 모두 끝났어요, 나갑니다 ㅎㅎ');
       return;
     }
 
@@ -26,9 +26,7 @@ export const musicPlayer = async (guildId: string) => {
 
   return new Promise(async (resolve, reject) => {
     const musicEntity = musicCollection.get(guildId);
-
     if (!musicEntity.playingSong) musicEntity.playingSong = musicEntity.songQueue.shift();
-
     try {
       musicEntity.audioPlayer.play(musicEntity.playingSong);
     } catch (e) {

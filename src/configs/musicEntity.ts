@@ -53,8 +53,9 @@ export class MusicEntity {
         await musicPlayer(guildId);
         await musicExecuteMsg(guildId);
         resolve(undefined);
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        console.log('asdfasdf3');
+        reject(error);
       }
     });
   }
@@ -62,8 +63,6 @@ export class MusicEntity {
   public disconnect() {
     this.audioPlayer.removeAllListeners();
     this.audioPlayer.stop();
-    this.connection?.removeAllListeners();
-    this.connection?.destroy();
     this.InteractionCollector?.removeAllListeners();
     this.InteractionCollector?.stop();
     this.subscription?.unsubscribe();
