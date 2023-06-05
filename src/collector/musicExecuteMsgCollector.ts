@@ -12,6 +12,7 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
     musicEntity.InteractionCollector?.stop();
     musicEntity.InteractionCollector = collector;
 
+    resolve(undefined);
     collector.on('collect', async (i: any) => {
       try {
         const update = () => {
@@ -90,9 +91,7 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
             setButtonStyle(musicEntity.option.mute);
             break;
         }
-
         update();
-        resolve(undefined);
       } catch (error) {
         reject(error);
       } finally {

@@ -69,7 +69,7 @@ bot.on('messageCreate', async (msg) => {
   //길드 명령어큐 만들기
   try {
     //명령어큐를 일단
-    console.log('명령어큐 push');
+    console.log(`명령어큐 ${CMD.name} push`);
     setCMDQueue(CMDQueueKey, CMD);
     await CMD.execute(msg, args);
   } catch (error) {
