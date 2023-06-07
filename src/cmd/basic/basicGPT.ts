@@ -8,11 +8,10 @@ export const testMsg: CMD = {
   permission: [],
   async execute(msg, args) {
     return new Promise((resolve, reject) => {
-      msg.channel.send("aswdfasdf");
+      msg.channel.send('aswdfasdf');
       try {
-        
         const configiration = new Configuration({
-          apiKey: process.env.OPENAI_SECRET_KEY,
+          apiKey: process.env.OPENAI_SECRET_KEY
         });
         console.log('<<--- Hello Node.js ---->>');
         console.log('...openai api tutorial...');
@@ -20,16 +19,15 @@ export const testMsg: CMD = {
         const openai = new OpenAIApi(configiration);
 
         const runAPI = async () => {
-            const response = await openai.listModels();
-            const models = response.data.data;
+          const response = await openai.listModels();
+          const models = response.data.data;
 
-            for (let i=0; i<models.length; i++) {
-                console.log(i + ' : ' + models[i].id);
-            }
-        }
+          for (let i = 0; i < models.length; i++) {
+            console.log(i + ' : ' + models[i].id);
+          }
+        };
         runAPI();
         console.log('running...');
-
 
         resolve(undefined);
       } catch (error) {

@@ -17,6 +17,21 @@ export const musicConnection = async (guildId: string) => {
     musicEntity.subscription = subscription;
     connection.configureNetworking();
 
+    //노래가 1분 정도에서 이상하게 멈추는 버그 해결하는 코드
+    //원리 모름 ㅠㅠ (https://github.com/Androz2091/discord-player/issues/1630)
+    connection.on('stateChange', (oldState, newState) => {
+      const oldNetworking = Reflect.get(oldState, 'networking');
+      const newNetworking = Reflect.get(newState, 'networking');
+
+      const networkStateChangeHandler = (oldNetworkState: any, newNetworkState: any) => {
+        const newUdp = Reflect.get(newNetworkState, 'udp');
+        clearInterval(newUdp?.keepAliveInterval);
+      };
+
+      oldNetworking?.off('stateChange', networkStateChangeHandler);
+      newNetworking?.on('stateChange', networkStateChangeHandler);
+    });
+
     resolve(undefined);
 
     connection.on('error', (error) => {
