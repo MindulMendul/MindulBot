@@ -27,11 +27,11 @@ export const musicYoutubeSearchCollector = (msg: Message, items: Array<YouTubeVi
         musicCollection.set(guildId, musicEntity);
         musicEntity.init(i.member.voice.channel, textChannel);
 
-        for(const e of msgArr){
+        for (const e of msgArr) {
           await musicEntity.pushSongQueue(items[e - 1] as metadata);
           if (!musicEntity.connection) await musicEntity.connect();
           else textChannel.send(`${items[e - 1].title}가 큐에 들어왔어요~`);
-        };
+        }
 
         await msg.delete();
         resolve(undefined);

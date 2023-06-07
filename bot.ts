@@ -78,8 +78,7 @@ bot.on('messageCreate', async (msg) => {
     msg.channel.send(
       `${CMD.name} 명령어 입력에 문제가 생겼어요! 우리 주인님이 고생할 거라 생각하니 기분이 좋네요 ㅎㅎ\n${error}`
     );
-    getOWNER().send(`명령어 입력 문제 : ${error}\n${error?.stack?error.stack:undefined}`);
-    
+    getOWNER().send(`명령어 입력 문제 : ${error}\n${error?.stack ? error.stack : undefined}`);
   } finally {
     //대기열 제거
     initCMDQueue(CMDQueueKey);

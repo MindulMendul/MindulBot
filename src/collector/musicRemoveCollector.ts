@@ -14,7 +14,8 @@ export const musicRemoveCollector = async (msg: Message, args: Array<string>, op
         //부정 표현을 쓴 경우
         if (!correctArr.includes(i.content)) {
           textChannel.send('부정의 의미로 받아들이고, 그대로 내버려둘게요.');
-          resolve(undefined); return;
+          resolve(undefined);
+          return;
         }
 
         args
@@ -34,8 +35,7 @@ export const musicRemoveCollector = async (msg: Message, args: Array<string>, op
 
     collector.on('end', (collected) => {
       try {
-        if (!collected.first())
-        textChannel.send('대답이 따로 없으니까 그냥 내비둘게요~');
+        if (!collected.first()) textChannel.send('대답이 따로 없으니까 그냥 내비둘게요~');
         resolve(undefined);
       } catch (error) {
         reject(error);
