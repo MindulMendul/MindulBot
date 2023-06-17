@@ -35,7 +35,7 @@ export const musicRemoveCollector = async (msg: Message, args: Array<string>, op
 
     collector.on('end', (collected) => {
       try {
-        if (!collected.first()) textChannel.send('대답이 따로 없으니까 그냥 내비둘게요~');
+        if (!collected.first()) textChannel.send('삭제 명령어가 취소되었습니다. 다시 시도해주세요~');
         resolve(undefined);
       } catch (error) {
         reject(error);

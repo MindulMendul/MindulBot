@@ -47,12 +47,12 @@ export const musicRemove: CMD = {
         const tempStr =
           '해당 노래가 맞아요?\n\n' +
           argsArr.map((e) => `> ${e}. **${musicEntity.songQueue[e - 1].metadata.title}**`).join('\n') +
-          '\n\n7초의 시간을 드릴 거에요!\n맞으면 네, 아니라면 그 밖에 아무 말이나 하세요.';
+          '\n\n맞으면 **네**, 아니라면 그 밖에 **아무 말**이나 하세요.\n**10초**의 시간동안 아무런 말이 없다면 자동으로 명령이 취소됩니다!';
         await textChannel.send(tempStr);
 
         //콜렉터 부분
         const filter = (i: Message) => !i.author.bot && i.author.id === msg.author.id;
-        await musicRemoveCollector(msg, args, { filter, time: 7000 });
+        await musicRemoveCollector(msg, args, { filter, time: 10000 });
         resolve(undefined);
         return;
       } catch (error) {
