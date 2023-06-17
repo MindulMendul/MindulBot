@@ -41,5 +41,19 @@ export const musicYoutubeSearchCollector = (msg: Message, items: Array<YouTubeVi
         return;
       }
     });
+
+    collector.on('end', async (collected) => {
+      try {
+        if (!collected.first()) {
+          await msg.delete();
+          await textChannel.send('검색 명령어가 취소되었습니다. 다시 시도해주세요~');
+          resolve(undefined);
+        }
+      } catch (error) {
+        reject(error);
+        console.error(error);
+        return;
+      }
+    });
   });
 };
