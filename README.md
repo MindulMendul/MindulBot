@@ -17,16 +17,6 @@
 
 https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 
-## 개발환경
-주 개발 언어 : TypeScript
-
-사용하는 모듈
-1. discord.js
-2. axios
-4. dotenv
-6. nodemon
-7. play-dl
-
 ## 명령어
 명령어는 이런 것들이 있어요.
 명령어 전에는 "한글 'ㅏ' 를 입력하세요! 노래명령어를 원하신다면 따로 "ㅏ노래도움말" 명령어로 제공하고 있으니 참고 바랍니다^^
@@ -71,3 +61,13 @@ https://discord.com/oauth2/authorize?client_id=751733763838443530&scope=bot
 
 루프
 노래 목록에 있는 노래를 반복하여 재생합니다. 혹은 반복 기능을 해제합니다.
+
+## 개발환경
+주 개발 언어 : TypeScript
+
+사용하는 모듈
+1. discord.js
+2. axios
+4. dotenv
+6. nodemon
+7. play-dl
