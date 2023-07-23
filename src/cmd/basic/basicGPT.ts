@@ -6,9 +6,7 @@ export const basicGPT: CMD = {
   name: `GPT`,
   cmd: ['지피티', 'ㅈㅍㅌ'],
   type: 'basic',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     return new Promise((resolve, reject) => {
       msg.channel.send('aswdfasdf');

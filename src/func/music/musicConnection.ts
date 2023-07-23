@@ -20,8 +20,8 @@ export const musicConnection = async (guildId: string) => {
     //노래가 1분 정도에서 이상하게 멈추는 버그 해결하는 코드
     //원리 모름 ㅠㅠ (https://github.com/Androz2091/discord-player/issues/1630)
     connection.on('stateChange', (oldState, newState) => {
-      if(newState.status=="disconnected") musicEntity.disconnect();
-      
+      if (newState.status == 'disconnected') musicEntity.disconnect();
+
       const oldNetworking = Reflect.get(oldState, 'networking');
       const newNetworking = Reflect.get(newState, 'networking');
 
@@ -37,7 +37,7 @@ export const musicConnection = async (guildId: string) => {
     resolve(undefined);
 
     connection.on('error', (error) => {
-      console.log("asdfasdf5");
+      console.log('asdfasdf5');
       reject(error);
     });
   });

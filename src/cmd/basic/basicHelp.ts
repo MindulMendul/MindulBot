@@ -6,9 +6,7 @@ export const basicHelp: CMD = {
   name: `도움말`,
   cmd: ['도움말', 'ㄷㅇㅁ', 'help'],
   type: 'basic',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg) {
     return new Promise(async (resolve, reject) => {
       try {

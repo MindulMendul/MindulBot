@@ -12,7 +12,7 @@ export const musicYoutubeSearch: CMD = {
     PermissionsBitField.Flags.SendMessages,
     PermissionsBitField.Flags.Connect,
     PermissionsBitField.Flags.Speak,
-    PermissionsBitField.Flags.ReadMessageHistory,
+    PermissionsBitField.Flags.ReadMessageHistory
   ],
   //찾은 유튜브 주소를 배열에 집어넣는 함수
   async execute(msg, args) {
@@ -50,7 +50,9 @@ export const musicYoutubeSearch: CMD = {
         const embedSearchYoutube = new EmbedBuilder({
           title: '노래 검색 목록',
           color: 0xf7cac9,
-          description: `**${args.join(' ')}**에 대한 검색 결과에요~\n**10초**의 시간동안 아무런 말이 없다면 자동으로 명령이 취소됩니다!`,
+          description: `**${args.join(
+            ' '
+          )}**에 대한 검색 결과에요~\n**10초**의 시간동안 아무런 말이 없다면 자동으로 명령이 취소됩니다!`,
           fields: items.map((e, i) => {
             return {
               name: `${i + 1}. ${e.title}\u200b`,

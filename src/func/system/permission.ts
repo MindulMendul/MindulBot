@@ -10,17 +10,18 @@ export const checkPERs = (msg: Message<boolean>, CMD: CMD) => {
 
   const TextChannel = msg.channel as TextChannel;
   const VoiceChannel = msg.member.voice.channel;
-  
+
   const textPERs = TextChannel.permissionsFor(bot.user as User);
   const voicePERs = VoiceChannel.permissionsFor(bot.user as User);
 
   if (!textPERs && !voicePERs) return [];
 
   return [
-    ...PER.filter((elem) => (!textPERs.has(elem)) && textPERDicts[elem.toString()])
-    .map((elem) => `${textPERDicts[elem.toString()]}`)
-  ,
-    ...PER.filter((elem) => (!voicePERs.has(elem) && voicePERDicts[elem.toString()]))
-    .map((elem) => `${voicePERDicts[elem.toString()]}`)
+    ...PER.filter((elem) => !textPERs.has(elem) && textPERDicts[elem.toString()]).map(
+      (elem) => `${textPERDicts[elem.toString()]}`
+    ),
+    ...PER.filter((elem) => !voicePERs.has(elem) && voicePERDicts[elem.toString()]).map(
+      (elem) => `${voicePERDicts[elem.toString()]}`
+    )
   ].join(', ');
 };

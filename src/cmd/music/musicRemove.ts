@@ -8,9 +8,7 @@ export const musicRemove: CMD = {
   name: '제거',
   cmd: ['제거', '삭제', 'ㅈㄱ', 'ㅅㅈ'],
   type: 'music',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     //Guard Clause
     const guildId = msg.guildId;

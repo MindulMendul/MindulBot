@@ -6,9 +6,7 @@ export const basicGongji: CMD = {
   name: `공지`,
   cmd: ['공지'],
   type: 'basic',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     return new Promise(async (resolve, reject) => {
       try {

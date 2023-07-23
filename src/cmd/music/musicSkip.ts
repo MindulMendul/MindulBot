@@ -6,9 +6,7 @@ export const musicSkip: CMD = {
   name: '스킵',
   cmd: ['스킵', '다음'],
   type: 'music',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg) {
     //Guard Clause
     const guildId = msg.guildId;

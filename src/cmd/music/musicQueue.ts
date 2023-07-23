@@ -6,9 +6,7 @@ export const musicShow: CMD = {
   name: '큐',
   cmd: ['큐', '목록', '노래목록'],
   type: 'music',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg) {
     //Guard Clause
     const guildId = msg.guildId;

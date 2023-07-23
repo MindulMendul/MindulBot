@@ -6,9 +6,7 @@ export const basicSuggestion: CMD = {
   name: `건의`,
   cmd: ['건의'],
   type: 'basic',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     if (args.length == 0) {
       await msg.channel.send('공백은 건의할 수 없어요. 정당한 사항을 건의해주세요!');

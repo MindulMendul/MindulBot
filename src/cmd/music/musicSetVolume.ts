@@ -6,9 +6,7 @@ export const musicSetVolume: CMD = {
   name: '볼륨',
   cmd: ['볼륨', '소리', 'ㅂㄹ', 'ㅅㄹ'],
   type: 'music',
-  permission: [
-    PermissionsBitField.Flags.SendMessages
-  ],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     //Guard Clause
     const guildId = msg.guildId;
