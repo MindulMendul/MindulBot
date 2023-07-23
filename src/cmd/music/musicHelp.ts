@@ -1,4 +1,4 @@
-import { EmbedBuilder } from 'discord.js';
+import { EmbedBuilder, PermissionsBitField } from 'discord.js';
 import { PREFIX } from '../../configs/env';
 import { CMD } from '../../types/type';
 
@@ -6,7 +6,7 @@ export const musicHelp: CMD = {
   name: '노래도움말',
   cmd: ['노래도움말', '노래명령어', 'ㄴㄹㄷㅇㅁ', 'ㄴㄻㄹㅇ', 'ㄴㄹㅁㄹㅇ'],
   type: 'music',
-  permission: [],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg) {
     return new Promise(async (resolve, reject) => {
       try {

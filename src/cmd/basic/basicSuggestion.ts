@@ -1,4 +1,4 @@
-import { resolveColor, TextChannel } from 'discord.js';
+import { PermissionsBitField, TextChannel } from 'discord.js';
 import { getOWNER } from '../../func/system/owner';
 import { CMD } from '../../types/type';
 
@@ -6,7 +6,7 @@ export const basicSuggestion: CMD = {
   name: `건의`,
   cmd: ['건의'],
   type: 'basic',
-  permission: [],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     if (args.length == 0) {
       await msg.channel.send('공백은 건의할 수 없어요. 정당한 사항을 건의해주세요!');

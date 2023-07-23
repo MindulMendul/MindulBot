@@ -56,7 +56,7 @@ bot.on('messageCreate', async (msg) => {
   // 퍼미션 없으면 거름
   const PERs = checkPERs(msg, CMD);
   if (PERs.length > 0) {
-    msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n현재 필요한 권한의 상태입니다.\n${PERs}`);
+    msg.channel.send(`권한이 없어서 사용할 수가 없어요.\n현재 필요한 권한의 상태입니다.\n\n> ${PERs}`);
     return;
   }
 

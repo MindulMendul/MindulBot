@@ -1,12 +1,12 @@
 import { CMD } from '../../types/type';
 import { musicCollection } from '../../collection/musicCollection';
-import { TextChannel } from 'discord.js';
+import { PermissionsBitField, TextChannel } from 'discord.js';
 
 export const musicSetVolume: CMD = {
   name: '볼륨',
   cmd: ['볼륨', '소리', 'ㅂㄹ', 'ㅅㄹ'],
   type: 'music',
-  permission: [],
+  permission: [PermissionsBitField.Flags.SendMessages],
   async execute(msg, args) {
     //Guard Clause
     const guildId = msg.guildId;

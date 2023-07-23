@@ -9,8 +9,10 @@ export const musicExecute: CMD = {
   cmd: ['노래', '시작', '선곡'],
   type: 'music',
   permission: [
+    PermissionsBitField.Flags.SendMessages,
     PermissionsBitField.Flags.Connect,
     PermissionsBitField.Flags.Speak,
+    PermissionsBitField.Flags.EmbedLinks,
     PermissionsBitField.Flags.ReadMessageHistory
   ],
   async execute(msg, args) {
