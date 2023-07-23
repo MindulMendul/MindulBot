@@ -9,11 +9,10 @@ export const musicYoutubeSearch: CMD = {
   cmd: ['검색', '노래검색', 'ㄴㄹㄱㅅ', 'ㄴㄺㅅ'],
   type: 'music',
   permission: [
+    PermissionsBitField.Flags.SendMessages,
     PermissionsBitField.Flags.Connect,
     PermissionsBitField.Flags.Speak,
-    PermissionsBitField.Flags.ManageEmojisAndStickers,
     PermissionsBitField.Flags.ReadMessageHistory,
-    PermissionsBitField.Flags.ManageMessages
   ],
   //찾은 유튜브 주소를 배열에 집어넣는 함수
   async execute(msg, args) {

@@ -1,14 +1,16 @@
 import { effectiveArr } from './../../func/system/effectiveArr';
 import { CMD } from '../../types/type';
 import { musicRemoveCollector } from '../../collector/musicRemoveCollector';
-import { Message, TextChannel } from 'discord.js';
+import { Message, PermissionsBitField, TextChannel } from 'discord.js';
 import { musicCollection } from '../../collection/musicCollection';
 
 export const musicRemove: CMD = {
   name: '제거',
   cmd: ['제거', '삭제', 'ㅈㄱ', 'ㅅㅈ'],
   type: 'music',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg, args) {
     //Guard Clause
     const guildId = msg.guildId;

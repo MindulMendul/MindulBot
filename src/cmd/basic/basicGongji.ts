@@ -1,12 +1,14 @@
 import { CMD } from '../../types/type';
 import { bot } from '../../../bot';
-import { Guild, TextChannel } from 'discord.js';
+import { TextChannel, PermissionsBitField } from 'discord.js';
 
 export const basicGongji: CMD = {
   name: `공지`,
   cmd: ['공지'],
   type: 'basic',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg, args) {
     return new Promise(async (resolve, reject) => {
       try {

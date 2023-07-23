@@ -1,4 +1,4 @@
-import { TextChannel } from 'discord.js';
+import { PermissionsBitField, TextChannel } from 'discord.js';
 import { musicCollection } from '../../collection/musicCollection';
 import { CMD } from '../../types/type';
 
@@ -6,7 +6,9 @@ export const musicShow: CMD = {
   name: '큐',
   cmd: ['큐', '목록', '노래목록'],
   type: 'music',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg) {
     //Guard Clause
     const guildId = msg.guildId;

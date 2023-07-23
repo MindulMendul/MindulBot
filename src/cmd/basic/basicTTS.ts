@@ -3,11 +3,10 @@ import { spawn } from 'child_process';
 import {
   AudioPlayerStatus,
   createAudioResource,
-  DiscordGatewayAdapterCreator,
   joinVoiceChannel,
   PlayerSubscription
 } from '@discordjs/voice';
-import { VoiceBasedChannel } from 'discord.js';
+import { VoiceBasedChannel, PermissionsBitField } from 'discord.js';
 import { createAudioPlayer, NoSubscriberBehavior } from '@discordjs/voice';
 import fs from 'fs';
 
@@ -17,7 +16,9 @@ export const basicTTS: CMD = {
   name: `티티에스`,
   cmd: ['tts', 'TTS', '티티에스', 'ㅅㅅㄴ', 'ㅌㅌㄴ', 'ㅌㅌㅇㅅ'],
   type: 'basic',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg, args) {
     //보이스에는 들어와있어야 tts를 들을 수 있음
     const voiceChannel = msg.member?.voice.channel as VoiceBasedChannel;

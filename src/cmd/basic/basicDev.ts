@@ -1,11 +1,13 @@
-import { EmbedBuilder } from 'discord.js';
+import { EmbedBuilder, PermissionsBitField } from 'discord.js';
 import { CMD } from '../../types/type';
 
 export const basicDev: CMD = {
   name: `개발`,
   cmd: ['개발', 'ㄱㅂ', '개발일정', 'ㄱㅂㅇㅈ', 'dev'],
   type: 'basic',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg) {
     return new Promise(async (resolve, reject) => {
       try {

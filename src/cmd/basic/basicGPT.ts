@@ -1,11 +1,14 @@
 import { CMD } from '../../types/type';
 import { Configuration, OpenAIApi } from 'openai';
+import { PermissionsBitField } from 'discord.js';
 
-export const testMsg: CMD = {
-  name: `테스트`,
-  cmd: ['테스트', 'ㅌㅅㅌ', 'ㅎ'],
+export const basicGPT: CMD = {
+  name: `GPT`,
+  cmd: ['지피티', 'ㅈㅍㅌ'],
   type: 'basic',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg, args) {
     return new Promise((resolve, reject) => {
       msg.channel.send('aswdfasdf');

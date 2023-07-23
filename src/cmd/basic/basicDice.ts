@@ -1,12 +1,13 @@
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
-import { TextChannel } from 'discord.js';
+import { PermissionsBitField } from 'discord.js';
 import { CMD } from '../../types/type';
 
 export const basicDice: CMD = {
   name: `주사위`,
   cmd: ['데굴', '데굴데굴', '주사위', 'ㄷㄱㄷㄱ'],
   type: 'basic',
-  permission: [],
+  permission: [
+    PermissionsBitField.Flags.SendMessages
+  ],
   async execute(msg) {
     return new Promise(async (resolve, reject) => {
       try {

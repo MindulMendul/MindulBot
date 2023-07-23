@@ -6,7 +6,11 @@ export const basicTarot: CMD = {
   name: `타로`,
   cmd: ['타로', 'ㅌㄹ', '운세', '오늘의운세'],
   type: 'basic',
-  permission: [PermissionsBitField.Flags.AddReactions, PermissionsBitField.Flags.EmbedLinks],
+  permission: [
+    PermissionsBitField.Flags.SendMessages,
+    PermissionsBitField.Flags.AddReactions,
+    PermissionsBitField.Flags.EmbedLinks
+  ],
   //타로하트 생성과정
   async execute(msg) {
     return new Promise(async (resolve, reject) => {
