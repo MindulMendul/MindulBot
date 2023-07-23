@@ -18,10 +18,10 @@ export const checkPERs = (msg: Message<boolean>, CMD: CMD) => {
 
   return [
     ...PER.filter((elem) => !textPERs.has(elem) && textPERDicts[elem.toString()]).map(
-      (elem) => `${textPERDicts[elem.toString()]}`
+      (elem) => `채팅 채널: ${textPERDicts[elem.toString()]}`
     ),
     ...PER.filter((elem) => !voicePERs.has(elem) && voicePERDicts[elem.toString()]).map(
-      (elem) => `${voicePERDicts[elem.toString()]}`
+      (elem) => `음성 채널: ${voicePERDicts[elem.toString()]}`
     )
   ].join(', ');
 };
