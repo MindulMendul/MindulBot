@@ -12,7 +12,7 @@ export const checkPERs = (msg: Message<boolean>, CMD: CMD) => {
   const VoiceChannel = msg.member.voice.channel;
 
   const textPERs = TextChannel.permissionsFor(bot.user as User);
-  const voicePERs = VoiceChannel.permissionsFor(bot.user as User);
+  const voicePERs = VoiceChannel?.permissionsFor(bot.user as User);
 
   if (!textPERs && !voicePERs) return [];
 
@@ -20,7 +20,7 @@ export const checkPERs = (msg: Message<boolean>, CMD: CMD) => {
     ...PER.filter((elem) => !textPERs.has(elem) && textPERDicts[elem.toString()]).map(
       (elem) => `채팅 채널: ${textPERDicts[elem.toString()]}`
     ),
-    ...PER.filter((elem) => !voicePERs.has(elem) && voicePERDicts[elem.toString()]).map(
+    ...PER.filter((elem) => !voicePERs?.has(elem) && voicePERDicts[elem.toString()]).map(
       (elem) => `음성 채널: ${voicePERDicts[elem.toString()]}`
     )
   ].join(', ');
