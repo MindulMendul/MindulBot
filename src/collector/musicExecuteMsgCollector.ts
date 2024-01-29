@@ -13,17 +13,13 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
     musicEntity.InteractionCollector = collector;
 
     resolve(undefined);
+    
     collector.on('collect', async (i: any) => {
       try {
-        const update = () => {
-          i.update({ content: i.message.content, components: i.message.components });
-        };
-
         if (getCMDQueue(msg.guildId)) {
           musicEntity.textChannel.send(
             `${getCMDQueue(msg.guildId).name} 명령어 입력 대기 중이라 잠시 뒤에 다시 부탁드립니다 ㅎㅎ`
           );
-          update();
           resolve(undefined);
           return;
         }
@@ -31,7 +27,6 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
         //보이스채널 체크
         if (!musicEntity.voiceChannel) {
           musicEntity.textChannel.send('보이스채널에서 해주세요!');
-          update();
           resolve(undefined);
           return;
         }
@@ -39,7 +34,6 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
         //같은 보이스채널 체크
         if (i.member.voice.channelId != musicEntity.voiceChannel.id) {
           musicEntity.textChannel.send('같은 보이스채널에서 해주세요!');
-          update();
           resolve(undefined);
           return;
         }
@@ -91,10 +85,10 @@ export const musicExecuteMsgCollector = (msg: Message, options: any) => {
             setButtonStyle(musicEntity.option.mute);
             break;
         }
-        update();
       } catch (error) {
         reject(error);
       } finally {
+        i.update({ content: i.message.content, components: i.message.components });
         initCMDQueue(msg.guildId);
       }
     });

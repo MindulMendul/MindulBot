@@ -1,4 +1,4 @@
-import { joinVoiceChannel, VoiceConnectionStatus } from '@discordjs/voice';
+import { joinVoiceChannel } from '@discordjs/voice';
 import { musicCollection } from '../../collection/musicCollection';
 
 export const musicConnection = async (guildId: string) => {
@@ -37,7 +37,6 @@ export const musicConnection = async (guildId: string) => {
     resolve(undefined);
 
     connection.on('error', (error) => {
-      console.log('asdfasdf5');
       reject(error);
     });
   });

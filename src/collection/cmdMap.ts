@@ -43,7 +43,7 @@ export const initCMDs = () => {
   initCMD(basicMindul);
   initCMD(basicSuggestion);
   initCMD(basicTarot);
-  // initCMD(basicTTS); 해당 기능은 버그가 있어요 ㅠㅠ
+  initCMD(basicTTS); // 해당 기능은 한 번에 여러 사람이 쓰면 버퍼링이 심해요!
 
   //music
   initCMD(musicEmpty);

@@ -54,7 +54,6 @@ export class MusicEntity {
         await musicExecuteMsg(guildId);
         resolve(undefined);
       } catch (error) {
-        console.log('asdfasdf3');
         reject(error);
       }
     });
@@ -74,7 +73,7 @@ export class MusicEntity {
   public async pushSongQueue(metadata: metadata) {
     const resource = await musicResource(metadata);
     const option = this.option;
-    resource.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
+    resource.volume.setVolumeLogarithmic(option.ampl * option.volume * Number(!option.mute));
     this.songQueue.push(resource);
   }
 
@@ -134,7 +133,7 @@ export class MusicEntity {
     const option = this.option;
     option.mute = !option.mute;
 
-    this.playingSong.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
+    this.playingSong.volume.setVolumeLogarithmic(option.ampl * option.volume * Number(!option.mute));
     if (option.mute) await this.textChannel.send(`음소거되었어요`);
     else await this.textChannel.send(`원래 소리로 돌아갔어요.\n현재 볼륨:${Math.round(option.volume * 100)}%`);
   }
@@ -147,7 +146,7 @@ export class MusicEntity {
     }
 
     option.volume = Math.max(0, Math.min(1, value));
-    this.playingSong.volume.setVolume(option.ampl * option.volume * Number(!option.mute));
+    this.playingSong.volume.setVolumeLogarithmic(option.ampl * option.volume * Number(!option.mute));
     await this.textChannel.send(`현재 볼륨: ${Math.round(option.volume * 100)}%`);
   }
 }
