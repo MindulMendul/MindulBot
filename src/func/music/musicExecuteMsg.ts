@@ -50,7 +50,6 @@ export const musicExecuteMsg = async (guildId: string) => {
     //버튼 인터렉션 콜렉터 부분
     const filter = (i: MessageComponentInteraction) => i.message.id === msgSungok.id;
     await musicExecuteMsgCollector(msgSungok, { filter }).catch((error) => {
-      console.log('asdfasdf4');
       reject(error);
     });
 
