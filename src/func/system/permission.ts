@@ -1,4 +1,4 @@
-import { Message, TextChannel, User, VoiceBasedChannel } from 'discord.js';
+import { Message, TextChannel, User } from 'discord.js';
 import { CMD } from '../../types/type';
 import { bot } from '../../../bot';
 import textPERDicts from '../../assets/permissions/textPermissions.json' assert { type: 'json' };
