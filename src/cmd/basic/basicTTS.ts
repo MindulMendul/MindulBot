@@ -26,49 +26,56 @@ export const basicTTS: CMD = {
     if(getVoiceConnection(voiceChannel.guild.id)!=undefined)
       return msg.channel.send('해당 기능은 이미 보이스채널에 들어와있다면 작동하지 않습니다 ㅠㅠ');
 
-    const connection = joinVoiceChannel({
-      channelId: voiceChannel.id,
-      guildId: voiceChannel.guild.id,
-      adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
-    });
+    return new Promise(async (resolve, reject) => {
+      try {
+        const connection = joinVoiceChannel({
+          channelId: voiceChannel.id,
+          guildId: voiceChannel.guild.id,
+          adapterCreator: voiceChannel.guild.voiceAdapterCreator as any
+        });
+    
+        const player = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Pause } });
+        const subscribe = connection.subscribe(player) as PlayerSubscription;
+        const ttsQueue = new Array();
+        const filenameQueue = new Array();
+        player.on(AudioPlayerStatus.Idle, async () => {
+          fs.unlinkSync(filenameQueue.shift());
+          if (ttsQueue.length) {
+            player.play(ttsQueue.shift());
+          } else {
+            player.removeAllListeners();
+            subscribe.unsubscribe();
+            connection.disconnect();
+            connection.destroy();
+          }
+        });
+    
+        //python에서부터 받아온 파일을 mp3로 저장 후 실행
+        let cnt=0;
+        const ttsPY = spawn('python3', ['./src/py/tts.py', args.join(' ')]);
+        ttsPY.stdout.on('data', (data) => {
+          const base64 = data.toString().trim().slice(2, -1);
+          if (base64.length) {
+            const filename = `./src/assets/ttsFile/${voiceChannel.id}${cnt++}.mp3`;
+            fs.writeFileSync(filename, Buffer.from(base64, 'base64'));
+            const resource = createAudioResource(filename);
+            filenameQueue.push(filename);
+            if (player.state.status == 'idle') {
+              player.play(resource);
+            } else {
+              ttsQueue.push(resource);
+            }
+          }
+        });
+        ttsPY.stderr.on('data', (data) => {
+          console.log(data.toString());
+        });
 
-    const player = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Pause } });
-    const subscribe = connection.subscribe(player) as PlayerSubscription;
-    const ttsQueue = new Array();
-    const filenameQueue = new Array();
-    player.on(AudioPlayerStatus.Idle, async () => {
-      fs.unlinkSync(filenameQueue.shift());
-      if (ttsQueue.length) {
-        player.play(ttsQueue.shift());
-      } else {
-        player.removeAllListeners();
-        subscribe.unsubscribe();
-        connection.disconnect();
-        connection.destroy();
+        resolve(undefined);
+        return;
+      } catch (error) {
+        reject(error);
       }
     });
-
-    //python에서부터 받아온 파일을 mp3로 저장 후 실행
-    let cnt=0;
-    const ttsPY = spawn('python3', ['./src/py/tts.py', args.join(' ')]);
-    ttsPY.stdout.on('data', (data) => {
-      const base64 = data.toString().trim().slice(2, -1);
-      if (base64.length) {
-        const filename = `./src/assets/ttsFile/${voiceChannel.id}${cnt++}.mp3`;
-        fs.writeFileSync(filename, Buffer.from(base64, 'base64'));
-        const resource = createAudioResource(filename);
-        filenameQueue.push(filename);
-        if (player.state.status == 'idle') {
-          player.play(resource);
-        } else {
-          ttsQueue.push(resource);
-        }
-      }
-    });
-    ttsPY.stderr.on('data', (data) => {
-      console.log(data.toString());
-    });
-
-    return msg.channel.send('tts 테스트중');
   }
 };
