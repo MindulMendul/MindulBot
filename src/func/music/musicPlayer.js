@@ -1,5 +1,6 @@
 import { musicCollection } from '../../collection/musicCollection.js';
 import { musicExecuteMsg } from './musicExecuteMsg.js';
+import { AudioPlayerStatus } from '@discordjs/voice';
 
 export const musicPlayer = async (guildId) => {
   const musicEntity = musicCollection.get(guildId);
@@ -32,6 +33,26 @@ export const musicPlayer = async (guildId) => {
     const musicEntity = musicCollection.get(guildId);
     if (!musicEntity.playingSong) musicEntity.playingSong = musicEntity.songQueue.shift();
     try {
+      musicEntity.audioPlayer.on('error', (error) => {
+        console.error(error);
+      });
+
+      musicEntity.audioPlayer.on(AudioPlayerStatus.Playing, () => {
+        console.log('The audio player has started playing!');
+      });
+
+      musicEntity.audioPlayer.once(AudioPlayerStatus.Idle, async () => {
+        playNextSong();
+      });
+
+      musicEntity.audioPlayer.on(AudioPlayerStatus.Idle, async () => {
+        console.log('asdfmqwqoqqqq');
+      });
+
+      musicEntity.audioPlayer.on(AudioPlayerStatus.Buffering, (oldState, newState) => {
+        console.log(`Audio player transitioned from ${oldState.status} to ${newState.status}`);
+      });
+
       musicEntity.audioPlayer.play(musicEntity.playingSong);
       const subscription = musicEntity.connection.subscribe(musicEntity.audioPlayer);
       musicEntity.subscription = subscription;

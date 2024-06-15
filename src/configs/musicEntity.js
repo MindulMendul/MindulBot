@@ -1,4 +1,3 @@
-import { AudioPlayerStatus } from '@discordjs/voice';
 import { createAudioPlayer, NoSubscriberBehavior } from '@discordjs/voice';
 import { shuffle } from '../func/system/shuffle.js';
 import { musicConnection } from '../func/music/musicConnection.js';
@@ -23,26 +22,6 @@ export class MusicEntity {
     this.audioPlayer = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Pause } });
     this.songQueue = [];
     this.option = new MusicOption();
-
-    this.audioPlayer.on('error', (error) => {
-      console.error(error);
-    });
-
-    this.audioPlayer.on(AudioPlayerStatus.Playing, () => {
-      console.log('The audio player has started playing!');
-    });
-
-    this.audioPlayer.once(AudioPlayerStatus.Idle, async () => {
-      playNextSong();
-    });
-
-    this.audioPlayer.on(AudioPlayerStatus.Idle, async () => {
-      console.log('asdfmqwqoqqqq');
-    });
-
-    this.audioPlayer.on(AudioPlayerStatus.Buffering, (oldState, newState) => {
-      console.log(`Audio player transitioned from ${oldState.status} to ${newState.status}`);
-    });
   }
 
   init(voiceChannel, textChannel) {
