@@ -8,13 +8,15 @@
     "pretty": "prettier --config .prettierrc --write bot.js src/**/*.js"
   },
   "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "@discordjs/voice": "^0.17.0",
+    "@distube/ytdl-core": "^4.13.4",
     "discord.js": "^14.15.3",
     "ffmpeg": "^0.0.4",
     "libsodium-wrappers": "^0.7.9",
-    "@discordjs/opus": "^0.4.0",
-    "@discordjs/voice": "^0.17.0",
     "openai": "^4.51.0",
-    "play-dl": "^1.9.7"
+    "play-dl": "^1.9.7",
+    "sodium-native": "^4.1.1"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
