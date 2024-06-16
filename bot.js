@@ -6,6 +6,7 @@ import { nocmdVS } from './src/cmd/nocmd/nocmdVS.js';
 import { ACTIVITY_STRING, BOT_TOKEN, PREFIX } from './src/configs/env.js';
 import { getCMDQueue, initCMDQueue, setCMDQueue } from './src/collection/cmdQueue.js';
 import { getOWNER } from './src/func/system/owner.js';
+import { myeonRider } from './src/cmd/nocmd/myeonRider.js';
 
 export const bot = new Client({
   intents: [
@@ -39,6 +40,7 @@ bot.on('messageCreate', async (msg) => {
   //명령어 없는 텍스트는 거름
   if (!msg.content.startsWith(PREFIX)) {
     await nocmdVS(msg);
+    await myeonRider(msg);
     return;
   }
 

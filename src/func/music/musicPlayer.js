@@ -26,6 +26,7 @@ export const musicPlayer = async (guildId) => {
     } catch (e) {
       musicEntity.disconnect();
       console.error(e);
+      console.log('player next song error');
     }
   };
 
@@ -35,10 +36,11 @@ export const musicPlayer = async (guildId) => {
     try {
       musicEntity.audioPlayer.on('error', (error) => {
         console.error(error);
+        console.log('player playing error');
       });
 
       musicEntity.audioPlayer.on(AudioPlayerStatus.Playing, () => {
-        console.log('The audio player has started playing!');
+        //console.log('The audio player has started playing!');
       });
 
       musicEntity.audioPlayer.once(AudioPlayerStatus.Idle, async () => {
@@ -46,11 +48,11 @@ export const musicPlayer = async (guildId) => {
       });
 
       musicEntity.audioPlayer.on(AudioPlayerStatus.Idle, async () => {
-        console.log('asdfmqwqoqqqq');
+        //console.log('asdfmqwqoqqqq');
       });
 
       musicEntity.audioPlayer.on(AudioPlayerStatus.Buffering, (oldState, newState) => {
-        console.log(`Audio player transitioned from ${oldState.status} to ${newState.status}`);
+        //console.log(`Audio player transitioned from ${oldState.status} to ${newState.status}`);
       });
 
       musicEntity.audioPlayer.play(musicEntity.playingSong);

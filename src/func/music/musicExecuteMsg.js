@@ -45,6 +45,7 @@ export const musicExecuteMsg = async (guildId) => {
     const filter = (i) => i.message.id === msgSungok.id;
     await musicExecuteMsgCollector(msgSungok, { filter }).catch((error) => {
       reject(error);
+      console.log('button collector error');
     });
 
     resolve(undefined);
