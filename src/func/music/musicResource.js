@@ -3,7 +3,6 @@ import ytdl from '@distube/ytdl-core';
 
 export const musicResource = async (metadata) => {
   const stream = ytdl(metadata.url, { filter: 'audioonly' });
-  console.log(stream);
   //const playStream = await stream(metadata.url, { discordPlayerCompatibility: true });
   let resource = createAudioResource(stream, {
     metadata: {

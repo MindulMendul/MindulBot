@@ -35,6 +35,7 @@ export const musicConnection = async (guildId) => {
     resolve(undefined);
 
     connection.on('error', (error) => {
+      console.log('connection error');
       reject(error);
     });
   });

@@ -5,7 +5,7 @@ export class MusicOption {
   loop;
   skip;
 
-  constructor(volume = 0.5, ampl = 0.2, mute = false, loop = false, skip = false) {
+  constructor(volume = 0.5, ampl = 0.45, mute = false, loop = false, skip = false) {
     this.volume = volume;
     this.ampl = ampl;
     this.mute = mute;
