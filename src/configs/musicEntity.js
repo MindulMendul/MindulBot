@@ -56,7 +56,6 @@ export class MusicEntity {
 
   async pushSongQueue(metadata) {
     const resource = await musicResource(metadata);
-    resource.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
     this.songQueue.push(resource);
   }
 

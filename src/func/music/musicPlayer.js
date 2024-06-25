@@ -33,6 +33,9 @@ export const musicPlayer = async (guildId) => {
   return new Promise(async (resolve, reject) => {
     const musicEntity = musicCollection.get(guildId);
     if (!musicEntity.playingSong) musicEntity.playingSong = musicEntity.songQueue.shift();
+    musicEntity.playingSong.volume.setVolumeLogarithmic(
+      musicEntity.option.ampl * musicEntity.option.volume * Number(!musicEntity.option.mute)
+    );
     try {
       musicEntity.audioPlayer.on('error', (error) => {
         console.error(error);
