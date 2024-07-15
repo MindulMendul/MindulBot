@@ -19,7 +19,7 @@ export const musicResource = async (metadata) => {
       title: metadata.title,
       url: metadata.url
     },
-    volume: musicEntity.option.ampl * musicEntity.option.volume * Number(!musicEntity.option.mute),
+    volume: 0,
     inlineVolume: true,
     silencePaddingFrames: 5
   });
