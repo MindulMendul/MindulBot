@@ -110,16 +110,16 @@ export class MusicEntity {
     else await this.textChannel.send('큐 반복 기능이 활성화되었습니다~');
   }
 
-  async _setVolume() {
+  async mute() {
+    this.option.mute = !this.option.mute;
+
+    // 사운드 조절 부분
     this.playingSong.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
     this.songQueue.foreach((e) => {
       e.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
     });
-  }
 
-  async mute() {
-    this.option.mute = !this.option.mute;
-    _setVolume();
+    // 메시지
     if (this.option.mute) await this.textChannel.send(`음소거되었어요`);
     else await this.textChannel.send(`원래 소리로 돌아갔어요.\n현재 볼륨:${Math.round(this.option.volume * 100)}%`);
   }
@@ -131,7 +131,14 @@ export class MusicEntity {
     }
 
     this.option.volume = Math.max(0, Math.min(1, value));
-    _setVolume();
+
+    //사운드 조절 부분
+    this.playingSong.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
+    this.songQueue.foreach((e) => {
+      e.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
+    });
+
+    // 메시지
     await this.textChannel.send(`현재 볼륨: ${Math.round(this.option.volume * 100)}%`);
   }
 }
