@@ -134,7 +134,7 @@ export class MusicEntity {
 
     //사운드 조절 부분
     this.playingSong.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
-    this.songQueue.foreach((e) => {
+    this.songQueue.forEach((e) => {
       e.volume.setVolumeLogarithmic(this.option.ampl * this.option.volume * Number(!this.option.mute));
     });
 
