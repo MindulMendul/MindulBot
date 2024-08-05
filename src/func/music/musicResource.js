@@ -1,7 +1,7 @@
 import { createAudioResource } from '@discordjs/voice';
 import ytdl from '@distube/ytdl-core';
 
-export const musicResource = async (metadata) => {
+export const musicResource = async (musicEntity, metadata) => {
   const ytdlOption = {
     filter: 'audioonly',
     fmt: 'mp3',
@@ -14,15 +14,17 @@ export const musicResource = async (metadata) => {
 
   const stream = ytdl(metadata.url, ytdlOption);
   //const playStream = await stream(metadata.url, { discordPlayerCompatibility: true });
-  let resource = createAudioResource(stream, {
+  const resource = createAudioResource(stream, {
     metadata: {
       title: metadata.title,
       url: metadata.url
     },
-    volume: 0,
     inlineVolume: true,
     silencePaddingFrames: 5
   });
+  resource.volume.setVolumeLogarithmic(
+    musicEntity.option.ampl * musicEntity.option.volume * Number(!musicEntity.option.mute)
+  );
 
   return resource;
 };

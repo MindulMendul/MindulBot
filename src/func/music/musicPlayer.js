@@ -6,6 +6,11 @@ export const musicPlayer = async (guildId) => {
   const musicEntity = musicCollection.get(guildId);
   const playNextSong = async () => {
     try {
+      musicEntity.audioPlayer?.removeAllListeners();
+      musicEntity.audioPlayer?.stop();
+      musicEntity.InteractionCollector?.removeAllListeners();
+      musicEntity.InteractionCollector?.stop();
+
       //스킵 루프 조건 만족하면 루프돌리는 부분
       if (musicEntity.option.loop && !musicEntity.option.skip)
         await musicEntity.pushSongQueue(musicEntity.playingSong.metadata);
@@ -31,9 +36,9 @@ export const musicPlayer = async (guildId) => {
   };
 
   return new Promise(async (resolve, reject) => {
-    const musicEntity = musicCollection.get(guildId);
-    if (!musicEntity.playingSong) musicEntity.playingSong = musicEntity.songQueue.shift();
-    musicEntity.playingSong.volume.setVolumeLogarithmic(
+    const nextSong = musicEntity.songQueue.shift();
+    if (!musicEntity.playingSong) musicEntity.playingSong = nextSong;
+    await musicEntity.playingSong.volume.setVolumeLogarithmic(
       musicEntity.option.ampl * musicEntity.option.volume * Number(!musicEntity.option.mute)
     );
     try {
