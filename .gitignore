@@ -1,6 +1,9 @@
 node_modules/
 package-lock.json
 package.json
-/src/assets/ttsFile
+
 .env
 .vscode
+
+/src/assets/ttsFile
+/src/configs/ytdlCookie.json

@@ -1,13 +1,15 @@
 import { createAudioResource } from '@discordjs/voice';
 import ytdl from '@distube/ytdl-core';
+import { ytdlAgent } from '../../configs/ytdlConfig.js';
 
 export const musicResource = async (musicEntity, metadata) => {
   const ytdlOption = {
+    agent: ytdlAgent,
     filter: 'audioonly',
     fmt: 'mp3',
-    highWaterMark: 1 << 30,
-    liveBuffer: 1 << 30,
-    dlChunkSize: 4096,
+    highWaterMark: 1 << 62,
+    liveBuffer: 1 << 62,
+    dlChunkSize: 0,
     bitrate: 128,
     quality: 'lowestaudio'
   };
