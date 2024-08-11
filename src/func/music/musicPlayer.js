@@ -44,7 +44,6 @@ export const musicPlayer = async (guildId) => {
     try {
       musicEntity.audioPlayer.on('error', (error) => {
         console.error(error);
-        console.log(error?.resource);
         musicEntity.textChannel.send('노래 음원이 다운로드되지 못했습니다. 다시 시도해주세요!');
       });
 
